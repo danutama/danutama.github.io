@@ -1,11 +1,15 @@
 .jumbotron {
   padding-top: 6rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background-color: #9ed7e9;
 }
 
 h1 {
-  padding-top: 1rem;
+  padding-top: 2rem;
+}
+
+p {
+  padding-top: 0;
 }
 
 #projects {
