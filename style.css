@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 .jumbotron {
   padding-top: 6rem;
   padding-bottom: 1rem;
-  background-color: #9ed7e9;
+  background-color: #2d3034;
 }
 
 h1 {
@@ -12,9 +14,17 @@ p {
   padding-top: 0;
 }
 
+#about {
+  background-color: #ebcda8;
+}
 #projects {
-  background-color: #9ed7e9;
+  font-family: 'Poppins';
+  background-color: #d9dbdb;
   padding-bottom: 4rem;
+}
+
+#contact {
+  background-color: #ebcda8;
 }
 
 section {
