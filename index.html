@@ -1,183 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" dir="ltr">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-
-    <!-- My CSS -->
+    <meta charset="UTF-8" />
+    <title>Portfolio | Danu A. Pratama</title>
     <link rel="stylesheet" href="style.css" />
-
-    <title>My Portfolio | Danu A. Pratama</title>
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body id="home">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="font-family: 'Poppins'; background-color: #222529">
-      <div class="container">
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <!-- navigation menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Portfolio</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-light text-center" style="font-family: 'Poppins';">
-        <img src="img/foto.jpg" alt="Danu A. Pratama" width="200" class="rounded-circle img-thumbnail" />
-        <h1 class="display-6">Danu A. Pratama</h1>
-        <p class="lead">Mahasiswa</p>
-    </section>
-    <!-- Akhir Jumbotron -->
-
-    <!-- About -->
-    <section id="about">
-      <div class="container text-dark">
-        <div class="row text-center mb-4">
-          <div class="col" style="color: #282420;">
-            <h2>About Me</h2>
-          </div>
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hello,<span> I'm Danu</span></div>
+          <div class="text-two">I'm Danu</div>
+          <div class="text-three">Junior Web Designer | Jakarta</div>
         </div>
-        <div class="row justify-content-evenly fs-5 text-center">
-          <div class="col-md-8 mb-5" 
-            style="color: #fff; text-align: justify; font-family: 'Poppins'; font-size: 1rem;">
+        <div class="button">
+          <button>
+            <a href="mailto:inidanuuu@gmail.com" target="blank"><i class="fa fa-envelope"></i>Email</a>
+          </button>
+          <button>
+            <a href="https://github.com/danuapratama" target="blank"><i class="fab fa-github"></i>GitHub</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="Images/foto.jpg" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">Danu A. Pratama</div>
             <p>
-              Saya seorang mahasiswa perguruan tinggi swasta yang berlokasi di Jakarta Timur dengan program studi teknik informatika. Website ini adalah portofolio pribadi untuk project yang pernah saya kerjakan. Saya tertarik untuk
-              membangun web atau hal lain dalam bidang teknologi (baik coding dan non-coding). Di waktu luang, saya senang merawat tanaman kaktus dan melakukan aktivitas lain seperti melatih keterampilan programming.
+              Saya seorang mahasiswa dari perguruan tinggi swasta yang berlokasi di Jakarta Timur dengan program studi teknik informatika. Website ini adalah portofolio pribadi untuk project yang pernah saya kerjakan. Saya tertarik untuk
+              membangun web atau hal lain dalam bidang teknologi (baik coding dan non-coding). Di waktu luang, saya kerap melakukan aktivitas seperti melatih keterampilan programming.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir About -->
-
-    <!-- Projects -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col" style="color: #282420;">
-            <h2>My Projects</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card" style="border-radius: 20px">
-              <img src="img/projects/1.jpg" style="border-top-left-radius: 20px; border-top-right-radius: 20px;"
-              class="card-img-top" alt="Projects 1" />
-              <div class="card-body">
-                <h5 class="card-title">Portfolio 2</h5>
-                <p class="card-text">Learning 1</p>
-                <a href="https://danuapratama.github.io/Web-Responsive-2/" target="blank" class="shadow btn btn-dark"
-                style="border-radius: 30px; font-size: 0.8rem;">Detail &raquo;</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" style="border-radius: 20px">
-              <img src="img/projects/2.jpg" style="border-top-left-radius: 20px; border-top-right-radius: 20px;"
-              class="card-img-top" alt="Projects 2" />
-              <div class="card-body">
-                <h5 class="card-title">Travel</h5>
-                <p class="card-text">Learning 2</p>
-                <a href="https://danuapratama.github.io/travel/" target="blank" class="shadow btn btn-dark" style="border-radius: 30px; font-size: 0.8rem;">Detail &raquo;</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" style="border-radius: 20px">
-              <img src="img/projects/3.jpg" style="border-top-left-radius: 20px; border-top-right-radius: 20px;"
-              class="card-img-top" alt="Projects 3" />
-              <div class="card-body">
-                <h5 class="card-title">Company Profile</h5>
-                <p class="card-text">Learning 3</p>
-                <a href="https://danuapratama.github.io/company/" target="blank" class="shadow btn btn-dark" style="border-radius: 30px; font-size: 0.8rem;">Detail &raquo;</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" style="border-radius: 20px">
-              <img src="img/projects/4.jpg" style="border-top-left-radius: 20px; border-top-right-radius: 20px;"
-              class="card-img-top" alt="Projects 4" />
-              <div class="card-body">
-                <h5 class="card-title">Toko Buah</h5>
-                <p class="card-text">Learning 4</p>
-                <a href="https://danuapratama.000webhostapp.com/" target="blank" class="shadow btn btn-dark" style="border-radius: 30px; font-size: 0.8rem;">Detail &raquo;</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" style="border-radius: 20px">
-              <img src="img/projects/5.jpg" style="border-top-left-radius: 20px; border-top-right-radius: 20px;"
-              class="card-img-top" alt="Projects 5" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Learning 5</p>
-                <a href="#" target="blank" class="shadow btn btn-dark" style="border-radius: 30px; font-size: 0.8rem;">Detail &raquo;</a>             
-              </div>
+            <div class="button">
+              <button><a href="https://t.me/ini_danu/" target="blank">Connect with Me</a></button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Akhir Projects -->
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container" style="padding-bottom: 3rem">
-        <div class="row text-center mb-5">
-          <div class="col" style="color: #282420;">
-            <h2>Contact & Socials</h2>
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>Skills</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Skills Reflects Your Knowledge</div>
+            <p></p>
+            <div class="experience">
+              <div class="num">1</div>
+              <div class="exp">
+                Years Of <br />
+                Experience
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+            </div>
+            <div class="box">
+              <div class="topic">JavaScript</div>
+            </div>
+            <div class="box">
+              <div class="topic"></div>
+            </div>
           </div>
         </div>
-        <div class="row text-center justify-content-center">
-          <div class="col-md-2 mb-3">
-            <a href="mailto:danuaguspratama98@gmail.com" class="shadow btn btn-light" style="border-radius: 25px;" target="blank">
-              <i class=" bi bi-envelope-fill" style="font-size: 2rem; color: #282420;"></i>
-            </a>
-          </div>
-          <div class="col-md-2 mb-3">
-            <a href="https://github.com/danuapratama/" class="shadow btn btn-light" style="border-radius: 25px;" target="blank">
-              <i class="bi bi-github" style="font-size: 2rem; color: #282420;"></i>     
-            </a>  
-          </div>
-          <div class="col-md-2 mb-3">
-            <a href="https://www.instagram.com/danuapratama/" class="shadow btn btn-light" style="border-radius: 25px;" target="blank">
-              <i class="bi bi-instagram" style="font-size: 2rem; color: #282420;"></i>
-            </a>
-          </div>
-        </div>  
       </div>
     </section>
-    <!-- Akhir Contact -->
 
-    <!-- Footer -->
-    <footer style="background-color: #222529; font-family: 'Poppins';" class="text-center text-white pt-3 pb-1">
-      <p>Created with <i class="bi bi-suit-heart-fill text-white"> </i>by Danu A. Pratama</a></p>
+    <!-- My Projects Section Start -->
+    <section class="projects" id="projects">
+      <div class="content">
+        <div class="title"><span>My Projects</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-hospital"></i>
+            </div>
+            <div class="topic">Hospital</div>
+            <p>User Interface Design</p>
+            <div class="button">
+              <a href="https://danuapratama.github.io/hospital/" target="blank"> <button>Detail</button></a>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icon">
+              <i class="far fa-paper-plane"></i>
+            </div>
+            <div class="topic">Landing Page</div>
+            <p>User Interface Design</p>
+            <div class="button">
+              <a href="https://danuapratama.github.io/travel/" target="blank"> <button>Detail</button></a>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icon">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="topic">login Form</div>
+            <p>User Interface Design</p>
+            <div class="button">
+              <a href="https://danuapratama.github.io/company" target="blank"> <button>Detail</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="button">
+          <a href="projects.html" target="blank"> <button>Other &raquo;</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        &#169;
+        <script type="text/javascript">
+          var creditsyear = new Date();
+          document.write(creditsyear.getFullYear());
+        </script>
+        <a expr:href="data:blog.homepageUrl"><data:blog.title />|</a><span> Danu A. Pratama</span>. All rights reserved.
+      </div>
     </footer>
-    <!-- Akhir Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
