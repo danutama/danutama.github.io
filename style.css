@@ -475,10 +475,10 @@ footer .text {
     margin-bottom: 10px;
     text-align: center;
   }
-  .skills-details .boxes {
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+  .skills-details .boxes .box{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
   .skills-details .text .experience{
     justify-content: center;
