@@ -1,0 +1,148 @@
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  /* Navbar */
+  .toggle-btn i {
+    display: block;
+  }
+  .brand img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+  }
+  .navbar {
+    background: var(--circle);
+    height: 100vh;
+    flex-direction: column;
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+  }
+  .nav-list ul {
+    flex-direction: column;
+  }
+  .nav-list ul li {
+    margin-top: 30px;
+  }
+
+  .home.container {
+    height: 100%;
+    margin-top: 120px;
+  }
+  .home.container .row {
+    flex-direction: column;
+  }
+  .home.container .col-1 {
+    padding: 20px;
+  }
+  .home.container .col-2 img {
+    max-width: 90%;
+  }
+  .grid-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+  .grid-box {
+    padding: 10px;
+  }
+  .skills {
+    height: 100%;
+  }
+  .portfolio .title .ctn-title {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .portfolio .title .ctn-title h1 {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .contact .container {
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+  .contact .container .button {
+    margin-bottom: 30px;
+  }
+  .contact .quick-links {
+    flex-direction: column;
+  }
+
+  .contact .quick-links ul li {
+    margin: 0px 5px;
+  }
+  .copyright p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .home.container {
+    height: 100%;
+    margin-top: 120px;
+    margin-bottom: 10rem;
+  }
+  .home.container .row {
+    flex-direction: column;
+  }
+  .home.container .col-1 {
+    padding: 20px;
+  }
+  .home.container .col-2 img {
+    max-width: 90%;
+  }
+
+  .about .about-details {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left img {
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+  }
+  .about-details .right {
+    width: 90%;
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .about .left img {
+    height: 310px;
+    width: 200;
+  }
+  .about .right .topic {
+    text-align: center;
+  }
+
+  .portfolio.container .grid-wrapper {
+    justify-content: center;
+    right: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-box {
+    width: 100%;
+    justify-content: center;
+  }
+  .rect-bg {
+    top: -3rem;
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .skills .grid-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+}

@@ -1,54 +1,58 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Portfolio | Danu A. Pratama</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danu A. Pratama</title>
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
   </head>
   <body>
-    <!-- Move to up button -->
-    <div class="scroll-button">
-      <a href="#home"><i class="fas fa-arrow-up"></i></a>
-    </div>
-
-    <!-- navigation menu -->
-    <nav>
-      <div class="navbar">
-        <div class="logo"><a href="#">Portfolio</a></div>
-        <ul class="menu">
+    <nav class="navbar">
+      <div class="brand">
+        <img src="./img/profil.png" alt="" class="logo" />
+      </div>
+      <div class="nav-list">
+        <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
+      <div class="social-icons">
+        <ul>
+          <li><i class="fa fa-instagram"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-github"></i></li>
+          <li><i class="fa fa-linkedin"></i></li>
+        </ul>
       </div>
     </nav>
+    <div class="toggle-btn">
+      <i class="fa fa-bars"></i>
+    </div>
 
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <div class="text">
-          <div class="text-one">Hello,<span> I'm Danu</span></div>
-          <div class="text-two">I'm Danu</div>
-          <div class="text-three">Web Designer | Jakarta</div>
+    <!-- Home -->
+    <section class="home container" id="home">
+      <div class="circle"></div>
+      <div class="row hero">
+        <div class="col col-1">
+          <h1>Hello, I’m <span class="highlight">Danu</span></h1>
+          <p>Front-End Web Designer | Jakarta Timur, Indonesia</p>
+          <a href="mailto:danuaguspratama98@gmail.com" class="ctn">Contact</a>
         </div>
-        <div class="button">
-          <button>
-            <a href="mailto:inidanuuu@gmail.com" target="blank"><i class="fa fa-envelope"></i>Email</a>
-          </button>
-          <button>
-            <a href="https://github.com/danuapratama" target="blank"><i class="fab fa-github"></i>GitHub</a>
-          </button>
+        <div class="col col-2">
+          <div class="hero-img">
+            <img src="./img/profil.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -56,17 +60,17 @@
     <!-- About Section Start -->
     <section class="about" id="about">
       <div class="content">
-        <div class="title"><span>About Me</span></div>
+        <div class="title"><h3>ABOUT ME</h3></div>
         <div class="about-details">
           <div class="left">
-            <img src="Images/foto.jpg" alt="" />
+            <img src="img/foto.jpg" alt="" />
           </div>
           <div class="right">
             <div class="topic">Danu A. Pratama</div>
             <p>
-              Saya seorang mahasiswa dari perguruan tinggi swasta yang berlokasi di Jakarta Timur dengan program studi teknik informatika. Website ini adalah portofolio untuk project yang pernah saya kerjakan. Di antara project yang saya
-              kerjakan yaitu membangun desain antar muka sebuah laman web dengan fitur dan tampilan yang modern tanpa mengurangi fungsionalitas dari laman web itu sendiri, sebagai salah satu media informasi yang mudah di akses oleh publik.
-              Perkembangan pada fitur maupun desain akan terus dilakukan seiring bertambahnya pengetahuan dan keterampilan saya dalam bidang front-end web developer.
+              Saya merupakan mahasiswa aktif dari salah satu perguruan tinggi swasta yang berlokasi di Jakarta Timur dengan program studi teknik informatika. Website ini adalah portofolio untuk project yang pernah saya kerjakan. Di antara
+              project yang saya kerjakan yaitu membangun desain antar muka sebuah laman website dengan fitur dan tampilan yang modern, tanpa mengurangi fungsionalitas dari website itu sendiri sebagai salah satu media informasi yang mudah di
+              akses oleh publik. Perkembangan pada fitur maupun desain akan terus dilakukan seiring bertambahnya pengetahuan dan keterampilan saya dalam bidang front-end web designer.
             </p>
             <div class="button">
               <button><a href="https://t.me/ini_danu/" target="blank">Telegram</a></button>
@@ -76,98 +80,141 @@
       </div>
     </section>
 
-    <!-- My Skill Section Start -->
-    <!-- Section Tag and Other Div will same where we need to put same CSS -->
-    <section class="skills" id="skills">
-      <div class="content">
-        <div class="title"><span>Skills</span></div>
-        <div class="skills-details">
-          <div class="text">
-            <div class="topic">Skills Reflects Your Knowledge</div>
-            <p></p>
-            <div class="experience">
-              <div class="num">1</div>
-              <div class="exp">
-                Years Of <br />
-                Experience
-              </div>
-            </div>
+    <!-- Skills -->
+    <section class="skills container" id="skills">
+      <div class="title">
+        <h3>SKILLS</h3>
+        <h1>My Expertise</h1>
+      </div>
+      <div class="grid-wrapper">
+        <div class="grid-box">
+          <div class="icon-title">
+            <img src="./img/skill-1.png" alt="" />
+            <h2>Web Design</h2>
           </div>
-          <div class="boxes">
-            <div class="box">
-              <div class="topic">HTML</div>
-            </div>
-            <div class="box">
-              <div class="topic">CSS</div>
-            </div>
-            <div class="box">
-              <div class="topic">JavaScript</div>
-            </div>
-            <div class="box">
-              <div class="topic"></div>
-            </div>
+          <p><span class="highlight"></span></p>
+        </div>
+        <div class="grid-box">
+          <div class="icon-title">
+            <img src="./img/skill-2.png" alt="" />
+            <h2>HTML</h2>
+          </div>
+          <p><span class="highlight"></span></p>
+        </div>
+        <div class="grid-box">
+          <div class="icon-title">
+            <img src="./img/skill-3.png" alt="" />
+            <h2>CSS</h2>
+          </div>
+          <p><span class="highlight"></span></p>
+        </div>
+        <div class="grid-box">
+          <div class="icon-title">
+            <img src="./img/skill-4.png" alt="" />
+            <h2>JavaScript</h2>
+          </div>
+          <p><span class="highlight"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio container" id="portfolio">
+      <div class="rect-bg"></div>
+      <div class="title">
+        <h3>PORTFOLIO</h3>
+        <div class="ctn-title">
+          <h1>My Personal Project</h1>
+          <h4>
+            Discover All Projects on
+            <span class="highlight"
+              ><a href="https://github.com/danuapratama/" target="blank">Github <i class="fa fa-arrow-right"></i></a
+            ></span>
+          </h4>
+        </div>
+      </div>
+      <div class="grid-wrapper">
+        <div class="grid-box">
+          <img src="./img/prj-1.png" alt="" />
+          <div class="hover">
+            <h4>Application</h4>
+            <a href="https://danuapratama.github.io/hospital" target="blank" class="highlight">Demo <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="grid-box">
+          <img src="./img/prj-2.png" alt="" />
+          <div class="hover">
+            <h4>Application</h4>
+            <a href="https://danuapratama.github.io/landing-page" target="blank" class="highlight">Demo <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="grid-box">
+          <img src="./img/prj-3.png" alt="" />
+          <div class="hover">
+            <h4>Application</h4>
+            <a href="https://danuapratama.github.io/login-form" target="blank" class="highlight">Demo <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="grid-box">
+          <img src="./img/prj-4.png" alt="" />
+          <div class="hover">
+            <h4>Application</h4>
+            <a href="https://danuapratama.github.io/company" target="blank" class="highlight">Demo <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="grid-box">
+          <img src="./img/prj-5.png" alt="" />
+          <div class="hover">
+            <h4>Application</h4>
+            <a href="https://danuapratama.github.io/travel" target="blank" class="highlight">Demo <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="grid-box">
+          <img src="./img/prj-4.png" alt="" />
+          <div class="hover">
+            <h4>Application</h4>
+            <a href="#" class="highlight">Demo <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- My Projects Section Start -->
-    <section class="projects" id="projects">
-      <div class="content">
-        <div class="title"><span>My Projects</span></div>
-        <div class="boxes">
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-hospital"></i>
-            </div>
-            <div class="topic">Hospital</div>
-            <p>User Interface Design</p>
-            <div class="button">
-              <a href="https://danuapratama.github.io/hospital/" target="blank"> <button>Detail</button></a>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="icon">
-              <i class="far fa-paper-plane"></i>
-            </div>
-            <div class="topic">Landing Page</div>
-            <p>User Interface Design</p>
-            <div class="button">
-              <a href="https://danuapratama.github.io/landing-page/" target="blank"> <button>Detail</button></a>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="icon">
-              <i class="far fa-user"></i>
-            </div>
-            <div class="topic">login Form</div>
-            <p>User Interface Design</p>
-            <div class="button">
-              <a href="https://danuapratama.github.io/login-form/" target="blank"> <button>Detail</button></a>
-            </div>
-          </div>
-        </div>
-
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h3>CONTACT ME</h3>
         <div class="button">
-          <a href="projects.html" target="blank"> <button>Other &raquo;</button></a>
+          <a href="mailto:danuaguspratama98@gmail.com" target="blank">Email</a>
+          <a href="https://t.me/ini_danu" target="blank">Telegram</a>
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Footer Section Start -->
-    <footer>
-      <div class="text">
-        &#169;
-        <script type="text/javascript">
-          var creditsyear = new Date();
-          document.write(creditsyear.getFullYear());
-        </script>
-        <a expr:href="data:blog.homepageUrl"><data:blog.title />|</a><span> Danu A. Pratama</span>. All Rights Reserved.
-      </div>
-    </footer>
+    <div class="copyright container">
+      Copyright &#169;
+      <script type="text/javascript">
+        var creditsyear = new Date();
+        document.write(creditsyear.getFullYear());
+      </script>
+      <a expr:href="data:blog.homepageUrl"><data:blog.title />|</a><span> Danu A. Pratama</span>
+    </div>
 
-    <script src="script.js"></script>
+    <script>
+      let togglebtn = document.querySelector('.toggle-btn');
+      let navbar = document.querySelector('.navbar');
+
+      togglebtn.addEventListener('click', () => {
+        navbar.classList.toggle('mobile-nav');
+      });
+    </script>
   </body>
 </html>
