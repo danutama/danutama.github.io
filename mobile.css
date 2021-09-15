@@ -24,6 +24,7 @@
   }
   .nav-list ul {
     flex-direction: column;
+    text-align: center;
   }
   .nav-list ul li {
     margin-top: 30px;

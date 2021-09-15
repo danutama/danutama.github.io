@@ -20,6 +20,7 @@ html {
   --pink: #ea4c89;
   --circle: #f4f3ff;
   --light-blue: #d5e8fd;
+  --background: rgba(20, 20, 20, 0.7);
 }
 li {
   list-style: none;
@@ -195,6 +196,11 @@ a {
 .portfolio .title {
   text-align: center;
 }
+
+.portfolio img {
+  border-radius: 25px;
+}
+
 .portfolio .title .ctn-title {
   display: flex;
   width: 100%;
@@ -235,7 +241,7 @@ a {
   left: 15%;
   width: 60%;
   height: 60%;
-  background: var(--h1);
+  background: var(--background);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -267,6 +273,7 @@ a {
 .container .button a {
   margin: 20px;
   font-size: 20px;
+  font-weight: bold;
   color: var(--blue);
 }
 
@@ -282,7 +289,6 @@ a {
 .contact .quick-links ul li {
   margin: 0px 20px;
   color: var(--dark-purple);
-  font-weight: bold;
   cursor: pointer;
 }
 .copyright {
