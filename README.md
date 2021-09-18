@@ -4,7 +4,7 @@ Halo.. Perkenalkan, saya Danu. Ini adalah website portofolio pribadi saya, di da
 
 Assets :
 
-Nikuu 3D by Paperpillar 
+Nikuu 3D by Paperpillar
 https://www.figma.com/community/file/1000311109311441524/Nikuu-3d-Illustration-Pack-by-Paperpillar
 
 https://www.freepik.com/
