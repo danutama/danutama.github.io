@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="./mobile.css" />
   </head>
   <body>
+
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fa fa-arrow-up"></i></a>
+    </div>
+    
     <nav class="navbar">
       <div class="brand">
         <img src="./img/profil.png" alt="" class="logo" />
@@ -36,7 +42,6 @@
           <li>
             <a href="https://github.com/danuapratama" target="blank"><i class="fa fa-github"></i></a>
           </li>
-          <li><i class="fa fa-linkedin"></i></li>
         </ul>
       </div>
     </nav>
@@ -187,18 +192,24 @@
     <section class="contact" id="contact">
       <div class="container">
         <h3>CONTACT ME</h3>
-        <div class="button">
-          <a href="mailto:danuaguspratama98@gmail.com" target="blank">Email</a>
-          <a href="https://t.me/ini_danu" target="blank">Telegram</a>
-        </div>
-        <div class="quick-links">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        
+        <div class="wrapper">
+          <div class="icon telegram">
+            <div class="tooltip"><a href="https://t.me/ini_danu" target="blank">Telegram</div>
+            <span><i class="fa fa-paper-plane"></i></span>
+          </div>
+          <div class="icon email">
+            <div class="tooltip"><a href="mailto:danuaguspratama98@gmail.com" target="blank">Email</div>
+            <span><i class="fa fa-envelope"></i></span>
+          </div>
+          <div class="icon instagram">
+            <div class="tooltip"><a href="https://instagram.com/danuapratama" target="blank">Instagram</div>
+            <span><i class="fa fa-instagram"></i></span>
+          </div>
+          <div class="icon github">
+            <div class="tooltip"><a href="https://github.com/danuapratama" target="blank">Github</div>
+            <span><i class="fa fa-github"></i></span>
+          </div>
         </div>
       </div>
     </section>
