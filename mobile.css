@@ -8,7 +8,7 @@
   .home.container {
     height: 100%;
     margin-top: 120px;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
   }
   .home.container .row {
     flex-direction: column;
@@ -149,6 +149,10 @@
 }
 
 @media (max-width: 500px) {
+  .home.container .col-2 img {
+    margin-top: -2rem;
+  }
+
   .wrapper .icon:hover .tooltip {
     font-size: 13px;
     top: -50px;
