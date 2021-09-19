@@ -12,6 +12,7 @@ html {
   font-family: 'Poppins', arial;
   overflow-x: hidden;
 }
+
 :root {
   --h1: #1e1964;
   --blue: #358fef;
@@ -22,37 +23,45 @@ html {
   --light-blue: #d5e8fd;
   --background: rgba(20, 20, 20, 0.7);
 }
+
 li {
   list-style: none;
 }
+
 li:hover {
   font-size: 20px;
   font-weight: bold;
   transform: scale(1.2);
 }
+
 h1 {
   font-size: 50px;
   color: var(--h1);
   font-weight: 900;
 }
+
 h3 {
   color: var(--grey);
 }
+
 p {
   font-size: 16px;
   color: var(--grey);
 }
+
 a {
   text-decoration: none;
 }
+
 .ctn {
-  width: 100px;
+  width: 170px;
   padding: 8px 12px;
   background: var(--blue);
   color: whitesmoke;
   border-radius: 25px;
   text-align: center;
 }
+
 .ctn:hover {
   background: white;
   border: 1px solid var(--blue);
@@ -65,17 +74,21 @@ a {
   width: 80%;
   margin: 60px auto;
 }
+
 .row {
   display: flex;
   justify-content: center;
 }
+
 .col {
   display: flex;
   justify-content: center;
 }
+
 .highlight {
   color: var(--blue);
 }
+
 .circle {
   width: 500px;
   height: 500px;
@@ -96,6 +109,7 @@ a {
   justify-content: space-between;
   position: relative;
 }
+
 .toggle-btn i {
   font-size: 30px;
   color: var(--dark-purple);
@@ -105,20 +119,24 @@ a {
   display: none;
   text-align: center;
 }
+
 .navbar .nav-list ul,
 .social-icons ul {
   display: flex;
 }
+
 .nav-list ul li,
 .social-icons ul li {
   margin: 0px 30px;
   color: var(--dark-purple);
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
 }
+
 .social-icons ul li:hover {
   transform: scale(1.4);
 }
+
 .logo {
   width: 50px;
 }
@@ -130,17 +148,22 @@ a {
   height: 100vh;
   position: relative;
 }
+
 .row.hero .col-1 {
   width: 100%;
+  margin-top: -3rem;
   flex-direction: column;
   padding: 30px;
 }
+
 .row.hero .col-2 {
   width: 100%;
 }
+
 .row.hero .col-2 img {
   max-width: 80%;
 }
+
 .row.hero p {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -151,10 +174,12 @@ a {
 section {
   padding-top: 0px;
 }
+
 section .content {
   width: 80%;
   margin: 40px auto;
 }
+
 .about .about-details {
   display: flex;
   justify-content: space-between;
@@ -168,29 +193,36 @@ section .content {
   border-radius: 50%;
   box-shadow: 1px 1px 9px 5px #cdcdcd;
 }
+
 .about-details .right {
   width: 60%;
 }
+
 .right .topic {
   color: var(--blue);
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .about-details .right p {
   line-height: 25px;
   text-align: justify;
   color: #000;
 }
+
 .about .content .about-details .right .button a {
   color: var(--circle);
 }
+
 .about .content .about-details .right .button button:hover a {
   color: var(--blue);
 }
+
 section .button {
   margin: 16px 0;
 }
+
 section .button button {
   outline: none;
   padding: 8px 16px;
@@ -203,6 +235,7 @@ section .button button {
   cursor: pointer;
   transition: all 0.4s ease;
 }
+
 section .button button:hover {
   border-color: var(--blue);
   background-color: #fff;
@@ -218,6 +251,7 @@ section .button button:hover {
 .skills .title h1 {
   font-size: 30px;
 }
+
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40px, auto));
@@ -229,22 +263,27 @@ section .button button:hover {
   align-items: center;
   margin-bottom: 0px;
 }
+
 .icon-title img {
   margin-right: 20px;
   width: 80px;
   margin-top: 8px;
 }
+
 .icon-title h2 {
   font-size: 20px;
   color: var(--h1);
 }
+
 .grid-box .highlight {
   color: var(--dark-purple);
   font-weight: bold;
 }
+
 .grid-box {
   padding: 30px;
 }
+
 .skills .grid-box:hover {
   box-shadow: 0px 0px 30px #0000002f;
   border-radius: 20px;
@@ -255,6 +294,7 @@ section .button button:hover {
   margin-top: 150px;
   position: relative;
 }
+
 .portfolio .title {
   text-align: center;
 }
@@ -269,20 +309,25 @@ section .button button:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 .ctn-title h1 {
   font-size: 30px;
 }
+
 .ctn-title h4 {
   color: var(--dark-purple);
   cursor: pointer;
 }
+
 .ctn-title .highlight a {
   color: var(--blue);
 }
+
 .portfolio .grid-wrapper {
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   grid-gap: 20px;
 }
+
 .rect-bg {
   width: 700px;
   height: 400px;
@@ -297,12 +342,13 @@ section .button button:hover {
 .portfolio .grid-box {
   position: relative;
 }
+
 .hover {
   position: absolute;
-  top: 15%;
-  left: 15%;
+  top: 25%;
+  left: 23%;
   width: 60%;
-  height: 60%;
+  height: 50%;
   background: var(--background);
   display: flex;
   align-items: center;
@@ -313,6 +359,7 @@ section .button button:hover {
   transform: scaleX(0);
   transition: transform 0.5s ease;
 }
+
 .hover .highlight {
   color: var(--blue);
 }
@@ -328,6 +375,7 @@ section .button button:hover {
   padding: 60px;
   border-radius: 20px;
 }
+
 .contact .container h3 {
   margin-top: 30px;
   margin-bottom: 60px;
@@ -405,6 +453,7 @@ section .button button:hover {
   background: #fff;
   color: var(--blue);
 }
+
 .wrapper .email:hover span,
 .wrapper .email:hover .tooltip,
 .wrapper .email:hover .tooltip:before {
@@ -444,6 +493,7 @@ section .button button:hover {
   border-radius: 10px;
   transition: 0.4s;
 }
+
 .scroll-button a:hover {
   background: #fff;
   color: var(--h1);

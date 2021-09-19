@@ -2,6 +2,12 @@
   .skills .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   }
+
+  .portfolio.container .grid-wrapper {
+    justify-content: center;
+    right: 0;
+    left: 23%;
+  }
 }
 
 @media (max-width: 1120px) {
@@ -10,12 +16,15 @@
     margin-top: 120px;
     margin-bottom: 3rem;
   }
+
   .home.container .row {
     flex-direction: column;
   }
+
   .home.container .col-1 {
     padding: 20px;
   }
+
   .home.container .col-2 img {
     max-width: 90%;
   }
@@ -24,12 +33,14 @@
     justify-content: center;
     flex-direction: column;
   }
+
   .about .about-details .left img {
     display: flex;
     justify-content: center;
     width: 10rem;
     height: 10rem;
   }
+
   .about-details .right {
     width: 90%;
     margin: 40px 0;
@@ -45,25 +56,30 @@
   .toggle-btn i {
     display: block;
   }
+
   .brand img {
     position: absolute;
     top: 20px;
     left: 20px;
     width: 20px;
   }
+
   .navbar {
     background: var(--circle);
     height: 100vh;
     flex-direction: column;
     display: none;
   }
+
   .mobile-nav {
     display: flex;
   }
+
   .nav-list ul {
     flex-direction: column;
     text-align: center;
   }
+
   .nav-list ul li {
     margin-top: 30px;
   }
@@ -72,27 +88,34 @@
     height: 100%;
     margin-top: 120px;
   }
+
   .home.container .row {
     flex-direction: column;
   }
+
   .home.container .col-1 {
     padding: 20px;
   }
+
   .home.container .col-2 img {
     max-width: 90%;
   }
+
   .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   }
+
   .grid-box {
     padding: 10px;
   }
+
   .skills {
     height: 100%;
   }
+
   .portfolio .title .ctn-title {
     flex-direction: column;
-    text-align: left;
+    text-align: center;
   }
 
   .portfolio .title .ctn-title h1 {
@@ -105,9 +128,11 @@
     padding-bottom: 40px;
     width: 90%;
   }
+
   .contact .container .button {
     margin-bottom: 30px;
   }
+
   .contact .quick-links {
     flex-direction: column;
   }
@@ -115,6 +140,7 @@
   .contact .quick-links ul li {
     margin: 0px 5px;
   }
+
   .copyright p {
     font-size: 12px;
   }
@@ -125,14 +151,14 @@
     height: 310px;
     width: 200;
   }
+
   .about .right .topic {
     text-align: center;
   }
 
   .portfolio.container .grid-wrapper {
     justify-content: center;
-    right: 0;
-    left: 0;
+    left: 23%;
   }
 }
 
@@ -141,6 +167,7 @@
     width: 100%;
     justify-content: center;
   }
+
   .rect-bg {
     top: -3rem;
     width: 600px;
@@ -149,18 +176,39 @@
 }
 
 @media (max-width: 500px) {
+  .home.container .col-1 {
+    margin-top: -60px;
+  }
+
   .home.container .col-2 img {
-    margin-top: -2rem;
+    margin-top: -1rem;
+  }
+
+  .about .right p {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .about .right .button {
+    text-align: center;
+  }
+
+  .portfolio .grid-box img {
+    width: 100%;
+  }
+
+  .portfolio .grid-box {
+    width: 100%;
   }
 
   .wrapper .icon:hover .tooltip {
     font-size: 13px;
     top: -50px;
   }
+
   .wrapper .instagram {
-    display: none;
-  }
-  .wrapper .github {
     display: none;
   }
 }
