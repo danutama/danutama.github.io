@@ -11,12 +11,13 @@ body,
 html {
   font-family: 'Poppins', arial;
   overflow-x: hidden;
+  background-color: #192e3a;
 }
 
 :root {
-  --h1: #1e1964;
+  --h1: #fff;
   --blue: #358fef;
-  --dark-purple: #55527c;
+  --white: #fff;
   --grey: #b4b2c5;
   --pink: #ea4c89;
   --circle: #f4f3ff;
@@ -63,7 +64,7 @@ a {
 }
 
 .ctn:hover {
-  background: white;
+  background: var(--white);
   border: 1px solid var(--blue);
   color: var(--blue);
   font-weight: bold;
@@ -110,9 +111,12 @@ a {
   position: relative;
 }
 
+.nav-list ul li a {
+  color: var(--white);
+}
 .toggle-btn i {
   font-size: 30px;
-  color: var(--dark-purple);
+  color: var(--white);
   position: absolute;
   top: 20px;
   right: 20px;
@@ -126,9 +130,9 @@ a {
 }
 
 .nav-list ul li,
-.social-icons ul li {
+.social-icons ul li a {
   margin: 0px 30px;
-  color: var(--dark-purple);
+  color: var(--white);
   font-size: 20px;
   cursor: pointer;
 }
@@ -191,7 +195,7 @@ section .content {
   width: 300px;
   object-fit: contain;
   border-radius: 50%;
-  box-shadow: 1px 1px 9px 5px #cdcdcd;
+  box-shadow: none;
 }
 
 .about-details .right {
@@ -208,7 +212,7 @@ section .content {
 .about-details .right p {
   line-height: 25px;
   text-align: justify;
-  color: #000;
+  color: var(--white);
 }
 
 .about .content .about-details .right .button a {
@@ -266,8 +270,9 @@ section .button button:hover {
 
 .icon-title img {
   margin-right: 20px;
-  width: 80px;
-  margin-top: 8px;
+  width: 50px;
+  margin-top: auto;
+  border-radius: 5px;
 }
 
 .icon-title h2 {
@@ -281,12 +286,12 @@ section .button button:hover {
 }
 
 .grid-box {
-  padding: 30px;
+  padding: 10px;
 }
 
 .skills .grid-box:hover {
-  box-shadow: 0px 0px 30px #0000002f;
-  border-radius: 20px;
+  box-shadow: 0px 0px 30px #fff;
+  border-radius: 10px;
 }
 
 /* Portfolio */
@@ -315,7 +320,7 @@ section .button button:hover {
 }
 
 .ctn-title h4 {
-  color: var(--dark-purple);
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -331,7 +336,7 @@ section .button button:hover {
 .rect-bg {
   width: 700px;
   height: 400px;
-  background: var(--light-blue);
+  color: var(--light-blue);
   position: absolute;
   top: -10%;
   right: -20%;
@@ -346,7 +351,7 @@ section .button button:hover {
 .hover {
   position: absolute;
   top: 25%;
-  left: 23%;
+  left: 52px;
   width: 60%;
   height: 50%;
   background: var(--background);
@@ -371,7 +376,7 @@ section .button button:hover {
 /* Contact */
 .contact .container {
   text-align: center;
-  background: var(--light-blue);
+  background: #284b5f;
   padding: 60px;
   border-radius: 20px;
 }
@@ -412,7 +417,8 @@ section .button button:hover {
 
 .wrapper .icon span i {
   line-height: 60px;
-  font-size: 25px;
+  font-size: 30px;
+  align-items: center;
 }
 
 .wrapper .icon .tooltip {
@@ -475,9 +481,9 @@ section .button button:hover {
   color: var(--blue);
 }
 
-.copyright {
+.credits.container {
   text-align: center;
-  color: var(--dark-purple);
+  color: var(--white);
   font-weight: bold;
 }
 
@@ -486,8 +492,8 @@ section .button button:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: #fff;
-  background: var(--h1);
+  color: var(--white);
+  background: var(--blue);
   padding: 7px 12px;
   font-size: 13px;
   border-radius: 10px;
@@ -496,5 +502,5 @@ section .button button:hover {
 
 .scroll-button a:hover {
   background: #fff;
-  color: var(--h1);
+  color: var(--blue);
 }
