@@ -1,0 +1,68 @@
+/*!
+ * Start Bootstrap - Grayscale v5.0.2 (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ */
+
+.btn {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1rem;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: #358fef;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #358fef;
+}
+
+.btn-primary:focus {
+  background-color: #358fef;
+  color: #fff;
+}
+
+.btn-primary:active {
+  background-color: #79b5f5 !important;
+}
+
+.about-section {
+  padding-top: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f1f1f), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
+  background: linear-gradient(to bottom, #1f1f1f 0, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+
+body {
+  font-family: Nunito;
+  letter-spacing: 0.0625em;
+}
+
+a {
+  color: #358fef;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.iconbig {
+  font-size: 2rem !important;
+}
+
+.circularimage {
+  border-radius: 100px;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+.container.text-white-50 {
+  margin-top: 15px;
+}
