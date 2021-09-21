@@ -16,21 +16,21 @@
 }
 
 .btn-primary {
-  background-color: #ec5d0b;
+  background-color: #cc7224;
 }
 
 .btn-primary:hover {
   background-color: #fff;
-  color: #ec5d0b;
+  color: #cc7224;
 }
 
 .btn-primary:focus {
-  background-color: #ec5d0b;
+  background-color: #cc7224;
   color: #fff;
 }
 
 .btn-primary:active {
-  background-color: #da5508 !important;
+  background-color: #9b5417 !important;
 }
 
 .abcout-setion {
@@ -60,7 +60,7 @@ body {
 }
 
 a {
-  color: #ec5d0b;
+  color: #cc7224;
 }
 
 a:focus,
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .container.text-white-50 {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 h3 {
