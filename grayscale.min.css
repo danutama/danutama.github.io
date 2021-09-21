@@ -16,21 +16,22 @@
 }
 
 .btn-primary {
-  background-color: #cc7224;
+  background-color: #ddb557;
+  color: #312302;
 }
 
 .btn-primary:hover {
-  background-color: #fff;
-  color: #cc7224;
+  background-color: #e7cb89;
+  color: #312302;
 }
 
 .btn-primary:focus {
-  background-color: #cc7224;
-  color: #fff;
+  background-color: #ddb557;
+  color: #312302;
 }
 
 .btn-primary:active {
-  background-color: #9b5417 !important;
+  background-color: #a17d29 !important;
 }
 
 .abcout-setion {
@@ -60,13 +61,13 @@ body {
 }
 
 a {
-  color: #cc7224;
+  color: #ddb557;
 }
 
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #e7cb89;
 }
 
 .iconbig {
