@@ -16,17 +16,17 @@
 }
 
 .btn-primary {
-  background-color: #ddb557;
-  color: #312302;
-}
-
-.btn-primary:hover {
   background-color: #e7cb89;
   color: #312302;
 }
 
-.btn-primary:focus {
+.btn-primary:hover {
   background-color: #ddb557;
+  color: #312302;
+}
+
+.btn-primary:focus {
+  background-color: #e7cb89;
   color: #312302;
 }
 
@@ -61,13 +61,13 @@ body {
 }
 
 a {
-  color: #ddb557;
+  color: #e7cb89;
 }
 
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #e7cb89;
+  color: #ddb557;
 }
 
 .iconbig {
