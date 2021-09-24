@@ -15,7 +15,7 @@
   font-size: 90%;
   white-space: normal;
 
-  animation: shake 7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  animation: shake 6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
