@@ -25,7 +25,7 @@
   }
 
   .home.container .col-2 img {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .about .about-details {
@@ -64,7 +64,7 @@
   }
 
   .navbar {
-    background: #192e3a;
+    background: var(--circle);
     height: 100vh;
     flex-direction: column;
     display: none;
@@ -97,7 +97,7 @@
   }
 
   .home.container .col-2 img {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .grid-wrapper {
@@ -124,18 +124,6 @@
     width: 90%;
   }
 
-  .contact .container .button {
-    margin-bottom: 30px;
-  }
-
-  .contact .quick-links {
-    flex-direction: column;
-  }
-
-  .contact .quick-links ul li {
-    margin: 0px 5px;
-  }
-
   .copyright p {
     font-size: 12px;
   }
@@ -149,10 +137,6 @@
 
   .about .right .topic {
     text-align: center;
-  }
-
-  .wrapper .icon:hover .tooltip {
-    display: none;
   }
 }
 
@@ -175,7 +159,7 @@
   }
 
   .home.container .col-2 img {
-    margin-top: -1rem;
+    margin-top: 2rem;
   }
 
   .about .right p {
@@ -195,15 +179,6 @@
 
   .portfolio .grid-box {
     width: 100%;
-  }
-
-  .wrapper .icon:hover .tooltip {
-    font-size: 13px;
-    top: -50px;
-  }
-
-  .wrapper .instagram {
-    display: none;
   }
 }
 
