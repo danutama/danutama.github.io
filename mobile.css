@@ -75,11 +75,7 @@
     display: flex;
   }
 
-  .nav-list .fa:hover {
-    color: var(--blue);
-  }
-
-  .nav-list a:hover {
+  .nav-list ul li:hover {
     color: var(--blue);
   }
 
