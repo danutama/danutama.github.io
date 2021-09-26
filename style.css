@@ -306,6 +306,7 @@ section .button button:hover {
 
 .portfolio img {
   border-radius: 25px;
+  box-shadow: 0px 0px 8px var(--grey);
 }
 
 .portfolio .title .ctn-title {
@@ -351,7 +352,7 @@ section .button button:hover {
 .hover {
   position: absolute;
   top: 25%;
-  left: 52px;
+  left: 55px;
   width: 60%;
   height: 50%;
   background: var(--background);
@@ -377,9 +378,9 @@ section .button button:hover {
 .contact .container {
   text-align: center;
   background: var(--background);
-  padding: 60px;
+  padding: 50px;
   border-radius: 15px;
-  width: 45%;
+  width: 30%;
 }
 
 .contact .container h3 {
