@@ -18,20 +18,20 @@
 
     <!-- Move to up button -->
     <div class="scroll-button">
-      <a href="#home"><i class="fa fa-arrow-up"></i></a>
+      <a href="#navbar"><i class="fa fa-arrow-up"></i></a>
     </div>
     
-    <nav class="navbar">
+    <nav class="navbar container" id="navbar">
       <div class="brand">
         <img src="./img/home.png" alt="" class="logo" />
       </div>
       <div class="nav-list">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#connect with me">Contact</a></li>
+          <li><i class="fa fa-home"><a href="#home">Home</a></i></li>
+          <li><i class="fa fa-user"><a href="#about">About</a></i></li>
+          <li><i class="fa fa-laptop"><a href="#skills">Skills</a></i></li>
+          <li><i class="fa fa-code"><a href="#portfolio">Portfolio</a></i></li>
+          <li><i class="fa fa-phone"><a href="#connect with me">Contact</a></i></li>
         </ul>
       </div>
       <div class="social-icons">
@@ -47,9 +47,6 @@
         </ul>
       </div>
     </nav>
-    <div class="toggle-btn">
-      <i class="fa fa-bars"></i>
-    </div>
 
     <!-- Home -->
     <section class="home container" id="home">
@@ -210,14 +207,6 @@
     </section>
 
     <div class="credits container">&#169;<script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script></a> Danu A. Pratama</div>
-   
-    <script>
-      let togglebtn = document.querySelector('.toggle-btn');
-      let navbar = document.querySelector('.navbar');
 
-      togglebtn.addEventListener('click', () => {
-        navbar.classList.toggle('mobile-nav');
-      });
-    </script>
   </body>
 </html>
