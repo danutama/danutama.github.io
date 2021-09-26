@@ -53,7 +53,7 @@
 
   /* Navbar */
   .navbar.container {
-    padding: 17px 0;
+    padding: 15px 0;
     margin-bottom: 0;
     border-radius: 20px 20px 0 0;
     width: 100%;
@@ -75,6 +75,14 @@
     display: flex;
   }
 
+  .nav-list .fa:hover {
+    color: var(--blue);
+  }
+
+  .nav-list a:hover {
+    color: var(--blue);
+  }
+
   .social-icons {
     display: none;
   }
@@ -86,7 +94,8 @@
   .nav-list a {
     font-family: 'poppins';
     text-align: center;
-    font-size: 15px;
+    margin-top: 5px;
+    font-size: 10px;
     justify-content: center;
   }
 
