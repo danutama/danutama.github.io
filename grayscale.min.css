@@ -22,17 +22,17 @@
 
 .btn-primary:hover {
   background-color: rgba(207, 160, 106, 0.2);
-  color: #e7cb89;
+  color: #fff;
 }
 
 .btn-primary:focus {
   background-color: rgba(207, 160, 106, 0.2);
-  color: #e7cb89;
+  color: #fff;
 }
 
 .btn-primary:active {
-  background-color: rgba(207, 160, 106, 0.2)!important;
-  color: #e7cb89;
+  background-color: rgba(207, 160, 106, 0.2) !important;
+  color: #fff;
 }
 
 .abcout-setion {
@@ -72,9 +72,9 @@ a:hover {
 }
 
 .iconbig {
-  font-size: 1.6rem !important;
+  font-size: 1.8rem !important;
   margin-top: -8rem;
-  margin: 0 10px;
+  margin-bottom: 1rem;
 }
 
 .circularimage {
