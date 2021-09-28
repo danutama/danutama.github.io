@@ -11,6 +11,7 @@ body,
 html {
   font-family: 'Poppins', arial;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 :root {
