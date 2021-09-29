@@ -51,9 +51,9 @@
     font-size: 35px;
   }
 
-  /* Navbar */
+  /* Mobile Navbar */
   .navbar.container {
-    padding: 12px 0;
+    padding: 13px 0;
     margin-bottom: 0;
     border-radius: 20px 20px 0 0;
     width: 100%;
@@ -73,10 +73,11 @@
     text-align: center;
     flex-direction: column;
     display: flex;
+    color: rgb(129, 127, 127);
   }
 
-  .nav-list ul li:hover {
-    color: var(--blue);
+  .nav-list .fa:hover {
+    color: #000;
   }
 
   .social-icons {
@@ -103,7 +104,6 @@
     display: none;
   }
 
-  /* home */
   .home.container {
     height: 100%;
     margin-top: 120px;

@@ -100,7 +100,6 @@ a {
 }
 
 /* Navbar */
-
 .navbar.container {
   background-color: var(--circle);
   margin-top: 0;
@@ -120,6 +119,7 @@ a {
   font-family: 'poppins';
 }
 
+/* For Mobile Navbar */
 .nav-list i::before {
   display: none;
 }
@@ -336,7 +336,6 @@ section .button button:hover {
 
 .portfolio .grid-wrapper {
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  grid-gap: 20px;
 }
 
 .rect-bg {
@@ -357,7 +356,7 @@ section .button button:hover {
 .hover {
   position: absolute;
   top: 25%;
-  left: 55px;
+  left: 57px;
   width: 60%;
   height: 50%;
   background: var(--background);
@@ -382,7 +381,7 @@ section .button button:hover {
 /* Contact */
 .contact .container {
   text-align: center;
-  background: var(--background);
+  background: rgb(56, 56, 56);
   padding: 50px;
   border-radius: 15px;
   width: 30%;
@@ -414,14 +413,14 @@ section .button button:hover {
   font-weight: bold;
 }
 
-/* Scroll TO Top Button CSS */
+/* Scroll To Top Button CSS */
 .scroll-button a {
   position: fixed;
   bottom: 20px;
   right: 20px;
   color: var(--white);
   background: var(--blue);
-  padding: 7px 12px;
+  padding: 5px 10px;
   font-size: 13px;
   border-radius: 10px;
   transition: 0.4s;
