@@ -28,13 +28,13 @@
 }
 
 .btn-primary:focus {
-  background-color: rgba(207, 160, 106, 0.1);
+  background-color: rgba(255, 255, 255, 0.01);
   color: #fff;
   border: .1rem solid #e7cb89;
 }
 
 .btn-primary:active {
-  background-color: rgba(207, 160, 106, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.01) !important;
   color: #fff;
   border: .1rem solid #e7cb89 !important
 }
