@@ -16,27 +16,28 @@
 }
 
 .btn-primary {
-  background-color: #e7cb89;
-  color: #312302;
-  border: .1rem solid #e7cb89;
+ 
+  background-color: rgba(255, 255, 255, 0.01);
+  color: #000000;
+  border: .1rem solid #ffc116;
 }
 
 .btn-primary:hover {
-  background-color: rgba(255, 255, 255, 0.01);
-  color: #fff;
-  border: .1rem solid #e7cb89;
+  background-color: #ffc116;
+  color: #000000;
+  border: .1rem solid #ffc116;
 }
 
 .btn-primary:focus {
   background-color: rgba(255, 255, 255, 0.01);
-  color: #fff;
-  border: .1rem solid #e7cb89;
+  color: #000000;
+  border: .1rem solid #ffc116;
 }
 
 .btn-primary:active {
-  background-color: rgba(255, 255, 255, 0.01) !important;
-  color: #fff;
-  border: .1rem solid #e7cb89 !important
+  background-color: #ffc116 !important;
+  color: #000 !important;
+  border: .1rem solid #ffc116 !important;
 }
 
 .abcout-setion {
@@ -48,7 +49,7 @@
 body {
   font-family: Nunito;
   letter-spacing: 0.0625em;
-  background-image: url('./img/bg3.jpeg');
+  background-image: url('img/bg4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: relative;
@@ -66,13 +67,13 @@ body {
 }
 
 a {
-  color: #e7cb89;
+  color: #ffc116;
 }
 
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #ddb557;
+  color: #e9b31f;
 }
 
 .iconbig {
@@ -88,7 +89,7 @@ a:hover {
   margin-top: 1.5rem;
 }
 
-.container.text-white-50 {
+.container.text-secondary {
   margin-top: 25px;
 }
 
