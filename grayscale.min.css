@@ -6,7 +6,7 @@
 
 .btn {
   -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1900rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: .8rem;
   font-family: 'Varela Round';
   font-size: 80%;
@@ -29,7 +29,7 @@
 }
 
 .btn-primary:focus {
-  background-color: rgba(255, 255, 255, 0.01);
+  background-color: #ffc116;
   color: #000000;
   border: .1rem solid #ffc116;
 }
@@ -73,7 +73,7 @@ a {
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #e9b31f;
+  color: #000000;
 }
 
 .iconbig {
