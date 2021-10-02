@@ -315,7 +315,6 @@ section .button button:hover {
 
 .portfolio img {
   border-radius: 25px;
-  box-shadow: 0px 0px 8px var(--grey);
 }
 
 .portfolio .title .ctn-title {
@@ -355,6 +354,10 @@ section .button button:hover {
 
 .portfolio .grid-box {
   position: relative;
+}
+
+.portfolio .grid-box:hover img {
+  box-shadow: 0px 0px 8px var(--grey);
 }
 
 .hover {
