@@ -142,7 +142,7 @@
   .contact .container {
     padding: 10px;
     padding-bottom: 40px;
-    width: 90%;
+    width: 80%;
   }
 
   .copyright p {
@@ -180,7 +180,8 @@
   }
 
   .home.container .col-2 img {
-    margin-top: 2rem;
+    margin-top: -1rem;
+    max-width: 100%;
   }
 
   .about .right p {
