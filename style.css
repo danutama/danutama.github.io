@@ -59,6 +59,7 @@ a {
   color: whitesmoke;
   border-radius: 25px;
   text-align: center;
+  box-shadow: 0px 0px 5px var(--grey);
 }
 
 .ctn:hover {
@@ -316,7 +317,7 @@ section .button button:hover {
 .portfolio img {
   border-radius: 25px;
 }
-
+                      
 .portfolio .title .ctn-title {
   display: flex;
   width: 100%;
@@ -408,7 +409,7 @@ section .button button:hover {
 .socials a:focus,
 .socials a:hover {
   text-decoration: none;
-  color: #adadad;
+  color: var(--blue);
 }
 
 .credits.container {

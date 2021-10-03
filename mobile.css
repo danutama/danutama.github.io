@@ -151,6 +151,11 @@
 }
 
 @media (max-width: 900px) {
+  
+  html{
+    scroll-behavior:unset;
+  }
+
   .about .left img {
     height: 310px;
     width: 200;
