@@ -224,10 +224,8 @@ section .content {
   color: var(--h1);
 }
 
-.about-details .right .btn-link {
+.about-details .btn-link {
   color: var(--blue) !important;
-  font-size: 14px;
-  line-height: 35px;
   cursor: pointer;
 }
 
