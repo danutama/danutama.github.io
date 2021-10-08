@@ -82,11 +82,17 @@
           </div>
           <div class="right">
             <div class="topic">Danu A. Pratama</div>
-            <p>
-              Saya merupakan mahasiswa aktif dari salah satu perguruan tinggi swasta yang berlokasi di Jakarta Timur dengan program studi teknik informatika. Website ini adalah portofolio untuk project yang pernah saya kerjakan. Di antara
-              project yang saya kerjakan yaitu membangun desain antar muka sebuah laman website dengan fitur dan tampilan yang modern, tanpa mengurangi fungsionalitas dari website itu sendiri sebagai salah satu media informasi yang mudah di
-              akses oleh publik. Perkembangan pada fitur maupun desain akan terus dilakukan seiring bertambahnya pengetahuan dan keterampilan saya dalam bidang front-end web designer.
-            </p>
+
+            <p id="demo"></p>
+           
+            <script>
+              function klik(){
+              document.getElementById("demo").innerHTML = " Saya merupakan mahasiswa aktif dari salah satu perguruan tinggi yang berlokasi di Jakarta Timur dengan program studi teknik informatika. Website ini adalah portofolio untuk project yang pernah saya kerjakan. Di antara project yang saya kerjakan yaitu membangun desain antar muka sebuah laman website dengan fitur dan tampilan yang modern, tanpa mengurangi fungsionalitas dari website itu sendiri sebagai media informasi yang mudah diakses oleh publik. Perkembangan pada fitur maupun desain akan terus dilakukan seiring bertambahnya pengetahuan dan keterampilan saya dalam bidang front-end web designer. ";
+              }
+            </script>
+
+            <div class="btn-link" title="Click to read more" onclick="klik()">Read more...</a></div>
+
             <div class="button">
               <button><a href="#connect-with-me">Contact</a></button>
             </div>
