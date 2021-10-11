@@ -185,7 +185,7 @@ a {
 
 /* About */
 section {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 section .content {
@@ -353,9 +353,6 @@ section .button button:hover {
   background-color: #fff;
   padding: 10px;
   border-radius: 25px;
-}
-
-.portfolio-card .box:hover {
   box-shadow: 0px 0px 5px var(--grey);
 }
 
