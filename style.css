@@ -155,7 +155,7 @@ a {
 
 /* Home */
 .home.container {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: -10rem;
   height: 100vh;
   position: relative;
@@ -185,7 +185,7 @@ a {
 
 /* About */
 section {
-  padding-top: 0;
+  padding-top: 30px;
 }
 
 section .content {
@@ -253,7 +253,6 @@ section .button button {
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
-
 }
 
 section .button button:hover {
@@ -264,6 +263,10 @@ section .button button:hover {
 }
 
 /* Skills */
+.skills.container {
+  padding-top: 30px;
+}
+
 .title {
   text-align: center;
   margin-bottom: 60px;
@@ -298,11 +301,6 @@ section .button button:hover {
   font-weight: 600;
 }
 
-.grid-box .highlight {
-  color: var(--dark-purple);
-  font-weight: bold;
-}
-
 .grid-box {
   padding: 10px;
 }
@@ -314,19 +312,12 @@ section .button button:hover {
 }
 
 /* Portfolio */
-.portfolio {
-  margin-top: 150px;
-  position: relative;
+.portfolio.container {
+  padding-top: 40px;
 }
 
 .portfolio .title {
   text-align: center;
-}
-
-.portfolio img {
-  border-radius: 10px;
-  width: 100% ;
-  box-shadow: 0px 0px 8px var(--grey);
 }
                       
 .portfolio .title .ctn-title {
@@ -346,62 +337,69 @@ section .button button:hover {
 }
 
 .ctn-title .highlight a {
-  color: var(--blue);
+  color: var(--blue) !important;
 }
 
-.portfolio .grid-wrapper {
+.portfolio-card {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
   justify-content: center;
 }
 
-.rect-bg {
-  width: 700px;
-  height: 400px;
-  color: var(--blue);
-  position: absolute;
-  top: -10%;
-  right: -20%;
-  z-index: -1;
-  border-radius: 20px;
+.portfolio-card .box {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 25px;
 }
 
-.portfolio .grid-box {
-  position: relative;
+.portfolio-card .box:hover {
+  box-shadow: 0px 0px 5px var(--grey);
 }
 
-.portfolio .grid-box:hover img {
-  box-shadow: 0px 0px 8px var(--grey);
+.portfolio-card .box .box-img {
+  width: 100%;
+  height: 200px;
 }
 
-.hover {
+.portfolio-card .box .box-img img {
   width: 100%;
   height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  
+  border-radius: 25px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portfolio-card .box h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 1rem 0 1rem;
+}
+
+.portfolio-card .box h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--main-color);
+  margin: 1rem 0 1rem;
+}
+
+.portfolio-card .box .btn {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  color: whitesmoke;
-  border-radius: 10px;
-  transform: scaleX(0);
-  transition: transform 0.5s ease;
-
-  backdrop-filter: blur(15px);
-	-webkit-backdrop-filter: blur(10px);
-	background-color: rgba(255,255,255,0.9);
-  color: var(--h1);
-	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+  justify-content: center;
+  background: var(--blue);
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px var(--grey);
 }
 
-.hover .highlight {
-  color: #005abb;
-}
-
-.portfolio .grid-box:hover .hover {
-  transform: scaleX(1);
+.portfolio-card .box .btn:hover {
+  background: var(--white);
+  color: var(--blue);
+  box-shadow: 0px 0px 5px var(--grey);
+  transition: all 0.4s ease;
 }
 
 /* Contact */
