@@ -146,7 +146,6 @@
 }
 
 @media (max-width: 900px) {
-  
   html{
     scroll-behavior:unset;
   }
@@ -172,9 +171,20 @@
   }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 640px) {
   .portfolio-card {
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+    gap: 1rem;
+  }
+
+  .portfolio-card .box h3 {
+    font-size: 13px;
+    margin: 8px 0 8px;
+  }
+  
+  .portfolio-card .box h2 {
+    font-size: 14px;
+    margin: 8px 0 8px;
   }
 }
 
@@ -205,6 +215,12 @@
 
   .skills .grid-box {
     margin: -20px 0 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio-card {
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   }
 }
 

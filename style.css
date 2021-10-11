@@ -185,7 +185,7 @@ a {
 
 /* About */
 section {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 section .content {
@@ -352,13 +352,12 @@ section .button button:hover {
 .portfolio-card .box {
   background-color: #fff;
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 20px;
   box-shadow: 0px 0px 5px var(--grey);
 }
 
 .portfolio-card .box .box-img {
   width: 100%;
-  height: 200px;
 }
 
 .portfolio-card .box .box-img img {
@@ -382,13 +381,17 @@ section .button button:hover {
   margin: 1rem 0 1rem;
 }
 
+.portfolio-card .btn {
+  font-size: 15px;
+}
+
 .portfolio-card .box .btn {
   display: flex;
   justify-content: center;
   background: var(--blue);
   color: #fff;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 5px;
+  border-radius: 15px;
   box-shadow: 0px 0px 5px var(--grey);
 }
 
