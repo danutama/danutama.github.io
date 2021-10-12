@@ -119,6 +119,25 @@ a {
   font-family: 'nunito';
 }
 
+.badge-notif {
+  position:relative;
+}
+
+.badge-notif[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: 2px;
+  right: -8px;
+  font-size: .7rem;
+  background: #e53935;
+  color: white;
+  width: 7px;
+  height: 7px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+}
+
 /* For Mobile Navbar */
 .nav-list i::before {
   display: none;

@@ -53,6 +53,25 @@
   }
 
   /* Mobile Navbar */
+  .badge-notif {
+    position:relative;
+  }
+  
+  .badge-notif[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: 0;
+    right: -13px;
+    font-size: .7rem;
+    background: #e53935;
+    color: white;
+    width: 7px;
+    height: 7px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+  }
+  
   .navbar.container {
     padding: 13px 0;
     margin-bottom: 0;
