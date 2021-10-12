@@ -7,6 +7,26 @@
   white-space: normal;
 }
 
+.badge-notif {
+  position:relative;
+}
+
+.badge-notif[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -2px;
+  right: 3px;
+  font-size: .7rem;
+  background: #f50e0a;
+  color: white;
+  width: 8px;
+  height: 8px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  border: solid 1px;
+}
+
 .insta-button-shake {
   border-radius: 25px;
   width: 30rem;
