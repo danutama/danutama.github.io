@@ -84,7 +84,7 @@
     bottom: 0;
     z-index: 999;
   }
-
+  
   .nav-list .bx {
     font-size: 1.9rem;
     margin: 0px -12px;
@@ -99,7 +99,7 @@
   .nav-list .bx:hover {
     color: #000;
   }
-
+  
   .social-icons {
     display: none;
   }

@@ -31,10 +31,6 @@ li {
   list-style: none;
 }
 
-.nav-list a:hover {
-  color: var(--blue);
-}
-
 h1 {
   font-size: 50px;
   color: var(--h1);
@@ -51,13 +47,6 @@ p {
 }
 
 a {
-  text-decoration: none;
-}
-
-a:focus, 
-a:active,
-a:hover {
-  outline: none !important;
   text-decoration: none;
 }
 
@@ -125,6 +114,10 @@ a:hover {
 
 .nav-list a {
   font-family: 'nunito';
+}
+
+.nav-list a:hover {
+  color: var(--blue);
 }
 
 .badge-notif {
@@ -257,6 +250,10 @@ section .content {
   cursor: pointer;
 }
 
+.about-details .btn-link:hover {
+  text-decoration: underline;
+}
+
 .about-details .button {
   margin: 20px 0;
 }
@@ -358,6 +355,10 @@ section .content {
 
 .ctn-title .highlight a {
   color: var(--blue) !important;
+}
+
+.ctn-title .highlight a:hover {
+  text-decoration: underline;
 }
 
 .portfolio-card {
