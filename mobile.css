@@ -43,7 +43,7 @@
   .contact .container {
     padding: 10px;
     padding-bottom: 40px;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -238,12 +238,6 @@
 
   .skills .grid-box {
     margin: -20px 0 0;
-  }
-}
-
-@media (max-width: 400px) {
-  .portfolio-card {
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   }
 }
 

@@ -61,13 +61,14 @@ a {
 }
 
 .ctn:hover {
-  background: var(--white);
-  color: var(--button);
+  background: var(--button);
+  color: var(--white);
+  box-shadow: none;
   transition: all 0.4s ease;
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 60px auto;
 }
 
@@ -272,10 +273,10 @@ section .content {
 }
 
 .about-details .button li a:hover{
-  box-shadow: 0px 0px 5px var(--grey);
+  box-shadow: none;
   transition: all 0.4s ease;
-  background: var(--white);
-  color: var(--button);
+  background: var(--button);
+  color: var(--white);
 }
 
 /* Skills */
@@ -321,10 +322,15 @@ section .content {
   padding: 10px;
 }
 
-.skills .grid-box:hover {
-  box-shadow: 0px 0px 8px var(--grey);
+.skills .grid-box {
+  box-shadow: 0px 5px 0px rgba(148, 143, 143, 0.1);
   border-radius: 10px;
   background-color: var(--white);
+}
+
+.skills .grid-box:hover {
+  box-shadow: none;
+  transition: all 0.5s ease;
 }
 
 /* Portfolio */
@@ -413,8 +419,9 @@ section .content {
 }
 
 .portfolio-card .box .btn:hover {
-  background: var(--white);
-  color: var(--button);
+  box-shadow: none;
+  background: var(--button);
+  color: var(--white);
   transition: all 0.4s ease;
 }
 
@@ -423,8 +430,9 @@ section .content {
   text-align: center;
   background: rgb(56, 56, 56);
   padding: 50px;
-  border-radius: 15px;
-  width: 30%;
+  border-radius: 12px;
+  width: 35%;
+  box-shadow: 0px 5px 0px var(--blue);
 }
 
 .contact .container h3 {
@@ -434,8 +442,8 @@ section .content {
 
 .socials a {
   color: var(--white);
-  font-size: 2rem;
-  margin: 20px;
+  font-size: 2.5rem;
+  margin: 15px;
 }
 
 .socials a:focus,
