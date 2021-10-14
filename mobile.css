@@ -52,6 +52,10 @@
     font-size: 35px;
   }
 
+  .scroll-button {
+    display: none;
+  }
+
   /* Mobile Navbar */
   .badge-notif {
     position:relative;
@@ -176,6 +180,10 @@
 
   .about .right .topic {
     text-align: center;
+  }
+
+  .skills .grid-wrapper{
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
   }
 }
 
