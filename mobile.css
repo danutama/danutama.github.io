@@ -23,6 +23,10 @@
     max-width: 100%;
   }
 
+  .row.hero .col-2 img {
+    margin-right:-3rem;
+  }
+
   .about .about-details {
     justify-content: center;
     flex-direction: column;
@@ -103,7 +107,7 @@
   .nav-list .bx:hover {
     color: #000;
   }
-  
+
   .social-icons {
     display: none;
   }
