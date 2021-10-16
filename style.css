@@ -52,15 +52,28 @@ a {
 }
 
 .ctn {
-  width: 170px;
+  width: 150px;
   padding: 8px 12px;
-  background: var(--button);
-  color: var(--white);
+  background: transparent;
+  color: var(--button);
+  border: .1rem solid var(--button);
   border-radius: 25px;
   text-align: center;
 }
 
-.ctn:hover {
+.cta {
+  width: 170px;
+  padding: 8px 12px;
+  background: var(--button);
+  color: var(--white);
+  border: .1rem solid var(--button);
+  border-radius: 25px;
+  text-align: center;
+  margin-top: -41px;
+  margin-left: 10rem;
+}
+
+.cta:hover {
   background: var(--hover);
   color: var(--white);
 }
@@ -193,7 +206,7 @@ a {
 }
 
 .row.hero .col-2 img {
-  max-width: 100%;
+  max-width: 90%;
   margin-right: 5rem;
 }
 
@@ -257,20 +270,17 @@ section .content {
   margin: 20px 0;
 }
 
-.about-details .button li a{
+.about-details .button li a {
   width: fit-content;
   outline: none;
   padding: 6px 15px;
-  border-radius: 20px;
   font-size: 15px;
-  background: var(--button);
-  color: var(--white);
   cursor: pointer;
-}
-
-.about-details .button li a:hover{
-  background: var(--hover);
-  color: var(--white);
+  background: transparent;
+  color: var(--button);
+  border: .1rem solid var(--button);
+  border-radius: 25px;
+  text-align: center;
 }
 
 /* Skills */
