@@ -274,3 +274,21 @@
   }
 }
 
+/*=============== BREAKPOINTS MODAL ===============*/
+/* For small devices */
+@media screen and (min-width: 576px) {
+  .modal__content {
+    margin: auto;
+    width: 380px;
+    border-radius: 2rem 2rem 0 0;
+  }
+
+  .modal__img {
+    width: 170px;
+  }
+
+  .modal__button-link {
+    margin: 1rem auto;
+  }
+}
+

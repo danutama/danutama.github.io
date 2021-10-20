@@ -4,6 +4,10 @@ Halo.. Perkenalkan, saya Danu. Ini adalah website portofolio pribadi saya, di da
 
 Images/Illustration :
 
+https://icons8.com/illustrations/illustration/3d-hands-fun-and-wild-294
+
 https://icons8.com/illustrations/illustration/business-3d-293
+
+https://cloud.icons8.com/s/MmeaLyd2NnKNSLg
 
 https://www.freepik.com/

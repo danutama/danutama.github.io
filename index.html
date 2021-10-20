@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
 
-    <!-- Custom Css -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mobile.css" />
     <link rel="shortcut icon" href="img/Danu.png" />
@@ -213,26 +213,35 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <h3>CONNECT WITH ME</h3>
-        
-        <div class="socials">
-          <a href="https://t.me/ini_danu/" title="Telegram" target="_blank" class="mx-2">
-            <i class="bx bxl-telegram iconbig"></i>
-          </a>
-          <a href="mailto:inidanuuu@gmail.com" title="Email" target="_blank" class="mx-2">
-            <i class="bx bx-mail-send iconbig"></i>
-          </a>
-          <a href="https://github.com/danuapratama/" title="GitHub" target="_blank" class="mx-2">
-            <i class="bx bxl-github iconbig"></i>
-          </a>
-        </div>
+    <!-- CONTACT -->
+    <section class="modal container">
+      <button class="modal__button-main" id="contact">CONNECT WITH ME</button>
+
+      <div class="modal__container" id="modal-container">
+          <div class="modal__content">
+              <div class="modal__close close-modal" title="Close">
+                  <i class='bx bx-x'></i>
+              </div>
+
+              <img src="img/3d-hands-fun-and-wild-294.png" alt="" class="modal__img">
+
+              <div class="modal__button mail modal__button-width">
+                  <a href="mailto:inidanuuu@gmail.com" title="Email" target="_blank">Email</a> 
+              </div>
+
+              <div class="modal__button tele modal__button-width">
+                <a href="https://t.me/ini_danu" title="Telegram" target="_blank">Telegram</a> 
+              </div>
+
+              <button class="modal__button-link close-modal">Close</button>
+          </div>
       </div>
     </section>
 
     <div class="credits container">&#169;<script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script></a> Danu A. Pratama</div>
-
+    
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  
   </body>
 </html>

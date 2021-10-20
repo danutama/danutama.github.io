@@ -26,6 +26,7 @@ html {
   --background: rgba(20, 20, 20, 0.7);
   --button: #fb8c00;
   --hover: #ff9c23;
+  --z-modal: 1000;
 }
 
 li {
@@ -106,7 +107,7 @@ a {
 }
 
 .badge-notif {
-  position:relative;
+  position: relative;
 }
 
 .badge-notif[data-badge]:after {
@@ -114,7 +115,7 @@ a {
   position: absolute;
   top: 2px;
   right: -8px;
-  font-size: .7rem;
+  font-size: 0.7rem;
   background: #e53935;
   color: white;
   width: 7px;
@@ -201,7 +202,6 @@ a {
   border-radius: 25px;
   text-align: center;
   margin-right: 10px;
-  
 }
 
 .cta {
@@ -279,7 +279,7 @@ section .content {
   cursor: pointer;
   background: transparent;
   color: var(--button);
-  border: .1rem solid var(--button);
+  border: 0.1rem solid var(--button);
   border-radius: 25px;
   text-align: center;
 }
@@ -346,7 +346,7 @@ section .content {
 .portfolio .title {
   text-align: center;
 }
-                      
+
 .portfolio .title .ctn-title {
   display: flex;
   width: 100%;
@@ -480,4 +480,134 @@ section .content {
 .scroll-button a:hover {
   background: #fff;
   color: var(--blue);
+}
+
+/*=============== MODAL ===============*/
+.modal {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  bottom: 0;
+}
+
+.modal__button-main {
+  background-color: var(--blue);
+  border: none !important;
+  display: inline-block;
+  color: #fff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.modal__button a {
+  display: inline-block;
+  background-color: var(--button);
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 30px;
+  border: none !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mail a {
+  display: inline-block;
+  background-color: var(--button);
+  color: #fff;
+  margin: 0;
+  border-radius: 30px;
+  border: none !important;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tele {
+  padding-top: 10px;
+}
+
+.tele a {
+  display: inline-block;
+  background-color: var(--button);
+  color: #fff;
+  margin: 10px 0;
+  border-radius: 30px;
+  border: none !important;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal__button-main:hover {
+  background-color: #479ffd;
+}
+
+.modal__button a:hover {
+  background-color: var(--hover);
+}
+
+.modal__container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: grid;
+  align-items: flex-end;
+  overflow: hidden;
+  z-index: var(--z-modal);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__content {
+  position: relative;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(77, 77, 77, 0.7);
+  text-align: center;
+  padding: 3rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  transition: all 0.3s;
+  transform: translateY(10%);
+}
+
+.modal__img {
+  width: 150px;
+  margin-bottom: 0.75rem;
+}
+
+.modal__close {
+  display: inline-flex;
+  background-color: var(--grey);
+  border-radius: 0.25rem;
+  color: var(--h1);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.modal__button-link {
+  display: block;
+  margin: 1rem auto;
+  background-color: var(--grey);
+  color: var(--h1);
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none !important;
+  cursor: pointer;
+}
+
+/* Show modal */
+.show-modal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.show-modal .modal__content {
+  transform: translateY(0);
 }
