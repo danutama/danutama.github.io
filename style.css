@@ -562,25 +562,24 @@ section .content {
 
 .modal__content {
   position: relative;
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  background-color: rgba(77, 77, 77, 0.7);
+  background: var(--blue);
   text-align: center;
-  padding: 3rem;
+  padding: 4.5rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   transition: all 0.3s;
   transform: translateY(10%);
+ 
 }
 
 .modal__img {
-  width: 150px;
+  width: 170px;
   margin-bottom: 0.75rem;
 }
 
 .modal__close {
   display: inline-flex;
-  background-color: var(--grey);
+  background-color: var(--white);
   border-radius: 0.25rem;
   color: var(--h1);
   font-size: 1.5rem;
@@ -593,7 +592,7 @@ section .content {
 .modal__button-link {
   display: block;
   margin: 1rem auto;
-  background-color: var(--grey);
+  background-color: var(--white);
   color: var(--h1);
   font-weight: 500;
   border-radius: 10px;
