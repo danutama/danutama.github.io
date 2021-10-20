@@ -419,14 +419,14 @@ section .content {
   display: flex;
   justify-content: center;
   background: var(--button);
-  color: var(--white);
+  color: var(--h1);
   padding: 5px;
   border-radius: 15px;
 }
 
 .portfolio-card .box .btn:hover {
   background: var(--hover);
-  color: var(--white);
+  color: var(--h1);
 }
 
 /* Contact */
