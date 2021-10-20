@@ -17,15 +17,17 @@ html {
 
 :root {
   --h1: #000;
-  --blue: #358fef;
+  --blue2: #358fef;
+  --blue: rgb(28, 34, 51);
+  --blue-hover: rgb(20, 24, 37);
   --white: #fff;
   --grey: #b4b2c5;
   --pink: #ea4c89;
   --circle: #f4f3ff;
   --light-blue: #d5e8fd;
   --background: rgba(20, 20, 20, 0.7);
-  --button: #fb8c00;
-  --hover: #ff9c23;
+  --button: #eef3ab;
+  --hover: #dbdfaa;
   --z-modal: 1000;
 }
 
@@ -68,7 +70,7 @@ a {
 }
 
 .highlight {
-  color: var(--blue);
+  color: var(--blue2);
 }
 
 .circle {
@@ -103,7 +105,7 @@ a {
 }
 
 .nav-list a:hover {
-  color: var(--blue);
+  color: var(--blue2);
 }
 
 .badge-notif {
@@ -150,7 +152,7 @@ a {
 
 .social-icons ul li a:hover {
   text-decoration: none;
-  color: var(--blue);
+  color: var(--blue2);
 }
 
 .logo {
@@ -206,14 +208,14 @@ a {
 
 .cta {
   padding: 10px 35px;
-  background: var(--button);
+  background: var(--blue);
   color: var(--white);
   border-radius: 25px;
   text-align: center;
 }
 
 .cta:hover {
-  background: var(--hover);
+  background: var(--blue-hover);
   color: var(--white);
 }
 
@@ -259,7 +261,7 @@ section .content {
 }
 
 .about-details .btn-link {
-  color: var(--blue) !important;
+  color: var(--blue2) !important;
   cursor: pointer;
 }
 
@@ -278,8 +280,8 @@ section .content {
   font-size: 15px;
   cursor: pointer;
   background: transparent;
-  color: var(--button);
-  border: 0.1rem solid var(--button);
+  color: var(--blue);
+  border: 0.1rem solid var(--blue);
   border-radius: 25px;
   text-align: center;
 }
@@ -365,7 +367,7 @@ section .content {
 }
 
 .ctn-title .highlight a {
-  color: var(--blue) !important;
+  color: var(--blue2);
 }
 
 .ctn-title .highlight a:hover {
@@ -417,14 +419,14 @@ section .content {
   display: flex;
   justify-content: center;
   background: var(--button);
-  color: #fff;
+  color: var(--h1);
   padding: 5px;
   border-radius: 15px;
 }
 
 .portfolio-card .box .btn:hover {
   background: var(--hover);
-  color: var(--white);
+  color: var(--h1);
 }
 
 /* Contact */
@@ -455,13 +457,12 @@ section .content {
 }
 
 .credits.container {
-  margin-bottom: 90px;
+  bottom: 0 !important;
 }
 
 .credits {
   text-align: center;
   color: var(--h1);
-  font-weight: bold;
 }
 
 /* Scroll To Top Button CSS */
@@ -478,16 +479,14 @@ section .content {
 }
 
 .scroll-button a:hover {
-  background: #fff;
-  color: var(--blue);
+  background: var(--blue-hover);
+  color: var(--white);
 }
 
 /*=============== MODAL ===============*/
 .modal {
   display: grid;
   place-items: center;
-  padding: 2rem;
-  bottom: 0;
 }
 
 .modal__button-main {
@@ -504,7 +503,7 @@ section .content {
 .modal__button a {
   display: inline-block;
   background-color: var(--button);
-  color: #fff;
+  color: var(--h1);
   padding: 10px 35px;
   border-radius: 30px;
   border: none !important;
@@ -515,13 +514,13 @@ section .content {
 .mail a {
   display: inline-block;
   background-color: var(--button);
-  color: #fff;
+  color: var(--h1);
   margin: 0;
   border-radius: 30px;
   border: none !important;
   transition: 0.3s;
   cursor: pointer;
-  width: 100%;
+  width: 70%;
 }
 
 .tele {
@@ -531,17 +530,17 @@ section .content {
 .tele a {
   display: inline-block;
   background-color: var(--button);
-  color: #fff;
+  color: var(--h1);
   margin: 10px 0;
   border-radius: 30px;
   border: none !important;
   transition: 0.3s;
   cursor: pointer;
-  width: 100%;
+  width: 70%;
 }
 
 .modal__button-main:hover {
-  background-color: #479ffd;
+  background-color: var(--blue-hover);
 }
 
 .modal__button a:hover {
@@ -564,16 +563,15 @@ section .content {
   position: relative;
   background: var(--blue);
   text-align: center;
-  padding: 4.5rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   transition: all 0.3s;
   transform: translateY(10%);
- 
 }
 
 .modal__img {
   width: 170px;
+  margin-top: 1rem;
   margin-bottom: 0.75rem;
 }
 
