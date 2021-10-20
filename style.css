@@ -26,8 +26,8 @@ html {
   --circle: #f4f3ff;
   --light-blue: #d5e8fd;
   --background: rgba(20, 20, 20, 0.7);
-  --button: #eef3ab;
-  --hover: #dbdfaa;
+  --button: #c3ad7a;
+  --hover: #b39e6f;
   --z-modal: 1000;
 }
 
@@ -419,14 +419,14 @@ section .content {
   display: flex;
   justify-content: center;
   background: var(--button);
-  color: var(--h1);
+  color: var(--white);
   padding: 5px;
   border-radius: 15px;
 }
 
 .portfolio-card .box .btn:hover {
   background: var(--hover);
-  color: var(--h1);
+  color: var(--white);
 }
 
 /* Contact */
