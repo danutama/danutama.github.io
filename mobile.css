@@ -64,78 +64,6 @@
     display: none;
   }
 
-  /* Mobile Navbar */
-  .badge-notif {
-    position:relative;
-  }
-  
-  .badge-notif[data-badge]:after {
-    content: attr(data-badge);
-    position: absolute;
-    top: 0;
-    right: -13px;
-    font-size: .7rem;
-    background: #e53935;
-    color: white;
-    width: 7px;
-    height: 7px;
-    text-align: center;
-    line-height: 18px;
-    border-radius: 50%;
-  }
-  
-  .navbar.container {
-    padding: 13px 0;
-    margin-bottom: 0;
-    border-radius: 25px 25px 0 0;
-    width: 100%;
-    justify-content: center;
-    background: var(--blue);
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    z-index: 999;
-  }
-  
-  .nav-list .bx {
-    font-size: 1.9rem;
-    margin: 0px -12px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-    color: var(--grey);
-  }
-
-  .nav-list .bx:hover {
-    color: var(--white);
-  }
-
-  .social-icons {
-    display: none;
-  }
-
-  .nav-list i::before {
-    display: flex;
-  }
-
-  .nav-list a {
-    font-family: 'poppins';
-    text-align: center;
-    margin-top: 5px;
-    font-size: 10px;
-    justify-content: center;
-  }
-
-  .nav-name {
-    display: none;
-  }
-
-  .logo {
-    display: none;
-  }
-
   .home.container {
     height: 100%;
     margin-top: 120px;
@@ -177,6 +105,10 @@
     scroll-behavior:unset;
   }
 
+  .navbar .social-icons {
+    display: none;
+  }
+
   .about .left img {
     height: 310px;
     width: 200;
@@ -203,6 +135,80 @@
 }
 
 @media (max-width: 640px) {
+
+  /* Mobile Navbar */
+  .badge-notif {
+    position:relative;
+  }
+  
+  .badge-notif[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: 0;
+    right: -13px;
+    font-size: .7rem;
+    background: #e53935;
+    color: white;
+    width: 7px;
+    height: 7px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+  }
+  
+  .navbar.container {
+    padding: 13px 0;
+    margin-bottom: 0;
+    width: 100%;
+    justify-content: center;
+    background: var(--circle);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    box-shadow: none;
+    z-index: 999;
+  }
+  
+  .nav-list .bx {
+    font-size: 1.9rem;
+    margin: 0px -12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    color: var(--grey);
+  }
+
+  .nav-list .bx:hover {
+    color: var(--blue);
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .nav-list i::before {
+    display: flex;
+  }
+
+  .nav-list a {
+    font-family: 'poppins';
+    text-align: center;
+    margin-top: 5px;
+    font-size: 10px;
+    justify-content: center;
+  }
+
+  .nav-name {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+  /* navbar end */
+
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(130px, auto));
     gap: .8rem;

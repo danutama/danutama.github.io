@@ -70,7 +70,7 @@ a {
 }
 
 .highlight {
-  color: var(--blue2);
+  color: var(--button);
 }
 
 .circle {
@@ -105,7 +105,7 @@ a {
 }
 
 .nav-list a:hover {
-  color: var(--blue2);
+  color: var(--button);
 }
 
 .badge-notif {
@@ -132,6 +132,7 @@ a {
 .nav-list i::before {
   display: none;
 }
+/* end */
 
 .nav-list ul li a {
   color: var(--h1);
@@ -152,7 +153,7 @@ a {
 
 .social-icons ul li a:hover {
   text-decoration: none;
-  color: var(--blue2);
+  color: var(--button);
 }
 
 .logo {
@@ -387,7 +388,7 @@ section .content {
   background-color: #fff;
   padding: 10px;
   border-radius: 17px;
-  box-shadow: 0px 0px 3px var(--grey);
+  box-shadow: 0 0 3px rgb(199, 199, 199);
 }
 
 .portfolio-card .box .box-img {
@@ -462,7 +463,8 @@ section .content {
 
 .credits {
   text-align: center;
-  color: var(--h1);
+  color: var(--grey);
+  font-size: 14px;
 }
 
 /* Scroll To Top Button CSS */
@@ -577,25 +579,13 @@ section .content {
 
 .modal__close {
   display: inline-flex;
-  background-color: var(--white);
+  background-color: var(--grey);
   border-radius: 0.25rem;
-  color: var(--h1);
+  color: var(--blue);
   font-size: 1.5rem;
   position: absolute;
   top: 2rem;
   right: 2rem;
-  cursor: pointer;
-}
-
-.modal__button-link {
-  display: block;
-  margin: 1rem auto;
-  background-color: var(--white);
-  color: var(--h1);
-  font-weight: 500;
-  border-radius: 10px;
-  padding: 5px 10px;
-  border: none !important;
   cursor: pointer;
 }
 
@@ -607,4 +597,18 @@ section .content {
 
 .show-modal .modal__content {
   transform: translateY(0);
+}
+
+.contact-icons ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact-icons ul li a {
+  margin: 15px;
+  color: var(--button);
+  font-size: 30px;
+  cursor: pointer;
 }
