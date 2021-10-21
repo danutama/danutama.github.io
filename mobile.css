@@ -233,6 +233,10 @@
     padding-top: 1rem;
   }
   
+  .home.container {
+    padding-top: .5rem;
+  }
+
   .home-btn .ctn {
     font-size: 15px;
     padding: 8px 25px;
