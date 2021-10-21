@@ -226,6 +226,14 @@
   .portfolio-card .box .btn {
     font-size: 12px;
   }
+
+  .credits {
+    display: none;
+  }
+
+  .modal__container {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 500px) {
