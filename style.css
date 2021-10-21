@@ -57,6 +57,7 @@ a {
 .container {
   width: 90%;
   margin: 60px auto;
+  padding-top: 4rem;
 }
 
 .row {
@@ -89,6 +90,8 @@ a {
   background-color: var(--circle);
   margin-top: 0;
   box-shadow: 0px 0px 3px var(--grey);
+  position: fixed;
+  z-index: 1000;
 }
 
 .navbar {
@@ -165,9 +168,6 @@ a {
 
 /* Home */
 .home.container {
-  margin-top: 0;
-  margin-bottom: -10rem;
-  height: 100vh;
   position: relative;
 }
 
@@ -221,16 +221,12 @@ a {
 }
 
 /* About */
-section {
-  padding-top: 3px;
-}
-
-section .content {
+.about-container .content {
   width: 80%;
   margin: 40px auto;
 }
 
-.about .about-details {
+.about-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -288,10 +284,6 @@ section .content {
 }
 
 /* Skills */
-.skills.container {
-  padding-top: 30px;
-}
-
 .title {
   text-align: center;
   margin-bottom: 60px;
@@ -342,10 +334,6 @@ section .content {
 }
 
 /* Portfolio */
-.portfolio.container {
-  padding-top: 40px;
-}
-
 .portfolio .title {
   text-align: center;
 }
@@ -559,6 +547,7 @@ section .content {
   z-index: var(--z-modal);
   visibility: hidden;
   opacity: 0;
+  padding-top: 6rem;
 }
 
 .modal__content {

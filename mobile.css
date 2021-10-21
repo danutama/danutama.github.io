@@ -282,7 +282,7 @@
 
 /*=============== BREAKPOINTS MODAL ===============*/
 /* For small devices */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 520px) {
   .modal__content {
     margin: auto;
     width: 380px;
