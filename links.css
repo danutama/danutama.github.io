@@ -15,7 +15,7 @@
   content: attr(data-badge);
   position: absolute;
   top: -1px;
-  right: 5px;
+  right: 3.5px;
   font-size: .7rem;
   background: #f50e0a;
   color: white;

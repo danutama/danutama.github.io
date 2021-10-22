@@ -18,7 +18,7 @@
 .btn-primary {
   background-color: rgba(236, 236, 236, 0.8);
   color: #000;
-  border: 1px solid rgba(236, 236, 236,) ;
+  border: 1px solid rgba(236, 236, 236,);
 }
 
 .btn-primary:hover {
@@ -84,7 +84,7 @@ a:hover {
 
 .circularimage {
   border-radius: 100px;
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.2);
   width: 100;
   margin-top: 1.5rem;
 }
