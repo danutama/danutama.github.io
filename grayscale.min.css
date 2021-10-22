@@ -6,7 +6,7 @@
 
 .btn {
   -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  box-shadow: 0 0.1875rem 0.1900rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
   padding: .8rem;
   font-family: 'Varela Round';
   font-size: 80%;
@@ -16,27 +16,27 @@
 }
 
 .btn-primary {
-  background-color: rgba(255, 255, 255, 0.01);
-  color: #000000;
-  border: .1rem solid #ffc116;
+  background-color: rgba(236, 236, 236, 0.8);
+  color: #000;
+  border: 1px solid rgba(236, 236, 236,) ;
 }
 
 .btn-primary:hover {
-  background-color: #ffc116;
-  color: #000000;
-  border: .1rem solid #ffc116;
+  background-color: rgba(216, 216, 216, 0.8);
+  color: #000;
+  border: 1px solid rgb(236, 236, 236,);
 }
 
 .btn-primary:focus {
-  background-color: #ffc116;
-  color: #000000;
-  border: .1rem solid #ffc116;
+  background-color: rgba(216, 216, 216, 0.8);
+  color: #000;
+  border: 1px solid rgb(236, 236, 236,);
 }
 
 .btn-primary:active {
-  background-color: #ffc116 !important;
+  background-color: rgba(216, 216, 216, 0.8) !important;
   color: #000 !important;
-  border: .1rem solid #ffc116 !important;
+  border: 1px solid rgb(236, 236, 236,) !important;
 }
 
 .abcout-setion {
@@ -48,7 +48,7 @@
 body {
   font-family: Nunito;
   letter-spacing: 0.0625em;
-  background-image: url('img/bg4.jpg');
+  background-image: url('img/daniel-souza-xN62dYNQ2iY-unsplash.jpg'); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: relative;
@@ -56,23 +56,24 @@ body {
 
 .about-section::before {
   content: '';
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(82, 82, 82, 0.6);
+  background-color: rgba(85, 85, 85, 0.6);
   display: none;
 }
 
 a {
-  color: #ffc116;
+  color: #000000;
 }
 
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 .iconbig {
