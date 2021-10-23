@@ -5,38 +5,41 @@
  */
 
 .btn {
-  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
-  padding: .8rem;
+  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
+  padding: 0.8rem;
   font-family: 'Varela Round';
   font-size: 80%;
   text-transform: uppercase;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   border: 0;
 }
 
 .btn-primary {
   background-color: rgba(236, 236, 236, 0.8);
   color: #000;
-  border: 1px solid rgba(236, 236, 236,);
 }
 
 .btn-primary:hover {
-  background-color: rgba(216, 216, 216, 0.8);
+  background-color: white;
   color: #000;
-  border: 1px solid rgb(236, 236, 236,);
 }
 
 .btn-primary:focus {
-  background-color: rgba(216, 216, 216, 0.8);
+  background-color: white;
   color: #000;
-  border: 1px solid rgb(236, 236, 236,);
+  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:active {
-  background-color: rgba(216, 216, 216, 0.8) !important;
+  background-color: white !important;
   color: #000 !important;
-  border: 1px solid rgb(236, 236, 236,) !important;
+  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+  -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 .abcout-setion {
@@ -46,12 +49,13 @@
 }
 
 body {
-  font-family: Nunito;
+  font-family: 'Nunito';
   letter-spacing: 0.0625em;
-  background-image: url('img/5220066.jpg'); 
+  background-image: url('img/5220066.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: relative;
+  background-attachment: fixed;
 }
 
 .about-section::before {
@@ -61,8 +65,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  background-size: cover;
   background-color: rgba(190, 190, 190, 0.3);
-  z-index: -5;
+  z-index: -1;
 }
 
 a {
