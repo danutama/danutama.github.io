@@ -5,7 +5,7 @@
  */
 
 .btn {
-  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
   padding: .8rem;
   font-family: 'Varela Round';
@@ -48,7 +48,7 @@
 body {
   font-family: Nunito;
   letter-spacing: 0.0625em;
-  background-image: url('img/daniel-souza-xN62dYNQ2iY-unsplash.jpg'); 
+  background-image: url('img/5220066.jpg'); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: relative;
@@ -56,14 +56,13 @@ body {
 
 .about-section::before {
   content: '';
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(85, 85, 85, 0.6);
-  display: none;
+  background-color: rgba(190, 190, 190, 0.3);
+  z-index: -5;
 }
 
 a {
@@ -73,7 +72,7 @@ a {
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: #646464;
 }
 
 .iconbig {
@@ -95,4 +94,5 @@ a:hover {
 
 h3 {
   font-size: 20px;
+  font-weight: bold;
 }

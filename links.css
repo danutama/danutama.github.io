@@ -62,15 +62,9 @@
 }
 
 #insta-footer {
-  font-size: 75%;
+  font-size: 80%;
 }
 
 #insta-text {
   margin-top: -1rem;
-}
-
-@media (max-width: 900px) {
-  .mx-2 {
-    color: #fff;
-  }
 }
