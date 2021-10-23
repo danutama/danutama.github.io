@@ -5,9 +5,9 @@
  */
 
 .btn {
-  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
-  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+  -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
   padding: 0.8rem;
   font-family: 'Varela Round';
   font-size: 80%;
@@ -17,45 +17,31 @@
 }
 
 .btn-primary {
-  background-color: rgba(236, 236, 236, 0.8);
+  background: rgba(246, 246, 246, 0.8);
   color: #000;
 }
 
 .btn-primary:hover {
-  background-color: white;
+  background: #fff;
   color: #000;
 }
 
 .btn-primary:focus {
-  background-color: white;
+  background: #fff;
   color: #000;
-  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
-  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:active {
-  background-color: white !important;
+  background: #fff !important;
   color: #000 !important;
-  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
-  -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
-  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
-}
-
-.abcout-setion {
-  padding-top: 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1f1f1f), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
-  background: linear-gradient(to bottom, #1f1f1f 0, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
-  background-image: url('img/5220066.jpg');
+  background-image: url('img/online-web-design.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: relative;
-  background-attachment: fixed;
 }
 
 .about-section::before {
@@ -65,8 +51,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-size: cover;
-  background-color: rgba(190, 190, 190, 0.3);
+  background: rgba(190, 190, 190, 0.5);
   z-index: -1;
 }
 
@@ -77,7 +62,7 @@ a {
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #646464;
+  color: #fff;
 }
 
 .iconbig {
@@ -93,7 +78,7 @@ a:hover {
   margin-top: 1.5rem;
 }
 
-.container.text-secondary {
+.container.text {
   margin-top: 25px;
 }
 
