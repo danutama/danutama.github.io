@@ -9,8 +9,9 @@
   -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
   box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
   padding: 0.8rem;
-  font-family: 'Varela Round';
+  font-family: 'Nunito';
   font-size: 80%;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
@@ -22,24 +23,24 @@
 }
 
 .btn-primary:hover {
-  background: #fff;
+  background: rgba(246, 246, 246, 0.8);
   color: #000;
 }
 
 .btn-primary:focus {
-  background: #fff;
+  background: rgba(246, 246, 246, 0.8);
   color: #000;
 }
 
 .btn-primary:active {
-  background: #fff !important;
+  background: rgba(246, 246, 246, 0.8) !important;
   color: #000 !important;
 }
 
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
-  background-image: url('img/online-web-design.jpg');
+  background-image: url('img/nolan-issac-It0DCaCBr40-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -79,7 +80,7 @@ a:hover {
   margin-top: 1.5rem;
 }
 
-.container.text {
+#insta-footer {
   margin-top: 25px;
 }
 
