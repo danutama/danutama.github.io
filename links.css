@@ -60,6 +60,9 @@
     transform: translate3d(4px, 0, 0);
   }
 }
+.mb-1 {
+  color: #000;
+}
 
 #insta-footer {
   font-size: 80%;
@@ -72,6 +75,10 @@
 }
 
 @media (max-width: 600px) {
+  .mb-1 {
+    color: #fff;
+  }
+
   #insta-text {
     color: #fff;
   }
