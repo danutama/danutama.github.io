@@ -24,9 +24,6 @@
   
   .row.hero .col-2 img {
     max-width: 100%;
-  }
-  
-  .row.hero .col-2 img {
     margin-right:-3rem;
   }
 
@@ -74,6 +71,10 @@
 
   .home.container .col-1 {
     padding: 20px;
+  }
+
+  .col-1 h1 {
+    font-size: 40px;
   }
 
   .grid-wrapper {
@@ -296,7 +297,6 @@
 }
 
 /*=============== BREAKPOINTS MODAL ===============*/
-/* For small devices */
 @media screen and (min-width: 520px) {
   .modal__content {
     margin: auto;
