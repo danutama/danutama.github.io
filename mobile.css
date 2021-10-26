@@ -77,6 +77,10 @@
     font-size: 40px;
   }
 
+  .row.hero .col-2 img {
+    margin-top: -5rem;
+  }
+  
   .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   }
