@@ -246,8 +246,17 @@
     padding-top: 1rem;
   }
   
+  .col-1 {
+    justify-content: center;
+    text-align: center;
+  }
+
   .home.container {
     padding-top: .5rem;
+  }
+
+  .home-btn {
+    display: none;
   }
 
   .home-btn .ctn {

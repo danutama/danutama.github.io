@@ -485,7 +485,7 @@ a {
   color: var(--white);
 }
 
-/*=============== MODAL ===============*/
+/*=============== MODAL Contact ===============*/
 .modal {
   display: grid;
   place-items: center;
@@ -496,10 +496,12 @@ a {
   border: none !important;
   display: inline-block;
   color: #fff;
-  padding: 15px 35px;
+  padding: 15px 70px;
+  margin: 30px auto;
   border-radius: 30px;
   transition: 0.3s;
   cursor: pointer;
+  width: max-content;
 }
 
 .modal__button a {
