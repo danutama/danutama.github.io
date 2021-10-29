@@ -14,10 +14,6 @@
     flex-direction: row;
   }
 
-  .home.container .col-1 {
-    padding: 20px;
-  }
-
   .row.hero .col-2 {
     width: 100%;
   }
@@ -62,7 +58,7 @@
 
   .home.container {
     height: 100%;
-    margin-top: 120px;
+    margin-top: 10px;
   }
 
   .home.container .row {
@@ -71,10 +67,12 @@
 
   .home.container .col-1 {
     padding: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   .col-1 h1 {
-    font-size: 40px;
+    font-size: 70px;
   }
 
   .row.hero .col-2 img {
@@ -207,11 +205,15 @@
   .nav-name {
     display: none;
   }
-
+  
   .logo {
     display: none;
   }
   /* navbar end */
+
+  .home.container .col-1 h1 {
+    font-size: 50px;
+  }
 
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(130px, auto));
@@ -246,13 +248,17 @@
     padding-top: 1rem;
   }
   
+  .home.container {
+    margin-top: 6rem;
+  }
+
   .col-1 {
     justify-content: center;
     text-align: center;
   }
 
-  .home.container {
-    padding-top: .5rem;
+  .home.container .col-1 h1 {
+    font-size: 40px;
   }
 
   .home-btn {
