@@ -186,9 +186,7 @@ a {
 
 .row.hero .col-1 {
   width: 100%;
-  margin-bottom: 5rem;
   flex-direction: column;
-  
 }
 
 .col-1 p {
@@ -196,13 +194,9 @@ a {
   padding-bottom: 20px;
 }
 
-.row.hero .col-2 {
-  width: 100%;
-}
-
 .row.hero .col-2 img {
-  max-width: 90%;
-  margin-right: 5rem;
+  max-width: 100%;
+  margin-top: -30px;
 }
 
 .row.hero p {
@@ -422,6 +416,7 @@ a {
 
 .portfolio-card .box .btn {
   font-size: 14px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   background: var(--button);
