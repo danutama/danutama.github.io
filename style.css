@@ -162,7 +162,7 @@ a {
 
 .nav-list ul li,
 .social-icons ul li a {
-  margin: 0px 30px;
+  margin: 0 30px;
   color: var(--h1);
   font-size: 20px;
   cursor: pointer;
@@ -189,20 +189,21 @@ a {
   flex-direction: column;
 }
 
-.col-1 p {
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-
 .row.hero .col-2 img {
   max-width: 100%;
   margin-top: -30px;
 }
 
+.hero-img img {
+  border-radius: 20% 15px;
+  width: 700px;
+}
+
 .row.hero p {
   margin-top: 10px;
   margin-bottom: 30px;
-  color: var(--h1);
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
 .home-btn {
@@ -211,15 +212,19 @@ a {
 }
 
 .ctn {
-  padding: 15px 35px;
+  padding: 15px 40px;
   background: #e1e0ec;
   color: var(--h1);
   border-radius: 17px;
   text-align: center;
 }
 
+.ctn:hover {
+  background: rgb(230, 230, 230);
+}
+
 .cta {
-  padding: 15px 35px;
+  padding: 15px 40px;
   background: var(--blue);
   color: var(--white);
   border-radius: 17px;
@@ -290,7 +295,7 @@ a {
   background: transparent;
   color: var(--blue);
   border: 0.1rem solid var(--blue);
-  border-radius: 25px;
+  border-radius: 12px;
   text-align: center;
 }
 
