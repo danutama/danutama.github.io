@@ -195,8 +195,9 @@ a {
 }
 
 .hero-img img {
-  border-radius: 20% 15px;
+  border-radius: 20% 15px 20% 15px;
   width: 700px;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .row.hero p {
@@ -464,12 +465,14 @@ a {
 
 .credits.container {
   bottom: 0 !important;
+  display: none;
 }
 
 .credits {
   text-align: center;
   color: var(--grey);
   font-size: 14px;
+  padding-bottom: 20px;
 }
 
 /* Scroll To Top Button CSS */
