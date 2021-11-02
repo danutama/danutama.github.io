@@ -238,6 +238,28 @@ a {
   color: var(--white);
 }
 
+.socials {
+  display: flex;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.socials a {
+  color: var(--blue);
+  font-size: 2.5rem;
+  margin: 30px 30px 0 0;
+  padding: 8px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials a:focus,
+.socials a:hover {
+  text-decoration: none;
+  color: var(--button);
+}
+
 /* About */
 .about-container .content {
   width: 80%;
@@ -421,7 +443,7 @@ a {
 }
 
 .portfolio-card .box .btn {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -436,36 +458,25 @@ a {
   color: var(--h1);
 }
 
-/* Contact */
+/* Contact Desktop Version*/
 .contact .container {
+  display: grid;
   text-align: center;
-  background: rgb(56, 56, 56);
-  padding: 50px;
-  border-radius: 12px;
-  width: 35%;
-  box-shadow: 0px 5px 0px var(--blue);
+  background: var(--white);
+  padding: 20px;
+  margin-bottom: 60px;
+  border-radius: 30px;
+  width: 100%;
 }
 
 .contact .container h3 {
   margin-top: 30px;
   margin-bottom: 60px;
-}
-
-.socials a {
-  color: var(--white);
-  font-size: 2.5rem;
-  margin: 15px;
-}
-
-.socials a:focus,
-.socials a:hover {
-  text-decoration: none;
-  color: var(--blue);
+  font-family: 'nunito';
 }
 
 .credits.container {
   bottom: 0 !important;
-  display: none;
 }
 
 .credits {
@@ -493,9 +504,9 @@ a {
   color: var(--white);
 }
 
-/*=============== MODAL Contact ===============*/
+/* Modal Contact Mobile */
 .modal {
-  display: grid;
+  display: none;
   place-items: center;
 }
 

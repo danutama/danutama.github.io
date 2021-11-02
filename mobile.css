@@ -34,10 +34,6 @@
     font-size: 35px;
   }
 
-  .scroll-button {
-    display: none;
-  }
-
   .home.container .row {
     flex-direction: column;
   }
@@ -115,8 +111,15 @@
 }
 
 @media (max-width: 640px) {
+  .scroll-button {
+    display: none;
+  }
 
-  /* Mobile Navbar */
+  .socials {
+    display: none;
+  }
+
+  /*===== Mobile Navbar =====*/
   .badge-notif {
     position:relative;
   }
@@ -187,7 +190,7 @@
   .logo {
     display: none;
   }
-  /* navbar end */
+  /*===== navbar end =====*/
 
   .home.container .col-1 h1 {
     font-size: 50px;
@@ -202,7 +205,7 @@
   }
 
   .portfolio-card {
-    grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     gap: .8rem;
   }
 
@@ -217,12 +220,23 @@
   }
 
   .portfolio-card .box .btn {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+   /* Change to Contact Modal */
+   .credits.container {
+    display: none;
+  }
+
+  /* Contact Modal Transition */
+  .modal {
+    display: grid;
   }
 
   .modal__container {
     padding-top: 0;
   }
+  /* end */
 }
 
 @media (max-width: 500px) {
@@ -241,6 +255,10 @@
 
   .home.container .col-1 h1 {
     font-size: 38px;
+  }
+  
+  .home.container .col-1 p {
+    font-size: 18px;
   }
 
   .home-btn {
