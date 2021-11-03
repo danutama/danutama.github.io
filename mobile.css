@@ -52,12 +52,6 @@
     margin-top: 2rem;
     width: 400px;
   }
-  
-  .socials {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
 
   .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
@@ -118,10 +112,6 @@
 
 @media (max-width: 640px) {
   .scroll-button {
-    display: none;
-  }
-
-  .socials {
     display: none;
   }
 
