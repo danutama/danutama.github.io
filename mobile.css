@@ -238,7 +238,7 @@
     display: none;
   }
 
-  /* Contact Modal Transition */
+  /*=============== BREAKPOINTS MODAL ===============*/
   .modal {
     display: grid;
   }
@@ -246,6 +246,23 @@
   .modal__container {
     padding-top: 0;
   }
+
+  .modal__img {
+    width: 170px;
+  }
+
+  .modal__button-main {
+    margin-bottom: 90px;
+  }
+
+  .modal__button-link {
+    margin: 1rem auto;
+  }
+
+  .credits {
+    font-size: 15px;
+  }
+
   /* end */
 }
 
@@ -302,6 +319,10 @@
   .portfolio .ctn-title h1 {
     font-size: 25px;
   }
+
+  .modal__button-main {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -309,21 +330,3 @@
     font-size: 35px;
   }
 }
-
-/*=============== BREAKPOINTS MODAL ===============*/
-@media screen and (min-width: 520px) {
-  .modal__content {
-    margin: auto;
-    width: 380px;
-    border-radius: 2rem 2rem 0 0;
-  }
-
-  .modal__img {
-    width: 170px;
-  }
-
-  .modal__button-link {
-    margin: 1rem auto;
-  }
-}
-

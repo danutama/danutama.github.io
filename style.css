@@ -217,7 +217,7 @@ a {
 }
 
 .ctn {
-  padding: 15px 40px;
+  padding: 15px 30px;
   border: 0.1rem solid var(--blue);
   border-radius: 12px;
   color: var(--blue);
@@ -248,7 +248,7 @@ a {
 .socials a {
   color: var(--blue);
   font-size: 2.5rem;
-  margin: 30px 45px auto;
+  margin: 30px 35px auto;
 }
 
 .socials a:focus,
@@ -440,7 +440,7 @@ a {
 }
 
 .portfolio-card .box .btn {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -479,8 +479,8 @@ a {
 .credits {
   text-align: center;
   color: var(--grey);
-  font-size: 14px;
-  padding-bottom: 20px;
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 
 /* Scroll To Top Button CSS */
@@ -501,7 +501,7 @@ a {
   color: var(--white);
 }
 
-/* Modal Contact Mobile */
+/* ===== Modal Contact Mobile ===== */
 .modal {
   display: none;
   place-items: center;
@@ -512,12 +512,13 @@ a {
   border: none !important;
   display: inline-block;
   color: #fff;
-  padding: 20px 70px;
-  margin: 30px auto;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   border-radius: 20px;
   transition: 0.3s;
   cursor: pointer;
-  width: max-content;
   letter-spacing: 0.15rem;
 }
 
@@ -580,13 +581,14 @@ a {
 }
 
 .modal__content {
-  position: relative;
+  position: fixed;
   background: var(--blue);
   text-align: center;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
   transition: all 0.3s;
   transform: translateY(10%);
+  bottom: 0;
 }
 
 .modal__img {
