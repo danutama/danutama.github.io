@@ -81,10 +81,6 @@
     scroll-behavior:unset;
   }
 
-  .navbar .social-icons {
-    display: none;
-  }
-
   .about .left img {
     height: 310px;
     width: 200;
@@ -111,86 +107,9 @@
 }
 
 @media (max-width: 640px) {
-  .scroll-button {
+  .navbar .photo {
     display: none;
   }
-
-  /*===== Mobile Navbar =====*/
-  .list .badge-notif {
-    position: relative;
-  }
-  
-  .list .badge-notif[data-badge]:after {
-    content: attr(data-badge);
-    position: absolute;
-    top: 0;
-    left: 3px;
-    font-size: .7rem;
-    background: #e53935;
-    color: white;
-    width: 7px;
-    height: 7px;
-    text-align: center;
-    line-height: 18px;
-    border-radius: 50%;
-  }
-  
-  .navbar.container {
-    padding: 13px 0;
-    margin-bottom: 0;
-    width: 100%;
-    justify-content: center;
-    background: var(--circle);
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    box-shadow: none;
-    z-index: 999;
-  }
-  
-  .nav-list .bx {
-    font-size: 1.9rem;
-    margin: 0px -12px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-    color: var(--grey);
-  }
-
-  .nav-list .bx:hover {
-    color: var(--blue);
-  }
-
-  .nav-list .active .bx {
-    color: var(--blue);
-  }
-  
-  .social-icons {
-    display: none;
-  }
-
-  .nav-list i::before {
-    display: flex;
-  }
-
-  .nav-list a {
-    font-family: 'poppins';
-    text-align: center;
-    margin-top: 5px;
-    font-size: 10px;
-    justify-content: center;
-  }
-
-  .nav-name {
-    display: none;
-  }
-  
-  .logo {
-    display: none;
-  }
-  /*===== navbar end =====*/
 
   .home.container .col-1 h1 {
     font-size: 50px;
@@ -222,41 +141,80 @@
   .portfolio-card .box .btn {
     font-size: 14px;
   }
-
-   /* Change to Contact Modal */
-   .credits.container {
-    display: none;
-  }
-
-  /*=============== BREAKPOINTS MODAL ===============*/
-  .modal {
-    display: grid;
-  }
-
-  .modal__container {
-    padding-top: 0;
-  }
-
-  .modal__img {
-    width: 170px;
-  }
-
-  .modal__button-main {
-    margin-bottom: 90px;
-  }
-
-  .modal__button-link {
-    margin: 1rem auto;
-  }
-
-  .credits {
-    font-size: 15px;
-  }
-
-  /* end */
 }
 
 @media (max-width: 500px) {
+  .nav-name {
+    display: none;
+  }
+  
+  .logo {
+    display: none;
+  }
+
+  .scroll-button {
+    display: none;
+  }
+
+  /*===== Mobile Navbar =====*/
+  .list .badge-notif {
+    position: relative;
+  }
+  
+  .list .badge-notif[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: 0;
+    left: 3px;
+    font-size: .7rem;
+    background: #e53935;
+    color: white;
+    width: 7px;
+    height: 7px;
+    text-align: center;
+    line-height: 18px;
+    border: solid 0.1px;
+    border-radius: 50%;
+  }
+  
+  .navbar.container {
+    padding: 13px 0;
+    margin-bottom: 0;
+    width: 100%;
+    justify-content: center;
+    background: var(--circle);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    box-shadow: none;
+    z-index: 999;
+  }
+  
+  .nav-list .bx {
+    font-size: 1.9rem;
+    margin: 0px -2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    color: var(--grey);
+  }
+
+  .nav-list .bx:hover {
+    color: var(--blue);
+  }
+
+  .nav-list .active .bx {
+    color: var(--blue);
+  }
+
+  .nav-list i::before {
+    display: flex;
+  }
+
+  /*===== navbar end =====*/
+
   .container {
     padding-top: 1rem;
   }
@@ -310,9 +268,37 @@
     font-size: 25px;
   }
 
+  /* ============== Contact Modal ================ */
+  .credits.container {
+    display: none;
+  }
+
+  /*=============== BREAKPOINTS MODAL ===============*/
+  .modal {
+    display: grid;
+  }
+
+  .modal__container {
+    padding-top: 0;
+  }
+
+  .modal__img {
+    width: 170px;
+  }
+
   .modal__button-main {
     margin-bottom: 50px;
   }
+
+  .modal__button-link {
+    margin: 1rem auto;
+  }
+
+  .credits {
+    font-size: 15px;
+  }
+
+  /* end */
 }
 
 @media (max-width: 360px) {

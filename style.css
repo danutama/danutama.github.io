@@ -122,26 +122,6 @@ a {
   color: var(--button);
 }
 
-.list .badge-notif {
-  position: relative;
-}
-
-.list .badge-notif[data-badge]:after {
-  content: attr(data-badge);
-  position: absolute;
-  top: 2px;
-  right: -85px;
-  font-size: 0.7rem;
-  background: #e53935;
-  color: white;
-  width: 7px;
-  height: 7px;
-  text-align: center;
-  line-height: 18px;
-  border-radius: 50%;
-  border: solid 1px;
-}
-
 /* For Mobile Navbar */
 .nav-list i::before {
   display: none;
@@ -158,22 +138,16 @@ a {
 }
 
 .nav-list ul li {
-  margin: 0 30px;
+  margin: 0 20px;
   color: var(--h1);
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
 }
 
-.social-icons ul li a {
-  margin: 0 15px;
-  color: var(--h1);
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.social-icons ul li a:hover {
-  text-decoration: none;
-  color: var(--button);
+.photo {
+  width: 30px;
+  margin-right: 20px;
+  margin-top: 3px;
 }
 
 .logo {
@@ -456,6 +430,7 @@ a {
 
 /* === CREDITS / COPYRIGHT === */
 .credits.container {
+  padding-top: 20px;
   bottom: 0 !important;
   background: var(--circle);
   border-radius: 20px;
@@ -464,8 +439,13 @@ a {
 .credits {
   text-align: center;
   color: var(--grey);
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 30px;
+}
+
+.credits .title h1 {
+  font-size: 25px;
+  margin-bottom: -40px;
 }
 
 .social {
@@ -474,8 +454,8 @@ a {
 }
 
 .social img {
-  width: 50px;
-  margin: 30px;
+  width: 40px;
+  margin: 20px;
   align-items: center;
 }
 
