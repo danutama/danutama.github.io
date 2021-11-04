@@ -125,7 +125,7 @@
 
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    gap: .8rem;
+    gap: 1.2rem;
   }
 
   .portfolio-card .box h3 {

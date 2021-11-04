@@ -173,7 +173,7 @@ a {
 }
 
 .hero-img img {
-  border-radius: 45% 45% 15px 15px;
+  border-radius: 50% 50% 15px 15px;
   width: 700px;
 }
 
@@ -300,13 +300,14 @@ a {
   margin-right: 20px;
   width: 50px;
   margin-top: auto;
-  border-radius: 5px;
+  border-radius: 12px;
 }
 
 .icon-title h2 {
   font-size: 15px;
   color: var(--h1);
   font-weight: 600;
+  letter-spacing: 0.15rem;
 }
 
 .grid-box {
@@ -315,13 +316,15 @@ a {
 
 .skills .grid-box {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: var(--white);
 }
 
 .skills .grid-box:hover {
-  box-shadow: none;
-  transition: all 0.5s ease;
+  transition: all 0.6s ease;
+  transform: scale(1.02); 
+  -ms-transform: scale(1.02); /* Support IE 9 */
+  -webkit-transform: scale(1.02); /* support Safari */
 }
 
 /* Portfolio */
@@ -432,7 +435,7 @@ a {
   padding-top: 20px;
   bottom: 0 !important;
   background: var(--circle);
-  border-radius: 20px;
+  border-top: solid 1px;
 }
 
 .credits {
@@ -456,6 +459,7 @@ a {
   width: 40px;
   margin: 20px;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 /* Scroll To Top Button CSS */
