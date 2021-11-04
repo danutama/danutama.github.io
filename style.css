@@ -435,7 +435,6 @@ a {
   padding-top: 20px;
   bottom: 0 !important;
   background: var(--circle);
-  border-top: solid 1px;
 }
 
 .credits {
@@ -557,8 +556,7 @@ a {
   visibility: hidden;
   opacity: 0;
   padding-top: 6rem;
-  background: rgba(90, 90, 90, 0.7);
-  height: 1000px;
+  background: rgba(175, 175, 175, 0.3);
   bottom: 0;
   top: 0;
 }
