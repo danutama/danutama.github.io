@@ -19,7 +19,7 @@
 
   .about-details .right {
     width: 90%;
-    margin: 40px 0;
+    margin: 20px 0;
   }
 
   .contact .container {
@@ -255,6 +255,10 @@
     line-height: 25px;
   }
 
+  .about.container .content {
+    padding-bottom: 0px;
+  }
+  
   .about .right .button {
     text-align: center;
   }
