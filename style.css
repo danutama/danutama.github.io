@@ -19,17 +19,20 @@ html {
 
 :root {
   --h1: #000;
-  --blue2: #358fef;
-  --blue: rgb(28, 34, 51);
-  --blue-hover: rgb(20, 24, 37);
+  --blue2: rgb(28, 34, 51);
+  --blue: #358fef;
+  --blue-hover: #519cec;
+  --orange: #FF5525;
+  --orange-hover: #f56943;
+  --purple: #8d5cff;
+  --purple-hover: #986cff;
   --white: #fff;
   --grey: #b4b2c5;
-  --pink: #ea4c89;
   --circle: #f4f3ff;
   --light-blue: #d5e8fd;
   --background: rgba(20, 20, 20, 0.7);
   --button: #c3ad7a;
-  --hover: #b39e6f;
+  --button-hover: #b39e6f;
   --z-modal: 1000;
 }
 
@@ -73,7 +76,7 @@ a {
 }
 
 .highlight {
-  color: var(--button);
+  color: var(--purple);
 }
 
 .circle {
@@ -137,12 +140,6 @@ a {
   font-weight: bold;
 }
 
-/* For Mobile Navbar */
-.nav-list i::before {
-  display: none;
-}
-/* end */
-
 .photo {
   width: 30px;
   margin-right: 20px;
@@ -154,7 +151,14 @@ a {
   font-weight: bold;
   font-family: 'Dancing Script';
   letter-spacing: 0.10rem;
+  color: var(--purple);
 }
+
+/* For Mobile Navbar */
+.nav-list i::before {
+  display: none;
+}
+/* end */
 
 /* Home */
 .home.container {
@@ -190,16 +194,16 @@ a {
 
 .ctn {
   padding: 15px 30px;
-  border: 0.1rem solid var(--blue);
+  border: 0.1rem solid var(--purple);
   border-radius: 12px;
-  color: var(--blue);
+  color: var(--purple);
   border-radius: 17px;
   text-align: center;
 }
 
 .cta {
   padding: 15px 40px;
-  background: var(--blue);
+  background: var(--purple);
   color: var(--white);
   border-radius: 17px;
   text-align: center;
@@ -207,7 +211,7 @@ a {
 }
 
 .cta:hover {
-  background: var(--blue-hover);
+  background: var(--purple-hover);
   color: var(--white);
 }
 
@@ -216,7 +220,7 @@ a {
   background: #dbe5f0;
   width: 90%;
   border-radius: 20px;
-  border: solid 1px #358fef;
+  border: solid 1px var(--blue);
 }
 
 .about.container .content {
@@ -242,7 +246,7 @@ a {
 }
 
 .right .topic {
-  color: var(--blue);
+  color: var(--h1);
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 15px;
@@ -255,7 +259,7 @@ a {
 }
 
 .about-details .btn-link {
-  color: var(--blue2) !important;
+  color: var(--blue) !important;
   cursor: pointer;
 }
 
@@ -356,7 +360,7 @@ a {
 }
 
 .ctn-title .highlight a {
-  color: var(--blue2);
+  color: var(--blue);
 }
 
 .ctn-title .highlight a:hover {
@@ -408,15 +412,15 @@ a {
   font-weight: 600;
   display: flex;
   justify-content: center;
-  background: var(--button);
-  color: var(--h1);
+  background: var(--purple);
+  color: var(--white);
   padding: 10px;
   border-radius: 11px;
 }
 
 .portfolio-card .box .btn:hover {
-  background: var(--hover);
-  color: var(--h1);
+  background: var(--purple-hover);
+  color: var(--white);
 }
 
 /* Contact Desktop Version*/
@@ -477,7 +481,7 @@ a {
   bottom: 50px;
   right: 20px;
   color: var(--white);
-  background: var(--blue);
+  background: var(--purple);
   padding: 5px 10px;
   font-size: 13px;
   border-radius: 5px;
@@ -485,7 +489,7 @@ a {
 }
 
 .scroll-button a:hover {
-  background: var(--blue-hover);
+  background: var(--purple-hover);
   color: var(--white);
 }
 
@@ -496,7 +500,7 @@ a {
 }
 
 .modal__button-main {
-  background-color: var(--blue);
+  background-color: var(--purple);
   border: none !important;
   display: inline-block;
   color: #fff;
@@ -511,12 +515,12 @@ a {
 }
 
 .modal__button-main:hover {
-  background-color: var(--blue-hover);
+  background-color: var(--purple-hover);
 }
 
 .modal__button a {
   display: inline-block;
-  background-color: var(--button);
+  background-color: var(--purple);
   color: var(--h1);
   padding: 10px 35px;
   border-radius: 13px;
@@ -526,13 +530,13 @@ a {
 }
 
 .modal__button a:hover {
-  background-color: var(--hover);
+  background-color: var(--purple-hover);
 }
 
 .mail a {
   display: inline-block;
-  background-color: var(--button);
-  color: var(--h1);
+  background-color: var(--purple);
+  color: var(--white);
   margin: 0;
   border: none !important;
   transition: 0.3s;
@@ -546,8 +550,8 @@ a {
 
 .tele a {
   display: inline-block;
-  background-color: var(--button);
-  color: var(--h1);
+  background-color: var(--purple);
+  color: var(--white);
   margin: 10px 0;
   border: none !important;
   transition: 0.3s;
@@ -558,13 +562,14 @@ a {
 .modal__container {
   position: fixed;
   width: 100%;
+  left: 0;
   display: grid;
   align-items: flex-end;
   overflow: hidden;
   z-index: var(--z-modal);
   visibility: hidden;
   opacity: 0;
-  background: rgba(175, 175, 175, 0.3);
+  background: rgba(17, 17, 17, 0.7);
   transition: all 0.3s;
   bottom: 0;
   top: 0;
@@ -572,7 +577,7 @@ a {
 
 .modal__content {
   position: fixed;
-  background: var(--blue);
+  background: var(--circle);
   text-align: center;
   width: 100%;
   border-radius: 27px 27px 0 0;
@@ -589,10 +594,10 @@ a {
 
 .modal__close {
   display: inline-flex;
-  background-color: var(--grey);
+  background-color: var(--circle);
   border-radius: 0.25rem;
-  color: var(--blue);
-  font-size: 1.7rem;
+  color: var(--h1);
+  font-size: 2rem;
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -618,7 +623,7 @@ a {
 
 .contact-icons ul li a {
   margin: 15px;
-  color: var(--button);
+  color: var(--purple);
   font-size: 30px;
   cursor: pointer;
 }

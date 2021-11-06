@@ -201,11 +201,11 @@
   }
 
   .nav-list .bx:hover {
-    color: var(--blue);
+    color: var(--purple);
   }
 
   .nav-list .active .bx {
-    color: var(--blue);
+    color: var(--purple);
   }
 
   .nav-list i::before {
