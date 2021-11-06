@@ -50,7 +50,8 @@
 
   .row.hero .col-2 img {
     margin-top: 2rem;
-    width: 600px;
+    width: 100%;
+    margin-right: 0;
   }
 
   .grid-wrapper {
@@ -231,19 +232,21 @@
     font-size: 18px;
   }
 
-  .home-btn {
-    display: none;
-  }
-
   .home.container .col-1 {
-    margin-top: -60px;
-    margin-bottom: 25px;
+    margin-top: -10px;
+    margin-bottom: 20px;
   }
 
   .row.hero .col-2 img {
-    margin-top: -4rem;
+    margin-top: 3rem;
   }
   
+  .home-btn {
+    margin-top: -15px;
+    padding: 5px 50px;
+    font-size: 15px;
+  }
+
   .about .right p {
     width: 100%;
     font-size: 14px;

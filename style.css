@@ -173,11 +173,7 @@ a {
 .row.hero .col-2 img {
   max-width: 100%;
   margin-top: -30px;
-}
-
-.hero-img img {
-  border-radius: 47% 47% 15px 15px;
-  width: 75rem;
+  margin-right: 500px;
 }
 
 .row.hero p {
@@ -204,6 +200,7 @@ a {
 .cta {
   padding: 15px 40px;
   background: var(--blue);
+  border: 0.1rem solid var(--blue);
   color: var(--white);
   border-radius: 17px;
   text-align: center;
@@ -429,8 +426,7 @@ a {
 }
 
 .portfolio-card .box .btn:hover {
-  background: var(--blue-hover);
-  color: var(--white);
+  color: var(--blue);
   border: solid 1px #358fef;
   transition: 0.5s ease;
 }
