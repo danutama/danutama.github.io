@@ -120,7 +120,7 @@
   }
 
   .row.hero .col-2 img {
-    width: 300px;
+    width: 500px;
   }
 
   .portfolio-card {
@@ -201,11 +201,11 @@
   }
 
   .nav-list .bx:hover {
-    color: var(--purple);
+    color: var(--blue);
   }
 
   .nav-list .active .bx {
-    color: var(--purple);
+    color: var(--blue);
   }
 
   .nav-list i::before {

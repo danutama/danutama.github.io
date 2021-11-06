@@ -76,7 +76,7 @@ a {
 }
 
 .highlight {
-  color: var(--purple);
+  color: var(--blue);
 }
 
 .circle {
@@ -151,7 +151,7 @@ a {
   font-weight: bold;
   font-family: 'Dancing Script';
   letter-spacing: 0.10rem;
-  color: var(--purple);
+  color: var(--blue);
 }
 
 /* For Mobile Navbar */
@@ -177,7 +177,7 @@ a {
 
 .hero-img img {
   border-radius: 47% 47% 15px 15px;
-  width: 700px;
+  width: 75rem;
 }
 
 .row.hero p {
@@ -194,16 +194,16 @@ a {
 
 .ctn {
   padding: 15px 30px;
-  border: 0.1rem solid var(--purple);
+  border: 0.1rem solid var(--blue);
   border-radius: 12px;
-  color: var(--purple);
+  color: var(--blue);
   border-radius: 17px;
   text-align: center;
 }
 
 .cta {
   padding: 15px 40px;
-  background: var(--purple);
+  background: var(--blue);
   color: var(--white);
   border-radius: 17px;
   text-align: center;
@@ -211,7 +211,7 @@ a {
 }
 
 .cta:hover {
-  background: var(--purple-hover);
+  background: var(--blue-hover);
   color: var(--white);
 }
 
@@ -403,7 +403,7 @@ a {
 .portfolio-card .box h2 {
   font-size: 15px;
   font-weight: 600;
-  color: var(--main-color);
+  color: var(--h1);
   margin: 1rem 0 1rem;
 }
 
@@ -412,14 +412,14 @@ a {
   font-weight: 600;
   display: flex;
   justify-content: center;
-  background: var(--purple);
+  background: var(--blue);
   color: var(--white);
   padding: 10px;
   border-radius: 11px;
 }
 
 .portfolio-card .box .btn:hover {
-  background: var(--purple-hover);
+  background: var(--blue-hover);
   color: var(--white);
 }
 
@@ -481,7 +481,7 @@ a {
   bottom: 50px;
   right: 20px;
   color: var(--white);
-  background: var(--purple);
+  background: var(--blue);
   padding: 5px 10px;
   font-size: 13px;
   border-radius: 5px;
@@ -489,7 +489,7 @@ a {
 }
 
 .scroll-button a:hover {
-  background: var(--purple-hover);
+  background: var(--blue-hover);
   color: var(--white);
 }
 
@@ -500,7 +500,7 @@ a {
 }
 
 .modal__button-main {
-  background-color: var(--purple);
+  background-color: var(--blue);
   border: none !important;
   display: inline-block;
   color: #fff;
@@ -515,13 +515,13 @@ a {
 }
 
 .modal__button-main:hover {
-  background-color: var(--purple-hover);
+  background-color: var(--blue-hover);
 }
 
 .modal__button a {
   display: inline-block;
-  background-color: var(--purple);
-  color: var(--h1);
+  background: var(--blue);
+  color: var(--white);
   padding: 10px 35px;
   border-radius: 13px;
   border: none !important;
@@ -530,13 +530,11 @@ a {
 }
 
 .modal__button a:hover {
-  background-color: var(--purple-hover);
+  background-color: var(--blue-hover);
 }
 
 .mail a {
   display: inline-block;
-  background-color: var(--purple);
-  color: var(--white);
   margin: 0;
   border: none !important;
   transition: 0.3s;
@@ -550,8 +548,6 @@ a {
 
 .tele a {
   display: inline-block;
-  background-color: var(--purple);
-  color: var(--white);
   margin: 10px 0;
   border: none !important;
   transition: 0.3s;
@@ -623,7 +619,11 @@ a {
 
 .contact-icons ul li a {
   margin: 15px;
-  color: var(--purple);
+  color: var(--grey);
   font-size: 30px;
   cursor: pointer;
+}
+
+.contact-icons ul li a:hover{
+  color: var(--blue);
 }
