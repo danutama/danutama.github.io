@@ -50,7 +50,7 @@
 
   .row.hero .col-2 img {
     margin-top: 2rem;
-    width: 400px;
+    width: 600px;
   }
 
   .grid-wrapper {
@@ -117,10 +117,6 @@
 
   .home.container {
     margin-top: 0;
-  }
-
-  .row.hero .col-2 img {
-    width: 500px;
   }
 
   .portfolio-card {
