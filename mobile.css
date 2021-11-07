@@ -134,16 +134,6 @@
     gap: 1.2rem;
   }
 
-  .portfolio-card .box h3 {
-    font-size: 13px;
-    margin: 8px 0 8px;
-  }
-  
-  .portfolio-card .box h2 {
-    font-size: 14px;
-    margin: 8px 0 8px;
-  }
-
   .portfolio-card .box .btn {
     font-size: 14px;
   }
@@ -250,9 +240,26 @@
     display: none;
   }
 
+  .home-btn-mobile {
+    display: block;
+    padding-bottom: 30px;
+    margin-top: -15px;
+  }
+
+  .btn-mobile {
+    padding: 10px 40px;
+    background: var(--blue);
+    border: 0.1rem solid var(--blue);
+    color: var(--white);
+    border-radius: 13px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.15rem;
+  }
+
   .about .right p {
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     line-height: 25px;
   }

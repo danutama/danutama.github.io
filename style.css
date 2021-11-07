@@ -214,6 +214,10 @@ a {
   color: var(--white);
 }
 
+.home-btn-mobile {
+  display: none;
+}
+
 /* About */
 .about.container {
   background: #dbe5f0;
@@ -252,9 +256,10 @@ a {
 }
 
 .about-details .right p {
-  line-height: 25px;
+  line-height: 30px;
   text-align: justify;
   color: var(--h1);
+  font-size: 18px;
 }
 
 .about-details .btn-link {
@@ -315,7 +320,7 @@ a {
 .icon-title h2 {
   font-size: 15px;
   color: var(--h1);
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 0.15rem;
 }
 
@@ -381,14 +386,14 @@ a {
   padding: 10px;
   border-radius: 17px;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-  transition: 0.7s ease;
+  transition: 0.6s ease;
 }
 
 .portfolio-card .box:hover {
   transition: 0.6s ease;
-  transform: scale(1.04); 
-  -ms-transform: scale(1.04); /* Support IE 9 */
-  -webkit-transform: scale(1.04); /* support Safari */
+  transform: scale(1.03); 
+  -ms-transform: scale(1.03); /* Support IE 9 */
+  -webkit-transform: scale(1.03); /* support Safari */
 }
 
 .portfolio-card .box .box-img {
@@ -405,15 +410,15 @@ a {
 
 .portfolio-card .box h3 {
   font-size: 14px;
-  font-weight: 500;
-  margin: 1rem 0 1rem;
+  font-weight: 600;
+  margin: -0.7rem 0 10px;
 }
 
 .portfolio-card .box h2 {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--h1);
-  margin: 1rem 0 1rem;
+  margin: 10px 0;
 }
 
 .portfolio-card .box .btn {
@@ -519,7 +524,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
   transition: 0.3s;
   cursor: pointer;
   letter-spacing: 0.15rem;
