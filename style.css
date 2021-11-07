@@ -176,11 +176,13 @@ a {
   margin-right: 500px;
 }
 
-.row.hero p {
+.row.hero h4 {
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 20px;
   padding-bottom: 20px;
+  font-size: 60px;
+  color: #97cee2;
 }
 
 .home-btn {
@@ -384,9 +386,9 @@ a {
 
 .portfolio-card .box:hover {
   transition: 0.6s ease;
-  transform: scale(1.02); 
-  -ms-transform: scale(1.02); /* Support IE 9 */
-  -webkit-transform: scale(1.02); /* support Safari */
+  transform: scale(1.04); 
+  -ms-transform: scale(1.04); /* Support IE 9 */
+  -webkit-transform: scale(1.04); /* support Safari */
 }
 
 .portfolio-card .box .box-img {
@@ -398,6 +400,7 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 11px;
 }
 
 .portfolio-card .box h3 {
@@ -418,7 +421,7 @@ a {
   font-weight: 600;
   display: flex;
   justify-content: center;
-  background: transparent;
+  background: #d9e8f8;
   border: solid 1px #358fef;
   color: var(--blue);
   padding: 10px;
