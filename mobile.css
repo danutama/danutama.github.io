@@ -1,6 +1,6 @@
 @media (max-width: 1350px) {
   .skills .grid-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   }
 }
 
@@ -60,21 +60,7 @@
   }
 
   .grid-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  }
-
-  .grid-box {
-    padding: 5px;
-  }
-
-  .portfolio .title .ctn-title {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .portfolio .title .ctn-title h1 {
-    margin: 10px;
-    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   }
 
   .copyright p {
@@ -97,14 +83,13 @@
   }
 
   .skills .grid-wrapper{
-    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
   }
 }
 
 @media (max-width: 800px) {
   .grid-box {
     width: 100%;
-    justify-content: center;
   }
   
   .portfolio-card {
@@ -254,7 +239,6 @@
     border-radius: 13px;
     text-align: center;
     font-size: 15px;
-    
   }
 
   .about .right p {

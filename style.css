@@ -300,6 +300,11 @@ a {
 
 .skills .title h1 {
   font-size: 30px;
+  margin: 10px;
+}
+
+.skills .title h4 {
+  font-weight: normal;
 }
 
 .grid-wrapper {
@@ -322,7 +327,7 @@ a {
 }
 
 .icon-title h2 {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--h1);
   font-weight: 600;
 }
@@ -353,12 +358,14 @@ a {
 .portfolio .title .ctn-title {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .ctn-title h1 {
   font-size: 30px;
+  margin: 10px;
 }
 
 .ctn-title h4 {
