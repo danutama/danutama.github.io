@@ -117,10 +117,12 @@ a {
 
 .nav-list a {
   font-family: 'nunito';
+  transition: 0.5s ease;
 }
 
 .nav-list a:hover {
   color: var(--h1);
+  transition: 0.5s ease;
 }
 
 .nav-list ul li a {
@@ -207,11 +209,13 @@ a {
   border-radius: 17px;
   text-align: center;
   margin-right: 20px;
+  transition: 0.6s ease;
 }
 
 .cta:hover {
   background: var(--blue-hover);
   color: var(--white);
+  transition: 0.6s ease;
 }
 
 .home-btn-mobile {
@@ -320,8 +324,7 @@ a {
 .icon-title h2 {
   font-size: 15px;
   color: var(--h1);
-  font-weight: bold;
-  letter-spacing: 0.15rem;
+  font-weight: 600;
 }
 
 .grid-box {
@@ -386,14 +389,6 @@ a {
   padding: 10px;
   border-radius: 17px;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-  transition: 0.6s ease;
-}
-
-.portfolio-card .box:hover {
-  transition: 0.6s ease;
-  transform: scale(1.03); 
-  -ms-transform: scale(1.03); /* Support IE 9 */
-  -webkit-transform: scale(1.03); /* support Safari */
 }
 
 .portfolio-card .box .box-img {
@@ -409,14 +404,14 @@ a {
 }
 
 .portfolio-card .box h3 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  margin: -0.7rem 0 10px;
+  margin: -0.5rem 0 10px;
 }
 
 .portfolio-card .box h2 {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--h1);
   margin: 10px 0;
 }
@@ -427,16 +422,9 @@ a {
   display: flex;
   justify-content: center;
   background: #d9e8f8;
-  border: solid 1px #358fef;
   color: var(--blue);
   padding: 10px;
   border-radius: 11px;
-}
-
-.portfolio-card .box .btn:hover {
-  color: var(--blue);
-  border: solid 1px #358fef;
-  transition: 0.5s ease;
 }
 
 /* Contact Desktop Version*/
@@ -530,10 +518,6 @@ a {
   letter-spacing: 0.15rem;
 }
 
-.modal__button-main:hover {
-  background-color: var(--blue-hover);
-}
-
 .modal__button a {
   display: inline-block;
   background: var(--blue);
@@ -543,10 +527,6 @@ a {
   border: none !important;
   transition: 0.3s;
   cursor: pointer;
-}
-
-.modal__button a:hover {
-  background-color: var(--blue-hover);
 }
 
 .mail a {
