@@ -69,9 +69,6 @@
 }
 
 @media (max-width: 900px) {
-  html{
-    scroll-behavior:unset;
-  }
 
   .about .left img {
     height: 310px;
@@ -125,6 +122,10 @@
 }
 
 @media (max-width: 500px) {
+  html {
+    scroll-behavior: unset;
+  }
+  
   .nav-name {
     display: none;
   }
@@ -187,6 +188,23 @@
 
   .nav-list .active .bx {
     color: var(--blue);
+  }
+
+  /* ICON TRANSITION */
+  .nav-list .bx-solid {
+    display: none;
+  } 
+
+  .nav-list .active .bx-solid {
+    display: flex;
+  }
+
+  .nav-list .active .bx-fill {
+    display: none;
+  }
+
+  .nav-list .active .badge-notif[data-badge]:after {
+    display: none;
   }
 
   .nav-list i::before {
