@@ -165,6 +165,11 @@ a {
 /* Home */
 .home.container {
   position: relative;
+  height: 40rem;
+}
+
+.row.hero {
+  margin-top: 4rem;
 }
 
 .row.hero .col-1 {
@@ -280,7 +285,6 @@ a {
 }
 
 .about-details .button li a {
-  width: fit-content;
   outline: none;
   padding: 10px 30px;
   font-size: 15px;
@@ -486,7 +490,7 @@ a {
   padding-bottom: 20px;
 }
 
-/* Scroll To Top Button CSS */
+/* Scroll To Top Button */
 .scroll-button a {
   position: fixed;
   bottom: 50px;
@@ -603,7 +607,7 @@ a {
   cursor: pointer;
 }
 
-/* Show modal */
+/* === Show modal === */
 .show-modal {
   visibility: visible;
   opacity: 1;
