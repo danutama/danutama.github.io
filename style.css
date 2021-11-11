@@ -41,7 +41,7 @@ html {
 body.dark-theme {
   --h1: #fff;
   --h2: #000;
-  --about-color: #525252;
+  --about-color: #2f2f2f;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
   --blue-hover: #519cec;
@@ -51,7 +51,7 @@ body.dark-theme {
   --purple-hover: #986cff;
   --white: #fff;
   --grey: #b4b2c5;
-  --circle: #333333;
+  --circle: #17181c;
   --light-blue: #d5e8fd;
   --background: rgba(20, 20, 20, 0.7);
   --button: #c3ad7a;
