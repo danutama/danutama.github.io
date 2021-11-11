@@ -73,7 +73,6 @@
 }
 
 @media (max-width: 900px) {
-
   .about .left img {
     height: 310px;
     width: 200;
@@ -83,7 +82,7 @@
     text-align: center;
   }
 
-  .skills .grid-wrapper{
+  .skills .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(180px, auto));
   }
 }
@@ -92,7 +91,7 @@
   .grid-box {
     width: 100%;
   }
-  
+
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   }
@@ -129,11 +128,11 @@
   html {
     scroll-behavior: unset;
   }
-  
+
   .nav-name {
     display: none;
   }
-  
+
   .logo {
     display: none;
   }
@@ -146,13 +145,13 @@
   .list .badge-notif {
     position: relative;
   }
-  
+
   .list .badge-notif[data-badge]:after {
     content: attr(data-badge);
     position: absolute;
     top: 1px;
     left: 3px;
-    font-size: .7rem;
+    font-size: 0.7rem;
     background: #e53935;
     color: white;
     width: 5px;
@@ -161,7 +160,7 @@
     border: solid 1px;
     border-radius: 50%;
   }
-  
+
   .navbar.container {
     padding: 8px 0;
     margin-bottom: 0;
@@ -174,7 +173,7 @@
     box-shadow: none;
     z-index: 999;
   }
-  
+
   .nav-list .bx {
     font-size: 1.9rem;
     margin: 0px -2px;
@@ -193,7 +192,7 @@
   /* === Icon Transition === */
   .nav-list .bx-solid {
     display: none;
-  } 
+  }
 
   .nav-list .active .bx-solid {
     display: flex;
@@ -210,13 +209,12 @@
   .nav-list i::before {
     display: flex;
   }
-
   /*===== navbar end =====*/
 
   .container {
     padding-top: 1rem;
   }
-  
+
   .home.container {
     margin-top: 5rem;
   }
@@ -224,7 +222,7 @@
   .row.hero {
     margin-top: auto;
   }
-  
+
   .col-1 {
     justify-content: center;
     text-align: center;
@@ -238,7 +236,7 @@
     margin-top: -30px;
     margin-bottom: -40px;
   }
-  
+
   .home.container .col-1 h4 {
     font-size: 36px;
   }
@@ -263,6 +261,15 @@
     font-size: 15px;
   }
 
+  /* === Dark/light button === */
+  .dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  /* END */
+
   .about .right p {
     width: 100%;
     font-size: 15px;
@@ -273,7 +280,7 @@
   .about.container .content {
     padding-bottom: 0px;
   }
-  
+
   .about .right .button {
     text-align: center;
   }

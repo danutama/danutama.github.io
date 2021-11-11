@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-
 /* Global Styling */
 * {
   margin: 0;
@@ -19,16 +18,40 @@ html {
 
 :root {
   --h1: #000;
+  --h2: #000;
+  --about-color: #dbe5f0;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
   --blue-hover: #519cec;
-  --orange: #FF5525;
+  --orange: #ff5525;
   --orange-hover: #f56943;
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
   --grey: #b4b2c5;
   --circle: #f4f3ff;
+  --light-blue: #d5e8fd;
+  --background: rgba(20, 20, 20, 0.7);
+  --button: #c3ad7a;
+  --button-hover: #b39e6f;
+  --z-modal: 1000;
+}
+
+/*===== Variables Dark theme =====*/
+body.dark-theme {
+  --h1: #fff;
+  --h2: #000;
+  --about-color: #525252;
+  --blue2: rgb(28, 34, 51);
+  --blue: #358fef;
+  --blue-hover: #519cec;
+  --orange: #ff5525;
+  --orange-hover: #f56943;
+  --purple: #8d5cff;
+  --purple-hover: #986cff;
+  --white: #fff;
+  --grey: #b4b2c5;
+  --circle: #333333;
   --light-blue: #d5e8fd;
   --background: rgba(20, 20, 20, 0.7);
   --button: #c3ad7a;
@@ -152,7 +175,7 @@ a {
   margin-left: 20px;
   font-weight: bold;
   font-family: 'Dancing Script';
-  letter-spacing: 0.10rem;
+  letter-spacing: 0.1rem;
   color: var(--blue);
 }
 
@@ -227,9 +250,32 @@ a {
   display: none;
 }
 
+/*===== Button Dark/Light Mode =====*/
+.dark {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.change-theme,
+.change-theme-name {
+  color: var(--h1);
+}
+
+.change-theme {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.change-theme-name {
+  font-size: 15px;
+}
+/* END */
+
 /* About */
 .about.container {
-  background: #dbe5f0;
+  background: var(--about-color);
   width: 90%;
   border-radius: 20px;
   border: solid 1px var(--blue);
@@ -309,6 +355,7 @@ a {
 
 .skills .title h4 {
   font-weight: normal;
+  color: var(--h1);
 }
 
 .grid-wrapper {
@@ -332,7 +379,7 @@ a {
 
 .icon-title h2 {
   font-size: 16px;
-  color: var(--h1);
+  color: var(--h2);
   font-weight: 600;
 }
 
@@ -349,7 +396,7 @@ a {
 
 .skills .grid-box:hover {
   transition: all 0.6s ease;
-  transform: scale(1.02); 
+  transform: scale(1.02);
   -ms-transform: scale(1.02); /* Support IE 9 */
   -webkit-transform: scale(1.02); /* support Safari */
 }
@@ -423,7 +470,7 @@ a {
 .portfolio-card .box h2 {
   font-size: 15px;
   font-weight: 600;
-  color: var(--h1);
+  color: var(--h2);
   margin: 10px 0;
 }
 
@@ -631,6 +678,6 @@ a {
   cursor: pointer;
 }
 
-.contact-icons ul li a:hover{
+.contact-icons ul li a:hover {
   color: var(--blue);
 }
