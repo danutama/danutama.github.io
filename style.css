@@ -20,6 +20,7 @@ html {
   --h1: #000;
   --h2: #000;
   --about-color: #dbe5f0;
+  --card-color: #fff;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
   --blue-hover: #519cec;
@@ -41,7 +42,8 @@ html {
 body.dark-theme {
   --h1: #fff;
   --h2: #000;
-  --about-color: #2f2f2f;
+  --about-color: #424242;
+  --card-color: #424242;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
   --blue-hover: #519cec;
@@ -51,7 +53,7 @@ body.dark-theme {
   --purple-hover: #986cff;
   --white: #fff;
   --grey: #b4b2c5;
-  --circle: #17181c;
+  --circle: rgb(47, 47, 47);
   --light-blue: #d5e8fd;
   --background: rgba(20, 20, 20, 0.7);
   --button: #c3ad7a;
@@ -374,12 +376,12 @@ a {
   margin-right: 20px;
   width: 50px;
   margin-top: auto;
-  border-radius: 12px;
+  border-radius: 11px;
 }
 
 .icon-title h2 {
   font-size: 16px;
-  color: var(--h2);
+  color: var(--h1);
   font-weight: 600;
 }
 
@@ -390,7 +392,7 @@ a {
 .skills .grid-box {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  background-color: var(--white);
+  background-color: var(--card-color);
   transition: 0.7s ease;
 }
 
@@ -443,7 +445,7 @@ a {
 }
 
 .portfolio-card .box {
-  background-color: #fff;
+  background-color: var(--card-color);
   padding: 10px;
   border-radius: 17px;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
@@ -470,7 +472,7 @@ a {
 .portfolio-card .box h2 {
   font-size: 15px;
   font-weight: 600;
-  color: var(--h2);
+  color: var(--h1);
   margin: 10px 0;
 }
 
@@ -535,6 +537,14 @@ a {
   margin: 20px;
   align-items: center;
   padding-bottom: 20px;
+  transition: all 0.6s ease;
+}
+
+.social a img:hover {
+  transition: all 0.6s ease;
+  transform: scale(1.09);
+  -ms-transform: scale(1.09); /* Support IE 9 */
+  -webkit-transform: scale(1.09); /* support Safari */
 }
 
 /* Scroll To Top Button */
