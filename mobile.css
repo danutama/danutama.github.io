@@ -241,6 +241,10 @@
     font-size: 36px;
   }
 
+  .home.container .col-2 {
+    margin-bottom: 70px;
+  }
+
   .home-btn {
     display: none;
   }
@@ -266,7 +270,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
   }
   /* END */
 
