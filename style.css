@@ -193,10 +193,6 @@ a {
   height: 40rem;
 }
 
-.row.hero {
-  margin-top: 4rem;
-}
-
 .row.hero .col-1 {
   width: 100%;
   flex-direction: column;
@@ -256,12 +252,11 @@ a {
 .dark {
   display: flex;
   align-items: center;
-  margin-top: 35px;
 }
 
 .change-theme,
 .change-theme-name {
-  color: var(--h1);
+  color: var(--grey);
 }
 
 .change-theme {
