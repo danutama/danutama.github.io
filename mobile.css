@@ -186,7 +186,7 @@
   }
 
   .nav-list .active .bx {
-    color: var(--blue);
+    color: var(--button-main);
   }
 
   /* === Icon Transition === */
@@ -257,8 +257,8 @@
 
   .btn-mobile {
     padding: 10px 40px;
-    background: var(--blue);
-    border: 0.1rem solid var(--blue);
+    background: var(--button-main);
+    border: 0.1rem solid var(--button-main);
     color: var(--white);
     border-radius: 13px;
     text-align: center;
@@ -296,6 +296,10 @@
     font-size: 25px;
   }
 
+  .portfolio .title {
+    margin-bottom: 40px;
+  }
+
   /* ============== Contact Modal ================ */
   .credits.container {
     display: none;
@@ -326,7 +330,6 @@
     font-size: 15px;
     padding-top: 10px;
   }
-
   /* end */
 }
 

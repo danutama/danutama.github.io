@@ -23,9 +23,9 @@ html {
   --card-color: #fff;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
-  --blue-hover: #519cec;
-  --orange: #ff5525;
-  --orange-hover: #f56943;
+  --button-main: #358fef;
+  --button-main-hover: #519cec;
+  --button-second: #d9e8f8;
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -33,8 +33,8 @@ html {
   --circle: #f4f3ff;
   --light-blue: #d5e8fd;
   --background: rgba(20, 20, 20, 0.7);
-  --button: #c3ad7a;
-  --button-hover: #b39e6f;
+  --button-chocolate: #c3ad7a;
+  --button-chocolate-hover: #b39e6f;
   --z-modal: 1000;
 }
 
@@ -46,9 +46,9 @@ body.dark-theme {
   --card-color: #424242;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
-  --blue-hover: #519cec;
-  --orange: #ff5525;
-  --orange-hover: #f56943;
+  --button-main: #ff5d31;
+  --button-main-hover: #f56943;
+  --button-second: #fff;
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -56,8 +56,8 @@ body.dark-theme {
   --circle: rgb(47, 47, 47);
   --light-blue: #d5e8fd;
   --background: rgba(20, 20, 20, 0.7);
-  --button: #c3ad7a;
-  --button-hover: #b39e6f;
+  --button-chocolate: #c3ad7a;
+  --button-chocolate-hover: #b39e6f;
   --z-modal: 1000;
 }
 
@@ -178,7 +178,7 @@ a {
   font-weight: bold;
   font-family: 'Dancing Script';
   letter-spacing: 0.1rem;
-  color: var(--blue);
+  color: var(--button-main);
 }
 
 /* For Mobile Navbar */
@@ -220,17 +220,17 @@ a {
 
 .ctn {
   padding: 15px 30px;
-  border: 0.1rem solid var(--blue);
+  border: 0.1rem solid var(--button-main);
   border-radius: 12px;
-  color: var(--blue);
+  color: var(--button-main-hover);
   border-radius: 17px;
   text-align: center;
 }
 
 .cta {
   padding: 15px 40px;
-  background: var(--blue);
-  border: 0.1rem solid var(--blue);
+  background: var(--button-main);
+  border: 0.1rem solid var(--button-main);
   color: var(--white);
   border-radius: 17px;
   text-align: center;
@@ -239,7 +239,7 @@ a {
 }
 
 .cta:hover {
-  background: var(--blue-hover);
+  background: var(--button-main-hover);
   color: var(--white);
   transition: 0.6s ease;
 }
@@ -275,7 +275,6 @@ a {
   background: var(--about-color);
   width: 90%;
   border-radius: 20px;
-  border: solid 1px var(--blue);
 }
 
 .about.container .content {
@@ -333,8 +332,8 @@ a {
   font-size: 15px;
   cursor: pointer;
   background: transparent;
-  color: var(--blue);
-  border: 0.1rem solid var(--blue);
+  color: var(--button-main);
+  border: 0.1rem solid var(--button-main);
   border-radius: 12px;
   text-align: center;
 }
@@ -401,6 +400,7 @@ a {
 /* Portfolio */
 .portfolio .title {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .portfolio .title .ctn-title {
@@ -476,8 +476,8 @@ a {
   font-weight: 600;
   display: flex;
   justify-content: center;
-  background: #d9e8f8;
-  color: var(--blue);
+  background: var(--button-second);
+  color: var(--button-main);
   padding: 10px;
   border-radius: 11px;
 }
@@ -525,21 +525,30 @@ a {
 .social {
   justify-content: space-evenly;
   align-items: center;
-}
-
-.social img {
-  width: 40px;
-  margin: 20px;
-  align-items: center;
+  display: flex;
+  justify-content: center;
   padding-bottom: 20px;
-  transition: all 0.6s ease;
 }
 
-.social a img:hover {
-  transition: all 0.6s ease;
-  transform: scale(1.09);
-  -ms-transform: scale(1.09); /* Support IE 9 */
-  -webkit-transform: scale(1.09); /* support Safari */
+.social a {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:  20px;
+  color: var(--h1);
+  border-radius: 50%;
+  border: 1px solid var(--h1);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.social a:hover {
+  color: var(--button-main);
+  border: 1px solid var(--button-main);
+  transition: all 0.4s ease;
 }
 
 /* Scroll To Top Button */
@@ -548,7 +557,7 @@ a {
   bottom: 50px;
   right: 20px;
   color: var(--white);
-  background: var(--blue);
+  background: var(--button-main);
   padding: 5px 10px;
   font-size: 13px;
   border-radius: 5px;
@@ -556,7 +565,7 @@ a {
 }
 
 .scroll-button a:hover {
-  background: var(--blue-hover);
+  background: var(--button-main-hover);
   color: var(--white);
 }
 
@@ -567,10 +576,10 @@ a {
 }
 
 .modal__button-main {
-  background-color: var(--blue);
+  background-color: var(--button-main);
   border: none !important;
   display: inline-block;
-  color: #fff;
+  color: var(--white);
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -583,7 +592,7 @@ a {
 
 .modal__button a {
   display: inline-block;
-  background: var(--blue);
+  background: var(--button-main);
   color: var(--white);
   padding: 10px 35px;
   border-radius: 13px;
@@ -684,5 +693,5 @@ a {
 }
 
 .contact-icons ul li a:hover {
-  color: var(--blue);
+  color: var(--button-main);
 }
