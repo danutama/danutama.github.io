@@ -19,6 +19,7 @@ html {
 :root {
   --h1: #000;
   --h2: #000;
+  --background-nav: rgba(235, 241, 245, 0.7);
   --about-color: #dbe5f0;
   --card-color: #fff;
   --blue2: rgb(28, 34, 51);
@@ -42,6 +43,7 @@ html {
 body.dark-theme {
   --h1: #fff;
   --h2: #000;
+  --background-nav: rgba(85, 85, 85, 0.7);
   --about-color: #424242;
   --card-color: #424242;
   --blue2: rgb(28, 34, 51);
@@ -115,9 +117,17 @@ a {
   z-index: -1;
 }
 
+/* Change Background Navbar */
+.scroll-header {
+  backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	background: var(--background-nav);
+  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+  transition: 0.5s ease;
+}
+
 /* Navbar */
 .navbar.container {
-  background-color: var(--circle);
   margin-top: 0;
   position: fixed;
   z-index: 1000;

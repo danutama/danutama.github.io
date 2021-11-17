@@ -1,3 +1,11 @@
+/*==================== CHANGE BACKGROUND NAVBAR ====================*/
+function scrollHeader(){
+  const header = document.getElementById('navbar')
+  // When the scroll is greater than 50 viewport height, add the scroll-header class to the navbar tag
+  if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
+
 /*=============== SHOW MODAL ===============*/
 const showModal = (openButton, modalContent) => {
   const openBtn = document.getElementById(openButton),
@@ -33,7 +41,7 @@ const selectedIcon = localStorage.getItem('selected-icon');
 const getCurrentTheme = () => (document.body.classList.contains(darkTheme) ? 'dark' : 'light');
 const getCurrentIcon = () => (themeButton.classList.contains(iconTheme) ? 'bxs-sun' : 'bxs-sun');
 
-// We validate if the user previously chose a topic
+// We validate if the user previously choose a topic
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
