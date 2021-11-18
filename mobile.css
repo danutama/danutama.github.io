@@ -162,7 +162,7 @@
   }
 
   .navbar.container {
-    padding: 8px 0;
+    padding: 10px 0;
     margin-bottom: 0;
     width: 100%;
     justify-content: center;
@@ -175,7 +175,7 @@
   }
 
   .nav-list .bx {
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin: 0px -2px;
     justify-content: center;
     align-items: center;
@@ -312,10 +312,6 @@
 
   .modal__container {
     padding-top: 0;
-  }
-
-  .modal__img {
-    width: 170px;
   }
 
   .modal__button-main {

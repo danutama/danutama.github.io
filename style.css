@@ -19,6 +19,7 @@ html {
 :root {
   --h1: #000;
   --h2: #000;
+  --social: #fff;
   --background-nav: rgba(235, 241, 245, 0.7);
   --about-color: #dbe5f0;
   --card-color: #fff;
@@ -43,12 +44,13 @@ html {
 body.dark-theme {
   --h1: #fff;
   --h2: #000;
-  --background-nav: rgba(85, 85, 85, 0.7);
+  --social: #fff;
+  --background-nav: rgba(71, 71, 71, 0.7);
   --about-color: #424242;
   --card-color: #424242;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
-  --button-main: #ff6a41;
+  --button-main: #fd7014;
   --button-main-hover: #f56943;
   --button-second: #fff;
   --purple: #8d5cff;
@@ -208,10 +210,12 @@ a {
   flex-direction: column;
 }
 
+.highlight-name {
+  color: var(--button-main);
+}
+
 .row.hero .col-2 img {
   max-width: 100%;
-  margin-top: -30px;
-  margin-right: 500px;
 }
 
 .row.hero h4 {
@@ -523,10 +527,6 @@ a {
   padding-bottom: 30px;
 }
 
-.credits .title img {
-  margin-bottom: 10px;
-}
-
 .credits .title h1 {
   font-size: 25px;
   margin-bottom: -40px;
@@ -556,7 +556,8 @@ a {
 }
 
 .social a:hover {
-  color: var(--button-main);
+  color: var(--social);
+  background: var(--button-main);
   border: 1px solid var(--button-main);
   transition: all 0.4s ease;
 }
@@ -663,7 +664,6 @@ a {
 .modal__img {
   width: 170px;
   margin-top: 1rem;
-  margin-bottom: 0.75rem;
 }
 
 .modal__close {
