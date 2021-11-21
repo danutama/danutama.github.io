@@ -518,6 +518,7 @@ a {
   padding-top: 20px;
   bottom: 0 !important;
   background: var(--about-color);
+  border-radius: 20px;
 }
 
 .credits {
