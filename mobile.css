@@ -5,6 +5,14 @@
 }
 
 @media (max-width: 1120px) {
+  .photo {
+    margin-right: 20px;
+  }
+  
+  .logo {
+    margin-left: 20px;
+  }
+
   .about .about-details {
     justify-content: center;
     flex-direction: column;
@@ -170,7 +178,6 @@
     text-align: center;
     position: fixed;
     bottom: 0;
-    box-shadow: none;
     z-index: 999;
   }
 

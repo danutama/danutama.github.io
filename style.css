@@ -51,7 +51,7 @@ body.dark-theme {
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
   --button-main: #fd7014;
-  --button-main-hover: #f56943;
+  --button-main-hover: #ff8534;
   --button-second: #fff;
   --purple: #8d5cff;
   --purple-hover: #986cff;
@@ -181,12 +181,12 @@ a {
 
 .photo {
   width: 30px;
-  margin-right: 20px;
+  margin-right: 60px;
   margin-top: 3px;
 }
 
 .logo {
-  margin-left: 20px;
+  margin-left: 60px;
   font-weight: bold;
   font-family: 'Dancing Script';
   letter-spacing: 0.1rem;
@@ -346,8 +346,8 @@ a {
   font-size: 15px;
   cursor: pointer;
   background: transparent;
-  color: var(--button-main);
-  border: 0.1rem solid var(--button-main);
+  color: var(--blue);
+  border: 0.1rem solid var(--blue);
   border-radius: 12px;
   text-align: center;
 }
@@ -457,7 +457,7 @@ a {
   background-color: var(--card-color);
   padding: 10px;
   border-radius: 17px;
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-card .box .box-img {
@@ -517,7 +517,7 @@ a {
 .credits.container {
   padding-top: 20px;
   bottom: 0 !important;
-  background: var(--circle);
+  background: var(--about-color);
 }
 
 .credits {
