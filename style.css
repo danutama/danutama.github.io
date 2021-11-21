@@ -50,9 +50,6 @@ body.dark-theme {
   --card-color: #424242;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
-  --button-main: #fd7014;
-  --button-main-hover: #ff8534;
-  --button-second: #fff;
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -125,7 +122,7 @@ a {
 	-webkit-backdrop-filter: blur(10px);
 	background: var(--background-nav);
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 /* Navbar */
@@ -457,7 +454,7 @@ a {
   background-color: var(--card-color);
   padding: 10px;
   border-radius: 17px;
-  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 
 .portfolio-card .box .box-img {
