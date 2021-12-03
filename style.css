@@ -13,7 +13,7 @@ html {
   font-family: 'nunito';
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: var(--circle);
+  background: var(--circle);
 }
 
 :root {
@@ -21,13 +21,13 @@ html {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(235, 241, 245, 0.7);
-  --about-color: #dbe5f0;
+  --about-color: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
   --card-color: #fff;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
   --button-main: #358fef;
   --button-main-hover: #519cec;
-  --button-second: #d9e8f8;
+  --button-second: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -46,15 +46,15 @@ body.dark-theme {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(71, 71, 71, 0.7);
-  --about-color: #424242;
-  --card-color: #424242;
+  --about-color: #383a42;
+  --card-color: #383a42;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
   --grey: #b4b2c5;
-  --circle: rgb(47, 47, 47);
+  --circle: #202127;
   --light-blue: #d5e8fd;
   --background: rgba(20, 20, 20, 0.7);
   --button-chocolate: #c3ad7a;
@@ -119,8 +119,8 @@ a {
 /* Change Background Navbar */
 .scroll-header {
   backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	background: var(--background-nav);
+  -webkit-backdrop-filter: blur(10px);
+  background: var(--background-nav);
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
   transition: 0.3s ease;
 }
@@ -233,7 +233,7 @@ a {
 
 .ctn {
   padding: 15px 30px;
-  border: 0.1rem solid var(--button-main);
+  border: 2px solid var(--button-main);
   border-radius: 12px;
   color: var(--button-main-hover);
   border-radius: 17px;
@@ -243,7 +243,7 @@ a {
 .cta {
   padding: 15px 40px;
   background: var(--button-main);
-  border: 0.1rem solid var(--button-main);
+  border: 2px solid var(--button-main);
   color: var(--white);
   border-radius: 17px;
   text-align: center;
@@ -346,7 +346,7 @@ a {
   cursor: pointer;
   background: transparent;
   color: var(--blue);
-  border: 0.1rem solid var(--blue);
+  border: 2px solid var(--blue);
   border-radius: 12px;
   text-align: center;
 }
@@ -491,7 +491,7 @@ a {
   display: flex;
   justify-content: center;
   background: var(--button-second);
-  color: var(--button-main);
+  color: var(--h2);
   padding: 10px;
   border-radius: 11px;
 }
