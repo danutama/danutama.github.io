@@ -39,7 +39,7 @@
 
 @media only screen and (max-width: 1000px) {
   h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .home.container {
@@ -54,10 +54,6 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
-  }
-
-  .col-1 h1 {
-    font-size: 40px;
   }
 
   .col-1 h4 {
@@ -111,7 +107,7 @@
   }
 
   .home.container .col-1 h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .home.container .col-1 h4 {
@@ -135,10 +131,6 @@
 @media (max-width: 500px) {
   html {
     scroll-behavior: unset;
-  }
-
-  .nav-name {
-    display: none;
   }
 
   .logo {
@@ -170,7 +162,7 @@
   }
 
   .navbar.container {
-    padding: 10px 0;
+    padding: 7px 0;
     margin-bottom: 0;
     width: 100%;
     justify-content: center;
@@ -184,7 +176,7 @@
 
   .nav-list .bx {
     font-size: 1.5rem;
-    margin: 2px -2px;
+    margin: 2px 0;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -196,10 +188,10 @@
   .nav-name.contact,
   .nav-name {
     display: block;
-    font-size: 12px;
+    font-size: 10px;
     color: var(--grey);
     transition: unset;
-    font-weight: normal;
+    font-weight: bold;
   }
 
   .nav-list .active .nav-name,
@@ -247,7 +239,11 @@
   }
 
   .home.container .col-1 h1 {
-    font-size: 20px;
+    font-size: 17px;
+  }
+
+  .highlight-name {
+    font-size: 40px;
   }
 
   .home.container .col-1 {
@@ -453,10 +449,4 @@
 .contact-icons ul li a:hover {
   color: var(--button-main);
 }
-}
-
-@media (max-width: 360px) {
-  .home.container .col-1 h1 {
-    font-size: 35px;
-  }
 }
