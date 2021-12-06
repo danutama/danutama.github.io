@@ -57,7 +57,7 @@
   }
 
   .col-1 h1 {
-    font-size: 70px;
+    font-size: 40px;
   }
 
   .col-1 h4 {
@@ -111,7 +111,7 @@
   }
 
   .home.container .col-1 h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .home.container .col-1 h4 {
@@ -183,8 +183,8 @@
   }
 
   .nav-list .bx {
-    font-size: 2rem;
-    margin: 0px -2px;
+    font-size: 1.5rem;
+    margin: 2px -2px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -193,6 +193,16 @@
     color: var(--grey);
   }
 
+  .nav-name.contact,
+  .nav-name {
+    display: block;
+    font-size: 12px;
+    color: var(--grey);
+    transition: unset;
+    font-weight: normal;
+  }
+
+  .nav-list .active .nav-name,
   .nav-list .active .bx {
     color: var(--button-main);
   }
@@ -237,7 +247,7 @@
   }
 
   .home.container .col-1 h1 {
-    font-size: 38px;
+    font-size: 20px;
   }
 
   .home.container .col-1 {
@@ -255,22 +265,6 @@
 
   .home-btn {
     display: none;
-  }
-
-  .home-btn-mobile {
-    display: block;
-    padding-bottom: 30px;
-    margin-top: -15px;
-  }
-
-  .btn-mobile {
-    padding: 10px 40px;
-    background: var(--button-main);
-    border: 0.1rem solid var(--button-main);
-    color: var(--white);
-    border-radius: 13px;
-    text-align: center;
-    font-size: 15px;
   }
 
   /* === Dark/light button === */
@@ -335,6 +329,130 @@
     padding-top: 10px;
   }
   /* end */
+  .modal {
+  display: block;
+  place-items: center;
+}
+
+.modal__button-main {
+  background-color: var(--button-main);
+  border: none !important;
+  display: inline-block;
+  color: var(--white);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+  letter-spacing: 0.15rem;
+}
+
+.modal__button a {
+  display: inline-block;
+  background: var(--button-main);
+  color: var(--white);
+  padding: 10px 35px;
+  border-radius: 13px;
+  border: none !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mail a {
+  display: inline-block;
+  margin: 0;
+  border: none !important;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 70%;
+}
+
+.tele {
+  padding-top: 10px;
+}
+
+.tele a {
+  display: inline-block;
+  margin: 10px 0;
+  border: none !important;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 70%;
+}
+
+.modal__container {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  display: grid;
+  align-items: flex-end;
+  overflow: hidden;
+  z-index: var(--z-modal);
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(17, 17, 17, 0.7);
+  transition: all 0.3s;
+  bottom: 0;
+  top: 0;
+}
+
+.modal__content {
+  position: fixed;
+  background: var(--circle);
+  text-align: center;
+  width: 100%;
+  border-radius: 27px 27px 0 0;
+  transition: all 0.3s;
+  transform: translateY(50%);
+  bottom: 0;
+}
+
+.modal__img {
+  width: 170px;
+  margin-top: 1rem;
+}
+
+.modal__close {
+  display: inline-flex;
+  background-color: var(--circle);
+  border-radius: 0.25rem;
+  color: var(--h1);
+  font-size: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+/* === Show modal === */
+.show-modal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.show-modal .modal__content {
+  transform: translateY(0);
+}
+
+.contact-icons ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.contact-icons ul li a {
+  margin: 15px;
+  color: var(--grey);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.contact-icons ul li a:hover {
+  color: var(--button-main);
+}
 }
 
 @media (max-width: 360px) {

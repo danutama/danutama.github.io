@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- BOXICONS -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css" />
 
     <!--=============== CUSTOM FONTS ===============-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
@@ -25,21 +25,30 @@
     <link rel="shortcut icon" href="img/business-3d-answer.png" />
   </head>
   <body>
-    
     <!-- Move to up button -->
     <div class="scroll-button">
       <a href="#"><i class="fa fa-arrow-up"></i></a>
     </div>
-    
+
     <nav class="navbar container" id="navbar">
       <div class="logo">Danu Pratama</div>
       <div class="nav-list" id="">
         <ul>
-          <li><a class="list active" href="#"><i class="bx bx-home bx-fill"></i><i class="bx bxs-home bx-solid"></i><span class="nav-name">Home</span></a></li>
-          <li><a class="list" href="#about"><i class="bx bx-user-circle bx-fill"></i><i class="bx bxs-user-circle bx-solid"></i><span class="nav-name">About</span></a></li>
-          <li><a class="list" href="#skills"><i class="bx bx-bar-chart-square bx-fill"></i><i class="bx bxs-bar-chart-square bx-solid"></i><span class="nav-name">Skills</span></a></li>
-          <li><a class="list" href="#portfolio"><i class="badge-notif" data-badge=""><i class="bx bx-briefcase bx-fill"></i><i class="bx bxs-briefcase bx-solid"></i></i><span class="nav-name">Portfolio</span></a></li>
-          <li><a class="list" href="#contact"><i class="bx bx-chat bx-fill"></i><i class="bx bxs-chat bx-solid"></i><span class="nav-name"></span></a></li>
+          <li>
+            <a class="list active" href="#"><i class="bx bx-home bx-fill"></i><i class="bx bxs-home bx-solid"></i><span class="nav-name">Home</span></a>
+          </li>
+          <li>
+            <a class="list" href="#about"><i class="bx bx-user-circle bx-fill"></i><i class="bx bxs-user-circle bx-solid"></i><span class="nav-name">About</span></a>
+          </li>
+          <li>
+            <a class="list" href="#skills"><i class="bx bx-bar-chart-square bx-fill"></i><i class="bx bxs-bar-chart-square bx-solid"></i><span class="nav-name">Skills</span></a>
+          </li>
+          <li>
+            <a class="list" href="#portfolio"><i class="badge-notif" data-badge=""><i class="bx bx-briefcase bx-fill"></i><i class="bx bxs-briefcase bx-solid"></i></i><span class="nav-name">Portfolio</span></a>
+          </li>
+          <li>
+            <a class="list" href="#contact"><i class="bx bx-chat bx-fill"></i><i class="bx bxs-chat bx-solid"></i><span class="nav-name contact">Contact</span></a>
+          </li>
         </ul>
       </div>
       <div class="photo">
@@ -54,18 +63,16 @@
         <div class="col col-1">
           <!-- Theme change button -->
           <div class="dark">
-            <span class="change-theme-name">Theme &#8594;</span>
+            <span class="change-theme-name">Theme &rsaquo;</span>
             <i class="bx bxs-moon change-theme" id="theme-button"></i>
           </div>
 
-          <h1>Hello, I’m <span class="highlight-name">Danu</span></h1>
+          <h1>Hi, <span id="greating">Greating</span></h1>
+          <span class="highlight-name">I'm Danu</span>
           <h4>Junior Front End</h4>
           <div class="home-btn">
             <li><a href="#portfolio" class="cta">Portfolio</a></li>
             <li><a href="#contact-me" class="ctn">Contact</a></li>
-          </div>
-          <div class="home-btn-mobile">
-            <li><a href="#about" class="btn-mobile">More About Me</a></li>
           </div>
         </div>
 
@@ -80,7 +87,6 @@
     <!-- About Section Start -->
     <section class="about container" id="about">
       <div class="content">
-
         <div class="about-details">
           <div class="left">
             <img src="img/business-3d-answer.png" alt="" />
@@ -88,11 +94,14 @@
           <div class="right">
             <div class="topic">Danu A. Pratama</div>
 
-            <p id="text">Saya merupakan mahasiswa aktif dari salah satu perguruan tinggi yang berlokasi di Jakarta Timur dengan program studi teknik informatika <span class="btn-link" title="Click to read more" onclick="klik()">(read more)</span></p>
-           
+            <p id="text">
+              Saya merupakan mahasiswa aktif dari salah satu perguruan tinggi yang berlokasi di Jakarta Timur dengan program studi teknik informatika <span class="btn-link" title="Click to read more" onclick="klik()">(read more)</span>
+            </p>
+
             <script>
-              function klik(){
-              document.getElementById("text").innerHTML = " Saya merupakan mahasiswa aktif dari salah satu perguruan tinggi yang berlokasi di Jakarta Timur dengan program studi teknik informatika. Website ini adalah portofolio untuk project yang pernah saya kerjakan. Di antara project yang saya kerjakan yaitu membangun desain antar muka sebuah laman website dengan fitur dan tampilan yang modern, tanpa mengurangi fungsionalitas dari website itu sendiri sebagai media informasi yang mudah diakses oleh publik. Perkembangan pada fitur maupun desain akan terus dilakukan seiring bertambahnya pengetahuan dan keterampilan saya dalam bidang front-end web development. ";
+              function klik() {
+                document.getElementById('text').innerHTML =
+                  ' Saya merupakan mahasiswa aktif dari salah satu perguruan tinggi yang berlokasi di Jakarta Timur dengan program studi teknik informatika. Website ini adalah portofolio untuk project yang pernah saya kerjakan. Di antara project yang saya kerjakan yaitu membangun desain antar muka sebuah laman website dengan fitur dan tampilan yang modern, tanpa mengurangi fungsionalitas dari website itu sendiri sebagai media informasi yang mudah diakses oleh publik. Perkembangan pada fitur maupun desain akan terus dilakukan seiring bertambahnya pengetahuan dan keterampilan saya dalam bidang front-end web development. ';
               }
             </script>
 
@@ -114,28 +123,40 @@
       <div class="grid-wrapper">
         <div class="grid-box">
           <div class="icon-title">
-            <img alt="svg-VScode-Img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIKdmlld0JveD0iMCAwIDQ4IDQ4IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxwYXRoIGZpbGw9IiMyOWI2ZjYiIGQ9Ik00NCwxMS4xMXYyNS43OGMwLDEuMjctMC43OSwyLjQtMS45OCwyLjgybC04LjgyLDQuMTRMMzQsMzNWMTVMMzMuMiw0LjE1bDguODIsNC4xNCBDNDMuMjEsOC43MSw0NCw5Ljg0LDQ0LDExLjExeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMjc3YmQiIGQ9Ik05LDMzLjg5NkwzNCwxNVY1LjM1M2MwLTEuMTk4LTEuNDgyLTEuNzU4LTIuMjc1LTAuODZMNC42NTgsMjkuMjM5IGMtMC45LDAuODMtMC44NDksMi4yNjcsMC4xMDcsMy4wMzJjMCwwLDEuMzI0LDEuMjMyLDEuODAzLDEuNTc0QzcuMzA0LDM0LjM3LDguMjcxLDM0LjQzLDksMzMuODk2eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMjg4ZDEiIGQ9Ik05LDE0LjEwNEwzNCwzM3Y5LjY0N2MwLDEuMTk4LTEuNDgyLDEuNzU4LTIuMjc1LDAuODZMNC42NTgsMTguNzYxIGMtMC45LTAuODMtMC44NDktMi4yNjcsMC4xMDctMy4wMzJjMCwwLDEuMzI0LTEuMjMyLDEuODAzLTEuNTc0QzcuMzA0LDEzLjYzLDguMjcxLDEzLjU3LDksMTQuMTA0eiI+PC9wYXRoPjwvc3ZnPg=="/>
+            <img
+              alt="svg-VScode-Img"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIKdmlld0JveD0iMCAwIDQ4IDQ4IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxwYXRoIGZpbGw9IiMyOWI2ZjYiIGQ9Ik00NCwxMS4xMXYyNS43OGMwLDEuMjctMC43OSwyLjQtMS45OCwyLjgybC04LjgyLDQuMTRMMzQsMzNWMTVMMzMuMiw0LjE1bDguODIsNC4xNCBDNDMuMjEsOC43MSw0NCw5Ljg0LDQ0LDExLjExeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMjc3YmQiIGQ9Ik05LDMzLjg5NkwzNCwxNVY1LjM1M2MwLTEuMTk4LTEuNDgyLTEuNzU4LTIuMjc1LTAuODZMNC42NTgsMjkuMjM5IGMtMC45LDAuODMtMC44NDksMi4yNjcsMC4xMDcsMy4wMzJjMCwwLDEuMzI0LDEuMjMyLDEuODAzLDEuNTc0QzcuMzA0LDM0LjM3LDguMjcxLDM0LjQzLDksMzMuODk2eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMjg4ZDEiIGQ9Ik05LDE0LjEwNEwzNCwzM3Y5LjY0N2MwLDEuMTk4LTEuNDgyLDEuNzU4LTIuMjc1LDAuODZMNC42NTgsMTguNzYxIGMtMC45LTAuODMtMC44NDktMi4yNjcsMC4xMDctMy4wMzJjMCwwLDEuMzI0LTEuMjMyLDEuODAzLTEuNTc0QzcuMzA0LDEzLjYzLDguMjcxLDEzLjU3LDksMTQuMTA0eiI+PC9wYXRoPjwvc3ZnPg=="
+            />
             <h2>Visual Studio Code</h2>
           </div>
           <p><span class="highlight"></span></p>
         </div>
         <div class="grid-box">
           <div class="icon-title">
-            <img alt="svg-HTML-Img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQwIiBoZWlnaHQ9IjI0MCIKdmlld0JveD0iMCAwIDQ4IDQ4IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxwYXRoIGZpbGw9IiNFNjUxMDAiIGQ9Ik00MSw1SDdsMywzNGwxNCw0bDE0LTRMNDEsNUw0MSw1eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNGRjZEMDAiIGQ9Ik0yNCA4TDI0IDM5LjkgMzUuMiAzNi43IDM3LjcgOHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjQsMjV2LTRoOC42bC0wLjcsMTEuNUwyNCwzNS4xdi00LjJsNC4xLTEuNGwwLjMtNC41SDI0eiBNMzIuOSwxN2wwLjMtNEgyNHY0SDMyLjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI0VFRSIgZD0iTTI0LDMwLjl2NC4ybC03LjktMi42TDE1LjcsMjdoNGwwLjIsMi41TDI0LDMwLjl6IE0xOS4xLDE3SDI0di00aC05LjFsMC43LDEySDI0di00aC00LjZMMTkuMSwxN3oiPjwvcGF0aD48L3N2Zz4="/>
+            <img
+              alt="svg-HTML-Img"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQwIiBoZWlnaHQ9IjI0MCIKdmlld0JveD0iMCAwIDQ4IDQ4IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxwYXRoIGZpbGw9IiNFNjUxMDAiIGQ9Ik00MSw1SDdsMywzNGwxNCw0bDE0LTRMNDEsNUw0MSw1eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNGRjZEMDAiIGQ9Ik0yNCA4TDI0IDM5LjkgMzUuMiAzNi43IDM3LjcgOHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjQsMjV2LTRoOC42bC0wLjcsMTEuNUwyNCwzNS4xdi00LjJsNC4xLTEuNGwwLjMtNC41SDI0eiBNMzIuOSwxN2wwLjMtNEgyNHY0SDMyLjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI0VFRSIgZD0iTTI0LDMwLjl2NC4ybC03LjktMi42TDE1LjcsMjdoNGwwLjIsMi41TDI0LDMwLjl6IE0xOS4xLDE3SDI0di00aC05LjFsMC43LDEySDI0di00aC00LjZMMTkuMSwxN3oiPjwvcGF0aD48L3N2Zz4="
+            />
             <h2>HTML</h2>
           </div>
           <p><span class="highlight"></span></p>
         </div>
         <div class="grid-box">
           <div class="icon-title">
-            <img alt="svg-CSS-Img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIKdmlld0JveD0iMCAwIDE3MiAxNzIiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48Zz48cGF0aCBkPSJNMTQ2LjkxNjY3LDE3LjkxNjY3aC0xMjEuODMzMzNsMTAuNzUsMTIxLjgzMzMzbDUwLjE2NjY3LDE0LjMzMzMzbDUwLjE2NjY3LC0xNC4zMzMzM2wxMC43NSwtMTIxLjgzMzMzeiIgZmlsbD0iIzAyNzdiZCI+PC9wYXRoPjxwYXRoIGQ9Ik04NiwyOC42NjY2N3YxMTQuMzA4MzNsNDAuMTMzMzMsLTExLjQ2NjY3bDguOTU4MzMsLTEwMi44NDE2N3oiIGZpbGw9IiMwMzliZTUiPjwvcGF0aD48cGF0aCBkPSJNMTE4LjYwODMzLDQ2LjU4MzMzaC0zMi42MDgzM3YxNC4zMzMzM2gxNy41NTgzM2wtMS4wNzUsMTQuMzMzMzNoLTE2LjQ4MzMzdjE0LjMzMzMzaDE1Ljc2NjY3bC0xLjA3NSwxNi4xMjVsLTE0LjY5MTY3LDUuMDE2Njd2MTUuMDVsMjguMzA4MzMsLTkuMzE2NjdsMi41MDgzMywtNDEuMjA4MzN2MHoiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48cGF0aCBkPSJNODYsNDYuNTgzMzN2MTQuMzMzMzNoLTMxLjg5MTY3bC0xLjA3NSwtMTQuMzMzMzN6TTY5LjUxNjY3LDc1LjI1bDAuNzE2NjcsMTQuMzMzMzNoMTUuNzY2Njd2LTE0LjMzMzMzek03MC45NSw5Ni43NWgtMTQuMzMzMzNsMS4wNzUsMTkuNzA4MzNsMjguMzA4MzMsOS4zMTY2N3YtMTUuMDVsLTE0LjY5MTY3LC01LjAxNjY3eiIgZmlsbD0iI2VlZWVlZSI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"/>
+            <img
+              alt="svg-CSS-Img"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIKdmlld0JveD0iMCAwIDE3MiAxNzIiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48Zz48cGF0aCBkPSJNMTQ2LjkxNjY3LDE3LjkxNjY3aC0xMjEuODMzMzNsMTAuNzUsMTIxLjgzMzMzbDUwLjE2NjY3LDE0LjMzMzMzbDUwLjE2NjY3LC0xNC4zMzMzM2wxMC43NSwtMTIxLjgzMzMzeiIgZmlsbD0iIzAyNzdiZCI+PC9wYXRoPjxwYXRoIGQ9Ik04NiwyOC42NjY2N3YxMTQuMzA4MzNsNDAuMTMzMzMsLTExLjQ2NjY3bDguOTU4MzMsLTEwMi44NDE2N3oiIGZpbGw9IiMwMzliZTUiPjwvcGF0aD48cGF0aCBkPSJNMTE4LjYwODMzLDQ2LjU4MzMzaC0zMi42MDgzM3YxNC4zMzMzM2gxNy41NTgzM2wtMS4wNzUsMTQuMzMzMzNoLTE2LjQ4MzMzdjE0LjMzMzMzaDE1Ljc2NjY3bC0xLjA3NSwxNi4xMjVsLTE0LjY5MTY3LDUuMDE2Njd2MTUuMDVsMjguMzA4MzMsLTkuMzE2NjdsMi41MDgzMywtNDEuMjA4MzN2MHoiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48cGF0aCBkPSJNODYsNDYuNTgzMzN2MTQuMzMzMzNoLTMxLjg5MTY3bC0xLjA3NSwtMTQuMzMzMzN6TTY5LjUxNjY3LDc1LjI1bDAuNzE2NjcsMTQuMzMzMzNoMTUuNzY2Njd2LTE0LjMzMzMzek03MC45NSw5Ni43NWgtMTQuMzMzMzNsMS4wNzUsMTkuNzA4MzNsMjguMzA4MzMsOS4zMTY2N3YtMTUuMDVsLTE0LjY5MTY3LC01LjAxNjY3eiIgZmlsbD0iI2VlZWVlZSI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+            />
             <h2>CSS</h2>
           </div>
           <p><span class="highlight"></span></p>
         </div>
         <div class="grid-box">
           <div class="icon-title">
-            <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIKdmlld0JveD0iMCAwIDE3MiAxNzIiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48ZyBmaWxsPSIjZjhjNjA0Ij48cGF0aCBkPSJNMTU1Ljc0MjU2LDcuOTk4Yy0wLjY1MzYsLTAuNzEyMDggLTEuNTcyMDgsLTEuMTE4IC0yLjUzODcyLC0xLjExOGgtMTM0LjQwNzY4Yy0wLjk2NjY0LDAgLTEuODg1MTIsMC40MDU5MiAtMi41Mzg3MiwxLjExOGMtMC42NTM2LDAuNzEyMDggLTAuOTczNTIsMS42Njg0IC0wLjg4NzUyLDIuNjI4MTZsMTIuMTA4OCwxMzUuNjI4ODhjMC4xMjcyOCwxLjQxNzI4IDEuMTE0NTYsMi42MTA5NiAyLjQ4MzY4LDMuMDAzMTJsNTUuMDc0NCwxNS43MzExMmMwLjMwNjE2LDAuMDg2IDAuNjI2MDgsMC4xMzA3MiAwLjk0MjU2LDAuMTMwNzJjMC4zMTY0OCwwIDAuNjM2NCwtMC4wNDQ3MiAwLjk0MjU2LC0wLjEzMDcybDU1LjEyMjU2LC0xNS43MzExMmMxLjM2OTEyLC0wLjM5MjE2IDIuMzU2NCwtMS41ODU4NCAyLjQ4MzY4LC0zLjAwMzEybDEyLjEwMTkyLC0xMzUuNjI4ODhjMC4wODYsLTAuOTU5NzYgLTAuMjM3MzYsLTEuOTE2MDggLTAuODg3NTIsLTIuNjI4MTZ6TTQxLjI4LDk5Ljc3Mzc2bDI0LjA4LDYuNjgwNDh2LTY4LjYxNDI0aDEzLjc2djg5LjQ0bC0zNy44NCwtMTAuNDk1NDR6TTEzMC45MDU3Niw3NS42OGwtMy42MjU3Niw0Mi4xNGwtMzQuNCw5LjQ2di0xNS44Mjc0NGwyMy4yMiwtNi4zODEybDAuODYsLTEyLjlsLTI0LjA4LDQuMTQ4NjR2LTU4LjQ4aDQxLjI4bC0xLjE4NjgsMTMuNzZoLTI2LjMzMzJ2MjcuNTJ6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" />
+            <img
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIKdmlld0JveD0iMCAwIDE3MiAxNzIiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9Im5vbmUiPjwvcGF0aD48ZyBmaWxsPSIjZjhjNjA0Ij48cGF0aCBkPSJNMTU1Ljc0MjU2LDcuOTk4Yy0wLjY1MzYsLTAuNzEyMDggLTEuNTcyMDgsLTEuMTE4IC0yLjUzODcyLC0xLjExOGgtMTM0LjQwNzY4Yy0wLjk2NjY0LDAgLTEuODg1MTIsMC40MDU5MiAtMi41Mzg3MiwxLjExOGMtMC42NTM2LDAuNzEyMDggLTAuOTczNTIsMS42Njg0IC0wLjg4NzUyLDIuNjI4MTZsMTIuMTA4OCwxMzUuNjI4ODhjMC4xMjcyOCwxLjQxNzI4IDEuMTE0NTYsMi42MTA5NiAyLjQ4MzY4LDMuMDAzMTJsNTUuMDc0NCwxNS43MzExMmMwLjMwNjE2LDAuMDg2IDAuNjI2MDgsMC4xMzA3MiAwLjk0MjU2LDAuMTMwNzJjMC4zMTY0OCwwIDAuNjM2NCwtMC4wNDQ3MiAwLjk0MjU2LC0wLjEzMDcybDU1LjEyMjU2LC0xNS43MzExMmMxLjM2OTEyLC0wLjM5MjE2IDIuMzU2NCwtMS41ODU4NCAyLjQ4MzY4LC0zLjAwMzEybDEyLjEwMTkyLC0xMzUuNjI4ODhjMC4wODYsLTAuOTU5NzYgLTAuMjM3MzYsLTEuOTE2MDggLTAuODg3NTIsLTIuNjI4MTZ6TTQxLjI4LDk5Ljc3Mzc2bDI0LjA4LDYuNjgwNDh2LTY4LjYxNDI0aDEzLjc2djg5LjQ0bC0zNy44NCwtMTAuNDk1NDR6TTEzMC45MDU3Niw3NS42OGwtMy42MjU3Niw0Mi4xNGwtMzQuNCw5LjQ2di0xNS44Mjc0NGwyMy4yMiwtNi4zODEybDAuODYsLTEyLjlsLTI0LjA4LDQuMTQ4NjR2LTU4LjQ4aDQxLjI4bC0xLjE4NjgsMTMuNzZoLTI2LjMzMzJ2MjcuNTJ6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
+            />
             <h2>JavaScript</h2>
           </div>
           <p><span class="highlight"></span></p>
@@ -158,77 +179,77 @@
         </div>
       </div>
       <div class="portfolio-card">
-          <div class="box">
-            <div class="box-img">
-                <img src="img/5326066.jpg" alt="">
-            </div>
-            <h2>Blog Page</h2>
-            <h3>User Interface</h3>
-            <a href="https://danuapratama.github.io/simple-blog" target="_blank" class="btn">Demo</a>
+        <div class="box">
+          <div class="box-img">
+            <img src="img/5326066.jpg" alt="" />
           </div>
+          <h2>Blog Page</h2>
+          <h3>User Interface</h3>
+          <a href="https://danuapratama.github.io/simple-blog" target="_blank" class="btn">Demo</a>
+        </div>
 
-          <div class="box">
-            <div class="box-img">
-                <img src="img/4435897.jpg" alt="">
-            </div>
-            <h2>Furni Store</h2>
-            <h3>User Interface</h3>
-            <a href="https://danuapratama.github.io/furniture-web" target="_blank" class="btn">Demo</a>
+        <div class="box">
+          <div class="box-img">
+            <img src="img/4435897.jpg" alt="" />
           </div>
+          <h2>Furni Store</h2>
+          <h3>User Interface</h3>
+          <a href="https://danuapratama.github.io/furniture-web" target="_blank" class="btn">Demo</a>
+        </div>
 
-          <div class="box">
-              <div class="box-img">
-                  <img src="img/prj-5.jpg" alt="">
-              </div>
-              <h2>Travel</h2>
-              <h3>User Interface</h3>
-              <a href="https://danuapratama.github.io/website-travel" target="_blank" class="btn">Demo</a>
+        <div class="box">
+          <div class="box-img">
+            <img src="img/prj-5.jpg" alt="" />
           </div>
+          <h2>Travel</h2>
+          <h3>User Interface</h3>
+          <a href="https://danuapratama.github.io/website-travel" target="_blank" class="btn">Demo</a>
+        </div>
 
-          <div class="box">
-            <div class="box-img">
-                <img src="img/3327597.jpg" alt="">
-            </div>
-            <h2>To-Do List App</h2>
-            <h3>JavaScript</h3>
-            <a href="https://danuapratama.github.io/to-do-list" target="_blank" class="btn">Demo</a>
+        <div class="box">
+          <div class="box-img">
+            <img src="img/3327597.jpg" alt="" />
           </div>
+          <h2>To-Do List App</h2>
+          <h3>JavaScript</h3>
+          <a href="https://danuapratama.github.io/to-do-list" target="_blank" class="btn">Demo</a>
+        </div>
 
-          <div class="box">
-              <div class="box-img">
-                  <img src="img/4905879.jpg" alt="">
-              </div>
-              <h2>Landing Page</h2>
-              <h3>User Interface</h3>
-              <a href="https://danuapratama.github.io/landing-page" target="_blank" class="btn">Demo</a>
+        <div class="box">
+          <div class="box-img">
+            <img src="img/4905879.jpg" alt="" />
           </div>
+          <h2>Landing Page</h2>
+          <h3>User Interface</h3>
+          <a href="https://danuapratama.github.io/landing-page" target="_blank" class="btn">Demo</a>
+        </div>
 
-          <div class="box">
-              <div class="box-img">
-                  <img src="img/4861083.jpg" alt="">
-              </div>
-              <h2>Login Form</h2>
-              <h3>User Interface</h3>
-              <a href="https://danuapratama.github.io/login-form" target="_blank" class="btn">Demo</a>
+        <div class="box">
+          <div class="box-img">
+            <img src="img/4861083.jpg" alt="" />
           </div>
+          <h2>Login Form</h2>
+          <h3>User Interface</h3>
+          <a href="https://danuapratama.github.io/login-form" target="_blank" class="btn">Demo</a>
+        </div>
 
-          <div class="box">
-              <div class="box-img">
-                  <img src="img/4974974.jpg" alt="">
-              </div>
-              <h2>Neumorphism</h2>
-              <h3>User Interface</h3>
-              <a href="https://danuapratama.github.io/neumorphism-web" target="_blank" class="btn">Demo</a>
+        <div class="box">
+          <div class="box-img">
+            <img src="img/4974974.jpg" alt="" />
           </div>
+          <h2>Neumorphism</h2>
+          <h3>User Interface</h3>
+          <a href="https://danuapratama.github.io/neumorphism-web" target="_blank" class="btn">Demo</a>
+        </div>
 
-          <div class="box">
-              <div class="box-img">
-                  <img src="img/5642615.jpg" alt="">
-              </div>
-              <h2>Hospital</h2>
-              <h3>User Interface</h3>
-              <a href="https://danuapratama.github.io/hospital" target="_blank" class="btn">Demo</a>
+        <div class="box">
+          <div class="box-img">
+            <img src="img/5642615.jpg" alt="" />
           </div>
+          <h2>Hospital</h2>
+          <h3>User Interface</h3>
+          <a href="https://danuapratama.github.io/hospital" target="_blank" class="btn">Demo</a>
+        </div>
       </div>
     </section>
 
@@ -237,42 +258,43 @@
       <button class="modal__button-main" id="contact"><i class="bx bxs-paper-plane"></i> CONNECT WITH ME <i class="bx bx-chevron-down"></i></button>
 
       <div class="modal__container" id="modal-container">
-          <div class="modal__content">
-              <div class="modal__close close-modal" title="Close">
-                  <i class='bx bx-x'></i>
-              </div>
-
-              <img src="img/3d-flame-nice-to-meet-you.png" alt="contact-img" class="modal__img">
-
-              <div class="contact-icons">
-                <ul>
-                  <li>
-                    <a href="https://goo.gl/maps/VDni4by2Pi3JiC1H9" title="Google Maps" target="_blank"><i class="bx bx-map"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com/danuapratama" title="Instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/danuapratama" title="GitHub" target="_blank"><i class="bx bxl-github"></i></a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="modal__button mail modal__button-width">
-                  <a href="mailto:inidanuuu@gmail.com" title="Email" target="_blank">Email</a> 
-              </div>
-
-              <div class="modal__button tele modal__button-width">
-                <a href="https://t.me/danu_pratama" title="Telegram" target="_blank">Telegram</a> 
-              </div>
-
-              <div class="credits">
-                &#169;<script type='text/javascript'>
-                  var creditsyear = new Date();
-                  document.write(creditsyear.getFullYear());
-                </script> Created with <span style="color:#ff781f; font-size: 10px;">&#9829;</span> in Jakarta
-              </div>
+        <div class="modal__content">
+          <div class="modal__close close-modal" title="Close">
+            <i class="bx bx-x"></i>
           </div>
+
+          <img src="img/3d-flame-nice-to-meet-you.png" alt="contact-img" class="modal__img" />
+
+          <div class="contact-icons">
+            <ul>
+              <li>
+                <a href="https://goo.gl/maps/VDni4by2Pi3JiC1H9" title="Google Maps" target="_blank"><i class="bx bx-map"></i></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/danuapratama" title="Instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/danuapratama" title="GitHub" target="_blank"><i class="bx bxl-github"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="modal__button mail modal__button-width">
+            <a href="mailto:inidanuuu@gmail.com" title="Email" target="_blank">Email</a>
+          </div>
+
+          <div class="modal__button tele modal__button-width">
+            <a href="https://t.me/danu_pratama" title="Telegram" target="_blank">Telegram</a>
+          </div>
+
+          <div class="credits">
+            &#169;<script type="text/javascript">
+              var creditsyear = new Date();
+              document.write(creditsyear.getFullYear());
+            </script>
+            Created with <span style="color: #ff781f; font-size: 10px">&#9829;</span> in Jakarta
+          </div>
+        </div>
       </div>
     </section>
 
@@ -295,26 +317,35 @@
           <i class="fab fa-instagram"></i>
         </a>
       </div>
-      
-      &#169;<script type='text/javascript'>
+
+      &#169;<script type="text/javascript">
         var creditsyear = new Date();
         document.write(creditsyear.getFullYear());
-      </script> Created with <span style="color:#ff781f;">&#9829;</span> in Jakarta
-    
+      </script>
+      Created with <span style="color: #ff781f">&#9829;</span> in Jakarta
     </div>
-    
+
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
-      $(document).ready(function(){
-          $('ul li a').click(function(){
-            $('li a').removeClass("active");
-            $(this).addClass("active");
-          });
+      $(document).ready(function () {
+        $('ul li a').click(function () {
+          $('li a').removeClass('active');
+          $(this).addClass('active');
+        });
       });
+
+      // Greating Home Section //
+      var dt = new Date().getHours();
+      if (dt >= 0 && dt <= 11) {
+        document.getElementById('greating').innerHTML = 'Good Morning';
+      } else if (dt >= 12 && dt <= 17) {
+        document.getElementById('greating').innerHTML = 'Good Afternoon';
+      } else {
+        document.getElementById('greating').innerHTML = 'Good Evening';
+      }
     </script>
-  
   </body>
 </html>
