@@ -44,7 +44,7 @@
             <a class="list" href="#skills"><i class="bx bx-bar-chart-square bx-fill"></i><i class="bx bxs-bar-chart-square bx-solid"></i><span class="nav-name">Skills</span></a>
           </li>
           <li>
-            <a class="list" href="#portfolio"><i class="badge-notif" data-badge=""><i class="bx bx-briefcase bx-fill"></i><i class="bx bxs-briefcase bx-solid"></i></i><span class="nav-name">Portfolio</span></a>
+            <a class="list" href="#portfolio"><i class="badge-notif" data-badge=""><i class="bx bx-briefcase bx-fill"></i><i class="bx bxs-briefcase bx-solid"></i></i><span class="nav-name">Project</span></a>
           </li>
           <li>
             <a class="list" href="#contact"><i class="bx bx-chat bx-fill"></i><i class="bx bxs-chat bx-solid"></i><span class="nav-name contact">Contact</span></a>
@@ -181,7 +181,7 @@
       <div class="portfolio-card">
         <div class="box">
           <div class="box-img">
-            <img src="img/5326066.jpg" alt="" />
+            <img src="img/5208981.jpg" alt="" />
           </div>
           <h2>Blog Page</h2>
           <h3>User Interface</h3>
@@ -339,9 +339,11 @@
 
       // Greating Home Section //
       var dt = new Date().getHours();
-      if (dt >= 0 && dt <= 11) {
+      if (dt >= 0 && dt <= 10) {
         document.getElementById('greating').innerHTML = 'Good Morning';
-      } else if (dt >= 12 && dt <= 17) {
+      } else if (dt >= 11 && dt <= 13) {
+        document.getElementById('greating').innerHTML = 'have a good day';
+      } else if (dt >= 14 && dt <= 17) {
         document.getElementById('greating').innerHTML = 'Good Afternoon';
       } else {
         document.getElementById('greating').innerHTML = 'Good Evening';
