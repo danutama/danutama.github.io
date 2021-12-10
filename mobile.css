@@ -397,7 +397,7 @@
 
 .modal__content {
   position: fixed;
-  background: var(--circle);
+  background: var(--modal-color);
   text-align: center;
   width: 100%;
   border-radius: 27px 27px 0 0;
@@ -413,7 +413,7 @@
 
 .modal__close {
   display: inline-flex;
-  background-color: var(--circle);
+  background-color: var(--modal-color);
   border-radius: 0.25rem;
   color: var(--h1);
   font-size: 2rem;

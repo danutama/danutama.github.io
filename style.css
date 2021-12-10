@@ -23,6 +23,7 @@ html {
   --background-nav: rgba(235, 241, 245, 0.7);
   --about-color: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
   --card-color: #fff;
+  --modal-color: #f4f3ff;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
   --button-main: #358fef;
@@ -48,6 +49,7 @@ body.dark-theme {
   --background-nav: rgba(71, 71, 71, 0.7);
   --about-color: #383a42;
   --card-color: #383a42;
+  --modal-color: #383a42;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
   --purple: #8d5cff;
@@ -656,7 +658,6 @@ a {
 
 .modal__content {
   position: fixed;
-  background: var(--circle);
   text-align: center;
   width: 100%;
   border-radius: 27px 27px 0 0;
@@ -672,7 +673,6 @@ a {
 
 .modal__close {
   display: inline-flex;
-  background-color: var(--circle);
   border-radius: 0.25rem;
   color: var(--h1);
   font-size: 2rem;
