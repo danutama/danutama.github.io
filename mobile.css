@@ -343,7 +343,6 @@
   border-radius: 15px;
   transition: 0.3s;
   cursor: pointer;
-  letter-spacing: 0.15rem;
 }
 
 .modal__button a {
@@ -415,7 +414,7 @@
   display: inline-flex;
   background-color: var(--modal-color);
   border-radius: 0.25rem;
-  color: var(--h1);
+  color: var(--grey);
   font-size: 2rem;
   position: absolute;
   top: 2rem;

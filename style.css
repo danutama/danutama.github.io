@@ -604,7 +604,8 @@ a {
   border-radius: 15px;
   transition: 0.3s;
   cursor: pointer;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.10rem;
+  font-size: 15px;
 }
 
 .modal__button a {
@@ -674,7 +675,6 @@ a {
 .modal__close {
   display: inline-flex;
   border-radius: 0.25rem;
-  color: var(--h1);
   font-size: 2rem;
   position: absolute;
   top: 2rem;
