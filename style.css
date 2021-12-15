@@ -709,3 +709,49 @@ a {
 .contact-icons ul li a:hover {
   color: var(--button-main);
 }
+
+.food-category {
+  display: flex;
+}
+
+.food-category button {
+  padding: .5rem 2.5rem;
+  margin: 0 1rem;
+  outline: none;
+  border: 1px solid var(--button-main);
+  background-color: var(--button-main);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.food-category button:hover,
+.food-category button.active {
+  background-color: transparent;
+  color: var(--white);
+}
+.portfolio-card>div {
+  display: none;
+}
+
+.portfolio-card.all>div {
+  display: block;
+}
+
+.portfolio-card.salad>div.salad-type {
+  display: block;
+}
+
+.portfolio-card.lorem>div.lorem-type {
+  display: block;
+}
+
+.portfolio-card.ipsum>div.ipsum-type {
+  display: block;
+}
+
+.portfolio-card.dolor>div.dolor-type {
+  display: block;
+}

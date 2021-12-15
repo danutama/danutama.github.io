@@ -57,3 +57,20 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+// portfolio category
+
+let foodMenuList = document.querySelector('.portfolio-card')
+
+let foodCategory = document.querySelector('.food-category')
+
+let categories = foodCategory.querySelectorAll('button')
+
+Array.from(categories).forEach((item, index) => {
+    item.onclick = (e) => {
+        let currCat = foodCategory.querySelector('button.active')
+        currCat.classList.remove('active')
+        e.target.classList.add('active')
+        foodMenuList.classList ='portfolio-card '+ e.target.getAttribute('data-food-type')
+    }
+})

@@ -126,6 +126,10 @@
   .portfolio-card .box .btn {
     font-size: 14px;
   }
+
+  .food-category {
+    overflow-y: scroll;
+  }
 }
 
 @media (max-width: 500px) {
