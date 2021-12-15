@@ -58,19 +58,18 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
 
-// portfolio category
+// === Portfolio Category === //
+let portfolioMenuList = document.querySelector('.portfolio-card')
 
-let foodMenuList = document.querySelector('.portfolio-card')
+let portfolioCategory = document.querySelector('.portfolio-category')
 
-let foodCategory = document.querySelector('.food-category')
-
-let categories = foodCategory.querySelectorAll('button')
+let categories = portfolioCategory.querySelectorAll('button')
 
 Array.from(categories).forEach((item, index) => {
     item.onclick = (e) => {
-        let currCat = foodCategory.querySelector('button.active')
+        let currCat = portfolioCategory.querySelector('button.active')
         currCat.classList.remove('active')
         e.target.classList.add('active')
-        foodMenuList.classList ='portfolio-card '+ e.target.getAttribute('data-food-type')
+        portfolioMenuList.classList ='portfolio-card '+ e.target.getAttribute('data-portfolio-type')
     }
 })

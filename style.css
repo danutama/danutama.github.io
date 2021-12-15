@@ -710,28 +710,36 @@ a {
   color: var(--button-main);
 }
 
-.food-category {
+
+
+/* === PORTFOLIO CATEGORY === */
+.portfolio-category {
   display: flex;
 }
 
-.food-category button {
+.portfolio-category button {
+  font-family: 'nunito';
   padding: .5rem 2.5rem;
-  margin: 0 1rem;
+  width: max-content;
+  margin: 0 .5rem;
   outline: none;
   border: 1px solid var(--button-main);
   background-color: var(--button-main);
   color: var(--white);
-  font-weight: 600;
-  border-radius: 1rem;
+  border-radius: 10px;
   cursor: pointer;
-  transition: .3s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
-.food-category button:hover,
-.food-category button.active {
-  background-color: transparent;
-  color: var(--white);
+.portfolio-category button:hover {
+  background: var(--button-main-hover);
 }
+
+.portfolio-category button.active {
+  background: transparent;
+  color: var(--h1);
+}
+
 .portfolio-card>div {
   display: none;
 }
@@ -740,18 +748,7 @@ a {
   display: block;
 }
 
-.portfolio-card.salad>div.salad-type {
+.portfolio-card.whatsnew>div.whatsnew-type {
   display: block;
 }
 
-.portfolio-card.lorem>div.lorem-type {
-  display: block;
-}
-
-.portfolio-card.ipsum>div.ipsum-type {
-  display: block;
-}
-
-.portfolio-card.dolor>div.dolor-type {
-  display: block;
-}
