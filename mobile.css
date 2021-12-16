@@ -281,6 +281,10 @@
     margin-top: 0px;
   }
 
+  .about .right .topic {
+    font-size: 20px;
+  }
+  
   .about .right p {
     width: 100%;
     font-size: 15px;
@@ -335,6 +339,7 @@
     padding-top: 10px;
   }
   /* end */
+
   .modal {
   display: block;
   place-items: center;
