@@ -290,7 +290,6 @@ a {
 
 /* About */
 .about.container .content {
-  width: 100%;
   margin: 20px auto;
   padding-bottom: 50px;
   background: var(--about-color);
