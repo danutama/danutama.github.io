@@ -179,6 +179,12 @@
     z-index: 999;
   }
 
+  .nav-list a ,
+  .nav-list a:hover {
+    background: none;
+    padding: 0;
+  }
+  
   .nav-list .bx {
     font-size: 1.5rem;
     margin: 2px 6px;
