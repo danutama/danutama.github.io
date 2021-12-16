@@ -277,6 +277,10 @@
   }
   /* END */
 
+  .about-details .right {
+    margin-top: 0px;
+  }
+
   .about .right p {
     width: 100%;
     font-size: 15px;
@@ -304,12 +308,12 @@
     margin-bottom: 40px;
   }
 
-  /* ============== Contact Modal ================ */
+  /* ===== Contact Modal ===== */
   .credits.container {
     display: none;
   }
 
-  /*=============== BREAKPOINTS MODAL ===============*/
+  /*===== BREAKPOINTS MODAL =====*/
   .modal {
     display: grid;
   }
@@ -334,124 +338,124 @@
   .modal {
   display: block;
   place-items: center;
-}
+  }
 
-.modal__button-main {
-  background-color: var(--button-main);
-  border: none !important;
-  display: inline-block;
-  color: var(--white);
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border-radius: 15px;
-  transition: 0.3s;
-  cursor: pointer;
-}
+  .modal__button-main {
+    background-color: var(--button-main);
+    border: none !important;
+    display: inline-block;
+    color: var(--white);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 
-.modal__button a {
-  display: inline-block;
-  background: var(--button-main);
-  color: var(--white);
-  padding: 10px 35px;
-  border-radius: 13px;
-  border: none !important;
-  transition: 0.3s;
-  cursor: pointer;
-}
+  .modal__button a {
+    display: inline-block;
+    background: var(--button-main);
+    color: var(--white);
+    padding: 10px 35px;
+    border-radius: 13px;
+    border: none !important;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 
-.mail a {
-  display: inline-block;
-  margin: 0;
-  border: none !important;
-  transition: 0.3s;
-  cursor: pointer;
-  width: 70%;
-}
+  .mail a {
+    display: inline-block;
+    margin: 0;
+    border: none !important;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 70%;
+  }
 
-.tele {
-  padding-top: 10px;
-}
+  .tele {
+    padding-top: 10px;
+  }
 
-.tele a {
-  display: inline-block;
-  margin: 10px 0;
-  border: none !important;
-  transition: 0.3s;
-  cursor: pointer;
-  width: 70%;
-}
+  .tele a {
+    display: inline-block;
+    margin: 10px 0;
+    border: none !important;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 70%;
+  }
 
-.modal__container {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  display: grid;
-  align-items: flex-end;
-  overflow: hidden;
-  z-index: var(--z-modal);
-  visibility: hidden;
-  opacity: 0;
-  background: rgba(17, 17, 17, 0.7);
-  transition: all 0.3s;
-  bottom: 0;
-  top: 0;
-}
+  .modal__container {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    display: grid;
+    align-items: flex-end;
+    overflow: hidden;
+    z-index: var(--z-modal);
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(17, 17, 17, 0.7);
+    transition: all 0.3s;
+    bottom: 0;
+    top: 0;
+  }
 
-.modal__content {
-  position: fixed;
-  background: var(--modal-color);
-  text-align: center;
-  width: 100%;
-  border-radius: 27px 27px 0 0;
-  transition: all 0.3s;
-  transform: translateY(50%);
-  bottom: 0;
-}
+  .modal__content {
+    position: fixed;
+    background: var(--modal-color);
+    text-align: center;
+    width: 100%;
+    border-radius: 27px 27px 0 0;
+    transition: all 0.3s;
+    transform: translateY(50%);
+    bottom: 0;
+  }
 
-.modal__img {
-  width: 170px;
-  margin-top: 1rem;
-}
+  .modal__img {
+    width: 170px;
+    margin-top: 1rem;
+  }
 
-.modal__close {
-  display: inline-flex;
-  background-color: var(--modal-color);
-  border-radius: 0.25rem;
-  color: var(--grey);
-  font-size: 2rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  cursor: pointer;
-}
+  .modal__close {
+    display: inline-flex;
+    background-color: var(--modal-color);
+    border-radius: 0.25rem;
+    color: var(--grey);
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
 
-/* === Show modal === */
-.show-modal {
-  visibility: visible;
-  opacity: 1;
-}
+  /* === Show modal === */
+  .show-modal {
+    visibility: visible;
+    opacity: 1;
+  }
 
-.show-modal .modal__content {
-  transform: translateY(0);
-}
+  .show-modal .modal__content {
+    transform: translateY(0);
+  }
 
-.contact-icons ul {
-  display: flex;
-  justify-content: center;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
+  .contact-icons ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
 
-.contact-icons ul li a {
-  margin: 15px;
-  color: var(--grey);
-  font-size: 30px;
-  cursor: pointer;
-}
+  .contact-icons ul li a {
+    margin: 15px;
+    color: var(--grey);
+    font-size: 30px;
+    cursor: pointer;
+  }
 
-.contact-icons ul li a:hover {
-  color: var(--button-main);
-}
+  .contact-icons ul li a:hover {
+    color: var(--button-main);
+  }
 }
