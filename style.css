@@ -215,6 +215,7 @@ a {
 .row.hero .col-1 {
   width: 100%;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 
 .highlight-name {
