@@ -759,7 +759,11 @@ a {
   display: block;
 }
 
-.portfolio-card.null>div.null-type {
+.portfolio-card.more>div.more-type {
   display: block;
 }
-
+ 
+.portfolio-category .delay-6 button.active {
+ margin-bottom: 300px;
+ transition: unset;
+}
