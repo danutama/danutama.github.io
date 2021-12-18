@@ -589,21 +589,14 @@ a {
   color: var(--white);
 }
 
-/* ===== Modal Contact Mobile ===== */
-.modal {
-  display: none;
-  place-items: center;
-}
-
+/* ===== Modal Contact Mobile Version ===== */
 .modal__button-main {
   background-color: var(--button-main);
   border: none !important;
-  display: inline-block;
+  display: none;
   color: var(--white);
-  padding: 20px;
   justify-content: center;
   align-items: center;
-  width: 100%;
   border-radius: 15px;
   transition: 0.3s;
   cursor: pointer;
@@ -764,6 +757,6 @@ a {
 }
  
 .portfolio-category .delay-6 button.active {
- margin-bottom: 300px;
+ margin-bottom: 310px;
  transition: unset;
 }
