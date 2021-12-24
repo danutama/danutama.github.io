@@ -199,7 +199,7 @@
   .nav-name.contact,
   .nav-name {
     display: block;
-    font-size: 10px;
+    font-size: 12px;
     color: var(--grey);
     transition: unset;
     font-weight: bold;
