@@ -176,10 +176,6 @@ a {
   font-weight: bold;
 }
 
-.nav-name.contact {
-  display: none;
-}
-
 .photo {
   width: 30px;
   margin-right: 60px;
@@ -227,7 +223,7 @@ a {
 
 @keyframes bounceTop_01 {
   0%, 100% {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   50% {
     transform: translateY(0px);
@@ -246,7 +242,7 @@ a {
 .home-btn {
   display: flex;
   font-size: 20px;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.08rem;
 }
 
 .ctn {
