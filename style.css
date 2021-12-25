@@ -29,6 +29,9 @@ html {
   --button-main: #358fef;
   --button-main-hover: #0471e6;
   --button-second: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
+  --shadow-animation-1: rgba(82, 82, 82, 0.7);
+  --shadow-animation-2: rgba(255,255,255,0);
+  --shadow-animation-3: rgba(255,255,255,0);
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -52,6 +55,9 @@ body.dark-theme {
   --modal-color: #383a42;
   --blue2: rgb(28, 34, 51);
   --blue: #358fef;
+  --shadow-animation-1: rgba(255, 255, 255, 0.7);
+  --shadow-animation-2: rgba(255,255,255,0);
+  --shadow-animation-3: rgba(255,255,255,0);
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -105,17 +111,6 @@ a {
 
 .highlight {
   color: var(--blue);
-}
-
-.circle {
-  width: 500px;
-  height: 500px;
-  background: var(--circle);
-  position: absolute;
-  top: -40%;
-  right: -30%;
-  border-radius: 50%;
-  z-index: -1;
 }
 
 /* Change Background Navbar */
@@ -227,6 +222,16 @@ a {
 
 .row.hero .col-2 img {
   max-width: 100%;
+  animation: bounceTop_01 4s ease infinite;
+}
+
+@keyframes bounceTop_01 {
+  0%, 100% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
 }
 
 .row.hero h4 {
@@ -263,6 +268,22 @@ a {
   text-align: center;
   margin-right: 20px;
   transition: 0.6s ease;
+  animation: pulse_01 2s ease infinite;
+}
+
+@keyframes pulse_01{
+  0% {
+    transform: scale(0.94);
+    box-shadow: 0 0 0 0 var(--shadow-animation-1);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 12px var(--shadow-animation-2);
+  }
+  100% {
+    transform: scale(0.94);
+    box-shadow: 0 0 0 0 var(--shadow-animation-3);
+  }
 }
 
 .ctn:hover {
@@ -274,6 +295,7 @@ a {
   border: 2px solid var(--button-main-hover);
   color: var(--white);
   transition: 0.6s ease;
+  animation: none;
 }
 
 /*===== Button Dark/Light Mode =====*/
@@ -317,6 +339,7 @@ a {
   object-fit: contain;
   border-radius: 50%;
   margin-top: 50px;
+  animation: bounceTop_01 5s ease infinite;
 }
 
 .about-details .right {
@@ -606,7 +629,7 @@ a {
   border-radius: 15px;
   transition: 0.3s;
   cursor: pointer;
-  letter-spacing: 0.10rem;
+  letter-spacing: 0.05rem;
   font-size: 15px;
 }
 
