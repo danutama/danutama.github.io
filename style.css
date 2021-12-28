@@ -493,10 +493,6 @@ a {
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 
-.js-tilt-glare {
-  border-radius: inherit;
-}
-
 .portfolio-card .box .box-img {
   width: 100%;
 }
