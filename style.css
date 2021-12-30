@@ -739,7 +739,9 @@ a {
   color: var(--button-main);
 }
 
-
+.buy-me {
+  display: none;
+}
 
 /* === PORTFOLIO CATEGORY === */
 .portfolio-category {

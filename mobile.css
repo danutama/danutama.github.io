@@ -498,4 +498,23 @@
   .contact-icons ul li a:hover {
     color: var(--button-main);
   }
+
+  .buy-me {
+    display: block;
+    color: var(--h1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .buy-me a {
+    color: var(--h1);
+  }
+
+  .buy-me a:hover {
+    color: var(--button-main);
+  }
 }
