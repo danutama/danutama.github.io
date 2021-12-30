@@ -523,6 +523,17 @@ a {
   font-weight: 600;
   color: var(--h1);
   margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-card .box h2 a {
+  color: var(--grey);
+  margin-top: 3px;
+}
+
+.portfolio-card .box h2 a:hover {
+  color: rgb(255, 119, 28);
 }
 
 .portfolio-card .box .btn {
@@ -737,10 +748,6 @@ a {
 
 .contact-icons ul li a:hover {
   color: var(--button-main);
-}
-
-.buy-me {
-  display: none;
 }
 
 /* === PORTFOLIO CATEGORY === */
