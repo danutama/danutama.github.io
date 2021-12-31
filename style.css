@@ -32,6 +32,7 @@ html {
   --shadow-animation-1: rgba(82, 82, 82, 0.7);
   --shadow-animation-2: rgba(255,255,255,0);
   --shadow-animation-3: rgba(255,255,255,0);
+  --box-hover:  0 0 0.5rem 0.5rem rgba(97, 97, 97, 0.3);
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -58,6 +59,7 @@ body.dark-theme {
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
   --shadow-animation-2: rgba(255,255,255,0);
   --shadow-animation-3: rgba(255,255,255,0);
+  --box-hover: 0 0 0.5rem 0.5rem rgba(238, 234, 234, 0.3);
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -499,6 +501,10 @@ a {
   border-radius: 17px;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
 }
+
+.portfolio-card .box:hover {
+  box-shadow: var(--box-hover);
+} 
 
 .portfolio-card .box .box-img {
   width: 100%;
