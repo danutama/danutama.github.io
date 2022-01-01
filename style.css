@@ -538,10 +538,6 @@ a {
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 
-.portfolio-card .box:hover {
-  box-shadow: var(--box-hover);
-} 
-
 .portfolio-card .box .box-img {
   width: 100%;
 }
@@ -575,7 +571,7 @@ a {
 }
 
 .portfolio-card .box h2 a:hover {
-  color: rgb(255, 119, 28);
+  color: #ff9800;
 }
 
 .portfolio-card .box .btn {

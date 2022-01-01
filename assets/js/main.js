@@ -1,4 +1,4 @@
-/*==================== CHANGE BACKGROUND NAVBAR ====================*/
+/*===== CHANGE BACKGROUND NAVBAR =====*/
 function scrollHeader(){
   const header = document.getElementById('navbar')
   // When the scroll is greater than 30 viewport height, add the scroll-header class to the navbar tag
@@ -6,7 +6,7 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== SHOW MODAL ===============*/
+/*===== SHOW MODAL =====*/
 const showModal = (openButton, modalContent) => {
   const openBtn = document.getElementById(openButton),
     modalContainer = document.getElementById(modalContent);
@@ -19,7 +19,7 @@ const showModal = (openButton, modalContent) => {
 };
 showModal('contact', 'modal-container');
 
-/*=============== CLOSE MODAL ===============*/
+/*===== CLOSE MODAL =====*/
 const closeBtn = document.querySelectorAll('.close-modal');
 
 function closeModal() {
