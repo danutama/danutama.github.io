@@ -115,39 +115,6 @@ a {
   color: var(--blue);
 }
 
-@keyframes ani01 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.home .row .shape-01 {
-  position: absolute;
-  display: block;
-  height: 30px;
-  width: 30px;
-  border: 2px solid #ff9800;
-  right: 25%;
-  top: 20%;
-  animation: ani01 5s linear infinite;
-  z-index: 1;
-}
-
-.home .row .col-2 .shape-02 {
-  position: absolute;
-  display: block;
-  height: 30px;
-  width: 30px;
-  border: 2px solid #ff9800;
-  right: 70%;
-  top: 10%;
-  animation: ani01 5s linear infinite;
-  z-index: 1;
-}
-
 /* Change Background Navbar */
 .scroll-header {
   backdrop-filter: blur(10px);
@@ -238,6 +205,41 @@ a {
   height: 40rem;
 }
 
+@keyframes ani01 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.home .row .shape-01 {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #ff9800;
+  border-radius: 5px;
+  right: 25%;
+  top: 35%;
+  animation: ani01 7s linear infinite;
+  z-index: 1;
+}
+
+.home .row .col-2 .shape-02 {
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #ff9800;
+  border-radius: 5px;
+  right: 70%;
+  top: 10%;
+  animation: ani01 7s linear infinite;
+  z-index: 1;
+}
+
 .row.hero .col-1 {
   width: 100%;
   flex-direction: column;
@@ -304,7 +306,7 @@ a {
 
 @keyframes pulse_01{
   0% {
-    transform: scale(0.94);
+    transform: scale(1);
     box-shadow: 0 0 0 0 var(--shadow-animation-1);
   }
   70% {
@@ -312,7 +314,7 @@ a {
     box-shadow: 0 0 0 12px var(--shadow-animation-2);
   }
   100% {
-    transform: scale(0.94);
+    transform: scale(1);
     box-shadow: 0 0 0 0 var(--shadow-animation-3);
   }
 }
@@ -412,6 +414,7 @@ a {
 
 .about-details .button {
   margin: 30px 0;
+  display: none;
 }
 
 .about-details .button li a {

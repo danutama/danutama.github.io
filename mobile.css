@@ -332,10 +332,6 @@
     margin-bottom: 250px;
   }
 
-  .portfolio-card .box:hover {
-    box-shadow: unset;
-  } 
-
   .portfolio .ctn-title h1 {
     font-size: 25px;
   }
