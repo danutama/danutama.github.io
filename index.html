@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="body" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,6 +25,12 @@
     <link rel="shortcut icon" href="img/business-3d-answer.png" />
   </head>
   <body>
+    <!-- Preloader Start  -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- Preloader End  -->
+
     <!-- Move to up button -->
     <div class="scroll-button">
       <a href="#"><i class="fa fa-arrow-up"></i></a>
@@ -374,6 +380,10 @@
           $('li a').removeClass('active');
           $(this).addClass('active');
         });
+      });
+
+      $(window).on('load', function () {
+        $('.preloader').addClass('loaded');
       });
 
       // Greating Text - Home Section //

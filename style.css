@@ -115,6 +115,36 @@ a {
   color: var(--blue);
 }
 
+/* Preloader Start */
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111;
+  z-index: 1099;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease;
+}
+
+.preloader.loaded {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -99;
+}
+
+.preloader .loader {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #ff9800;
+  border-right: 2px solid transparent;
+  border-radius: 50%;
+  animation: ani01 1s linear infinite;
+}
+
 /* Change Background Navbar */
 .scroll-header {
   backdrop-filter: blur(10px);
@@ -672,6 +702,10 @@ a {
 }
 
 /* ===== Modal Contact Mobile Version ===== */
+html.show-modal {
+  overflow: hidden !important;
+}
+
 .modal__button-main {
   background-color: var(--button-main);
   border: none !important;

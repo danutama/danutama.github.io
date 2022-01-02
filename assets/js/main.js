@@ -7,24 +7,28 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 /*===== SHOW MODAL =====*/
-const showModal = (openButton, modalContent) => {
+const showModal = (openButton, modalContent, body) => {
   const openBtn = document.getElementById(openButton),
-    modalContainer = document.getElementById(modalContent);
+    modalContainer = document.getElementById(modalContent),
+    body_Container = document.getElementById(body);
 
   if (openBtn && modalContainer) {
     openBtn.addEventListener('click', () => {
-      modalContainer.classList.add('show-modal');
+      modalContainer.classList.add('show-modal'),
+      body_Container.classList.add('show-modal');
     });
   }
 };
-showModal('contact', 'modal-container');
+showModal('contact', 'modal-container', 'body');
 
 /*===== CLOSE MODAL =====*/
 const closeBtn = document.querySelectorAll('.close-modal');
 
 function closeModal() {
-  const modalContainer = document.getElementById('modal-container');
-  modalContainer.classList.remove('show-modal');
+  const modalContainer = document.getElementById('modal-container'),
+  body_Container = document.getElementById('body');
+  modalContainer.classList.remove('show-modal'),
+  body_Container.classList.remove('show-modal');
 }
 closeBtn.forEach((c) => c.addEventListener('click', closeModal));
 

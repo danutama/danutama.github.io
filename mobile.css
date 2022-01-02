@@ -387,15 +387,12 @@
 
   @keyframes pulse_02 {
     0% {
-      transform: scale(1);
       box-shadow: 0 0 0 0 var(--shadow-animation-1);
     }
     70% {
-      transform: scale(1);
       box-shadow: 0 0 0 12px var(--shadow-animation-2);
     }
     100% {
-      transform: scale(1);
       box-shadow: 0 0 0 0 var(--shadow-animation-3);
     }
   }
