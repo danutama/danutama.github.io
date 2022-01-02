@@ -382,19 +382,6 @@
     transition: 0.3s;
     cursor: pointer;
     z-index: 999;
-    animation: pulse_02 2s ease infinite;
-  }
-
-  @keyframes pulse_02 {
-    0% {
-      box-shadow: 0 0 0 0 var(--shadow-animation-1);
-    }
-    70% {
-      box-shadow: 0 0 0 12px var(--shadow-animation-2);
-    }
-    100% {
-      box-shadow: 0 0 0 0 var(--shadow-animation-3);
-    }
   }
 
   .modal__button-main:hover {
