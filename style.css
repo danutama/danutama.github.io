@@ -21,6 +21,7 @@ html {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(235, 241, 245, 0.7);
+  --background-credits: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9, 0.7);
   --about-color: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
   --card-color: #fff;
   --modal-color: #f4f3ff;
@@ -32,7 +33,7 @@ html {
   --shadow-animation-1: rgba(82, 82, 82, 0.7);
   --shadow-animation-2: rgba(255,255,255,0);
   --shadow-animation-3: rgba(255,255,255,0);
-  --box-hover:  0 0 0.5rem 0.5rem rgba(97, 97, 97, 0.3);
+  --credits-shadow:  0 0 0.3rem 0.3rem rgba(97, 97, 97, 0.3);
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -59,7 +60,7 @@ body.dark-theme {
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
   --shadow-animation-2: rgba(255,255,255,0);
   --shadow-animation-3: rgba(255,255,255,0);
-  --box-hover: 0 0 0.5rem 0.5rem rgba(238, 234, 234, 0.3);
+  --credits-shadow: 0 0 0.2rem 0.2rem rgba(238, 234, 234, 0.3);
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -636,8 +637,38 @@ a {
 .credits.container {
   padding-top: 20px;
   bottom: 0 !important;
-  background: var(--about-color);
+  background: var(--background-credits);
   border-radius: 20px;
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: var(--credits-shadow);
+}
+
+.shape-03 {
+  position: absolute;
+  background: #ff9800;
+  display: block;
+  height: 80px;
+  width: 80px;
+  border: 10px solid #ff9800;
+  border-radius: 50%;
+  margin-top: -1rem;
+  left: 10%;
+  z-index: 0;
+}
+
+.shape-04 {
+  position: absolute;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 10px solid #ff9800;
+  border-radius: 10px;
+  margin-top: 12rem;
+  left: 80%;
+  animation: ani01 7s linear infinite;
+  z-index: 0;
 }
 
 .credits {
@@ -671,7 +702,7 @@ a {
   border-radius: 50%;
   border: 2px solid var(--h1);
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
 

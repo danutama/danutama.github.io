@@ -160,6 +160,11 @@
     display: none;
   }
 
+  .shape-03,
+  .shape-04 {
+    display: none;
+  }
+  
   /*===== Mobile Navbar =====*/
   .list .badge-notif {
     position: relative;
