@@ -77,6 +77,16 @@
 }
 
 @media (max-width: 900px) {
+  .shape-05 {
+    margin-top: 25rem;
+    left: 20%;
+  }
+
+  .shape-06 {
+    margin-top: 20rem;
+    left: 65%;
+  }
+
   .about .left img {
     height: 310px;
     width: 200;
@@ -164,7 +174,7 @@
   .shape-04 {
     display: none;
   }
-  
+
   /*===== Mobile Navbar =====*/
   .list .badge-notif {
     position: relative;

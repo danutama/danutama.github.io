@@ -21,7 +21,7 @@ html {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(235, 241, 245, 0.7);
-  --background-credits: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9, 0.7);
+  --background-credits: rgba(213, 225, 233, 0.7);
   --about-color: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
   --card-color: #fff;
   --modal-color: #f4f3ff;
@@ -52,6 +52,7 @@ body.dark-theme {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(71, 71, 71, 0.7);
+  --background-credits: rgba(58, 63, 66, 0.7);
   --about-color: #383a42;
   --card-color: #383a42;
   --modal-color: #383a42;
@@ -60,7 +61,7 @@ body.dark-theme {
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
   --shadow-animation-2: rgba(255,255,255,0);
   --shadow-animation-3: rgba(255,255,255,0);
-  --credits-shadow: 0 0 0.2rem 0.2rem rgba(238, 234, 234, 0.3);
+  --credits-shadow: 0 0 0.3rem 0.3rem rgba(238, 234, 234, 0.3);
   --purple: #8d5cff;
   --purple-hover: #986cff;
   --white: #fff;
@@ -335,7 +336,7 @@ a {
   animation: pulse_01 2s ease infinite;
 }
 
-@keyframes pulse_01{
+@keyframes pulse_01 {
   0% {
     transform: scale(1);
     box-shadow: 0 0 0 0 var(--shadow-animation-1);
@@ -392,11 +393,42 @@ a {
 /* END */
 
 /* About */
+.shape-05 {
+  position: absolute;
+  background: #ff9800;
+  display: block;
+  height: 110px;
+  width: 110px;
+  border: 10px solid #ff9800;
+  border-radius: 50%;
+  margin-top: 20%;
+  left: 30%;
+  z-index: 0;
+}
+
+.shape-06 {
+  position: absolute;
+  display: block;
+  height: 80px;
+  width: 80px;
+  background: #ff9800;
+  border: 10px solid #ff9800;
+  border-radius: 30px;
+  margin-top: 15rem;
+  left: 60%;
+  animation: ani01 10s linear infinite;
+  z-index: 0;
+}
+
 .about.container .content {
   margin: 20px auto;
   padding-bottom: 50px;
-  background: var(--about-color);
+  background: var(--background-credits);
   border-radius: 20px;
+
+  box-shadow: var(--credits-shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .about-details {
@@ -667,7 +699,7 @@ a {
   border-radius: 10px;
   margin-top: 12rem;
   left: 80%;
-  animation: ani01 7s linear infinite;
+  animation: ani01 10s linear infinite;
   z-index: 0;
 }
 
