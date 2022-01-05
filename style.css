@@ -214,6 +214,7 @@ a {
   width: 30px;
   margin-right: 60px;
   margin-top: 3px;
+  border-radius: 50%;
 }
 
 .logo {
@@ -255,11 +256,11 @@ a {
   border-radius: 5px;
   right: 25%;
   top: 35%;
-  animation: ani01 7s linear infinite;
+  animation: ani01 10s linear infinite;
   z-index: 1;
 }
 
-.home .row .col-2 .shape-02 {
+.home .row .shape-02 {
   position: absolute;
   display: block;
   height: 30px;
@@ -268,7 +269,7 @@ a {
   border-radius: 5px;
   right: 70%;
   top: 10%;
-  animation: ani01 7s linear infinite;
+  animation: ani01 10s linear infinite;
   z-index: 1;
 }
 
