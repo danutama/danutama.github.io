@@ -21,7 +21,7 @@ html {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(235, 241, 245, 0.7);
-  --background-credits: rgba(213, 225, 233, 0.7);
+  --background-credits: rgba(235, 241, 245, 0.7);
   --about-color: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
   --card-color: #fff;
   --modal-color: #f4f3ff;
@@ -52,7 +52,7 @@ body.dark-theme {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(71, 71, 71, 0.7);
-  --background-credits: rgba(58, 63, 66, 0.7);
+  --background-credits: hsl(228, 8%, 24%, 0.7);
   --about-color: #383a42;
   --card-color: #383a42;
   --modal-color: #383a42;
@@ -427,8 +427,8 @@ a {
   border-radius: 20px;
 
   box-shadow: var(--credits-shadow);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .about-details {
@@ -672,8 +672,8 @@ a {
   background: var(--background-credits);
   border-radius: 20px;
 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   box-shadow: var(--credits-shadow);
 }
 
