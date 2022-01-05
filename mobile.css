@@ -1,6 +1,6 @@
 @media (max-width: 1350px) {
   .skills .grid-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   }
 }
 
@@ -68,7 +68,7 @@
   }
 
   .grid-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
   }
 
   .copyright p {
@@ -87,7 +87,7 @@
   }
 
   .skills .grid-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   }
 }
 
