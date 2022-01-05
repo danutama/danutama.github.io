@@ -21,7 +21,7 @@ html {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(235, 241, 245, 0.7);
-  --background-credits: linear-gradient(to right bottom, hsl(240, 73%, 81%, 0.9), hsl(242, 75%, 84%, 0.9), hsl(244, 74%, 88%, 0.9), hsl(245, 77%, 92%, 0.9), hsl(246, 76%, 95%, 0.9), hsl(265, 81%, 96%, 0.9), hsl(279, 88%, 97%, 0.9), hsl(300, 100%, 98%, 0.7), rgba(255, 250, 253, 0.9), rgba(250, 247, 245, 0.9), rgba(255, 244, 211, 0.9), rgba(250, 253, 186, 0.9));
+  --background-credits: linear-gradient(to right bottom, hsl(240, 73%, 81%, 0.7), hsl(242, 75%, 84%, 0.7), hsl(244, 74%, 88%, 0.7), hsl(245, 77%, 92%, 0.7), hsl(246, 76%, 95%, 0.7), hsl(265, 81%, 96%, 0.7), hsl(279, 88%, 97%, 0.7), hsl(300, 100%, 98%, 0.7), rgba(255, 250, 253, 0.7), rgba(250, 247, 245, 0.7), rgba(255, 247, 225, 0.7), rgba(254, 255, 234, 0.7));
   --about-color: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
   --card-color: #fff;
   --modal-color: #f4f3ff;
@@ -398,9 +398,6 @@ a {
   padding-bottom: 50px;
   background: var(--background-credits);
   border-radius: 20px;
-
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
 }
 
 .about-details {
@@ -644,8 +641,8 @@ a {
   background: var(--background-credits);
   border-radius: 20px;
 
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: var(--credits-shadow);
 }
 
