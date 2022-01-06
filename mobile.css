@@ -251,13 +251,42 @@
   }
   /*===== navbar end =====*/
 
+  /*===== Button Dark/Light Mode (new verion) =====*/
+  .dark {
+    display: flex;
+    position: fixed;
+    align-items:center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    right: -17px;
+    top: 50%;
+    background: linear-gradient(to right bottom, hsl(240, 73%, 81%, 0.7), hsl(242, 75%, 84%, 0.7), hsl(244, 74%, 88%, 0.7), hsl(245, 77%, 92%, 0.7), hsl(246, 76%, 95%, 0.7), hsl(265, 81%, 96%, 0.7), hsl(279, 88%, 97%, 0.7), hsl(300, 100%, 98%, 0.7), rgba(255, 250, 253, 0.7), rgba(250, 247, 245, 0.7), rgba(255, 247, 225, 0.7), rgba(254, 255, 234, 0.7));
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  .change-theme {
+    cursor: pointer;
+    color: var(--h2);
+    font-size: 1.5rem;
+    padding-right: 20px;
+  }
+
+  .change-theme-name {
+    display: none;
+  }
+  /* END */
+  
   .container {
     padding-top: 1rem;
   }
 
-  .home.container {
-    margin-top: 2.5rem;
+  /* 2.5rem */
+  .home.container { 
+    margin-top: 5rem; 
   }
+  /* end */
 
   .home .row .shape-01 {
     right: 90%;
