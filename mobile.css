@@ -283,13 +283,13 @@
 
   /* 2.5rem */
   .home.container { 
-    margin-top: 5rem; 
+    margin-top: 0; 
   }
   /* end */
 
   .home .row .shape-01 {
     right: 90%;
-    top: 10px;
+    top: 100px;
   }
 
   .home .row .col-2 .shape-02 {
@@ -314,10 +314,12 @@
     font-size: 40px;
   }
 
+  /* top -50px */
   .home.container .col-1 {
-    margin-top: -50px;
+    margin-top: 50px;
     margin-bottom: -40px;
   }
+  /* end */
 
   .home.container .col-1 h4 {
     font-size: 36px;
