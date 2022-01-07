@@ -172,39 +172,23 @@ a {
   position: relative;
 }
 
-.nav-list ul li a {
-  color: var(--grey);
-}
-
-.navbar .nav-list ul {
+.nav-list ul {
   display: flex;
-}
-
-.nav-list a {
-  font-family: 'nunito';
-  transition: 0.5s ease;
-}
-
-.nav-list a:hover {
-  color: var(--h2);
-  transition: 0.3s ease;
-  background: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
-  padding: 0 15px;
-  border-radius: 15px;
-}
-
-.nav-list ul li a {
-  text-decoration: none;
-  float: left;
 }
 
 .nav-list ul li {
   margin: 0 20px;
-  color: var(--grey);
   font-size: 18px;
   cursor: pointer;
 }
 
+.nav-list a {
+  color: var(--grey);
+  font-family: 'nunito';
+  transition: 0.3s ease;
+}
+
+.nav-list a:hover,
 .nav-list .active {
   color: var(--h1);
   font-weight: bold;
