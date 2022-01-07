@@ -434,7 +434,7 @@ a {
   display: none;
 }
 
-.about-details .button li a {
+.about-details .button a {
   outline: none;
   padding: 10px 30px;
   font-size: 15px;
@@ -582,12 +582,12 @@ a {
   justify-content: space-between;
 }
 
-.portfolio-card .box h2 a {
+.portfolio-card .box h2 span {
   color: var(--grey);
   margin-top: 3px;
 }
 
-.portfolio-card .box h2 a:hover {
+.portfolio-card .box h2 span:hover {
   color: #ff9800;
 }
 
