@@ -630,18 +630,20 @@ a {
 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: var(--credits-shadow);
+  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+    -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+    box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 .shape-03 {
   position: absolute;
   background: #ff9800;
   display: block;
-  height: 80px;
-  width: 80px;
+  height: 120px;
+  width: 120px;
   border: 10px solid #ff9800;
   border-radius: 50%;
-  margin-top: -2rem;
+  margin-top: -1.5rem;
   left: 10%;
   z-index: 0;
 }
