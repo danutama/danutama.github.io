@@ -458,6 +458,7 @@ a {
 }
 
 .skills .title h4 {
+  font-size: 20px;
   font-weight: normal;
   color: var(--h1);
 }
@@ -525,6 +526,7 @@ a {
 }
 
 .ctn-title h4 {
+  font-size: 20px;
   color: var(--h1);
   cursor: pointer;
   font-weight: normal;
@@ -568,13 +570,13 @@ a {
 }
 
 .portfolio-card .box h3 {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   margin: -0.5rem 0 10px;
 }
 
 .portfolio-card .box h2 {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--h1);
   margin: 10px 0;
@@ -582,12 +584,12 @@ a {
   justify-content: space-between;
 }
 
-.portfolio-card .box h2 span {
+.portfolio-card .box h2 a {
   color: var(--grey);
   margin-top: 3px;
 }
 
-.portfolio-card .box h2 span:hover {
+.portfolio-card .box h2 a:hover {
   color: #ff9800;
 }
 

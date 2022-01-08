@@ -313,7 +313,7 @@
 
   /* top -50px */
   .home.container .col-1 {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: -40px;
   }
   /* end */
@@ -374,16 +374,28 @@
     margin: -20px 0 0;
   }
 
+  .skills .title h4 {
+    font-size: 17px;
+  }
+
   .portfolio {
     margin-bottom: 250px;
+  }
+
+  .ctn-title h4 {
+    font-size: 17px;
+  }
+
+  .portfolio .title {
+    margin-bottom: 40px;
   }
 
   .portfolio .ctn-title h1 {
     font-size: 25px;
   }
 
-  .portfolio .title {
-    margin-bottom: 40px;
+  .portfolio-card .box h3 {
+    font-size: 16px;
   }
 
   /* ===== Contact Modal ===== */
