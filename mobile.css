@@ -322,12 +322,10 @@
     font-size: 36px;
   }
 
-  /* top -50px */
   .home.container .col-2 {
-    margin-top: -80px;
+    margin-top: -50px;
     margin-bottom: 70px;
   }
-  /* end */
 
   .home-btn {
     display: none;
@@ -418,10 +416,6 @@
     padding-top: 0;
   }
 
-  .modal__button-main {
-    margin-bottom: 50px;
-  }
-
   .modal__button-link {
     margin: 1rem auto;
   }
@@ -438,11 +432,9 @@
     display: inline-block;
     color: var(--white);
     padding: 15px;
-    margin-top: -100px;
-    justify-content: center;
-    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 50px;
     width: 80%;
-    margin: -100px auto 100px;
     border-radius: 15px;
     transition: 0.3s;
     cursor: pointer;
@@ -451,6 +443,10 @@
     -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
     -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
     box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .modal__button-main i {
+    margin-left: 5px;
   }
 
   .modal__button-main:hover {
