@@ -92,6 +92,14 @@
 }
 
 @media (max-width: 800px) {
+  .nav-list ul {
+    margin-right: 10px;
+  }
+
+  .navbar .photo {
+    margin-left: 1rem;
+  }
+
   .grid-box {
     width: 100%;
   }
@@ -102,9 +110,6 @@
 }
 
 @media (max-width: 640px) {
-  .navbar .photo {
-    display: none;
-  }
 
   .home.container .col-1 h1 {
     font-size: 20px;
@@ -152,10 +157,6 @@
     scroll-behavior: unset;
   }
 
-  .logo {
-    display: none;
-  }
-
   .scroll-button {
     display: none;
   }
@@ -166,6 +167,26 @@
   }
 
   /*===== Mobile Navbar =====*/
+  @keyframes shake {
+    1.25%,
+    11.25% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    2.5%,
+    10% {
+      transform: translate3d(1px, 0, 0);
+    }
+    3.75%,
+    6.25%,
+    8.75% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    5%,
+    7.5% {
+      transform: translate3d(1px, 0, 0);
+    }
+  }
+
   .list .badge-notif {
     position: relative;
   }
@@ -183,6 +204,7 @@
     text-align: center;
     border: solid 1px;
     border-radius: 50%;
+    animation: shake 6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
   }
 
   .navbar.container {
@@ -243,6 +265,14 @@
   .nav-list i::before {
     display: flex;
   }
+
+  .navbar .photo {
+    display: none;
+  }
+  
+  .nav-list ul {
+    margin-right: unset;
+  }
   /*===== navbar end =====*/
 
   /*===== Button Dark/Light Mode (new verion) =====*/
@@ -259,7 +289,7 @@
     -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
     -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
     box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
     z-index: 2;
   }
 
