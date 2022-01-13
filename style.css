@@ -387,7 +387,8 @@ a {
   width: 300px;
   object-fit: contain;
   border-radius: 50%;
-  margin-top: 50px;
+  margin-left: 50px;
+  margin-top: 70px;
   animation: bounceTop_01 5s ease infinite;
 }
 
@@ -399,14 +400,14 @@ a {
 
 .right .topic {
   color: var(--h1);
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .about-details .right p {
   line-height: 30px;
-  text-align: justify;
+  text-align: left;
   color: var(--h1);
   font-size: 18px;
   margin-bottom: 30px;
@@ -616,15 +617,12 @@ a {
 /* === CREDITS / COPYRIGHT === */
 .credits.container {
   padding-top: 20px;
-  bottom: 0 !important;
   background: var(--background-credits);
   border-radius: 20px;
 
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
-  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
-    -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
-    box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 .shape-03 {

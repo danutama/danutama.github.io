@@ -8,10 +8,6 @@
   .photo {
     margin-right: 20px;
   }
-  
-  .logo {
-    margin-left: 20px;
-  }
 
   .about .about-details {
     justify-content: center;
@@ -21,13 +17,15 @@
   .about .about-details .left img {
     display: flex;
     justify-content: center;
-    width: 10rem;
-    height: 10rem;
+    
+    margin: 70px auto 0;
+    width: 200px;
+    height: 200px;
   }
 
   .about-details .right {
-    width: 90%;
-    margin: 20px 0;
+    width: 100%;
+    margin: 0;
   }
 
   .contact .container {
@@ -77,12 +75,8 @@
 }
 
 @media (max-width: 900px) {
-  .about .left img {
-    height: 310px;
-    width: 200;
-  }
-
-  .about .right .topic {
+  .about .right .topic,
+  .about-details .right p {
     text-align: center;
   }
 
@@ -374,19 +368,18 @@
   }
 
   .about .right .topic {
-    font-size: 20px;
+    font-size: 25px;
   }
   
-  .about .right p {
-    width: 350px;
-    font-size: 15px;
+  .about .right {
+    width: 115%;
     text-align: center;
     line-height: 25px;
     justify-content: center;
   }
-  
-  .about .text {
-    padding-right: 50px;
+
+  .about .right p {
+    font-size: 15px;
   }
   
   .about.container .content {
