@@ -230,7 +230,7 @@ a {
   width: 20px;
   border: 2px solid #ff9800;
   border-radius: 5px;
-  right: 25%;
+  right: 50%;
   top: 35%;
   animation: ani01 10s linear infinite;
   z-index: 1;
@@ -252,7 +252,7 @@ a {
 .row.hero .col-1 {
   width: 100%;
   flex-direction: column;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .highlight-name {
@@ -347,10 +347,12 @@ a {
 
   justify-content: center;
   background: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
-  border-radius: 8px;
-  width: 100px;
-  height: 30px;
-  margin-bottom: 30px;
+  border-radius: 20px;
+  width: 35px;
+  height: 35px;
+  margin-left: 3.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .change-theme,
@@ -366,6 +368,7 @@ a {
 
 .change-theme-name {
   font-size: 15px;
+  display: none;
 }
 /* END */
 
