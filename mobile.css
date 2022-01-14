@@ -98,6 +98,10 @@
     margin-left: 1.5rem;
   }
 
+  .home.container .col-1 h4 {
+    font-size: 40px;
+  }
+
   .grid-box {
     width: 100%;
   }
@@ -111,10 +115,6 @@
 
   .home.container .col-1 h1 {
     font-size: 20px;
-  }
-
-  .home.container .col-1 h4 {
-    font-size: 40px;
   }
 
   .home.container {
@@ -283,7 +283,7 @@
     height: 40px;
     right: 0;
     bottom: 500%;
-    background: linear-gradient(to right bottom, hsl(240, 73%, 81%, 0.7), hsl(242, 75%, 84%, 0.7), hsl(244, 74%, 88%, 0.7), hsl(245, 77%, 92%, 0.7), hsl(246, 76%, 95%, 0.7), hsl(265, 81%, 96%, 0.7), hsl(279, 88%, 97%, 0.7), hsl(300, 100%, 98%, 0.7), rgba(255, 250, 253, 0.7), rgba(250, 247, 245, 0.7), rgba(255, 247, 225, 0.7), rgba(254, 255, 234, 0.7));
+    background: var(--button-main);
     -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
     -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
     box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 9px rgba(0, 0, 0, 0.3), 0 0.1500rem 0.1500rem 0 rgba(0, 0, 0, 0.3) !important;
@@ -293,7 +293,7 @@
 
   .change-theme {
     cursor: pointer;
-    color: var(--h2);
+    color: var(--white);
     font-size: 1.5rem;
   }
 
@@ -347,7 +347,7 @@
   /* end */
 
   .home.container .col-1 h4 {
-    font-size: 36px;
+    font-size: 25px;
   }
 
   .home.container .col-2 {

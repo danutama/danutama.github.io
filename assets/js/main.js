@@ -21,8 +21,8 @@ window.addEventListener('scroll', scrollActive)
 /*===== CHANGE BACKGROUND NAVBAR =====*/
 function scrollHeader(){
   const header = document.getElementById('navbar')
-  // When the scroll is greater than 30 viewport height, add the scroll-header class to the navbar tag
-  if(this.scrollY >= 30) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+  // When the scroll is greater than 10 viewport height, add the scroll-header class to the navbar tag
+  if(this.scrollY >= 10) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
