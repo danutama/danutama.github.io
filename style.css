@@ -502,7 +502,34 @@ a {
   -webkit-transform: scale(1.02); /* support Safari */
 }
 
-/* Portfolio */
+/*===== SPONSORS =====*/
+.title-sponsor {
+  padding-top: 5rem;
+}
+
+.sponsor__container {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  row-gap: 3.5rem;
+  padding: 1rem;
+}
+
+.sponsor__content:hover .sponsor__img {
+  filter: invert(0.2);
+}
+
+.sponsor__img {
+  width: 120px;
+  padding-bottom: 1rem;
+  filter: invert(0.5);
+  transition: all 0.3s;
+}
+/* END */
+
+/* PORTFOLIO */
 .portfolio .title {
   text-align: center;
   margin-bottom: 60px;
