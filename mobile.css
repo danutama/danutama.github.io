@@ -405,6 +405,18 @@
     font-size: 17px;
   }
 
+  .sponsor__container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .sponsor__img {
+    width: 120px;
+  }
+  
+  .sponsor__img.boxicons {
+    width: 180px;
+  }
+
   .portfolio {
     margin-bottom: 250px;
   }

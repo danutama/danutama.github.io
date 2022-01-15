@@ -512,8 +512,8 @@ a {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  row-gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  row-gap: 1rem;
   padding: 1rem;
 }
 
@@ -522,10 +522,14 @@ a {
 }
 
 .sponsor__img {
-  width: 120px;
+  width: 150px;
   padding-bottom: 1rem;
   filter: invert(0.5);
   transition: all 0.3s;
+}
+
+.sponsor__img.boxicons {
+  width: 220px;
 }
 /* END */
 
