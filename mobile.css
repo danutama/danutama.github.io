@@ -406,6 +406,7 @@
   }
 
   .sponsor__container {
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
@@ -413,7 +414,7 @@
     width: 120px;
   }
   
-  .sponsor__img.boxicons {
+  .sponsor__img.resize {
     width: 180px;
   }
 

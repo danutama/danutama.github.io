@@ -180,6 +180,7 @@ a {
 .nav-list ul li {
   margin: 0 20px;
   font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -191,8 +192,9 @@ a {
 
 .nav-list a:hover,
 .nav-list .active {
-  color: var(--h1);
+  color: var(--blue);
   font-weight: bold;
+  text-decoration: underline 5px block;
 }
 
 .photo {
@@ -492,11 +494,10 @@ a {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   background-color: var(--card-color);
-  transition: 0.7s ease;
+  transition: 0.5s ease;
 }
 
 .skills .grid-box:hover {
-  transition: all 0.6s ease;
   transform: scale(1.02);
   -ms-transform: scale(1.02); /* Support IE 9 */
   -webkit-transform: scale(1.02); /* support Safari */
@@ -508,11 +509,11 @@ a {
 }
 
 .sponsor__container {
-  width: 100%;
+  width: 90%;
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   row-gap: 1rem;
   padding: 1rem;
 }
@@ -528,7 +529,7 @@ a {
   transition: all 0.3s;
 }
 
-.sponsor__img.boxicons {
+.sponsor__img.resize {
   width: 220px;
 }
 /* END */
@@ -656,7 +657,6 @@ a {
 
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
-  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 .shape-03 {
