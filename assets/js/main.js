@@ -101,11 +101,11 @@ Array.from(categories).forEach((item, index) => {
 // === Initialize Swiper Sponsor === //
 let swiper = new Swiper(".sponsor__container", {
   grabCursor: true,
-  centeredSlides: true,
+  centeredSlides: false,
   slidesPerView: "3",
   autoplay: true,
   loop: true,
-  spaceBetween: 171,
+  spaceBetween: 61,
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true,
