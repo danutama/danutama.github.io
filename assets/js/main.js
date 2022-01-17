@@ -105,7 +105,7 @@ let swiper = new Swiper(".sponsor__container", {
   slidesPerView: "3",
   autoplay: true,
   loop: true,
-  spaceBetween: 61,
+  spaceBetween: 100,
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true,
