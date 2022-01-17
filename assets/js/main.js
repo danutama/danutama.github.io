@@ -97,3 +97,17 @@ Array.from(categories).forEach((item, index) => {
         portfolioMenuList.classList ='portfolio-card '+ e.target.getAttribute('data-portfolio-type')
     }
 })
+ 
+// === Initialize Swiper Sponsor === //
+let swiper = new Swiper(".sponsor__container", {
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "3",
+  autoplay: true,
+  loop: true,
+  spaceBetween: 171,
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+})

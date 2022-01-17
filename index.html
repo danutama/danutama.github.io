@@ -12,13 +12,16 @@
 
     <title>Danu A. Pratama | Front-end Developer</title>
 
+    <!-- SWIPER.JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- BOXICONS -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css" />
 
-    <!--=============== CUSTOM FONTS ===============-->
+    <!-- CUSTOM FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
 
@@ -28,7 +31,7 @@
     <link rel="shortcut icon" href="img/business-3d-answer.png" />
   </head>
   <body>
-    <!-- Preloader Start  -->
+    <!-- Preloader Start -->
     <div class="preloader">
       <div class="loader"></div>
     </div>
@@ -217,38 +220,45 @@
     </section>
 
     <!-- SPONSOR -->
-    <section class="sponsor section">
+    <section class="sponsor section swiper">
       <div class="title title-sponsor">
         <div class="shape-05"></div>
         <h1>Resource</h1>
         <div class="shape-06"></div>
       </div>
-      <div class="sponsor__container container grid">
-        <div class="sponsor__content">
-          <img src="/img/github.png" alt="" class="sponsor__img" />
-        </div>
-        <div class="sponsor__content">
-          <img src="img/bootstrap.png" alt="" class="sponsor__img" />
-        </div>
-        <div class="sponsor__content">
-          <img src="img/jquery.png" alt="" class="sponsor__img" />
-        </div>
-        <div class="sponsor__content">
-          <img src="img/freepik.png" alt="" class="sponsor__img" />
-        </div>
-        <div class="sponsor__content">
-          <img src="img/icons8.png" alt="" class="sponsor__img" />
-        </div>
-        <div class="sponsor__content">
-          <img src="img/fontawesome.png" alt="" class="sponsor__img" />
-        </div>
-        <div class="sponsor__content">
-          <img src="img/boxicons.png" alt="" class="sponsor__img resize" />
-        </div>
-        <div class="sponsor__content">
-          <img src="img/google-fonts.png" alt="" class="sponsor__img resize" />
+      <div class="sponsor__container container grid swiper-container">
+        <div class="swiper-wrapper">
+          <div class="sponsor__content swiper-slide">
+            <img src="/img/github.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content swiper-slide">
+            <img src="img/bootstrap.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content swiper-slide ">
+            <img src="img/jquery.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content swiper-slide ">
+            <img src="img/swiperjs.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content swiper-slide">
+            <img src="img/freepik.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content swiper-slide">
+            <img src="img/icons8.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content swiper-slide">
+            <img src="img/fontawesome.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content swiper-slide">
+            <img src="img/boxicons.png" alt="" class="sponsor__img resize" />
+          </div>
+          <div class="sponsor__content swiper-slide">
+            <img src="img/google-fonts.png" alt="" class="sponsor__img resize" />
+          </div>
         </div>
       </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
     </section>
 
     <!-- PORTFOLIO -->
@@ -407,6 +417,7 @@
     <!--=============== MAIN JS ===============-->
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/vanilla-tilt.min.js"></script>
 
