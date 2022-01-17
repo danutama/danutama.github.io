@@ -522,6 +522,15 @@ a {
   align-items: center;
 }
 
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: var(--grey);
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff9800;
+}
+
 .title-sponsor {
   padding-top: 5rem;
   display: flex;

@@ -101,13 +101,18 @@ Array.from(categories).forEach((item, index) => {
 // === Initialize Swiper Sponsor === //
 let swiper = new Swiper(".sponsor__container", {
   grabCursor: true,
-  centeredSlides: false,
-  slidesPerView: "3",
-  autoplay: true,
   loop: true,
-  spaceBetween: 120,
+  cssMode: true,
+  centeredSlides: true,
+  slidesPerView: "3",
+  spaceBetween: 130,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true,
+    clickable: true,
   },
 })
