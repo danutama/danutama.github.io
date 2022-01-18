@@ -1,5 +1,5 @@
 .insta-button {
-  border-radius: 25px;
+  border-radius: 15px;
   width: 30rem;
   margin-bottom: 1rem;
   max-width: 90vw;
@@ -28,7 +28,7 @@
 }
 
 .insta-button-shake {
-  border-radius: 25px;
+  border-radius: 15px;
   width: 30rem;
   margin-bottom: 1rem;
   max-width: 90vw;
