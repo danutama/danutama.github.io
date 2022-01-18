@@ -106,9 +106,9 @@ let swiper = new Swiper(".sponsor__container", {
   centeredSlides: true,
   slidesPerView: "3",
   spaceBetween: 130,
-  speed: 2000,
+  speed: 900,
   autoplay: {
-    delay: 500,
+    delay: 1000,
     disableOnInteraction: false,
   },
   pagination: {
