@@ -25,6 +25,9 @@
 .btn-primary:hover {
   background: rgba(246, 246, 246, 0.8);
   color: #000;
+  transform: scale(1.02);
+  -ms-transform: scale(1.02); /* Support IE 9 */
+  -webkit-transform: scale(1.02); /* support Safari */
 }
 
 .btn-primary:focus {
@@ -40,7 +43,7 @@
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
-  background-image: url('img/nolan-issac-It0DCaCBr40-unsplash.jpg');
+  background-image: url('/img/nolan-issac-It0DCaCBr40-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
