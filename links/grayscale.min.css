@@ -25,9 +25,9 @@
 .btn-primary:hover {
   background: rgba(246, 246, 246, 0.8);
   color: #000;
-  transform: scale(1.02);
-  -ms-transform: scale(1.02); /* Support IE 9 */
-  -webkit-transform: scale(1.02); /* support Safari */
+  transform: scale(1.03);
+  -ms-transform: scale(1.03); /* Support IE 9 */
+  -webkit-transform: scale(1.03); /* support Safari */
 }
 
 .btn-primary:focus {
@@ -71,9 +71,14 @@ a:hover {
 }
 
 .iconbig {
-  font-size: 1.8rem !important;
+  font-size: 2rem !important;
   margin-top: -8rem;
   margin-bottom: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: center;
 }
 
 .circularimage {
