@@ -121,6 +121,14 @@
     margin-top: 0;
   }
 
+  .sponsor__img {
+    width: 120px;
+  }
+  
+  .sponsor__img.resize {
+    width: 180px;
+  }
+
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     gap: 1.2rem;
@@ -408,14 +416,6 @@
   .sponsor__container {
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  }
-
-  .sponsor__img {
-    width: 120px;
-  }
-  
-  .sponsor__img.resize {
-    width: 180px;
   }
 
   .portfolio {
