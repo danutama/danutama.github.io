@@ -21,7 +21,7 @@ html {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(235, 241, 245, 0.7);
-  --background-credits: rgba(235, 241, 245, 0.7);
+  --background-credits: rgba(235, 241, 245, 0.1);
   --about-color: linear-gradient(to right bottom, hsl(240, 73%, 81%, 0.7), hsl(242, 75%, 84%, 0.7), hsl(244, 74%, 88%, 0.7), hsl(245, 77%, 92%, 0.7), hsl(246, 76%, 95%, 0.7), hsl(265, 81%, 96%, 0.7), hsl(279, 88%, 97%, 0.7), hsl(300, 100%, 98%, 0.7), rgba(255, 250, 253, 0.7), rgba(250, 247, 245, 0.7), rgba(255, 247, 225, 0.7), rgba(254, 255, 234, 0.7));
   --card-color: #fff;
   --modal-color: #f4f3ff;
@@ -51,7 +51,7 @@ body.dark-theme {
   --h1: #fff;
   --h2: #000;
   --social: #fff;
-  --background-nav: rgba(255, 255, 255, .3);
+  --background-nav: rgba(255, 255, 255, .1);
   --background-credits: rgba(255, 255, 255, .1);
   --about-color: #383a42;
   --card-color: #383a42;

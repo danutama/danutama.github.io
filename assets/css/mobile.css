@@ -409,6 +409,10 @@
     margin: -20px 0 0;
   }
 
+  .skills .grid-box:hover {
+    transform: none;
+  }
+
   .skills .title h4 {
     font-size: 17px;
   }

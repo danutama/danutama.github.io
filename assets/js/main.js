@@ -102,7 +102,6 @@ Array.from(categories).forEach((item, index) => {
 let swiper = new Swiper(".sponsor__container", {
   grabCursor: true,
   loop: true,
-  freeMode: true,
   centeredSlides: true,
   slidesPerView: "3",
   spaceBetween: 130,
