@@ -21,8 +21,8 @@ html {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(235, 241, 245, 0.7);
-  --background-credits: linear-gradient(to right bottom, hsl(240, 73%, 81%, 0.7), hsl(242, 75%, 84%, 0.7), hsl(244, 74%, 88%, 0.7), hsl(245, 77%, 92%, 0.7), hsl(246, 76%, 95%, 0.7), hsl(265, 81%, 96%, 0.7), hsl(279, 88%, 97%, 0.7), hsl(300, 100%, 98%, 0.7), rgba(255, 250, 253, 0.7), rgba(250, 247, 245, 0.7), rgba(255, 247, 225, 0.7), rgba(254, 255, 234, 0.7));
-  --about-color: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
+  --background-credits: rgba(235, 241, 245, 0.7);
+  --about-color: linear-gradient(to right bottom, hsl(240, 73%, 81%, 0.7), hsl(242, 75%, 84%, 0.7), hsl(244, 74%, 88%, 0.7), hsl(245, 77%, 92%, 0.7), hsl(246, 76%, 95%, 0.7), hsl(265, 81%, 96%, 0.7), hsl(279, 88%, 97%, 0.7), hsl(300, 100%, 98%, 0.7), rgba(255, 250, 253, 0.7), rgba(250, 247, 245, 0.7), rgba(255, 247, 225, 0.7), rgba(254, 255, 234, 0.7));
   --card-color: #fff;
   --modal-color: #f4f3ff;
   --blue2: rgb(28, 34, 51);
@@ -51,7 +51,7 @@ body.dark-theme {
   --h1: #fff;
   --h2: #000;
   --social: #fff;
-  --background-nav: rgba(255, 255, 255, .1);
+  --background-nav: rgba(255, 255, 255, .3);
   --background-credits: rgba(255, 255, 255, .1);
   --about-color: #383a42;
   --card-color: #383a42;
@@ -378,7 +378,7 @@ a {
 .about.container .content {
   margin: 20px auto;
   padding-bottom: 50px;
-  background: var(--background-credits);
+  background: var(--about-color);
   border-radius: 20px;
 }
 
@@ -493,8 +493,7 @@ a {
 .skills .grid-box {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  background-color: var(--card-color);
-  transition: 0.5s ease;
+  background: var(--card-color);
 }
 
 .skills .grid-box:hover {
