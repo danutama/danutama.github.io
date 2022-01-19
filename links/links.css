@@ -63,9 +63,11 @@
 
 #insta-text {
   margin-top: -1rem;
+  margin-bottom: 3rem;
 }
 
 #insta-footer {
   font-size: 80%;
+  font-weight: bold;
   color: rgb(218, 218, 218);
 }
