@@ -701,8 +701,8 @@ a {
   background: var(--background-credits);
   border-radius: 20px;
 
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .shape-03 {
