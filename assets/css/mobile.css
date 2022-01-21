@@ -106,6 +106,10 @@
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   }
+
+  .portfolio-card .box {
+    transform: unset !important; 
+  }
 }
 
 @media (max-width: 640px) {
@@ -407,7 +411,10 @@
   }
 
   .skills .grid-box:hover {
-    transform: none;
+    transition: none;
+    box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
   }
 
   .skills .title h4 {
