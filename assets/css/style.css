@@ -375,6 +375,10 @@ a {
 /* END */
 
 /* About */
+.about {
+  margin-bottom: 100px;
+}
+
 .about.container .content {
   margin: 20px auto;
   padding-bottom: 50px;
@@ -462,32 +466,38 @@ a {
 }
 
 .grid-wrapper {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40px, auto));
   grid-gap: 50px;
 }
 
+.grid-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon-title {
   display: flex;
   align-items: center;
-  margin-bottom: 0px;
+  justify-content: center;
 }
 
 .icon-title img {
-  margin-right: 20px;
-  width: 50px;
-  margin-top: auto;
+  width: 80px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   border-radius: 11px;
 }
 
-.icon-title h2 {
+.grid-box h2 {
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
   font-size: 16px;
   color: var(--h1);
   font-weight: 600;
-}
-
-.grid-box {
-  padding: 10px;
 }
 
 .skills .grid-box {

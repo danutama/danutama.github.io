@@ -1,6 +1,6 @@
 @media (max-width: 1350px) {
   .skills .grid-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
   }
 }
 
@@ -69,10 +69,6 @@
     right: 20%;
   }
 
-  .grid-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-  }
-
   .copyright p {
     font-size: 12px;
   }
@@ -85,7 +81,7 @@
   }
 
   .skills .grid-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
   }
 }
 
@@ -102,10 +98,6 @@
     font-size: 40px;
   }
 
-  .grid-box {
-    width: 100%;
-  }
-
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   }
@@ -119,6 +111,10 @@
 
   .home.container {
     margin-top: 0;
+  }
+
+  .skills .grid-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
   }
 
   .sponsor__img {
