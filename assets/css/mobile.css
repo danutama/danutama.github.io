@@ -408,13 +408,21 @@
 
   .skills .grid-box {
     margin: -20px 0 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    transition: none;
   }
 
   .skills .grid-box:hover {
     transition: none;
-    box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
-    -webkit-box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
-    -moz-box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+  }
+
+  .skills .grid-box:hover img {
+    transform: none;
   }
 
   .skills .title h4 {

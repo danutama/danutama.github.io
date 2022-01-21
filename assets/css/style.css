@@ -490,6 +490,7 @@ a {
   margin-top: 30px;
   margin-bottom: 10px;
   border-radius: 11px;
+  transition: all 0.3s linear;
 }
 
 .grid-box h2 {
@@ -504,16 +505,23 @@ a {
 }
 
 .skills .grid-box {
-  box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
-  -webkit-box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
-  -moz-box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 18px 33px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 18px 33px 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 18px 33px 0 rgba(0,0,0,0.1);
   border-radius: 15px;
   background: var(--card-color);
+  transition: all 0.2s linear;
 }
 
 .skills .grid-box:hover {
   box-shadow: none;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
+}
+
+.skills .grid-box:hover img {
+  box-shadow: none;
+  transition: all 0.2s linear;
+  transform: scale(1.1);
 }
 
 /*===== SPONSORS =====*/
@@ -641,9 +649,9 @@ a {
   background-color: var(--card-color);
   padding: 10px;
   border-radius: 17px;
-  box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
-  -webkit-box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
-  -moz-box-shadow: -1px 13px 23px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
 }
 
 .portfolio-card .box .box-img {
