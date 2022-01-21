@@ -11,6 +11,7 @@
 body,
 html {
   font-family: 'nunito';
+  letter-spacing: 1px;
   overflow-x: hidden;
   scroll-behavior: smooth;
   background: var(--circle);
@@ -493,9 +494,10 @@ a {
 
 .grid-box h2 {
   text-align: center;
+  line-height: 25px;
   padding: 15px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--h1);
   font-weight: normal;
 }
@@ -561,9 +563,9 @@ a {
   padding: 1rem;
 }
 
-.sponsor__content:hover .sponsor__img {
+/* .sponsor__content:hover .sponsor__img {
   filter: invert(0.2);
-}
+} */
 
 .sponsor__img {
   width: 200px;
@@ -654,6 +656,7 @@ a {
 
 .portfolio-card .box h2 {
   font-size: 17px;
+  letter-spacing: normal;
   font-weight: 600;
   color: var(--h1);
   margin: 10px 0;
@@ -672,12 +675,14 @@ a {
 
 .portfolio-card .box h3 {
   font-size: 16px;
+  letter-spacing: normal;
   font-weight: 600;
   margin: -0.5rem 0 10px;
 }
 
 .portfolio-card .box .btn {
   font-size: 14px;
+  letter-spacing: normal;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -939,6 +944,8 @@ html.show-modal {
 
 .portfolio-category button {
   font-family: 'nunito';
+  font-size: 14px;
+  letter-spacing: 1px;
   padding: .5rem 2.5rem;
   width: max-content;
   margin: 0 1rem 0 0;

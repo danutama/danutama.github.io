@@ -98,6 +98,11 @@
     font-size: 40px;
   }
 
+  .about .right p,
+  .skills .grid-box h2 {
+    font-size: 15px;
+  }
+
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   }
@@ -384,10 +389,6 @@
     text-align: center;
     line-height: 25px;
     justify-content: center;
-  }
-
-  .about .right p {
-    font-size: 15px;
   }
   
   .about.container .content {
