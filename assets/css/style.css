@@ -20,24 +20,27 @@ html {
   --h1: #000;
   --h2: #000;
   --social: #fff;
-  --background-nav: rgba(235, 241, 245, 0.7);
-  --background-credits: linear-gradient(to right bottom, hsl(240, 73%, 81%, 0.7), hsl(242, 75%, 84%, 0.7), hsl(244, 74%, 88%, 0.7), hsl(245, 77%, 92%, 0.7), hsl(246, 76%, 95%, 0.7), hsl(265, 81%, 96%, 0.7), hsl(279, 88%, 97%, 0.7), hsl(300, 100%, 98%, 0.7), rgba(255, 250, 253, 0.7), rgba(250, 247, 245, 0.7), rgba(255, 247, 225, 0.7), rgba(254, 255, 234, 0.7));
-  --about-color: linear-gradient(to right bottom, hsl(240, 73%, 81%, 0.7), hsl(242, 75%, 84%, 0.7), hsl(244, 74%, 88%, 0.7), hsl(245, 77%, 92%, 0.7), hsl(246, 76%, 95%, 0.7), hsl(265, 81%, 96%, 0.7), hsl(279, 88%, 97%, 0.7), hsl(300, 100%, 98%, 0.7), rgba(255, 250, 253, 0.7), rgba(250, 247, 245, 0.7), rgba(255, 247, 225, 0.7), rgba(254, 255, 234, 0.7));
+  --background-nav: rgba(255, 255, 255, 0.7);
+  --background-credits: hsl(0, 0%, 100%, .1);
+  --about-color: #fff;
   --card-color: #fff;
-  --modal-color: #f4f3ff;
-  --blue: #358fef;
-  --button-main: #682bf5;
+  --modal-color: #fff;
+  --button-main: #733df3;
   --button-main-hover: #814cfd;
   --button:#8656f8;
-  --button-fill: #682bf5;
-  --button-second: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
+  --button-fill: #733df3;
   --shadow-animation-1: rgba(82, 82, 82, 0.7);
   --shadow-animation-2: rgba(255,255,255,0);
   --shadow-animation-3: rgba(255,255,255,0);
   --credits-shadow:  0 0 0.3rem 0.3rem rgba(97, 97, 97, 0.3);
   --white: #fff;
   --grey: #b4b2c5;
-  --circle: #f4f3ff;
+  --circle: #fff;
+
+  /* subtitues line-up */
+  --blue: #358fef;
+  --button-second: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
+  --circle2: #f4f3ff;
   --z-modal: 1000;
 }
 
@@ -47,19 +50,12 @@ body.dark-theme {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(255, 255, 255, .1);
-
   --background-credits: hsl(232, 10%, 16%, .1);
-  --background-credits-2: rgba(255, 255, 255, .1);
-
   --about-color: #26272e;
-  --about-color-2: #383a42;
-
   --card-color: #26272e;
-  --card-color-2: #383a42;
   --button-fill: #fdfdfd;
-  
   --modal-color: #26272e;
-  --blue: #358fef;
+  
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
   --shadow-animation-2: rgba(255,255,255,0);
   --shadow-animation-3: rgba(255,255,255,0);
@@ -67,7 +63,13 @@ body.dark-theme {
   --white: #fff;
   --grey: #b4b2c5;
   --circle: #18181d;
+
+  /* subtitues line-up */
+  --blue: #358fef;
   --circle-subtitues-color: #202127;
+  --card-color-2: #383a42;
+  --about-color-2: #383a42;
+  --background-credits-2: rgba(255, 255, 255, .1);
   --z-modal: 1000;
 }
 
@@ -379,8 +381,6 @@ a {
 .about.container .content {
   margin: 20px auto;
   padding-bottom: 50px;
-  background: var(--about-color);
-  border-radius: 20px;
 }
 
 .about-details {
@@ -405,7 +405,7 @@ a {
 }
 
 .right .topic {
-  color: var(--h1);
+  color: var(--button-main);
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -435,7 +435,7 @@ a {
   display: none;
 }
 
-.about-details .button a {
+/* .about-details .button a {
   outline: none;
   padding: 10px 30px;
   font-size: 15px;
@@ -445,7 +445,7 @@ a {
   border: 2px solid var(--blue);
   border-radius: 12px;
   text-align: center;
-}
+} */
 
 /* Skills */
 .title {
@@ -704,22 +704,6 @@ a {
 }
 
 /* Contact Desktop Version*/
-.contact .container {
-  display: grid;
-  text-align: center;
-  background: var(--white);
-  padding: 20px;
-  margin-bottom: 60px;
-  border-radius: 30px;
-  width: 100%;
-}
-
-.contact .container h3 {
-  margin-top: 30px;
-  margin-bottom: 60px;
-  font-family: 'nunito';
-}
-
 /* === CREDITS / COPYRIGHT === */
 .credits.container {
   margin-top: 150px;
@@ -729,6 +713,10 @@ a {
 
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
 }
 
 .shape-03 {
@@ -970,7 +958,7 @@ html.show-modal {
 }
 
 .portfolio-category button:hover {
-  border: 1px solid var(--button-main-hover);
+  border: 1px solid var(--button-main);
 }
 
 .portfolio-category button.active {
