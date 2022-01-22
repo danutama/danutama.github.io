@@ -24,7 +24,6 @@ html {
   --background-credits: rgba(255, 255, 255, 0.45);
   --about-color: #fff;
   --card-color: #fff;
-  --skill-color: rgba(255, 255, 255, 0.45);
   --modal-color: #fff;
   --button-main: #8d5cff;
   --button-main-hover: #814cfd;
@@ -56,7 +55,6 @@ body.dark-theme {
   --card-color: rgb(12, 12, 15);
   --button-fill: #fdfdfd;
   --modal-color: rgb(37, 37, 41);
-  --skill-color: rgba(12, 12, 15, 0.15);
 
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
   --shadow-animation-2: rgba(255,255,255,0);
@@ -507,11 +505,7 @@ a {
 
 .skills .grid-box {
   border-radius: 15px;
-  background: var(--skill-color);
   transition: all 0.2s linear;
-
-  backdrop-filter: blur( 9px );
-  -webkit-backdrop-filter: blur( 9px );
   box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
   -moz-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
