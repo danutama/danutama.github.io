@@ -53,10 +53,10 @@ body.dark-theme {
   --background-nav: rgba(255, 255, 255, .1);
   --background-credits: hsl(232, 10%, 16%, .1);
   --about-color: #28262e;
-  --card-color: rgb(21, 20, 26);
+  --card-color: rgb(12, 12, 15);
   --button-fill: #fdfdfd;
   --modal-color: #28262e;
-  --skill-color: rgb(21, 20, 26);
+  --skill-color: rgb(12, 12, 15);
 
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
   --shadow-animation-2: rgba(255,255,255,0);
@@ -64,7 +64,7 @@ body.dark-theme {
   --credits-shadow: 0 0 0.3rem 0.3rem rgba(238, 234, 234, 0.3);
   --white: #fff;
   --grey: #b4b2c5;
-  --circle: rgb(21, 20, 26);
+  --circle: rgb(12, 12, 15);
 
   /* subtitues line-up */
   --blue: #358fef;
@@ -285,7 +285,7 @@ a {
   font-size: 20px;
   padding-bottom: 20px;
   font-size: 60px;
-  color: #ba9efd;
+  color: #d1befd;
 }
 
 .home-btn {
