@@ -611,6 +611,6 @@
   }
 
   .contact-icons ul li a:hover {
-    color: var(--button-main);
+    color: #ff9800;
   }
 }
