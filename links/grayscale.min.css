@@ -84,3 +84,8 @@ h3 {
   font-size: 20px;
   font-weight: bold;
 }
+
+h3>img {
+  width: 16px;
+  padding-bottom: 10px;
+}
