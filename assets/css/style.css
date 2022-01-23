@@ -950,7 +950,7 @@ html.show-modal {
   width: max-content;
   margin: 0 1rem 0 0;
   outline: none;
-  border: 1px solid var(--button-main);
+  border: 1px solid var(--grey);
   background: transparent;
   color: var(--h1);
   border-radius: 10px;
@@ -965,6 +965,7 @@ html.show-modal {
 .portfolio-category button.active {
   background-color: var(--button-main);
   color: var(--white);
+  border: 1px solid var(--button-main);
 }
 
 .portfolio-card>div {
