@@ -18,12 +18,12 @@
 }
 
 .btn-primary {
-  background: rgba(246, 246, 246, 0.8);
+  background: rgba(246, 246, 246, 0.7);
   color: #000;
 }
 
 .btn-primary:hover {
-  background: rgba(246, 246, 246, 0.8);
+  background: rgba(246, 246, 246, 0.7);
   color: #000;
   transform: scale(1.03);
   -ms-transform: scale(1.03); /* Support IE 9 */
@@ -43,7 +43,7 @@
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
-  background-image: url('/img/nolan-issac-It0DCaCBr40-unsplash.jpg');
+  background-image: url('/img/gradient.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -67,7 +67,7 @@ a {
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #000;
+  color: #ff9800;
 }
 
 .iconbig {

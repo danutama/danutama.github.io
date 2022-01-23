@@ -506,7 +506,6 @@ a {
   display: grid;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
 
   border-radius: 15px;
   transition: all 0.2s linear;
@@ -955,7 +954,6 @@ html.show-modal {
   color: var(--h1);
   border-radius: 10px;
   cursor: pointer;
-  transition: .2s ease-in-out;
 }
 
 .portfolio-category button:hover {
