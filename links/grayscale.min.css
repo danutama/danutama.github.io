@@ -13,17 +13,17 @@
   font-size: 80%;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  letter-spacing: 1.5px;
   border: 0;
 }
 
 .btn-primary {
-  background: rgba(246, 246, 246, 0.7);
+  background: rgba(246, 246, 246, 0.8);
   color: #000;
 }
 
 .btn-primary:hover {
-  background: rgba(246, 246, 246, 0.7);
+  background: rgba(246, 246, 246, 0.8);
   color: #000;
   transform: scale(1.03);
   -ms-transform: scale(1.03); /* Support IE 9 */
@@ -46,18 +46,6 @@ body {
   background-image: url('/img/gradient.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.about-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(190, 190, 190, 0.5);
-  z-index: -1;
-  display: none;
 }
 
 a {
