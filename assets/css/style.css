@@ -381,6 +381,11 @@ a {
 .about.container .content {
   margin: 20px auto;
   padding-bottom: 50px;
+  border-radius: 15px;
+  box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .about-details {
@@ -471,12 +476,6 @@ a {
   grid-gap: 50px;
 }
 
-.grid-box {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
 .icon-title {
   display: flex;
   align-items: center;
@@ -504,6 +503,11 @@ a {
 }
 
 .skills .grid-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
   border-radius: 15px;
   transition: all 0.2s linear;
   box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
@@ -644,12 +648,12 @@ a {
 }
 
 .portfolio-card .box {
-  background-color: var(--card-color);
   padding: 10px;
   border-radius: 17px;
   box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
   -moz-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .portfolio-card .box .box-img {

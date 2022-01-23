@@ -104,7 +104,7 @@
   }
 
   .portfolio-card {
-    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   }
 
   .portfolio-card .box {
@@ -132,11 +132,6 @@
   
   .sponsor__img.resize {
     width: 180px;
-  }
-
-  .portfolio-card {
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    gap: 1.2rem;
   }
 
   .portfolio-card .box .btn {
@@ -426,6 +421,11 @@
 
   .portfolio {
     margin-bottom: 250px;
+  }
+
+  .portfolio-card {
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 1.2rem;
   }
 
   .ctn-title h4 {
