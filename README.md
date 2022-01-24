@@ -1,17 +1,20 @@
 # Personal Portfolio 
 
-Halo.. Perkenalkan, saya Danu. Ini adalah website portofolio pribadi saya, di dalamnya terdapat beberapa project yang pernah saya kerjakan, meski masih banyak kekurangan. Portofolio ini akan terus saya kembangkan seiring bertambahnya pengetahuan dan keterampilan saya dalam bidang front-end web development. Terima kasih.
+Halo.. Perkenalkan, saya Danu. Ini adalah website portofolio pribadi saya, di dalamnya terdapat beberapa project yang pernah saya kerjakan. Portofolio ini akan terus saya kembangkan seiring bertambahnya pengetahuan dan keterampilan saya dalam bidang front-end web development.
 
-Demo link :
+[![](https://img.shields.io/badge/-danupratama.dev@gmail.com-1fa2f2?logo=gmail&style=flat&logoColor=white)](mailto:danupratama.dev@gmail.com)
+[![](https://img.shields.io/badge/-myTelegram-purple?logo=telegram&style=flat&logoColor=white)](https://t.me/danu_pratama)
+[![](https://img.shields.io/badge/-myPortfolioWebsite-orange?logo=website&style=flat)](https://linktr.ee/danupratama)
 
-https://danuapratama.github.io
+Resources :
 
-Images/illustration :
-
-https://icons8.com/illustrations
-
-https://www.freepik.com
-
-Support me :
-
-https://saweria.co/danuapratama
+- https://getbootstrap.com
+- https://jquery.com
+- https://micku7zu.github.io/vanilla-tilt.js
+- https://swiperjs.com
+- https://icons8.com
+- https://www.freepik.com
+- https://www.flaticon.com
+- https://fontawesome.com
+- https://boxicons.com
+- https://fonts.google.com
