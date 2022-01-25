@@ -61,6 +61,41 @@
   }
 }
 
+@keyframes ani01 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.row .shape-01 {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #ffd000;
+  border-radius: 5px;
+  right: 10%;
+  top: 35%;
+  animation: ani01 10s linear infinite;
+  z-index: 1;
+}
+
+.row .shape-02 {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #ff9f0f;
+  border-radius: 5px;
+  right: 80%;
+  top: 15%;
+  animation: ani01 10s linear infinite;
+  z-index: 1;
+}
+
 #insta-text {
   margin-top: -1rem;
   margin-bottom: 3rem;
