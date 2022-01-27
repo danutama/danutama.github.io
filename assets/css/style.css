@@ -440,6 +440,7 @@ a {
 .accordion-text li .question-arrow .question {
   font-size: 18px;
   font-weight: 500;
+  margin: 10px 0 10px 0;
   color: var(--h1);
 }
 
@@ -471,7 +472,7 @@ a {
 }
 
 .accordion-text li p {
-  width: 92%;
+  width: 85%;
   font-size: 15px;
   font-weight: 500;
   color: var(--h1);
