@@ -27,12 +27,13 @@ html {
   --modal-color: #fff;
   --button-main: #8d5cff;
   --button-main-hover: #814cfd;
-  --button:#8656f8;
+  --button: #8656f8;
   --button-fill: #8d5cff;
   --shadow-animation-1: rgba(82, 82, 82, 0.7);
-  --shadow-animation-2: rgba(255,255,255,0);
-  --shadow-animation-3: rgba(255,255,255,0);
-  --credits-shadow:  0 0 0.3rem 0.3rem rgba(97, 97, 97, 0.3);
+  --shadow-animation-2: rgba(255, 255, 255, 0);
+  --shadow-animation-3: rgba(255, 255, 255, 0);
+  --credits-shadow: 0 0 0.3rem 0.3rem rgba(97, 97, 97, 0.3);
+  --accordion-text: #8d5cff;
   --white: #fff;
   --grey: #b4b2c5;
   --circle: #fff;
@@ -49,16 +50,17 @@ body.dark-theme {
   --h1: #fff;
   --h2: #000;
   --social: #fff;
-  --background-nav: rgba(255, 255, 255, .1);
+  --background-nav: rgba(255, 255, 255, 0.1);
   --background-credits: rgba(12, 12, 15, 0.15);
   --about-color: #28262e;
   --card-color: rgb(12, 12, 15);
   --button-fill: #fdfdfd;
   --modal-color: rgb(37, 37, 41);
+  --accordion-text: #8d5cff;
 
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
-  --shadow-animation-2: rgba(255,255,255,0);
-  --shadow-animation-3: rgba(255,255,255,0);
+  --shadow-animation-2: rgba(255, 255, 255, 0);
+  --shadow-animation-3: rgba(255, 255, 255, 0);
   --credits-shadow: 0 0 0.3rem 0.3rem rgba(238, 234, 234, 0.3);
   --white: #fff;
   --grey: #b4b2c5;
@@ -69,7 +71,7 @@ body.dark-theme {
   --circle-subtitues-color: #202127;
   --card-color-2: #383a42;
   --about-color-2: #383a42;
-  --background-credits-2: rgba(255, 255, 255, .1);
+  --background-credits-2: rgba(255, 255, 255, 0.1);
   --z-modal: 1000;
 }
 
@@ -269,7 +271,8 @@ a {
 }
 
 @keyframes bounceTop_01 {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-20px);
   }
   50% {
@@ -373,6 +376,113 @@ a {
 }
 /* END */
 
+/* ACCORDION */
+.accordion-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.accordion {
+  display: flex;
+  max-width: 1210px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  
+  border-radius: 25px;
+  padding: 45px 90px 45px 60px;
+}
+
+.accordion .image-box {
+  height: 360px;
+  width: 300px;
+}
+
+.accordion .image-box img {
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.accordion .accordion-text {
+  width: 60%;
+}
+
+.accordion .accordion-text .title {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--accordion-text);
+}
+
+.accordion .accordion-text .faq-text {
+  margin-top: 25px;
+  height: 263px;
+  overflow-y: auto;
+}
+
+.faq-text::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion .accordion-text li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.accordion-text li .question-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-text li .question-arrow .question {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--h1);
+}
+
+.accordion-text li .question-arrow .arrow {
+  font-size: 20px;
+  color: #595959;
+  transition: all 0.3s ease;
+}
+
+.accordion-text li.showAnswer .question-arrow .arrow {
+  transform: rotate(-180deg);
+}
+
+.accordion-text li:hover .question-arrow .arrow {
+  color: #7d2ae8;
+}
+
+.accordion-text li.showAnswer .question-arrow .question,
+.accordion-text li.showAnswer .question-arrow .arrow {
+  color: var(--accordion-text);
+}
+
+.accordion-text li .line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-text li p {
+  width: 92%;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--h1);
+  display: none;
+}
+
+.accordion-text li.showAnswer p {
+  display: block;
+}
+/* END */
+
 /* About */
 .about {
   margin-bottom: 100px;
@@ -382,10 +492,10 @@ a {
   margin: 20px auto;
   padding-bottom: 50px;
   border-radius: 15px;
-  box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .about-details {
@@ -418,7 +528,7 @@ a {
 
 .about-details .right p {
   line-height: 30px;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   text-align: left;
   color: var(--h1);
   font-size: 18px;
@@ -494,7 +604,7 @@ a {
 .grid-box h2 {
   text-align: left;
   line-height: 25px;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   padding: 15px;
   margin-bottom: 10px;
   font-size: 18px;
@@ -509,9 +619,9 @@ a {
 
   border-radius: 15px;
   transition: all 0.2s linear;
-  box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .skills .grid-box:hover {
@@ -649,10 +759,10 @@ a {
 .portfolio-card .box {
   padding: 0;
   border-radius: 17px;
-  box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .portfolio-card .box .box-img {
@@ -715,10 +825,10 @@ a {
   background: var(--background-credits);
   border-radius: 20px;
 
-  box-shadow: 0 2px 3px 2px rgba(0,0,0,0.1);
-  backdrop-filter: blur( 9px );
-  -webkit-backdrop-filter: blur( 9px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .shape-03 {
@@ -947,7 +1057,7 @@ html.show-modal {
   font-family: 'nunito';
   font-size: 14px;
   letter-spacing: 1px;
-  padding: .5rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   width: max-content;
   margin: 0 1rem 0 0;
   outline: none;
@@ -968,23 +1078,23 @@ html.show-modal {
   border: 1px solid var(--button-main);
 }
 
-.portfolio-card>div {
+.portfolio-card > div {
   display: none;
 }
 
-.portfolio-card.all>div {
+.portfolio-card.all > div {
   display: block;
 }
 
-.portfolio-card.whatsnew>div.whatsnew-type {
+.portfolio-card.whatsnew > div.whatsnew-type {
   display: block;
 }
 
-.portfolio-card.more>div.more-type {
+.portfolio-card.more > div.more-type {
   display: block;
 }
- 
+
 .portfolio-category .delay-6 button.active {
- margin-bottom: 310px;
- transition: unset;
+  margin-bottom: 310px;
+  transition: unset;
 }
