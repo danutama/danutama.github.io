@@ -196,7 +196,6 @@ a {
 .nav-list .active {
   color: #ff9800;
   font-weight: bold;
-  text-decoration: underline 5px block;
 }
 
 .photo {
@@ -479,6 +478,7 @@ a {
   font-size: 15px;
   font-weight: 500;
   color: var(--h1);
+  padding: 0 0 10px 0;
   display: none;
 }
 
@@ -622,9 +622,6 @@ a {
 
   border-radius: 15px;
   transition: all 0.2s linear;
-  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .skills .grid-box:hover {
@@ -667,6 +664,9 @@ a {
 
 .swiper-pagination-bullet-active {
   background: #ff9800;
+  width: 18px;
+  height: 8px;
+  border-radius: 5px;
 }
 
 .title-sponsor {
