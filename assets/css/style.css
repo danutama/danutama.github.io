@@ -34,6 +34,7 @@ html {
   --shadow-animation-3: rgba(255, 255, 255, 0);
   --credits-shadow: 0 0 0.3rem 0.3rem rgba(97, 97, 97, 0.3);
   --accordion-text: #8d5cff;
+  --accordion-line: rgba(0, 0, 0, 0.1);
   --white: #fff;
   --grey: #b4b2c5;
   --circle: #fff;
@@ -57,6 +58,7 @@ body.dark-theme {
   --button-fill: #fdfdfd;
   --modal-color: rgb(37, 37, 41);
   --accordion-text: #8d5cff;
+  --accordion-line: rgba(255, 255, 255, 0.18);
 
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
   --shadow-animation-2: rgba(255, 255, 255, 0);
@@ -182,7 +184,6 @@ a {
   margin: 0 20px;
   font-size: 18px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .nav-list a {
@@ -404,6 +405,7 @@ a {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  animation: bounceTop_01 5s ease infinite;
 }
 
 .accordion .accordion-text {
@@ -414,6 +416,7 @@ a {
   font-size: 35px;
   font-weight: 600;
   color: var(--accordion-text);
+  display: flex;
 }
 
 .accordion .accordion-text .faq-text {
@@ -426,7 +429,7 @@ a {
   display: none;
 }
 
-.accordion .accordion-text li {
+.accordion .accordion-text .arrow {
   list-style: none;
   cursor: pointer;
 }
@@ -439,7 +442,7 @@ a {
 
 .accordion-text li .question-arrow .question {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 10px 0 10px 0;
   color: var(--h1);
 }
@@ -468,7 +471,7 @@ a {
   height: 2px;
   width: 100%;
   margin: 10px 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--accordion-line);
 }
 
 .accordion-text li p {
@@ -511,7 +514,6 @@ a {
   border-radius: 50%;
   margin-left: 50px;
   margin-top: 70px;
-  animation: bounceTop_01 5s ease infinite;
 }
 
 .about-details .right {
@@ -734,7 +736,6 @@ a {
 .ctn-title h4 {
   font-size: 20px;
   color: var(--h1);
-  cursor: pointer;
   font-weight: normal;
 }
 
@@ -810,7 +811,7 @@ a {
   display: flex;
   justify-content: center;
   color: var(--button-main);
-  padding: 10px;
+  padding: 10px 0 20px 0;
   border-radius: 11px;
 }
 
@@ -938,7 +939,6 @@ html.show-modal {
   align-items: center;
   border-radius: 15px;
   transition: 0.3s;
-  cursor: pointer;
   letter-spacing: 0.05rem;
   font-size: 15px;
 }
@@ -951,7 +951,6 @@ html.show-modal {
   border-radius: 13px;
   border: none !important;
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .mail a {
@@ -959,7 +958,6 @@ html.show-modal {
   margin: 0;
   border: none !important;
   transition: 0.3s;
-  cursor: pointer;
   width: 70%;
 }
 
@@ -972,7 +970,6 @@ html.show-modal {
   margin: 10px 0;
   border: none !important;
   transition: 0.3s;
-  cursor: pointer;
   width: 70%;
 }
 
@@ -1014,7 +1011,6 @@ html.show-modal {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  cursor: pointer;
 }
 
 /* === Show modal === */
@@ -1038,7 +1034,6 @@ html.show-modal {
   margin: 15px;
   color: var(--grey);
   font-size: 30px;
-  cursor: pointer;
 }
 
 .contact-icons ul li a:hover {
@@ -1066,7 +1061,6 @@ html.show-modal {
   background: transparent;
   color: var(--h1);
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .portfolio-category button:hover {

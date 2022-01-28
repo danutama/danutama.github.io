@@ -121,12 +121,16 @@
     width: 300px;
     width: 100%;
     border-radius: 25px;
-    padding: 30px;
+    padding: 0;
   }
 
   .accordion .accordion-text{
     width: 100%;
     margin-top: 30px;
+  }
+
+  .accordion .accordion-text .title {
+    display: block;
   }
 
   .about .right p,
@@ -521,7 +525,6 @@
     width: 80%;
     border-radius: 15px;
     transition: 0.3s;
-    cursor: pointer;
     z-index: 3;
 
     -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
@@ -545,7 +548,6 @@
     border-radius: 13px;
     border: none !important;
     transition: 0.3s;
-    cursor: pointer;
   }
 
   .mail a {
@@ -553,7 +555,6 @@
     margin: 0;
     border: none !important;
     transition: 0.3s;
-    cursor: pointer;
     width: 70%;
   }
 
@@ -566,7 +567,6 @@
     margin: 10px 0;
     border: none !important;
     transition: 0.3s;
-    cursor: pointer;
     width: 70%;
   }
 
@@ -611,7 +611,6 @@
     position: absolute;
     top: 2rem;
     right: 2rem;
-    cursor: pointer;
   }
 
   /* === Show modal === */
@@ -635,7 +634,6 @@
     margin: 15px;
     color: var(--grey);
     font-size: 30px;
-    cursor: pointer;
   }
 
   .contact-icons ul li a:hover {
