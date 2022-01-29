@@ -17,7 +17,7 @@
   .about .about-details .left img {
     display: flex;
     justify-content: center;
-    
+
     margin: 70px auto 0;
     width: 200px;
     height: 200px;
@@ -69,17 +69,22 @@
     right: 20%;
   }
 
-  .accordion{
+  .about .right p,
+  .skills .grid-box h2 {
+    font-size: 15px;
+  }
+
+  .accordion {
     max-width: 100%;
     padding: 45px 60px 45px 60px;
   }
 
-  .accordion .image-box{
+  .accordion .image-box {
     height: 360px;
     width: 220px;
   }
 
-  .accordion .accordion-text{
+  .accordion .accordion-text {
     width: 63%;
   }
 
@@ -112,11 +117,11 @@
     font-size: 40px;
   }
 
-  .accordion{
+  .accordion {
     flex-direction: column;
   }
 
-  .accordion .image-box{
+  .accordion .image-box {
     height: 360px;
     width: 300px;
     width: 100%;
@@ -124,7 +129,7 @@
     padding: 0;
   }
 
-  .accordion .accordion-text{
+  .accordion .accordion-text {
     width: 100%;
     margin-top: 30px;
   }
@@ -133,17 +138,12 @@
     display: block;
   }
 
-  .about .right p,
-  .skills .grid-box h2 {
-    font-size: 15px;
-  }
-
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   }
 
   .portfolio-card .box {
-    transform: unset !important; 
+    transform: unset !important;
   }
 }
 
@@ -163,7 +163,7 @@
   .sponsor__img {
     width: 120px;
   }
-  
+
   .sponsor__img.resize {
     width: 180px;
   }
@@ -179,7 +179,7 @@
 }
 
 /* CLOSE MODAL MIN-WIDTH  */
-@media (min-width: 510px){
+@media (min-width: 510px) {
   html.show-modal {
     overflow: auto !important;
   }
@@ -259,7 +259,7 @@
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
-  
+
   .nav-list .bx {
     font-size: 1.5rem;
     margin: 2px 9px;
@@ -309,7 +309,7 @@
   .navbar .photo {
     display: none;
   }
-  
+
   .nav-list ul {
     margin-right: unset;
   }
@@ -328,7 +328,7 @@
     background: var(--button-main);
     -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
     -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
-    box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 9px rgba(0, 0, 0, 0.3), 0 0.1500rem 0.1500rem 0 rgba(0, 0, 0, 0.3) !important;
+    box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 9px rgba(0, 0, 0, 0.3), 0 0.15rem 0.15rem 0 rgba(0, 0, 0, 0.3) !important;
     border-radius: 20px 0 0 20px;
     z-index: 2;
   }
@@ -343,14 +343,14 @@
     display: none;
   }
   /* END */
-  
+
   .container {
     padding-top: 1rem;
   }
 
   /* 2.5rem */
-  .home.container { 
-    margin-top: 0; 
+  .home.container {
+    margin-top: 0;
   }
   /* end */
 
@@ -408,13 +408,14 @@
     justify-content: center;
   }
   /* END */
-  
+
   .accordion {
     padding: 25px;
   }
 
-  .question {
+  .accordion-text li .question-arrow .question {
     width: 95%;
+    font-size: 16px;
   }
 
   .accordion-text li p {
@@ -428,14 +429,14 @@
   .about .right .topic {
     font-size: 25px;
   }
-  
+
   .about .right {
     width: 120%;
     text-align: center;
     line-height: 25px;
     justify-content: center;
   }
-  
+
   .about.container .content {
     padding-bottom: 0px;
     display: grid;
@@ -533,7 +534,7 @@
 
     -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
     -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
-    box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1500rem 0.1500rem 0 rgba(0, 0, 0, 0.3) !important;
+    box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.15rem 0.15rem 0 rgba(0, 0, 0, 0.3) !important;
   }
 
   .modal__button-main i {
@@ -543,7 +544,7 @@
   .modal__button-main:hover {
     animation: none;
   }
-  
+
   .modal__button a {
     display: inline-block;
     background: var(--button-main);
