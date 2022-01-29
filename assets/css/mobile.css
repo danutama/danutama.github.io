@@ -420,6 +420,7 @@
 
   .accordion-text li p {
     width: 87%;
+    font-size: 15px;
   }
 
   .about-details .right {
