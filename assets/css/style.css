@@ -212,6 +212,11 @@ a {
 /* end */
 
 /* Home */
+#waves {
+ margin-top: -500rem;
+ width: 100rem;
+}
+
 .home.container {
   position: relative;
   height: 40rem;
@@ -292,6 +297,7 @@ a {
 .home-btn {
   display: flex;
   font-size: 20px;
+  font-weight: bold;
   letter-spacing: 0.08rem;
 }
 
@@ -307,9 +313,9 @@ a {
 
 .cta {
   padding: 15px 40px;
-  background: var(--button-main);
-  border: 2px solid var(--button-main);
-  color: var(--white);
+  background: #ff9800;
+  border: 2px solid #ff9800;
+  color: var(--h1);
   border-radius: 17px;
   text-align: center;
   margin-right: 20px;
@@ -337,9 +343,9 @@ a {
 }
 
 .cta:hover {
-  background: var(--button-main-hover);
-  border: 2px solid var(--button-main-hover);
-  color: var(--white);
+  background: #ee930a;
+  border: 2px solid #ff9800;
+  color: var(--h1);
   transition: 0.6s ease;
   animation: none;
 }
@@ -381,16 +387,18 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 5rem 0 5rem 0;
 }
 
 .accordion {
   display: flex;
   max-width: 1210px;
-  width: 100%;
+  width: 90%;
   align-items: center;
   justify-content: space-between;
   
-  border-radius: 25px;
+  border: solid 1px var(--accordion-line);
+  border-radius: 15px;
   padding: 45px 90px 45px 60px;
 }
 
@@ -400,7 +408,7 @@ a {
 }
 
 .accordion .image-box img {
-  margin-top: 50px;
+  margin-top: 20px;
   height: 100%;
   width: 100%;
   object-fit: contain;
