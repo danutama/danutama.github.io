@@ -529,7 +529,6 @@
     margin-bottom: 50px;
     width: 80%;
     border-radius: 15px;
-    transition: 0.3s;
     z-index: 3;
 
     -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
@@ -543,6 +542,9 @@
 
   .modal__button-main:hover {
     animation: none;
+    transform: scale(1.03);
+    -ms-transform: scale(1.03); /* Support IE 9 */
+    -webkit-transform: scale(1.03); /* support Safari */
   }
 
   .modal__button a {
@@ -552,14 +554,12 @@
     padding: 10px 35px;
     border-radius: 13px;
     border: none !important;
-    transition: 0.3s;
   }
 
   .mail a {
     display: inline-block;
     margin: 0;
     border: none !important;
-    transition: 0.3s;
     width: 70%;
   }
 
@@ -571,7 +571,6 @@
     display: inline-block;
     margin: 10px 0;
     border: none !important;
-    transition: 0.3s;
     width: 70%;
   }
 

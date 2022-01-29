@@ -946,7 +946,6 @@ html.show-modal {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  transition: 0.3s;
   letter-spacing: 0.05rem;
   font-size: 15px;
 }
@@ -965,7 +964,6 @@ html.show-modal {
   display: inline-block;
   margin: 0;
   border: none !important;
-  transition: 0.3s;
   width: 70%;
 }
 
@@ -977,7 +975,6 @@ html.show-modal {
   display: inline-block;
   margin: 10px 0;
   border: none !important;
-  transition: 0.3s;
   width: 70%;
 }
 
