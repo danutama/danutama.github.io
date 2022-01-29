@@ -413,6 +413,10 @@
     padding: 25px;
   }
 
+  .question {
+    width: 95%;
+  }
+
   .accordion-text li p {
     width: 87%;
   }
