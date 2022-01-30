@@ -403,6 +403,14 @@ a {
   line-height: 20px;
   letter-spacing: 0.5px;
 }
+
+.bell-quote {
+  position: absolute;
+  color: #ffe600;
+  font-size: 100px;
+  margin-top: -9rem;
+  margin-right: 101%;
+}
 /* END */
 
 /* ACCORDION */
