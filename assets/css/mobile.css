@@ -268,7 +268,7 @@
     z-index: 999;
   }
 
-  .nav-list .bx {
+  .nav-list .fi {
     font-size: 1.5rem;
     margin: 2px 9px;
     justify-content: center;
@@ -289,20 +289,20 @@
   }
 
   .nav-list .active .nav-name,
-  .nav-list .active .bx {
+  .nav-list .active .icon-solid {
     color: var(--button-main);
   }
 
-  /* === Icon Transition === */
-  .nav-list .bx-solid {
+  /* === Icon Transition in Mobile === */
+  .nav-list .icon-solid {
     display: none;
   }
 
-  .nav-list .active .bx-solid {
+  .nav-list .active .icon-solid {
     display: flex;
   }
 
-  .nav-list .active .bx-fill {
+  .nav-list .active .icon-regular {
     display: none;
   }
 
