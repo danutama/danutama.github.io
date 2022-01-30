@@ -38,6 +38,7 @@ html {
   --white: #fff;
   --grey: #b4b2c5;
   --circle: #fff;
+  --quote: #fff;
 
   /* subtitues line-up */
   --blue: #358fef;
@@ -67,6 +68,7 @@ body.dark-theme {
   --white: #fff;
   --grey: #b4b2c5;
   --circle: rgb(12, 12, 15);
+  --quote: #8d5cff;
 
   /* subtitues line-up */
   --blue: #358fef;
@@ -377,6 +379,29 @@ a {
 .change-theme-name {
   font-size: 15px;
   display: none;
+}
+
+.quote {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--circle);
+  width: 80%;
+  border-radius: 15px;
+  margin: -45px 0;
+  left: 10%;
+  padding: 20px;
+}
+
+.quote p {
+  color: var(--grey);
+  width: 61%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 0.5px;
 }
 /* END */
 
