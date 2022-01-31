@@ -6,6 +6,8 @@ Halo.. Perkenalkan, saya Danu. Ini adalah website portofolio pribadi saya, di da
 [![](https://img.shields.io/badge/-myTelegram-purple?logo=telegram&style=flat&logoColor=white)](https://t.me/danu_pratama)
 [![](https://img.shields.io/badge/-myPortfolioWebsite-orange?logo=website&style=flat)](https://linktr.ee/danupratama)
 
+Design by me 🎨
+
 Resources :
 
 - https://getbootstrap.com
