@@ -153,18 +153,18 @@ a {
 }
 
 /* Change Background Navbar */
-.scroll-header {
+/* .scroll-header {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background: var(--background-nav);
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
   transition: 0.1s ease;
-}
+} */
 
 /* Navbar */
 .navbar.container {
   margin-top: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1000;
 }
 
