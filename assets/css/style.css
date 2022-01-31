@@ -58,7 +58,7 @@ body.dark-theme {
   --card-color: rgb(12, 12, 15);
   --button-fill: #fdfdfd;
   --modal-color: rgb(37, 37, 41);
-  --accordion-text: #8d5cff;
+  --accordion-text: #ffe600;
   --accordion-line: rgba(255, 255, 255, 0.18);
 
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
@@ -307,7 +307,7 @@ a {
   padding: 15px 30px;
   border: 2px solid var(--grey);
   border-radius: 12px;
-  color: var(--button-main-hover);
+  color: var(--h1);
   border-radius: 17px;
   text-align: center;
   transition: 0.3s;
@@ -371,7 +371,6 @@ a {
 }
 
 .change-theme {
-  cursor: pointer;
   font-size: 1.3rem;
   margin: 20px 5px;
 }
@@ -382,7 +381,7 @@ a {
 }
 
 .quote {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -408,8 +407,8 @@ a {
   position: absolute;
   color: #ffe600;
   font-size: 100px;
-  margin-top: -9rem;
-  margin-right: 101%;
+  bottom: 75%;
+  right: 90%;
 }
 /* END */
 
@@ -456,7 +455,7 @@ a {
 .accordion .accordion-text .title {
   font-size: 35px;
   font-weight: 600;
-  color: var(--accordion-text);
+  color: var(--button-main);
   display: flex;
 }
 

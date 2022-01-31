@@ -127,7 +127,8 @@
 
   .bell-quote {
     font-size: 65px;
-    margin-top: -9rem;
+    bottom: 85%;
+    right: 92%;
   }
 
   .accordion {
@@ -347,7 +348,7 @@
   }
 
   .change-theme {
-    cursor: pointer;
+    
     color: var(--white);
     font-size: 1.5rem;
   }
@@ -416,7 +417,7 @@
 
   .bell-quote {
     font-size: 50px;
-    margin-top: -10rem;
+    right: 90%;
   }
 
   /* === Dark/light button === */
@@ -557,9 +558,9 @@
 
   .modal__button-main:hover {
     animation: none;
-    transform: scale(0.98);
-    -ms-transform: scale(0.98); /* Support IE 9 */
-    -webkit-transform: scale(0.98); /* support Safari */
+    transform: scale(0.97);
+    -ms-transform: scale(0.97); /* Support IE 9 */
+    -webkit-transform: scale(0.97); /* support Safari */
   }
 
   .modal__button a {
