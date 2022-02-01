@@ -575,9 +575,7 @@
   }
 
   .modal__button a:hover {
-    transform: scale(0.97);
-    -ms-transform: scale(0.97); /* Support IE 9 */
-    -webkit-transform: scale(0.97); /* support Safari */
+    background: var(--button-main-hover);
   }
 
   .mail a {

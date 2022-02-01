@@ -201,13 +201,6 @@ a {
   font-weight: bold;
 }
 
-.photo {
-  width: 30px;
-  margin-left: 2rem;
-  margin-top: 3px;
-  border-radius: 50%;
-}
-
 /* For Mobile Navbar */
 .nav-list i::before {
   display: none;
@@ -289,8 +282,7 @@ a {
 }
 
 .row.hero h4 {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin: 10px 0 30px 0;
   font-size: 20px;
   padding-bottom: 20px;
   font-size: 60px;
@@ -311,7 +303,7 @@ a {
   color: var(--h1);
   border-radius: 17px;
   text-align: center;
-  transition: 0.3s;
+  cursor: default;
 }
 
 .cta {
@@ -322,6 +314,7 @@ a {
   border-radius: 17px;
   text-align: center;
   margin-right: 20px;
+  cursor: default;
   transition: 0.6s ease;
   animation: pulse_01 2s ease infinite;
 }
@@ -343,6 +336,7 @@ a {
 
 .ctn:hover {
   border: 2px solid var(--button-main);
+  color: var(--button-main);
 }
 
 .cta:hover {
@@ -355,15 +349,12 @@ a {
 .dark {
   display: flex;
   align-items: center;
-
   justify-content: center;
   background: var(--button-main);
   border-radius: 20px;
   width: 35px;
   height: 35px;
-  margin-left: 3.5rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px 0 5px 3.5rem;
 }
 
 .change-theme,
@@ -554,8 +545,7 @@ a {
   width: 300px;
   object-fit: contain;
   border-radius: 50%;
-  margin-left: 50px;
-  margin-top: 70px;
+  margin: 70px 0 0 50px;
 }
 
 .about-details .right {
@@ -659,7 +649,6 @@ a {
   display: grid;
   justify-content: center;
   align-items: center;
-
   border-radius: 15px;
   transition: all 0.2s linear;
 }
@@ -850,6 +839,7 @@ a {
 
 .portfolio-card .box .btn:hover {
   color: var(--button-fill);
+  text-decoration: underline;
 }
 
 /* Contact Desktop Version*/
@@ -923,7 +913,8 @@ a {
   border-radius: 30px;
   border: 2px solid var(--h1);
   font-size: 25px;
-  transition: all 0.2s ease;
+  cursor: default;
+  transition: all 0.1s ease;
 }
 
 .social a:hover {
@@ -1055,8 +1046,7 @@ html.show-modal {
 .contact-icons ul {
   display: flex;
   justify-content: center;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  padding: 5px 0 10px 0;
 }
 
 .contact-icons ul li a {
