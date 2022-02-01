@@ -283,6 +283,7 @@
     flex-direction: column;
     display: flex;
     color: var(--grey);
+    cursor: default !important;
   }
 
   .nav-name.contact,
