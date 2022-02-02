@@ -74,6 +74,10 @@
     font-size: 15px;
   }
 
+  .skills .icon-title span {
+    font-size: 17px;
+  }
+
   .accordion {
     max-width: 100%;
     padding: 45px 60px 45px 60px;

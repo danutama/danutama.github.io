@@ -38,7 +38,7 @@ html {
   --white: #fff;
   --grey: #b4b2c5;
   --circle: #fff;
-  --quote: #fff;
+  --title: #8d5cff;
 
   /* subtitues line-up */
   --blue: #358fef;
@@ -68,7 +68,7 @@ body.dark-theme {
   --white: #fff;
   --grey: #b4b2c5;
   --circle: rgb(12, 12, 15);
-  --quote: #8d5cff;
+  --title: #d1befd;
 
   /* subtitues line-up */
   --blue: #358fef;
@@ -90,7 +90,7 @@ h1 {
 }
 
 h3 {
-  color: var(--grey);
+  color: #d1befd;
 }
 
 p {
@@ -495,7 +495,7 @@ a {
 
 .accordion-text li.showAnswer .question-arrow .question,
 .accordion-text li.showAnswer .question-arrow .arrow {
-  color: var(--accordion-text);
+  color: var(--title);
 }
 
 .accordion-text li .line {
@@ -634,6 +634,13 @@ a {
   transition: all 0.3s linear;
 }
 
+.icon-title span {
+  color: var(--title);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 50px 20px 20px 10px;
+}
+
 .grid-box h2 {
   text-align: left;
   line-height: 25px;
@@ -762,7 +769,7 @@ a {
 }
 
 .ctn-title .highlight a {
-  color: var(--button-main);
+  color: var(--title);
   font-weight: bold;
 }
 
