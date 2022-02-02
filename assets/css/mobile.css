@@ -516,6 +516,14 @@
     font-size: 15px;
   }
 
+  .about-details .btn-link,
+  .accordion-text li .question-arrow .arrow,
+  .ctn-title .highlight a,
+  .portfolio-card .box h2 a,
+  .portfolio-card .box .btn {
+    cursor: default;
+  }
+  
   /* ===== Contact Modal Mobile Version ===== */
   .credits.container {
     display: none;
