@@ -58,7 +58,7 @@ body.dark-theme {
   --card-color: rgb(12, 12, 15);
   --button-fill: #fdfdfd;
   --modal-color: rgb(37, 37, 41);
-  --accordion-text: #ffe600;
+  --accordion-text: #ff9800;
   --accordion-line: rgba(255, 255, 255, 0.18);
 
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
@@ -90,7 +90,7 @@ h1 {
 }
 
 h3 {
-  color: #d1befd;
+  color: var(--grey);
 }
 
 p {
@@ -490,12 +490,12 @@ a {
 }
 
 .accordion-text li:hover .question-arrow .arrow {
-  color: #7d2ae8;
+  color: var(--accordion-text);
 }
 
 .accordion-text li.showAnswer .question-arrow .question,
 .accordion-text li.showAnswer .question-arrow .arrow {
-  color: var(--title);
+  color: var(--accordion-text);
 }
 
 .accordion-text li .line {
@@ -635,7 +635,7 @@ a {
 }
 
 .icon-title span {
-  color: var(--title);
+  color: var(--button-main);
   font-size: 18px;
   font-weight: bold;
   padding: 50px 20px 20px 10px;
@@ -769,7 +769,7 @@ a {
 }
 
 .ctn-title .highlight a {
-  color: var(--title);
+  color: var(--button-main);
   font-weight: bold;
 }
 
