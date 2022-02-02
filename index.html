@@ -115,7 +115,16 @@
               </div>
     
               <img src="img/connect.png" alt="contact-img" class="modal__img" />
-    
+
+              <!-- Typing Animation-->
+              <div id="typed-strings">
+                <p>Hello, let's connect with me 👋</p>
+              </div>
+              <div class="type">
+                <span id="typed"></span>
+              </div> 
+              <!-- END-->
+
               <div class="contact-icons">
                 <ul>
                   <li>
@@ -504,6 +513,7 @@
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/vanilla-tilt.min.js"></script>
 
@@ -512,6 +522,17 @@
         max: 13,
         speed: 900
       });
+    </script>
+
+   <script type="text/javascript">
+      var typed = new Typed("#typed", {
+        stringsElement: '#typed-strings',
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 500,
+        startDelay: 1000,
+        loop: true
+    });
     </script>
 
     <script type="text/javascript">

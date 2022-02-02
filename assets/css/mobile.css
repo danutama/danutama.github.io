@@ -625,6 +625,21 @@
     right: 2rem;
   }
 
+  .type #typed {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--button-fill);
+    text-align: center;
+  }
+
+  .type {
+    margin: 0 0 10px 0;
+  }
+  
+  .typed-cursor {
+    color: var(--button-fill);
+  }
+
   /* === Show modal === */
   .show-modal {
     visibility: visible;
