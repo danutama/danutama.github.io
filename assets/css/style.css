@@ -122,7 +122,7 @@ a {
   color: var(--blue);
 }
 
-/* Preloader Start */
+/*========== Preloader Start ==========*/
 .preloader {
   position: fixed;
   left: 0;
@@ -161,7 +161,7 @@ a {
   transition: 0.1s ease;
 } */
 
-/* Navbar */
+/*========== NAVBAR ==========*/
 .navbar.container {
   margin-top: 0;
   position: absolute;
@@ -201,13 +201,13 @@ a {
   font-weight: bold;
 }
 
-/* For Mobile Navbar */
+/*=== For Mobile Navbar ===*/
 .nav-list i::before {
   display: none;
 }
-/* end */
+/*========== end ==========*/
 
-/* Home */
+/*========== HOME ==========*/
 #waves {
  margin-top: -500rem;
  width: 100rem;
@@ -345,7 +345,7 @@ a {
   animation: none;
 }
 
-/*===== Button Dark/Light Mode =====*/
+/*========== Button Dark/Light Mode ==========*/
 .dark {
   display: flex;
   align-items: center;
@@ -355,21 +355,16 @@ a {
   width: 35px;
   height: 35px;
   margin: 5px 0 5px 3.5rem;
-}
-
-.change-theme,
-.change-theme-name {
-  color: var(--white);
+  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+  -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 9px rgba(0, 0, 0, 0.3), 0 0.15rem 0.15rem 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 .change-theme {
-  font-size: 1.3rem;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.5rem;
   margin: 20px 5px;
-}
-
-.change-theme-name {
-  font-size: 15px;
-  display: none;
 }
 
 .quote {
@@ -402,9 +397,9 @@ a {
   bottom: 75%;
   right: 90%;
 }
-/* END */
+/*========== END ==========*/
 
-/* ACCORDION */
+/*========== ACCORDION ==========*/
 .accordion-container {
   display: flex;
   justify-content: center;
@@ -518,9 +513,9 @@ a {
 .accordion-text li.showAnswer p {
   display: block;
 }
-/* END */
+/*========== END ==========*/
 
-/* About */
+/*========== About ==========*/
 .about {
   margin-bottom: 100px;
 }
@@ -597,7 +592,7 @@ a {
   text-align: center;
 } */
 
-/* Skills */
+/*========== Skills ==========*/
 .title {
   text-align: center;
   margin-bottom: 60px;
@@ -629,16 +624,16 @@ a {
 
 .icon-title img {
   width: 80px;
-  margin: 30px 0 3px 5px;
+  margin: 30px 0 5px 5px;
   border-radius: 11px;
   transition: all 0.3s linear;
 }
 
-.icon-title span {
-  color: var(--button-main);
+.grid-box span {
+  color: var(--accordion-text);
   font-size: 18px;
   font-weight: bold;
-  padding: 50px 20px 20px 10px;
+  padding: 15px 0 0 15px;
 }
 
 .grid-box h2 {
@@ -670,7 +665,7 @@ a {
   transform: scale(1.1);
 }
 
-/*===== RESOURCES =====*/
+/*========== RESOURCES ==========*/
 .swiper-slide {
   text-align: center;
 
@@ -741,9 +736,9 @@ a {
 .sponsor__img.resize {
   width: 270px;
 }
-/* END */
+/*========== END =========*/
 
-/* PORTFOLIO */
+/*========== PORTFOLIO ==========*/
 .portfolio .title {
   text-align: center;
   margin-bottom: 60px;
@@ -850,13 +845,12 @@ a {
 }
 
 /* Contact Desktop Version*/
-/* === CREDITS / COPYRIGHT === */
+/* ========== CREDITS / COPYRIGHT ==========*/
 .credits.container {
   margin-top: 150px;
   padding-top: 20px;
   background: var(--background-credits);
   border-radius: 20px;
-
   box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
@@ -930,7 +924,7 @@ a {
   border: 2px solid var(--button-main);
 }
 
-/* Scroll To Top Button */
+/*========== Scroll To Top Button ==========*/
 .scroll-button {
   display: flex;
   justify-content: center;
@@ -956,7 +950,7 @@ a {
   font-size: 20px;
 }
 
-/* ===== Modal Contact Mobile Version ===== */
+/*========== Modal Contact Mobile Version ==========*/
 html.show-modal {
   overflow: hidden !important;
 }
@@ -1040,7 +1034,7 @@ html.show-modal {
   right: 2rem;
 }
 
-/* === Show modal === */
+/*========== Show modal ==========*/
 .show-modal {
   visibility: visible;
   opacity: 1;
@@ -1066,7 +1060,7 @@ html.show-modal {
   color: var(--button-main);
 }
 
-/* === PORTFOLIO CATEGORY === */
+/*========== PORTFOLIO CATEGORY ==========*/
 .portfolio-category {
   display: flex;
 }
