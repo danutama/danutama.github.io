@@ -279,7 +279,7 @@
 
   .nav-list .fi {
     font-size: 1.3rem;
-    margin: 3px 13px;
+    margin: 1px 13px;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
@@ -287,6 +287,8 @@
     display: flex;
     color: var(--grey);
     cursor: default !important;
+    height: 24px;
+    width: 23px;
   }
 
   .nav-name.contact,
@@ -298,9 +300,22 @@
     letter-spacing: 0.6px;
   }
 
+  .nav-name {
+    height: unset !important;
+    width: unset !important;
+  }
+
   .nav-list .active .nav-name,
   .nav-list .active .icon-solid {
-    color: var(--button-main);
+    height: 24px;
+    width: 23px;
+    background: var(--button-icon); 
+    background: var(--button-icon); 
+    background: var(--button-icon);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
   }
 
   /* === Icon Transition in Mobile === */
@@ -529,6 +544,7 @@
   .modal__button-main {
     background-color: var(--button-main);
     border: none !important;
+    outline: none !important;
     display: inline-block;
     color: var(--white);
     padding: 15px;

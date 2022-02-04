@@ -26,6 +26,7 @@ html {
   --card-color: #fff;
   --modal-color: #fff;
   --button-main: #8d5cff;
+  --button-icon: #8d5cff;
   --button-main-hover: #814cfd;
   --button: #8656f8;
   --button-fill: #8d5cff;
@@ -57,6 +58,7 @@ body.dark-theme {
   --background-credits: rgba(12, 12, 15, 0.15);
   --about-color: #28262e;
   --card-color: rgb(12, 12, 15);
+  --button-icon: linear-gradient(to top, #8d5cff, #9a6ffd, #a680fb, #b192f8, #bca3f5);
   --button-fill: #fff;
   --modal-color: rgb(37, 37, 41);
   --accordion-text: #06b3ba;
