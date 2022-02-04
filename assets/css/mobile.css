@@ -674,5 +674,6 @@
 
   #credits-contact {
     color: var(--h1);
+    font-weight: normal;
   }
 }
