@@ -58,7 +58,7 @@ body.dark-theme {
   --card-color: rgb(12, 12, 15);
   --button-fill: #fff;
   --modal-color: rgb(37, 37, 41);
-  --accordion-text: #ff9800;
+  --accordion-text: #00c9a0;
   --accordion-line: rgba(255, 255, 255, 0.18);
 
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
@@ -191,13 +191,12 @@ a {
 .nav-list a {
   color: var(--grey);
   font-family: 'nunito';
-  transition: 0.3s ease;
   cursor: default !important;
 }
 
 .nav-list a:hover,
 .nav-list .active {
-  color: #ff9800;
+  color: var(--accordion-text);
   font-weight: bold;
 }
 
@@ -232,7 +231,7 @@ a {
   display: block;
   height: 20px;
   width: 20px;
-  border: 2px solid #ff9800;
+  border: 2px solid #ffe600;
   border-radius: 5px;
   right: 50%;
   top: 35%;
@@ -245,7 +244,7 @@ a {
   display: block;
   height: 30px;
   width: 30px;
-  border: 2px solid #ff9800;
+  border: 2px solid #ffe600;
   border-radius: 5px;
   right: 70%;
   top: 10%;
@@ -260,7 +259,7 @@ a {
 }
 
 .highlight-name {
-  color: var(--button-main);
+  color: var(--accordion-text);
   font-size: 60px;
   font-weight: 700;
   margin-top: 20px;
@@ -308,14 +307,14 @@ a {
 
 .cta {
   padding: 15px 40px;
-  background: #ff9800;
-  border: 2px solid #ff9800;
-  color: var(--h1);
+  background: #00c9a0;
+  border: 2px solid #00c9a0;
+  color: #fff;
   border-radius: 17px;
   text-align: center;
   margin-right: 20px;
   cursor: default;
-  transition: 0.6s ease;
+  transition: 0.1s ease;
   animation: pulse_01 2s ease infinite;
 }
 
@@ -340,8 +339,7 @@ a {
 }
 
 .cta:hover {
-  color: var(--h1);
-  transition: 0.6s ease;
+  color: var(--h2);
   animation: none;
 }
 
@@ -442,7 +440,7 @@ a {
 .accordion .accordion-text .title {
   font-size: 35px;
   font-weight: 600;
-  color: var(--button-main);
+  color: var(--accordion-text);
   display: flex;
 }
 
@@ -550,7 +548,7 @@ a {
 }
 
 .right .topic {
-  color: #ff9800;
+  color: var(--accordion-text);
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -566,7 +564,7 @@ a {
 }
 
 .about-details .btn-link {
-  color: var(--button-main);
+  color: var(--accordion-text);
   cursor: pointer;
 }
 
@@ -694,7 +692,7 @@ a {
 }
 
 .swiper-pagination-bullet-active {
-  background: #ff9800;
+  background: #00c9a0;
   width: 18px;
   height: 8px;
   border-radius: 5px;
@@ -764,7 +762,7 @@ a {
 }
 
 .ctn-title .highlight a {
-  color: var(--button-main);
+  color: var(--accordion-text);
   font-weight: bold;
 }
 
@@ -819,7 +817,7 @@ a {
 }
 
 .portfolio-card .box h2 a:hover {
-  color: #ff9800;
+  color: #00c9a0;
 }
 
 .portfolio-card .box h3 {
@@ -834,7 +832,7 @@ a {
   font-weight: 800;
   display: flex;
   justify-content: center;
-  color: var(--button-main);
+  color: var(--accordion-text);
   padding: 10px 0 20px 0;
   border-radius: 11px;
 }
@@ -849,15 +847,13 @@ a {
 .credits.container {
   margin-top: 150px;
   padding-top: 20px;
-  background: var(--background-credits);
+  background: var(--button-main);
   border-radius: 20px;
   box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.shape-03 {
+/* .shape-03 {
   position: absolute;
   background: #ff9800;
   display: block;
@@ -882,18 +878,20 @@ a {
   left: 80%;
   animation: ani01 10s linear infinite;
   z-index: 0;
-}
+} */
 
 .credits {
   text-align: center;
-  color: var(--grey);
+  color: var(--social);
   font-size: 18px;
+  font-weight: bold;
   padding-bottom: 30px;
 }
 
 .credits .title h1 {
   font-size: 25px;
   margin-bottom: -40px;
+  color: var(--social);
 }
 
 .social {
@@ -910,18 +908,18 @@ a {
   justify-content: center;
   align-items: center;
   margin: 20px;
-  color: var(--h1);
+  color: var(--social);
   border-radius: 30px;
-  border: 2px solid var(--h1);
+  border: 2px solid var(--social);
   font-size: 25px;
   cursor: default;
   transition: all 0.1s ease;
 }
 
 .social a:hover {
-  color: var(--social);
-  background: var(--button-main);
-  border: 2px solid var(--button-main);
+  color: var(--button-main);
+  background: var(--social);
+  border: 2px solid var(--social);
 }
 
 /*========== Scroll To Top Button ==========*/

@@ -189,6 +189,10 @@
     overflow-x: scroll;
     padding-bottom: 1rem;
   }
+  .shape-03,
+  .shape-04 {
+    display: none;
+  }
 }
 
 /* CLOSE MODAL MIN-WIDTH  */
@@ -275,8 +279,8 @@
 
   .nav-list .fi {
     font-size: 1.3rem;
-    margin: 3px 10px;
-    justify-content: center;
+    margin: 3px 13px;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -290,8 +294,8 @@
     display: block;
     font-size: 12px;
     color: var(--grey);
-    transition: unset;
     font-weight: bold;
+    letter-spacing: 0.6px;
   }
 
   .nav-list .active .nav-name,
@@ -665,6 +669,10 @@
   }
 
   .contact-icons ul li a:hover {
-    color: #ff9800;
+    color: #00c9a0;
+  }
+
+  #credits-contact {
+    color: var(--h1);
   }
 }
