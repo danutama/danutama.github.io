@@ -280,6 +280,7 @@
   .nav-list .fi {
     font-size: 1.3rem;
     margin: 1px auto;
+    padding-top: 1px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
