@@ -669,7 +669,7 @@
   }
 
   .contact-icons ul li a:hover {
-    color: #00c9a0;
+    color: var(--green);
   }
 
   #credits-contact {
