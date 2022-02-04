@@ -288,7 +288,7 @@
     color: var(--grey);
     cursor: default !important;
     height: 24px;
-    width: 23px;
+    width: 24px;
   }
 
   .nav-name.contact,
@@ -308,7 +308,7 @@
   .nav-list .active .nav-name,
   .nav-list .active .icon-solid {
     height: 24px;
-    width: 23px;
+    width: 24px;
     background: var(--button-icon); 
     background: var(--button-icon); 
     background: var(--button-icon);
