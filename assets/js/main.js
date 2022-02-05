@@ -108,6 +108,20 @@ let swiper = new Swiper('.sponsor__container', {
     delay: 2000,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    900: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+    1304: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true,
