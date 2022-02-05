@@ -50,7 +50,7 @@
     <nav class="navbar container" id="navbar">
       
       <!-- Theme change button -->
-      <div class="dark">
+      <div class="dark" id="dark">
         <span class="change-theme-name"></span>
         <i class="bx bxs-moon change-theme" id="theme-button"></i>
       </div>
@@ -544,6 +544,17 @@
           $(this).addClass('active');
         });
       });
+
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("dark").style.top = "36%";
+        } else {
+          document.getElementById("dark").style.top = "-200px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
 
       $(window).on('load', function () {
         $('.preloader').addClass('loaded');
