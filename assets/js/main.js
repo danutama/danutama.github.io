@@ -115,16 +115,43 @@ let swiper = new Swiper('.sponsor__container', {
   },
 });
 
-// === ACCORDION === //
-let li = document.querySelectorAll('.faq-text li');
-for (var i = 0; i < li.length; i++) {
-  li[i].addEventListener('click', (e) => {
-    let clickedLi;
-    if (e.target.classList.contains('question-arrow')) {
-      clickedLi = e.target.parentElement;
-    } else {
-      clickedLi = e.target.parentElement.parentElement;
+// // === ACCORDION NO ACTIVE === //
+// let li = document.querySelectorAll('.faq-text li');
+// for (var i = 0; i < li.length; i++) {
+//   li[i].addEventListener('click', (e) => {
+//     let clickedLi;
+//     if (e.target.classList.contains('question-arrow')) {
+//       clickedLi = e.target.parentElement;
+//     } else {
+//       clickedLi = e.target.parentElement.parentElement;
+//     }
+//     clickedLi.classList.toggle('showAnswer');
+//   });
+// }
+
+// =============== ACCORDION =============== //
+const accordionItems = document.querySelectorAll('.faq-text li');
+
+accordionItems.forEach((item) => {
+  const accordionHeader = item.querySelector('.question-arrow');
+
+  accordionHeader.addEventListener('click', () => {
+    const openItem = document.querySelector('.showAnswer');
+    toggleItem(item);
+
+    if (openItem && openItem !== item) {
+      toggleItem(openItem);
     }
-    clickedLi.classList.toggle('showAnswer');
   });
-}
+});
+
+const toggleItem = (item) => {
+  const accordionContent = item.querySelector('.faq-text li p');
+  if (item.classList.contains('showAnswer')) {
+    accordionContent.removeAttribute('style');
+    item.classList.remove('showAnswer');
+  } else {
+    item.classList.add('showAnswer');
+  }
+};
+// ====== ACCORDION END ====== //
