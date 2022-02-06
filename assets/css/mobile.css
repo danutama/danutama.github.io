@@ -132,7 +132,7 @@
 
   .accordion {
     flex-direction: column;
-    padding: 25px;
+    padding: 15px;
   }
 
   .accordion .image-box {
@@ -427,7 +427,7 @@
   }
 
   .accordion {
-    padding: 15px;
+    padding: 5px;
   }
 
   .accordion-text li .question-arrow .question {
