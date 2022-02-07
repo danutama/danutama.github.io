@@ -51,6 +51,13 @@ function closeModal() {
 }
 closeBtn.forEach((c) => c.addEventListener('click', closeModal));
 
+// Remove contact modal when user clicking outside of it
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('show-modal')) {
+    closeModal();
+  }
+});
+
 /*========== DARK LIGHT THEME ==========*/
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
@@ -97,7 +104,7 @@ Array.from(categories).forEach((item, index) => {
   };
 });
 
-// === Initialize Swiper Sponsor === //
+// === INITIALIZE SWIPER RESOURCES === //
 let swiper = new Swiper('.sponsor__container', {
   grabCursor: true,
   loop: true,
@@ -143,7 +150,7 @@ let swiper = new Swiper('.sponsor__container', {
 //   });
 // }
 
-// =============== ACCORDION =============== //
+// =============== ACCORDION FAQ =============== //
 const accordionItems = document.querySelectorAll('.faq-text li');
 
 accordionItems.forEach((item) => {

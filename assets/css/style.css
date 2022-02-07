@@ -187,19 +187,21 @@ a {
 .nav-list a {
   color: var(--grey);
   font-family: 'nunito';
-  cursor: default !important;
-
   padding-bottom: 3px;
   position: relative;
+  letter-spacing: 0.7px;
+  cursor: default !important;
 }
 
 .nav-list a:hover,
+.nav-list a:hover::before,
+.nav-list a.active::before,
 .nav-list .active {
   color: var(--accordion-text);
-  font-weight: bold;
+  width: 100%;
 }
 
-.nav-list li a::before {
+.nav-list a::before {
   content: '';
   position: absolute;
   height: 2px;
@@ -209,11 +211,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.nav-list li a:hover::before {
-  width: 100%;
-}
-
-/*=== For Mobile Navbar ===*/
+/*=== MOBILE NAV ICON ===*/
 .nav-list i::before {
   display: none;
 }
@@ -743,6 +741,7 @@ a {
   margin-bottom: 5rem;
   filter: invert(0.5);
   transition: all 0.3s;
+  cursor: grab;
 }
 
 .sponsor__img.resize {
