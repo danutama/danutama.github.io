@@ -188,12 +188,29 @@ a {
   color: var(--grey);
   font-family: 'nunito';
   cursor: default !important;
+
+  padding-bottom: 3px;
+  position: relative;
 }
 
 .nav-list a:hover,
 .nav-list .active {
-  color: var(--green);
+  color: var(--accordion-text);
   font-weight: bold;
+}
+
+.nav-list li a::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  background: var(--accordion-text);
+  transition: all 0.3s ease;
+}
+
+.nav-list li a:hover::before {
+  width: 100%;
 }
 
 /*=== For Mobile Navbar ===*/
@@ -621,7 +638,7 @@ a {
   border-radius: 10px;
   transition: all 0.3s linear;
   padding: 15px 5px 15px 5px;
-  background: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+  background: var(--button-main);
 }
 
 .grid-box span {
