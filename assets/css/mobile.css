@@ -149,6 +149,7 @@
 
   .accordion .accordion-text .title {
     display: block;
+    padding: 0;
   }
 
   .portfolio-card {

@@ -31,6 +31,9 @@ html {
   --button: #8656f8;
   --button-fill: #8d5cff;
   --green: #06b3ba;
+  --gridbox-1: #ded4fa;
+  --gridbox-2: #c1e7e9;
+  --gridbox-3: #fbfad7;
   --shadow-animation-1: rgba(82, 82, 82, 0.7);
   --shadow-animation-2: rgba(255, 255, 255, 0);
   --shadow-animation-3: rgba(255, 255, 255, 0);
@@ -41,12 +44,6 @@ html {
   --grey: #b4b2c5;
   --circle: #fff;
   --title: #8d5cff;
-
-  /* subtitues line-up */
-  --blue: #358fef;
-  --button-second: linear-gradient(to right bottom, #9ba4ff, #9faefe, #a4b7fc, #acc0fa, #b5c9f7, #c0cff6, #cad6f5, #d4dcf4, #dfe3f5, #e9eaf6, #f2f1f7, #f9f9f9);
-  --circle2: #f4f3ff;
-  --z-modal: 1000;
 }
 
 /*===== Variables Dark theme =====*/
@@ -63,6 +60,9 @@ body.dark-theme {
   --modal-color: rgb(37, 37, 41);
   --accordion-text: #06b3ba;
   --accordion-line: rgba(255, 255, 255, 0.18);
+  --gridbox-1: transparent;
+  --gridbox-2: transparent;
+  --gridbox-3: transparent;
 
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
   --shadow-animation-2: rgba(255, 255, 255, 0);
@@ -72,14 +72,6 @@ body.dark-theme {
   --grey: #b4b2c5;
   --circle: rgb(12, 12, 15);
   --title: #d1befd;
-
-  /* subtitues line-up */
-  --blue: #358fef;
-  --circle-subtitues-color: #202127;
-  --card-color-2: #383a42;
-  --about-color-2: #383a42;
-  --background-credits-2: rgba(255, 255, 255, 0.1);
-  --z-modal: 1000;
 }
 
 li {
@@ -439,15 +431,16 @@ a {
 }
 
 .accordion .accordion-text .title {
-  font-size: 35px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: bold;
   color: var(--accordion-text);
   display: flex;
+  padding-left: 10px;
 }
 
 .accordion .accordion-text .faq-text {
-  margin-top: 25px;
-  height: 263px;
+  margin-top: -30px;
+  height: 285px;
   overflow-y: auto;
   box-shadow: rgba(90, 90, 90, 0.3) 0px -50px 16px -38px inset;
   border-radius: 0 0 15px 15px;
@@ -623,9 +616,11 @@ a {
 
 .icon-title img {
   width: 80px;
-  margin: 30px 0 5px 5px;
-  border-radius: 11px;
+  margin: 30px 0 5px 15px;
+  border-radius: 10px;
   transition: all 0.3s linear;
+  padding: 15px 5px 15px 5px;
+  background: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
 }
 
 .grid-box span {
