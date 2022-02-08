@@ -268,7 +268,7 @@
   .navbar.container {
     padding: 7px 0;
     margin-bottom: 0;
-    width: 90%;
+    width: 87%;
     left: 0;
     right: 0;
     justify-content: center;
@@ -276,7 +276,8 @@
     text-align: center;
     position: fixed;
     bottom: 15px;
-    box-shadow: 0 2rem 2.8rem rgba(22, 22, 22, 0.5);
+    /* box-shadow: 0 2rem 2.8rem rgba(22, 22, 22, 0.5); */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     z-index: 999;
     border-radius: 30px;
   }
