@@ -412,6 +412,10 @@
     display: none;
   }
 
+  #waves {
+    width: 63rem;
+  }
+
   .bell-quote {
     font-size: 50px;
     right: 90%;
