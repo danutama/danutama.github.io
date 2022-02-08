@@ -268,14 +268,17 @@
   .navbar.container {
     padding: 7px 0;
     margin-bottom: 0;
-    width: 100%;
+    width: 90%;
+    left: 0;
+    right: 0;
     justify-content: center;
     background: var(--circle);
     text-align: center;
     position: fixed;
-    bottom: 0;
-    box-shadow: 0 0.2rem 0.5rem rgba(34, 34, 34, 0.5);
+    bottom: 15px;
+    box-shadow: 0 2rem 2.8rem rgba(22, 22, 22, 0.5);
     z-index: 999;
+    border-radius: 30px;
   }
 
   .nav-list .fi {
@@ -687,5 +690,15 @@
   #credits-contact {
     color: var(--h1);
     font-weight: normal;
+  }
+}
+
+@media (max-width: 350px) {
+  .nav-name {
+    display: none;
+  }
+
+  .navbar.container {
+    padding: 15px;
   }
 }
