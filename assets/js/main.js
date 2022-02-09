@@ -7,12 +7,12 @@ function scrollActive() {
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute('id');
+    pageId = current.getAttribute('id');
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector('.nav-list a[href*=' + sectionId + ']').classList.add('active');
+      document.querySelector('.nav-list a[href*=' + pageId + ']').classList.add('active');
     } else {
-      document.querySelector('.nav-list a[href*=' + sectionId + ']').classList.remove('active');
+      document.querySelector('.nav-list a[href*=' + pageId + ']').classList.remove('active');
     }
   });
 }

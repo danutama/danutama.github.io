@@ -130,6 +130,14 @@
     right: 92%;
   }
 
+  .portfolio-card {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+
+  .portfolio-card .box {
+    transform: unset !important;
+  }
+
   .accordion {
     flex-direction: column;
     padding: 15px;
@@ -150,14 +158,6 @@
   .accordion .accordion-text .title {
     display: block;
     padding: 0;
-  }
-
-  .portfolio-card {
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  }
-
-  .portfolio-card .box {
-    transform: unset !important;
   }
 }
 
@@ -417,26 +417,12 @@
   }
 
   #waves {
-    width: 63rem;
+    width: 70rem;
   }
 
   .bell-quote {
     font-size: 50px;
     right: 90%;
-  }
-
-  .accordion {
-    padding: 5px;
-  }
-
-  .accordion-text li .question-arrow .question {
-    width: 95%;
-    font-size: 16px;
-  }
-
-  .accordion-text li p {
-    width: 87%;
-    font-size: 15px;
   }
 
   .about-details .right {
@@ -483,9 +469,9 @@
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
-  .portfolio {
+  /* .portfolio {
     margin-bottom: 250px;
-  }
+  } */
 
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
@@ -505,6 +491,21 @@
   }
 
   .portfolio-card .box h3 {
+    font-size: 15px;
+  }
+
+  .accordion {
+    padding: 5px;
+    margin-bottom: 5rem;
+  }
+
+  .accordion-text li .question-arrow .question {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .accordion-text li p {
+    width: 87%;
     font-size: 15px;
   }
 

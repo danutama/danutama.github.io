@@ -149,18 +149,16 @@ a {
 }
 
 /* Change Background Navbar */
-/* .scroll-header {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  background: var(--background-nav);
+.scroll-header {
+  background: var(--circle);
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
   transition: 0.1s ease;
-} */
+} 
 
-/*========== NAVBAR ==========*/
+/*========== NAVBAR SECTION ==========*/
 .navbar.container {
   margin-top: 0;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
 }
 
@@ -208,16 +206,16 @@ a {
   width: 0%;
   bottom: 0;
   background: var(--accordion-text);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 /*=== MOBILE NAV ICON ===*/
 .nav-list i::before {
   display: none;
 }
-/*========== end ==========*/
+/*========== END ==========*/
 
-/*========== HOME ==========*/
+/*========== HOME SECTION ==========*/
 #waves {
  margin-top: -500rem;
  width: 100rem;
@@ -408,125 +406,7 @@ a {
 }
 /*========== END ==========*/
 
-/*========== ACCORDION ==========*/
-.accordion-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 5rem 0 5rem 0;
-}
-
-.accordion {
-  display: flex;
-  max-width: 1210px;
-  width: 90%;
-  align-items: center;
-  justify-content: space-between;
-  
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 20px;
-  padding: 45px 90px 45px 60px;
-}
-
-.accordion .image-box {
-  height: 360px;
-  width: 300px;
-}
-
-.accordion .image-box img {
-  margin-top: 20px;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  animation: bounceTop_01 5s ease infinite;
-}
-
-.accordion .accordion-text {
-  width: 60%;
-}
-
-.accordion .accordion-text .title {
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--accordion-text);
-  display: flex;
-  padding-left: 10px;
-}
-
-.accordion .accordion-text .faq-text {
-  margin-top: -30px;
-  height: 285px;
-  overflow-y: auto;
-  box-shadow: rgba(90, 90, 90, 0.3) 0px -50px 16px -38px inset;
-  border-radius: 0 0 15px 15px;
-  padding: 0 10px 30px 10px;
-}
-
-.faq-text::-webkit-scrollbar {
-  display: none;
-}
-
-.accordion .accordion-text .arrow {
-  list-style: none;
-  cursor: pointer;
-}
-
-.accordion-text li .question-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.accordion-text li .question-arrow .question {
-  font-size: 18px;
-  font-weight: 800;
-  margin: 10px 0 10px 0;
-  color: var(--h1);
-}
-
-.accordion-text li .question-arrow .arrow {
-  font-size: 20px;
-  color: #595959;
-  transition: all 0.3s ease;
-}
-
-.accordion-text li.showAnswer .question-arrow .arrow {
-  transform: rotate(-180deg);
-}
-
-.accordion-text li:hover .question-arrow .arrow {
-  color: var(--accordion-text);
-}
-
-.accordion-text li.showAnswer .question-arrow .question,
-.accordion-text li.showAnswer .question-arrow .arrow {
-  color: var(--accordion-text);
-}
-
-.accordion-text li .line {
-  display: block;
-  height: 2px;
-  width: 100%;
-  margin: 10px 0;
-  background: var(--accordion-line);
-}
-
-.accordion-text li p {
-  width: 85%;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--h1);
-  padding: 0 0 10px 0;
-  display: none;
-}
-
-.accordion-text li.showAnswer p {
-  display: block;
-}
-/*========== END ==========*/
-
-/*========== About ==========*/
+/*========== ABOUT SECTION ==========*/
 .about {
   margin-bottom: 100px;
 }
@@ -599,8 +479,9 @@ a {
   border-radius: 12px;
   text-align: center;
 } */
+/*========== END ==========*/
 
-/*========== Skills ==========*/
+/*========== SKILLS SECTION ==========*/
 .title {
   text-align: center;
   margin-bottom: 60px;
@@ -674,8 +555,9 @@ a {
   transition: all 0.2s linear;
   transform: scale(1.1);
 }
+/*========== END ==========*/
 
-/*========== RESOURCES ==========*/
+/*========== RESOURCES SECTION ==========*/
 .swiper-slide {
   text-align: center;
 
@@ -749,7 +631,55 @@ a {
 }
 /*========== END =========*/
 
-/*========== PORTFOLIO ==========*/
+/*========== PORTFOLIO CATEGORY BUTTON ==========*/
+.portfolio-category {
+  display: flex;
+}
+
+.portfolio-category::-webkit-scrollbar {
+  width: 0;
+}
+
+.portfolio-category button {
+  font-family: 'nunito';
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 0.5rem 2.5rem;
+  width: max-content;
+  margin: 0 1rem 0 0;
+  outline: none;
+  border: 1px solid var(--grey);
+  background: transparent;
+  color: var(--h1);
+  border-radius: 10px;
+}
+
+.portfolio-category button:hover {
+  border: 1px solid var(--button-main);
+}
+
+.portfolio-category button.active {
+  background-color: var(--button-main);
+  color: var(--white);
+  border: 1px solid var(--button-main);
+}
+
+.portfolio-card > div {
+  display: none;
+}
+
+.portfolio-card.all > div,
+.portfolio-card.whatsnew > div.whatsnew-type,
+.portfolio-card.more > div.more-type {
+  display: block;
+}
+
+.portfolio-category .delay-6 button.active {
+  margin-bottom: 310px;
+  transition: unset;
+}
+
+/*========== PORTFOLIO SECTION ==========*/
 .portfolio .title {
   text-align: center;
   margin-bottom: 60px;
@@ -850,11 +780,129 @@ a {
 .portfolio-card .box .btn:hover {
   text-decoration: underline;
 }
+/*========== END ==========*/
+
+/*========== ACCORDION FAQ SECTION ==========*/
+.accordion-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem 0 5rem 0;
+}
+
+.accordion {
+  display: flex;
+  max-width: 1210px;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  padding: 45px 90px 45px 60px;
+}
+
+.accordion .image-box {
+  height: 360px;
+  width: 300px;
+}
+
+.accordion .image-box img {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  animation: bounceTop_01 5s ease infinite;
+}
+
+.accordion .accordion-text {
+  width: 60%;
+}
+
+.accordion .accordion-text .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--accordion-text);
+  display: flex;
+  padding-left: 10px;
+}
+
+.accordion .accordion-text .faq-text {
+  margin-top: -30px;
+  height: 285px;
+  overflow-y: auto;
+  box-shadow: rgba(90, 90, 90, 0.3) 0px -50px 16px -48px inset;
+  border-radius: 0 0 15px 15px;
+  padding: 0 10px 30px 10px;
+}
+
+.faq-text::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion .accordion-text .arrow {
+  list-style: none;
+  cursor: pointer;
+}
+
+.accordion-text li .question-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-text li .question-arrow .question {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px 0 10px 0;
+  color: var(--h1);
+}
+
+.accordion-text li .question-arrow .arrow {
+  font-size: 20px;
+  color: #595959;
+  transition: all 0.3s ease;
+}
+
+.accordion-text li.showAnswer .question-arrow .arrow {
+  transform: rotate(-180deg);
+}
+
+.accordion-text li:hover .question-arrow .arrow {
+  color: var(--accordion-text);
+}
+
+.accordion-text li.showAnswer .question-arrow .question,
+.accordion-text li.showAnswer .question-arrow .arrow {
+  color: var(--accordion-text);
+}
+
+.accordion-text li .line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
+  background: var(--accordion-line);
+}
+
+.accordion-text li p {
+  width: 85%;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--h1);
+  padding: 0 0 10px 0;
+  display: none;
+}
+
+.accordion-text li.showAnswer p {
+  display: block;
+}
+/*========== END ==========*/
 
 /* Contact Desktop Version*/
 /* ========== CREDITS / COPYRIGHT ==========*/
 .credits.container {
-  margin-top: 150px;
   padding-top: 20px;
   background: var(--button-main);
   border-radius: 20px;
@@ -1064,52 +1112,4 @@ html.show-modal {
 
 .contact-icons ul li a:hover {
   color: var(--button-main);
-}
-
-/*========== PORTFOLIO CATEGORY ==========*/
-.portfolio-category {
-  display: flex;
-}
-
-.portfolio-category::-webkit-scrollbar {
-  width: 0;
-}
-
-.portfolio-category button {
-  font-family: 'nunito';
-  font-size: 14px;
-  letter-spacing: 1px;
-  padding: 0.5rem 2.5rem;
-  width: max-content;
-  margin: 0 1rem 0 0;
-  outline: none;
-  border: 1px solid var(--grey);
-  background: transparent;
-  color: var(--h1);
-  border-radius: 10px;
-}
-
-.portfolio-category button:hover {
-  border: 1px solid var(--button-main);
-}
-
-.portfolio-category button.active {
-  background-color: var(--button-main);
-  color: var(--white);
-  border: 1px solid var(--button-main);
-}
-
-.portfolio-card > div {
-  display: none;
-}
-
-.portfolio-card.all > div,
-.portfolio-card.whatsnew > div.whatsnew-type,
-.portfolio-card.more > div.more-type {
-  display: block;
-}
-
-.portfolio-category .delay-6 button.active {
-  margin-bottom: 310px;
-  transition: unset;
 }
