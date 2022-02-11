@@ -497,7 +497,6 @@
 
   .accordion {
     padding: 5px;
-    margin-bottom: 5rem;
   }
 
   .accordion-text li .question-arrow .question {
@@ -515,15 +514,21 @@
   .accordion-text li .question-arrow .arrow,
   .ctn-title .highlight a,
   .portfolio-card .box h2 a,
-  .portfolio-card .box .btn {
+  .portfolio-card .box .btn,
+  .contact-info .info-item a {
     cursor: default;
   }
   
-  /* ===== Contact Modal Mobile Version ===== */
   .credits.container {
-    display: none;
+    margin-bottom: 10rem;
   }
 
+  .credits.container h5,
+  .credits.container .info-item a {
+    font-size: 16px;
+  }
+
+  /* ===== Contact Modal Mobile Version ===== *
   /*===== BREAKPOINTS MODAL =====*/
   .modal {
     display: grid;

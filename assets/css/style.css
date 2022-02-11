@@ -910,6 +910,40 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.contact-info {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  padding: 30px;
+  max-width: 100%;
+}
+
+.contact-info .info-item {
+  padding:30px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-info .info-item h5,
+.contact-info .info-item a {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #ffe600;
+}
+
+.contact-info .info-item a {
+  color: white;
+}
+
+.contact-info .info-item a:hover {
+  text-decoration: underline;
+  color: #28262e;
+}
+
 /* .shape-03 {
   position: absolute;
   background: #ff9800;
@@ -941,7 +975,6 @@ a {
   text-align: center;
   color: var(--social);
   font-size: 18px;
-  font-weight: bold;
   padding-bottom: 30px;
 }
 
