@@ -1003,7 +1003,6 @@ a {
   border: 2px solid var(--social);
   font-size: 25px;
   cursor: default;
-  transition: all 0.1s ease;
 }
 
 .social a:hover {
