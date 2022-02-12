@@ -139,8 +139,8 @@ a {
 
 .circles li:nth-child(1) {
   left: 25%;
-  width: 80px;
-  height: 80px;
+  width: 30px;
+  height: 30px;
   animation-delay: 0s;
 }
 
@@ -161,8 +161,8 @@ a {
 
 .circles li:nth-child(4) {
   left: 40%;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   animation-delay: 0s;
   animation-duration: 18s;
 }
@@ -183,8 +183,8 @@ a {
 
 .circles li:nth-child(7) {
   left: 35%;
-  width: 70px;
-  height: 70px;
+  width: 15px;
+  height: 15px;
   animation-delay: 7s;
 }
 
@@ -378,7 +378,7 @@ a {
 
 .highlight-name {
   color: var(--green);
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 700;
   margin-top: 20px;
 }
