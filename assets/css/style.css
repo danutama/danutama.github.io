@@ -120,7 +120,6 @@ a {
 
 /* ===== BACKGROUND ANIMATION ===== */
 .circles {
-  position: fixed;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -188,30 +187,6 @@ a {
   animation-delay: 7s;
 }
 
-.circles li:nth-child(8) {
-  left: 50%;
-  width: 25px;
-  height: 25px;
-  animation-delay: 15s;
-  animation-duration: 45s;
-}
-
-.circles li:nth-child(9) {
-  left: 20%;
-  width: 15px;
-  height: 15px;
-  animation-delay: 2s;
-  animation-duration: 35s;
-}
-
-.circles li:nth-child(10) {
-  left: 85%;
-  width: 30px;
-  height: 30px;
-  animation-delay: 0s;
-  animation-duration: 11s;
-}
-
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -227,14 +202,14 @@ a {
 }
 /* ===== BACKGROUND END ===== */
 
-/*========== Preloader Start ==========*/
+/*========== PRELOADER ==========*/
 .preloader {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #111111;
+  background-color: rgb(251, 251, 251);
   z-index: 1099;
   display: flex;
   align-items: center;
@@ -249,13 +224,15 @@ a {
 }
 
 .preloader .loader {
-  height: 30px;
-  width: 30px;
-  border: 2px solid var(--green);
-  border-right: 2px solid transparent;
+  height: 40px;
+  width: 40px;
+  border: 3px solid var(--button-main);
+  border-right: 3px solid rgb(194, 194, 194);
+  border-bottom: 3px solid rgb(194, 194, 194);
   border-radius: 50%;
   animation: ani01 1s linear infinite;
 }
+/*===== END =====*/
 
 /* Change Background Navbar */
 .scroll-header {
@@ -655,13 +632,8 @@ a {
   transition: all 0.2s linear;
 }
 
-.skills .grid-box:hover {
-  transition: all 0.2s linear;
-}
-
 .skills .grid-box:hover img {
   box-shadow: none;
-  transition: all 0.2s linear;
   transform: scale(1.1);
 }
 /*========== END ==========*/
@@ -970,7 +942,7 @@ a {
 .accordion-text li .question-arrow .arrow {
   font-size: 20px;
   color: #595959;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .accordion-text li.showAnswer .question-arrow .arrow {
