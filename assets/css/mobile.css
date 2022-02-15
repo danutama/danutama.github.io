@@ -471,6 +471,11 @@
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
+  .btn-resources {
+    font-size: 16px;
+    cursor: default !important;
+  }
+
   /* .portfolio {
     margin-bottom: 250px;
   } */
