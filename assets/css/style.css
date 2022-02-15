@@ -134,6 +134,7 @@ a {
   background: rgba(177, 147, 226, 0.2);
   animation: animate 25s linear infinite;
   bottom: -150px;
+  z-index: 0;
 }
 
 .circles li:nth-child(1) {
@@ -665,8 +666,6 @@ a {
 .sponsor-container {
   width: 90%;
   display: grid;
-  background: #8656f8;
-  border-radius: 15px;
   padding: 5px;
 }
 
@@ -674,19 +673,21 @@ a {
   display: grid;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  width: 100%;
   background: var(--circle);
+  border: solid 5px var(--button-main);
+  border-top: solid 20px var(--button-main);
+  border-radius: 15px;
+  width: 100%;
 }
 
 .btn-resources {
   text-align: center;
   padding: 15px;
-  margin: 50px;
+  margin: 40px;
   background: var(--button-main);
   color: var(--white);
   font-size: 18px;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .btn-resources i {
