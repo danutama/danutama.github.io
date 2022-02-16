@@ -468,7 +468,7 @@
 
   .sponsor__container {
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .btn-resources {
@@ -518,6 +518,7 @@
   .dark .change-theme,
   .about-details .btn-link,
   .accordion-text li .question-arrow .arrow,
+  .sponsor__content h2 a,
   .ctn-title .highlight a,
   .portfolio-card .box h2 a,
   .portfolio-card .box .btn,
