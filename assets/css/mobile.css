@@ -90,6 +90,10 @@
   .copyright p {
     font-size: 12px;
   }
+
+  .contact-info {
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  }
 }
 
 @media (max-width: 900px) {
@@ -469,6 +473,10 @@
   .sponsor__container {
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .sponsor-content h2 {
+    font-size: 20px;
   }
 
   .btn-resources {
