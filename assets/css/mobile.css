@@ -1,4 +1,9 @@
-@media (max-width: 1350px) {
+@media (max-width: 1390px) {
+  #waves {
+    margin-top: -500rem;
+    width: 100rem;
+  }
+
   .skills .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
   }
