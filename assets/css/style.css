@@ -713,7 +713,7 @@ a {
 
 /* RESOURCES INDEX FILE*/
 .sponsor-container {
-  width: 90%;
+  width: 93%;
   padding: 5px;
 }
 
@@ -722,35 +722,41 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   text-align: center;
   background: var(--circle);
   border: solid 5px var(--button-main);
   border-top: solid 20px var(--button-main);
   border-radius: 15px;
   width: 100%;
-  padding: 50px;
+  padding: 30px;
+}
+
+.sponsor-content img {
+  width: 100px;
 }
 
 .sponsor-content h2 {
   font-size: 30px;
   font-weight: bold;
   color: var(--button-fill);
-  padding-bottom: 20px;
 }
 
 .sponsor-content a {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .btn-resources {
   text-align: center;
-  color: var(--green);
+  color: var(--h2);
   border-radius: 12px;
+  background: #d7caf5;
+  padding: 10px 40px;
 }
 
 .btn-resources:hover {
-  text-decoration: underline;
+  background: #cebdf7;
 }
 /* END */
 
