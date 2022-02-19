@@ -722,7 +722,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   text-align: center;
   background: var(--circle);
   border: solid 5px var(--button-main);
@@ -734,12 +733,14 @@ a {
 
 .sponsor-content img {
   width: 100px;
+  margin-bottom: 2rem;
 }
 
 .sponsor-content h2 {
   font-size: 30px;
   font-weight: bold;
   color: var(--button-fill);
+  margin-bottom: 2rem;
 }
 
 .sponsor-content a {
@@ -752,7 +753,7 @@ a {
   color: var(--h2);
   border-radius: 12px;
   background: #d7caf5;
-  padding: 10px 40px;
+  padding: 10px 30px;
 }
 
 .btn-resources:hover {
