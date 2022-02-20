@@ -21,7 +21,7 @@ html {
   --h2: #000;
   --social: #fff;
   --background-nav: rgba(255, 255, 255, 0.7);
-  --background-credits: #19122a;
+  --background-credits: #261b3f;
   --about-color: #fff;
   --card-color: #fff;
   --modal-color: #fff;
@@ -722,7 +722,7 @@ a {
 
 /* RESOURCES INDEX FILE*/
 .sponsor-container {
-  width: 93%;
+  width: 90%;
   padding: 5px;
 }
 
@@ -741,14 +741,14 @@ a {
 }
 
 .sponsor-content img {
-  width: 100px;
+  width: 200px;
 }
 
 .sponsor-content h2 {
   font-size: 30px;
   font-weight: bold;
   color: var(--button-fill);
-  margin: 2rem 0 2rem 0;
+  margin: .2rem 0 2rem 0;
 }
 
 .sponsor-content a {
@@ -894,7 +894,7 @@ a {
 
 .portfolio-card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 2rem;
   margin-top: 2rem;
   width: 100%;
@@ -903,7 +903,7 @@ a {
 
 .portfolio-card .box {
   padding: 0;
-  border-radius: 12px;
+  border-radius: 9px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -917,7 +917,7 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 12px 12px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .portfolio-card .box h2 {
@@ -949,7 +949,6 @@ a {
 .portfolio-card .box .btn {
   font-size: 15px;
   font-weight: 700;
-  letter-spacing: 0.5px;
   display: flex;
   justify-content: center;
   color: var(--green);
