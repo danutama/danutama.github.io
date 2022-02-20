@@ -467,8 +467,9 @@
     transition: none;
   }
 
-  .skills .grid-box:hover img {
+  .skills .grid-box:hover {
     transform: none;
+    box-shadow: none;
   }
 
   .skills .title h4 {
@@ -507,11 +508,11 @@
   }
 
   .portfolio-card .box h2 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .portfolio-card .box h3 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .accordion {

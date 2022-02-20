@@ -266,7 +266,6 @@ a {
 .nav-list ul li {
   margin: 0 20px;
   font-size: 18px;
-  font-weight: bold;
 }
 
 .nav-list a {
@@ -629,13 +628,13 @@ a {
   display: grid;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  transition: all 0.2s linear;
+  transition: all 0.1s linear;
 }
 
-.skills .grid-box:hover img {
-  box-shadow: none;
-  transform: scale(1.1);
+.skills .grid-box:hover {
+  transform: translateY(-0.03in);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 12px;
 }
 /*========== END ==========*/
 
@@ -952,7 +951,7 @@ a {
   display: flex;
   justify-content: center;
   color: var(--green);
-  padding: 10px 0 20px 0;
+  padding: 20px 0 20px 0;
   border-radius: 11px;
 }
 
@@ -1094,7 +1093,6 @@ a {
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  padding: 30px;
   max-width: 100%;
 }
 
