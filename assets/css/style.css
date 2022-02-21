@@ -71,7 +71,8 @@ body.dark-theme {
   --credits-shadow: 0 0 0.3rem 0.3rem rgba(238, 234, 234, 0.3);
   --white: #fff;
   --grey: #b4b2c5;
-  --circle: rgb(12, 12, 15);
+  --circle: #120d1f;
+  --circle-1: rgb(12, 12, 15);
   --title: #d1befd;
 }
 
@@ -986,11 +987,10 @@ a {
 }
 
 .accordion .image-box img {
-  margin-top: 20px;
+  margin-top: 10px;
   height: 100%;
   width: 100%;
   object-fit: contain;
-  animation: bounceTop_01 5s ease infinite;
 }
 
 .accordion .accordion-text {
