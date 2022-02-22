@@ -104,34 +104,32 @@ Array.from(categories).forEach((item, index) => {
   };
 });
 
-// === INITIALIZE SWIPER RESOURCES === //
-let swiper = new Swiper('.sponsor__container', {
+// === INITIALIZE SWIPER CONTACT === //
+let swiper = new Swiper('.contact-info', {
   grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: '3',
-  spaceBetween: 130,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
+  loop: false,
+  centeredSlides: false,
+  slidesPerView: '1',
+  spaceBetween: 20,
+  freeMode: true,
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
   breakpoints: {
-    640: {
+    500: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+
+    1000: {
       slidesPerView: 3,
-      spaceBetween: 50,
-    },
-    900: {
-      slidesPerView: 4,
-      spaceBetween: 50,
-    },
-    1304: {
-      slidesPerView: 4,
-      spaceBetween: 50,
+      spaceBetween: 20,
     },
   },
   pagination: {
     el: '.swiper-pagination',
-    dynamicBullets: true,
+    Bullets: true,
     clickable: true,
   },
 });

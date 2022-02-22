@@ -1107,12 +1107,36 @@ a {
 }
 
 .contact-info {
-  display: grid;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  max-width: 100%;
+
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  display: none;
+  margin: 1rem 0 -.8rem 0;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: var(--grey);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--green);
+  width: 18px;
+  height: 8px;
+  border-radius: 5px;
 }
 
 .contact-info .info-item {
@@ -1120,6 +1144,10 @@ a {
   justify-content: center;
   text-align: center;
   align-items: center;
+
+  margin-bottom: 3rem;
+  border: solid 1px var(--grey);
+  border-radius: 10px;
 }
 
 .contact-info .info-item i {

@@ -99,6 +99,14 @@
   .contact-info {
     grid-template-columns: repeat(auto-fit, minmax(500px, auto));
   }
+
+  .swiper {
+    width: 500px;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
 }
 
 @media (max-width: 900px) {
