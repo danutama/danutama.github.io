@@ -475,13 +475,13 @@
 
   .skills .grid-box {
     margin: -20px 0 0;
-    /* transition: none; */
+    transition: none;
   }
 
-  /* .skills .grid-box:hover {
+  .skills .grid-box:hover {
     transform: none;
     box-shadow: none;
-  } */
+  }
 
   .skills .title h4 {
     font-size: 17px;
