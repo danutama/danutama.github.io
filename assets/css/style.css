@@ -25,7 +25,7 @@ html {
   --about-color: #fff;
   --card-color: #fff;
   --skills-color: transparent;
-  --resources-color: #f8f8f8;
+  --resources-color: #ebebeb;
   --modal-color: #fff;
   --button-main: #8d5cff;
   --button-icon: #8d5cff;
@@ -59,7 +59,7 @@ body.dark-theme {
   --resources-color: #1e1a2c;
   --button-icon: linear-gradient(to top, #8d5cff, #9a6ffd, #a680fb, #b192f8, #bca3f5);
   --button-fill: #fff;
-  --modal-color: #2b263d;
+  --modal-color: #231f31;
   --accordion-text: #06b3ba;
   --accordion-line: rgba(255, 255, 255, 0.18);
 
@@ -433,7 +433,9 @@ a {
 }
 
 .cta:hover {
-  color: var(--h2);
+  transform: scale(0.97);
+  -ms-transform: scale(0.97); /* Support IE 9 */
+  -webkit-transform: scale(0.97); /* support Safari */
   animation: none;
 }
 
@@ -820,7 +822,6 @@ a {
 
 .portfolio-category button:hover {
   border: 1px solid var(--button-main);
-  background: var(--resources-color);
 }
 
 .portfolio-category button.active {
@@ -1137,12 +1138,12 @@ a {
 .swiper-button-next,
 .swiper-button-prev {
   cursor: default !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  border: none !important;
-  outline: none !important;
   font-size: 13px;
   font-weight: bold;
   color: white;
