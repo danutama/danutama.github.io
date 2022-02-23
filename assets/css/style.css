@@ -25,6 +25,7 @@ html {
   --about-color: #fff;
   --card-color: #fff;
   --skills-color: transparent;
+  --resources-color: #f8f8f8;
   --modal-color: #fff;
   --button-main: #8d5cff;
   --button-icon: #8d5cff;
@@ -32,9 +33,6 @@ html {
   --button: #8656f8;
   --button-fill: #8d5cff;
   --green: #06b3ba;
-  --gridbox-1: #ded4fa;
-  --gridbox-2: #c1e7e9;
-  --gridbox-3: #fbfad7;
   --shadow-animation-1: rgba(82, 82, 82, 0.7);
   --shadow-animation-2: rgba(255, 255, 255, 0);
   --shadow-animation-3: rgba(255, 255, 255, 0);
@@ -58,14 +56,12 @@ body.dark-theme {
   --about-color: #28262e;
   --card-color: rgb(12, 12, 15);
   --skills-color: #1e1a2c;
+  --resources-color: #1e1a2c;
   --button-icon: linear-gradient(to top, #8d5cff, #9a6ffd, #a680fb, #b192f8, #bca3f5);
   --button-fill: #fff;
-  --modal-color: #1e1a2c;
+  --modal-color: #2b263d;
   --accordion-text: #06b3ba;
   --accordion-line: rgba(255, 255, 255, 0.18);
-  --gridbox-1: transparent;
-  --gridbox-2: transparent;
-  --gridbox-3: transparent;
 
   --shadow-animation-1: rgba(255, 255, 255, 0.7);
   --shadow-animation-2: rgba(255, 255, 255, 0);
@@ -599,11 +595,7 @@ a {
 
 .icon-title img {
   width: 80px;
-  margin: 30px 0 5px 15px;
-  border-radius: 10px;
-  transition: all 0.3s linear;
-  padding: 15px 5px 15px 5px;
-  background: var(--button-main);
+  margin: 30px 0 5px 5px;
 }
 
 .grid-box span {
@@ -654,13 +646,10 @@ a {
 .sponsor__content {
   width: 95%;
   padding: 20px;
-  border: solid 1px transparent;
-  /* border-radius: 13px;
-  border-top: solid 13px var(--button-main); */
 }
 
 .sponsor__content:hover {
-  border:  solid 1px var(--button-main);
+  background: var(--resources-color);
   border-radius: 10px;
 }
 
@@ -831,6 +820,7 @@ a {
 
 .portfolio-category button:hover {
   border: 1px solid var(--button-main);
+  background: var(--resources-color);
 }
 
 .portfolio-category button.active {
@@ -1151,6 +1141,8 @@ a {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
+  border: none !important;
+  outline: none !important;
   font-size: 13px;
   font-weight: bold;
   color: white;
