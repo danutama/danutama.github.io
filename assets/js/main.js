@@ -111,7 +111,6 @@ let swiper = new Swiper('.contact-info', {
   centeredSlides: false,
   slidesPerView: '1',
   spaceBetween: 20,
-  freeMode: true,
   // autoplay: {
   //   delay: 2000,
   //   disableOnInteraction: false,
