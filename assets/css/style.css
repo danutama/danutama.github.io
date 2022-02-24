@@ -20,7 +20,7 @@ html {
   --h1: #000;
   --h2: #000;
   --social: #fff;
-  --background-nav: rgba(255, 255, 255, 0.7);
+  --background-nav: #fff;
   --background-credits: #261b3f;
   --about-color: #fff;
   --card-color: #fff;
@@ -51,7 +51,7 @@ body.dark-theme {
   --h1: #fff;
   --h2: #000;
   --social: #fff;
-  --background-nav: rgba(255, 255, 255, 0.1);
+  --background-nav: #1e1a2c;
   --background-credits: transparent;
   --about-color: #28262e;
   --card-color: rgb(12, 12, 15);
@@ -59,7 +59,7 @@ body.dark-theme {
   --resources-color: #1e1a2c;
   --button-icon: linear-gradient(to top, #8d5cff, #9a6ffd, #a680fb, #b192f8, #bca3f5);
   --button-fill: #fff;
-  --modal-color: #231f31;
+  --modal-color: #1e1b29;
   --accordion-text: #06b3ba;
   --accordion-line: rgba(255, 255, 255, 0.18);
 
@@ -116,91 +116,6 @@ a {
 .highlight {
   color: var(--blue);
 }
-
-/* ===== BACKGROUND ANIMATION ===== */
-.circles {
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-
-.circles li {
-  position: fixed;
-  display: block;
-  list-style: none;
-  width: 20px;
-  height: 20px;
-  background: rgba(177, 147, 226, 0.2);
-  animation: animate 25s linear infinite;
-  bottom: -150px;
-  z-index: 0;
-}
-
-.circles li:nth-child(1) {
-  left: 25%;
-  width: 30px;
-  height: 30px;
-  animation-delay: 0s;
-}
-
-.circles li:nth-child(2) {
-  left: 10%;
-  width: 20px;
-  height: 20px;
-  animation-delay: 2s;
-  animation-duration: 12s;
-}
-
-.circles li:nth-child(3) {
-  left: 70%;
-  width: 20px;
-  height: 20px;
-  animation-delay: 4s;
-}
-
-.circles li:nth-child(4) {
-  left: 40%;
-  width: 30px;
-  height: 30px;
-  animation-delay: 0s;
-  animation-duration: 18s;
-}
-
-.circles li:nth-child(5) {
-  left: 65%;
-  width: 20px;
-  height: 20px;
-  animation-delay: 0s;
-}
-
-.circles li:nth-child(6) {
-  left: 75%;
-  width: 50px;
-  height: 50px;
-  animation-delay: 3s;
-}
-
-.circles li:nth-child(7) {
-  left: 35%;
-  width: 15px;
-  height: 15px;
-  animation-delay: 7s;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-    border-radius: 20%;
-  }
-
-  100% {
-    transform: translateY(-1000px) rotate(720deg);
-    opacity: 0;
-    border-radius: 60%;
-  }
-}
-/* ===== BACKGROUND END ===== */
 
 /*========== PRELOADER ==========*/
 .preloader {
@@ -281,7 +196,7 @@ a {
 .nav-list a.active::before,
 .nav-list .active {
   color: var(--accordion-text);
-  width: 100%;
+  width: 60%;
 }
 
 .nav-list a::before {
@@ -320,7 +235,7 @@ a {
   }
 }
 
-.home .row .shape-01 {
+.home .row .shape:nth-child(1) {
   position: absolute;
   display: block;
   height: 20px;
@@ -333,7 +248,7 @@ a {
   z-index: 1;
 }
 
-.home .row .shape-02 {
+.home .row .shape:nth-child(2) {
   position: absolute;
   display: block;
   height: 30px;
@@ -501,6 +416,7 @@ a {
   border-radius: 12px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--skills-color);
 }
 
 .about-details {
@@ -707,10 +623,6 @@ a {
   margin-right: 50px;
 }
 
-.button-back i:hover {
-  color: var(--button-main-hover);
-}
-
 /* RESOURCES INDEX FILE*/
 .sponsor-container {
   width: 90%;
@@ -745,7 +657,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: var(--circle);
+  background: var(--skills-color);
   border: solid 2px var(--button-main);
   border-top: solid 12px var(--button-main);
   border-radius: 12px;
@@ -841,6 +753,7 @@ a {
 
 .portfolio-card.back-end .back-end-type {
   width: 100%;
+  background: none;
   border: none;
   box-shadow: none;
   transform: unset !important;
@@ -919,6 +832,7 @@ a {
   border-radius: 9px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--skills-color);
 }
 
 .portfolio-card .box .box-img {
@@ -996,7 +910,7 @@ a {
 
 .accordion .image-box {
   height: 360px;
-  width: 300px;
+  width: 360px;
 }
 
 .accordion .image-box img {
@@ -1019,10 +933,9 @@ a {
 }
 
 .accordion .accordion-text .faq-text {
-  margin-top: -30px;
-  height: 285px;
-  overflow-y: auto;
-  box-shadow: rgba(90, 90, 90, 0.3) 0px -50px 16px -48px inset;
+  margin-top: 30px;
+  height: 100%;
+  /* box-shadow: rgba(90, 90, 90, 0.3) 0px -50px 16px -48px inset; */
   border-radius: 0 0 8px 8px;
   padding: 0 10px 30px 10px;
 }
