@@ -42,17 +42,20 @@
     </div>
     <!-- Preloader End  -->
 
+    <!-- Theme change button -->
+    <div class="dark" id="dark">
+      <span class="change-theme-name"></span>
+      <i class="bx bxs-moon change-theme" id="theme-button"></i>
+    </div>
+    
     <!-- Move to up button -->
     <div class="scroll-button">
       <a href="#" class="top-button"><i class="fa fa-arrow-up"></i></a>
     </div>
 
     <nav class="navbar container" id="navbar">
-      
-      <!-- Theme change button -->
-      <div class="dark" id="dark">
-        <span class="change-theme-name"></span>
-        <i class="bx bxs-moon change-theme" id="theme-button"></i>
+      <div class="logo">
+        <img src="img/my-logo.png" alt="logo_Danu"/>
       </div>
       
       <div class="nav-list" id="">
@@ -361,12 +364,12 @@
 
     <!-- ACCORDION FAQ -->
     <section class="accordion-container" id="faq">
+      <!-- <div class="title">Frequently Asked Questions</div> -->
       <div class="accordion">
         <div class="image-box">
           <img src="img/business-3d-answer.png" alt="">
         </div>
         <div class="accordion-text">
-          <!-- <div class="title">Frequently Asked Questions</div> -->
           <ul class="faq-text">
             <li>
               <div class="question-arrow">
@@ -491,17 +494,6 @@
           $(this).addClass('active');
         });
       });
-
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("dark").style.top = "36%";
-        } else {
-          document.getElementById("dark").style.top = "-200px";
-        }
-        prevScrollpos = currentScrollPos;
-      }
 
       $(window).on('load', function () {
         $('.preloader').addClass('loaded');

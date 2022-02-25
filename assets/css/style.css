@@ -51,12 +51,12 @@ body.dark-theme {
   --h1: #fff;
   --h2: #000;
   --social: #fff;
-  --background-nav: #1e1a2c;
+  --background-nav: #27223a;
   --background-credits: transparent;
   --about-color: #28262e;
   --card-color: rgb(12, 12, 15);
-  --skills-color: #1e1a2c;
-  --resources-color: #1e1a2c;
+  --skills-color: #27223a;
+  --resources-color: #27223a;
   --button-icon: linear-gradient(to top, #8d5cff, #9a6ffd, #a680fb, #b192f8, #bca3f5);
   --button-fill: #fff;
   --modal-color: #1e1b29;
@@ -149,7 +149,54 @@ a {
 }
 /*===== END =====*/
 
-/* Change Background Navbar */
+/*========== Button Dark/Light Mode ==========*/
+.dark {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--button-main);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  bottom: 130px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.change-theme {
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.7rem;
+  margin: 20px 5px;
+}
+
+/*========== Scroll To Top Button ==========*/
+.top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  background: var(--button-main);
+  border-radius: 30px;
+  z-index: 999;
+}
+
+.top-button:hover {
+  background: var(--button-main-hover);
+  color: var(--white);
+}
+
+.scroll-button a {
+  color: var(--white);
+  font-size: 20px;
+}
+
+/*=== Change Background Navbar ===*/
 .scroll-header {
   background: var(--circle);
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
@@ -178,7 +225,7 @@ a {
 }
 
 .nav-list ul li {
-  margin: 0 20px;
+  margin: 0 15px;
   font-size: 18px;
 }
 
@@ -209,6 +256,11 @@ a {
   background: var(--accordion-text);
   transition: all 0.1s ease;
   border-radius: 50px;
+}
+
+.navbar img {
+  width: 100px;
+  margin: 5px 0 0 3.5rem;
 }
 
 /*=== MOBILE NAV ICON ===*/
@@ -269,8 +321,12 @@ a {
   padding-bottom: 50px;
 }
 
+.col-1 h1 {
+  color: var(--grey);
+}
+
 .highlight-name {
-  color: var(--green);
+  color: var(--h1);
   font-size: 80px;
   font-weight: 700;
   margin-top: 20px;
@@ -356,25 +412,6 @@ a {
   animation: none;
 }
 
-/*========== Button Dark/Light Mode ==========*/
-.dark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--button-main);
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  margin: 5px 0 5px 3.5rem;
-}
-
-.change-theme {
-  color: var(--white);
-  cursor: pointer;
-  font-size: 1.7rem;
-  margin: 20px 5px;
-}
-
 .quote {
   position: relative;
   display: flex;
@@ -401,7 +438,7 @@ a {
 .bell-quote {
   position: absolute;
   color: #ffe600;
-  font-size: 100px;
+  font-size: 80px;
   bottom: 75%;
   right: 90%;
 }
@@ -658,7 +695,6 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: var(--skills-color);
   border: solid 2px var(--button-main);
   border-top: solid 12px var(--button-main);
   border-radius: 12px;
@@ -924,13 +960,12 @@ a {
   width: 60%;
 }
 
-.accordion .accordion-text .title {
+/* .accordion-container .title {
   font-size: 20px;
   font-weight: bold;
-  color: var(--accordion-text);
-  display: flex;
-  padding-left: 10px;
-}
+  color: var(--h1);
+  margin-bottom: 3rem;
+} */
 
 .accordion .accordion-text .faq-text {
   margin-top: 30px;
@@ -1057,10 +1092,14 @@ a {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 13px;
-  font-weight: bold;
+  background: var(--button-main);
   color: white;
-  padding-bottom: 50px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 100%;
+  width: 15px;
+  padding: 8px;
+  margin-top: -55px;
 }
 
 .contact-info .info-item {
@@ -1134,31 +1173,6 @@ a {
   color: var(--button-main);
   background: var(--social);
   border: 2px solid var(--social);
-}
-
-/*========== Scroll To Top Button ==========*/
-.top-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 60px;
-  right: 20px;
-  height: 40px;
-  width: 40px;
-  background: var(--green);
-  border-radius: 30px;
-  z-index: 999;
-}
-
-.top-button:hover {
-  background: var(--button-main);
-  color: var(--white);
-}
-
-.scroll-button a {
-  color: var(--white);
-  font-size: 20px;
 }
 
 /*========== Modal Contact Mobile Version ==========*/

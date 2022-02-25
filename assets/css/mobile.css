@@ -10,10 +10,6 @@
 }
 
 @media (max-width: 1120px) {
-  .photo {
-    margin-right: 20px;
-  }
-
   .about .about-details {
     justify-content: center;
     flex-direction: column;
@@ -125,7 +121,7 @@
     margin-right: 10px;
   }
 
-  .navbar .dark {
+  .navbar img {
     margin-left: 1.5rem;
   }
 
@@ -170,11 +166,6 @@
   .accordion .accordion-text {
     width: 100%;
     margin-top: 30px;
-  }
-
-  .accordion .accordion-text .title {
-    display: block;
-    padding: 0;
   }
 }
 
@@ -361,16 +352,15 @@
   .nav-list ul {
     margin: unset !important;
   }
+  
+  .navbar img {
+    display: none;
+  }
   /*===== navbar end =====*/
 
   /*===== Button Dark/Light Mode (new verion) =====*/
   .dark {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+    position: absolute;
     right: 0;
     bottom: 55%;
     border-radius: 20px 0 0 20px;
@@ -518,10 +508,7 @@
     margin-bottom: 40px;
   }
 
-  .portfolio-card .box h2 {
-    font-size: 15px;
-  }
-
+  .portfolio-card .box h2,
   .portfolio-card .box h3 {
     font-size: 14px;
   }
@@ -532,12 +519,12 @@
 
   .accordion-text li .question-arrow .question {
     width: 95%;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .accordion-text li p {
     width: 87%;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .dark .change-theme,
