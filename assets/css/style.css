@@ -197,17 +197,19 @@ a {
 }
 
 /*=== Change Background Navbar ===*/
-.scroll-header {
+/* .scroll-header {
   background: var(--circle);
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
   transition: 0.1s ease;
-}
+} */
 
 /*========== NAVBAR SECTION ==========*/
 .navbar.container {
   margin-top: 0;
   position: fixed;
   z-index: 1000;
+  background: var(--circle);
+  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
 }
 
 .navbar {
@@ -886,7 +888,7 @@ a {
 .portfolio-card .box h2 {
   padding: 0 10px 0 10px;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: bold;
   color: var(--h1);
   margin: 10px 0;
   display: flex;
@@ -999,7 +1001,7 @@ a {
 
 .accordion-text li .question-arrow .arrow {
   font-size: 20px;
-  color: #595959;
+  color: var(--grey);
   transition: all 0.1s ease;
 }
 
@@ -1018,7 +1020,7 @@ a {
 
 .accordion-text li .line {
   display: block;
-  height: 2px;
+  height: 1px;
   width: 100%;
   margin: 10px 0;
   background: var(--accordion-line);
@@ -1088,6 +1090,7 @@ a {
   cursor: default !important;
   border: none !important;
   outline: none !important;
+  margin-top: -50px;
 }
 
 .swiper-button-next::after,
@@ -1096,10 +1099,9 @@ a {
   color: white;
   font-size: 10px;
   font-weight: bold;
-  border-radius: 100%;
+  border-radius: 8px;
   width: 15px;
-  padding: 9px 6px 9px 6px;
-  margin-top: -55px;
+  padding: 9px;
 }
 
 .contact-info .info-item {

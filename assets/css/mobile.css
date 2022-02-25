@@ -292,9 +292,13 @@
     transition: none !important;
   }
 
+  .nav-list ul li {
+    margin: 0 20px;
+  }
+
   .nav-list .fi {
     font-size: 1.3rem;
-    margin: 1px auto;
+    margin: 2px auto;
     padding-top: 3px;
     justify-content: space-between;
     align-items: center;
