@@ -51,12 +51,12 @@ body.dark-theme {
   --h1: #fff;
   --h2: #000;
   --social: #fff;
-  --background-nav: #27223a;
+  --background-nav: #1e1a2c;
   --background-credits: transparent;
   --about-color: #28262e;
   --card-color: rgb(12, 12, 15);
-  --skills-color: #27223a;
-  --resources-color: #27223a;
+  --skills-color: #1e1a2c;
+  --resources-color: #1e1a2c;
   --button-icon: linear-gradient(to top, #8d5cff, #9a6ffd, #a680fb, #b192f8, #bca3f5);
   --button-fill: #fff;
   --modal-color: #1e1b29;
@@ -1098,7 +1098,7 @@ a {
   font-weight: bold;
   border-radius: 100%;
   width: 15px;
-  padding: 8px;
+  padding: 8px 6px 8px 6px;
   margin-top: -55px;
 }
 
