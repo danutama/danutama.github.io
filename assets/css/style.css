@@ -470,6 +470,7 @@ a {
   object-fit: contain;
   border-radius: 10px;
   /* margin: 70px 0 0 50px; */
+  margin-left: 50px;
 }
 
 .about-details .right {
@@ -1091,7 +1092,7 @@ a {
   cursor: default !important;
   border: none !important;
   outline: none !important;
-  margin-top: -45px;
+  margin-top: -47px;
 }
 
 .swiper-button-next::after,
