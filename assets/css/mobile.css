@@ -117,11 +117,18 @@
 }
 
 @media (max-width: 800px) {
+  .dark .change-theme,
+  .about-details .btn-link,
+  .accordion-text li .question-arrow .arrow,
+  a {
+    cursor: default;
+  }
+
   .nav-list ul {
     margin-right: 10px;
   }
 
-  .navbar img {
+  .navbar .logo img {
     margin-left: 1.5rem;
   }
 
@@ -357,7 +364,7 @@
     margin: unset !important;
   }
   
-  .navbar img {
+  .navbar .logo img {
     display: none;
   }
   /*===== navbar end =====*/
@@ -535,17 +542,6 @@
   .accordion-text li p {
     width: 87%;
     font-size: 14px;
-  }
-
-  .dark .change-theme,
-  .about-details .btn-link,
-  .accordion-text li .question-arrow .arrow,
-  .sponsor__content h2 a,
-  .ctn-title .highlight a,
-  .portfolio-card .box h2 a,
-  .portfolio-card .box .btn,
-  .contact-info .info-item a {
-    cursor: default;
   }
   
   .credits.container {
