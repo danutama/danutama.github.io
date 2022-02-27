@@ -623,13 +623,13 @@
     width: 70%;
   }
 
-  .tele {
+  /* .tele {
     padding-top: 10px;
-  }
+  } */
 
   .tele a {
     display: inline-block;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     border: none !important;
     width: 70%;
   }
