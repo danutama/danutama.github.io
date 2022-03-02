@@ -13,6 +13,7 @@
   .about .about-details {
     justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
 
   .about .about-details .left img {
@@ -106,9 +107,12 @@
 }
 
 @media (max-width: 900px) {
-  .about .right .topic,
-  .about-details .right p {
+  .about-details {
     text-align: center;
+  }
+
+  .about .right {
+    margin-top: 30px;
   }
 
   .skills .grid-wrapper {
@@ -456,7 +460,6 @@
     width: 100%;
     line-height: 25px;
     padding: 0;
-    margin-top: 30px;
   }
 
   .about .about-details .left img {
@@ -471,7 +474,6 @@
 
   .about.container .content {
     padding-bottom: 0px;
-    display: grid;
     justify-content: space-evenly;
     align-items: center;
   }
@@ -602,6 +604,12 @@
     -webkit-transform: scale(0.97); /* support Safari */
   }
 
+  iframe {
+    cursor: default !important;
+    margin: 25px 0 10px 0;
+    border-radius: 10px;
+  }
+
   .modal__button a {
     display: inline-block;
     background: var(--button-main);
@@ -674,7 +682,7 @@
     font-size: 2rem;
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 1.5rem;
   }
 
   /* === Show modal === */
