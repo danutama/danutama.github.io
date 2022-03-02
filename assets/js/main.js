@@ -41,6 +41,21 @@ const showModal = (openButton, modalContent, body) => {
 };
 showModal('contact', 'modal-container', 'body');
 
+// SWIPE UP-DOWN FUNCTIONALITY
+const modal = document.querySelector('.modal__container');
+const modalContent = modal.querySelector('.modal__content');
+
+function onDrag({movementY}) {
+  let getStyle = window.getComputedStyle(modalContent);
+  let top = parseInt(getStyle.top);
+  modalContent.style.top = `${top + movementY}px`;
+}
+
+modal.addEventListener('mousedown', ()=> {
+  modal.addEventListener('mousemove', onDrag);
+})
+// END OF SWIPE UP-DOWN FUNCTIONALITY
+
 /*===== CLOSE MODAL =====*/
 const closeBtn = document.querySelectorAll('.close-modal');
 
