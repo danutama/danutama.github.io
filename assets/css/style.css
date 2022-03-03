@@ -145,7 +145,7 @@ a {
   border-right: 3px solid rgb(194, 194, 194);
   border-bottom: 3px solid rgb(194, 194, 194);
   border-radius: 50%;
-  animation: ani01 1s linear infinite;
+  animation: ani01 0.7s linear infinite;
 }
 /*===== END =====*/
 
