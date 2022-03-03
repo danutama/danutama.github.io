@@ -122,10 +122,10 @@
 
 @media (max-width: 800px) {
   .dark .change-theme,
-  .about-details .btn-link,
+  .about-details .btn-read,
   .accordion-text li .question-arrow .arrow,
   a {
-    cursor: default;
+    cursor: default !important;
   }
 
   .nav-list ul {

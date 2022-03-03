@@ -127,8 +127,8 @@ let swiper = new Swiper('.contact-info', {
     },
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   pagination: {
     el: '.swiper-pagination',
@@ -177,3 +177,17 @@ const toggleItem = (item) => {
   }
 };
 // ====== ACCORDION END ====== //
+
+// ========== MULTIPLE READ-MORE BUTTON ========== //
+$(document).ready(function () {
+  $('.btn-read').click(function () {
+    $(this).prev().toggle();
+    $(this).siblings('.dots').toggle();
+    if ($(this).text() == '(read more)') {
+      $(this).text('close');
+    } else {
+      $(this).text('(read more)');
+    }
+  });
+});
+// ====== END ====== //

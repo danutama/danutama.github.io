@@ -491,12 +491,16 @@ a {
   margin-bottom: 30px;
 }
 
-.about-details .btn-link {
+.about-details .right .more-text {
+  display: none;
+}
+
+.about-details .btn-read {
   color: var(--green);
   cursor: pointer;
 }
 
-.about-details .btn-link:hover {
+.about-details .btn-read:hover {
   text-decoration: underline;
 }
 
