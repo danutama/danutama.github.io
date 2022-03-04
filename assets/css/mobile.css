@@ -535,7 +535,7 @@
   }
 
   .portfolio-card .porto-modal-content {
-    width: 90%;
+    width: 80%;
   }
 
   .accordion {
@@ -658,7 +658,7 @@
     z-index: var(--z-modal);
     visibility: hidden;
     opacity: 0;
-    background: rgba(17, 17, 17, 0.7);
+    background: rgba(17, 17, 17, 0.8);
     transition: all 0.3s;
     bottom: 0;
     top: 0;

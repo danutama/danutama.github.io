@@ -965,7 +965,7 @@ a {
   position: fixed;
   inset: 0;
   width: 100%;
-  background-color: rgba(17, 17, 17, 0.7);
+  background-color: rgba(17, 17, 17, 0.9);
   display: grid;
   place-items: center;
   visibility: hidden;
@@ -988,14 +988,14 @@ a {
 }
 
 .porto-modal-title {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 18px !important;
+  font-weight: bold !important;
   color: var(--h1);
   margin-bottom: 1rem;
 }
 
 .porto-modal-description {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 2rem;
 }
 
@@ -1374,7 +1374,7 @@ iframe {
   z-index: var(--z-modal);
   visibility: hidden;
   opacity: 0;
-  background: rgba(17, 17, 17, 0.7);
+  background: rgba(17, 17, 17, 0.8);
   transition: all 0.3s;
   bottom: 0;
   top: 0;
