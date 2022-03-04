@@ -123,6 +123,7 @@
 @media (max-width: 800px) {
   .dark .change-theme,
   .about-details .btn-read,
+  .porto-modal-btn,
   .accordion-text li .question-arrow .arrow,
   a {
     cursor: default !important;
@@ -201,6 +202,7 @@
     width: 180px;
   }
 
+  .porto-modal-btn,
   .portfolio-card .box .btn {
     font-size: 14px;
   }
@@ -530,6 +532,10 @@
   .portfolio-card .box h2,
   .portfolio-card .box h3 {
     font-size: 14px;
+  }
+
+  .portfolio-card .porto-modal-content {
+    width: 90%;
   }
 
   .accordion {

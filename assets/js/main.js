@@ -88,7 +88,7 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
 
-// === Portfolio Category === //
+// ========= PORTFOLIO CATEGORY ========== //
 let portfolioMenuList = document.querySelector('.portfolio-card');
 
 let portfolioCategory = document.querySelector('.portfolio-category');
@@ -103,6 +103,39 @@ Array.from(categories).forEach((item, index) => {
     portfolioMenuList.classList = 'portfolio-card ' + e.target.getAttribute('data-portfolio-type');
   };
 });
+
+// ========== PORTFOLIO MODAL ========== //
+const portoViews = document.querySelectorAll('.porto-modal');
+const portoBtn = document.querySelectorAll('.porto-modal-btn');
+const portoClose = document.querySelectorAll('.porto-modal-close');
+
+let modal = function (modalClick) {
+  portoViews[modalClick].classList.add('active-modal');
+};
+
+portoBtn.forEach((pb, i) => {
+  pb.addEventListener('click', () => {
+    modal(i);
+  });
+});
+
+portoClose.forEach((pc) => {
+  pc.addEventListener('click', () => {
+    portoViews.forEach((pv) => {
+      pv.classList.remove('active-modal');
+    });
+  });
+});
+
+// Remove porto-modal when user clicking outside of it
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('active-modal')) {
+    portoViews.forEach((pv) => {
+      pv.classList.remove('active-modal');
+    });
+  }
+});
+// ====== END ====== //
 
 // === INITIALIZE SWIPER CONTACT === //
 let swiper = new Swiper('.contact-info', {
