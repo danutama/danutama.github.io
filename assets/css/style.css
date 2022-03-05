@@ -927,6 +927,10 @@ a {
 }
 
 /* PORTFOLIO MODAL CONTENT */
+html.active-modal {
+  overflow: hidden;
+}
+
 .porto-modal.active-modal {
   opacity: 1;
   visibility: visible;
@@ -980,6 +984,8 @@ a {
   background-color: var(--modal-color);
   padding: 4.5rem 1.5rem 2.5rem;
   border-radius: 10px;
+  border: solid 1px var(--grey);
+  overflow: auto;
 }
 
 .porto-modal-title,

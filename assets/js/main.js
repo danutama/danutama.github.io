@@ -108,9 +108,11 @@ Array.from(categories).forEach((item, index) => {
 const portoViews = document.querySelectorAll('.porto-modal');
 const portoBtn = document.querySelectorAll('.porto-modal-btn');
 const portoClose = document.querySelectorAll('.porto-modal-close');
+const pageBody = document.getElementById('body');
 
 let modal = function (modalClick) {
   portoViews[modalClick].classList.add('active-modal');
+  pageBody.classList.add('active-modal');
 };
 
 portoBtn.forEach((pb, i) => {
@@ -123,6 +125,7 @@ portoClose.forEach((pc) => {
   pc.addEventListener('click', () => {
     portoViews.forEach((pv) => {
       pv.classList.remove('active-modal');
+      pageBody.classList.remove('active-modal');
     });
   });
 });
@@ -132,6 +135,7 @@ document.addEventListener('click', (e) => {
   if (e.target.classList.contains('active-modal')) {
     portoViews.forEach((pv) => {
       pv.classList.remove('active-modal');
+      pageBody.classList.remove('active-modal');
     });
   }
 });
