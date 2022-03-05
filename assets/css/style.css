@@ -932,8 +932,8 @@ html.active-modal {
 }
 
 .porto-modal.active-modal {
-  opacity: 1;
-  visibility: visible;
+  display: flex;
+  justify-content: center;
 }
 
 .porto-modal-btn {
@@ -972,8 +972,7 @@ html.active-modal {
   background-color: rgba(17, 17, 17, 0.9);
   display: grid;
   place-items: center;
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   transition: .2s;
   z-index: var(--z-modal);
 }
