@@ -13,6 +13,9 @@
 
     <title>Danu Pratama | Front-end Developer</title>
 
+    <!-- AOS Scroll Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- SWIPER.JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -102,7 +105,7 @@
     <section class="home container" id="home">
       <div class="row hero">
         <div class="shape"></div>
-        <div class="col col-1">
+        <div class="col col-1" data-aos="fade-right" data-aos-duration="1000">
 
           <h1>Hi, <span id="greating">...</span></h1>
           <span class="highlight-name">I am Danu</span>
@@ -172,7 +175,7 @@
         </div>
         
         <div class="col col-2">
-          <div class="hero-img">
+          <div class="hero-img" data-aos="fade-left" data-aos-duration="1000">
             <img src="img/casual-life-3d-24.png" alt="Front-end-Img" />
           </div>
           <div class="shape"></div>
@@ -180,16 +183,16 @@
       </div>
     </section>
     <svg id="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8d5cff" fill-opacity="1" d="M0,0L60,37.3C120,75,240,149,360,176C480,203,600,181,720,149.3C840,117,960,75,1080,90.7C1200,107,1320,181,1380,218.7L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    <div class="quote" translate="no"><i class="bx bxs-quote-left bell-quote"></i><p>It's really clear that the most precious resource we all have is Time.<br><br>-Steve Jobs-</p></div>
+    <div class="quote" translate="no" data-aos="zoom-in-down" data-aos-duration="1000"><i class="bx bxs-quote-left bell-quote"></i><p>It's really clear that the most precious resource we all have is Time.<br><br>-Steve Jobs-</p></div>
 
     <!-- About Section Start -->
     <section class="about container" id="about">
       <div class="content">
         <div class="about-details">
-          <div class="left">
+          <div class="left" data-aos="fade-right" data-aos-duration="1000">
             <img src="./img/danu.jpg" alt="" />
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-left" data-aos-duration="1000">
             <div class="topic">Who Am I?</div>
 
             <p class="text">
@@ -208,12 +211,12 @@
 
     <!-- Skills -->
     <section class="skills container" id="skills">
-      <div class="title">
+      <div class="title" data-aos="fade-left" data-aos-duration="1000">
         <h3 translate="no">- SKILLS -</h3>
         <h1 translate="no">Junior Front-end</h1>
         <h4 translate="no">Web Development</h4>
       </div>
-      <div class="grid-wrapper">
+      <div class="grid-wrapper" data-aos="fade-right" data-aos-duration="1000">
         <div class="grid-box">
           <div class="icon-title">
             <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzhkNWNmZiI+PHBhdGggZD0iTTE0Mi4xNTA4MywxNC4zMzMzM2gtMTEyLjMxNmMtNC40NTA1LDAgLTcuOTEyLDMuODcgLTcuNDE3NSw4LjI4NDY3bDEyLjg1NywxMTUuNzM0NWMwLjMzNjgzLDMuMDEgMi40NTgxNyw1LjUxODMzIDUuMzY3ODMsNi4zNDk2N2w0My4zMDEsMTIuMzY5NjdjMS4zNDAxNywwLjM3OTgzIDIuNzU5MTcsMC4zNzk4MyA0LjA5OTMzLDBsNDMuMzAxLC0xMi4zNjk2N2MyLjkwOTY3LC0wLjgzMTMzIDUuMDMxLC0zLjMzOTY3IDUuMzY3ODMsLTYuMzQ5NjdsMTIuODU3LC0xMTUuNzM0NWMwLjQ5NDUsLTQuNDE0NjcgLTIuOTY3LC04LjI4NDY3IC03LjQxNzUsLTguMjg0Njd6TTExNC4yODY4Myw1Ny4zMzMzM2gtNDguMjE3MzNsMS40NDA1LDE2LjU1NWw0My41NTE4MywtMC4xNDMzM2MwLjAwNzE3LDAgMC4wMTQzMywwIDAuMDIxNSwwYzEuOTk5NSwwIDMuOTA1ODMsMC44Mzg1IDUuMjYwMzMsMi4zMDc2N2MxLjM2MTY3LDEuNDc2MzMgMi4wNDI1LDMuNDU0MzMgMS44Nzc2Nyw1LjQ1MzgzbC0yLjc0NDgzLDMzLjAzMTE3Yy0wLjI0MzY3LDIuOTgxMzMgLTIuMzE0ODMsNS40OTY4MyAtNS4yMDMsNi4zMDY2N2wtMjIuMzM4NSw2LjI4NTE3Yy0wLjYzMDY3LDAuMTcyIC0xLjI5LDAuMjY1MTcgLTEuOTQyMTcsMC4yNjUxN2MtMC42NzM2NywwIC0xLjM0NzMzLC0wLjA5MzE3IC0xLjk4NTE3LC0wLjI3OTVsLTIyLjE1MjE3LC02LjQwN2MtMi44MjM2NywtMC44MTcgLTQuODU5LC0zLjI2MDgzIC01LjE0NTY3LC02LjE3NzY3bC0wLjU2NjE3LC01LjcxOWMtMC4zOTQxNywtMy45NDE2NyAyLjQ4NjgzLC03LjQ0NjE3IDYuNDIxMzMsLTcuODQwMzNjMy44NzcxNywtMC4zMjI1IDcuNDUzMzMsMi40OTQgNy44NDAzMyw2LjQyMTMzbDAuMDkzMTcsMC44ODg2N2wxNS41MjMsNC40ODYzM2wxNS41ODAzMywtNC4zNzg4M2wxLjY4NDE3LC0yMC4yOTZsLTQyLjMyNjMzLDAuMTM2MTdjLTAuMDA3MTcsMCAtMC4wMTQzMywwIC0wLjAyMTUsMGMtMy43MTk1LDAgLTYuODE1NSwtMi44MzggLTcuMTM4LC02LjU0MzE3bC0yLjY4NzUsLTMwLjg5NTVjLTAuMTc5MTcsLTEuOTk5NSAwLjQ5NDUsLTMuOTg0NjcgMS44NTYxNywtNS40NjgxN2MxLjM2MTY3LC0xLjQ4MzUgMy4yNzUxNywtMi4zMjIgNS4yODE4MywtMi4zMjJoNTYuMDM2MTdjMy45NjMxNywwIDcuMTY2NjcsMy4yMTA2NyA3LjE2NjY3LDcuMTY2NjdjMCwzLjk1NiAtMy4yMDM1LDcuMTY2NjcgLTcuMTY2NjcsNy4xNjY2N3oiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="/>
@@ -239,7 +242,7 @@
     </section>
 
     <!-- RESOURCES -->
-    <section class="sponsor section">
+    <section class="sponsor section" data-aos="zoom-in-down" data-aos-duration="1000">
       <div class="sponsor-container container grid">
           <div class="dot"></div>
           <div class="dot"></div>
@@ -254,7 +257,7 @@
 
     <!-- PORTFOLIO -->
     <section class="portfolio container" id="portfolio">
-      <div class="title">
+      <div class="title" data-aos="fade-left" data-aos-duration="1000">
         <h3 translate="no">- PORTFOLIO -</h3>
         <div class="ctn-title">
           <h1 translate="no">My Personal Project</h1>
@@ -267,7 +270,7 @@
         </div>
       </div>
 
-      <div class="portfolio-category">
+      <div class="portfolio-category" data-aos="fade-right" data-aos-duration="1000">
         <div class="first-btn">
           <button translate="no" class="active" data-portfolio-type="front-end">
                 Front-end
@@ -281,7 +284,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card front-end">
+      <div class="portfolio-card front-end" data-aos="fade-up" data-aos-duration="1000">
 
         <div class="box front-end-type">
           <div class="box-img">
@@ -652,7 +655,7 @@
     </section>
 
     <!-- ACCORDION FAQ -->
-    <section class="accordion-container" id="faq">
+    <section class="accordion-container" id="faq" data-aos="zoom-in" data-aos-duration="1000">
       <!-- <div class="title">Frequently Asked Questions</div> -->
       <div class="accordion">
         <div class="image-box">
@@ -718,7 +721,7 @@
         <h1>Contact Me</h1>
       </div> -->
 
-      <div class="contact-info swiper mySwiper">
+      <div class="contact-info swiper mySwiper" data-aos="fade-up" data-aos-duration="2000">
         <div class="swiper-wrapper">
           <!-- info item start -->
           <div class="info-item swiper-slide">
@@ -743,7 +746,7 @@
         <div class="swiper-pagination"></div>
       </div>
 
-      <div class="social">
+      <div class="social" data-aos="fade-down" data-aos-duration="2000">
         <a href="https://instagram.com/danuapratama/" title="Follow my Instagram" target="_blank" class="social-icon">
           <i class="bx bxl-instagram-alt"></i>
         </a>
@@ -763,6 +766,7 @@
     </section>
 
     <!--=============== MAIN JS ===============-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -783,6 +787,8 @@
           $(this).addClass('active');
         });
       });
+
+      AOS.init(); // AOS Scroll Animation //
 
       $(window).on('load', function () {
         $('.preloader').addClass('loaded');
