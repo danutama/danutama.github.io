@@ -605,6 +605,7 @@
 
   .modal__button-main:hover {
     animation: none;
+    transition: all 0.3s ease;
     transform: scale(0.97);
     -ms-transform: scale(0.97); /* Support IE 9 */
     -webkit-transform: scale(0.97); /* support Safari */
