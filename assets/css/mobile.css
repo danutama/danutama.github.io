@@ -682,12 +682,10 @@
 
   .modal__close {
     display: inline-flex;
-    background-color: var(--modal-color);
-    border-radius: 0.25rem;
     color: var(--grey);
     font-size: 2rem;
     position: absolute;
-    top: 2rem;
+    top: 1.5rem;
     right: 1.5rem;
   }
 

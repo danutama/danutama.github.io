@@ -220,10 +220,10 @@ $(document).ready(function () {
   $('.btn-read').click(function () {
     $(this).prev().toggle();
     $(this).siblings('.dots').toggle();
-    if ($(this).text() == '(read more)') {
+    if ($(this).text() == 'read more') {
       $(this).text('close');
     } else {
-      $(this).text('(read more)');
+      $(this).text('read more');
     }
   });
 });

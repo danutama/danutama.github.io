@@ -971,7 +971,7 @@ html.active-modal {
   position: fixed;
   inset: 0;
   width: 100%;
-  background-color: rgba(17, 17, 17, 0.9);
+  background-color: rgba(14, 14, 14, 0.9);
   display: grid;
   place-items: center;
   visibility: hidden;
@@ -1411,7 +1411,7 @@ iframe {
   border-radius: 0.25rem;
   font-size: 2rem;
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   right: 1.5rem;
 }
 
