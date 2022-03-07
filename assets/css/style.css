@@ -98,6 +98,7 @@ a {
 }
 
 .container {
+  max-width: 90rem;
   width: 90%;
   margin: 60px auto;
   padding-top: 4rem;
@@ -156,12 +157,16 @@ a {
   align-items: center;
   justify-content: center;
   background: var(--button-main);
-  border-radius: 50%;
-  width: 40px;
+  border-radius: 50px 0 0 50px;
+  width: 50px;
   height: 40px;
-  bottom: 130px;
-  right: 20px;
+  bottom: 85%;
+  right: 0;
   z-index: 1000;
+
+  -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+  -moz-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
+  box-shadow: inset 1px 2px 6px rgba(255, 255, 255, 0.2), inset -1px -3px 9px rgba(0, 0, 0, 0.3), 0 0.15rem 0.15rem 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 .change-theme {
@@ -205,6 +210,7 @@ a {
 
 /*========== NAVBAR SECTION ==========*/
 .navbar.container {
+  max-width: 100%;
   margin-top: 0;
   position: fixed;
   z-index: 1000;
@@ -580,7 +586,7 @@ a {
 
 .skills .grid-box:hover {
   background: var(--skills-color);
-  transform: translateY(-0.02in);
+  /* transform: translateY(-0.02in); */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border-radius: 12px;
 }
@@ -1149,6 +1155,7 @@ html.active-modal {
 /* Contact Desktop Version*/
 /* ========== CREDITS / COPYRIGHT ==========*/
 .credits.container {
+  max-width: 100%;
   width: 100%;
   padding-top: 20px;
   background: var(--background-credits);
@@ -1194,6 +1201,7 @@ html.active-modal {
 
 .swiper-button-next,
 .swiper-button-prev {
+  position: absolute;
   cursor: default !important;
   border: none !important;
   outline: none !important;
