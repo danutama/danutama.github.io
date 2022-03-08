@@ -976,7 +976,6 @@ html.active-modal {
   place-items: center;
   visibility: hidden;
   opacity: 0;
-  transition: .2s;
   z-index: var(--z-modal);
 }
 

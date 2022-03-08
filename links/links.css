@@ -15,12 +15,12 @@
   content: attr(data-badge);
   position: absolute;
   top: -1px;
-  right: 3.5px;
+  right: 1px;
   font-size: 0.7rem;
   background: #f50e0a;
   color: white;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   text-align: center;
   line-height: 18px;
   border-radius: 50%;
