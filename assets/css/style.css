@@ -1134,6 +1134,9 @@ html.active-modal {
   height: 1px;
   width: 100%;
   margin: 10px 0;
+}
+
+.accordion-text li.showAnswer .line {
   background: var(--accordion-line);
 }
 
@@ -1142,12 +1145,15 @@ html.active-modal {
   font-size: 16px;
   font-weight: 500;
   color: var(--h1);
-  padding: 0 0 10px 0;
-  display: none;
+  padding: 0;
+  max-height: 0;
+  visibility: hidden;
 }
 
 .accordion-text li.showAnswer p {
-  display: block;
+  padding: 0 0 10px 0;
+  max-height: 300px;
+  visibility: visible;
 }
 /*========== END ==========*/
 
