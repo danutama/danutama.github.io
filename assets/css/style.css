@@ -909,7 +909,7 @@ a {
 .portfolio-card .box h2 a {
   color: var(--grey);
   margin-top: 3px;
-  display: none;
+  visibility: hidden;
 }
 
 .portfolio-card .box h2 a:hover {
@@ -979,9 +979,9 @@ html.active-modal {
 
 .porto-modal-content .btn-repo {
   padding: 14px 0 14px 0;
-  color: var(--button-main);
+  color: var(--button-fill);
   background: none;
-  border: solid 1px var(--button-main);
+  border: solid 1px var(--button-fill);
   margin-top: 15px;
 }
 
@@ -989,7 +989,7 @@ html.active-modal {
   position: fixed;
   inset: 0;
   width: 100%;
-  min-height: 70vh;
+  min-height: 90vh;
   background-color: rgba(14, 14, 14, 0.9);
   display: grid;
   place-items: center;
@@ -1005,7 +1005,7 @@ html.active-modal {
   background-color: var(--modal-color);
   padding: 4rem 1.5rem 1.5rem;
   border-radius: 10px;
-  border: solid 1px var(--grey);
+  border: solid 1px var(--white);
   overflow: auto;
 }
 
