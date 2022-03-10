@@ -121,13 +121,13 @@ a {
 /*========== SCROLL BAR CUSTOM ==========*/
 ::-webkit-scrollbar {
   padding: 50px;
-  background-color: rgb(236, 236, 236);
+  background: var(--circle);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--button-main);
   border-radius: 30px;
-  border: 3px solid rgb(236, 236, 236);
+  border: 3px solid var(--circle);
 }
 /*========== END ==========*/
 
@@ -640,7 +640,7 @@ a {
   font-size: 15px;
 }
 
-.sponsor__content h2 a:hover {
+.sponsor__content:hover h2 a {
   color: var(--button-fill);
 }
 
@@ -909,6 +909,7 @@ a {
 .portfolio-card .box h2 a {
   color: var(--grey);
   margin-top: 3px;
+  display: none;
 }
 
 .portfolio-card .box h2 a:hover {
@@ -962,7 +963,8 @@ html.active-modal {
   text-decoration: underline;
 }
 
-.porto-modal-content .btn {
+.porto-modal-content .btn,
+.porto-modal-content .btn-repo {
   font-size: 15px;
   font-weight: 600;
   text-transform: capitalize;
@@ -975,11 +977,19 @@ html.active-modal {
   background: var(--button-main);
 }
 
+.porto-modal-content .btn-repo {
+  padding: 14px 0 14px 0;
+  color: var(--button-main);
+  background: none;
+  border: solid 1px var(--button-main);
+  margin-top: 15px;
+}
+
 .porto-modal {
   position: fixed;
   inset: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: rgba(14, 14, 14, 0.9);
   display: grid;
   place-items: center;
@@ -993,7 +1003,7 @@ html.active-modal {
   position: relative;
   width: 500px;
   background-color: var(--modal-color);
-  padding: 4.5rem 1.5rem 2.5rem;
+  padding: 4rem 1.5rem 1.5rem;
   border-radius: 10px;
   border: solid 1px var(--grey);
   overflow: auto;
