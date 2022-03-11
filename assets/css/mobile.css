@@ -203,7 +203,8 @@
   }
 
   .porto-modal-btn,
-  .portfolio-card .box .btn {
+  .portfolio-card .box .btn,
+  .porto-modal-content .btn-repo {
     font-size: 14px;
   }
 
@@ -658,7 +659,7 @@
     visibility: hidden;
     opacity: 0;
     background: rgba(17, 17, 17, 0.8);
-    transition: all 0.3s;
+    transition: all 0.1s;
     bottom: 0;
     top: 0;
   }
@@ -669,7 +670,7 @@
     text-align: center;
     width: 100%;
     border-radius: 27px 27px 0 0;
-    transition: all 0.6s;
+    transition: all 0.5s;
     transform: translateY(50%);
     bottom: 0;
   }
