@@ -435,6 +435,10 @@
     font-size: 27px;
   }
 
+  .row.hero .col-2 img {
+    animation: none;
+  }
+
   .home.container .col-2 {
     margin-top: -30px;
     margin-bottom: 70px;
