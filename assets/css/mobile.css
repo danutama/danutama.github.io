@@ -204,11 +204,11 @@
     font-size: 14px;
   }
 
-  .portfolio-category {
+  /* .portfolio-category {
     flex-wrap: wrap;
     gap: .5rem;
     padding-bottom: 1rem;
-  }
+  } */
   
   .shape-03,
   .shape-04 {
@@ -520,6 +520,10 @@
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     gap: 1.2rem;
+  }
+
+  .portfolio-card .box {
+    max-width: 200px;
   }
 
   .ctn-title h4 {

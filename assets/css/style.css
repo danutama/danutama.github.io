@@ -766,6 +766,12 @@ a {
 /*========== PORTFOLIO CATEGORY BUTTON ==========*/
 .portfolio-category {
   display: flex;
+  overflow-x: auto;
+}
+
+.portfolio-category::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .portfolio-category button {
@@ -774,7 +780,7 @@ a {
   letter-spacing: 1px;
   padding: 0.3rem 1rem;
   width: max-content;
-  margin: 0 0.3rem 0 0;
+  margin: 0 0.5rem 0 0;
   outline: none;
   border: 1px solid #d1befd;
   background: transparent;
