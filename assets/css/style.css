@@ -772,9 +772,9 @@ a {
   font-family: 'nunito';
   font-size: 14px;
   letter-spacing: 1px;
-  padding: 0.5rem 2rem;
+  padding: 0.3rem 1rem;
   width: max-content;
-  margin: 0 0.5rem 0 0;
+  margin: 0 0.3rem 0 0;
   outline: none;
   border: 1px solid #d1befd;
   background: transparent;
@@ -790,47 +790,6 @@ a {
   background: #d1befd;
   color: var(--h2);
 }
-
-.portfolio-card > div {
-  display: none;
-}
-
-.portfolio-card.front-end > div.front-end-type,
-.portfolio-card.back-end > div.back-end-type {
-  display: block;
-}
-
-.portfolio-card.back-end .back-end-type {
-  width: 100%;
-  background: none;
-  border: none;
-  box-shadow: none;
-  transform: unset !important;
-}
-
-.portfolio-card.back-end .back-end-type .box-img {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.portfolio-card.back-end .back-end-type .box-img span {
-  display: block;
-  color: var(--h1);
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.portfolio-card.back-end .back-end-type .box-img img {
-  width: 130px;
-}
-
-/* .portfolio-category .second-btn button.active .back-end-type  {
-  margin-bottom: 310px;
-  transition: unset;
-} */
 
 /*========== PORTFOLIO SECTION ==========*/
 .portfolio .title {

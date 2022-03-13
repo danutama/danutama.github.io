@@ -159,10 +159,6 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   }
 
-  .portfolio-card .box {
-    transform: unset !important;
-  }
-
   .accordion {
     flex-direction: column;
     padding: 15px;
@@ -209,6 +205,8 @@
   }
 
   .portfolio-category {
+    flex-wrap: wrap;
+    gap: .5rem;
     padding-bottom: 1rem;
   }
   

@@ -272,21 +272,33 @@
 
       <div class="portfolio-category" data-aos="fade-right" data-aos-duration="1000">
         <div class="first-btn">
-          <button translate="no" class="active" data-portfolio-type="front-end">
-                Front-end
+          <button type="button" translate="no" class="active" data-filter='all'>
+                All
           </button>
         </div>
 
         <div class="second-btn">
-            <button translate="no" data-portfolio-type="back-end">
-                Back-end
+            <button type="button" translate="no" data-filter='.landings'>
+                Landings
             </button>
+        </div>
+
+        <div class="third-btn">
+          <button type="button" translate="no" data-filter='.personal'>
+              Personal
+          </button>
+        </div>
+
+        <div class="fourth-btn">
+          <button type="button" translate="no" data-filter='.pages'>
+              Pages
+          </button>
         </div>
       </div>
 
-      <div class="portfolio-card front-end">
+      <div class="portfolio-card">
 
-        <div class="box front-end-type">
+        <div class="box mix landings">
           <div class="box-img">
             <img src="img/9.png" alt="" />
           </div>
@@ -332,7 +344,7 @@
 
         </div>
 
-        <div class="box front-end-type">
+        <div class="box mix personal">
           <div class="box-img">
             <img src="img/1.png" alt="" />
           </div>
@@ -377,7 +389,7 @@
           </div>
         </div>
 
-        <div class="box front-end-type">
+        <div class="box mix personal">
           <div class="box-img">
             <img src="img/2.png" alt="" />
           </div>
@@ -423,7 +435,7 @@
 
         </div>
 
-        <div class="box front-end-type">
+        <div class="box mix landings">
           <div class="box-img">
             <img src="img/3.png" alt="" />
           </div>
@@ -469,7 +481,7 @@
           
         </div>
 
-        <div class="box front-end-type">
+        <div class="box mix landings">
           <div class="box-img">
             <img src="img/4.png" alt="" />
           </div>
@@ -515,7 +527,7 @@
 
         </div>
 
-        <div class="box front-end-type">
+        <div class="box mix personal">
           <div class="box-img">
             <img src="img/5.png" alt="" />
           </div>
@@ -561,7 +573,7 @@
         
         </div>
 
-        <div class="box front-end-type">
+        <div class="box mix landings">
           <div class="box-img">
             <img src="img/6.png" alt="" />
           </div>
@@ -607,7 +619,7 @@
 
         </div>
 
-        <div class="box front-end-type">
+        <div class="box mix pages">
           <div class="box-img">
             <img src="img/7.png" alt="" />
           </div>
@@ -653,7 +665,7 @@
 
         </div>
 
-        <div class="box front-end-type">
+        <div class="box mix personal">
           <div class="box-img">
             <img src="img/8.png" alt="" />
           </div>
@@ -698,13 +710,7 @@
           </div>
           
         </div>
-
-        <div class="box back-end-type">
-          <div class="box-img">
-            <span>Sorry.. it's empty 🙂</span>
-            <img src="img/empty.png" alt="" />
-          </div>
-        </div>
+      
       </div>
     </section>
 
@@ -817,6 +823,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/vanilla-tilt.min.js"></script>
 
     <!-- <script type="text/javascript">
@@ -834,13 +841,22 @@
         });
       });
 
+      let mixerPortfolio = mixitup('.portfolio-card', {
+        selectors: {
+            target: '.box'
+        },
+        animation: {
+            duration: 200
+        }
+      }); // Portfolio Category Filter //
+
       AOS.init({
         once: true
       }); // AOS Scroll Animation //
 
       $(window).on('load', function () {
         $('.preloader').addClass('loaded');
-      });
+      }); // PRELOADER //
 
       // Greating Text - Home Section //
       var dt = new Date().getHours();
