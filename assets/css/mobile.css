@@ -109,6 +109,7 @@
 @media (max-width: 900px) {
   .about-details {
     text-align: center;
+    padding-top: 0;
   }
 
   .about .right {
