@@ -16,16 +16,15 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- FLATICON -->
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
-
-    <!-- BOXICONS -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css" />
+    <!-- Bootstrap Icon -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css'>
 
     <!-- CUSTOM FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+    <!-- AOS Scroll Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -33,14 +32,8 @@
     <link rel="shortcut icon" href="img/my_logo_circle.png" />
   </head>
   <body>
-    <!-- Preloader Start -->
-    <div class="preloader">
-      <div class="loader"></div>
-    </div>
-    <!-- Preloader End  -->
-
-    <div class="back">
-      <button onclick="Previous()" class="button-back"><i class="fa fa-arrow-left"></i>Resources</button>
+    <div class="back" data-aos="fade-up" data-aos-duration="1000">
+      <button onclick="Previous()" class="button-back"><i class="bi bi-arrow-left"></i>Resources</button>
     </div>
     <script>
       function Previous() {
@@ -49,7 +42,7 @@
     </script>
 
     <!-- RESOURCES -->
-    <section class="sponsor section" style="min-height: 100vh;">
+    <section class="sponsor section" style="min-height: 100vh;" data-aos="fade-down" data-aos-duration="1000">
       <div class="sponsor__container container grid">
         <div class="sponsor__content">
           <!-- <img src="" alt="" class="sponsor__img" /> -->
@@ -167,14 +160,14 @@
     </section>
 
     <!--=============== MAIN JS ===============-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <script type="text/javascript">
-      $(window).on('load', function () {
-        $('.preloader').addClass('loaded');
-      });
+    <script>
+      AOS.init({
+        once: true
+      }); // AOS Scroll Animation //
     </script>
   </body>
 </html>
