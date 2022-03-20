@@ -349,9 +349,10 @@ a {
   font-size: 12px;
   font-weight: bold;
   text-align: center;
-  padding: 3px;
+  padding: 2px;
+  margin: 10px 0;
   width: 80px;
-  border: solid 1px #06b3ba;
+  border: solid 1.5px #06b3ba;
   border-radius: 5px;
 }
 
@@ -1017,12 +1018,12 @@ html.active-modal {
 .porto-modal-item {
   display: flex;
   align-items: center;
-  gap: .8rem;
 }
 
 .porto-modal-icon {
   font-size: 1.5rem;
   color: var(--button-main);
+  margin-right: .8rem;
 }
 
 .porto-modal-info {
