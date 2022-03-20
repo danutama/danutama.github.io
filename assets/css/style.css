@@ -343,6 +343,18 @@ a {
   color: var(--grey);
 }
 
+.col-1 .junior-text {
+  background: #b9dadb;
+  color: var(--h2);
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px;
+  width: 80px;
+  border: solid 1px #06b3ba;
+  border-radius: 5px;
+}
+
 .highlight-name {
   color: var(--h1);
   font-size: 80px;
@@ -443,7 +455,7 @@ a {
   width: 61%;
   font-size: 18px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 25px;
   letter-spacing: 0.5px;
 }
 
@@ -1005,7 +1017,7 @@ html.active-modal {
 .porto-modal-item {
   display: flex;
   align-items: center;
-  column-gap: .5rem;
+  gap: .8rem;
 }
 
 .porto-modal-icon {

@@ -152,7 +152,7 @@
 
   .bell-quote {
     font-size: 65px;
-    bottom: 85%;
+    bottom: 80%;
     right: 85%;
   }
 
@@ -454,6 +454,7 @@
   .bell-quote {
     font-size: 50px;
     right: 88%;
+    bottom: 85%;
   }
 
   .about .right .topic {
