@@ -932,6 +932,7 @@ html.active-modal {
   border: none;
   font-size: 15px;
   font-weight: 600;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   color: var(--green);
@@ -1138,6 +1139,9 @@ html.active-modal {
   height: 1px;
   width: 100%;
   margin: 10px 0;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .accordion-text li.showAnswer .line {
