@@ -183,10 +183,6 @@
     font-size: 20px;
   }
 
-  .home.container {
-    margin-top: 0;
-  }
-
   .skills .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(230px, auto));
   }

@@ -296,6 +296,7 @@ a {
 .home.container {
   position: relative;
   height: 40rem;
+  margin-top: 0;
 }
 
 @keyframes ani01 {
@@ -317,7 +318,6 @@ a {
   right: 50%;
   top: 35%;
   animation: ani01 10s linear infinite;
-  z-index: 1;
 }
 
 .home .row .shape:nth-child(2) {
@@ -328,9 +328,12 @@ a {
   border: 2px solid #ffe600;
   border-radius: 5px;
   right: 70%;
-  top: 10%;
+  top: 20%;
   animation: ani01 10s linear infinite;
-  z-index: 1;
+}
+
+.row.hero {
+  margin-top: 3rem;
 }
 
 .row.hero .col-1 {
@@ -1139,9 +1142,6 @@ html.active-modal {
   height: 1px;
   width: 100%;
   margin: 10px 0;
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
 .accordion-text li.showAnswer .line {
@@ -1156,18 +1156,12 @@ html.active-modal {
   padding: 0;
   max-height: 0;
   visibility: hidden;
-  -webkit-transition: 0.1s ease-in-out;
-  -o-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
 }
 
 .accordion-text li.showAnswer p {
   padding: 0 0 10px 0;
   max-height: 300px;
   visibility: visible;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 /*========== END ==========*/
 
