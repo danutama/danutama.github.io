@@ -1291,7 +1291,7 @@ html.active-modal {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 0 20px;
   color: var(--social);
   border-radius: 30px;
   border: 2px solid var(--social);
