@@ -44,6 +44,7 @@ html {
   --circle: #fff;
   --title: #8d5cff;
   --z-modal: 1000;
+  --filter-map: invert(0);
 }
 
 /*===== Variables Dark theme =====*/
@@ -72,6 +73,7 @@ body.dark-theme {
   --circle: #120d1f;
   --circle-1: rgb(12, 12, 15);
   --title: #d1befd;
+  --filter-map: invert(0.9);
 }
 
 li {
@@ -1101,6 +1103,13 @@ html.active-modal {
   cursor: pointer;
 }
 
+.accordion-text li {
+  background: var(--resources-color);
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
 .accordion-text li .question-arrow {
   display: flex;
   align-items: center;
@@ -1116,7 +1125,7 @@ html.active-modal {
 
 .accordion-text li .question-arrow .arrow {
   font-size: 20px;
-  color: var(--grey);
+  color: var(--h1);
   transition: all 0.5s ease;
 }
 
@@ -1128,20 +1137,8 @@ html.active-modal {
   color: var(--accordion-text);
 }
 
-.accordion-text li.showAnswer .question-arrow .question,
 .accordion-text li.showAnswer .question-arrow .arrow {
   color: var(--accordion-text);
-}
-
-.accordion-text li .line {
-  display: block;
-  height: 1px;
-  width: 100%;
-  margin: 10px 0;
-}
-
-.accordion-text li.showAnswer .line {
-  background: var(--accordion-line);
 }
 
 .accordion-text li p {
@@ -1149,13 +1146,12 @@ html.active-modal {
   font-size: 16px;
   font-weight: 500;
   color: var(--h1);
-  padding: 0;
   max-height: 0;
   visibility: hidden;
 }
 
 .accordion-text li.showAnswer p {
-  padding: 0 0 10px 0;
+  padding: 10px 0 10px 0;
   max-height: 300px;
   visibility: visible;
 }
@@ -1344,6 +1340,7 @@ iframe {
   cursor: default !important;
   margin: 25px 0 10px 0;
   border-radius: 10px;
+  filter: var(--filter-map);
 }
 
 .modal__button a {
@@ -1460,7 +1457,7 @@ iframe {
 
 .show-modal .modal__content {
   transform: translateY(0);
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 
 .contact-icons ul {
