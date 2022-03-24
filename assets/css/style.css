@@ -1105,9 +1105,14 @@ html.active-modal {
 
 .accordion-text li {
   background: var(--resources-color);
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 5px 10px;
   margin-bottom: 20px;
+  border-left: solid 1px transparent;
+}
+
+.accordion-text li.showAnswer {
+  border-left: solid 6px var(--accordion-text);
 }
 
 .accordion-text li .question-arrow {
