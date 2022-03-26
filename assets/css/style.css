@@ -296,7 +296,6 @@ a {
 } */
 
 .home.container {
-  position: relative;
   /* height: 40rem; */
   margin-top: 0;
   padding-bottom: 2rem;
@@ -304,9 +303,8 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 100%;
+  min-width: 100vw;
   width: 100%;
-  min-height: 100vh;
 }
 
 /* .home.container::after { CRUSHING PORTO-MODAL
