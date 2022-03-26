@@ -298,7 +298,6 @@ a {
 .home.container {
   height: 100%;
   margin-top: 0;
-  padding-bottom: 2rem;
   padding-top: 7rem;
   min-width: 100%;
   width: 100%;
@@ -372,6 +371,7 @@ a {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.08rem;
+  margin-bottom: 5rem;
 }
 
 .ctn {
@@ -419,16 +419,14 @@ a {
 }
 
 .quote {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: var(--button-main);
-  width: 80%;
+  max-width: 700px;
+  width: 60%;
   border-radius: 10px;
-  margin: -80px 0;
-  left: 10%;
   padding: 20px;
 }
 
@@ -467,7 +465,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 3rem;
 }
 
 .about .left img {
@@ -1297,7 +1294,7 @@ html.show-modal {
   color: var(--white);
   padding: 15px;
   margin-top: -10px;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;;
   width: 70%;
   border-radius: 12px;
   font-size: 15px;

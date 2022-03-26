@@ -19,7 +19,7 @@
   .about .about-details .left img {
     display: flex;
     justify-content: center;
-    margin: 70px auto 0;
+    margin: auto;
     width: 300px;
     height: 300px;
   }
@@ -438,8 +438,8 @@
     display: none;
   }
 
-  #waves {
-    width: 70rem;
+  .quote {
+    width: 80%;
   }
 
   .quote p {
