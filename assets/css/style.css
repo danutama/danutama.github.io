@@ -309,7 +309,7 @@ a {
   min-height: 100vh;
 }
 
-.home.container::after {
+/* .home.container::after { CRUSHING PORTO-MODAL
   content: '';
   position: absolute;
   display: block;
@@ -318,7 +318,7 @@ a {
   right: 0;
   bottom: 0;
   background-color: hsl(0, 0%, 0%, 0.8);
-}
+} */
 
 @keyframes ani01 {
   0% {
@@ -951,8 +951,7 @@ html.active-modal {
 }
 
 .porto-modal.active-modal {
-  /* visibility: visible; */
-  display: flex;
+  visibility: visible;
 }
 
 .porto-modal-btn {
@@ -999,14 +998,14 @@ html.active-modal {
   position: fixed;
   width: 100%;
   background-color: rgba(14, 14, 14, 0.9);
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  /* visibility: hidden; */
+  visibility: hidden;
   z-index: var(--z-modal);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
