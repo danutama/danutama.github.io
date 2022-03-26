@@ -304,6 +304,8 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -363,7 +365,6 @@ a {
   padding-bottom: 50px;
   justify-content: center;
   align-items: center;
-  z-index: 999;
 }
 
 .col-1 h1 {
