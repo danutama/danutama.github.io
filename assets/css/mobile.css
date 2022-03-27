@@ -1,9 +1,4 @@
 @media (max-width: 1390px) {
-  #waves {
-    margin-top: -500rem;
-    width: 100rem;
-  }
-
   .skills .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
   }
@@ -64,10 +59,6 @@
     width: 100%;
     margin-right: 0;
   } */
-
-  .home .row .shape:nth-child(1) {
-    right: 20%;
-  }
 
   .about .right p,
   .skills .grid-box h2 {
@@ -386,16 +377,6 @@
     margin-top: 0;
   }
   /* end */
-
-  .home .row .shape:nth-child(1) {
-    right: 85%;
-    top: 50px;
-  }
-
-  .home .row .shape {
-    right: 10%;
-    top: 80%;
-  }
 
   .row.hero {
     margin-top: auto;
