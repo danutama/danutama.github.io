@@ -460,6 +460,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 3rem;
 }
 
 .about .left img {
@@ -1403,7 +1404,7 @@ iframe {
 }
 
 .modal__content {
-  position: fixed;
+  position: relative;
   text-align: center;
   width: 100%;
   background: var(--modal-color);
