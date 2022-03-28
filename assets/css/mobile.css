@@ -36,10 +36,6 @@
     font-size: 30px;
   }
 
-  .home.container {
-    height: auto;
-  }
-
   .home.container .row {
     flex-direction: column;
   }
