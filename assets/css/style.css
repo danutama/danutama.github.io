@@ -943,7 +943,7 @@ html.active-modal {
 .porto-modal {
   position: fixed;
   width: 100%;
-  background-color: rgba(14, 14, 14, 0.9);
+  /* background-color: rgba(14, 14, 14, 0.9); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -953,8 +953,8 @@ html.active-modal {
   right: 0;
   visibility: hidden;
   z-index: var(--z-modal);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); */
   overflow: auto;
 }
 
@@ -966,6 +966,7 @@ html.active-modal {
   border-radius: 10px;
   border: solid 1px var(--white);
   overflow: auto;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 100px 1000px 1500px !important;
 }
 
 .porto-modal-title,
