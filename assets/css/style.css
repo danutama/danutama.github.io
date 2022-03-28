@@ -1395,7 +1395,6 @@ iframe {
   overflow: hidden;
   z-index: var(--z-modal);
   visibility: hidden;
-  opacity: 0;
   background: rgba(13, 13, 19, 0.8);
   right: 0;
   left: 0;
@@ -1431,7 +1430,6 @@ iframe {
 /*========== "Show" Contact Modal Mobile ==========*/
 .show-modal {
   visibility: visible;
-  opacity: 1;
 }
 
 .show-modal .modal__content {
