@@ -295,7 +295,7 @@ a {
 .home.container {
   height: 100%;
   margin-top: 0;
-  padding-top: 7rem;
+  /* padding-top: 7rem; */
   min-width: 100%;
   width: 100%;
   background: var(--background);
@@ -308,6 +308,11 @@ a {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.row.hero {
+  min-height: 100vh;
+  height: 100%;
 }
 
 .row.hero .col-1 {
