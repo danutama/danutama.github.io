@@ -17,6 +17,7 @@ html {
 }
 
 :root {
+  --background: linear-gradient(to top, #ffffff, #fbfafe, #f6f5fd, #f2f0fb, #eeebfa, #eeebfa, #eeebfa, #eeebfa, #f2f0fb, #f6f5fd, #fbfafe, #ffffff);
   --h1: #000;
   --h2: #000;
   --social: #fff;
@@ -49,6 +50,7 @@ html {
 
 /*===== Variables Dark theme =====*/
 body.dark-theme {
+  --background: #120d1f;
   --h1: #fff;
   --h2: #000;
   --social: #fff;
@@ -296,6 +298,7 @@ a {
   padding-top: 7rem;
   min-width: 100%;
   width: 100%;
+  background: var(--background);
 }
 
 @keyframes ani01 {
@@ -320,15 +323,14 @@ a {
 }
 
 .col-1 .junior-text {
-  background: #b9dadb;
-  color: var(--h2);
-  font-size: 12px;
-  font-weight: bold;
+  color: var(--h1);
+  font-size: 18px;
+  font-weight: 600;
   text-align: center;
-  padding: 2px 8px;
-  margin: 10px 0;
-  border: solid 2px #06b3ba;
-  border-radius: 5px;
+  width: 600px;
+  margin-bottom: 50px;
+  border-top: solid 1px var(--grey);
+  padding-top: 30px;
 }
 
 .highlight-name {
@@ -354,11 +356,10 @@ a {
 }
 
 .row.hero h4 {
-  margin: 10px 0 10px 0;
+  margin: 10px 0 30px 0;
   font-size: 20px;
-  padding-bottom: 20px;
   font-size: 60px;
-  color: #d1befd;
+  color: var(--button-main);
 }
 
 .home-btn {
@@ -366,7 +367,6 @@ a {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.08rem;
-  margin-bottom: 5rem;
 }
 
 .ctn {
@@ -386,7 +386,7 @@ a {
   color: #fff;
   border-radius: 13px;
   text-align: center;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   transition: 0.1s ease;
 }
 
@@ -1290,7 +1290,6 @@ html.show-modal {
   color: var(--white);
   padding: 15px;
   margin-top: -10px;
-  margin-bottom: 5rem;
   width: 70%;
   border-radius: 12px;
   font-size: 15px;
