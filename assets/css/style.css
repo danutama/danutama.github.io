@@ -332,6 +332,7 @@ a {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
+  letter-spacing: 0.6px;
   width: 600px;
   margin-bottom: 30px;
   border-top: solid 1px var(--grey);
@@ -343,6 +344,7 @@ a {
   font-size: 80px;
   font-weight: 700;
   margin-top: 20px;
+  text-shadow: -250px 0px 90px #fa8909, 250px 0px 90px #06b3ba;
 }
 
 /* .row.hero .col-2 img {
@@ -385,7 +387,7 @@ a {
 }
 
 .cta {
-  padding: 15px 40px;
+  padding: 10px 40px;
   background: var(--green);
   border: 2px solid var(--green);
   color: #fff;
