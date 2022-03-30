@@ -344,7 +344,7 @@ a {
   font-size: 80px;
   font-weight: 700;
   margin-top: 20px;
-  text-shadow: -250px 0px 90px #fa8909, 250px 0px 90px #06b3ba;
+  /* text-shadow: -250px 0px 90px #fa8909, 250px 0px 90px #06b3ba; */
 }
 
 /* .row.hero .col-2 img {
