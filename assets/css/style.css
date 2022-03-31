@@ -345,6 +345,8 @@ a {
   font-weight: 700;
   margin-top: 20px;
   /* text-shadow: -250px 0px 90px #fa8909, 250px 0px 90px #06b3ba; */
+  -webkit-filter: drop-shadow(-250px -100px 100px #06b3ba) drop-shadow(250px 250px 80px #fa8909);
+  filter: drop-shadow(-250px -100px 100px #06b3ba ) drop-shadow(250px 250px 80px #fa8909);
 }
 
 /* .row.hero .col-2 img {
