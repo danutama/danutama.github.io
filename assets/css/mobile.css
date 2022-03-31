@@ -56,8 +56,17 @@
     margin-right: 0;
   } */
 
+  .about-details {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .about .right {
+    margin-top: 30px;
+  }
+
   .about .right p,
-  .skills .grid-box h2 {
+  .skills .grid-box p {
     font-size: 15px;
   }
 
@@ -93,15 +102,6 @@
 }
 
 @media (max-width: 900px) {
-  .about-details {
-    text-align: center;
-    padding-top: 0;
-  }
-
-  .about .right {
-    margin-top: 30px;
-  }
-
   .skills .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
   }

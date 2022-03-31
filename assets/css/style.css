@@ -264,7 +264,7 @@ a {
 .nav-list a:hover,
 .nav-list a:hover::before,
 .nav-list .active {
-  color: var(--accordion-text);
+  color: var(--button-fill);
   width: 60%;
   height: 2px;
 }
@@ -275,7 +275,7 @@ a {
   height: 2px;
   width: 0%;
   bottom: 0;
-  background: var(--accordion-text);
+  background: var(--button-fill);
   transition: 0.1s;
   border-radius: 50px;
 }
@@ -344,9 +344,6 @@ a {
   font-size: 80px;
   font-weight: 700;
   margin-top: 20px;
-  /* text-shadow: -250px 0px 90px #fa8909, 250px 0px 90px #06b3ba; */
-  -webkit-filter: drop-shadow(-250px -100px 100px #06b3ba) drop-shadow(250px 250px 80px #fa8909);
-  filter: drop-shadow(-250px -100px 100px #06b3ba ) drop-shadow(250px 250px 80px #fa8909);
 }
 
 /* .row.hero .col-2 img {
@@ -380,7 +377,6 @@ a {
 
 .ctn {
   padding: 15px 30px;
-
   border: 2px solid var(--green);
   border-radius: 12px;
   color: var(--green);
@@ -393,7 +389,7 @@ a {
   background: var(--green);
   border: 2px solid var(--green);
   color: #fff;
-  border-radius: 13px;
+  border-radius: 10px;
   text-align: center;
   /* margin-right: 20px; */
   transition: 0.1s ease;
@@ -498,6 +494,7 @@ a {
   text-align: left;
   color: var(--h1);
   font-size: 18px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 
@@ -567,14 +564,14 @@ a {
   margin: 30px 0 0 10px;
 }
 
-.grid-box span {
+.grid-box h2 {
   color: var(--h1);
   font-size: 18px;
   font-weight: bold;
-  padding: 15px 0 0 15px;
+  padding: 15px 15px 0 15px;
 }
 
-.grid-box h2 {
+.grid-box p {
   text-align: left;
   line-height: 25px;
   letter-spacing: 0.6px;
@@ -582,7 +579,7 @@ a {
   margin-bottom: 10px;
   font-size: 16px;
   color: var(--h1);
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .skills .grid-box {
