@@ -633,9 +633,8 @@ a {
   font-size: 15px;
 }
 
-.sponsor__content:hover h2,
 .sponsor__content:hover h2 a {
-  color: var(--button-fill);
+  color: var(--h1);
 }
 
 .sponsor__content h2 .fa {
@@ -904,6 +903,7 @@ html.active-modal {
 
 .porto-modal.active-modal {
   visibility: visible;
+  overflow: auto;
 }
 
 .porto-modal-btn {
@@ -958,10 +958,9 @@ html.active-modal {
   left: 0;
   right: 0;
   visibility: hidden;
-  z-index: var(--z-modal);
+  z-index: 1111;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  overflow: auto;
 }
 
 .porto-modal-content {
@@ -971,7 +970,6 @@ html.active-modal {
   padding: 4rem 1.5rem 1.5rem;
   border-radius: 10px;
   border: solid 1px var(--white);
-  overflow: auto;
 }
 
 .porto-modal-title,

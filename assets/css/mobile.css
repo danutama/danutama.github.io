@@ -483,6 +483,10 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
+  .sponsor__content h2 {
+    font-size: 16px;
+  }
+
   .sponsor-content h2 {
     font-size: 20px;
   }
