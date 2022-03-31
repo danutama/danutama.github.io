@@ -958,7 +958,7 @@ html.active-modal {
   left: 0;
   right: 0;
   visibility: hidden;
-  z-index: 1111;
+  z-index: var(--z-modal);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -1397,6 +1397,7 @@ iframe {
   overflow: hidden;
   z-index: var(--z-modal);
   visibility: hidden;
+  opacity: 0;
   background: rgba(13, 13, 19, 0.8);
   right: 0;
   left: 0;
@@ -1406,7 +1407,7 @@ iframe {
 }
 
 .modal__content {
-  position: relative;
+  position: fixed;
   text-align: center;
   width: 100%;
   background: var(--modal-color);
@@ -1432,6 +1433,7 @@ iframe {
 /*========== "Show" Contact Modal Mobile ==========*/
 .show-modal {
   visibility: visible;
+  opacity: 1;
 }
 
 .show-modal .modal__content {
