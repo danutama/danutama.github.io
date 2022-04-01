@@ -906,7 +906,7 @@ a {
   display: flex;
   justify-content: center;
   color: white;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 8px;
   background: var(--button-main);
 }
@@ -919,11 +919,16 @@ a {
   font-size: 20px;
   display: flex;
   justify-content: center;
-  padding: 9px;
+  padding: 9px 14px;
   border-radius: 8px;
   border: solid 1px var(--h1);
   color: var(--h1);
   background: none;
+}
+
+.porto-modal-btn .btn-repo:hover {
+  color: var(--button-main);
+  border: solid 1px var(--button-main);
 }
 /*========== END ==========*/
 
