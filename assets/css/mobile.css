@@ -182,12 +182,6 @@
     width: 180px;
   }
 
-  .porto-modal-btn,
-  .portfolio-card .box .btn,
-  .porto-modal-content .btn-repo {
-    font-size: 14px;
-  }
-
   /* .portfolio-category {
     flex-wrap: wrap;
     gap: .5rem;
@@ -501,12 +495,12 @@
   } */
 
   .portfolio-card {
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
     gap: 1.2rem;
   }
 
   .portfolio-card .box {
-    max-width: 200px;
+    max-width: 350px;
   }
 
   .ctn-title h4 {

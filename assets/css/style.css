@@ -892,130 +892,39 @@ a {
   border-radius: 11px;
 } */
 
-.portfolio-card .box .btn:hover {
-  background: var(--button-main-hover);
-}
-
 /* PORTFOLIO MODAL CONTENT */
-html.active-modal {
-  overflow: hidden;
-}
-
-.porto-modal.active-modal {
-  visibility: visible;
-  overflow: auto;
-}
-
 .porto-modal-btn {
-  cursor: pointer;
-  outline: none;
-  border: none;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
   display: flex;
+  gap: 1rem;
   justify-content: center;
-  color: var(--green);
-  padding: 20px 0 20px 0;
-  border-radius: 11px;
+  align-items: center;
+  margin: 30px 0 20px 0;
 }
 
-.porto-modal-btn:hover {
-  text-decoration: underline;
-}
-
-.porto-modal-content .btn,
-.porto-modal-content .btn-repo {
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: capitalize;
+.porto-modal-btn .btn {
+  font-size: 20px;
   display: flex;
   justify-content: center;
   color: white;
-  padding: 15px 0 15px 0;
+  padding: 10px;
   border-radius: 8px;
-  margin-top: 30px;
   background: var(--button-main);
 }
 
-.porto-modal-content .btn-repo {
-  padding: 14px 0 14px 0;
-  color: var(--button-fill);
-  background: none;
-  border: solid 1px var(--button-fill);
-  margin-top: 15px;
+.porto-modal-btn .btn:hover {
+  background: var(--button-main-hover);
 }
 
-.porto-modal {
-  position: fixed;
-  width: 100%;
-  background-color: rgba(14, 14, 14, 0.9);
+.porto-modal-btn .btn-repo {
+  font-size: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  visibility: hidden;
-  z-index: var(--z-modal);
-}
-
-.porto-modal-content {
-  position: relative;
-  width: 450px;
-  background-color: var(--modal-color);
-  padding: 4rem 1.5rem 1.5rem;
-  border-radius: 10px;
-  border: solid 1px var(--white);
-}
-
-.porto-modal-title,
-.porto-modal-description {
-  text-align: center;
-}
-
-.porto-modal-title {
-  font-size: 18px !important;
-  font-weight: bold !important;
+  padding: 9px;
+  border-radius: 8px;
+  border: solid 1px var(--h1);
   color: var(--h1);
-  margin-bottom: 1rem;
+  background: none;
 }
-
-.porto-modal-description {
-  font-size: 15px;
-  margin-bottom: 2rem;
-}
-
-.porto-modal-list {
-  display: grid;
-  row-gap: 0.75rem;
-}
-
-.porto-modal-item {
-  display: flex;
-  align-items: center;
-}
-
-.porto-modal-icon {
-  font-size: 1.5rem;
-  color: var(--button-main);
-  margin-right: 0.5rem;
-}
-
-.porto-modal-info {
-  font-size: 14px;
-  color: var(--h1);
-}
-
-.porto-modal-close {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  font-size: 1.5rem;
-  color: var(--grey);
-}
-
 /*========== END ==========*/
 
 /*========== ACCORDION FAQ SECTION ==========*/
