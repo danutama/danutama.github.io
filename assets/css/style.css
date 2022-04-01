@@ -959,8 +959,6 @@ html.active-modal {
   right: 0;
   visibility: hidden;
   z-index: var(--z-modal);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
 }
 
 .porto-modal-content {
