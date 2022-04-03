@@ -567,7 +567,7 @@ a {
   width: 50px;
   display: flex;
   align-items: flex-start;
-  margin: auto 0 10px 0;
+  margin: auto 0 10px -5px;
 }
 
 .grid-box h2 {
