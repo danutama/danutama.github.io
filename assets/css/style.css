@@ -996,15 +996,23 @@ body::-webkit-scrollbar-thumb {
   scroll-snap-type: inline mandatory;
 }
 
-.more-project::-webkit-scrollbar {
+.has-scrollbar::-webkit-scrollbar {
   padding: 50px;
   background: var(--circle);
 }
 
-.more-project::-webkit-scrollbar-thumb {
+.has-scrollbar::-webkit-scrollbar-thumb {
   background: var(--button-main);
   border-radius: 30px;
   border: 5px solid var(--circle);
+}
+
+.has-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: var(--button-main);
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--button-main);
 }
 
 .box-project {
