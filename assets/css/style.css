@@ -125,7 +125,7 @@ a {
 /*========== SCROLL BAR CUSTOM ==========*/
 .has-scrollbar::-webkit-scrollbar {
   width: 10px;
-  height: 10px;
+  height: 8px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
@@ -872,7 +872,7 @@ a {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.portfolio h2 {
+.portfolio-card h2 {
   padding: 0 10px 0 10px;
   font-size: 17px;
   font-weight: bold;
@@ -882,17 +882,17 @@ a {
   justify-content: space-between;
 }
 
-.portfolio h2 a {
+.portfolio-card h2 a {
   color: var(--grey);
   margin-top: 3px;
   visibility: hidden;
 }
 
-.portfolio h2 a:hover {
+.portfolio-card h2 a:hover {
   color: var(--green);
 }
 
-.portfolio h3 {
+.portfolio-card h3 {
   padding: 0 10px 0 10px;
   font-size: 16px;
   font-weight: 600;
@@ -949,7 +949,7 @@ a {
 }
 /*========== END ==========*/
 
-/* MORE PROJECT SECTION */
+/* ====== MORE PROJECT SECTION ====== */
 .more.project {
   display: flex;
   justify-content: center;
@@ -957,14 +957,18 @@ a {
 }
 
 .more-project-title {
-  margin: 1rem 0;
+  margin-top: -1.5rem;
   padding-top: 2rem;
   text-align: center;
   border-top: solid 1px var(--grey);
 }
 
 .more-project-title h1 {
-  color: var(--accordion-text);
+  background: var(--button-icon);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 20px;
 }
 
@@ -978,11 +982,15 @@ a {
   justify-content: space-between;
 }
 
+.box-project:hover h2 {
+  color: var(--accordion-text);
+}
+
 .box-project h3 {
   padding: 0 10px 0 10px;
   font-size: 16px;
   font-weight: 600;
-  margin: 0 0 2rem 0;
+  margin-bottom: 1rem;
 }
 
 .more-project {
@@ -1029,14 +1037,6 @@ a {
   object-position: center;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-.box-project:hover h2 {
-  color: var(--accordion-text);
-}
-
-.box-project h3 {
-  margin-bottom: 1rem;
 }
 /*========== END ==========*/
 
