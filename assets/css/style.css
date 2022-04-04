@@ -939,8 +939,15 @@ body::-webkit-scrollbar-thumb {
   color: var(--accordion-text);
   border: solid 1px var(--accordion-text);
 }
+/*========== END ==========*/
 
-/* MORE PROJECT */
+/* MORE PROJECT SECTION */
+.more.project {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .more-project-title {
   margin: 1rem 0;
   padding-top: 2rem;
@@ -951,6 +958,23 @@ body::-webkit-scrollbar-thumb {
 .more-project-title h1 {
   color: var(--accordion-text);
   font-size: 20px;
+}
+
+.box-project h2 {
+  padding: 0 10px 0 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--h1);
+  margin: 15px 0 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-project h3 {
+  padding: 0 10px 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
 }
 
 .more-project {
