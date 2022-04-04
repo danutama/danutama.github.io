@@ -268,7 +268,7 @@
         </div>
       </div>
 
-      <div class="portfolio-category" data-aos="fade-right" data-aos-duration="1000">
+      <!-- <div class="portfolio-category" data-aos="fade-right" data-aos-duration="1000">
         <div class="first-btn">
           <button type="button" translate="no" class="active" data-filter='all'>
                 All
@@ -292,7 +292,7 @@
               Pages
           </button>
         </div>
-      </div>
+      </div> -->
 
       <div class="portfolio-card">
         <div class="box mix landings">
@@ -402,7 +402,7 @@
 
       <div class="more-project-title">
         <h1 class="more-title">
-          View more project
+          View More Project
         </h1>
       </div>
 
@@ -533,7 +533,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/vanilla-tilt.min.js"></script>
 
     <!-- <script type="text/javascript">
@@ -551,15 +550,38 @@
         });
       });
 
-      let mixerPortfolio = mixitup('.portfolio-card', {
-        selectors: {
-            target: '.box'
+      // === INITIALIZE SWIPER CONTACT === //
+      let swiper = new Swiper('.contact-info', {
+        grabCursor: true,
+        loop: false,
+        centeredSlides: false,
+        slidesPerView: '1',
+        spaceBetween: 20,
+        // autoplay: {
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // },
+        breakpoints: {
+          500: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+
+          1000: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
         },
-        animation: {
-            duration: 300,
-            effects: 'fade translateZ(-100px)'
-        }
-      }); // Portfolio Category Filter //
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          Bullets: true,
+          clickable: true,
+        },
+      }); // END //
 
       AOS.init({
         once: true

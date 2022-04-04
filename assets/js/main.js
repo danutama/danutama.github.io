@@ -89,20 +89,20 @@ themeButton.addEventListener('click', () => {
 });
 
 // ========= PORTFOLIO CATEGORY ========== //
-let portfolioMenuList = document.querySelector('.portfolio-card');
+// let portfolioMenuList = document.querySelector('.portfolio-card');
 
-let portfolioCategory = document.querySelector('.portfolio-category');
+// let portfolioCategory = document.querySelector('.portfolio-category');
 
-let categories = portfolioCategory.querySelectorAll('button');
+// let categories = portfolioCategory.querySelectorAll('button');
 
-Array.from(categories).forEach((item, index) => {
-  item.onclick = (e) => {
-    let currCat = portfolioCategory.querySelector('button.active');
-    currCat.classList.remove('active');
-    e.target.classList.add('active');
-    portfolioMenuList.classList = 'portfolio-card ' + e.target.getAttribute('data-portfolio-type');
-  };
-});
+// Array.from(categories).forEach((item, index) => {
+//   item.onclick = (e) => {
+//     let currCat = portfolioCategory.querySelector('button.active');
+//     currCat.classList.remove('active');
+//     e.target.classList.add('active');
+//     portfolioMenuList.classList = 'portfolio-card ' + e.target.getAttribute('data-portfolio-type');
+//   };
+// });
 
 // ========== PORTFOLIO MODAL ========== //
 // const portoViews = document.querySelectorAll('.porto-modal');
@@ -140,53 +140,6 @@ Array.from(categories).forEach((item, index) => {
 //   }
 // });
 // ====== END ====== //
-
-// === INITIALIZE SWIPER CONTACT === //
-let swiper = new Swiper('.contact-info', {
-  grabCursor: true,
-  loop: false,
-  centeredSlides: false,
-  slidesPerView: '1',
-  spaceBetween: 20,
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
-  breakpoints: {
-    500: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-
-    1000: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    Bullets: true,
-    clickable: true,
-  },
-});
-
-// // === ACCORDION NO ACTIVE === //
-// let li = document.querySelectorAll('.faq-text li');
-// for (var i = 0; i < li.length; i++) {
-//   li[i].addEventListener('click', (e) => {
-//     let clickedLi;
-//     if (e.target.classList.contains('question-arrow')) {
-//       clickedLi = e.target.parentElement;
-//     } else {
-//       clickedLi = e.target.parentElement.parentElement;
-//     }
-//     clickedLi.classList.toggle('showAnswer');
-//   });
-// }
 
 // =============== ACCORDION FAQ =============== //
 const accordionItems = document.querySelectorAll('.faq-text li');

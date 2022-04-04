@@ -123,12 +123,12 @@ a {
 }
 
 /*========== SCROLL BAR CUSTOM ==========*/
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   padding: 50px;
   background: var(--circle);
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: var(--button-main);
   border-radius: 30px;
   border: 5px solid var(--circle);
@@ -775,11 +775,6 @@ a {
   display: none !important;
 }
 
-.portfolio-category::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
 .portfolio-category button {
   font-family: 'nunito';
   font-size: 14px;
@@ -851,7 +846,7 @@ a {
   padding: 0;
   /* border-radius: 9px; */
   /* background: var(--skills-color); */
-  max-width: 400px;
+  /* max-width: 400px; */
   display: flex;
   flex-direction: column;
 }
@@ -948,7 +943,8 @@ a {
 /* MORE PROJECT */
 .more-project-title {
   margin: 1rem 0;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  text-align: center;
   border-top: solid 1px var(--grey);
 }
 
@@ -958,25 +954,47 @@ a {
 }
 
 .more-project {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
   align-items: flex-start;
   margin-top: 2rem;
+  gap: 30px;
   width: 100%;
   overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -webkit-scroll-snap-type: inline mandatory;
+  -ms-scroll-snap-type: inline mandatory;
+  scroll-snap-type: inline mandatory;
+}
+
+.more-project::-webkit-scrollbar {
+  padding: 50px;
+  background: var(--circle);
+}
+
+.more-project::-webkit-scrollbar-thumb {
+  background: var(--button-main);
+  border-radius: 30px;
+  border: 5px solid var(--circle);
 }
 
 .box-project {
-  margin: 0 1rem 0 0;
-  padding: 0;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   min-width: 100%;
+  scroll-snap-align: start;
 } 
 
 @media (min-width: 650px) {
   .box-project {
-    min-width: -webkit-calc(33.33% - 50px);
-    min-width: calc(33.33% - 50px);
+    min-width: -webkit-calc(33.33% - 20px);
+    min-width: calc(33.33% - 20px);
   } 
 }
 
