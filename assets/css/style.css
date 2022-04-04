@@ -125,13 +125,13 @@ a {
 /*========== SCROLL BAR CUSTOM ==========*/
 ::-webkit-scrollbar {
   padding: 50px;
-  background: rgb(228, 228, 228);
+  background: var(--circle);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--button-main);
   border-radius: 30px;
-  border: 3px solid rgb(228, 228, 228);
+  border: 5px solid var(--circle);
 }
 /*========== END ==========*/
 
@@ -770,8 +770,9 @@ a {
 
 /*========== PORTFOLIO CATEGORY BUTTON ==========*/
 .portfolio-category {
-  display: flex;
+  /* display: flex; */
   overflow-x: auto;
+  display: none !important;
 }
 
 .portfolio-category::-webkit-scrollbar {
@@ -957,31 +958,11 @@ a {
 }
 
 .more-project {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
   align-items: flex-start;
   margin-top: 2rem;
   width: 100%;
   overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  -webkit-scroll-snap-type: inline mandatory;
-  -ms-scroll-snap-type: inline mandatory;
-  scroll-snap-type: inline mandatory;
-}
-
-.more-project::-webkit-scrollbar {
-  background: transparent;
-}
-
-.more-project::-webkit-scrollbar-thumb {
-  background: var(--button-main);
-  border-radius: 30px;
-  border: solid 5px var(--circle);
 }
 
 .box-project {
@@ -990,7 +971,6 @@ a {
   display: flex;
   flex-direction: column;
   min-width: 100%;
-  scroll-snap-align: start;
 } 
 
 @media (min-width: 650px) {
