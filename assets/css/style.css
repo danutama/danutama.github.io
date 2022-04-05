@@ -17,7 +17,7 @@ html {
 }
 
 :root {
-  --background: linear-gradient(to top, #ffffff, #fbfafe, #f6f5fd, #f2f0fb, #eeebfa, #eeebfa, #eeebfa, #eeebfa, #f2f0fb, #f6f5fd, #fbfafe, #ffffff);
+  --background: linear-gradient(to top, #ffffff, #fbfafe, #f6f5fd, #f2f0fb, #eeebfa, #eeebfa, #eeebfa, #eeebfa, #f2f0fb, #f6f5fd, #fafafe, #ffffff);
   --h1: #000;
   --h2: #000;
   --social: #fff;
@@ -397,7 +397,7 @@ a {
 }
 
 .cta {
-  padding: 10px 40px;
+  padding: 16px 32px;
   background: var(--green);
   border: 2px solid var(--green);
   color: #fff;
@@ -958,7 +958,7 @@ a {
 
 .more-project-title {
   margin-top: -1.5rem;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   text-align: center;
   border-top: solid 1px var(--grey);
 }
@@ -970,10 +970,11 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
+  font-weight: 800;
 }
 
 .box-project h2 {
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 0;
   font-size: 17px;
   font-weight: bold;
   color: var(--h1);
@@ -984,10 +985,11 @@ a {
 
 .box-project:hover h2 {
   color: var(--accordion-text);
+  transition: all .3s;
 }
 
 .box-project h3 {
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 0;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -1002,7 +1004,7 @@ a {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-top: 2rem;
+  margin-top: 1rem;
   gap: 30px;
   width: 100%;
   overflow-x: auto;
