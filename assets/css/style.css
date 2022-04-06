@@ -17,7 +17,7 @@ html {
 }
 
 :root {
-  --background: linear-gradient(to top, #ffffff, #fbfafe, #f6f5fd, #f2f0fb, #eeebfa, #eeebfa, #eeebfa, #eeebfa, #f2f0fb, #f6f5fd, #fafafe, #ffffff);
+  --background: radial-gradient(circle, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fcfbff, #f9f8ff, #f7f4ff, #f1ecff, #ece4ff, #e7dbff, #e2d3ff);
   --h1: #000;
   --h2: #000;
   --social: #fff;
@@ -236,10 +236,11 @@ a {
 .navbar.container {
   max-width: 100%;
   margin-top: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1000;
-  background: var(--background-nav);
-  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+  /* background: var(--background-nav); */
+  background: transparent;
+  /* box-shadow: 0 0 4px rgba(14, 55, 63, 0.15); */
 }
 
 .navbar {
@@ -262,7 +263,7 @@ a {
 }
 
 .nav-list a {
-  color: var(--grey);
+  color: var(--h1);
   font-family: 'nunito';
   padding-bottom: 3px;
   position: relative;
@@ -272,7 +273,7 @@ a {
 .nav-list a:hover,
 .nav-list a:hover::before,
 .nav-list .active {
-  color: var(--button-fill);
+  color: var(--h1);
   width: 60%;
   height: 2px;
 }
@@ -283,7 +284,7 @@ a {
   height: 2px;
   width: 0%;
   bottom: 0;
-  background: var(--button-fill);
+  background: var(--h1);
   transition: 0.1s;
   border-radius: 50px;
 }
@@ -331,25 +332,23 @@ a {
   align-items: center;
 }
 
-.col-1 h1 {
-  color: var(--grey);
+.col-1 .hero-image {
+  width: 170px;
+  margin-bottom: 1rem;
 }
 
-.col-1 .junior-text {
-  color: var(--h1);
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 0.6px;
-  width: 600px;
-  margin-bottom: 30px;
-  border-top: solid 1px var(--grey);
-  padding-top: 30px;
+.col-1 .hero-image img {
+  width: 100%;
+}
+
+.col-1 h1 {
+  color: var(--grey);
+  font-size: 20px;
 }
 
 .highlight-name {
   color: var(--h1);
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 700;
   margin-top: 20px;
 }
@@ -371,8 +370,7 @@ a {
 
 .row.hero h4 {
   margin: 10px 0 30px 0;
-  font-size: 20px;
-  font-size: 60px;
+  font-size: 50px;
   background: var(--button-icon);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -970,7 +968,7 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .box-project h2 {
