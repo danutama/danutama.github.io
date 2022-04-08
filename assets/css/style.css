@@ -962,12 +962,12 @@ a {
 }
 
 .more-project-title h1 {
-  background: var(--button-icon);
+  background: var(--h1);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 700;
 }
 
@@ -1105,7 +1105,7 @@ a {
   border-radius: 6px;
   padding: 5px 10px;
   margin-bottom: 20px;
-  border-left: solid 1px transparent;
+  border-left: solid 3px transparent;
 }
 
 .accordion-text li.showAnswer {

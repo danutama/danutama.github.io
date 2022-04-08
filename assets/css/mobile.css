@@ -518,6 +518,10 @@
   .portfolio-card .porto-modal-content {
     width: 80%;
   }
+  
+  .more-project-title h1 {
+    font-size: 20px;
+  }
 
   .accordion {
     padding: 5px;
