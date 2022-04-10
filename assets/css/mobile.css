@@ -36,9 +36,9 @@
     font-size: 30px;
   }
 
-  .home.container .row {
+  /* .home.container .row {
     flex-direction: column;
-  }
+  } */
 
   .home.container .col-1 {
     justify-content: center;
@@ -353,6 +353,7 @@
     top: 0;
     width: 40px;
     height: 40px;
+    margin: 0;
     border-radius: 0 0 20px 20px;
     z-index: 2;
   }

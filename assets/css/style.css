@@ -176,16 +176,15 @@ a {
 
 /*========== Button Dark/Light Mode ==========*/
 .dark {
-  position: fixed;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--button-main);
-  border-radius: 50px 0 0 50px;
-  width: 50px;
-  height: 40px;
-  bottom: 60%;
-  right: 0;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  margin: 1rem 0 2rem 0;
   z-index: 1000;
 
   -webkit-box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.3), inset -1px -3px 5px rgba(0, 0, 0, 0.3), 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.3) !important;
@@ -233,23 +232,26 @@ a {
 } */
 
 /*========== NAVBAR SECTION ==========*/
-.navbar.container {
-  max-width: 100%;
+@media (min-width: 1500px) {
+  .navbar.container {
+    max-width: 75%;
+    left: 0;
+    right: 0;
+  } 
+}
+
+.navbar {
   margin-top: 0;
   position: absolute;
   z-index: 1000;
   /* background: var(--background-nav); */
   background: transparent;
-  /* box-shadow: 0 0 4px rgba(14, 55, 63, 0.15); */
-}
-
-.navbar {
   width: 100%;
-  padding: 7px;
+  padding: 17px 7px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  /* box-shadow: 0 0 4px rgba(14, 55, 63, 0.15); */
 }
 
 .nav-list ul {
@@ -319,21 +321,12 @@ a {
   }
 }
 
-.circle {
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  left: -50px;
-  top: -50px;
-  border-radius: 50%;
-  background: var(--skills-color);
-  z-index: 1;
-}
-
 .row.hero {
   min-height: 100vh;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .row.hero .col-1 {
@@ -347,7 +340,6 @@ a {
 .col-1 .hero-image {
   width: 170px;
   margin-bottom: 1rem;
-  z-index: 2;
 }
 
 .col-1 .hero-image img {
@@ -1178,7 +1170,7 @@ a {
   max-width: 100%;
   width: 100%;
   padding-top: 20px;
-  background: var(--background-credits);
+  background: #120d1f;
   border-top: 1px solid rgba(230, 230, 230, 0.5);
   margin-bottom: 0;
 }
@@ -1246,7 +1238,7 @@ a {
   align-items: center;
 
   margin-bottom: 3rem;
-  background: var(--skills-color);
+  background: #1e1a2c;
   border-radius: 10px;
 }
 
