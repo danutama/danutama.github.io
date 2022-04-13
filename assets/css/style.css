@@ -128,6 +128,15 @@ a {
   height: 8px;
 }
 
+.has-scrollbar::-webkit-scrollbar-button {
+  width: 30px;
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: var(--resources-color);
+  border-radius: 30px;
+}
+
 .has-scrollbar::-webkit-scrollbar-thumb {
   background: var(--button-main);
   border-radius: 30px;
@@ -998,7 +1007,7 @@ a {
 }
 
 .box-project h2 {
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
   font-size: 17px;
   font-weight: bold;
   color: var(--h1);
@@ -1008,24 +1017,24 @@ a {
 }
 
 .box-project h3 {
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
   font-size: 16px;
   font-weight: 600;
   margin: auto 0 1rem 0;
 }
 
 .more-project {
-  padding: 0 1rem;
+  padding: 0 .5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: flex-start;
   margin-top: 1rem;
-  gap: 30px;
   width: 100%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -1035,17 +1044,19 @@ a {
 }
 
 .box-project {
-  margin-bottom: 1rem;
+  background: var(--skills-color);
+  margin-bottom: 2rem;
+  margin-right: 25px;
   display: flex;
   flex-direction: column;
-  min-width: 95%;
+  min-width: 100%;
   width: 100%;
   height: 100%;
-  scroll-snap-align: start;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  scroll-snap-align: center;
 }
 
 @media (min-width: 650px) {
