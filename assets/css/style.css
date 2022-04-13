@@ -913,6 +913,7 @@ a {
   border-radius: 11px;
 } */
 
+.more-project .box-project .content,
 .portfolio-card .box .content {
   position: absolute;
   top: 0; 
@@ -923,16 +924,13 @@ a {
   display: flex;
   justify-content: center;
   transform: scale(0);
-}
-
-.portfolio-card .box:hover .content {
-  transform: scale(1);
   transition: .3s;
 }
 
-.portfolio-card .box:hover .content span {
-  transform: translateY(0rem);
-  opacity: 1;
+.more-project .box-project:hover .content,
+.portfolio-card .box:hover .content {
+  transform: scale(1);
+  transition: .3s;
 }
 
 /* PORTFOLIO MODAL CONTENT */
@@ -970,8 +968,8 @@ a {
 }
 
 .porto-modal-btn .btn-repo:hover {
-  color: var(--accordion-text);
-  border: solid 1px var(--accordion-text);
+  color: var(--button-main);
+  border: solid 1px var(--button-main);
 }
 /*========== END ==========*/
 
@@ -1000,7 +998,7 @@ a {
 }
 
 .box-project h2 {
-  padding: 0 10px 0 0;
+  padding: 0 10px 0 10px;
   font-size: 17px;
   font-weight: bold;
   color: var(--h1);
@@ -1009,19 +1007,15 @@ a {
   justify-content: space-between;
 }
 
-.box-project:hover h2 {
-  color: var(--accordion-text);
-  transition: all 0.3s;
-}
-
 .box-project h3 {
-  padding: 0 10px 0 0;
+  padding: 0 10px 0 10px;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin: auto 0 1rem 0;
 }
 
 .more-project {
+  padding: 0 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1041,17 +1035,23 @@ a {
 }
 
 .box-project {
-  padding: 5px;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  min-width: 100%;
+  min-width: 95%;
+  width: 100%;
+  height: 100%;
   scroll-snap-align: start;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 @media (min-width: 650px) {
   .box-project {
-    min-width: -webkit-calc(33.33% - 20px);
-    min-width: calc(33.33% - 20px);
+    min-width: -webkit-calc(40% - 20px);
+    min-width: calc(40% - 20px);
   }
 }
 
@@ -1064,7 +1064,6 @@ a {
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 /*========== END ==========*/
 
