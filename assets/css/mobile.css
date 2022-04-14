@@ -128,16 +128,6 @@
     font-size: 40px;
   }
 
-  .quote p {
-    width: 98%;
-  }
-
-  .bell-quote {
-    font-size: 65px;
-    bottom: 80%;
-    right: 85%;
-  }
-
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   }
@@ -167,14 +157,6 @@
 
   .skills .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(230px, auto));
-  }
-
-  .sponsor__img {
-    width: 120px;
-  }
-
-  .sponsor__img.resize {
-    width: 180px;
   }
 
   /* .portfolio-category {
@@ -410,20 +392,6 @@
     display: none;
   }
 
-  .quote {
-    width: 80%;
-  }
-
-  .quote p {
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .bell-quote {
-    font-size: 50px;
-    right: 88%;
-  }
-
   .about .right .topic {
     font-size: 25px;
   }
@@ -456,11 +424,9 @@
 
   .skills .grid-box {
     margin: -20px 0 0;
-    transition: none;
   }
 
   .skills .grid-box:hover {
-    transform: none;
     box-shadow: none;
   }
 
@@ -493,7 +459,7 @@
   .portfolio-category {
     display: none;
   }
-  
+
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(170px, auto));
     gap: 1.2rem;
@@ -516,10 +482,6 @@
     font-size: 14px;
   } */
 
-  .portfolio-card .porto-modal-content {
-    width: 80%;
-  }
-  
   .more-project-title h1 {
     font-size: 20px;
   }

@@ -246,7 +246,7 @@ a {
     max-width: 75%;
     left: 0;
     right: 0;
-  } 
+  }
 }
 
 .navbar {
@@ -925,21 +925,21 @@ a {
 .more-project .box-project .content,
 .portfolio-card .box .content {
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: var(--white);
+  background: rgba(16, 12, 24, 0.9);
   display: flex;
   justify-content: center;
   transform: scale(0);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .more-project .box-project:hover .content,
 .portfolio-card .box:hover .content {
   transform: scale(1);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 /* PORTFOLIO MODAL CONTENT */
@@ -971,8 +971,8 @@ a {
   justify-content: center;
   padding: 9px 14px;
   border-radius: 8px;
-  border: solid 1px var(--h2);
-  color: var(--h2);
+  border: solid 1px var(--white);
+  color: var(--white);
   background: none;
 }
 
@@ -1024,7 +1024,7 @@ a {
 }
 
 .more-project {
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
