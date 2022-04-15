@@ -789,8 +789,7 @@ a {
 /*========== RESOURCES END =========*/
 
 /*========== PORTFOLIO CATEGORY BUTTON ==========*/
-.portfolio-category {
-  /* display: flex; */
+/* .portfolio-category {
   overflow-x: auto;
   display: none !important;
 }
@@ -817,7 +816,7 @@ a {
 .portfolio-category button.active {
   background: #d1befd;
   color: var(--h2);
-}
+} */
 
 /*========== PORTFOLIO SECTION ==========*/
 .portfolio .title {
@@ -873,13 +872,8 @@ a {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.portfolio-card .box .box-img {
+.portfolio-card .box img {
   width: 100%;
-}
-
-.portfolio-card .box .box-img img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 9px;
@@ -898,11 +892,7 @@ a {
 .portfolio-card h2 a {
   color: var(--grey);
   margin-top: 3px;
-  visibility: hidden;
-}
-
-.portfolio-card h2 a:hover {
-  color: var(--green);
+  display: none;
 }
 
 .portfolio-card h3 {
@@ -939,7 +929,6 @@ a {
 .more-project .box-project:hover .content,
 .portfolio-card .box:hover .content {
   transform: scale(1);
-  transition: 0.3s;
 }
 
 /* PORTFOLIO MODAL CONTENT */
@@ -954,15 +943,16 @@ a {
   font-size: 20px;
   display: flex;
   justify-content: center;
-  color: white;
+  color: var(--button-main);
   padding: 10px 15px;
   margin-right: 1rem;
   border-radius: 8px;
-  background: var(--button-main);
+  background: var(--white);
 }
 
 .porto-modal-btn .btn:hover {
   background: var(--button-main-hover);
+  color: var(--white);
 }
 
 .porto-modal-btn .btn-repo {
@@ -1066,11 +1056,7 @@ a {
   }
 }
 
-.box-project .project-img {
-  width: 100%;
-}
-
-.project-img img {
+.box-project img {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -1377,6 +1363,10 @@ iframe {
   filter: var(--filter-map);
 }
 
+iframe:hover {
+  filter: grayscale(1);
+}
+
 .modal__button a {
   display: inline-block;
   background: var(--button-main);
@@ -1480,8 +1470,8 @@ iframe {
   font-size: 2rem;
   color: var(--grey);
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 25px;
+  right: 25px;
 }
 
 /*========== "Show" Contact Modal Mobile ==========*/

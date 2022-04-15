@@ -456,10 +456,6 @@
     margin-bottom: 250px;
   } */
 
-  .portfolio-category {
-    display: none;
-  }
-
   .portfolio-card {
     grid-template-columns: repeat(auto-fit, minmax(170px, auto));
     gap: 1.2rem;
