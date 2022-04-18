@@ -616,7 +616,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  transition: all 0.1s linear;
   padding: 15px;
 }
 
@@ -951,7 +950,7 @@ a {
 }
 
 .porto-modal-btn .btn:hover {
-  background: var(--button-main-hover);
+  background: var(--button-main);
   color: var(--white);
 }
 
@@ -967,7 +966,8 @@ a {
 }
 
 .porto-modal-btn .btn-repo:hover {
-  color: var(--button-main);
+  color: var(--white);
+  background: var(--button-main);
   border: solid 1px var(--button-main);
 }
 /*========== END ==========*/

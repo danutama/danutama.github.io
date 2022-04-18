@@ -181,3 +181,30 @@ $(document).ready(function () {
   });
 });
 // ====== END ====== //
+
+// ====== SCROLL REVEAL ANIMATION ====== //
+const sr = ScrollReveal({
+  distance: '60px',
+  duration: 1500,
+  // reset: true,
+});
+
+sr.reveal(
+  `.hero-image, .col-1 h1, .col-1 h4, 
+   .highlight-name, .title, .box, .image-box,
+   .faq-text li, .social a`,
+  {
+    origin: 'top',
+    interval: 100,
+  }
+);
+
+sr.reveal(`.left, .grid-box, .sponsor__content`, {
+  origin: 'left',
+});
+
+sr.reveal(`.right, .sponsor-container`, {
+  origin: 'right',
+  interval: 100,
+});
+// ====== SCROLL END ======= //
