@@ -298,6 +298,10 @@
     -webkit-text-fill-color: transparent;
   }
 
+  .nav-list a:hover::before {
+    display: none;
+  }
+
   /* === Icon Transition in Mobile === */
   .nav-list .icon-solid {
     display: none;
