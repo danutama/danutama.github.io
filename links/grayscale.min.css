@@ -22,9 +22,10 @@
 .btn-primary:hover {
   background: rgba(246, 246, 246, 0.8);
   color: #000;
-  transform: scale(1.03);
-  -ms-transform: scale(1.03); /* Support IE 9 */
-  -webkit-transform: scale(1.03); /* support Safari */
+  transition: all 0.2s ease;
+  transform: scale(0.97);
+  -ms-transform: scale(0.97); /* Support IE 9 */
+  -webkit-transform: scale(0.97); /* support Safari */
 }
 
 .btn-primary:focus {
@@ -40,7 +41,8 @@
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
-  background-image: url('/img/gradient.jpg');
+  /* background-image: url('/img/gradient.jpg'); */
+  background-color: #324E58;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -52,7 +54,7 @@ a {
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #ff9800;
+  color: #c7c6c4;
 }
 
 .iconbig {
