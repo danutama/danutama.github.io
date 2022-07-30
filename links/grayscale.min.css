@@ -17,6 +17,8 @@
 .btn-primary {
   background: rgba(246, 246, 246, 0.8);
   color: #000;
+  transition: all 0.2s ease;
+  transform: scale(1);
 }
 
 .btn-primary:hover {
@@ -36,6 +38,13 @@
 .btn-primary:active {
   background: rgba(246, 246, 246, 0.8) !important;
   color: #000 !important;
+}
+
+section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
 }
 
 body {
@@ -72,7 +81,8 @@ a:hover {
   border-radius: 100px;
   box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.2);
   width: 100;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  margin-top: 1rem;
 }
 
 #insta-footer {
