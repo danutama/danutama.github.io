@@ -394,9 +394,9 @@ a {
 
 .home-btn {
   display: flex;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
 }
 
 .ctn {
@@ -410,9 +410,9 @@ a {
 
 .cta {
   padding: 16px 32px;
-  background: var(--green);
-  border: 2px solid var(--green);
-  color: var(--h2);
+  background: var(--button-main);
+  border: 2px solid var(--button-main);
+  color: var(--white);
   border-radius: 10px;
   text-align: center;
   /* margin-right: 20px; */
@@ -1275,7 +1275,7 @@ a {
 
 .contact-info .info-item a:hover {
   text-decoration: underline;
-  color: #ffe600;
+  color: var(--grey);
 }
 
 .credits {
