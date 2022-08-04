@@ -17,7 +17,7 @@ html {
 }
 
 :root {
-  --background: radial-gradient(circle, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fcfbff, #f9f8ff, #f7f4ff, #f1ecff, #ece4ff, #e7dbff, #e2d3ff);
+  --background: #fff;
   --h1: #000;
   --h2: #000;
   --social: #fff;
@@ -328,6 +328,36 @@ a {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.mini-1, .mini-2, .mini-3 {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: solid 3px #cbb5ff;
+  border-radius: 10px;
+  position: absolute;
+  left: 3%;
+  top: 15%;
+  transform: rotate(45deg);
+}
+
+.mini-2 {
+  width: 45px;
+  height: 45px;
+  border: solid 3px #abeef0;
+  left: 80%;
+  top: 50%;
+  transform: rotate(25deg);
+}
+
+.mini-3 {
+  width: 30px;
+  height: 30px;
+  border: solid 3px #f9c18f;
+  left: 30%;
+  top: 100%;
+  transform: rotate(5deg);
 }
 
 .row.hero {
