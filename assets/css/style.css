@@ -951,13 +951,13 @@ a {
   background: rgba(16, 12, 24, 0.8);
   display: flex;
   justify-content: center;
-  transition: all 0.4s ease;
-  opacity: 0;
+  transition: 0.2s;
+  transform: scale(0);
 }
 
 .more-project .box-project:hover .content,
 .portfolio-card .box:hover .content {
-  opacity: 1;
+  transform: scale(1);
 }
 
 /* PORTFOLIO MODAL CONTENT */
