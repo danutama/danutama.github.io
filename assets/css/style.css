@@ -50,11 +50,11 @@ html {
 
 /*===== Variables Dark theme =====*/
 body.dark-theme {
-  --background: #120d1f;
+  --background: #393347;
   --h1: #fff;
   --h2: #000;
   --social: #fff;
-  --background-nav: #1e1a2c;
+  --background-nav: #494259;
   --background-credits: transparent;
   --about-color: #28262e;
   --card-color: rgb(12, 12, 15);
@@ -62,7 +62,7 @@ body.dark-theme {
   --resources-color: #1e1a2c;
   --button-icon: linear-gradient(to top, #8d5cff, #9a6ffd, #a680fb, #b192f8, #bca3f5);
   --button-fill: #fff;
-  --modal-color: #1e1b29;
+  --modal-color: #393347;
   --accordion-text: #06b3ba;
   --accordion-line: rgba(255, 255, 255, 0.18);
 
@@ -72,7 +72,7 @@ body.dark-theme {
   --credits-shadow: 0 0 0.3rem 0.3rem rgba(238, 234, 234, 0.3);
   --white: #fff;
   --grey: #b4b2c5;
-  --circle: #120d1f;
+  --circle: #393347;
   --circle-1: rgb(12, 12, 15);
   --title: #d1befd;
   --filter-map: invert(0.9);
@@ -1215,7 +1215,7 @@ a {
   max-width: 100%;
   width: 100%;
   padding-top: 20px;
-  background: #120d1f;
+  background: #393347;
   border-top: 1px solid rgba(230, 230, 230, 0.5);
   margin-bottom: 0;
 }
