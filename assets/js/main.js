@@ -199,6 +199,14 @@ sr.reveal(
   }
 );
 
+sr.reveal(
+  `.box`,
+  {
+    origin: 'bottom',
+    interval: 100,
+  }
+);
+
 sr.reveal(`.left, .grid-box, .sponsor__content`, {
   origin: 'left',
 });
