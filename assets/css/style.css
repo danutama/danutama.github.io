@@ -10,7 +10,7 @@
 
 body,
 html {
-  font-family: 'nunito';
+  font-family: 'poppins';
   overflow-x: hidden;
   scroll-behavior: smooth;
   background: var(--circle);
@@ -22,6 +22,7 @@ html {
   --h2: #000;
   --social: #fff;
   --background-nav: #fff;
+  --border: transparent;
   --background-credits: #261b3f;
   --about-color: #fff;
   --card-color: #fff;
@@ -55,6 +56,7 @@ body.dark-theme {
   --h2: #000;
   --social: #fff;
   --background-nav: #1e1a2c;
+  --border: #b4b2c5;
   --background-credits: transparent;
   --about-color: #28262e;
   --card-color: rgb(12, 12, 15);

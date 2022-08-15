@@ -248,6 +248,7 @@
     right: 0;
     justify-content: center;
     background: var(--background-nav);
+    border: 1px solid var(--border);
     text-align: center;
     position: fixed;
     bottom: 15px;
