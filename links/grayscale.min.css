@@ -18,16 +18,14 @@
   background: rgba(246, 246, 246, 0.8);
   color: #000;
   transition: all 0.2s ease;
-  transform: scale(1);
 }
 
 .btn-primary:hover {
   background: rgba(246, 246, 246, 0.8);
   color: #000;
-  transition: all 0.2s ease;
-  transform: scale(0.97);
-  -ms-transform: scale(0.97); /* Support IE 9 */
-  -webkit-transform: scale(0.97); /* support Safari */
+  transform: scale(1);
+  -ms-transform: scale(1); /* Support IE 9 */
+  -webkit-transform: scale(1); /* support Safari */
 }
 
 .btn-primary:focus {
@@ -38,6 +36,7 @@
 .btn-primary:active {
   background: rgba(246, 246, 246, 0.8) !important;
   color: #000 !important;
+  transform: scale(.97);
 }
 
 section {
