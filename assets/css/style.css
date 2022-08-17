@@ -876,7 +876,7 @@ a {
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -12px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .portfolio-card .box img {
@@ -987,13 +987,14 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 90%;
+  overflow-x: hidden;
 }
 
 .more-project-title {
   margin-top: -1.5rem;
-  padding-top: 1.5rem;
+  padding-top: .5rem;
   text-align: center;
-  border-top: solid 1px var(--grey);
 }
 
 .more-project-title h1 {
@@ -1023,49 +1024,35 @@ a {
   font-weight: 600;
   letter-spacing: 0.6px;
   margin: auto 0 1rem 0;
+  display: flex;
+  text-align: left;
 }
 
 .more-project {
-  padding: 0 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 1rem;
   width: 100%;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  -webkit-scroll-snap-type: inline mandatory;
-  -ms-scroll-snap-type: inline mandatory;
-  scroll-snap-type: inline mandatory;
+}
+
+.project-wrap {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .box-project {
-  background: var(--skills-color);
+  background: var(--background-nav);
+  margin-top: 3rem;
   margin-bottom: 2rem;
-  margin-right: 25px;
   display: flex;
   flex-direction: column;
-  min-width: 100%;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  scroll-snap-align: center;
-}
-
-@media (min-width: 650px) {
-  .box-project {
-    min-width: -webkit-calc(40% - 20px);
-    min-width: calc(40% - 20px);
-  }
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -12px, rgba(0, 0, 0, 0.3) 0px 3px 7px -5px;
 }
 
 .box-project img {
@@ -1073,6 +1060,29 @@ a {
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
+}
+
+.new-swiper-pagination {
+  display: block;
+}
+
+.new-swiper-button-next,
+.new-swiper-button-prev {
+  position: absolute;
+  cursor: default !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.new-swiper-button-next::after,
+.new-swiper-button-prev::after {
+  background: var(--button-main);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 5px;
+  padding: 9px;
 }
 /*========== END ==========*/
 
