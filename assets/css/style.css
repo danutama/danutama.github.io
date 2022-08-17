@@ -1044,7 +1044,7 @@ a {
 .box-project {
   background: var(--background-nav);
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1066,25 +1066,34 @@ a {
   display: block;
 }
 
-.new-swiper-button-next,
-.new-swiper-button-prev {
-  position: absolute;
+.pagination {
+  display: flex;
+  justify-content:center;
+  margin-top: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  /* position: absolute; */
   cursor: default !important;
   border: none !important;
   outline: none !important;
+  /* margin-top: -47px; */
+  position: inherit;
+  display: inline-flex;
+  margin: 0 10px;
 }
 
-.new-swiper-button-next::after,
-.new-swiper-button-prev::after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   background: var(--button-main);
   color: white;
   font-size: 10px;
   font-weight: bold;
-  border-radius: 8px;
-  width: 5px;
+  border-radius: 7px;
+  width: 15px;
   padding: 9px;
 }
-/*========== END ==========*/
 
 /*========== ACCORDION FAQ SECTION ==========*/
 .accordion-container {
@@ -1247,26 +1256,6 @@ a {
   width: 15px;
   height: 5px;
   border-radius: 5px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  cursor: default !important;
-  border: none !important;
-  outline: none !important;
-  margin-top: -47px;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  background: var(--button-main);
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-  border-radius: 8px;
-  width: 15px;
-  padding: 9px;
 }
 
 .contact-info .info-item {

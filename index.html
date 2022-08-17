@@ -430,9 +430,11 @@
             <h3 translate="no">User Interface / Landing</h3>
           </div>
         </div>
-        <div class="new-swiper-button-next"></div>
-        <div class="new-swiper-button-prev"></div>
         <div class="new-swiper-pagination"></div>
+        <div class="pagination">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
      </div>
     </section>
 
@@ -510,8 +512,8 @@
           </div>
           <!-- info item end -->
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
         <div class="swiper-pagination"></div>
       </div>
 
@@ -567,10 +569,6 @@
             spaceBetween: 20,
           },
         },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
         pagination: {
           el: '.swiper-pagination',
           Bullets: true,
@@ -578,7 +576,7 @@
         },
       }); // END //
 
-      // === INITIALIZE SWIPER PROJECT === //
+      // === INITIALIZE SWIPER PROJECT SECTION=== //
       let newSwiper = new Swiper('.project-wrap', {
         grabCursor: true,
         loop: false,
@@ -602,8 +600,8 @@
           },
         },
         navigation: {
-          nextEl: '.new-swiper-button-next',
-          prevEl: '.new-swiper-button-prev',
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         pagination: {
           el: '.new-swiper-pagination',
