@@ -871,7 +871,7 @@ a {
 .portfolio-card .box {
   padding: 0;
   border-radius: 9px;
-  background: var(--skills-color);
+  background: var(--background-nav);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -883,7 +883,7 @@ a {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 9px;
+  border-radius: 9px 9px 0 0;
 }
 
 .portfolio-card h2 {
@@ -897,18 +897,18 @@ a {
   justify-content: space-between;
 }
 
-.portfolio-card h2 a {
-  color: var(--grey);
-  margin-top: 3px;
-  display: none;
-}
-
 .portfolio-card h3 {
   padding: 0 10px 0 10px;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.6px;
-  margin: auto 0 1rem 0;
+  margin: 0 0 1rem 0; /*top no auto*/
+
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 90%;
 }
 
 /* .portfolio-card .box .btn {
@@ -983,7 +983,7 @@ a {
 /*========== END ==========*/
 
 /* ====== MORE PROJECT SECTION ====== */
-.more.project {
+.project {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -998,12 +998,7 @@ a {
 }
 
 .more-project-title h1 {
-  background: var(--h1);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 27px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -1023,9 +1018,14 @@ a {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.6px;
-  margin: auto 0 1rem 0;
-  display: flex;
+  margin: 0 0 1rem 0; /*top no auto*/
   text-align: left;
+
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 90%;
 }
 
 .more-project {
@@ -1047,9 +1047,7 @@ a {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  border-radius: 9px;
   position: relative;
   overflow: hidden;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -12px, rgba(0, 0, 0, 0.3) 0px 3px 7px -5px;
@@ -1059,7 +1057,7 @@ a {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 10px;
+  border-radius: 9px 9px 0 0;
 }
 
 .new-swiper-pagination {
@@ -1093,6 +1091,19 @@ a {
   border-radius: 7px;
   width: 15px;
   padding: 9px;
+  transition: all .2s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  -ms-transform: scale(1); /* Support IE 9 */
+  -webkit-transform: scale(1); /* support Safari */
+  transform: scale(1);
+} 
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  transform: scale(.97);
 }
 
 /*========== ACCORDION FAQ SECTION ==========*/
@@ -1283,6 +1294,11 @@ a {
 
 .contact-info .info-item a {
   color: white;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 90%;
 }
 
 .contact-info .info-item a:hover {
