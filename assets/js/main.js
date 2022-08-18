@@ -190,7 +190,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.hero-image, .col-1 h1, .col-1 h4, 
+  `.hero-image, .col-1 h1, .col-1 h3, 
    .highlight-name, .title, .box, .image-box,
    .faq-text li, .social a`,
   {

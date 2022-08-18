@@ -45,7 +45,7 @@
     align-items: center;
   }
 
-  .col-1 h4 {
+  .col-1 h1 {
     text-align: center;
     justify-content: center;
   }
@@ -124,7 +124,7 @@
     margin-left: 1.5rem;
   }
 
-  .home.container .col-1 h4 {
+  .home.container .col-1 h1 {
     font-size: 40px;
   }
 
@@ -151,7 +151,7 @@
 }
 
 @media (max-width: 640px) {
-  .home.container .col-1 h1 {
+  .home.container .col-1 h3 {
     font-size: 20px;
   }
 
@@ -371,7 +371,7 @@
     text-align: center;
   }
 
-  .home.container .col-1 h1 {
+  .home.container .col-1 h3 {
     font-size: 15px;
   }
 
@@ -386,7 +386,7 @@
   } */
   /* end */
 
-  .home.container .col-1 h4 {
+  .home.container .col-1 h1 {
     font-size: 27px;
   }
 
@@ -441,7 +441,7 @@
     box-shadow: none;
   }
 
-  .skills .title h4 {
+  .skills .title h2 {
     font-size: 17px;
   }
 
