@@ -124,7 +124,7 @@ a {
 }
 
 /*========== SCROLL BAR CUSTOM ==========*/
-.has-scrollbar::-webkit-scrollbar {
+/* .has-scrollbar::-webkit-scrollbar {
   width: 10px;
   height: 8px;
 }
@@ -150,7 +150,7 @@ a {
 
 .has-scrollbar::-webkit-scrollbar-thumb:hover {
   background: var(--button-main);
-}
+} */
 /*========== END ==========*/
 
 /*========== PRELOADER ==========*/
@@ -670,8 +670,9 @@ a {
   color: var(--h1);
 }
 
-.sponsor__content h2 .fa {
+.sponsor__content h2 i {
   padding-top: 8px;
+  font-size: 20px;
 }
 
 .sponsor__content h3 {
@@ -1360,6 +1361,7 @@ html.show-modal {
   padding: 15px;
   width: 70%;
   border-radius: 12px;
+  font-family: 'poppins';
   font-size: 15px;
   letter-spacing: 0.05rem;
   z-index: 3;
