@@ -276,7 +276,6 @@ a {
 
 .nav-list a {
   color: var(--h1);
-  font-family: 'nunito';
   padding-bottom: 3px;
   position: relative;
   letter-spacing: 0.7px;
@@ -693,7 +692,6 @@ a {
 }
 
 .button-back {
-  font-family: 'nunito';
   outline: none;
   border: none;
   font-size: 20px;
