@@ -335,28 +335,28 @@ a {
   width: 40px;
   height: 40px;
   background: transparent;
-  border: solid 3px #cbb5ff;
+  border: solid 6px #cbb5ff;
   border-radius: 10px;
   position: absolute;
   left: 10%;
-  top: 15%;
+  top: 25%;
   transform: rotate(45deg);
 }
 
 .mini-2 {
   width: 45px;
   height: 45px;
-  border: solid 3px #abeef0;
+  border: solid 6px #abeef0;
   left: 80%;
   top: 50%;
-  transform: rotate(25deg);
+  transform: rotate(15deg);
 }
 
 .mini-3 {
   width: 30px;
   height: 30px;
-  border: solid 3px #f9c18f;
-  left: 30%;
+  border: solid 6px #f9c18f;
+  left: 20%;
   top: 100%;
   transform: rotate(5deg);
 }
@@ -1009,7 +1009,7 @@ a {
   color: var(--h1);
   margin: 15px 0 5px 0;
   display: flex;
-  justify-content: space-between;
+  text-align: left;
 }
 
 .box-project h3 {

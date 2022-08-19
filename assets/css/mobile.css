@@ -357,9 +357,7 @@
   /* end */
 
   .mini-1, .mini-2, .mini-3 {
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
+    display: none;
   }
   
   .row.hero {
