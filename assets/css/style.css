@@ -629,7 +629,7 @@ a {
 }
 /*========== END ==========*/
 
-/*========== RESOURCES SECTION ==========*/
+/*========== RESOURCES ARTICLE ==========*/
 .sponsor__container {
   width: 100%;
   display: grid;
@@ -980,7 +980,7 @@ a {
 }
 /*========== END ==========*/
 
-/* ====== MORE PROJECT SECTION ====== */
+/* ====== MORE PROJECT ARTICLE ====== */
 .project {
   display: flex;
   justify-content: center;
@@ -1104,7 +1104,7 @@ a {
   transform: scale(.97);
 }
 
-/*========== ACCORDION FAQ SECTION ==========*/
+/*========== ACCORDION FAQ ARTICLE ==========*/
 .accordion-container {
   display: flex;
   justify-content: center;
