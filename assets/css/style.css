@@ -1000,6 +1000,28 @@ a {
   font-weight: 700;
 }
 
+.or-line-project {
+  position: relative;
+  border-radius: 20px;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: var(--grey);
+}
+
+.or-line-project::before {
+  content: 'More Project';
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--circle);
+  color: var(--h1);
+  padding: 0 15px;
+}
+
 .box-project h2 {
   padding: 0 10px;
   font-size: 17px;
@@ -1301,7 +1323,6 @@ a {
 
 .contact-info .info-item a:hover {
   text-decoration: underline;
-  color: var(--grey);
 }
 
 .credits {
