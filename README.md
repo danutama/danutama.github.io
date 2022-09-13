@@ -2,9 +2,9 @@
 
 Halo.. Perkenalkan, saya Danu. Ini adalah website portofolio pribadi saya, di dalamnya terdapat beberapa project yang pernah saya kerjakan. Portofolio ini akan terus saya kembangkan seiring bertambahnya pengetahuan dan keterampilan saya dalam bidang front-end web development.
 
-[![](https://img.shields.io/badge/-danupratama.dev@gmail.com-1fa2f2?logo=gmail&style=flat&logoColor=white)](mailto:danupratama.dev@gmail.com)
-[![](https://img.shields.io/badge/-myTelegram-purple?logo=telegram&style=flat&logoColor=white)](https://t.me/danu_pratama)
 [![](https://img.shields.io/badge/-myPortfolioWebsite-orange?logo=website&style=flat)](https://linktr.ee/danupratama)
+
+[![](https://img.shields.io/badge/-danupratama.dev@gmail.com-1fa2f2?logo=gmail&style=flat&logoColor=white)](mailto:danupratama.dev@gmail.com)
 
 Design by me 🎨
 
