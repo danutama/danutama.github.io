@@ -537,6 +537,12 @@
     <script src="assets/js/main.js"></script>
 
     <script type="text/javascript">
+      // Keep URL
+      $(window).on('hashchange', function (e) {
+          history.replaceState("", document.title, e.originalEvent.oldURL);
+      });
+      //
+
       $(document).ready(function () {
         $('ul li a').click(function () {
           $('li a').removeClass('active');
