@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 /* Global Styling */
 * {
@@ -388,12 +388,12 @@ a {
 .col-1 h3 {
   color: var(--grey);
   font-size: 20px;
+  font-weight: normal;
 }
 
 .highlight-name {
   color: var(--h1);
   font-size: 50px;
-  font-weight: 700;
   margin-top: 20px;
 }
 
@@ -519,7 +519,6 @@ a {
   text-align: left;
   color: var(--h1);
   font-size: 18px;
-  font-weight: 600;
   margin-bottom: 30px;
 }
 
@@ -599,7 +598,6 @@ a {
   -webkit-text-fill-color: transparent;
   letter-spacing: 0.6px;
   font-size: 18px;
-  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -609,7 +607,6 @@ a {
   letter-spacing: 0.6px;
   font-size: 16px;
   color: var(--h1);
-  font-weight: 600;
   margin-bottom: auto;
 }
 
@@ -655,7 +652,6 @@ a {
   display: flex;
   justify-content: space-between;
   color: var(--h1);
-  font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.6px;
   margin-bottom: 5px;
@@ -677,7 +673,7 @@ a {
 
 .sponsor__content h3 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: normal;
   letter-spacing: 0.6px;
 }
 
@@ -696,7 +692,6 @@ a {
   outline: none;
   border: none;
   font-size: 20px;
-  font-weight: bold;
   color: var(--h1);
   background: none;
 }
@@ -760,7 +755,6 @@ a {
 
 .sponsor-content a {
   font-size: 16px;
-  font-weight: 600;
   letter-spacing: 0.6px;
 }
 
@@ -887,7 +881,6 @@ a {
 .portfolio-card h2 {
   padding: 0 10px 0 10px;
   font-size: 17px;
-  font-weight: bold;
   letter-spacing: 0.6px;
   color: var(--h1);
   margin: 15px 0 5px 0;
@@ -898,7 +891,7 @@ a {
 .portfolio-card h3 {
   padding: 0 10px 0 10px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: normal;
   letter-spacing: 0.6px;
   margin: 0 0 1rem 0; /*top no auto*/
 
@@ -997,7 +990,6 @@ a {
 
 .more-project-title h1 {
   font-size: 30px;
-  font-weight: 700;
 }
 
 .or-line-project {
@@ -1012,7 +1004,7 @@ a {
 .or-line-project::before {
   content: 'More Project';
   font-size: 30px;
-  font-weight: 700;
+  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1025,7 +1017,6 @@ a {
 .box-project h2 {
   padding: 0 10px;
   font-size: 17px;
-  font-weight: bold;
   letter-spacing: 0.6px;
   color: var(--h1);
   margin: 15px 0 5px 0;
@@ -1036,7 +1027,7 @@ a {
 .box-project h3 {
   padding: 0 10px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: normal;
   letter-spacing: 0.6px;
   margin: 0 0 1rem 0; /*top no auto*/
   text-align: left;
@@ -1229,7 +1220,6 @@ a {
 .accordion-text li p {
   width: 85%;
   font-size: 16px;
-  font-weight: 500;
   color: var(--h1);
   max-height: 0;
   visibility: hidden;
