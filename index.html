@@ -1,622 +1,168 @@
 <!DOCTYPE html>
-<html id="body" lang="en">
+
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Danu Pratama | Front-end Developer">
-    <meta name="author" content="">
-    <meta name="keywords" content="Danu Pratama, Danu, Web Developer, Web Design, Web Development, Front-end Developer, Website, Danu Pratama Site">
 
-    <meta property='og:title' content='Danu A. Pratama - Personal Portfolio'/>
-    <meta property='og:description' content='Danu Pratama | Front-end Developer'/>
-    <meta property='og:url' content='https://danupratama.site/'/>
+    <meta name="description" content="Danu Pratama, Web Developer Based in Jakarta">
+    <meta name="keywords" content="Danu Pratama, Portfolio, Web Developer Jakarta, Coding">
+    <link rel="canonical" href="https://danupratama.site">
 
-    <title>Danu Pratama | Front-end Developer</title>
-
-    <!-- SWIPER.JS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Danu Pratama</title>
 
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
-    <!-- FLATICON -->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css' />
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css' />
-
-    <!-- BOXICONS -->
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' />
-    
-    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/mobile.css" />
-    <link rel="shortcut icon" type="image/png" href="img/casual-life-3d-avatar-with-man-in-green-shirt-and-orange-hat.png" />
   </head>
+
   <body>
-    <!-- Preloader Start -->
-    <!-- <div class="preloader">
-      <div class="loader"></div>
-    </div> -->
-    <!-- Preloader End  -->
-    
-    <!-- Move to up button -->
-    <div class="scroll-button">
-      <a href="#" class="top-button"><i class="fa fa-arrow-up"></i></a>
-    </div>
-
-    <nav class="navbar container" id="navbar">
-      <div class="logo">
-        <a href=""><img src="img/my_logo_primary.png" alt="logo_Danu"/></a>
-      </div>
-      
-      <div class="nav-list" id="nav_list">
-        <ul>
-          <li>
-            <a href="#home" class="list active">
-              <i class="fi fi-rr-home icon-regular"></i>
-              <i class="fi fi-sr-home icon-solid"></i>
-              <span class="nav-name" translate="no">Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#about" class="list">
-              <i class="fi fi-rr-user icon-regular"></i>
-              <i class="fi fi-sr-user icon-solid"></i>
-              <span class="nav-name" translate="no">About</span>
-            </a>
-          </li>
-          <li>
-            <a href="#skills" class="list">
-              <i class="fi fi-rr-chart-pie-alt icon-regular"></i>
-              <i class="fi fi-sr-chart-pie-alt icon-solid"></i>
-              <span class="nav-name" translate="no">Skills</span>
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio" class="list">
-              <i class="badge-notif" data-badge="">
-                <i class="fi fi-rr-briefcase icon-regular"></i>
-                <i class="fi fi-sr-briefcase icon-solid"></i>
-              </i>
-              <span class="nav-name" translate="no">Project</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      
-    </nav>
-
-    <!-- Home -->
-    <section class="home container" id="home">
-      <div class="mini-1"></div>
-      <div class="mini-2"></div>
-      <div class="mini-3"></div>
-      <div class="row hero">
-
-        <!-- Theme change button -->
-        <div class="dark" id="dark">
-          <span class="change-theme-name"></span>
-          <i class="bx bxs-moon change-theme" id="theme-button"></i>
-        </div>
-        <!-- End -->
-
-        <div class="col col-1">
-          <div class="hero-image">
-            <img src="img/casual-life-3d-avatar-with-man-in-green-shirt-and-orange-hat.png" alt="My Avatar">
-          </div>
-          <h3>Hi, <span id="greating">...</span></h3>
-          <h2 class="highlight-name">I am Danu<span class="mini-dot" style="color:#fa8909;">.</span></h2>
-          <h1 translate="no">Front-end Developer</h1>
-          <div class="home-btn">
-            <a href="#portfolio" class="cta">View Project</a>
-            <!-- <a href="#contact-me" class="ctn">Contact Me</a> -->
-          </div>
-
-          <!-- Contact Modal Mobile Version -->
-          <button class="modal__button-main" id="contact">Get In Touch <i class="fa fa-paper-plane-o"></i></button>
-
-          <div class="modal__container" id="modal-container" >
-            <div class="modal__content">
-              <div class="modal__close close-modal" title="Close">
-                <i class="fi fi-sr-cross-small"></i>
-              </div>
-
-              <div class="line3"></div>
-
-              <div class="text-wrap">
-                <span>Contact me for a collaboration experience</span>
-              </div>
-
-              <div class="contact-icons">
-                <ul>
-                  <li>
-                    <a href="https://instagram.com/danuapratama" title="Instagram" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/danuapratama" title="GitHub" target="_blank"><i class="bx bxl-github"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://saweria.co/danuapratama/" title="Support me with a coffee" target="_blank"><i class="bx bxs-coffee-alt"></i></a>
-                  </li>
-                </ul>
-              </div>
-    
-              <div class="modal-btn-box">
-                <div class="modal__button mail modal__button-width" translate="no">
-                  <a href="mailto:danupratama.dev@gmail.com" title="Email" target="_blank">Email</a>
-                </div>
-
-                <div class="or-line"></div>
-
-                <div class="modal__button tele modal__button-width" translate="no">
-                  <a href="https://t.me/danu_pratama" title="Telegram" target="_blank">Telegram</a>
-                </div>
-              </div>
-              
-              <div class="credits" id="credits-contact" translate="no" style="color: var(--grey);">
-                &#169;2021-<script type="text/javascript">
-                  var creditsyear = new Date();
-                  document.write(creditsyear.getFullYear());
-                </script>
-                Made with <span style="color: #06b3ba; font-size: 10px"><i class="bx bxs-heart"></i></span> by Danu
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- <div class="col col-2">
-          <div class="hero-img" data-aos="fade-left" data-aos-duration="2000">
-            <img src="img/casual-life-3d-24.png" alt="Front-end-Img" />
-          </div>
-        </div> -->
-      </div>
-    </section>
-
-    <!-- About Section Start -->
-    <section class="about container" id="about">
-      <div class="content">
-        <div class="about-details">
-          <div class="left">
-            <img src="./img/danu.jpg" alt="My Photo" />
-          </div>
-          <div class="right">
-            <div class="topic">Who am I?</div>
-
-            <p class="text">
-              I believe that Portfolio should not be about me, but about the things I do with the expertise I have, so you can see my work. In the end, only that matters. But if you really would like to know me more here it is<span class="dots">...</span>
-              <span class="more-text"><br><br>My name is Danu A. Pratama. I am an active student from a university with an informatics engineering study program based in Jakarta, Indonesia. I am interested in programming, especially when it comes to web development. This website is a portfolio that I have been working on starting in 2021 and will continue to improve as I increase my knowledge and skills in the field of front-end web development. I am looking to collaborate on amazing projects in the future and be part of an incredible team.<br><br>Best,<br>Danu<br></span> 
-              <span class="btn-read" translate="no">read more</span>
-            </p>
-
-            <div class="button">
-              <a href="#">Resume</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="skills container" id="skills">
-      <div class="title">
-        <h3 translate="no">- SKILLS -</h3>
-        <h1 translate="no">Junior Front-end</h1>
-        <h2 translate="no">Web Development</h2>
-      </div>
-      <div class="grid-wrapper">
-        <div class="grid-box">
-          <div class="icon-title">
-            <img alt="html" src="data:image/png;base64,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">
-          </div>
-          <h2 translate="no">HyperText Markup Language</h2>
-          <p>I have advanced knowledge of HTML as the basic structure of web application development.</p>
-        </div>
-        <div class="grid-box">
-          <div class="icon-title">
-            <img alt="css" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjAiIGhlaWdodD0iNjAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzhkNWNmZiI+PHBhdGggZD0iTTE0NS43ODcyLDE5LjEwOTJjLTEuMDg5MzMsLTEuMjE1NDcgLTIuNjQzMDcsLTEuOTA5MiAtNC4yNzEzMywtMS45MDkyaC0xMTEuMDMxNzNjLTEuNjI4MjcsMCAtMy4xODIsMC42OTM3MyAtNC4yNzEzMywxLjkwOTJjLTEuMDg5MzMsMS4yMTU0NyAtMS42MDUzMywyLjgzOCAtMS40Mjc2LDQuNDU0OGwxMi42MjQ4LDExMy42NTE4N2MwLjI1MjI3LDIuMzEwNTMgMS44ODYyNyw0LjI0MjY3IDQuMTIyMjcsNC44NzkwN2w0Mi44ODUzMywxMi4yNTIxM2MwLjUxNiwwLjE0OTA3IDEuMDQ5MiwwLjIyMzYgMS41NzY2NywwLjIyMzZjMC41Mjc0NywwIDEuMDYwNjcsLTAuMDc0NTMgMS41NzY2NywtMC4yMjM2bDQyLjg4NTMzLC0xMi4yNTIxM2MyLjIzNiwtMC42MzY0IDMuODY0MjcsLTIuNTY4NTMgNC4xMjIyNywtNC44NzkwN2wxMi42MzA1MywtMTEzLjY1MTg3YzAuMTgzNDcsLTEuNjE2OCAtMC4zMzI1MywtMy4yMzkzMyAtMS40MjE4NywtNC40NTQ4ek0xMTcuNjI1MDcsNzQuOTU3NmwtMi41NTcwNyw0MS43NjczM2wtMjguODg0NTMsOS40NDI4bC0yOC44ODQ1MywtOS40NDI4bC0xLjA5NTA3LC0xOS45NzQ5M2gxNC42MmwwLjM2NjkzLDkuMDgxNmwxNC45OTI2Nyw1LjA4NTQ3bDE0Ljk5MjY3LC01LjA4NTQ3bDEuMDk1MDcsLTE2LjM0aC0zMi4xNzU0N2wtMC43MjgxMywtMTQuNTI4MjdoMzMuNjM3NDdsMS4wOTUwNywtMTQuNTI4MjdoLTUwLjQ1OTA3bC0xLjA5NTA3LC0xNC41MzRoNjYuOTA4eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"/>
-          </div>
-          <h2 translate="no">Cascading Style Sheet Language</h2>
-          <p>Advanced skills on CSS fundamentals as part of developing attractive and responsive web application.</p>
-        </div>
-        <div class="grid-box">
-          <div class="icon-title">
-            <img alt="javascript" src="data:image/png;base64,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">
-          </div>
-          <h2 translate="no">High-Level Programming Language</h2>
-          <p>I'm learning basic knowledge of Javascript as an advanced programming language on my journey as a web developer.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESOURCES -->
-    <article class="sponsor-section">
-      <div class="sponsor-container container grid">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="sponsor-content">
-            <img src="img/cta.png" alt="Resources" />
-            <h2 translate="no">Technology Resources Used in Development</h2>
-            <a href="resources" class="btn-resources">View page &raquo;</a>
-          </div>
-      </div>
-    </article>
-
-    <!-- PORTFOLIO -->
-    <section class="portfolio container" id="portfolio">
-      <div class="title">
-        <h3 translate="no">- PORTFOLIO -</h3>
-        <div class="ctn-title">
-          <h1 translate="no">My Personal Project</h1>
-          <h4 translate="no">
-            Any questions? Check out the
-            <span class="highlight">
-              <a href="#faq">FAQ</a>
-            </span>
-          </h4>
-        </div>
-      </div>
-
-      <!-- <div class="portfolio-category">
-        <div class="first-btn">
-          <button type="button" translate="no" class="active" data-filter='all'>
-                All
-          </button>
-        </div>
-
-        <div class="second-btn">
-            <button type="button" translate="no" data-filter='.landings'>
-                Landings
-            </button>
-        </div>
-
-        <div class="third-btn">
-          <button type="button" translate="no" data-filter='.personal'>
-              Personal
-          </button>
-        </div>
-
-        <div class="fourth-btn">
-          <button type="button" translate="no" data-filter='.pages'>
-              Pages
-          </button>
-        </div>
-      </div> -->
-
-      <div class="portfolio-card">
-        <div class="box mix landings">
-          <img src="img/9.png" alt="e-Commerce" />
-          <div class="content">
-            <span class="porto-modal-btn">
-              <a href="https://danuapratama.github.io/e-commerce-v2" target="_blank"><i class='btn bx bx-link-alt'></i></a>
-              <a href="https://github.com/danuapratama/e-commerce-v2" target="_blank"><i class="btn-repo fab fa-github"></i></a>
-            </span>
-          </div>
-          <h2 translate="no">e-Commerce v.2</h2>
-          <h3 translate="no">User Interface / Landings</h3>
-        </div>
-
-        <div class="box mix personal">
-          <img src="img/10.png" alt="React JS" />
-          <div class="content">
-            <span class="porto-modal-btn">
-              <a href="https://mini-reactjs.netlify.app" target="_blank"><i class='btn bx bx-link-alt'></i></a>
-              <a href="https://github.com/danuapratama/mini-react-JS" target="_blank"><i class="btn-repo fab fa-github"></i></a>
-            </span>
-          </div>
-          <h2 translate="no">React Single Page</h2>
-          <h3 translate="no">Basic Learning / Personal</h3>
-        </div>
-
-        <div class="box mix personal">
-          <img src="img/2.png" alt="Simple Blog" />
-          <div class="content">
-            <span class="porto-modal-btn">
-              <a href="https://danuapratama.github.io/simple-blog" target="_blank"><i class='btn bx bx-link-alt'></i></a>
-              <a href="https://github.com/danuapratama/simple-blog" target="_blank"><i class="btn-repo fab fa-github"></i></a>
-            </span>
-          </div>
-          <h2 translate="no">Simple Blog</h2>
-          <h3 translate="no">User Interface / Personal</h3>
-        </div>
-
-      </div>
-    </section>
-
-    <article class="more project container">
-      <div class="or-line-project"></div>
-      <!-- <div class="more-project-title">
-        <h1 class="more-title">
-          More Projects
-        </h1>
-      </div> -->
-
-      <div class="project-wrap swiper-2 mySwiper">
-        <div class="more-project swiper-wrapper">
-          <div class="box-project swiper-slide">
-            <img src="img/5.png" alt="To-do List" />
-            <div class="content">
-              <span class="porto-modal-btn">
-                <a href="https://danuapratama.github.io/to-do-list" target="_blank"><i class='btn bx bx-link-alt'></i></a>
-                <a href="https://github.com/danuapratama/to-do-list" target="_blank"><i class="btn-repo fab fa-github"></i></a>
-              </span>
-            </div>
-            <h2 translate="no">To-Do List</h2>
-            <h3 translate="no">Basic JavaScript / Personal</h3>
-          </div>
-
-          <div class="box-project swiper-slide">
-            <img src="img/1.png" alt="Photography" />
-            <div class="content">
-              <span class="porto-modal-btn">
-                <a href="https://danuapratama.github.io/photography" target="_blank"><i class='btn bx bx-link-alt'></i></a>
-                <a href="https://github.com/danuapratama/photography" target="_blank"><i class="btn-repo fab fa-github"></i></a>
-              </span>
-            </div>
-            <h2 translate="no">Photographer Folio</h2>
-            <h3 translate="no">User Interface / Personal</h3>
-          </div>
-
-          <div class="box-project swiper-slide">
-            <img src="img/3.png" alt="Furniture Shop" />
-            <div class="content">
-              <span class="porto-modal-btn">
-                <a href="https://danuapratama.github.io/furniture-web" target="_blank"><i class='btn bx bx-link-alt'></i></a>
-                <a href="https://github.com/danuapratama/furniture-web" target="_blank"><i class="btn-repo fab fa-github"></i></a>
-              </span>
-            </div>
-            <h2 translate="no">e-Commerce v.1</h2>
-            <h3 translate="no">User Interface / Landings</h3>
-          </div>
+    <header>
+      <nav>
+        <div class="navbar">
+          <a href="" class="nav-logo">DP.</a>
   
-          <div class="box-project swiper-slide">
-            <img src="img/4.png" alt="Travel" />
-            <div class="content">
-              <span class="porto-modal-btn">
-                <a href="https://danuapratama.github.io/website-travel" target="_blank"><i class='btn bx bx-link-alt'></i></a>
-                <a href="https://github.com/danuapratama/website-travel" target="_blank"><i class="btn-repo fab fa-github"></i></a>
+          <div class="navbar-btn-wrapper">
+            <!-- switch toggle dark-light -->
+            <label class="switch">
+              <span class="moon">
+                <svg viewBox="0 0 24 24" fill="#ffd43b" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9001 2.30719C19.7392 1.8976 19.1616 1.8976 19.0007 2.30719L18.5703 3.40247C18.5212 3.52752 18.4226 3.62651 18.298 3.67583L17.2067 4.1078C16.7986 4.26934 16.7986 4.849 17.2067 5.01054L18.298 5.44252C18.4226 5.49184 18.5212 5.59082 18.5703 5.71587L19.0007 6.81115C19.1616 7.22074 19.7392 7.22074 19.9001 6.81116L20.3305 5.71587C20.3796 5.59082 20.4782 5.49184 20.6028 5.44252L21.6941 5.01054C22.1022 4.849 22.1022 4.26934 21.6941 4.1078L20.6028 3.67583C20.4782 3.62651 20.3796 3.52752 20.3305 3.40247L19.9001 2.30719Z" fill="#e7e1da"/>
+                  <path d="M16.0328 8.12967C15.8718 7.72009 15.2943 7.72009 15.1333 8.12967L14.9764 8.52902C14.9273 8.65407 14.8287 8.75305 14.7041 8.80237L14.3062 8.95987C13.8981 9.12141 13.8981 9.70107 14.3062 9.86261L14.7041 10.0201C14.8287 10.0694 14.9273 10.1684 14.9764 10.2935L15.1333 10.6928C15.2943 11.1024 15.8718 11.1024 16.0328 10.6928L16.1897 10.2935C16.2388 10.1684 16.3374 10.0694 16.462 10.0201L16.8599 9.86261C17.268 9.70107 17.268 9.12141 16.8599 8.95987L16.462 8.80237C16.3374 8.75305 16.2388 8.65407 16.1897 8.52902L16.0328 8.12967Z" fill="#e7e1da"/>
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#e7e1da"/>
+                </svg>
               </span>
-            </div>
-            <h2 translate="no">Travel Agency</h2>
-            <h3 translate="no">User Interface / Landings</h3>
+              <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g fill="#131313">
+                    <circle r="5" cy="12" cx="12"></circle>
+                    <path
+                      d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                    </path>
+                  </g>
+                </svg>
+              </span>
+              <input type="checkbox" class="input">
+              <span class="slider"></span>
+            </label>
+            <!-- END -->
+  
+            <button id="navbarToggler" class="navbar-toggler" type="button">
+              <label class="hamburger">
+                <input type="checkbox" />
+                <svg viewBox="0 0 34 32">
+                  <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                  <path class="line" d="M7 16 27 16"></path>
+                </svg>
+              </label>
+            </button>
           </div>
+          
+          <div class="navbar-items">
+            <a href="#about" class="navbar-link line-hover"><span class="navbar-link-number">1</span> About</a>
+            <a href="#skills" class="navbar-link line-hover"><span class="navbar-link-number">2</span> Tools</a>
+            <a href="#projects" class="navbar-link line-hover"><span class="navbar-link-number">3</span> Projects</a>
 
-          <div class="box-project swiper-slide">
-            <img src="img/8.png" alt="Neumorphism" />
-            <div class="content">
-              <span class="porto-modal-btn">
-                <a href="https://danuapratama.github.io/neumorphism-web" target="_blank"><i class='btn bx bx-link-alt'></i></a>
-                <a href="https://github.com/danuapratama/neumorphism-web" target="_blank"><i class="btn-repo fab fa-github"></i></a>
-              </span>
-            </div>
-            <h2 translate="no">Neumorphism</h2>
-            <h3 translate="no">User Interface / Personal</h3>
-          </div>
-
-          <div class="box-project swiper-slide">
-            <img src="img/7.png" alt="Login Form" />
-            <div class="content">
-              <span class="porto-modal-btn">
-                <a href="https://danuapratama.github.io/login-form" target="_blank"><i class='btn bx bx-link-alt'></i></a>
-                <a href="https://github.com/danuapratama/login-form" target="_blank"><i class="btn-repo fab fa-github"></i></a>
-              </span>
-            </div>
-            <h2 translate="no">Login Form</h2>
-            <h3 translate="no">User Interface / Page</h3>
-          </div>
-
-          <div class="box-project swiper-slide">
-            <img src="img/6.png" alt="Landing Page" />
-            <div class="content">
-              <span class="porto-modal-btn">
-                <a href="https://danuapratama.github.io/landing-page" target="_blank"><i class='btn bx bx-link-alt'></i></a>
-                <a href="https://github.com/danuapratama/landing-page" target="_blank"><i class="btn-repo fab fa-github"></i></a>
-              </span>
-            </div>
-            <h2 translate="no">Landing Page</h2>
-            <h3 translate="no">User Interface / Landing</h3>
+            <p class="navbar-link-credit">Made with <i class="fa-regular fa-heart"></i> by me :)</p>
           </div>
         </div>
-        <div class="new-swiper-pagination"></div>
-        <div class="pagination">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-     </div>
-    </article>
+      </nav>
+    </header>
 
-    <!-- ACCORDION FAQ -->
-    <article class="accordion-container container" id="faq">
-      <!-- <div class="title">Frequently Asked Questions</div> -->
-      <div class="accordion">
-        <div class="image-box">
-          <img src="img/business-3d-answer.png" alt="FAQ">
-        </div>
-        <div class="accordion-text">
-          <ul class="faq-text">
-            <li>
-              <div class="question-arrow">
-                <span class="question">How long is my experience in programming?</span>
-                <i class="bx bxs-chevron-down arrow"></i>
-              </div>
-              <p>I started learning programming since 2021</p>
-            </li>
-            <li>
-              <div class="question-arrow">
-                <span class="question">Is my project open source?</span>
-                <i class="bx bxs-chevron-down arrow"></i>
-              </div>
-              <p>Yes, all my projects are open source</p>
-            </li>
-            <li>
-              <div class="question-arrow">
-                <span class="question">Who are these projects for?</span>
-                <i class="bx bxs-chevron-down arrow"></i>
-              </div>
-              <p>This project is for all web developers in the world</p>
-            </li>
-            <li>
-              <div class="question-arrow">
-                <span class="question">Is this source code for sale?</span>
-                <i class="bx bxs-chevron-down arrow"></i>
-              </div>
-              <p>It's free. However if you want to provide support, please send your support via the support link provided</p>
-            </li>
-            <li>
-              <div class="question-arrow">
-                <span class="question">How to reach me?</span>
-                <i class="bx bxs-chevron-down arrow"></i>
-              </div>
-              <p>You can contact me via email and Telegram, or follow my socials media. Let's connect 🚀</p>
-            </li>
-          </ul>
-        </div>
+    <main class="main">
+      <!------------------ LOADING SCREEN ------------------>
+      <div class="loading-screen">
+        <span>WELCOME</span>
+        <p>Portfolio v.3</p>
       </div>
-    </article>
-    
-    <footer class="credits container" id="contact-me" translate="no">
-      <!-- <div class="title">
-        <h1>Contact Me</h1>
-      </div> -->
+      <!------------------->
 
-      <div class="contact-info swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- info item start -->
-          <div class="info-item swiper-slide">
-            <i class="bx bxs-map"></i>
-            <h5>Address</h5>
-            <a href="https://goo.gl/maps/VDni4by2Pi3JiC1H9" target="_blank">East Jakarta, Indonesia</a>
+      <!------------------ HERO SECTION -------------------->
+      <section id="home">
+        <div class="container">
+          <h1 class="hero-name">DANU PRATAMA</h1>
+          <hr>
+          <h2 class="hero-subtitle">Web developer | Entry level | Lifelong learner</h2>
+          <div class="hero-contact">
+            <a href="mailto:danupratama.dev@gmail.com" class="line-hover" target="_blank">EMAIL</a>
+            <span class="hero-contact-dot"></span>
+            <a href="https://github.com/danuapratama" class="line-hover" target="_blank">GITHUB</a>
+            <span class="hero-contact-dot"></span>
+            <a href="https://instagram.com/danuapratama" class="line-hover" target="_blank">INSTAGRAM</a>
           </div>
-          <div class="info-item swiper-slide">
-            <i class="bx bxs-envelope"></i>
-            <h5>Email</h5>
-            <a href="mailto:danupratama.dev@gmail.com" target="_blank">danupratama.dev@gmail.com</a>
+          <div class="hero-btn-wrapper">
+            <a href="#about" class="hero-btn">
+              More About Me
+            </a>
           </div>
-          <div class="info-item swiper-slide">
-            <i class="bx bxl-telegram"></i>
-            <h5>Telegram</h5>
-            <a href="https://t.me/danu_pratama/" target="_blank">danu_pratama</a>
-          </div>
-          <!-- info item end -->
         </div>
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
-        <div class="swiper-pagination"></div>
-      </div>
+      </section>
+      <!------------------ HERO SECTION END -------------------->
 
-      <div class="social">
-        <a href="https://instagram.com/danuapratama/" title="Follow my Instagram" target="_blank" class="social-icon">
-          <i class="bx bxl-instagram-alt"></i>
-        </a>
-        <a href="https://github.com/danuapratama/" title="Follow my GitHub" target="_blank" class="social-icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://saweria.co/danuapratama/" title="Support me with a coffee" target="_blank" class="social-icon">
-          <i class="bx bxs-coffee-alt"></i>
-        </a>
-      </div>
 
-      &#169;2021-<script type="text/javascript">
-        var creditsyear = new Date();
-        document.write(creditsyear.getFullYear());
-      </script>
-      Made with <span style="color: #ffe600; font-size: 10px;"><i class="bx bxs-heart"></i></span> by Danu
+      <!------------------ ABOUT SECTION -------------------->
+      <section id="about">
+        <div class="container">
+          <h2 class="title-section">Hello, let's get to know each other better <i class="fa-solid fa-arrow-right"></i></h2>
+          <hr>
+          <h3 class="about-subtitle">Based in Jakarta, Indonesia</h3>
+          <p class="about-text">I believe that my portfolio should not solely focus on myself, but rather on showcasing the results of my expertise and what I can accomplish. Ultimately, it is the work that truly matters. However, if you are interested in getting to know me better, here is a bit about myself:
+            <br />
+            <br />
+            My name is Danu Pratama, and I am currently an active student at a university in Jakarta, pursuing a degree in Informatics Engineering. Programming has always intrigued me, especially in the field of web development. This website serves as my portfolio, which I have been diligently working on since 2021. I am committed to continuously enhancing it as I expand my knowledge and skills.
+          </p>
+        </div>
+      </section>
+      <!------------------ ABOUT SECTION END -------------------->
+
+
+      <!------------------ SKILLS SECTION -------------------->
+      <section id="skills">
+        <div class="container">
+          <h2 class="title-section">Stack of resources I am currently learning <i class="fa-solid fa-arrow-right"></i></h2>
+          <hr>
+        </div>
+      </section>
+      <!------------------ SKILLS SECTION END -------------------->
+
+
+      <!------------------ PROJECTS SECTION -------------------->
+      <section id="projects">
+        <div class="container">
+          <h2 class="title-section">Selected projects, part of my learning process <i class="fa-solid fa-arrow-right"></i></h2>
+          <hr>
+        </div>
+      </section>
+      <!------------------ PROJECTS SECTION END -------------------->
+    </main>
+
+    <!------------------ FOOTER -------------------->
+    <footer>
+      <div class="container">
+        <span class="scroll-top-btn-wrapper">
+          <span class="footer-contact-wrapper">
+            <a href="mailto:danupratama.dev@gmail.com" class="line-hover" target="_blank">EMAIL</a>
+            <a href="https://github.com/danuapratama" class="line-hover" target="_blank">GITHUB</a>
+            <a href="https://instagram.com/danuapratama" class="line-hover" target="_blank">INSTAGRAM</a>
+          </span>
+
+          <button onclick="scrollToTop()" class="scroll-top-btn bg-transparent position-relative overflow-hidden d-flex justify-content-center border border-2 rounded-5">
+            <i class="arrow fa-solid fa-angle-up"></i>
+          </button>
+        </span>
+        <hr>
+        <span class="footer-credit">
+          &#169;<script type='text/javascript'>
+            var creditsyear = new Date();
+            document.write(creditsyear.getFullYear());
+          </script> Design and development by Danu Pratama
+        </span>
+      </div>
     </footer>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!---------- SCRIPT ---------->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <script type="text/javascript">
-      // Keep URL
-      $(window).on('hashchange', function (e) {
-          history.replaceState("", document.title, e.originalEvent.oldURL);
-      });
-      //
-
-      $(document).ready(function () {
-        $('ul li a').click(function () {
-          $('li a').removeClass('active');
-          $(this).addClass('active');
-        });
-      });
-
-      // === INITIALIZE SWIPER CONTACT === //
-      let swiper = new Swiper('.contact-info', {
-        grabCursor: true,
-        loop: false,
-        centeredSlides: false,
-        slidesPerView: '1',
-        spaceBetween: 20,
-        breakpoints: {
-          500: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-
-          1000: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          Bullets: true,
-          clickable: false,
-        },
-      }); // END //
-
-      // === INITIALIZE SWIPER PROJECT ARTICLE=== //
-      let newSwiper = new Swiper('.project-wrap', {
-        grabCursor: true,
-        loop: false,
-        centeredSlides: false,
-        slidesPerView: '1',
-        spaceBetween: 20,
-        breakpoints: {
-          100: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-          },
-
-          500: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-
-          1200: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-          el: '.new-swiper-pagination',
-          Bullets: true,
-          clickable: false,
-        },
-      }); // END //
-
-      // PRELOADER == $(window).on('load', function () {
-        //$('.preloader').addClass('loaded');
-      //});
-
-      // Greating Text - Home Section //
-      var dt = new Date().getHours();
-      if (dt >= 0 && dt <= 10) {
-        document.getElementById('greating').innerHTML = 'Good Morning';
-      } else if (dt >= 11 && dt <= 13) {
-        document.getElementById('greating').innerHTML = 'have a nice day';
-      } else if (dt >= 14 && dt <= 17) {
-        document.getElementById('greating').innerHTML = 'Good Afternoon';
-      } else {
-        document.getElementById('greating').innerHTML = 'Good Evening';
-      }
-    </script>
   </body>
 </html>

@@ -1,214 +1,63 @@
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
-const sections = document.querySelectorAll('section[id]');
+//*========== KEEP URL ==========*//
+$(window).on('hashchange', function (e) {
+  history.replaceState('', document.title, e.originalEvent.oldURL);
+});
+//*========== END ==========*//
 
-function scrollActive() {
-  const scrollY = window.pageYOffset;
+//*========== LOADING SCREEN ==========*//
+$(window).on('load', function () {
+  setTimeout(function () {
+    $('.loading-screen').fadeOut(200);
+  }, 2000); // delay selama 3 detik
+});
+//*========== END ==========*//
 
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 50,
-      sectionId = current.getAttribute('id');
+//*========== NAVBAR TOGGLE ==========*//
+const navbarToggler = document.getElementById('navbarToggler');
+const navbarItems = document.querySelector('.navbar-items');
+const hamburger = document.querySelector('.hamburger');
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector('.nav-list a[href*=' + sectionId + ']').classList.add('active');
-    } else {
-      document.querySelector('.nav-list a[href*=' + sectionId + ']').classList.remove('active');
-    }
-  });
-}
-window.addEventListener('scroll', scrollActive);
+hamburger.addEventListener('click', () => {
+  navbarItems.classList.toggle('active');
+});
 
-// /*===== CHANGE BACKGROUND NAVBAR =====*/
-// function scrollHeader() {
-//   const header = document.getElementById('navbar');
-//   // When the scroll is greater than 10 viewport height, add the scroll-header class to the navbar tag
-//   if (this.scrollY >= 10) header.classList.add('scroll-header');
-//   else header.classList.remove('scroll-header');
-// }
-// window.addEventListener('scroll', scrollHeader);
+navbarToggler.addEventListener('change', () => {
+  navbarItems.classList.toggle('active');
+  navbarToggler.classList.toggle('active');
+});
+//*========== END ==========*//
 
-/*===== SHOW MODAL =====*/
-const showModal = (openButton, modalContent, body) => {
-  const openBtn = document.getElementById(openButton),
-    modalContainer = document.getElementById(modalContent),
-    body_Container = document.getElementById(body);
-
-  if (openBtn && modalContainer) {
-    openBtn.addEventListener('click', () => {
-      modalContainer.classList.add('show-modal'), body_Container.classList.add('show-modal');
+//*========== SCROLL TOP BTN ==========*//
+function scrollToTop() {
+  if (typeof window.scrollTo === 'function') {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
     });
-  }
-};
-showModal('contact', 'modal-container', 'body');
-
-/*===== CLOSE MODAL =====*/
-const closeBtn = document.querySelectorAll('.close-modal');
-
-function closeModal() {
-  const modalContainer = document.getElementById('modal-container'),
-    body_Container = document.getElementById('body');
-  modalContainer.classList.remove('show-modal'), body_Container.classList.remove('show-modal');
-}
-closeBtn.forEach((c) => c.addEventListener('click', closeModal));
-
-// Remove contact modal when user clicking outside of it
-document.addEventListener('click', (e) => {
-  if (e.target.classList.contains('show-modal')) {
-    closeModal();
-  }
-});
-
-/*========== DARK LIGHT THEME ==========*/
-const themeButton = document.getElementById('theme-button');
-const darkTheme = 'dark-theme';
-const iconTheme = 'bxs-sun';
-
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme');
-const selectedIcon = localStorage.getItem('selected-icon');
-
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => (document.body.classList.contains(darkTheme) ? 'dark' : 'light');
-const getCurrentIcon = () => (themeButton.classList.contains(iconTheme) ? 'bxs-moon' : 'bxs-sun');
-
-// We validate if the user previously choose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-  themeButton.classList[selectedIcon === 'bxs-moon' ? 'add' : 'remove'](iconTheme);
-}
-
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-  // Add or remove the dark / icon theme
-  document.body.classList.toggle(darkTheme);
-  themeButton.classList.toggle(iconTheme);
-  // We save the theme and the current icon that the user chose
-  localStorage.setItem('selected-theme', getCurrentTheme());
-  localStorage.setItem('selected-icon', getCurrentIcon());
-});
-
-// ========= PORTFOLIO CATEGORY ========== //
-// let portfolioMenuList = document.querySelector('.portfolio-card');
-
-// let portfolioCategory = document.querySelector('.portfolio-category');
-
-// let categories = portfolioCategory.querySelectorAll('button');
-
-// Array.from(categories).forEach((item, index) => {
-//   item.onclick = (e) => {
-//     let currCat = portfolioCategory.querySelector('button.active');
-//     currCat.classList.remove('active');
-//     e.target.classList.add('active');
-//     portfolioMenuList.classList = 'portfolio-card ' + e.target.getAttribute('data-portfolio-type');
-//   };
-// });
-
-// ========== PORTFOLIO MODAL ========== //
-// const portoViews = document.querySelectorAll('.porto-modal');
-// const portoBtn = document.querySelectorAll('.porto-modal-btn');
-// const portoClose = document.querySelectorAll('.porto-modal-close');
-// const pageBody = document.getElementById('body');
-
-// let modal = function (modalClick) {
-//   portoViews[modalClick].classList.add('active-modal');
-//   pageBody.classList.add('active-modal');
-// };
-
-// portoBtn.forEach((pb, i) => {
-//   pb.addEventListener('click', () => {
-//     modal(i);
-//   });
-// });
-
-// portoClose.forEach((pc) => {
-//   pc.addEventListener('click', () => {
-//     portoViews.forEach((pv) => {
-//       pv.classList.remove('active-modal');
-//       pageBody.classList.remove('active-modal');
-//     });
-//   });
-// });
-
-// // Remove porto-modal when user clicking outside of it
-// document.addEventListener('click', (e) => {
-//   if (e.target.classList.contains('active-modal')) {
-//     portoViews.forEach((pv) => {
-//       pv.classList.remove('active-modal');
-//       pageBody.classList.remove('active-modal');
-//     });
-//   }
-// });
-// ====== END ====== //
-
-// =============== ACCORDION FAQ =============== //
-const accordionItems = document.querySelectorAll('.faq-text li');
-
-accordionItems.forEach((item) => {
-  const accordionHeader = item.querySelector('.question-arrow');
-
-  accordionHeader.addEventListener('click', () => {
-    const openItem = document.querySelector('.showAnswer');
-    toggleItem(item);
-
-    if (openItem && openItem !== item) {
-      toggleItem(openItem);
-    }
-  });
-});
-
-const toggleItem = (item) => {
-  const accordionContent = item.querySelector('.faq-text li p');
-  if (item.classList.contains('showAnswer')) {
-    accordionContent.removeAttribute('style');
-    item.classList.remove('showAnswer');
   } else {
-    item.classList.add('showAnswer');
+    window.scrollTo(0, 0);
+  }
+}
+//*========== END ==========*//
+
+/*========== DARK LIGHT MODE ==========*/
+const themeToggle = document.querySelector('.switch input');
+const darkThemeClass = 'dark-theme';
+
+const toggleDarkTheme = () => {
+  document.body.classList.toggle(darkThemeClass);
+  if (document.body.classList.contains(darkThemeClass)) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
   }
 };
-// ====== ACCORDION END ====== //
 
-// ========== MULTIPLE READ-MORE BUTTON ========== //
-$(document).ready(function () {
-  $('.btn-read').click(function () {
-    $(this).prev().toggle();
-    $(this).siblings('.dots').toggle();
-    if ($(this).text() == 'read more') {
-      $(this).text('close');
-    } else {
-      $(this).text('read more');
-    }
-  });
-});
-// ====== END ====== //
+const selectedTheme = localStorage.getItem('theme');
+if (selectedTheme === 'dark') {
+  document.body.classList.add(darkThemeClass);
+  themeToggle.checked = true;
+}
 
-// ====== SCROLL REVEAL ANIMATION ====== //
-const sr = ScrollReveal({
-  distance: '60px',
-  duration: 1500,
-  // reset: true,
-});
-
-sr.reveal(
-  `.title, .box, .image-box,
-   .faq-text li, .social a`,
-  {
-    origin: 'top',
-    interval: 100,
-  }
-);
-
-sr.reveal(`.box`, {
-  origin: 'left',
-  interval: 100,
-});
-
-sr.reveal(`.left, .grid-box, .sponsor__content`, {
-  origin: 'left',
-});
-
-sr.reveal(`.right, .sponsor-container`, {
-  origin: 'right',
-  interval: 100,
-});
-// ====== SCROLL END ======= //
+themeToggle.addEventListener('change', toggleDarkTheme);
+//*========== END ==========*//
