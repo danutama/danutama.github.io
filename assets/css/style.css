@@ -180,7 +180,7 @@ button {
   display: inline-block;
   width: 3em;
   height: 1.7em;
-  margin: 5px 3px 0 0;
+  margin: 0 3px 0 0;
 }
 
 .switch input {
@@ -260,7 +260,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 1.3rem;
+  padding: 0 1.3rem;
   width: 100%;
   max-width: 1204px;
 }
@@ -283,7 +283,7 @@ nav {
   color: var(--title-color);
   font-size: var(--big-fs);
   text-decoration: none;
-  padding: 10px 0;
+  padding: 0;
   margin-left: 1rem;
 }
 
@@ -458,7 +458,7 @@ footer hr {
 
   /*============== NAVBAR BREAKPOINT ===============*/
   .switch {
-    margin: 5px 20px 0 0;
+    margin: 0 20px 0 0;
   }
 
   .navbar-toggler {
@@ -473,8 +473,8 @@ footer hr {
   .hamburger {
     cursor: pointer;
     position: absolute;
-    right: -.8rem;
-    top: 0;
+    right: -.5rem;
+    top: -1px;
   }
 
   .hamburger input {
