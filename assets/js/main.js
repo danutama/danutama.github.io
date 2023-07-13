@@ -27,6 +27,43 @@ navbarToggler.addEventListener('change', () => {
 });
 //*========== END ==========*//
 
+//*========== LOCAL TIME ==========*//
+function updateTime() {
+  var date = new Date();
+  var months = [
+      "Jan", "Feb", "Mar",
+      "Apr", "May", "June", "July",
+      "Aug", "Sept", "Oct",
+      "Nov", "Dec"
+  ];
+
+  var day = date.getDate();
+  var monthIndex = date.getMonth();
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var seconds = date.getSeconds();
+
+  if (hours < 10) {
+      hours = "0" + hours;
+  }
+
+  if (minutes < 10) {
+      minutes = "0" + minutes;
+  }
+
+  if (seconds < 10) {
+      seconds = "0" + seconds;
+  }
+
+  document.getElementById("time").innerHTML =
+    "Local time / " + day + " " + months[monthIndex] + " - " + hours + ":" + minutes + ":" + seconds + " WIB";
+}
+
+setInterval(function() {
+  updateTime();
+}, 1000);
+//*========== END ==========*//
+
 //*========== SCROLL TOP BTN ==========*//
 function scrollToTop() {
   if (typeof window.scrollTo === 'function') {

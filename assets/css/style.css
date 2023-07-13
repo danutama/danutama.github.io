@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Roboto+Condensed&display=swap');
 
+@font-face {
+  font-family: 'Awaken Regular';
+  src: url('awaken.regular.otf') format('opentype')
+}
+
 :root {
   /* ----- COLORS ----- */
   --body-color: #e7e1da;
@@ -10,7 +15,7 @@
   --light-dark: #e7e1da;
 
   /* ----- FONT----- */
-  --title-font-family: 'Noto Serif Display';
+  --title-font-family: 'Awaken Regular';
   --body-font-family: 'Roboto Condensed', sans-serif;
   --line-height: 1.3em;
   --small-fs: 0.875rem;
@@ -18,7 +23,7 @@
   --medium-fs: 1.25rem;
   --big-fs: 1.75rem;
   --xl-fs: 3.5rem;
-  --special-fs: 9rem;
+  --special-fs: 8rem;
 }
 
 .dark-theme {
@@ -144,8 +149,7 @@ button {
   font-size: var(--special-fs);
   font-weight: 500;
   color: var(--title-color);
-  letter-spacing: .5rem;
-  margin-bottom: .3em;
+  margin-bottom: .5em;
 }
 
 .loading-screen span::after {
@@ -154,7 +158,7 @@ button {
   bottom: -4px;
   left: 0;
   right: 0;
-  height: 2px;
+  height: 1px;
   background-color: var(--title-color);
   transform-origin: center;
   animation: loadingAnimation 2s linear;
@@ -321,16 +325,36 @@ nav {
   margin: 2rem 0;
 }
 
+.hero-email a {
+  position: relative;
+  font-size: var(--big-fs);
+  color: var(--button-color);
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.hero-email i {
+  opacity: 0;
+  position: absolute;
+  font-size: var(--small-fs);
+  top: 0;
+  transition: .3s ease;
+}
+
+.hero-email a:hover i {
+  opacity: 1;
+}
+
 .hero-contact {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .hero-contact-dot {
   display: inline-block;
   background-color: var(--button-color);
   border-radius: 50px;
-  padding: 3px 3px;
-  margin: 0 0.3rem 6px 0;
+  padding: 1px 20px;
+  margin: 0 0.3rem 10px 0;
 }
 
 .hero-contact a {
@@ -351,14 +375,14 @@ nav {
   font-size: var(--big-fs);
   padding: 10px 25px;
   border-radius: 50px;
+  color: var(--button-color);
+  background-color: transparent;
   border: 2px solid var(--button-color);
-  color: var(--light-dark);
-  background-color: var(--button-color);
 }
 
 .hero-btn:hover {
-  color: var(--button-color);
-  background-color: transparent;
+  color: var(--light-dark);
+  background-color: var(--button-color);
   transition: 0.3s ease;
 }
 
@@ -397,6 +421,18 @@ nav {
   margin-right: 10px;
 }
 
+.footer-contact-wrapper i {
+  position: absolute;
+  font-size: var(--small-fs);
+  top: -5px;
+}
+
+.footer-time {
+  margin: 20px 0 30px 0;
+  font-size: var(--normal-fs);
+  color: var(--text-color);
+}
+
 footer,
 footer .container {
   padding-bottom: 1rem;
@@ -407,6 +443,8 @@ footer hr {
 }
 
 .footer-credit {
+  display: flex;
+  justify-content: end;
   font-size: var(--medium-fs);
   color: var(--text-color);
 }
@@ -448,12 +486,8 @@ footer hr {
     --normal-fs: 1rem;
     --mediium-fs: 1.25rem;
     --big-fs: 1.45rem;
-    --xl-fs: 2.3rem;
-    --special-fs: 3.5rem;
-  }
-
-  .loading-screen span {
-    font-size: var(--xl-fs);
+    --xl-fs: 2.1rem;
+    --special-fs: 3.2rem;
   }
 
   /*============== NAVBAR BREAKPOINT ===============*/
@@ -565,7 +599,7 @@ footer hr {
   /* ===================== NAV END ======================= */
 
   .hero-contact-dot {
-    margin: 0 0.3rem 4px 0;
+    margin: 0 0.3rem 6px 0;
   }
   
   .hero-contact a {
@@ -575,5 +609,9 @@ footer hr {
   .footer-credit,
   .footer-contact-wrapper a {
     font-size: var(--normal-fs);
+  }
+
+  .footer-credit {
+    justify-content: start;
   }
 }
