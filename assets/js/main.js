@@ -27,6 +27,29 @@ navbarToggler.addEventListener('change', () => {
 });
 //*========== END ==========*//
 
+/*========== SCROLL ACTIVE SECTIONS ==========*/
+function scrollActive() {
+  var sections = document.querySelectorAll('section');
+
+  sections.forEach(function (section) {
+    if (section.getBoundingClientRect().top <= 50) {
+      var id = section.getAttribute('id');
+      var navLinks = document.querySelectorAll('.navbar-link');
+
+      navLinks.forEach(function (link) {
+        link.classList.remove('active');
+
+        if (link.getAttribute('href').slice(1) === id) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}
+
+window.addEventListener('scroll', scrollActive);
+//*========== END ==========*//
+
 //*========== LOCAL TIME ==========*//
 function updateTime() {
   var date = new Date();

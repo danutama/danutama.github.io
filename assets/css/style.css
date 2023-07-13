@@ -13,6 +13,7 @@
   --text-color: #131313;
   --button-color: #131313;
   --light-dark: #e7e1da;
+  --shadow-text: rgb(19, 19, 19, .1);
 
   /* ----- FONT----- */
   --title-font-family: 'Awaken Regular';
@@ -32,6 +33,7 @@
   --text-color: #e7e1da;
   --button-color: #e7e1da;
   --light-dark: #131313;
+  --shadow-text: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -110,6 +112,7 @@ button {
 .title-section {
   font-family: var(--title-font-family);
   font-size: var(--xl-fs);
+  position: relative;
 }
 
 .title-section i {
@@ -282,6 +285,10 @@ nav {
   align-items: center;
 }
 
+.navbar-items .shadow-text {
+  display: none;
+}
+
 .navbar-link {
   position: relative;
   color: var(--title-color);
@@ -289,6 +296,17 @@ nav {
   text-decoration: none;
   padding: 0;
   margin-left: 1rem;
+}
+
+.navbar-link.active::after  {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--title-color);
+  transition: width 0.1s ease-in-out;
 }
 
 .navbar-link-number,
@@ -333,18 +351,6 @@ nav {
   margin: 0;
 }
 
-.hero-email i {
-  opacity: 0;
-  position: absolute;
-  font-size: var(--small-fs);
-  top: 0;
-  transition: .3s ease;
-}
-
-.hero-email a:hover i {
-  opacity: 1;
-}
-
 .hero-contact {
   margin-top: 2rem;
 }
@@ -387,14 +393,38 @@ nav {
 }
 
 /* ========================== ABOUT SECTION =========================== */
+.about {
+  position: relative;
+  overflow: hidden;
+}
+
+.about .shadow-text {
+  position: absolute;
+  font-family: var(--title-font-family);
+  font-size: 20rem;
+  color: var(--shadow-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
 .about-subtitle {
   margin: 1.5rem 0;
+  position: relative;
+  z-index: 2;
 }
 
 .about-text {
   color: var(--text-color);
   font-size: var(--big-fs);
   line-height: var(--line-height);
+  position: relative;
+  z-index: 2;
 }
 
 /* ========================== FOOTER =========================== */
@@ -567,6 +597,20 @@ footer hr {
   }
 
   .navbar-link {
+    position: relative;
+    z-index: 2;
+  }
+
+  .navbar-items.active .shadow-text {
+    display: block;
+    position: absolute;
+    font-family: var(--title-font-family);
+    font-size: 25rem;
+    color: var(--shadow-text);
+    z-index: 1;
+  }
+
+  .navbar-link {
     /* text-align: right; */
     position: relative;
     font-family: var(--title-font-family);
@@ -580,7 +624,7 @@ footer hr {
     display: inline-block;
     font-size: var(--medium-fs);
     position: absolute;
-    top: 1rem;
+    top: .5rem;
     left: -1rem;
   }
 
@@ -604,6 +648,10 @@ footer hr {
   
   .hero-contact a {
     font-size: var(--medium-fs);
+  }
+
+  .about .shadow-text {
+    justify-content: start;
   }
 
   .footer-credit,
