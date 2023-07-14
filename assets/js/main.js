@@ -40,9 +40,9 @@ window.addEventListener('scroll', () => {
 
   if (!navbarItems.classList.contains('active')) {
     if (currentScrollPosition < previousScrollPosition) {
-      gsap.to(navbar, { top: '0', duration: 0.3 })
+      gsap.to(navbar, { top: '0', duration: 0.3, ease: 'power2.out' })
     } else {
-      gsap.to(navbar, { top: '-100px', duration: 0.3 })
+      gsap.to(navbar, { top: '-100px', duration: 0.3, ease: 'power2.in' })
     }
   }
 
