@@ -17,13 +17,19 @@ const navbarToggler = document.getElementById('navbarToggler');
 const navbarItems = document.querySelector('.navbar-items');
 const hamburger = document.querySelector('.hamburger');
 
+let t1 = gsap.timeline({ paused: true });
+t1.to(".navbar-items", { opacity: 1, duration: 1, top: 0 });
+t1.to(".navbar-link", { opacity: 1, duration: 1, stagger: 0.1, ease: "ease-out" });
+
 hamburger.addEventListener('click', () => {
   navbarItems.classList.toggle('active');
+  t1.restart().timeScale(1);
 });
 
 navbarToggler.addEventListener('change', () => {
   navbarItems.classList.toggle('active');
   navbarToggler.classList.toggle('active');
+  t1.restart().timeScale(1);
 });
 //*========== END ==========*//
 

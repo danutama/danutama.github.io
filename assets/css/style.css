@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100&family=Nunito+Sans&family=Roboto+Condensed&display=swap');
 
 @font-face {
   font-family: 'Awaken Regular';
@@ -18,7 +18,8 @@
   /* ----- FONT----- */
   --title-font-family: 'Awaken Regular';
   --body-font-family: 'Roboto Condensed', sans-serif;
-  --line-height: 1.3em;
+  --paragraph-font-family: 'Nunito Sans';
+  --line-height: 1.4em;
   --small-fs: 0.875rem;
   --normal-fs: 1rem;
   --medium-fs: 1.25rem;
@@ -63,7 +64,6 @@ footer {
 .container {
   width: 100%;
   max-width: 1204px;
-  -webkit-max-width: 1204px;
   padding: 1rem 1.3rem;
 }
 
@@ -149,7 +149,7 @@ button {
 .loading-screen span {
   position: relative;
   font-family: var(--title-font-family);
-  font-size: var(--special-fs);
+  font-size: 8rem;
   font-weight: 500;
   color: var(--title-color);
   margin-bottom: .5em;
@@ -393,12 +393,12 @@ nav {
 }
 
 /* ========================== ABOUT SECTION =========================== */
-.about {
+#about {
   position: relative;
   overflow: hidden;
 }
 
-.about .shadow-text {
+#about .shadow-text {
   position: absolute;
   font-family: var(--title-font-family);
   font-size: 20rem;
@@ -420,6 +420,7 @@ nav {
 }
 
 .about-text {
+  font-family: var(--paragraph-font-family);
   color: var(--text-color);
   font-size: var(--big-fs);
   line-height: var(--line-height);
@@ -575,19 +576,18 @@ footer hr {
 
   .navbar-items {
     display: none;
-    top: -5rem;
+    /* top: -5rem; */
   }
 
   .navbar-items.active {
     display: flex;
-    /* align-items: end; */
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 1rem;
-    position: absolute;
-    /* top: 3.8rem; */
-    top: 0;
+    position: fixed;
+    opacity: 0;
+    top: -100%;
     left: 0;
     right: 0;
     background-color: var(--body-color);
@@ -598,6 +598,7 @@ footer hr {
 
   .navbar-link {
     position: relative;
+    opacity: 0;
     z-index: 2;
   }
 
@@ -632,7 +633,7 @@ footer hr {
     display: block;
     position: absolute;
     bottom: 2rem;
-    font-family: var(--body-font-family);
+    font-family: var(--paragraph-font-family);
     font-size: var(--small-fs);
     color: var(--text-color);
   }
@@ -648,10 +649,6 @@ footer hr {
   
   .hero-contact a {
     font-size: var(--medium-fs);
-  }
-
-  .about .shadow-text {
-    justify-content: start;
   }
 
   .footer-credit,
