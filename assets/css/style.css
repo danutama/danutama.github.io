@@ -7,12 +7,12 @@
 
 :root {
   /* ----- COLORS ----- */
-  --body-color: #e7e1da;
+  --body-color: #ECE7E1;
   /* --title-color: #183a37; */
   --title-color: #131313;
   --text-color: #131313;
   --button-color: #131313;
-  --light-dark: #e7e1da;
+  --light-dark: #ECE7E1;
   --shadow-text: rgba(61, 61, 61, 0.1);
 
   /* ----- FONT----- */
@@ -25,14 +25,14 @@
   --medium-fs: 1.25rem;
   --big-fs: 1.75rem;
   --xl-fs: 3.5rem;
-  --special-fs: 8rem;
+  --special-fs: 10rem;
 }
 
 .dark-theme {
   --body-color: #131313;
-  --title-color: #e7e1da;
-  --text-color: #e7e1da;
-  --button-color: #e7e1da;
+  --title-color: #ECE7E1;
+  --text-color: #ECE7E1;
+  --button-color: #ECE7E1;
   --light-dark: #131313;
   --shadow-text: rgba(163, 163, 163, 0.1);
 }
@@ -273,7 +273,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.3rem;
+  padding: .5rem 1.3rem;
   width: 100%;
   max-width: 1204px;
 }
@@ -335,7 +335,6 @@ nav {
 
 /* ========================== HERO SECTION =========================== */
 #home .container {
-  padding-top: 2rem;
   z-index: 1;
 }
 
@@ -343,7 +342,7 @@ nav {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  padding: 2rem 0 0 0 !important;
+  padding-bottom: 0 !important;
 }
 
 #home .shadow-text {
@@ -354,7 +353,8 @@ nav {
   color: var(--shadow-text);
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
+  text-align: center;
   min-height: 100vh;
   top: 0;
   left: 0;
@@ -364,7 +364,7 @@ nav {
 }
 
 .hero-name {
-  font-family: var(--title-font-family);
+  font-family: var(--body-font-family);
   font-size: var(--special-fs);
   color: var(--title-color);
 }
@@ -538,7 +538,12 @@ footer hr {
 
   .navbar {
     width: 90%;
-    padding: 0.4rem 0;
+    padding: 0.5rem 0;
+  }
+
+  .hero-name {
+    font-size: 4rem;
+    line-height: 55px;
   }
 }
 
@@ -677,6 +682,10 @@ footer hr {
   
   .hero-contact a {
     font-size: var(--medium-fs);
+  }
+
+  .about-text {
+    font-size: var(--normal-fs);
   }
 
   .footer-credit,
