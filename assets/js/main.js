@@ -18,7 +18,8 @@ const navbarItems = document.querySelector('.navbar-items');
 const hamburger = document.querySelector('.hamburger');
 
 let t1 = gsap.timeline({ paused: true });
-t1.to(".navbar-items", { opacity: 1, duration: 1, top: 0 });
+// t1.to(".navbar-items", { opacity: 1, duration: 1, top: 0 });
+t1.fromTo(".navbar-items", { top: "-1000%" }, { top: "0", duration: 0.5, ease: "cubic-bezier(0.68, -0.55, 0.27, 1.55)" });
 t1.to(".navbar-link", { opacity: 1, duration: 1, stagger: 0.1, ease: "ease-out" });
 
 hamburger.addEventListener('click', () => {
@@ -54,6 +55,36 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive);
+//*========== END ==========*//
+
+//*========== GSAP SCROLL ANIMATION ==========*//
+gsap.registerPlugin(ScrollTrigger)
+
+const gsapTextElements = document.querySelectorAll('.gsap-text')
+
+gsapTextElements.forEach((element, index) => {
+  gsap.fromTo(
+    element,
+    { opacity: 0, y: 20 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: element,
+        start: 'top 80%',
+        end: 'bottom 80%',
+        scrub: true,
+        repeat: -1,
+        onRepeat: reverseAnimation
+      }
+    }
+  )
+})
+
+function reverseAnimation (animation) {
+  animation.reverse()
+}
 //*========== END ==========*//
 
 //*========== LOCAL TIME ==========*//

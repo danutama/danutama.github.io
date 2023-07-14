@@ -94,6 +94,12 @@ button {
   cursor: pointer;
 }
 
+.gsap-text {
+  /* --- SCROLL TRIGGER --- */
+  opacity: 0;
+  transform: translateY(0px);
+}
+
 .line-hover::after {
   content: '';
   position: absolute;
@@ -152,7 +158,7 @@ button {
   font-size: 8rem;
   font-weight: 500;
   color: var(--title-color);
-  margin-bottom: .5em;
+  margin-bottom: 30px;
 }
 
 .loading-screen span::after {
@@ -586,8 +592,8 @@ footer hr {
     flex-direction: column;
     padding: 0 1rem;
     position: fixed;
-    opacity: 0;
-    top: -100%;
+    /* opacity: 0;
+    top: -100%; */
     left: 0;
     right: 0;
     background-color: var(--body-color);
