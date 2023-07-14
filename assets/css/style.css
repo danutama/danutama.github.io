@@ -13,7 +13,7 @@
   --text-color: #131313;
   --button-color: #131313;
   --light-dark: #e7e1da;
-  --shadow-text: rgb(19, 19, 19, .1);
+  --shadow-text: rgba(61, 61, 61, 0.1);
 
   /* ----- FONT----- */
   --title-font-family: 'Awaken Regular';
@@ -34,7 +34,7 @@
   --text-color: #e7e1da;
   --button-color: #e7e1da;
   --light-dark: #131313;
-  --shadow-text: rgba(255, 255, 255, 0.1);
+  --shadow-text: rgba(163, 163, 163, 0.1);
 }
 
 * {
@@ -336,6 +336,31 @@ nav {
 /* ========================== HERO SECTION =========================== */
 #home .container {
   padding-top: 2rem;
+  z-index: 1;
+}
+
+#home {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 2rem 0 0 0 !important;
+}
+
+#home .shadow-text {
+  position: absolute;
+  font-family: var(--body-font-family);
+  font-size: 30rem;
+  font-weight: 900;
+  color: var(--shadow-text);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 .hero-name {
@@ -406,12 +431,13 @@ nav {
 
 #about .shadow-text {
   position: absolute;
-  font-family: var(--title-font-family);
-  font-size: 20rem;
+  font-family: var(--body-font-family);
+  font-size: 30rem;
+  font-weight: 900;
   color: var(--shadow-text);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   top: 0;
   left: 0;
   right: 0;
@@ -554,7 +580,7 @@ footer hr {
 
   .hamburger svg {
     height: 3.3em;
-    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .line {
@@ -563,8 +589,8 @@ footer hr {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 2;
-    transition: stroke-dasharray 400ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .line-top-bottom {
@@ -602,12 +628,6 @@ footer hr {
     z-index: -1;
   }
 
-  .navbar-link {
-    position: relative;
-    opacity: 0;
-    z-index: 2;
-  }
-
   .navbar-items.active .shadow-text {
     display: block;
     position: absolute;
@@ -618,6 +638,8 @@ footer hr {
   }
 
   .navbar-link {
+    opacity: 0;
+    z-index: 2;
     /* text-align: right; */
     position: relative;
     font-family: var(--title-font-family);

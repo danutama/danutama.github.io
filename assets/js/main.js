@@ -13,23 +13,16 @@ $(window).on('load', function () {
 //*========== END ==========*//
 
 //*========== NAVBAR TOGGLE ==========*//
-const navbarToggler = document.getElementById('navbarToggler');
 const navbarItems = document.querySelector('.navbar-items');
 const hamburger = document.querySelector('.hamburger');
 
 let t1 = gsap.timeline({ paused: true });
 // t1.to(".navbar-items", { opacity: 1, duration: 1, top: 0 });
-t1.fromTo(".navbar-items", { top: "-1000%" }, { top: "0", duration: 0.5, ease: "cubic-bezier(0.68, -0.55, 0.27, 1.55)" });
-t1.to(".navbar-link", { opacity: 1, duration: 1, stagger: 0.1, ease: "ease-out" });
+t1.fromTo(".navbar-items", { top: "-1000%" }, { top: "0", duration: .8, ease: "cubic-bezier(0.68, -0.55, 0.27, 1.55)" });
+t1.to(".navbar-link", { opacity: 1, duration: 1, stagger: 0.2, ease: "ease-out" });
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('change', () => {
   navbarItems.classList.toggle('active');
-  t1.restart().timeScale(1);
-});
-
-navbarToggler.addEventListener('change', () => {
-  navbarItems.classList.toggle('active');
-  navbarToggler.classList.toggle('active');
   t1.restart().timeScale(1);
 });
 //*========== END ==========*//
@@ -69,13 +62,13 @@ gsapTextElements.forEach((element, index) => {
     {
       opacity: 1,
       y: 0,
-      duration: 0.1,
+      duration: 0.2,
       scrollTrigger: {
         trigger: element,
         start: 'top 80%',
         end: 'bottom 80%',
         scrub: true,
-        repeat: -1,
+        repeat: -2,
         onRepeat: reverseAnimation
       }
     }
