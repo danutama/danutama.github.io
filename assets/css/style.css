@@ -7,19 +7,19 @@
 
 :root {
   /* ----- COLORS ----- */
-  --body-color: #ECE7E1;
+  --body-color: #E1DFDD;
   /* --title-color: #183a37; */
   --title-color: #131313;
   --text-color: #131313;
   --button-color: #131313;
-  --light-dark: #ECE7E1;
+  --light-dark: #E1DFDD;
   --shadow-text: rgba(61, 61, 61, 0.1);
 
   /* ----- FONT----- */
   --title-font-family: 'Awaken Regular';
   --body-font-family: 'Roboto Condensed', sans-serif;
   --paragraph-font-family: 'Nunito Sans';
-  --line-height: 1.4em;
+  --line-height: 1.5em;
   --small-fs: 0.875rem;
   --normal-fs: 1rem;
   --medium-fs: 1.25rem;
@@ -30,9 +30,9 @@
 
 .dark-theme {
   --body-color: #131313;
-  --title-color: #ECE7E1;
-  --text-color: #ECE7E1;
-  --button-color: #ECE7E1;
+  --title-color: #E1DFDD;
+  --text-color: #E1DFDD;
+  --button-color: #E1DFDD;
   --light-dark: #131313;
   --shadow-text: rgba(163, 163, 163, 0.1);
 }
@@ -264,8 +264,9 @@ nav {
   display: flex;
   justify-content: center;
   position: fixed;
-  top: 0;
+  top: -100px;
   width: 100%;
+  transition: top 0.3s ease-in-out;
   z-index: 999;
 }
 
@@ -452,7 +453,6 @@ nav {
 }
 
 .about-text {
-  font-family: var(--paragraph-font-family);
   color: var(--text-color);
   font-size: var(--big-fs);
   line-height: var(--line-height);
@@ -492,7 +492,7 @@ nav {
 
 .footer-time {
   margin: 20px 0 30px 0;
-  font-size: var(--normal-fs);
+  font-size: var(--medium-fs);
   color: var(--text-color);
 }
 
@@ -518,7 +518,7 @@ footer hr {
     /* ----- FONT SIZE ----- */
     --small-fs: 0.875rem;
     --normal-fs: 1rem;
-    --mediium-fs: 1.25rem;
+    --medium-fs: 1.25rem;
     --big-fs: 1.75rem;
     --xl-fs: 2.5rem;
     --special-fs: 5rem;
@@ -552,7 +552,7 @@ footer hr {
     /* ----- FONT SIZE ----- */
     --small-fs: 0.875rem;
     --normal-fs: 1rem;
-    --mediium-fs: 1.25rem;
+    --medium-fs: 1.25rem;
     --big-fs: 1.45rem;
     --xl-fs: 2.1rem;
     --special-fs: 3.2rem;
@@ -663,11 +663,12 @@ footer hr {
   }
 
   .navbar-link-credit {
+    opacity: 0;
     display: block;
     position: absolute;
     bottom: 2rem;
     font-family: var(--paragraph-font-family);
-    font-size: var(--small-fs);
+    font-size: var(--normal-fs);
     color: var(--text-color);
   }
 
@@ -685,9 +686,10 @@ footer hr {
   }
 
   .about-text {
-    font-size: var(--normal-fs);
+    font-size: var(--medium-fs);
   }
 
+  .footer-time,
   .footer-credit,
   .footer-contact-wrapper a {
     font-size: var(--normal-fs);
