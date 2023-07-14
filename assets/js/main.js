@@ -31,23 +31,25 @@ hamburger.addEventListener('change', () => {
   t1.restart().timeScale(1);
 });
 
+
 // SCROLL HIDE AND SHOW
 const navbar = document.getElementById('nav')
-let previousScrollPosition = window.pageYOffset
+const navbar_Items = document.querySelector('.navbar-items');
+let previousScrollPosition = window.pageYOffset;
 
 window.addEventListener('scroll', () => {
-  const currentScrollPosition = window.pageYOffset
+  const currentScrollPosition = window.pageYOffset;
 
-  if (!navbarItems.classList.contains('active')) {
-    if (currentScrollPosition < previousScrollPosition) {
-      gsap.to(navbar, { top: '0', duration: 0.3, ease: 'power2.out' })
+  if (!navbar_Items.classList.contains('active')) {
+    if (currentScrollPosition > previousScrollPosition) {
+      navbar.classList.add('hidden');
     } else {
-      gsap.to(navbar, { top: '-100px', duration: 0.3, ease: 'power2.in' })
+      navbar.classList.remove('hidden');
     }
   }
 
-  previousScrollPosition = currentScrollPosition
-})
+  previousScrollPosition = currentScrollPosition;
+});
 //*========== END ==========*//
 
 /*========== SCROLL ACTIVE SECTIONS ==========*/
