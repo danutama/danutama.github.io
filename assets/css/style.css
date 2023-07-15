@@ -7,13 +7,13 @@
 
 :root {
   /* ----- COLORS ----- */
-  --body-color: #f0efeb;
+  --body-color: #f2f2f2;
   /* --title-color: #183a37; */
   --title-color: #101010;
   --text-color: #101010;
   --button-color: #101010;
-  --light-dark: #f0efeb;
-  --shadow-text: rgba(61, 61, 61, 0.1);
+  --light-dark: #f2f2f2;
+  --shadow-text: rgba(107, 107, 107, 0.1);
 
   /* ----- FONT----- */
   --title-font-family: 'Awaken Regular';
@@ -148,8 +148,14 @@ button {
 }
 
 .loading-screen p {
+  display: inline-block;
+  white-space: pre;
   font-size: var(--medium-fs);
   color: var(--title-color);
+}
+
+.loading-screen .hidden {
+  visibility: hidden;
 }
 
 .loading-screen span {
@@ -246,7 +252,7 @@ button {
 }
 
 .input:checked + .slider {
-  background-color: #f0efeb;
+  background-color: #f2f2f2;
 }
 
 .input:focus + .slider {

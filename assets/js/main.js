@@ -8,7 +8,37 @@ $(window).on('hashchange', function (e) {
 $(window).on('load', function () {
   setTimeout(function () {
     $('.loading-screen').fadeOut(200);
-  }, 2000); // delay selama 3 detik
+  }, 3000); // 3
+});
+//*========== END ==========*//
+
+//*========== LOADING SCREEN - ANIMATION TEXT ==========*//
+const textElement = document.getElementById('animated-text');
+
+textElement.classList.remove('hidden');
+
+const text = textElement.textContent;
+
+textElement.textContent = '';
+
+const letters = text.split('');
+
+letters.forEach((letter, index) => {
+  const span = document.createElement('p');
+  span.textContent = letter;
+  span.classList.add('animated-letter');
+
+  const delay = index * 0.1;
+
+  gsap.from(span, {
+    duration: 0.3,
+    opacity: 0,
+    y: 20,
+    ease: 'power4.out',
+    delay: 0.2 + delay
+  });
+
+  textElement.appendChild(span);
 });
 //*========== END ==========*//
 
