@@ -62,9 +62,9 @@ footer {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1204px;
-  padding: 1rem 1.3rem;
+  padding: 1rem 0;
 }
 
 h1,
@@ -278,8 +278,8 @@ nav.hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 1.3rem;
-  width: 100%;
+  padding: .5rem 0;
+  width: 90%;
   max-width: 1204px;
 }
 
@@ -517,6 +517,7 @@ footer hr {
 }
 
 /* ========================== MEDIA QUERY =========================== */
+
 @media (max-width: 768px) {
   :root {
     /* ----- FONT SIZE ----- */
@@ -533,16 +534,6 @@ footer hr {
   button,
   a {
     cursor: default !important;
-  }
-
-  .container {
-    width: 90%;
-    padding: 1rem 0;
-  }
-
-  .navbar {
-    width: 90%;
-    padding: 0.5rem 0;
   }
 
   .hero-name {
