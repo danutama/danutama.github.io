@@ -7,12 +7,12 @@
 
 :root {
   /* ----- COLORS ----- */
-  --body-color: #E1DFDD;
+  --body-color: #f0efeb;
   /* --title-color: #183a37; */
-  --title-color: #131313;
-  --text-color: #131313;
-  --button-color: #131313;
-  --light-dark: #E1DFDD;
+  --title-color: #101010;
+  --text-color: #101010;
+  --button-color: #101010;
+  --light-dark: #f0efeb;
   --shadow-text: rgba(61, 61, 61, 0.1);
 
   /* ----- FONT----- */
@@ -29,11 +29,11 @@
 }
 
 .dark-theme {
-  --body-color: #131313;
-  --title-color: #E1DFDD;
-  --text-color: #E1DFDD;
-  --button-color: #E1DFDD;
-  --light-dark: #131313;
+  --body-color: #101010;
+  --title-color: #fff;
+  --text-color: #fff;
+  --button-color: #fff;
+  --light-dark: #101010;
   --shadow-text: rgba(163, 163, 163, 0.1);
 }
 
@@ -209,7 +209,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #131313;
+  background-color: #101010;
   transition: 0.3s;
   border-radius: 30px;
 }
@@ -246,11 +246,11 @@ button {
 }
 
 .input:checked + .slider {
-  background-color: #e7e1da;
+  background-color: #f0efeb;
 }
 
 .input:focus + .slider {
-  box-shadow: 0 0 1px #131313;
+  box-shadow: 0 0 1px #101010;
 }
 
 .input:checked + .slider:before {

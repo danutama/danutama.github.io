@@ -106,40 +106,22 @@ function reverseAnimation (animation) {
 //*========== END ==========*//
 
 //*========== LOCAL TIME ==========*//
-function updateTime() {
-  var date = new Date();
-  var months = [
-      "Jan", "Feb", "Mar",
-      "Apr", "May", "June", "July",
-      "Aug", "Sept", "Oct",
-      "Nov", "Dec"
-  ];
-
-  var day = date.getDate();
-  var monthIndex = date.getMonth();
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var seconds = date.getSeconds();
-
-  if (hours < 10) {
-      hours = "0" + hours;
+async function getJakartaDateTime() {
+  try {
+    const response = await fetch('http://worldtimeapi.org/api/timezone/Asia/Jakarta');
+    const data = await response.json();
+    const jakartaDateTime = new Date(data.datetime);
+    const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+    const formattedDate = jakartaDateTime.toLocaleDateString('en-US', options);
+    document.getElementById('time').textContent = `Local time, Jakarta / ${formattedDate}`;
+  } catch (error) {
+    console.error('Error:', error);
   }
-
-  if (minutes < 10) {
-      minutes = "0" + minutes;
-  }
-
-  if (seconds < 10) {
-      seconds = "0" + seconds;
-  }
-
-  document.getElementById("time").innerHTML =
-    "Local time: " + day + " " + months[monthIndex] + ", " + hours + ":" + minutes + ":" + seconds + " WIB";
 }
 
-setInterval(function() {
-  updateTime();
-}, 1000);
+setInterval(getJakartaDateTime, 1000);
+
+window.addEventListener('load', getJakartaDateTime);
 //*========== END ==========*//
 
 //*========== SCROLL TOP BTN ==========*//
