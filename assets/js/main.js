@@ -108,7 +108,7 @@ function reverseAnimation (animation) {
 //*========== LOCAL TIME ==========*//
 async function getJakartaDateTime() {
   try {
-    const response = await fetch('http://worldtimeapi.org/api/timezone/Asia/Jakarta');
+    const response = await fetch('https://worldtimeapi.org/api/timezone/Asia/Jakarta');
     const data = await response.json();
     const jakartaDateTime = new Date(data.datetime);
     const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
