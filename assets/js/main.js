@@ -73,8 +73,9 @@ hamburger.addEventListener('change', () => {
   navbarItems.classList.toggle('active');
   
   if (navbarItems.classList.contains('active')) {
-    t1.play();
+    t1.play().timeScale(1);
   } else {
+    t1.timeScale(2);
     t1.reverse();
   }
 });

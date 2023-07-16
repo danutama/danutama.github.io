@@ -658,7 +658,7 @@ footer hr {
     top: 0;
   }
 
-  .navbar-items.active .shadow-text {
+  .navbar-items .shadow-text {
     display: block;
     position: absolute;
     font-family: var(--title-font-family);
