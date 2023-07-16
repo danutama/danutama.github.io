@@ -374,6 +374,15 @@ nav.hidden {
   z-index: 0;
 }
 
+svg.arrow {
+  width: var(--xl-fs);
+  margin: 1rem 0 ;
+}
+
+#Artboard {
+  stroke: var(--text-color);
+}
+
 .hero-name {
   font-family: var(--body-font-family);
   font-size: var(--special-fs);
