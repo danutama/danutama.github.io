@@ -396,6 +396,8 @@ svg.arrow {
 }
 
 .hero-name {
+  opacity: 0;
+  transform: translateY(-50px);
   font-family: var(--body-font-family);
   font-size: var(--special-fs);
   color: var(--title-color);
