@@ -395,6 +395,62 @@ svg.arrow {
   stroke: var(--text-color);
 }
 
+/* CIRCLE LOGO */
+.circle-text-container {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  display: flex; 
+  justify-content: end;
+  padding: 0;
+  margin: 0;
+}
+
+.circle-text-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-logo { 
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: url(../img/avatar.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.circle-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 15s linear infinite;
+}
+
+.circle-text span {
+  position: absolute;
+  left: 50%;
+  font-size: var(--normal-fs);
+  color: var(--text-color);
+  transform-origin: 0 90px;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* CIRCLE END */
+
 .hero-name {
   opacity: 0;
   transform: translateY(-50px);
@@ -565,6 +621,27 @@ footer hr {
     cursor: default !important;
   }
 
+  /* CIRCLE LOGO */
+  .circle-text-container {
+    top: 15%;
+    right: 5%;
+  }
+
+  .circle-text-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+
+  .circle-logo { 
+    width: 85px;
+    height: 85px;
+  }
+
+  .circle-text span {
+    transform-origin: 0 70px;
+  }
+  /* CIRCLE END */
+
   .hero-name {
     font-size: 4rem;
     line-height: 55px;
@@ -700,6 +777,22 @@ footer hr {
     font-size: 12px;
   }
   /* ===================== NAV END ======================= */
+
+  /* CIRCLE LOGO */
+  .circle-text-container {
+    top: 10%;
+  }
+
+  .circle-text-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circle-text span {
+    font-size: var(--small-fs);
+    transform-origin: 0 60px;
+  }
+  /* CIRCLE END */
 
   .hero-contact-dot {
     margin: 0 0.3rem 6px 0;

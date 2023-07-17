@@ -4,6 +4,7 @@ $(window).on('hashchange', function (e) {
 });
 //*========== END ==========*//
 
+
 //*========== LOADING SCREEN ==========*//
 // $(window).on('load', function () {
 //   setTimeout(function () {
@@ -24,6 +25,7 @@ $(window).on('load', function() {
   }, 3000);
 });
 //*========== END ==========*//
+
 
 //*========== LOADING SCREEN - ANIMATION TEXT ==========*//
 const textElement = document.getElementById('animated-text');
@@ -54,6 +56,16 @@ letters.forEach((letter, index) => {
   textElement.appendChild(span);
 });
 //*========== END ==========*//
+
+
+//*========== CIRCLE TEXT AND IMAGE LOGO ==========*//
+const textCircle = document.querySelector('.circle-text p');
+textCircle.innerHTML = textCircle.innerText.split("").map(
+  (char, i) =>
+    `<span style="transform:rotate(${i * 15}deg)">${char}</span>`
+).join("")
+//*========== END ==========*//
+
 
 //*========== NAVBAR TOGGLE WITH GSAP ANIMATION ==========*//
 const navbarItems = document.querySelector('.navbar-items');
@@ -127,6 +139,7 @@ window.addEventListener('scroll', () => {
 });
 //*========== END ==========*//
 
+
 /*========== SCROLL ACTIVE SECTIONS ==========*/
 function scrollActive() {
   var sections = document.querySelectorAll('section');
@@ -149,6 +162,7 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 //*========== END ==========*//
+
 
 //*========== GSAP SCROLL ANIMATION ==========*//
 gsap.registerPlugin(ScrollTrigger)
@@ -180,6 +194,7 @@ function reverseAnimation (animation) {
 }
 //*========== END ==========*//
 
+
 //*========== LOCAL TIME ==========*//
 async function getJakartaDateTime() {
   try {
@@ -199,6 +214,7 @@ setInterval(getJakartaDateTime, 1000);
 window.addEventListener('load', getJakartaDateTime);
 //*========== END ==========*//
 
+
 //*========== SCROLL TOP BTN ==========*//
 function scrollToTop() {
   if (typeof window.scrollTo === 'function') {
@@ -211,6 +227,7 @@ function scrollToTop() {
   }
 }
 //*========== END ==========*//
+
 
 /*========== DARK LIGHT MODE ==========*/
 const themeToggle = document.querySelector('.switch input');
