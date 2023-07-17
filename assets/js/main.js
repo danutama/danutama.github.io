@@ -101,8 +101,10 @@ handleNavbarLink();
 hamburger.addEventListener('change', handleMenuAnimation);
 
 window.addEventListener('resize', () => {
-  initTimelineAnimation();
-  handleNavbarLink();
+  if (!navbarItems.classList.contains('active')) {
+    initTimelineAnimation();
+    handleNavbarLink();
+  }
 });
 
 // HIDE AND SHOW NAVBAR WHEN SCROLLING
