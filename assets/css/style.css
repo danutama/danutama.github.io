@@ -359,6 +359,7 @@ nav.hidden {
 /* ========================== HERO SECTION =========================== */
 #home .container {
   z-index: 1;
+  position: relative;
 }
 
 #home {
@@ -398,12 +399,8 @@ svg.arrow {
 /* CIRCLE LOGO */
 .circle-text-container {
   position: absolute;
-  top: 20%;
-  right: 5%;
-  display: flex; 
-  justify-content: end;
-  padding: 0;
-  margin: 0;
+  top: 5%;
+  right: 0;
 }
 
 .circle-text-wrapper {
@@ -623,8 +620,7 @@ footer hr {
 
   /* CIRCLE LOGO */
   .circle-text-container {
-    top: 15%;
-    right: 5%;
+    top: -10%;
   }
 
   .circle-text-wrapper {
@@ -778,9 +774,17 @@ footer hr {
   }
   /* ===================== NAV END ======================= */
 
-  /* CIRCLE LOGO */
-  .circle-text-container {
-    top: 10%;
+  /* ==== HERO SECTION / CIRCLE LOGO === */
+  #home {
+    padding-top: 8rem;
+  }
+
+  .hero-contact-dot {
+    margin: 0 0.3rem 6px 0;
+  }
+  
+  .hero-contact a {
+    font-size: var(--medium-fs);
   }
 
   .circle-text-wrapper {
@@ -792,15 +796,7 @@ footer hr {
     font-size: var(--small-fs);
     transform-origin: 0 60px;
   }
-  /* CIRCLE END */
-
-  .hero-contact-dot {
-    margin: 0 0.3rem 6px 0;
-  }
-  
-  .hero-contact a {
-    font-size: var(--medium-fs);
-  }
+  /* === END === */
 
   .about-text {
     font-size: var(--medium-fs);
