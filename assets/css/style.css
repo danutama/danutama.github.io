@@ -417,7 +417,7 @@ svg.arrow {
   position: absolute;
   width: 130px;
   height: 130px;
-  background: url(../img/avatar.jpg);
+  background: url(../img/me.png);
   background-size: cover;
   border-radius: 50%;
   filter:  grayscale(100%);
@@ -497,37 +497,19 @@ svg.arrow {
 }
 
 .hero-btn {
-  display: flex;
-  align-items: center;
   font-size: var(--big-fs);
   padding: 10px 25px;
   border-radius: 50px;
   color: var(--button-color);
   background-color: transparent;
   border: 2px solid var(--button-color);
+  transition: all .3s ease;
 }
 
 .hero-btn:hover {
   color: var(--light-dark);
   background-color: var(--button-color);
-  transition: 0.3s ease;
 }
-
-.hero-btn:before {
-  background-color: var(--light-dark);
-  content: "";
-  display: inline-block;
-  height: 1px;
-  transition: all .42s cubic-bezier(.25,.8,.25,1);
-  width: 0;
-}
-
-.hero-btn:hover:before {
-  margin-right: 10px;
-  background-color: var(--light-dark);
-  width: 2rem;
-}
-
 /* ========================== ABOUT SECTION =========================== */
 #about {
   position: relative;
@@ -562,6 +544,37 @@ svg.arrow {
   line-height: var(--line-height);
   position: relative;
   z-index: 2;
+}
+
+.about-experience-wrapper {
+  font-size: var(--xl-fs);
+  margin-top: 3rem;
+  padding: 0 0 5px 10px;
+  display: grid;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.about-experience-wrapper .duration {
+  font-size: var(--normal-fs);
+  margin-top: 2rem;
+}
+
+.about-experience-company {
+  font-size: var(--big-fs);
+  margin: .5rem 0 1rem 0;
+}
+
+.about-experience-company em,
+.about-experience-desc {
+  font-size: var(--medium-fs);
+}
+
+.about-experience-desc .desc {
+  font-size: var(--normal-fs);
 }
 
 /* ========================== FOOTER =========================== */
