@@ -418,8 +418,8 @@ svg.arrow {
   background: url(../img/me.png);
   background-size: cover;
   border-radius: 50%;
-  filter: saturate(0%);
-  -webkit-filter: saturate(0%);
+  filter: saturate(10%);
+  -webkit-filter: saturate(10%);
 }
 
 .circle-text {
