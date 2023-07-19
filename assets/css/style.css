@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Roboto+Condensed&display=swap');
 
-/* @font-face {
-  font-family: 'Awaken Regular';
-  src: url('awaken.regular.otf') format('opentype')
-} */
-
 :root {
   /* ----- COLORS ----- */
   --body-color: #fff;
-  /* --title-color: #183a37; */
   --title-color: #1C1D20;
   --text-color: #1C1D20;
   --button-color: #1C1D20;
@@ -169,37 +163,13 @@ svg.arrow-footer {
   visibility: hidden;
 }
 
-.loading-screen span {
-  position: relative;
+.loading-logo {
+  opacity: 0;
+  transform: translateY(-100%);
   font-family: var(--title-font-family);
-  font-size: 8rem;
+  font-size: var(--special-fs);
   font-weight: 500;
   color: var(--title-color);
-  margin-bottom: 30px;
-}
-
-.loading-screen span::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: var(--title-color);
-  transform-origin: center;
-  animation: loadingAnimation 2s linear;
-}
-
-@keyframes loadingAnimation {
-  0% {
-    transform: scaleX(0);
-  }
-  50% {
-    transform: scaleX(1);
-  }
-  100% {
-    transform: scaleX(1);
-  }
 }
 /* -------- LOADING END ---------- */
 
@@ -559,7 +529,7 @@ svg.arrow {
   content: '';
   position: absolute;
   transform: translateY(51%);
-  left: -14.1px;
+  left: -14.2px;
   width: 8px;
   height: 8px;
   border-radius: 50%;

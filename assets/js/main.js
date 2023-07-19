@@ -6,12 +6,6 @@ $(window).on('hashchange', function (e) {
 
 
 //*========== LOADING SCREEN ==========*//
-// $(window).on('load', function () {
-//   setTimeout(function () {
-//     $('.loading-screen').fadeOut(200);
-//   }, 3000); // 3
-// });
-
 $(window).on('load', function() {
   setTimeout(function() {
     $('.loading-screen').fadeOut(200, function() {
@@ -38,23 +32,27 @@ textElement.textContent = '';
 
 const letters = text.split('');
 
-letters.forEach((letter, index) => {
-  const span = document.createElement('p');
-  span.textContent = letter;
-  span.classList.add('animated-letter');
+gsap.to('.loading-logo', { y: 0, opacity: 1, duration: 0.7, ease: "expo.in", onComplete: animateLetters });
 
-  const delay = index * 0.1;
+function animateLetters() {
+  letters.forEach((letter, index) => {
+    const span = document.createElement('p');
+    span.textContent = letter;
+    span.classList.add('animated-letter');
 
-  gsap.from(span, {
-    duration: 0.3,
-    opacity: 0,
-    y: 20,
-    ease: 'power4.out',
-    delay: 0.2 + delay
+    const delay = index * 0.1;
+
+    gsap.from(span, {
+      duration: 0.3,
+      opacity: 0,
+      y: 20,
+      ease: 'power4.out',
+      delay: 0.5 + delay
+    });
+
+    textElement.appendChild(span);
   });
-
-  textElement.appendChild(span);
-});
+}
 //*========== END ==========*//
 
 
@@ -142,14 +140,14 @@ window.addEventListener('scroll', () => {
 
 /*========== SCROLL ACTIVE SECTIONS ==========*/
 function scrollActive() {
-  var sections = document.querySelectorAll('section');
+  const sections = document.querySelectorAll('section');
 
-  sections.forEach(function (section) {
+  sections.forEach((section) => {
     if (section.getBoundingClientRect().top <= 50) {
-      var id = section.getAttribute('id');
-      var navLinks = document.querySelectorAll('.navbar-link');
+      const id = section.getAttribute('id');
+      const navLinks = document.querySelectorAll('.navbar-link');
 
-      navLinks.forEach(function (link) {
+      navLinks.forEach((link) => {
         link.classList.remove('active');
 
         if (link.getAttribute('href').slice(1) === id) {
