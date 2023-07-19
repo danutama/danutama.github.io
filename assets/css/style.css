@@ -543,7 +543,7 @@ svg.arrow {
 .about-experience-wrapper .duration {
   position: relative;
   font-size: var(--normal-fs);
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .about-experience-company {
