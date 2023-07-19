@@ -418,8 +418,6 @@ svg.arrow {
   background: url(../img/me.jpg);
   background-size: cover;
   border-radius: 50%;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
 }
 
 .circle-text {
@@ -560,8 +558,8 @@ svg.arrow {
 .about-experience-dot {
   content: '';
   position: absolute;
-  top: 5px;
-  left: -14px;
+  transform: translateY(51%);
+  left: -14.1px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -800,7 +798,7 @@ footer hr {
     display: inline-block;
     font-size: var(--medium-fs);
     position: absolute;
-    top: .5rem;
+    top: -.2rem;
     left: -1rem;
   }
 
