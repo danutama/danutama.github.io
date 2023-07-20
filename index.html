@@ -246,6 +246,28 @@
 
     <!------------------ FOOTER -------------------->
     <footer>
+
+      <!-- Modal-info -->
+      <div class="modal" id="modalInfo">
+        <div class="modal-content">
+          <div class="shadow-text">
+            <span>FYI</span>
+          </div>
+          <h2>INFOS & CREDITS</h2>
+          <span>Transitions - GSAP GreenSock</span>
+          <span>JavaScript Library - JQuery</span>
+          <span>Fonts Family - Gayathri and Roboto Condensed</span>
+          <span> IF YOU HAVE ANY FEEDBACKS, COMMENTS, QUESTIONS ABOUT THIS WEBSITE, DON'T HESITATE TO
+            <a href="mailto:danupratama.dev@gmail.com" class="line-hover-modal" target="_blank">
+              REACH OUT
+            </a>
+          </span>
+          <span></span>
+          <!-- Button untuk menutup modal-info -->
+          <button id="closeModalBtn" class="close-modal-button">Close</button>
+        </div>
+      </div>
+
       <div class="container">
 
         <svg class="arrow-footer" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -270,6 +292,8 @@
             <a href="https://github.com/danuapratama" class="line-hover" target="_blank">GITHUB</a>
             <a href="https://instagram.com/danuapratama" class="line-hover" target="_blank">INSTAGRAM</a>
             <a href="https://danupratama.site/porto" class="line-hover" target="_blank">V.2 <i class='bx bx-globe'></i></a>
+            <br />
+            <button id="openModalBtn" class="line-hover open-modal-button">CREDITS</button>
           </span>
 
           <button onclick="scrollToTop()" class="scroll-top-btn">

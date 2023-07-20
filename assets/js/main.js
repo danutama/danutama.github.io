@@ -271,3 +271,35 @@ if (selectedTheme === 'dark') {
 
 themeToggle.addEventListener('change', toggleDarkTheme);
 //*========== END ==========*//
+
+
+//*========== MODAL CREDITS ==========*//
+const modal = document.getElementById('modalInfo');
+const openModalBtn = document.getElementById('openModalBtn');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+function openModal() {
+  // modal.style.display = 'block';
+  gsap.to(modal, {
+    bottom: "0",
+    duration: 1,
+    ease: "expo",
+    borderTopRightRadius: "0", borderTopLeftRadius: "0"
+  });
+}
+
+function closeModal() {
+  gsap.to(modal, {
+    bottom: "-1000%",
+    duration: 1,
+    ease: 'expo.in',
+    borderTopRightRadius: "80%", borderTopLeftRadius: "80%"
+    // onComplete: () => {
+    //   modal.style.display = 'none';
+    // },
+  });
+}
+
+openModalBtn.addEventListener('click', openModal);
+closeModalBtn.addEventListener('click', closeModal);
+//*========== END ==========*//
