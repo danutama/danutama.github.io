@@ -436,8 +436,10 @@ svg.arrow {
 .hero-name {
   opacity: 0;
   transform: translateY(-50px);
-  font-family: var(--title-font-family);
-  font-size: var(--special-fs);
+  line-height: 8rem;
+  font-family: var(--body-font-family);
+  font-size: 8rem;
+  text-transform: uppercase;
   color: var(--title-color);
 }
 
@@ -576,6 +578,7 @@ svg.arrow {
 
 .about-experience-desc .desc {
   font-size: var(--normal-fs);
+  line-height: var(--line-height);
 }
 
 /* ========================== FOOTER =========================== */
@@ -671,6 +674,7 @@ footer hr {
   /* CIRCLE END */
 
   .hero-name {
+    font-size: var(--special-fs);
     line-height: 95px;
   }
 }
