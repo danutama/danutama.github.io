@@ -6,53 +6,74 @@ $(window).on('hashchange', function (e) {
 
 
 //*========== LOADING SCREEN ==========*//
-$(window).on('load', function() {
-  setTimeout(function() {
-    $('.loading-screen').fadeOut(200, function() {
+function animateBlock() { 
+  const tl = gsap.timeline({
+    onComplete: function() {
       gsap.to('.hero-name', {
         opacity: 1,
         y: 0,
         duration: .8,
         ease: 'bounce',
       });
-    });
-  }, 3000);
+    }
+  });
+
+  tl.to(".block-left", {
+    left: "-55%",
+    duration: 2,
+    ease: "power3.inOut",
+    delay: 1,
+  })
+  .to(".block-right", {
+    right: "-55%",
+    duration: 2,
+    ease: "power3.inOut",
+  }, "-=2");
+}
+
+function animateBlockLeftRight() {
+  gsap.to('.loading-text-left', { y: 0, opacity: 1, duration: 1, ease: "expo.in", delay: .5, onComplete: animateBlock });
+  gsap.to('.loading-text-right', { y: 0, opacity: 1, duration: 1, ease: "expo.in", delay: .5, onComplete: animateBlock });
+}
+
+$(window).on('load', function() {
+  animateBlockLeftRight();
 });
 //*========== END ==========*//
 
 
 //*========== LOADING SCREEN - ANIMATION TEXT ==========*//
-const textElement = document.getElementById('animated-text');
+// const textElement = document.getElementById('animated-text');
 
-textElement.classList.remove('hidden');
+// textElement.classList.remove('hidden');
 
-const text = textElement.textContent;
+// const text = textElement.textContent;
 
-textElement.textContent = '';
+// textElement.textContent = '';
 
-const letters = text.split('');
+// const letters = text.split('');
 
-gsap.to('.loading-logo', { y: 0, opacity: 1, duration: 0.7, ease: "expo.in", onComplete: animateLetters });
+// gsap.to('.loading-logo', { y: 0, opacity: 1, duration: 0.7, ease: "expo.in", onComplete: animateLetters });
 
-function animateLetters() {
-  letters.forEach((letter, index) => {
-    const span = document.createElement('p');
-    span.textContent = letter;
-    span.classList.add('animated-letter');
+// function animateLetters() {
+//   letters.forEach((letter, index) => {
+//     const span = document.createElement('p');
+//     span.textContent = letter;
+//     span.classList.add('animated-letter');
 
-    const delay = index * 0.1;
+//     const delay = index * 0.1;
 
-    gsap.from(span, {
-      duration: 0.3,
-      opacity: 0,
-      y: 20,
-      ease: 'power4.out',
-      delay: 0.5 + delay
-    });
+//     gsap.from(span, {
+//       duration: 0.3,
+//       opacity: 0,
+//       y: 20,
+//       ease: 'power4.out',
+//       delay: 0.5 + delay
+//     });
 
-    textElement.appendChild(span);
-  });
-}
+//     textElement.appendChild(span);
+//   });
+// }
 //*========== END ==========*//
 
 
