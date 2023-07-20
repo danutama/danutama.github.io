@@ -9,6 +9,8 @@ $(window).on('hashchange', function (e) {
 function animateBlock() { 
   const tl = gsap.timeline({
     onComplete: function() {
+      document.querySelector(".blocks").style.display = "none";
+
       gsap.to('.hero-name', {
         opacity: 1,
         y: 0,
@@ -19,13 +21,13 @@ function animateBlock() {
   });
 
   tl.to(".block-left", {
-    left: "-55%",
+    left: "-51%",
     duration: 2,
     ease: "power3.inOut",
     delay: 1,
   })
   .to(".block-right", {
-    right: "-55%",
+    right: "-51%",
     duration: 2,
     ease: "power3.inOut",
   }, "-=2");
@@ -95,7 +97,7 @@ let t1;
 
 const initTimelineAnimation = () => {
   t1 = gsap.timeline({ paused: true });
-  t1.fromTo(".navbar-items", { top: "-1000%" }, { top: "0", duration: 1, ease: "expo.inOut" });
+  t1.fromTo(".navbar-items", { top: "-1000%" }, { top: "0", duration: 1, ease: "expo.inOut", borderBottomRightRadius: "0", borderBottomLeftRadius: "0" });
   t1.fromTo(".navbar-link", { y: "50%", opacity: 0 }, { y: "0", opacity: 1, duration: 0.3, stagger: 0.2, ease: "Expo.easeInOut" });
   t1.fromTo(".navbar-link-credit", { y: "50%" }, { y: "0", opacity: 1, duration: 0.3, stagger: 0.2, ease: "Expo.easeInOut" });
 };

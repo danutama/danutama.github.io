@@ -576,9 +576,12 @@ svg.arrow {
   font-size: var(--medium-fs);
 }
 
+.about-experience-desc {
+  line-height: var(--line-height);
+}
+
 .about-experience-desc .desc {
   font-size: var(--normal-fs);
-  line-height: var(--line-height);
 }
 
 /* ========================== FOOTER =========================== */
@@ -756,6 +759,8 @@ footer hr {
     position: fixed;
     left: 0;
     right: 0;
+    border-radius: 0 0 50% 50%/0 0 25% 25%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     background-color: var(--body-color);
     width: 100%;
     height: 100vh;
