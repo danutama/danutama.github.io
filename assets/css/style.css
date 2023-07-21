@@ -642,6 +642,7 @@ svg.arrow {
 .modal-content h2 {
   color: var(--light-dark);
   font-size: var(--xl-fs);
+  opacity: 0;
 }
 
 .modal-content span {
@@ -651,6 +652,7 @@ svg.arrow {
   line-height: var(--line-height);
   position: relative;
   z-index: 2;
+  opacity: 0;
 }
 
 .modal-content span a {
@@ -965,7 +967,7 @@ footer hr {
   }
 
   .modal-content {
-    padding: 0 0 3rem 0;
+    padding: 0 0 2rem 0;
   }
 
   .modal-content .shadow-text p {

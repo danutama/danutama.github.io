@@ -280,10 +280,10 @@ const closeModalBtn = document.getElementById('closeModalBtn');
 const modalText = document.querySelector('.modal-gsap-text');
 
 function openModal() {
-  gsap.fromTo(modal, { bottom: "-100%" }, {
+  gsap.fromTo(modal, { bottom: "-150%" }, {
     bottom: "0",
     duration: 1,
-    ease: "expo.in",
+    ease: "expo.out",
     borderTopRightRadius: "0",
     borderTopLeftRadius: "0",
     onComplete: () => {
@@ -299,11 +299,11 @@ function openModal() {
           .to('.modal-info-title h2', { opacity: 0, y: "-50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
           .to(modalText, { opacity: 0, y: "-50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
           .to(modal, {
-            bottom: "-100%",
+            bottom: "-150%",
             duration: 1,
             ease: 'expo.in',
-            borderTopRightRadius: "50% 25%",
-            borderTopLeftRadius: "50% 25%",
+            borderTopRightRadius: "50%",
+            borderTopLeftRadius: "50%",
           }, '-=0.5');
       });
     }
