@@ -277,29 +277,38 @@ themeToggle.addEventListener('change', toggleDarkTheme);
 const modal = document.getElementById('modalInfo');
 const openModalBtn = document.getElementById('openModalBtn');
 const closeModalBtn = document.getElementById('closeModalBtn');
+const modalText = document.querySelector('.modal-gsap-text');
 
 function openModal() {
-  // modal.style.display = 'block';
   gsap.to(modal, {
     bottom: "0",
     duration: 1,
-    ease: "expo",
-    borderTopRightRadius: "0", borderTopLeftRadius: "0"
-  });
-}
+    ease: "expo.in",
+    borderTopRightRadius: "0",
+    borderTopLeftRadius: "0",
+    onComplete: () => {
+      const tl = gsap.timeline();
+      tl.fromTo(modalText, { y: "-50%", opacity: 0 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
+        .fromTo('.modal-info-title h2', { y: "-50%", opacity: 0 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
+        .fromTo('.modal-content span', { y: "-50%", opacity: 0 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" });
 
-function closeModal() {
-  gsap.to(modal, {
-    bottom: "-1000%",
-    duration: 1,
-    ease: 'expo.in',
-    borderTopRightRadius: "80%", borderTopLeftRadius: "80%"
-    // onComplete: () => {
-    //   modal.style.display = 'none';
-    // },
+      // RESERVE
+      closeModalBtn.addEventListener('click', () => {
+        const reverseTl = gsap.timeline();
+        reverseTl.to('.modal-content span', { opacity: 0, y: "-50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
+          .to('.modal-info-title h2', { opacity: 0, y: "-50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
+          .to(modalText, { opacity: 0, y: "-50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
+          .to(modal, {
+            bottom: "-100%",
+            duration: 1,
+            ease: 'expo.in',
+            borderTopRightRadius: "50% 25%",
+            borderTopLeftRadius: "50% 25%",
+          }, '-=0.5');
+      });
+    }
   });
 }
 
 openModalBtn.addEventListener('click', openModal);
-closeModalBtn.addEventListener('click', closeModal);
 //*========== END ==========*//
