@@ -594,7 +594,7 @@ svg.arrow {
   width: 100%;
   background-color: var(--button-color);
   z-index: 9999;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 2rem 1rem;
   left: 0;
   right: 0;
   border-radius: 50% 50% 0 0 / 25% 25% 0 0;
@@ -607,7 +607,7 @@ svg.arrow {
   align-items: start;
   flex-direction: column;
   padding: 0 2rem;
-  height: 95%;
+  height: 85%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -617,7 +617,7 @@ svg.arrow {
   right: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -628,6 +628,7 @@ svg.arrow {
   font-family: var(--body-font-family);
   font-size: 30rem;
   font-weight: 900;
+  letter-spacing: 5px;
   color: rgba(126, 126, 126, 0.3);
 }
 
@@ -647,7 +648,7 @@ svg.arrow {
 
 .modal-content span {
   color: var(--light-dark);
-  font-size: var(--medium-fs);
+  font-size: var(--big-fs);
   margin-bottom: 2rem;
   line-height: var(--line-height);
   position: relative;
@@ -679,12 +680,17 @@ svg.arrow {
 }
 
 .close-modal-button {
+  position: relative;
   border: 0;
   background-color: transparent;
   color: var(--light-dark);
   font-size: var(--medium-fs);
   font-family: var(--body-font-family);
   z-index: 2;
+}
+
+.close-modal-button.line-hover::after {
+  background-color: var(--light-dark) !important;
 }
 
 .line-hover-modal::after {
@@ -891,10 +897,10 @@ footer hr {
   .navbar-items .shadow-text {
     display: block;
     position: absolute;
-    line-height: 15rem;
-    font-size: 15rem;
+    /* line-height: 15rem; */
+    font-size: 30rem;
     font-weight: bold;
-    color: var(--shadow-text);
+    color: rgba(126, 126, 126, 0.3);;
     z-index: 1;
   }
 
@@ -972,6 +978,10 @@ footer hr {
 
   .modal-content .shadow-text p {
     font-size: 16rem;
+  }
+
+  .modal-content span {
+    font-size: var(--medium-fs);
   }
 
   .open-modal-button,
