@@ -280,7 +280,7 @@ const closeModalBtn = document.getElementById('closeModalBtn');
 const modalText = document.querySelector('.modal-gsap-text');
 
 function openModal() {
-  gsap.to(modal, {
+  gsap.fromTo(modal, { bottom: "-100%" }, {
     bottom: "0",
     duration: 1,
     ease: "expo.in",
