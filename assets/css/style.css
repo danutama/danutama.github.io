@@ -621,6 +621,67 @@ svg.arrow {
 }
 /* ========= SKILLS END ========= */
 
+/* ========= PROJECT SECTION ========= */
+.project-menu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.project-menu::-webkit-scrollbar {
+  display: none !important;
+}
+
+.project-menu button {
+  font-size: var(--normal-fs);
+  color: var(--button-color);
+  background-color: transparent;
+  padding: 10px 15px;
+  margin-right: 1rem;
+  border: 2px solid var(--button-color);
+  border-radius: 100px;
+}
+
+.project-wrapper {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+  padding: 2rem 0;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-body {
+  padding: .3rem 0 0 0;
+  font-size: var(--big-fs);
+  color: var(--text-color);
+}
+
+.project-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--normal-fs);
+  padding: 1rem 0;
+}
+
+.project-type li {
+  list-style: none;
+}
+
+.project-type a {
+  position: relative;
+  color: var(--text-color);
+  margin-left: 1rem;
+}
+/* ========= PROJECT END ========= */
+
 /* ========= MODAL CREDITS/INFOS ========= */
 .modal {
   /* display: none; */
