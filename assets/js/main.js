@@ -45,12 +45,9 @@ $(window).on('load', function() {
 
 
 //*========== LOCOMOTIVE SCROLL ==========*//
-document.addEventListener('DOMContentLoaded', () => {
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true, // Mengaktifkan smooth scroll
-    /* tambahkan opsi lainnya sesuai kebutuhan */
-  });
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true
 });
 //*========== END ==========*//
 
