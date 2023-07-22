@@ -302,6 +302,34 @@ themeToggle.addEventListener('change', toggleDarkTheme);
 //*========== END ==========*//
 
 
+//*========== MIXITUP JS ==========*//
+$(document).ready(function () {
+  var mixer = mixitup('.project-wrapper', {
+    animation: {
+      duration: 0,
+    },
+    load: {
+      filter: '.php',
+    },
+  });
+
+  function updateDataCount() {
+    const buttons = document.querySelectorAll('.project-menu button');
+    const wrapper = document.querySelector('.project-wrapper');
+    
+    buttons.forEach(button => {
+      const filter = button.getAttribute('data-filter');
+      const itemCount = wrapper.querySelectorAll(filter).length;
+      const dataCountTag = button.querySelector('.data-count');
+      dataCountTag.textContent = `/${itemCount}`;
+    });
+  }
+
+  updateDataCount();
+});
+//*========== END ==========*//
+
+
 //*========== MODAL CREDITS ==========*//
 const modal = document.getElementById('modalInfo');
 const openModalBtn = document.getElementById('openModalBtn');

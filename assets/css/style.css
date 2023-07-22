@@ -644,6 +644,22 @@ svg.arrow {
   margin-right: 1rem;
   border: 2px solid var(--button-color);
   border-radius: 100px;
+  position: relative;
+}
+
+.project-menu button.mixitup-control-active {
+ color: var(--light-dark);
+ background-color: var(--button-color);
+}
+
+.data-count {
+  position: absolute;
+  right: -10px;
+  top: -12px;
+  color: var(--button-color);
+  font-family: var(--title-font-family);
+  font-size: var(--small-fs);
+  font-weight: 600;
 }
 
 .project-wrapper {
@@ -651,6 +667,11 @@ svg.arrow {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
   padding: 2rem 0;
+}
+
+.project-box {
+  border-bottom: 1px solid var(--text-color);
+  padding-bottom: 1rem;
 }
 
 .project-image {
