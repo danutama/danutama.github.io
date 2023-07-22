@@ -6,7 +6,7 @@ $(window).on('hashchange', function (e) {
 
 
 //*========== LOADING SCREEN ==========*//
-function animateBlock() { 
+function animateBlock() {
   const tl = gsap.timeline({
     onComplete: function() {
       document.querySelector(".blocks").style.display = "none";
@@ -34,11 +34,40 @@ function animateBlock() {
 }
 
 function animateBlockLeftRight() {
-  gsap.to('.loading-text-left', { y: 0, opacity: 1, duration: 1, ease: "expo.in", delay: .5, onComplete: animateBlock });
-  gsap.to('.loading-text-right', { y: 0, opacity: 1, duration: 1, ease: "expo.in", delay: .5, onComplete: animateBlock });
+  const loadingScreen = document.querySelector('.blocks');
+  const loadingProgress = loadingScreen.querySelector('.loading-progress');
+  const loadingTextLeft = document.querySelector('.loading-text-left');
+  const loadingTextRight = document.querySelector('.loading-text-right');
+
+  const total = 100;
+  let loaded = 50;
+
+  function updateProgress(percentage) {
+    loadingProgress.textContent = `${percentage}%`;
+  }
+
+  function completeLoading() {
+    animateBlock();
+    loadingScreen.style.display = 'none';
+  }
+
+  function updateLoading() {
+    loaded++;
+    const percentage = Math.min(Math.round((loaded / total) * 100), 100);
+    updateProgress(percentage);
+
+    if (percentage === 100) {
+      gsap.to(loadingTextLeft, { y: 0, opacity: 1, duration: 1, ease: "expo.in" });
+      gsap.to(loadingTextRight, { y: 0, opacity: 1, duration: 1, ease: "expo.in", onComplete: animateBlock });
+
+      clearInterval(loadingInterval);
+    }
+  }
+
+  const loadingInterval = setInterval(updateLoading, 50);
 }
 
-$(window).on('load', function() {
+document.addEventListener('DOMContentLoaded', () => {
   animateBlockLeftRight();
 });
 //*========== END ==========*//

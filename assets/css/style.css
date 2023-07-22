@@ -159,6 +159,15 @@ svg.arrow-footer {
   z-index: 9999;
 }
 
+.loading-progress {
+  position: absolute;
+  left: 1.3rem;
+  top: 2rem;
+  color: var(--light-dark);
+  font-size: var(--xl-fs);
+  font-family: var(--title-font-family);
+}
+
 .block-left {
   left: 0;
   display: flex;
@@ -586,6 +595,32 @@ svg.arrow {
   font-size: var(--normal-fs);
 }
 
+/* ========= SKILLS/TOOLS SECTION ========= */
+.skills-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.skills-number {
+  font-size: var(--normal-fs);
+  color: var(--text-color);
+}
+
+.skills-text {
+  font-size: var(--xl-fs);
+  color: rgb(139, 139, 139);
+  font-weight: bold;
+  transition: .4s ease;
+}
+
+.skills-text:hover {
+  color: var(--text-color);
+}
+/* ========= SKILLS END ========= */
+
 /* ========= MODAL CREDITS/INFOS ========= */
 .modal {
   /* display: none; */
@@ -805,6 +840,10 @@ footer hr {
   .hero-name {
     font-size: var(--special-fs);
     line-height: 95px;
+  }
+
+  .skills-number {
+    font-size: var(--small-fs);
   }
 }
 
