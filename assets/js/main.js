@@ -44,6 +44,17 @@ $(window).on('load', function() {
 //*========== END ==========*//
 
 
+//*========== LOCOMOTIVE SCROLL ==========*//
+document.addEventListener('DOMContentLoaded', () => {
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true, // Mengaktifkan smooth scroll
+    /* tambahkan opsi lainnya sesuai kebutuhan */
+  });
+});
+//*========== END ==========*//
+
+
 //*========== LOADING SCREEN - ANIMATION TEXT ==========*//
 // const textElement = document.getElementById('animated-text');
 

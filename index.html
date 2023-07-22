@@ -88,8 +88,10 @@
       </div>
       <!------------------->
 
+      <div data-scroll-container>
+
       <!------------------ HERO SECTION -------------------->
-      <section id="home">
+      <section id="home" data-scroll>
         <div class="shadow-text">
           <span>I AM</span>
         </div>
@@ -140,7 +142,7 @@
 
 
       <!------------------ ABOUT SECTION -------------------->
-      <section id="about">
+      <section id="about" data-scroll>
         <div class="container">
           <div class="arrow-wrapper">
             <svg class="arrow-section" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -197,7 +199,7 @@
 
 
       <!------------------ SKILLS SECTION -------------------->
-      <section id="skills">
+      <section id="skills" data-scroll>
         <div class="container">
           <div class="arrow-wrapper">
             <svg class="arrow-section" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -221,7 +223,7 @@
 
 
       <!------------------ PROJECTS SECTION -------------------->
-      <section id="projects">
+      <section id="projects" data-scroll>
         <div class="container">
           <div class="arrow-wrapper">
             <svg class="arrow-section" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -245,7 +247,7 @@
     </main>
 
     <!------------------ FOOTER -------------------->
-    <footer>
+    <footer data-scroll>
 
       <!-- Modal-info -->
       <div class="modal" id="modalInfo">
@@ -324,11 +326,14 @@
       </div>
     </footer>
 
+  </div>
     <!---------- SCRIPT ---------->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- <script src="https://unpkg.com/split-type"></script> -->
     <script src="assets/js/gsap/gsap.min.js"></script>
     <script src="assets/js/gsap/ScrollTrigger.min.js"></script>
+    <!-- Salin script Locomotive Scroll dari CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
