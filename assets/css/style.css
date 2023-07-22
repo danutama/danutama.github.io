@@ -610,9 +610,10 @@ svg.arrow {
   height: 85%;
   overflow-y: scroll;
   overflow-x: hidden;
+  z-index: 2;
 }
 
-.modal-content .shadow-text {
+.modal .shadow-text {
   position: absolute;
   right: 0;
   left: 0;
@@ -624,12 +625,13 @@ svg.arrow {
   z-index: 1;
 }
 
-.modal-content .shadow-text p {
+.modal .shadow-text p {
   font-family: var(--body-font-family);
   font-size: 30rem;
   font-weight: 900;
   letter-spacing: 5px;
   color: rgba(126, 126, 126, 0.3);
+  padding-bottom: 7rem;
 }
 
 .modal-info-title {
@@ -976,7 +978,7 @@ footer hr {
     padding: 0 0 2rem 0;
   }
 
-  .modal-content .shadow-text p {
+  .modal .shadow-text p {
     font-size: 16rem;
   }
 
