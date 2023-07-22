@@ -44,14 +44,6 @@ $(window).on('load', function() {
 //*========== END ==========*//
 
 
-//*========== LOCOMOTIVE SCROLL ==========*//
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true
-});
-//*========== END ==========*//
-
-
 //*========== LOADING SCREEN - ANIMATION TEXT ==========*//
 // const textElement = document.getElementById('animated-text');
 
