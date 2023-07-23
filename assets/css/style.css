@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Montserrat&display=swap');
 
 :root {
   /* ----- COLORS ----- */
@@ -14,8 +14,8 @@
 
   /* ----- FONT----- */
   --title-font-family: 'Gayathri', sans-serif;
-  --body-font-family: 'Roboto Condensed', sans-serif;
-  --line-height: 1.5em;
+  --body-font-family: 'Montserrat', sans-serif;
+  --line-height: 1.7em;
   --small-fs: 0.875rem;
   --normal-fs: 1rem;
   --medium-fs: 1.25rem;
@@ -74,7 +74,7 @@ h2 {
 h3 {
   font-weight: normal;
   color: var(--text-color);
-  font-size: var(--xl-fs);
+  font-size: var(--big-fs);
 }
 
 hr {
@@ -89,6 +89,10 @@ a,
 button {
   text-decoration: none;
   cursor: pointer;
+}
+
+button {
+  font-family: var(--body-font-family) !important;
 }
 
 /* .char {
@@ -450,13 +454,15 @@ svg.arrow {
   line-height: 8rem;
   font-family: var(--body-font-family);
   font-size: 8rem;
+  letter-spacing: -5px;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-left: -10px;
 }
 
 .hero-subtitle {
-  font-size: var(--xl-fs);
-  margin: 1rem 0 2rem 0;
+  font-size: var(--big-fs);
+  margin: 2rem 0 2rem 0;
 }
 
 .hero-email a {
@@ -468,7 +474,7 @@ svg.arrow {
 }
 
 .hero-contact {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .hero-contact-dot {
@@ -517,7 +523,7 @@ svg.arrow {
 #about .shadow-text {
   position: absolute;
   font-family: var(--body-font-family);
-  font-size: 30rem;
+  font-size: 25rem;
   font-weight: 900;
   color: var(--shadow-text);
   display: flex;
@@ -538,7 +544,7 @@ svg.arrow {
 
 .about-text {
   color: var(--text-color);
-  font-size: var(--big-fs);
+  font-size: var(--medium-fs);
   line-height: var(--line-height);
   position: relative;
   z-index: 2;
@@ -680,7 +686,7 @@ svg.arrow {
 
 .project-body {
   padding: .3rem 0 0 0;
-  font-size: var(--big-fs);
+  font-size: var(--medium-fs);
   color: var(--text-color);
 }
 
@@ -777,6 +783,8 @@ svg.arrow {
 
 .modal-content span a {
   position: relative;
+  display: inline-flex;
+  align-items: center;
   color: var(--light-dark);
   text-decoration: none;
 }
@@ -788,7 +796,7 @@ svg.arrow {
   color: var(--button-color);
   border: 0;
   background-color: transparent;
-  margin-top: 1rem;
+  margin: 1rem 10px 0 0;
 }
 
 .modal-info-header {
@@ -833,6 +841,7 @@ svg.arrow {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .scroll-top-btn {
@@ -936,12 +945,12 @@ footer hr {
 @media (max-width: 500px) {
   :root {
     /* ----- FONT SIZE ----- */
-    --small-fs: 0.875rem;
-    --normal-fs: 1rem;
-    --medium-fs: 1.25rem;
-    --big-fs: 1.45rem;
-    --xl-fs: 2.1rem;
-    --special-fs: 4rem;
+    --small-fs: 0.675rem;
+    --normal-fs: .875rem;
+    --medium-fs: 1rem;
+    --big-fs: 1.15rem;
+    --xl-fs: 1.6rem;
+    --special-fs: 3rem;
   }
 
   /*============== NAVBAR BREAKPOINT ===============*/
@@ -1069,7 +1078,8 @@ footer hr {
   }
 
   .hero-name {
-    line-height: 55px;
+    margin-left: -3px;
+    line-height: 45px;
   }
 
   .hero-contact-dot {
@@ -1104,7 +1114,7 @@ footer hr {
   }
 
   .modal .shadow-text p {
-    font-size: 16rem;
+    font-size: 12rem;
   }
 
   .modal-content span {
