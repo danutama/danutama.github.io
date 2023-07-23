@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Montserrat:wght@500&display=swap');
 
 :root {
   /* ----- COLORS ----- */
@@ -15,7 +15,7 @@
   /* ----- FONT----- */
   --title-font-family: 'Gayathri', sans-serif;
   --body-font-family: 'Montserrat', sans-serif;
-  --line-height: 1.7em;
+  --line-height: 1.8em;
   --small-fs: 0.875rem;
   --normal-fs: 1rem;
   --medium-fs: 1.25rem;
@@ -30,7 +30,7 @@
   --text-color: #fff;
   --button-color: #fff;
   --light-dark: #050505;
-  --secondary-color: #161616;
+  --secondary-color: #121212;
   --shadow-text: rgba(163, 163, 163, 0.1);
 }
 
@@ -264,7 +264,7 @@ button {
 }
 
 .input:checked + .slider {
-  background-color: #050505;
+  background-color: transparent;
 }
 
 .input:checked + .slider:before {
@@ -364,24 +364,6 @@ nav.hidden {
   padding-bottom: 0 !important;
 }
 
-#home .shadow-text {
-  position: absolute;
-  font-family: var(--body-font-family);
-  font-size: 25rem;
-  font-weight: bold;
-  color: var(--shadow-text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-}
-
 .hero-arrow {
   color: var(--text-color);
   font-size: 5rem;
@@ -393,6 +375,9 @@ nav.hidden {
 /* CIRCLE LOGO */
 .circle-text-container {
   position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: end;
   top: 5%;
   right: 0;
 }
@@ -444,10 +429,9 @@ nav.hidden {
 .hero-name {
   opacity: 0;
   transform: translateY(-50px);
-  line-height: 8rem;
+  line-height: 7rem;
   font-family: var(--body-font-family);
-  font-size: 8rem;
-  letter-spacing: -5px;
+  font-size: 7rem;
   text-transform: uppercase;
   color: var(--title-color);
   margin-left: -10px;
@@ -456,7 +440,7 @@ nav.hidden {
 .hero-subtitle {
   font-size: var(--big-fs);
   text-transform: uppercase;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   margin: 2rem 0;
 }
 
@@ -469,7 +453,7 @@ nav.hidden {
 }
 
 .hero-contact {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .hero-contact-dot {
@@ -548,7 +532,7 @@ nav.hidden {
 .about-experience-wrapper {
   font-size: var(--xl-fs);
   margin-top: 3rem;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 15px;
   display: grid;
   color: var(--text-color);
   border: 1px solid var(--text-color);
@@ -561,7 +545,7 @@ nav.hidden {
   content: '';
   position: absolute;
   transform: translateY(51%);
-  left: -14.2px;
+  left: -19.3px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -580,6 +564,7 @@ nav.hidden {
 
 .about-experience-company {
   font-size: var(--big-fs);
+  line-height: var(--line-height);
   margin: .5rem 0 1rem 0;
 }
 
@@ -853,7 +838,6 @@ nav.hidden {
 footer .title-section {
   font-family: var(--body-font-family);
   font-size: 3rem;
-  font-weight: bold;
 }
 
 .arrow-footer {
@@ -909,7 +893,7 @@ footer hr {
     --medium-fs: 1.25rem;
     --big-fs: 1.75rem;
     --xl-fs: 2.5rem;
-    --special-fs: 7rem;
+    --special-fs: 6rem;
   }
 
   .slider,
@@ -925,8 +909,8 @@ footer hr {
   }
 
   .circle-text-wrapper {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
   }
 
   .circle-logo { 
@@ -935,7 +919,8 @@ footer hr {
   }
 
   .circle-text span {
-    transform-origin: 0 70px;
+    font-size: var(--small-fs);
+    transform-origin: 0 75px;
   }
   /* CIRCLE END */
 
@@ -1102,6 +1087,7 @@ footer hr {
   }
 
   .circle-text-container {
+    justify-content: center;
     top: -10%;
   }
 
@@ -1111,7 +1097,6 @@ footer hr {
   }
 
   .circle-text span {
-    font-size: var(--small-fs);
     transform-origin: 0 60px;
   }
   /* === END === */
