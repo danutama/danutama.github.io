@@ -836,7 +836,7 @@ nav.hidden {
 /* END */
 
 footer .title-section {
-  font-family: sans-serif;
+  font-family: var(--body-font-family);
   font-size: 4rem;
 }
 
