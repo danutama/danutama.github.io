@@ -655,7 +655,6 @@ nav.hidden {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
   padding: 2rem 0;
-  margin-bottom: 5rem;
 }
 
 .project-box {
@@ -837,8 +836,50 @@ nav.hidden {
 /* END */
 
 footer .title-section {
-  font-family: var(--body-font-family);
+  font-family: sans-serif;
   font-size: 4rem;
+}
+
+.footer-call-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-call-text {
+  font-family: sans-serif;
+  color: var(--text-color);
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+}
+
+.footer-call-text:nth-child(1) {
+  align-self: flex-start;
+}
+.footer-call-text:nth-child(2) {
+  align-self: center;
+}
+.footer-call-text:nth-child(3) {
+  align-self: flex-end;
+}
+
+.footer-call-text:hover {
+  -webkit-text-fill-color: var(--text-color);
+  -webkit-text-stroke-width: 0;
+}
+
+.footer-image {
+  position: absolute;
+  max-width: 400px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 0;
 }
 
 .arrow-footer {
@@ -847,15 +888,6 @@ footer .title-section {
   font-size: 3rem;
   margin-bottom: 1rem;
   margin-left: -10px;
-}
-
-.footer-image {
-  position: absolute;
-  max-width: 300px;
-  width: 100%;
-  top: -20%;
-  right: 0;
-  z-index: 0;
 }
 
 .footer-contact-wrapper a {
@@ -927,8 +959,8 @@ footer hr {
   }
 
   .circle-logo { 
-    width: 85px;
-    height: 85px;
+    width: 90px;
+    height: 90px;
   }
 
   .circle-text span {
@@ -950,9 +982,13 @@ footer hr {
     justify-content: start;
   }
 
+  .footer-call-text,
+  footer .title-section {
+    font-size: 3rem;
+  }
+
   .footer-image {
-    max-width: 250px;
-    top: -26%;
+    max-width: 270px;
   }
 }
 
@@ -1110,12 +1146,12 @@ footer hr {
   }
 
   .circle-text-wrapper {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
   }
 
   .circle-text span {
-    transform-origin: 0 60px;
+    transform-origin: 0 65px;
   }
   /* === END === */
 
@@ -1141,6 +1177,10 @@ footer hr {
   .footer-credit,
   .footer-contact-wrapper a {
     font-size: var(--normal-fs);
+  }
+
+  .footer-image {
+    top: -6%;
   }
 
   .footer-credit {
