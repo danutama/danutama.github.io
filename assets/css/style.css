@@ -655,6 +655,7 @@ nav.hidden {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
   padding: 2rem 0;
+  margin-bottom: 5rem;
 }
 
 .project-box {
@@ -837,7 +838,7 @@ nav.hidden {
 
 footer .title-section {
   font-family: var(--body-font-family);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .arrow-footer {
@@ -846,6 +847,16 @@ footer .title-section {
   font-size: 3rem;
   margin-bottom: 1rem;
   margin-left: -10px;
+}
+
+.footer-image {
+  position: absolute;
+  filter: grayscale(100%) brightness(90%);
+  max-width: 300px;
+  width: 100%;
+  top: -20%;
+  right: 0;
+  z-index: 0;
 }
 
 .footer-contact-wrapper a {
@@ -865,10 +876,13 @@ footer .title-section {
   margin: 20px 0 50px 0;
   font-size: var(--medium-fs);
   color: var(--text-color);
+  position: relative;
+  z-index: 1;
 }
 
 footer,
 footer .container {
+  position: relative;
   padding-bottom: 1rem;
 }
 
@@ -935,6 +949,11 @@ footer hr {
 
   .project-menu {
     justify-content: start;
+  }
+
+  .footer-image {
+    max-width: 250px;
+    top: -26%;
   }
 }
 
