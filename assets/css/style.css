@@ -612,6 +612,7 @@ nav.hidden {
   padding: 1rem 0;
   white-space: nowrap;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .project-menu::-webkit-scrollbar {
@@ -829,6 +830,16 @@ nav.hidden {
 }
 /* END */
 
+footer,
+footer .container {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+footer hr {
+  margin-bottom: 2rem;
+}
+
 footer .title-section {
   font-family: var(--body-font-family);
   font-size: 4rem;
@@ -847,7 +858,7 @@ footer .title-section {
   text-transform: uppercase;
   margin-bottom: 1rem;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1.5px;
 }
@@ -863,8 +874,9 @@ footer .title-section {
 }
 
 .footer-call-text:hover {
-  -webkit-text-fill-color: var(--text-color);
-  -webkit-text-stroke-width: 0;
+  color: var(--text-color);
+  -webkit-text-fill-color: var(--light-dark);
+  -webkit-text-stroke-width: 1.5px;
 }
 
 .footer-image {
@@ -873,7 +885,7 @@ footer .title-section {
   width: 100%;
   top: 0;
   right: 0;
-  z-index: 0;
+  z-index: 1;
 }
 
 .arrow-footer {
@@ -903,16 +915,6 @@ footer .title-section {
   color: var(--text-color);
   position: relative;
   z-index: 1;
-}
-
-footer,
-footer .container {
-  position: relative;
-  padding-bottom: 1rem;
-}
-
-footer hr {
-  margin-bottom: 2rem;
 }
 
 .footer-credit {
