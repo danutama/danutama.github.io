@@ -91,7 +91,7 @@ let t1;
 
 const initTimelineAnimation = () => {
   t1 = gsap.timeline({ paused: true });
-  t1.fromTo(".navbar-items", { top: "-1000%" }, { top: "0", duration: 1, ease: "expo.inOut", borderBottomRightRadius: "0", borderBottomLeftRadius: "0" });
+  t1.fromTo(".navbar-items", { top: "-1000%" }, { top: "0", duration: 1, ease: "expo.out", borderBottomRightRadius: "0", borderBottomLeftRadius: "0" });
   t1.fromTo(".navbar-link", { y: "50%", opacity: 0 }, { y: "0", opacity: 1, duration: 0.3, stagger: 0.2, ease: "Expo.easeInOut" });
   t1.fromTo(".navbar-link-credit", { y: "50%" }, { y: "0", opacity: 1, duration: 0.3, stagger: 0.2, ease: "Expo.easeInOut" });
 };

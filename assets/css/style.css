@@ -1003,7 +1003,7 @@ footer hr {
   }
 
   .nav-logo {
-    font-size: var(--special-fs);
+    font-size: 2rem;
   }
   
   .switch {
