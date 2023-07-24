@@ -73,41 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
 //*========== END ==========*//
 
 
-//*========== LOADING SCREEN - ANIMATION TEXT ==========*//
-// const textElement = document.getElementById('animated-text');
-
-// textElement.classList.remove('hidden');
-
-// const text = textElement.textContent;
-
-// textElement.textContent = '';
-
-// const letters = text.split('');
-
-// gsap.to('.loading-logo', { y: 0, opacity: 1, duration: 0.7, ease: "expo.in", onComplete: animateLetters });
-
-// function animateLetters() {
-//   letters.forEach((letter, index) => {
-//     const span = document.createElement('p');
-//     span.textContent = letter;
-//     span.classList.add('animated-letter');
-
-//     const delay = index * 0.1;
-
-//     gsap.from(span, {
-//       duration: 0.3,
-//       opacity: 0,
-//       y: 20,
-//       ease: 'power4.out',
-//       delay: 0.5 + delay
-//     });
-
-//     textElement.appendChild(span);
-//   });
-// }
-//*========== END ==========*//
-
-
 //*========== CIRCLE TEXT AND IMAGE LOGO ==========*//
 const textCircle = document.querySelector('.circle-text p');
 textCircle.innerHTML = textCircle.innerText.split("").map(
@@ -214,34 +179,8 @@ window.addEventListener('scroll', scrollActive);
 //*========== END ==========*//
 
 
-//*========== GSAP SCROLL ANIMATION ==========*//
-gsap.registerPlugin(ScrollTrigger)
-
-const gsapTextElements = document.querySelectorAll('.gsap-text')
-
-gsapTextElements.forEach((element, index) => {
-  gsap.fromTo(
-    element,
-    { opacity: 0, y: 20 },
-    {
-      opacity: 1,
-      y: 0,
-      duration: 0.2,
-      scrollTrigger: {
-        trigger: element,
-        start: 'top 80%',
-        end: 'bottom 80%',
-        scrub: true,
-        repeat: -2,
-        onRepeat: reverseAnimation
-      }
-    }
-  )
-})
-
-function reverseAnimation (animation) {
-  animation.reverse()
-}
+//*========== AOS (SCROLL ANIMATION) ==========*//
+AOS.init();
 //*========== END ==========*//
 
 
