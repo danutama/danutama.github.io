@@ -874,7 +874,6 @@ footer .title-section {
 }
 
 .footer-call-text:hover {
-  color: var(--text-color);
   -webkit-text-fill-color: var(--light-dark);
   -webkit-text-stroke-width: 1.5px;
 }
