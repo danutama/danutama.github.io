@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Montserrat:wght@500&display=swap');
 
+@font-face {
+  font-family: 'Beckan Regular';
+  src: url('Beckan-Regular.otf') format('opentype');
+}
+
 :root {
   /* ----- COLORS ----- */
   --body-color: #fff;
@@ -15,6 +20,7 @@
   /* ----- FONT----- */
   --title-font-family: 'Gayathri', sans-serif;
   --body-font-family: 'Montserrat', sans-serif;
+  --special-font-family: 'Beckan Regular';
   --line-height: 1.8em;
   --small-fs: 0.875rem;
   --normal-fs: 1rem;
@@ -311,6 +317,7 @@ nav.hidden {
   position: relative;
   color: var(--title-color);
   font-size: var(--big-fs);
+  text-transform: lowercase;
   text-decoration: none;
   padding: 0;
   margin-left: 1rem;
@@ -354,26 +361,20 @@ nav.hidden {
 #home {
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
-  padding-bottom: 0 !important;
 }
 
 .hero-arrow {
   color: var(--text-color);
   font-size: 5rem;
   transform: rotate(45deg);
-  margin: 1rem 0 0 0 ;
   margin-left: -18px;
 }
 
 /* CIRCLE LOGO */
 .circle-text-container {
-  position: absolute;
   width: 100%;
   display: flex;
-  justify-content: end;
-  top: 5%;
-  right: 0;
+  justify-content: center;
 }
 
 .circle-text-wrapper {
@@ -423,68 +424,24 @@ nav.hidden {
 .hero-name {
   opacity: 0;
   transform: translateY(-50px);
-  line-height: 7rem;
-  font-family: var(--body-font-family);
-  font-size: 7rem;
+
+  font-family: var(--special-font-family);
   text-transform: uppercase;
   color: var(--title-color);
-  margin-left: -10px;
+  font-size: 18rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero-subtitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
   font-size: var(--big-fs);
   text-transform: uppercase;
   line-height: 1.7rem;
-  margin: 2rem 0;
-}
-
-.hero-email a {
-  position: relative;
-  font-size: var(--big-fs);
-  color: var(--button-color);
-  padding-bottom: 5px;
-  margin: 0;
-}
-
-.hero-contact {
-  margin-top: 1.5rem;
-}
-
-.hero-contact-dot {
-  display: inline-block;
-  background-color: var(--button-color);
-  border-radius: 50px;
-  padding: .5px 20px;
-  margin: 0 0.3rem 7px 0;
-}
-
-.hero-contact a {
-  position: relative;
-  font-size: var(--big-fs);
-  color: var(--button-color);
-  margin-right: 5px;
-}
-
-.hero-btn-wrapper {
-  padding-top: 3rem;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-}
-
-.hero-btn {
-  font-size: var(--big-fs);
-  padding: 10px 25px;
-  border-radius: 50px;
-  color: var(--button-color);
-  background-color: transparent;
-  border: 2px solid var(--button-color);
-  transition: all .3s ease;
-}
-
-.hero-btn:hover {
-  color: var(--light-dark);
-  background-color: var(--button-color);
+  margin: -1rem 0 5rem 0;
 }
 
 /* ========================== ABOUT SECTION =========================== */
@@ -943,30 +900,13 @@ footer .title-section {
     cursor: default !important;
   }
 
-  /* CIRCLE LOGO */
-  .circle-text-container {
-    top: 0;
-  }
-
-  .circle-text-wrapper {
-    width: 150px;
-    height: 150px;
-  }
-
-  .circle-logo { 
-    width: 90px;
-    height: 90px;
-  }
-
-  .circle-text span {
-    font-size: var(--small-fs);
-    transform-origin: 0 75px;
-  }
-  /* CIRCLE END */
-
   .hero-name {
-    font-size: var(--special-fs);
-    line-height: 95px;
+    font-size: 10rem;
+  }
+
+  .hero-subtitle {
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .skills-number {
@@ -1083,6 +1023,7 @@ footer .title-section {
     display: block;
     position: absolute;
     /* line-height: 15rem; */
+    font-family: var(--special-font-family);
     font-size: 30rem;
     font-weight: bold;
     color: rgba(126, 126, 126, 0.3);;
@@ -1095,6 +1036,7 @@ footer .title-section {
     position: relative;
     font-family: var(--title-font-family);
     font-size: var(--special-fs);
+    text-transform: uppercase;
     display: block;
     margin: 20px 0;
   }
@@ -1112,6 +1054,7 @@ footer .title-section {
     display: block;
     position: absolute;
     bottom: 2rem;
+    font-family: var(--special-font-family);
     font-size: var(--normal-fs);
     color: var(--text-color);
   }
@@ -1121,36 +1064,16 @@ footer .title-section {
   }
   /* ===================== NAV END ======================= */
 
-  /* ==== HERO SECTION / CIRCLE LOGO === */
-  #home {
-    padding-top: 8rem;
-  }
-
+  /* ==== HERO SECTION === */
   .hero-name {
-    margin-left: -3px;
-    line-height: 45px;
+    font-size: 6.5rem;
   }
 
-  .hero-contact-dot {
-    margin: 0 0.3rem 4px 0;
-  }
-  
-  .hero-contact a {
-    font-size: var(--medium-fs);
-  }
-
-  .circle-text-container {
-    justify-content: center;
-    top: -10%;
-  }
-
-  .circle-text-wrapper {
-    width: 130px;
-    height: 130px;
-  }
-
-  .circle-text span {
-    transform-origin: 0 65px;
+  .hero-subtitle {
+    flex-direction: column;
+    align-items: end;
+    font-size: 1.3rem;
+    gap: 0;
   }
   /* === END === */
 
