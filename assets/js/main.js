@@ -15,7 +15,7 @@ function animateBlock() {
         opacity: 1,
         y: 0,
         duration: .8,
-        ease: 'bounce',
+        ease: 'Expo.easeInOut',
       });
     }
   });
