@@ -810,7 +810,8 @@ footer .title-section {
 
 .footer-call-text {
   font-family: sans-serif;
-  color: var(--text-color);
+  color: #fff; 
+  mix-blend-mode: difference;
   font-size: 5rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -830,8 +831,8 @@ footer .title-section {
   align-self: flex-end;
 }
 
-.footer-call-text:hover {
-  -webkit-text-fill-color: var(--light-dark);
+.footer-call-text-wrapper:hover .footer-call-text {
+  -webkit-text-fill-color: #fff;
   -webkit-text-stroke-width: 1.5px;
 }
 
@@ -1023,7 +1024,7 @@ footer .title-section {
     display: block;
     position: absolute;
     /* line-height: 15rem; */
-    font-family: var(--special-font-family);
+    font-family: var(--special-font-family) !important;
     font-size: 30rem;
     font-weight: bold;
     color: rgba(126, 126, 126, 0.3);;
