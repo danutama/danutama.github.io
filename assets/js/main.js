@@ -11,11 +11,19 @@ function animateBlock() {
     onComplete: function() {
       document.querySelector(".blocks").style.display = "none";
 
-      gsap.to('.hero-name', {
+      gsap.to('.hero-subtitle', {
         opacity: 1,
         y: 0,
-        duration: .8,
-        ease: 'Expo.easeInOut',
+        duration: 1,
+        ease: 'power2.out',
+        delay: 1,
+      });
+
+      gsap.to('.hero-img', {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'expo.out',
       });
     }
   });
