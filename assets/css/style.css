@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 @font-face {
   font-family: 'Beckan Regular';
@@ -18,8 +18,8 @@
   --clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
   /* ----- FONT----- */
-  --title-font-family: 'Gayathri', sans-serif;
-  --body-font-family: 'Poppins', sans-serif;
+  --title-font-family: 'Roboto', sans-serif;
+  --body-font-family: 'Roboto', sans-serif;
   --special-font-family: 'Beckan Regular';
   --line-height: 1.8em;
   --small-fs: 0.875rem;
@@ -162,8 +162,8 @@ button {
 
 .loading-progress {
   position: absolute;
-  left: 1.3rem;
-  top: 2rem;
+  left: 1.5rem;
+  top: 1.5rem;
   color: var(--light-dark);
   font-size: var(--xl-fs);
   font-family: var(--title-font-family);
@@ -187,8 +187,7 @@ button {
 .loading-text-right {
   opacity: 0;
   font-family: var(--title-font-family);
-  font-size: 10rem;
-  font-weight: 500;
+  font-size: 8rem;
   color: var(--light-dark);
 }
 
@@ -300,7 +299,6 @@ nav.hidden {
 .nav-logo {
   font-size: var(--xl-fs);
   color: var(--title-color);
-  letter-spacing: -3px;
 }
 
 .navbar-items {
@@ -528,7 +526,7 @@ body.dark-theme .light-text {
 .about-experience-dot {
   content: '';
   position: absolute;
-  transform: translateY(51%);
+  transform: translateY(50%);
   left: -19.3px;
   width: 8px;
   height: 8px;
@@ -625,16 +623,6 @@ body.dark-theme .light-text {
  background-color: var(--button-color);
 }
 
-.data-count {
-  position: absolute;
-  right: -10px;
-  top: -12px;
-  color: var(--button-color);
-  font-family: var(--title-font-family);
-  font-size: var(--small-fs);
-  font-weight: 600;
-}
-
 .project-wrapper {
   display: grid;
   gap: 2rem;
@@ -717,8 +705,7 @@ body.dark-theme .light-text {
 
 .modal .shadow-text p {
   font-family: var(--body-font-family);
-  font-size: 30rem;
-  font-weight: 900;
+  font-size: 25rem;
   letter-spacing: 15px;
   color: rgba(126, 126, 126, 0.3);
   padding-bottom: 7rem;
@@ -758,7 +745,7 @@ body.dark-theme .light-text {
 
 .open-modal-button {
   position: relative;
-  font-size: var(--big-fs);
+  font-size: var(--medium-fs);
   font-family: var(--body-font-family);
   color: var(--button-color);
   border: 0;
@@ -839,6 +826,7 @@ footer .title-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .footer-call-text {
@@ -849,7 +837,7 @@ footer .title-section {
   position: relative;
   z-index: 2;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-width: 1.3px;
 }
 
 .footer-call-text:nth-child(1) {
@@ -885,7 +873,7 @@ footer .title-section {
 
 .footer-contact-wrapper a {
   position: relative;
-  font-size: var(--big-fs);
+  font-size: var(--medium-fs);
   color: var(--button-color);
   margin-right: 10px;
 }
@@ -962,6 +950,11 @@ footer .title-section {
     --big-fs: 1.15rem;
     --xl-fs: 1.6rem;
     --special-fs: 3rem;
+  }
+
+  .loading-text-left,
+  .loading-text-right {
+    font-size: 4rem;
   }
 
   /*============== NAVBAR BREAKPOINT ===============*/
@@ -1046,7 +1039,10 @@ footer .title-section {
   }
 
   .navbar-items .shadow-text {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     font-size: 12rem;
     font-weight: bold;
@@ -1069,7 +1065,7 @@ footer .title-section {
     display: inline-block;
     font-size: var(--medium-fs);
     position: absolute;
-    top: -.2rem;
+    top: 3px;
     left: -1rem;
   }
 
