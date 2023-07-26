@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Poppins:wght@400&display=swap');
 
 @font-face {
   font-family: 'Beckan Regular';
@@ -19,7 +19,7 @@
 
   /* ----- FONT----- */
   --title-font-family: 'Gayathri', sans-serif;
-  --body-font-family: 'Montserrat', sans-serif;
+  --body-font-family: 'Poppins', sans-serif;
   --special-font-family: 'Beckan Regular';
   --line-height: 1.8em;
   --small-fs: 0.875rem;
@@ -292,7 +292,7 @@ nav.hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 0;
+  padding: .3rem 0;
   width: 90%;
   max-width: 1204px;
 }
@@ -316,7 +316,7 @@ nav.hidden {
 .navbar-link {
   position: relative;
   color: var(--title-color);
-  font-size: var(--big-fs);
+  font-size: var(--medium-fs);
   text-transform: lowercase;
   text-decoration: none;
   padding: 0;
@@ -842,12 +842,10 @@ footer .title-section {
 }
 
 .footer-call-text {
-  font-family: sans-serif;
   color: #fff; 
   mix-blend-mode: difference;
   font-size: 5rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
   position: relative;
   z-index: 2;
   -webkit-text-fill-color: transparent;
@@ -1050,11 +1048,9 @@ footer .title-section {
   .navbar-items .shadow-text {
     display: block;
     position: absolute;
-    /* line-height: 15rem; */
-    font-family: var(--special-font-family) !important;
-    font-size: 30rem;
+    font-size: 12rem;
     font-weight: bold;
-    color: rgba(126, 126, 126, 0.3);;
+    color: rgba(126, 126, 126, 0.3);
     z-index: 1;
   }
 
