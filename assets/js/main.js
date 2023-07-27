@@ -215,10 +215,10 @@ document.addEventListener("DOMContentLoaded", function () {
 //*========== LOCAL TIME ==========*//
 function getJakartaDateTime() {
   const jakartaTimeZone = 'Asia/Jakarta';
-  const jakartaDateTime = new Date().toLocaleString('en-US', { timeZone: jakartaTimeZone });
+  const jakartaDateTime = new Date(new Date().toLocaleString('en-US', { timeZone: jakartaTimeZone }));
   const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
-  const formattedDate = new Date(jakartaDateTime).toLocaleDateString('en-US', options);
-  document.getElementById('time').textContent = `Local time, Jakarta / ${formattedDate}`;
+  const formattedDate = jakartaDateTime.toLocaleDateString('en-US', options);
+  document.getElementById('time').textContent = `Jakarta / ${formattedDate}`;
 }
 
 setInterval(getJakartaDateTime, 1000);
