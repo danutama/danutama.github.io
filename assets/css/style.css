@@ -511,58 +511,89 @@ body.dark-theme .light-text {
   z-index: 2;
 }
 
-.about-experience-wrapper {
-  font-size: var(--xl-fs);
-  margin-top: 3rem;
-  padding: 0 0 0 15px;
-  display: grid;
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
-  border-right: 0;
-  border-bottom: 0;
-  border-top: 0;
-}
-
-.about-experience-dot {
-  content: '';
-  position: absolute;
-  transform: translateY(50%);
-  left: -19.3px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--text-color);
-}
-
-.about-experience-wrapper .title {
-  font-family: var(--title-font-family);
-}
-
-.about-experience-wrapper .duration {
+/* ======= ABOUT ACCORDION ======== */
+.accordion {
   position: relative;
-  font-size: var(--normal-fs);
-  margin-top: 2rem;
+  z-index: 2;
+  max-width: 100%;
+  margin-top: 3rem;
 }
 
-.about-experience-company {
+.accordion-title {
+  font-size: var(--xl-fs);
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.accordion-item {
+  position: relative;
+  border-bottom: 1px solid var(--button-color);
+}
+
+.accordion-item hr {
+  margin: 0;
+}
+
+.accordion-header {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.accordion-company {
   font-size: var(--big-fs);
-  line-height: var(--line-height);
-  margin: .5rem 0 1rem 0;
+  margin: 0;
 }
 
-.about-experience-company em,
-.about-experience-desc {
-  font-size: var(--medium-fs);
+.accordion-toggle {
+  color: var(--button-color);
+  background-color: transparent;
+  border: none;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  position: relative;
+  transition: 0.3s ease;
 }
 
-.about-experience-desc {
-  line-height: var(--line-height);
-}
-
-.about-experience-desc .desc {
-  margin-left: -5px;
+.accordion-toggle i {
   font-size: var(--big-fs);
+  transition: 0.3s ease;
+  transform: rotate(0);
+}
+
+.accordion-active .accordion-toggle i {
   transform: rotate(45deg);
+}
+
+.accordion-content::-webkit-scrollbar {
+  display: none !important;
+}
+
+.accordion-content {
+  color: var(--text-color);
+  font-weight: normal;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 0;
+  transition: all 0.3s;
+}
+
+.accordion-content .duration {
+  font-size: var(--normal-fs);
+}
+
+.accordion-content p {
+  font-size: var(--medium-fs);
+  line-height: var(--line-height);
+}
+
+.accordion-active .accordion-content {
+  height: 200px;
+  padding: 20px 0;
 }
 
 /* ========= SKILLS/TOOLS SECTION ========= */
@@ -913,9 +944,11 @@ footer .title-section {
   }
 
   .slider,
+  div,
+  span,
   label,
   button,
-  a {
+  a, i {
     cursor: default !important;
   }
 

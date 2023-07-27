@@ -192,6 +192,26 @@ AOS.init();
 //*========== END ==========*//
 
 
+//*========== ABOUT-ACCORDION ==========*//
+document.addEventListener("DOMContentLoaded", function () {
+  const accordionItems = document.querySelectorAll(".accordion-item");
+
+  accordionItems.forEach((item) => {
+    const header = item.querySelector(".accordion-header");
+    header.addEventListener("click", function () {
+      accordionItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.classList.remove("accordion-active");
+        }
+      });
+
+      item.classList.toggle("accordion-active");
+    });
+  });
+});
+//*========== END ==========*//
+
+
 //*========== LOCAL TIME ==========*//
 async function getJakartaDateTime() {
   try {
