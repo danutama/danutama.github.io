@@ -544,7 +544,6 @@ body.dark-theme .light-text {
 .accordion-header:hover {
   color: var(--light-dark);
   background-color: var(--button-color);
-  transition: all .3s ease;
 }
 
 .accordion-header:hover i {
@@ -787,7 +786,6 @@ body.dark-theme .light-text {
   color: var(--button-color);
   border: 0;
   background-color: transparent;
-  margin: 0 10px 0 0;
 }
 
 .modal-info-header {
@@ -904,18 +902,19 @@ footer hr {
   color: var(--text-color);
 }
 
-.footer-contact-wrapper {
+.footer-contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
-  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .footer-contact a {
   position: relative;
   font-size: var(--medium-fs);
   color: var(--button-color);
-  margin-right: 10px;
 }
 
 .footer-contact i {
@@ -985,7 +984,7 @@ footer hr {
   }
 
   .footer-call-text,
-  footer .title-section {
+  .cta-email .title-section {
     font-size: 3rem;
   }
 
@@ -1177,10 +1176,8 @@ footer hr {
     font-size: var(--medium-fs);
   }
 
-  .open-modal-button,
   .footer-time,
-  .footer-credit,
-  .footer-contact a {
+  .footer-credit {
     font-size: var(--normal-fs);
   }
 
