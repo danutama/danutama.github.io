@@ -484,12 +484,12 @@ body.dark-theme .light-text {
 #about .shadow-text {
   position: absolute;
   font-family: var(--body-font-family);
-  font-size: 25rem;
+  font-size: 20rem;
   font-weight: 900;
   color: var(--shadow-text);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   top: 0;
   left: 0;
   right: 0;
@@ -523,6 +523,10 @@ body.dark-theme .light-text {
   font-size: var(--xl-fs);
   color: var(--text-color);
   margin-bottom: 3rem;
+}
+
+#aboutDate {
+  font-size: var(--medium-fs);
 }
 
 .accordion-item {
@@ -578,7 +582,7 @@ body.dark-theme .light-text {
   font-weight: normal;
   overflow: hidden;
   max-height: 0;
-  transition: 0.5s ease;
+  transition: 0.4s ease;
 }
 
 .accordion-content .duration {

@@ -232,6 +232,17 @@ window.addEventListener('load', getJakartaDateTime);
 //*========== END ==========*//
 
 
+//*========== DATE FOR ABOUT SECTION ==========*//
+const dateElement = document.getElementById('aboutDate');
+const options = { month: 'short', day: 'numeric' };
+const today = new Date();
+
+const dateText = today.toLocaleDateString('en-US', options);
+const modifiedDateText = `/${dateText}`;
+dateElement.innerHTML = modifiedDateText;
+//*========== END ==========*//
+
+
 //*========== SCROLL TOP BTN ==========*//
 function scrollToTop() {
   if (typeof window.scrollTo === 'function') {
