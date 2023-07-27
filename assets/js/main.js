@@ -213,17 +213,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //*========== LOCAL TIME ==========*//
-async function getJakartaDateTime() {
-  try {
-    const response = await fetch('https://worldtimeapi.org/api/timezone/Asia/Jakarta');
-    const data = await response.json();
-    const jakartaDateTime = new Date(data.datetime);
-    const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric', timeZone: 'Asia/Jakarta' };
-    const formattedDate = jakartaDateTime.toLocaleString('en-US', options);
-    document.getElementById('time').textContent = `Local time, Jakarta / ${formattedDate}`;
-  } catch (error) {
-    console.error('Error:', error);
-  }
+function getJakartaDateTime() {
+  const jakartaTimeZone = 'Asia/Jakarta';
+  const jakartaDateTime = new Date().toLocaleString('en-US', { timeZone: jakartaTimeZone });
+  const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+  const formattedDate = new Date(jakartaDateTime).toLocaleDateString('en-US', options);
+  document.getElementById('time').textContent = `Local time, Jakarta / ${formattedDate}`;
 }
 
 setInterval(getJakartaDateTime, 1000);
