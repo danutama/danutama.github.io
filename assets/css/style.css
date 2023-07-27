@@ -562,11 +562,11 @@ body.dark-theme .light-text {
 .accordion-toggle i {
   font-size: var(--big-fs);
   transition: 0.3s ease;
-  transform: rotate(0);
+  transform: rotate(45deg);
 }
 
 .accordion-active .accordion-toggle i {
-  transform: rotate(45deg);
+  transform: rotate(90deg);
 }
 
 .accordion-content::-webkit-scrollbar {
@@ -576,10 +576,9 @@ body.dark-theme .light-text {
 .accordion-content {
   color: var(--text-color);
   font-weight: normal;
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 0;
-  transition: all 0.3s;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.5s ease;
 }
 
 .accordion-content .duration {
@@ -592,8 +591,7 @@ body.dark-theme .light-text {
 }
 
 .accordion-active .accordion-content {
-  height: 200px;
-  padding: 20px 0;
+  max-height: 300px;
 }
 
 /* ========= SKILLS/TOOLS SECTION ========= */
@@ -628,7 +626,7 @@ body.dark-theme .light-text {
   justify-content: end;
   align-items: center;
   width: 100%;
-  padding: 1rem 0;
+  padding: 2rem 0;
   white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
