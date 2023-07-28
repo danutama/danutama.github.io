@@ -239,6 +239,38 @@ dateElement.innerHTML = modifiedDateText;
 //*========== END ==========*//
 
 
+//*========== SWIPER JS ==========*//
+let newSwiper = new Swiper('.about-slider-container', {
+  grabCursor: true,
+  loop: false,
+  centeredSlides: false,
+  slidesPerView: '1',
+  spaceBetween: 20,
+  breakpoints: {
+    500: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+  pagination: {
+    el: '.new-swiper-pagination',
+    type: "fraction",
+    clickable: false,
+  },
+});
+//*========== END ==========*//
+
+
 //*========== SCROLL TOP BTN ==========*//
 function scrollToTop() {
   if (typeof window.scrollTo === 'function') {
