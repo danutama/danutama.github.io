@@ -216,11 +216,12 @@ document.addEventListener("DOMContentLoaded", function () {
 function getJakartaDateTime() {
   const jakartaTimeZone = 'Asia/Jakarta';
   const jakartaDateTime = new Date(new Date().toLocaleString('en-US', { timeZone: jakartaTimeZone }));
-  const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
-  const formattedDate = jakartaDateTime.toLocaleDateString('en-US', options);
+  const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false };
+  const formattedDate = jakartaDateTime.toLocaleString('en-US', options);
   document.getElementById('time').textContent = `Jakarta / ${formattedDate}`;
 }
 
+getJakartaDateTime();
 setInterval(getJakartaDateTime, 1000);
 
 window.addEventListener('load', getJakartaDateTime);
@@ -233,7 +234,7 @@ const options = { month: 'short', day: 'numeric' };
 const today = new Date();
 
 const dateText = today.toLocaleDateString('en-US', options);
-const modifiedDateText = `/${dateText}`;
+const modifiedDateText = `[${dateText}]`;
 dateElement.innerHTML = modifiedDateText;
 //*========== END ==========*//
 

@@ -186,8 +186,8 @@ button {
 .loading-text-left,
 .loading-text-right {
   opacity: 0;
-  font-family: var(--title-font-family);
-  font-size: 8rem;
+  font-family: var(--special-font-family);
+  font-size: 10rem;
   color: var(--light-dark);
 }
 
@@ -297,6 +297,7 @@ nav.hidden {
 }
 
 .nav-logo {
+  font-family: var(--special-font-family);
   font-size: var(--xl-fs);
   color: var(--title-color);
 }
@@ -385,6 +386,7 @@ nav.hidden {
   background: url(../img/me.jpg);
   background-size: cover;
   border-radius: 50%;
+  filter: grayscale(100%);
 }
 
 .circle-text {
@@ -519,8 +521,9 @@ body.dark-theme .light-text {
   margin-bottom: 3rem;
 }
 
+.accordion-year,
 #aboutDate {
-  font-size: var(--medium-fs);
+  font-size: var(--normal-fs);
 }
 
 .accordion-item {
@@ -672,7 +675,7 @@ body.dark-theme .light-text {
 
 .project-image {
   width: 100%;
-  filter: invert(100%);
+  filter: invert(100%) grayscale(100%);
 }
 
 .project-body {
@@ -704,7 +707,7 @@ body.dark-theme .light-text {
 .modal {
   /* display: none; */
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: var(--button-color);
   z-index: 9999;
@@ -720,7 +723,9 @@ body.dark-theme .light-text {
   justify-content: start;
   align-items: start;
   flex-direction: column;
+  margin: auto;
   padding: 0 2rem;
+  max-width: 1204px;
   height: 85%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -752,7 +757,7 @@ body.dark-theme .light-text {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .modal-content h2 {
@@ -790,9 +795,10 @@ body.dark-theme .light-text {
 
 .modal-info-header {
   display: flex;
-  align-items: center;
   justify-content: end;
-  padding: 30px;
+  margin: auto;
+  max-width: 1204px;
+  padding: 30px 10px;
 }
 
 .close-modal-button {
@@ -936,7 +942,7 @@ footer hr {
 .scroll-top-btn {
   padding: 5px 0;
   border-radius: 50px;
-  border: 2px solid var(--button-color);
+  border: 1.8px solid var(--button-color);
   color: var(--button-color);
   background-color: transparent;
 }
@@ -1006,7 +1012,7 @@ footer hr {
 
   .loading-text-left,
   .loading-text-right {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 
   /*============== NAVBAR BREAKPOINT ===============*/
@@ -1182,7 +1188,7 @@ footer hr {
   }
 
   .footer-image {
-    top: -7%;
+    top: -9%;
   }
 
   .footer-credit {
