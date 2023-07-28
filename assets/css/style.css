@@ -499,6 +499,10 @@ body.dark-theme .light-text {
   z-index: 2;
 }
 
+.about-subtitle span {
+  font-size: var(--small-fs);
+}
+
 .about-text {
   color: var(--text-color);
   font-size: var(--medium-fs);
