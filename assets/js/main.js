@@ -244,7 +244,7 @@ let newSwiper = new Swiper('.about-slider-container', {
   grabCursor: true,
   loop: false,
   centeredSlides: false,
-  slidesPerView: '1',
+  slidesPerView: 'auto',
   spaceBetween: 20,
   breakpoints: {
     500: {
