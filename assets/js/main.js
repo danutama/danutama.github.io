@@ -375,3 +375,11 @@ function openModal() {
 
 openModalBtn.addEventListener('click', openModal);
 //*========== END ==========*//
+
+
+//*========== EMAIL ==========*//
+const email = 'danupratama.dev@gmail.com';
+const emailLink = document.getElementById('emailLink');
+
+emailLink.setAttribute('href', 'mailto:' + email.replace('@', '[at]').replace('.', '[dot]'));
+//*========== END ==========*//
