@@ -480,7 +480,7 @@ body.dark-theme .light-text {
 #about .shadow-text {
   position: absolute;
   font-family: var(--body-font-family);
-  font-size: 20rem;
+  font-size: 10rem;
   font-weight: 900;
   color: var(--shadow-text);
   display: flex;
@@ -624,7 +624,7 @@ body.dark-theme .light-text {
 }
 
 .accordion-active .accordion-toggle i {
-  transform: rotate(90deg);
+  transform: rotate(-45deg);
 }
 
 .accordion-content::-webkit-scrollbar {
