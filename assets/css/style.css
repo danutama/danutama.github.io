@@ -1017,6 +1017,10 @@ footer hr {
   .nav-logo {
     display: none;
   }
+
+  .navbar-link {
+    font-size: var(--normal-fs);
+  }
   /* ===================== NAV END ======================= */
 
   /* ==== HERO SECTION === */
