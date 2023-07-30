@@ -90,27 +90,6 @@ textCircle.innerHTML = textCircle.innerText.split("").map(
 //*========== END ==========*//
 
 
-//*========== HIDE AND SHOW NAVBAR WHEN SCROLLING ==========*//
-const navbar = document.getElementById('nav')
-const navbar_Items = document.querySelector('.navbar-items');
-let previousScrollPosition = window.pageYOffset;
-
-window.addEventListener('scroll', () => {
-  const currentScrollPosition = window.pageYOffset;
-
-  if (!navbar_Items.classList.contains('active')) {
-    if (currentScrollPosition > previousScrollPosition) {
-      navbar.classList.add('hidden');
-    } else {
-      navbar.classList.remove('hidden');
-    }
-  }
-
-  previousScrollPosition = currentScrollPosition;
-});
-//*========== END ==========*//
-
-
 /*========== SCROLL ACTIVE SECTIONS ==========*/
 function scrollActive() {
   const sections = document.querySelectorAll('section');

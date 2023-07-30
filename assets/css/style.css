@@ -70,7 +70,11 @@ footer {
   padding: 1rem 0;
 }
 
-h1,
+h1 {
+  position: absolute;
+  top: -9999px;
+}
+
 h2 {
   font-weight: normal;
   color: var(--title-color);
@@ -81,6 +85,17 @@ h3 {
   font-weight: normal;
   color: var(--text-color);
   font-size: var(--big-fs);
+}
+
+span::selection,
+p::selection,
+h2::selection,
+h3::selection,
+a::selection,
+i::selection,
+button::selection {
+  color: #fff;
+  background-color: #ff0000;
 }
 
 hr {
@@ -234,9 +249,9 @@ nav {
   transition: top 0.3s ease-in-out;
 }
 
-nav.hidden {
+/* nav.hidden {
   top: -100px;
-}
+} */
 
 .navbar {
   display: flex;
@@ -350,11 +365,6 @@ nav.hidden {
   white-space: nowrap;
   width: 100%;
   display: flex;
-  /* justify-content: space-between;
-  font-family: var(--special-font-family);
-  text-transform: uppercase;
-  color: var(--title-color);
-  font-size: 18rem; */
 }
 
 .hero-img {
