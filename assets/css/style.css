@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 @font-face {
   font-family: 'Beckan Regular';
@@ -150,6 +150,7 @@ button {
 .arrow-wrapper span {
   font-size: var(--normal-fs);
   font-family: var(--body-font-family);
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -389,6 +390,9 @@ body.dark-theme .light-text {
 .hero-subtitle {
   opacity: 1;
   transform: translateY(100%);
+  font-size: var(--big-fs);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .hero-subtitle-top {
@@ -397,8 +401,6 @@ body.dark-theme .light-text {
   display: flex;
   justify-content: start;
   text-align: start;
-  font-size: var(--big-fs);
-  text-transform: uppercase;
 }
 
 .hero-subtitle-bottom {
@@ -406,8 +408,6 @@ body.dark-theme .light-text {
   display: flex;
   justify-content: end;
   text-align: end;
-  font-size: var(--big-fs);
-  text-transform: uppercase;
   margin-bottom: 5rem;
 }
 
@@ -514,6 +514,7 @@ body.dark-theme .light-text {
 
 .accordion-title {
   font-size: var(--xl-fs);
+  font-weight: bold;
   color: var(--text-color);
   margin-bottom: 3rem;
 }
@@ -521,6 +522,7 @@ body.dark-theme .light-text {
 .accordion-year,
 #aboutDate {
   font-size: var(--normal-fs);
+  font-weight: normal;
 }
 
 .accordion-item {
@@ -551,7 +553,8 @@ body.dark-theme .light-text {
 }
 
 .accordion-company {
-  font-size: var(--big-fs);
+  font-size: var(--medium-fs);
+  font-weight: bold;
   margin: 0;
 }
 
@@ -863,7 +866,7 @@ footer hr {
   position: relative;
   z-index: 2;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-width: 1.5px;
 }
 
 .footer-call-text:nth-child(1) {
@@ -905,6 +908,7 @@ footer hr {
 .cta-email .title-section {
   font-family: var(--body-font-family);
   font-size: 4rem;
+  font-weight: bold;
   margin-bottom: 1rem;
 }
 
