@@ -140,18 +140,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //*========== LOCAL TIME ==========*//
-function getJakartaDateTime() {
+function getJakartaDate() {
   const jakartaTimeZone = 'Asia/Jakarta';
   const jakartaDateTime = new Date(new Date().toLocaleString('en-US', { timeZone: jakartaTimeZone }));
-  const options = { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false };
-  const formattedDate = jakartaDateTime.toLocaleString('en-US', options);
-  document.getElementById('time').textContent = `Jakarta / ${formattedDate}`;
+  const options = { day: 'numeric', month: 'long', year: 'numeric' };
+  const formatter = new Intl.DateTimeFormat('en-US', options);
+  const formattedDate = formatter.format(jakartaDateTime);
+  document.getElementById('time').textContent = `Availability: ${formattedDate}`;
 }
 
-getJakartaDateTime();
-setInterval(getJakartaDateTime, 1000);
-
-window.addEventListener('load', getJakartaDateTime);
+window.addEventListener('load', getJakartaDate);
 //*========== END ==========*//
 
 

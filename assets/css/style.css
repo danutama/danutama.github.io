@@ -227,7 +227,6 @@ button {
 }
 
 .theme-toggle-button {
-  position: relative;
   font-size: var(--medium-fs);
   color: #fff;
   mix-blend-mode: difference;
@@ -457,7 +456,7 @@ body.dark-theme .light-text {
 
 /* ======= ABOUT SLIDER ======== */
 .about-slider-container {
-  margin: 3rem 0 0 0;
+  margin: 4rem 0 0 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -510,7 +509,7 @@ body.dark-theme .light-text {
   position: relative;
   z-index: 2;
   max-width: 100%;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .accordion-title {
@@ -674,6 +673,11 @@ body.dark-theme .light-text {
 .project-image {
   width: 100%;
   filter: invert(100%) grayscale(100%);
+  transition: .3s ease;
+}
+
+.project-image:hover {
+  filter: unset;
 }
 
 .project-body {
