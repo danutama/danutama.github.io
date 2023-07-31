@@ -54,6 +54,17 @@ body {
   scroll-behavior: smooth;
 }
 
+.circle-cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(0, 234, 255);
+  mix-blend-mode: difference;
+  position: fixed;
+  z-index: 999999;
+  pointer-events: none;
+}
+
 section,
 footer {
   width: 100%;
@@ -986,6 +997,10 @@ footer hr {
   button,
   a, i {
     cursor: default !important;
+  }
+
+  .circle-cursor {
+    display: none;
   }
 
   .skills-number {

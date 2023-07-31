@@ -81,6 +81,19 @@ document.addEventListener('DOMContentLoaded', () => {
 //*========== END ==========*//
 
 
+//*========== CURSOR ==========*//
+const circle = document.querySelector('.circle-cursor')
+
+document.addEventListener('mousemove', e => {
+  const x = e.clientX
+  const y = e.clientY
+
+  circle.style.left = x + 'px'
+  circle.style.top = y + 'px'
+})
+//*========== END ==========*//
+
+
 //*========== CIRCLE TEXT AND IMAGE LOGO ==========*//
 const textCircle = document.querySelector('.circle-text p');
 textCircle.innerHTML = textCircle.innerText.split("").map(
