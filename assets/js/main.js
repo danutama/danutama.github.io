@@ -255,7 +255,7 @@ $(document).ready(function () {
       duration: 0,
     },
     load: {
-      filter: '.php',
+      filter: '.laravel',
     },
   });
 
@@ -267,7 +267,7 @@ $(document).ready(function () {
       const filter = button.getAttribute('data-filter');
       const itemCount = wrapper.querySelectorAll(filter).length;
       const dataCountTag = button.querySelector('.data-count');
-      dataCountTag.textContent = `, ${itemCount}`;
+      dataCountTag.textContent = ` [${itemCount}]`;
     });
   }
 
