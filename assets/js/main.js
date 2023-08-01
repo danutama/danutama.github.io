@@ -82,7 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //*========== CURSOR ==========*//
-const circle = document.querySelector('.circle-cursor')
+const circle = document.querySelector('.circle-cursor');
+const linksAndButtons = document.querySelectorAll('a, button');
 
 document.addEventListener('mousemove', e => {
   const x = e.clientX
@@ -91,6 +92,19 @@ document.addEventListener('mousemove', e => {
   circle.style.left = x + 'px'
   circle.style.top = y + 'px'
 })
+
+function addActiveClass() {
+  circle.classList.add('active');
+}
+
+function removeActiveClass() {
+  circle.classList.remove('active');
+}
+
+linksAndButtons.forEach(elem => {
+  elem.addEventListener('mouseover', addActiveClass);
+  elem.addEventListener('mouseout', removeActiveClass);
+});
 //*========== END ==========*//
 
 
@@ -128,7 +142,10 @@ window.addEventListener('scroll', scrollActive);
 
 
 //*========== AOS (SCROLL ANIMATION) ==========*//
-AOS.init();
+AOS.init({
+  offset: 0,
+  once: true,
+});
 //*========== END ==========*//
 
 

@@ -58,12 +58,18 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: rgb(0, 234, 255);
+  /* rgb(0, 234, 255); */
+  background-color: #fff;
   mix-blend-mode: difference;
   position: fixed;
   transition: .1s ease;
   z-index: 999999;
   pointer-events: none;
+  transform: scale(1);
+}
+
+.circle-cursor.active {
+  transform: scale(3);
 }
 
 section,
