@@ -339,7 +339,8 @@ let text1 = document.querySelector('.hero-subtitle-top');
 let text2 = document.querySelector('.hero-subtitle-bottom');
 let text3 = document.querySelector('.circle-text-wrapper');
 let text4 = document.querySelector('.about-shadow-text');
-window.onscroll = () => {
+
+function updateParallax() {
   let scrollY = window.scrollY;
   let pos1 = (0 - scrollY) * 0.5;
   let pos2 = (scrollY - 0) * 0.5;
@@ -349,5 +350,9 @@ window.onscroll = () => {
   text2.style.transform = `translateX(${pos2}px)`;
   text3.style.transform = `translateY(${pos3}px)`;
   text4.style.transform = `translateY(${pos4}px)`;
-};
+}
+
+window.addEventListener('scroll', function() {
+  requestAnimationFrame(updateParallax);
+});
 //*========== END ==========*//
