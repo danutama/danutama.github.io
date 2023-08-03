@@ -345,7 +345,7 @@ nav {
   position: absolute;
   width: 170px;
   height: 170px;
-  background: url(../img/me.jpg);
+  background: url(../img/me.webp);
   background-size: cover;
   border-radius: 50%;
   filter: grayscale(100%);
@@ -756,6 +756,7 @@ body.dark-theme .light-text {
 
 .close-modal-button {
   position: relative;
+  opacity: 0;
   border: 0;
   background-color: transparent;
   color: var(--text-color);
@@ -766,21 +767,6 @@ body.dark-theme .light-text {
   font-family: var(--special-font-family);
   font-size: var(--big-fs);
   opacity: 0;
-}
-
-.modal-content {
-  position: relative;
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  flex-direction: column;
-  margin: auto;
-  padding: 0 2rem;
-  max-width: 1204px;
-  height: 85%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  z-index: 2;
 }
 
 .modal .shadow-text {
@@ -800,6 +786,21 @@ body.dark-theme .light-text {
   letter-spacing: 15px;
   color: rgba(126, 126, 126, 0.3);
   padding-bottom: 7rem;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin: auto;
+  padding: 0 2rem;
+  max-width: 1204px;
+  height: 85%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 2;
 }
 
 .modal-content span {
