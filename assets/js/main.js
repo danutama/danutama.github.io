@@ -176,7 +176,7 @@ function getJakartaDate() {
   const options = { day: 'numeric', month: 'long', year: 'numeric' };
   const formatter = new Intl.DateTimeFormat('en-US', options);
   const formattedDate = formatter.format(jakartaDateTime);
-  document.getElementById('time').textContent = `Availability: ${formattedDate}`;
+  document.getElementById('time').innerHTML = `Availability &#8212; ${formattedDate}`;
 }
 
 window.addEventListener('load', getJakartaDate);
