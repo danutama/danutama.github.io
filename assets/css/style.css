@@ -588,20 +588,20 @@ body.dark-theme .light-text {
   color: var(--text-color);
   font-weight: normal;
   padding: 0 10px;
-  display: grid;
+  /* display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 300ms;
-  /* max-height: 0; */
-  /* visibility: hidden;
+  transition: grid-template-rows 300ms; */
+  max-height: 0;
+  visibility: hidden;
   overflow: hidden;
-  transition: max-height 400ms, visibility 0ms 400ms;  */
+  transition: max-height 500ms, visibility 0ms 500ms; 
 }
 
 .accordion-active .accordion-content {
-  grid-template-rows: 1fr;
-  /* max-height: 250px;
+  /* grid-template-rows: 1fr; */
+  max-height: 250px;
   visibility: visible;
-  transition: max-height 400ms, visibility 0ms; */
+  transition: max-height 500ms, visibility 0ms;
 }
 
 .accordion-content div {
