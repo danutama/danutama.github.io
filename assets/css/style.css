@@ -434,9 +434,6 @@ body.dark-theme .light-text {
 
 #about .shadow-text {
   position: absolute;
-  max-width: 1204px;
-  width: 100%;
-  margin: auto;
   font-family: var(--body-font-family);
   font-size: 10rem;
   font-weight: bold;
@@ -447,7 +444,6 @@ body.dark-theme .light-text {
   top: 20%;
   left: 0;
   right: 0;
-  bottom: 0;
   z-index: 0;
 }
 
@@ -594,12 +590,18 @@ body.dark-theme .light-text {
   padding: 0 10px;
   display: grid;
   grid-template-rows: 0fr;
-  -webkit-transition: grid-template-rows 0.3s ease-out;
-  transition: grid-template-rows 0.3s ease-out;
+  transition: grid-template-rows 300ms;
+  /* max-height: 0; */
+  /* visibility: hidden;
+  overflow: hidden;
+  transition: max-height 400ms, visibility 0ms 400ms;  */
 }
 
 .accordion-active .accordion-content {
   grid-template-rows: 1fr;
+  /* max-height: 250px;
+  visibility: visible;
+  transition: max-height 400ms, visibility 0ms; */
 }
 
 .accordion-content div {
