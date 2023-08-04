@@ -1004,6 +1004,7 @@ footer hr {
 
   .footer-image {
     max-width: 190px;
+    top: -12%;
   }
 }
 
