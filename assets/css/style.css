@@ -594,7 +594,7 @@ body.dark-theme .light-text {
   padding: 0 10px;
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
+  transition: 200ms;
 }
 
 .accordion-active .accordion-content {
