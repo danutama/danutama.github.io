@@ -185,7 +185,7 @@ button {
 .block {
   position: fixed;
   width: 50%;
-  height: 100vh;
+  height: 100%;
   background-color: var(--button-color);
   z-index: 9999;
 }
@@ -409,6 +409,7 @@ body.dark-theme .light-text {
   font-size: var(--big-fs);
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .hero-subtitle-top {
@@ -588,9 +589,6 @@ body.dark-theme .light-text {
   color: var(--text-color);
   font-weight: normal;
   padding: 0 10px;
-  /* display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 300ms; */
   max-height: 0;
   visibility: hidden;
   overflow: hidden;
@@ -598,7 +596,6 @@ body.dark-theme .light-text {
 }
 
 .accordion-active .accordion-content {
-  /* grid-template-rows: 1fr; */
   max-height: 250px;
   visibility: visible;
   transition: max-height 500ms, visibility 0ms;
@@ -679,7 +676,7 @@ body.dark-theme .light-text {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
 }
 
 .project-box {
@@ -837,6 +834,10 @@ body.dark-theme .light-text {
 /* ========================== FOOTER =========================== */
 #contact {
   padding-bottom: 0 !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 footer,
@@ -884,9 +885,9 @@ footer hr {
 
 .footer-image {
   position: absolute;
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
-  top: -10%;
+  top: -5%;
   right: 0;
   z-index: 1;
 }
@@ -901,13 +902,13 @@ footer hr {
 .cta-email {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .cta-email .title-section {
   font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .cta-email a {
@@ -1003,8 +1004,8 @@ footer hr {
   }
 
   .footer-image {
-    max-width: 190px;
-    top: -12%;
+    max-width: 170px;
+    top: -10%;
   }
 }
 

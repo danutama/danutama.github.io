@@ -108,11 +108,6 @@ linksAndButtons.forEach(elem => {
 //*========== END ==========*//
 
 
-//*========== SMOOTH SCROLL ==========*//
-const scroll = new SmoothScroll('[data-easing="easeInOutQuad"]', {easing: 'easeInOutQuad'});
-//*========== END ==========*//
-
-
 //*========== CIRCLE TEXT AND IMAGE LOGO ==========*//
 const textCircle = document.querySelector('.circle-text p');
 textCircle.innerHTML = textCircle.innerText.split("").map(
