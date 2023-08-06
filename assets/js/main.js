@@ -335,21 +335,12 @@ openModalBtn.addEventListener('click', openModal);
 
 
 //*========== PARALLAX TEXT ON SCROLL ==========*//
-let text1 = document.querySelector('.hero-subtitle-top');
-let text2 = document.querySelector('.hero-subtitle-bottom');
-let text3 = document.querySelector('.circle-text-wrapper');
-let text4 = document.querySelector('.about-shadow-text');
+let text1 = document.querySelector('.hero-wrapper');
 
 function updateParallax() {
   let scrollY = window.scrollY;
-  let pos1 = (0 - scrollY) * 0.5;
-  let pos2 = (scrollY - 0) * 0.5;
-  let pos3 = (0 - scrollY) * 0.5;
-  let pos4 = (0 - scrollY) * 0.5;
-  text1.style.transform = `translateX(${pos1}px)`;
-  text2.style.transform = `translateX(${pos2}px)`;
-  text3.style.transform = `translateY(${pos3}px)`;
-  text4.style.transform = `translateY(${pos4}px)`;
+  let pos1 = (scrollY - 0) * 0.5;
+  text1.style.transform = `translateY(${pos1}px)`;
 }
 
 window.addEventListener('scroll', function() {
