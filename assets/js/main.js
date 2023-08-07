@@ -85,13 +85,18 @@ document.addEventListener('DOMContentLoaded', () => {
 const circle = document.querySelector('.circle-cursor');
 const linksAndButtons = document.querySelectorAll('a, button');
 
-document.addEventListener('mousemove', e => {
-  const x = e.clientX
-  const y = e.clientY
+function updateCursorPos(e) {
+  const x = e.clientX;
+  const y = e.clientY;
+  circle.style.left = x + 'px';
+  circle.style.top = y + 'px';
+}
 
-  circle.style.left = x + 'px'
-  circle.style.top = y + 'px'
-})
+document.addEventListener('mousemove', e => {
+  requestAnimationFrame(() => {
+    updateCursorPos(e);
+  });
+});
 
 function addActiveClass() {
   circle.classList.add('active');

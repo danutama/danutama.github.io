@@ -12,7 +12,7 @@
   --text-color: #000000;
   --button-color: #000000;
   --light-dark: #fff;
-  --secondary-color: #DDDBD6;
+  --secondary-color: #ededed;
   --shadow-text: rgba(113, 113, 113, 0.4);
 
   /* ----- FONT----- */
@@ -525,8 +525,7 @@ body.dark-theme .light-text {
 
 .accordion-year,
 #aboutDate {
-  font-size: var(--normal-fs);
-  font-weight: normal;
+  font-size: var(--small-fs);
 }
 
 .accordion-item {
