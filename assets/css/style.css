@@ -12,7 +12,7 @@
   --text-color: #000000;
   --button-color: #000000;
   --light-dark: #fff;
-  --secondary-color: #ededed;
+  --secondary-color: #DDDBD6;
   --shadow-text: rgba(113, 113, 113, 0.4);
 
   /* ----- FONT----- */
@@ -320,6 +320,7 @@ nav {
 #home .container {
   z-index: 1;
   position: relative;
+  transition: transform 0.3s ease-out;
 }
 
 #home {

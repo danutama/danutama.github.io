@@ -335,15 +335,62 @@ openModalBtn.addEventListener('click', openModal);
 
 
 //*========== PARALLAX TEXT ON SCROLL ==========*//
-let text1 = document.querySelector('.hero-wrapper');
+// ----- PARALLAX 1
+// let text1 = document.querySelector('.hero-wrapper');
 
-function updateParallax() {
-  let scrollY = window.scrollY;
-  let pos1 = (scrollY - 0) * 0.5;
-  text1.style.transform = `translateY(${pos1}px)`;
+// function updateParallax() {
+//   let scrollY = window.scrollY;
+//   let pos1 = (scrollY - 0) * 0.5;
+//   text1.style.transform = `translateY(${pos1}px)`;
+// }
+
+// window.addEventListener('scroll', function() {
+//   requestAnimationFrame(updateParallax);
+// });
+
+// ----- PARALLAX 2
+const heroWrapper = document.querySelector('.hero-wrapper')
+
+function updateParallax () {
+  let scrollY = window.scrollY
+  let pos1 = (scrollY - 0) * 0.3
+  heroWrapper.style.transform = `translateY(${pos1}px)`
+
+  requestAnimationFrame(updateParallax)
 }
 
-window.addEventListener('scroll', function() {
-  requestAnimationFrame(updateParallax);
-});
+updateParallax()
+
+window.addEventListener('scroll', updateParallax)
+
+// ----- PARALLAX 3
+// const heroWrapper = document.querySelector('.hero-wrapper')
+// let isParallaxActive = true
+
+// function updateParallax () {
+//   let scrollY = window.scrollY
+//   let pos1 = (scrollY - 0) * 0.5
+
+//   const heroWrapperY = heroWrapper.getBoundingClientRect().top + scrollY
+//   const windowHeight = window.innerHeight
+
+//   if (heroWrapperY <= windowHeight) {
+//     // Hentikan efek parallax
+//     isParallaxActive = false
+//     pos1 = 0
+//   } else {
+//     // Lanjutkan efek parallax
+//     isParallaxActive = true
+//   }
+
+//   heroWrapper.style.transform = `translateY(${pos1}px)`
+
+//   if (isParallaxActive) {
+//     requestAnimationFrame(updateParallax)
+//   }
+// }
+
+// updateParallax()
+
+// window.addEventListener('scroll', updateParallax)
 //*========== END ==========*//
