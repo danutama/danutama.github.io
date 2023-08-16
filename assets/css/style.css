@@ -170,6 +170,7 @@ button {
   font-family: var(--body-font-family);
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .arrow-wrapper i {
@@ -526,6 +527,7 @@ body.dark-theme .light-text {
 .accordion-year,
 #aboutDate {
   font-size: var(--small-fs);
+  letter-spacing: 1px;
 }
 
 .accordion-item {
@@ -653,7 +655,7 @@ body.dark-theme .light-text {
   background-color: transparent;
   padding: 10px 15px;
   margin-right: 1rem;
-  border: 1px solid var(--button-color);
+  border: 1px solid var(--shadow-text);
   border-radius: 100px;
   position: relative;
 }
@@ -661,6 +663,7 @@ body.dark-theme .light-text {
 .project-menu button.mixitup-control-active {
  color: var(--light-dark);
  background-color: var(--button-color);
+ border: 1px solid var(--button-color);
 }
 
 .project-wrapper {
@@ -671,13 +674,13 @@ body.dark-theme .light-text {
 }
 
 .project-box {
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--shadow-text);
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
 
 .project-image {
-  width: 100%;
+  width: 70%;
   filter: invert(100%) grayscale(100%);
   transition: .3s ease;
 }
