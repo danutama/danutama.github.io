@@ -318,24 +318,84 @@ nav {
 }
 
 /* ========================== HERO SECTION =========================== */
-#home .container {
+
+#home {
+  /* overflow: hidden; */
+  /* position: fixed; */
+  /* min-height: 100vh; */
+  z-index: 0;
+  padding-bottom: 5rem !important;
+}
+
+.container-hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.hero-wrapper {
   z-index: 1;
   position: relative;
   transition: transform 0.3s ease-out;
 }
 
-#home {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  min-height: 100vh;
-  z-index: 0;
-  padding-bottom: 5rem !important;
+.container-hero-circle {
+  position: sticky;
+  top: calc(50vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.image-small-container {
+  position: relative;
+  width: 90%;
+  max-width: 1204px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.image-small {
+  width: 100%;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.image-small img {
+  width: 30%;
+  transition: transform 0.3s ease-out;
+}
+
+.image-small-wrapper-1 {
+  justify-content: start;
+}
+.image-small-wrapper-2 {
+  justify-content: center;
+}
+.image-small-wrapper-3 {
+  justify-content: end;
+}
+.image-small-wrapper-4 {
+  justify-content: start;
+}
+.image-small-wrapper-5 {
+  justify-content: end;
+}
+.image-small-wrapper-6 {
+  justify-content: center;
 }
 
 /* CIRCLE LOGO */
 .circle-text-container {
-  display: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .circle-text-wrapper {
@@ -438,7 +498,7 @@ body.dark-theme .light-text {
 /* ========================== ABOUT SECTION =========================== */
 #about {
   position: relative;
-  margin-top: 100vh;
+  /* margin-top: 100vh; */
 }
 
 .about-subtitle {
@@ -984,10 +1044,8 @@ footer hr {
     display: none;
   }
 
-  .circle-text-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  #home {
+    padding-top: 0;
   }
 
   .skills-number {
