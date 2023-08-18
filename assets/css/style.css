@@ -338,7 +338,7 @@ nav {
 .container.hero-wrapper {
   z-index: 1;
   position: relative;
-  transition: transform 0.3s ease-out;
+  /* transition: transform 0.3s ease-out; */
 }
 
 .container-hero-circle {
@@ -364,30 +364,27 @@ nav {
 .image-small {
   width: 100%;
   display: flex;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .image-small img {
   width: 30%;
-  transition: transform 0.3s ease-out;
+  /* transition: transform 0.3s ease; */
 }
 
 .image-small-wrapper-1 {
   justify-content: start;
 }
 .image-small-wrapper-2 {
-  justify-content: center;
+  justify-content: end;
 }
 .image-small-wrapper-3 {
-  justify-content: end;
-}
-.image-small-wrapper-4 {
   justify-content: start;
 }
-.image-small-wrapper-5 {
+.image-small-wrapper-4 {
   justify-content: end;
 }
-.image-small-wrapper-6 {
+.image-small-wrapper-5 {
   justify-content: center;
 }
 
@@ -1103,6 +1100,10 @@ footer hr {
   /* ===================== NAV END ======================= */
 
   /* ==== HERO SECTION === */
+  .image-small img {
+    width: 40%;
+  }
+
   .circle-text-wrapper {
     width: 180px;
     height: 180px;

@@ -354,13 +354,12 @@ openModalBtn.addEventListener('click', openModal);
 // });
 
 // ----- PARALLAX 2
-const heroWrapper = document.querySelector('.hero-wrapper')
+// const heroWrapper = document.querySelector('.hero-wrapper')
 const img1 = document.querySelector('.img-1')
 const img2 = document.querySelector('.img-2')
 const img3 = document.querySelector('.img-3')
 const img4 = document.querySelector('.img-4')
 const img5 = document.querySelector('.img-5')
-const img6 = document.querySelector('.img-6')
 
 function updateParallax () {
   let scrollY = window.scrollY
@@ -370,25 +369,22 @@ function updateParallax () {
   let speedFactor4 = 0.6;
   let speedFactor5 = 0.9;
   let speedFactor6 = 1;
-  let speedFactor7 = 0.3;
 
-  let pos1 = (0 - scrollY) * 0.3
+  // let pos1 = (0 - scrollY) * 0.3
 
   let pos2 = (0 - scrollY) * speedFactor2;
   let pos3 = (0 - scrollY) * speedFactor3;
   let pos4 = (0 - scrollY) * speedFactor4;
   let pos5 = (0 - scrollY) * speedFactor5;
   let pos6 = (0 - scrollY) * speedFactor6;
-  let pos7 = (0 - scrollY) * speedFactor7;
 
-  heroWrapper.style.transform = `translateY(${pos1}px)`
+  // heroWrapper.style.transform = `translateY(${pos1}px)`
   
   img1.style.transform = `translateY(${pos2}px)`
   img2.style.transform = `translateY(${pos3}px)`
   img3.style.transform = `translateY(${pos4}px)`
   img4.style.transform = `translateY(${pos5}px)`
   img5.style.transform = `translateY(${pos6}px)`
-  img6.style.transform = `translateY(${pos7}px)`
 
   requestAnimationFrame(updateParallax)
 }
