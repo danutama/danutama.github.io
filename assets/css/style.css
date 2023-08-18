@@ -324,7 +324,7 @@ nav {
   /* position: fixed; */
   /* min-height: 100vh; */
   z-index: 0;
-  padding-bottom: 5rem !important;
+  padding-bottom: 0 !important;
 }
 
 .container-hero {
@@ -354,6 +354,7 @@ nav {
   position: relative;
   width: 90%;
   max-width: 1204px;
+  padding: 40vh 0 70vh 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -369,7 +370,13 @@ nav {
 
 .image-small img {
   width: 30%;
-  /* transition: transform 0.3s ease; */
+  filter: grayscale(100%);
+  transition: transform 0.3s ease;
+}
+
+.image-small img:hover {
+  transform: scale(1.2);
+  filter: none;
 }
 
 .image-small-wrapper-1 {
@@ -1101,7 +1108,7 @@ footer hr {
 
   /* ==== HERO SECTION === */
   .image-small img {
-    width: 40%;
+    width: 45%;
   }
 
   .circle-text-wrapper {
