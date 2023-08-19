@@ -328,6 +328,7 @@ nav {
 }
 
 .container-hero {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -339,6 +340,15 @@ nav {
   z-index: 1;
   position: relative;
   /* transition: transform 0.3s ease-out; */
+}
+
+.hero-hello {
+  display: none;
+  position: absolute;
+  font-family: var(--special-font-family);
+  color: var(--text-color);
+  font-size: var(--xl-fs);
+  bottom: 3%;
 }
 
 .container-hero-circle {
@@ -370,7 +380,7 @@ nav {
 .image-small img {
   width: 30%;
   transition: all .2s linear;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 22px 20px -20px;
 }
 
 .image-small-wrapper-1 {
@@ -1047,6 +1057,14 @@ footer hr {
 
   #home {
     padding-top: 0;
+  }
+
+  .container-hero {
+    margin-bottom: 5rem;
+  }
+  
+  .hero-hello {
+    display: block;
   }
 
   .skills-number {
