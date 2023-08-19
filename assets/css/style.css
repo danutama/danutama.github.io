@@ -365,16 +365,11 @@ nav {
 .image-small {
   width: 100%;
   display: flex;
-  margin-bottom: 5rem;
 }
 
 .image-small img {
-  width: 30%;
-  filter: grayscale(100%);
-}
-
-.image-small img:hover {
-  filter: none;
+  width: 15%;
+  transition: all .2s linear;
 }
 
 .image-small-wrapper-1 {
@@ -1109,7 +1104,7 @@ footer hr {
 
   /* ==== HERO SECTION === */
   .image-small img {
-    width: 45%;
+    width: 27%;
   }
 
   .circle-text-wrapper {
@@ -1127,7 +1122,7 @@ footer hr {
   }
 
   .hero-subtitle {
-    font-size: var(--normal-fs);
+    font-size: var(--medium-fs);
   }
   /* === END === */
 
