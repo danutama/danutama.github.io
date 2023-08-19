@@ -368,8 +368,9 @@ nav {
 }
 
 .image-small img {
-  width: 15%;
+  width: 30%;
   transition: all .2s linear;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .image-small-wrapper-1 {
@@ -845,7 +846,7 @@ body.dark-theme .light-text {
   align-items: start;
   flex-direction: column;
   margin: auto;
-  padding: 0 2rem;
+  padding: 2rem 2rem 0 2rem;
   max-width: 1204px;
   height: 85%;
   overflow-y: scroll;
@@ -855,7 +856,7 @@ body.dark-theme .light-text {
 
 .modal-content span {
   font-size: var(--big-fs);
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   line-height: var(--line-height);
   position: relative;
   z-index: 2;
@@ -1104,7 +1105,7 @@ footer hr {
 
   /* ==== HERO SECTION === */
   .image-small img {
-    width: 27%;
+    width: 35%;
   }
 
   .circle-text-wrapper {
@@ -1140,7 +1141,7 @@ footer hr {
   }
 
   .modal-content {
-    padding: 0;
+    padding: 1rem 7px 0 0;
   }
 
   .modal .shadow-text p {
