@@ -25,6 +25,12 @@ function animateBlock() {
         duration: 1,
         ease: 'power1.inOut',
       });
+
+      gsap.to('.hero-hello', {
+        opacity: 1,
+        duration: 1,
+        delay: 2,
+      });
     }
   });
 
@@ -365,6 +371,21 @@ gsap.timeline({
   }
 })
 .to(textElement, {
+  x: "-150%",
+  ease: "none",
+});
+
+const footerMarque = document.querySelector(".footer-marque");
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: footerMarque,
+    start: "bottom bottom",
+    end: "top top",
+    scrub: true,
+  }
+})
+.to(footerMarque, {
   x: "-150%",
   ease: "none",
 });

@@ -346,11 +346,8 @@ nav {
   position: absolute;
   overflow: hidden;
   bottom: 3%;
-  height: 45px;
   width: 90%;
   max-width: 1204px;
-  padding-left: 7rem;
-  background-color: var(--shadow-text);
   display: none;
 }
 
@@ -360,10 +357,12 @@ nav {
   align-items: center;
   flex-wrap: nowrap;
   gap: 3rem;
-  font-family: var(--special-font-family);
-  color: var(--text-color);
-  font-size: var(--big-fs);
+  margin-left: 2rem;
+  color: var(--shadow-text);
+  font-size: 5rem;
+  font-weight: bold;
   transition: all 1s linear;
+  opacity: 0;
 }
 
 .container-hero-circle {
@@ -928,6 +927,28 @@ footer .container {
 
 footer hr {
   margin-bottom: 2rem;
+}
+
+.footer-marque-rel {
+  width: 90%;
+  max-width: 1204px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 8rem;
+}
+
+.footer-marque {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  color: var(--shadow-text);
+  font-size: 5rem;
+  font-weight: bold;
+  transition: all 1s linear;
 }
 
 .footer-call-text-wrapper {
