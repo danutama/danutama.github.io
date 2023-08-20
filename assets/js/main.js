@@ -375,21 +375,6 @@ gsap.timeline({
   ease: "none",
 });
 
-const footerMarque = document.querySelector(".footer-marque");
-
-gsap.timeline({
-  scrollTrigger: {
-    trigger: footerMarque,
-    start: "bottom bottom",
-    end: "top top",
-    scrub: true,
-  }
-})
-.to(footerMarque, {
-  x: "-150%",
-  ease: "none",
-});
-
 // --------- IMAGES PARALLAX
 const parallaxImages = document.querySelectorAll('.img-small');
 
