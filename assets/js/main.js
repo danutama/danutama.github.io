@@ -23,7 +23,7 @@ function animateBlock() {
         opacity: 1,
         y: 0,
         duration: 1,
-        ease: 'expo.out',
+        ease: 'power1.inOut',
       });
     }
   });
@@ -353,7 +353,23 @@ openModalBtn.addEventListener('click', openModal);
 //   requestAnimationFrame(updateParallax);
 // });
 
+// ---------- MARQUE TEXT
+const textElement = document.querySelector(".hero-hello");
 
+gsap.timeline({
+  scrollTrigger: {
+    trigger: textElement,
+    start: "bottom bottom",
+    end: "top top",
+    scrub: true,
+  }
+})
+.to(textElement, {
+  x: "-150%",
+  ease: "none",
+});
+
+// --------- IMAGES PARALLAX
 const parallaxImages = document.querySelectorAll('.img-small');
 
 window.addEventListener('scroll', () => {
