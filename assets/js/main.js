@@ -388,6 +388,32 @@ window.addEventListener('scroll', () => {
   });
 });
 
+// ---- OPACITY ANIMATION 
+const strokeTexts = document.querySelectorAll('.stroke-text');
+
+strokeTexts.forEach((strokeText) => {
+  const text = strokeText.textContent.trim();
+  const characters = text.split('');
+
+  gsap.set(strokeText, { opacity: 0 });
+
+  gsap.to(strokeText, {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: strokeText,
+      start: 'top 80%',
+      end: 'center 50%',
+      scrub: true,
+      toggleActions: 'play none none none',
+      onUpdate: (self) => {
+        const scrollProgress = self.progress;
+        const currentCharacterIndex = Math.floor(scrollProgress * characters.length);
+        const displayedText = characters.slice(0, currentCharacterIndex + 1).join('');
+        strokeText.textContent = displayedText;
+      }
+    }
+  });
+});
 
 // ----------------- PARALLAX 2 --------------------- //
 // const heroWrapper = document.querySelector('.hero-wrapper')
