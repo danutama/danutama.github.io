@@ -159,23 +159,17 @@ button {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: -5px;
+  /* margin-left: -5px; */
   margin-bottom: 1rem;
   color: var(--text-color);
-  z-index: 2;
 } 
 
 .arrow-wrapper span {
-  font-size: var(--normal-fs);
-  font-family: var(--body-font-family);
-  font-weight: bold;
+  font-size: 4rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.arrow-wrapper i {
-  font-size: var(--big-fs);
-  transform: rotate(45deg);
+  letter-spacing: -2px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
 }
 
 .title-section {
