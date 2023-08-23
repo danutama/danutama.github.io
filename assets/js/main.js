@@ -152,14 +152,6 @@ window.addEventListener('scroll', scrollActive);
 //*========== END ==========*//
 
 
-//*========== AOS (SCROLL ANIMATION) ==========*//
-AOS.init({
-  offset: 0,
-  once: true,
-});
-//*========== END ==========*//
-
-
 //*========== ABOUT-ACCORDION ==========*//
 document.addEventListener("DOMContentLoaded", function () {
   const accordionItems = document.querySelectorAll(".accordion-item");
@@ -411,6 +403,46 @@ strokeTexts.forEach((strokeText) => {
         const displayedText = characters.slice(0, currentCharacterIndex + 1).join('');
         strokeText.textContent = displayedText;
       }
+    }
+  });
+});
+
+// --------- SKILLS ANIMATION
+const skillsTexts = document.querySelectorAll('.skills-text');
+
+skillsTexts.forEach((skillsText) => {
+  gsap.set(skillsText, { y: '100%', opacity: 1 });
+
+  gsap.to(skillsText, {
+    y: '0%',
+    opacity: 1,
+    duration: 1,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+      trigger: skillsText,
+      start: 'top 80%',
+      end: 'center 50%',
+      toggleActions: 'play none none none'
+    }
+  });
+});
+
+// ------- BUTTON MENU PROJECTS
+const buttons = document.querySelectorAll('.btn-menu-projects');
+
+buttons.forEach((button, index) => {
+  gsap.set(button, { y: '100%', opacity: 1 });
+
+  gsap.to(button, {
+    opacity: 1,
+    y: '0%',
+    duration: 1,
+    ease: 'power1.inOut',
+    scrollTrigger: {
+      trigger: button,
+      start: 'top 80%',
+      end: 'center 50%',
+      toggleActions: 'play none none none'
     }
   });
 });

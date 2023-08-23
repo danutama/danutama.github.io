@@ -389,13 +389,8 @@ nav {
 
 .image-small img {
   width: 30%;
-  filter:  grayscale(100%);
   transition: all .2s linear;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 22px 20px -20px;
-}
-
-.image-small img:hover {
-  filter: none;
 }
 
 .image-small-wrapper-1 {
@@ -702,6 +697,11 @@ body.dark-theme .light-text {
   padding: 1rem 0;
 }
 
+.skills-box {
+  display: flex;
+  overflow: hidden;
+}
+
 .skills-number {
   font-size: var(--normal-fs);
   color: var(--text-color);
@@ -725,7 +725,8 @@ body.dark-theme .light-text {
   justify-content: end;
   align-items: center;
   width: 100%;
-  padding: 2rem 0;
+  padding: 0;
+  margin: 2.5rem 0;
   white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
