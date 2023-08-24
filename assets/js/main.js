@@ -517,7 +517,8 @@ window.addEventListener('load', () => {
               float distanceFromMouse = distance(uMousePosition, vec2(vertexPosition.x, vertexPosition.y));
   
               // calculate our wave effect
-              float waveSinusoid = cos(5.0 * (distanceFromMouse - (uTime / 75.0)));
+              // float waveSinusoid = cos(5.0 * (distanceFromMouse - (uTime / 75.0)));
+              float waveSinusoid = cos(10.0 * (distanceFromMouse - (uTime / 75.0))); // Increase the factor from 5.0 to 10.0
   
               // attenuate the effect based on mouse distance
               float distanceStrength = (0.4 / (distanceFromMouse + 0.4));
