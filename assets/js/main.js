@@ -338,18 +338,6 @@ openModalBtn.addEventListener('click', openModal);
 
 
 //*========== PARALLAX TEXT ON SCROLL ==========*//
-// ----- PARALLAX 1
-// let text1 = document.querySelector('.hero-wrapper');
-
-// function updateParallax() {
-//   let scrollY = window.scrollY;
-//   let pos1 = (scrollY - 0) * 0.5;
-//   text1.style.transform = `translateY(${pos1}px)`;
-// }
-
-// window.addEventListener('scroll', function() {
-//   requestAnimationFrame(updateParallax);
-// });
 
 // ---------- MARQUE TEXT
 const textElement = document.querySelector(".hero-hello");
@@ -381,31 +369,56 @@ window.addEventListener('scroll', () => {
 });
 
 // ---- OPACITY ANIMATION 
-const strokeTexts = document.querySelectorAll('.stroke-text');
+// const strokeTexts = document.querySelectorAll('.stroke-text');
 
-strokeTexts.forEach((strokeText) => {
-  const text = strokeText.textContent.trim();
-  const characters = text.split('');
+// strokeTexts.forEach((strokeText) => {
+//   const text = strokeText.textContent.trim();
+//   const characters = text.split('');
 
-  gsap.set(strokeText, { opacity: 0 });
+//   gsap.set(strokeText, { opacity: 0 });
 
-  gsap.to(strokeText, {
-    opacity: 1,
-    scrollTrigger: {
-      trigger: strokeText,
-      start: 'top 80%',
-      end: 'center 50%',
-      scrub: true,
-      toggleActions: 'play none none none',
-      onUpdate: (self) => {
-        const scrollProgress = self.progress;
-        const currentCharacterIndex = Math.floor(scrollProgress * characters.length);
-        const displayedText = characters.slice(0, currentCharacterIndex + 1).join('');
-        strokeText.textContent = displayedText;
+//   gsap.to(strokeText, {
+//     opacity: 1,
+//     scrollTrigger: {
+//       trigger: strokeText,
+//       start: 'top 80%',
+//       end: 'center 50%',
+//       scrub: true,
+//       toggleActions: 'play none none none',
+//       onUpdate: (self) => {
+//         const scrollProgress = self.progress;
+//         const currentCharacterIndex = Math.floor(scrollProgress * characters.length);
+//         const displayedText = characters.slice(0, currentCharacterIndex + 1).join('');
+//         strokeText.textContent = displayedText;
+//       }
+//     }
+//   });
+// });
+
+const texts = document.querySelectorAll('.stroke-text')
+
+texts.forEach(text => {
+  const splitText = new SplitType(text)
+  const charElements = text.querySelectorAll('.char')
+
+  const textTL = gsap.timeline({ paused: true })
+  textTL.to(
+    charElements,
+    { y: 0, stagger: 0.05, delay: 0.2, duration: 0.1 }
+  )
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        textTL.play()
+      } else {
+        textTL.reverse()
       }
-    }
-  });
-});
+    })
+  })
+
+  observer.observe(text)
+})
 
 // --------- SKILLS ANIMATION
 const skillsTexts = document.querySelectorAll('.skills-text');
@@ -689,45 +702,4 @@ window.addEventListener('load', () => {
     }
   }
 })
-
-
-// ----------------- PARALLAX 2 --------------------- //
-// const heroWrapper = document.querySelector('.hero-wrapper')
-// const img1 = document.querySelector('.img-1')
-// const img2 = document.querySelector('.img-2')
-// const img3 = document.querySelector('.img-3')
-// const img4 = document.querySelector('.img-4')
-// const img5 = document.querySelector('.img-5')
-
-// function updateParallax () {
-//   let scrollY = window.scrollY
-
-//   let speedFactor2 = 0.3;
-//   let speedFactor3 = 0.5;
-//   let speedFactor4 = 0.6;
-//   let speedFactor5 = 0.9;
-//   let speedFactor6 = 1;
-
-//   // let pos1 = (0 - scrollY) * 0.3
-
-//   let pos2 = (0 - scrollY) * speedFactor2;
-//   let pos3 = (0 - scrollY) * speedFactor3;
-//   let pos4 = (0 - scrollY) * speedFactor4;
-//   let pos5 = (0 - scrollY) * speedFactor5;
-//   let pos6 = (0 - scrollY) * speedFactor6;
-
-//   // heroWrapper.style.transform = `translateY(${pos1}px)`
-  
-//   img1.style.transform = `translateY(${pos2}px)`
-//   img2.style.transform = `translateY(${pos3}px)`
-//   img3.style.transform = `translateY(${pos4}px)`
-//   img4.style.transform = `translateY(${pos5}px)`
-//   img5.style.transform = `translateY(${pos6}px)`
-
-//   requestAnimationFrame(updateParallax)
-// }
-
-// updateParallax()
-
-// window.addEventListener('scroll', updateParallax)
 //*========== END ==========*//

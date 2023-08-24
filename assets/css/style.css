@@ -167,9 +167,18 @@ button {
 .arrow-wrapper span {
   font-size: 4rem;
   text-transform: uppercase;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1.5px;
+}
+
+.stroke-text {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform .5s;
 }
 
 .title-section {
