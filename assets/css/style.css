@@ -360,7 +360,7 @@ nav {
   align-items: center;
   flex-wrap: nowrap;
   gap: 3rem;
-  margin-left: 2rem;
+  margin-left: 1.8rem;
   color: var(--text-color);
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1.5px;

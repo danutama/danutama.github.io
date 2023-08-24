@@ -395,30 +395,29 @@ window.addEventListener('scroll', () => {
 //   });
 // });
 
-const texts = document.querySelectorAll('.stroke-text')
+const texts = document.querySelectorAll('.stroke-text');
 
 texts.forEach(text => {
-  const splitText = new SplitType(text)
-  const charElements = text.querySelectorAll('.char')
+  const splitText = new SplitType(text);
+  const charElements = text.querySelectorAll('.char');
 
-  const textTL = gsap.timeline({ paused: true })
+  const textTL = gsap.timeline({ paused: true });
   textTL.to(
     charElements,
     { y: 0, stagger: 0.05, delay: 0.2, duration: 0.1 }
-  )
+  );
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         textTL.play()
-      } else {
-        textTL.reverse()
+        observer.unobserve(entry.target);
       }
-    })
-  })
+    });
+  });
 
-  observer.observe(text)
-})
+  observer.observe(text);
+});
 
 // --------- SKILLS ANIMATION
 const skillsTexts = document.querySelectorAll('.skills-text');
