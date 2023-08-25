@@ -723,7 +723,7 @@ body.dark-theme .light-text {
   font-size: var(--xl-fs);
   color: rgb(139, 139, 139);
   font-weight: bold;
-  transition: .4s ease;
+  transition: .4s linear;
 }
 
 .skills-text:hover {
@@ -780,12 +780,12 @@ body.dark-theme .light-text {
 
 .project-image {
   width: 70%;
-  filter: invert(100%) grayscale(100%);
+  /* filter: invert(100%) grayscale(100%); */
   transition: .3s ease;
 }
 
 .project-image:hover {
-  filter: unset;
+  transform: rotate(-5deg);
 }
 
 .project-body {
@@ -838,9 +838,10 @@ body.dark-theme .light-text {
 .modal-info-header {
   display: flex;
   justify-content: space-between;
-  margin: auto;
   max-width: 1204px;
-  padding: 30px 10px 30px 2rem;
+  padding: 0 10px 0 2rem;
+  margin: 30px auto;
+  overflow: hidden;
 }
 
 .close-modal-button {
@@ -848,8 +849,12 @@ body.dark-theme .light-text {
   opacity: 0;
   border: 0;
   background-color: transparent;
-  color: var(--text-color);
+  color: rgba(126, 126, 126);
   font-size: var(--medium-fs);
+}
+
+.close-modal-button:hover {
+  color: var(--text-color);
 }
 
 .modal-info-title {
@@ -1241,7 +1246,7 @@ footer hr {
   
   /* --- MODAL INFO --- */
   .modal-info-header {
-    padding: 30px 0;
+    padding: 0;
   }
 
   .modal-content {

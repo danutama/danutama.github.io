@@ -311,23 +311,23 @@ function openModal() {
     borderTopLeftRadius: "0",
     onComplete: () => {
       const tl = gsap.timeline();
-      tl.fromTo(modalText, { y: "50%", opacity: 0 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
-        .fromTo('.modal-info-title', { y: "50%", opacity: 0 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
+      tl.fromTo(modalText, { y: "100%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
+        .fromTo('.modal-info-title', { y: "100%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
         .fromTo('.modal-content span', { x: "-50%", opacity: 0 }, { x: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" });
 
       // RESERVE
       closeModalBtn.addEventListener('click', () => {
         const reverseTl = gsap.timeline();
         reverseTl.to('.modal-content span', { opacity: 0, x: "-50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
-          .to('.modal-info-title', { opacity: 0, y: "50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
-          .to(modalText, { opacity: 0, y: "50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
+          .to('.modal-info-title', { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
+          .to(modalText, { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
           .to(modal, {
             bottom: "-150%",
             duration: 1,
             ease: 'expo.in',
             borderTopRightRadius: "50%",
             borderTopLeftRadius: "50%",
-          }, '-=0.5');
+          });
       });
     }
   });
@@ -429,10 +429,10 @@ skillsTexts.forEach((skillsText) => {
     y: '0%',
     opacity: 1,
     duration: 1,
-    ease: 'power1.inOut',
+    ease: 'none',
     scrollTrigger: {
       trigger: skillsText,
-      start: 'top 80%',
+      start: 'top 70%',
       end: 'center 50%',
       toggleActions: 'play none none none'
     }
