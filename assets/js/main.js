@@ -298,14 +298,14 @@ function openModal() {
     onComplete: () => {
       const tl = gsap.timeline();
       tl.fromTo(modalText, { y: "100%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
-        .fromTo('.modal-info-title', { y: "100%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
+        .fromTo('.modal-info-title', { y: "102%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
         .fromTo('.modal-content span', { x: "-50%", opacity: 0 }, { x: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" });
 
       // RESERVE
       closeModalBtn.addEventListener('click', () => {
         const reverseTl = gsap.timeline();
         reverseTl.to('.modal-content span', { opacity: 0, x: "-50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
-          .to('.modal-info-title', { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
+          .to('.modal-info-title', { opacity: 1, y: "102%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
           .to(modalText, { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
           .to(modal, {
             bottom: "-150%",

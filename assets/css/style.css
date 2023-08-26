@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 @font-face {
-  font-family: 'Beckan Regular';
-  src: url('Beckan-Regular.otf') format('opentype');
+  font-family: 'Thunder BoldLC';
+  src: url('Thunder-BoldLC.otf') format('opentype');
 }
 
 :root {
@@ -18,7 +18,7 @@
   /* ----- FONT----- */
   --title-font-family: 'Roboto', sans-serif;
   --body-font-family: 'Roboto', sans-serif;
-  --special-font-family: 'Beckan Regular';
+  --special-font-family: 'Thunder BoldLC';
   --line-height: 1.8em;
   --small-fs: 0.875rem;
   --normal-fs: 1rem;
@@ -288,6 +288,7 @@ nav {
   font-family: var(--special-font-family);
   font-size: var(--xl-fs);
   color: #fff;
+  margin-top: .5rem;
   mix-blend-mode: difference;
 }
 
@@ -480,11 +481,12 @@ nav {
   white-space: nowrap;
   width: 100%;
   display: flex;
+  margin: .5rem 0;
 }
 
 .hero-img {
   opacity: 1;
-  transform: translateY(100%);
+  transform: translateY(103%);
   width: 100%;
 }
 
@@ -875,7 +877,7 @@ body.dark-theme .light-text {
 
 .modal-info-title {
   font-family: var(--special-font-family);
-  font-size: var(--big-fs);
+  font-size: var(--xl-fs);
   opacity: 0;
 }
 
