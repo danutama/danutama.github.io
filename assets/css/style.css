@@ -102,7 +102,6 @@ h2 {
 h3 {
   font-weight: normal;
   color: var(--text-color);
-  font-size: var(--big-fs);
 }
 
 span::selection,
@@ -538,12 +537,13 @@ body.dark-theme .light-text {
   width: 100%;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(23rem, 100%), 1fr));
   margin: 1.5rem 0;
 }
 
 .about-subtitle {
   margin: 0 0 1.5rem 0;
+  font-size: var(--medium-fs);
   position: relative;
   z-index: 2;
 }
@@ -751,11 +751,10 @@ body.dark-theme .light-text {
   justify-content: end;
   align-items: center;
   width: 100%;
-  padding: 0;
+  padding: 3px 0;
   margin: 2.5rem 0;
   white-space: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: auto;
 }
 
 .project-menu::-webkit-scrollbar {
@@ -783,7 +782,6 @@ body.dark-theme .light-text {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
-  padding: 2rem 0 0 0;
 }
 
 .project-box {
@@ -949,7 +947,7 @@ body.dark-theme .light-text {
 
 /* ========================== FOOTER =========================== */
 #contact {
-  padding-bottom: 0 !important;
+  padding: 0 !important;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

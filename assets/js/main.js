@@ -229,20 +229,6 @@ let newSwiper = new Swiper('.about-slider-container', {
 //*========== END ==========*//
 
 
-//*========== SCROLL TOP BTN ==========*//
-// function scrollToTop() {
-//   if (typeof window.scrollTo === 'function') {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: 'smooth',
-//     });
-//   } else {
-//     window.scrollTo(0, 0);
-//   }
-// }
-//*========== END ==========*//
-
-
 /*========== DARK LIGHT MODE ==========*/
 const themeToggleButton = document.querySelector('.theme-toggle-button');
 const darkThemeClass = 'dark-theme';
@@ -287,7 +273,7 @@ $(document).ready(function () {
       const filter = button.getAttribute('data-filter');
       const itemCount = wrapper.querySelectorAll(filter).length;
       const dataCountTag = button.querySelector('.data-count');
-      dataCountTag.textContent = ` [${itemCount}]`;
+      dataCountTag.textContent = ` (${itemCount})`;
     });
   }
 
