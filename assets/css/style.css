@@ -534,8 +534,16 @@ body.dark-theme .light-text {
   /* margin-top: 100vh; */
 }
 
-.about-subtitle {
+.about-desc-wrapper {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
   margin: 1.5rem 0;
+}
+
+.about-subtitle {
+  margin: 0 0 1.5rem 0;
   position: relative;
   z-index: 2;
 }
@@ -637,6 +645,7 @@ body.dark-theme .light-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   padding: 20px 10px;
   cursor: pointer;
 }
@@ -687,7 +696,12 @@ body.dark-theme .light-text {
   transition: max-height 500ms, visibility 0ms;
 }
 
-.accordion-content div {
+.accordion-desc-wrapper {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr));
+  padding: 1rem 0;
   overflow: hidden;
 }
 
