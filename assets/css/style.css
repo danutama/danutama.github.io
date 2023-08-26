@@ -811,6 +811,10 @@ body.dark-theme .light-text {
   color: var(--text-color);
   margin-left: 1rem;
 }
+
+.project-name {
+  font-weight: bold;
+}
 /* ========= PROJECT END ========= */
 
 /* ========= MODAL CREDITS/INFOS ========= */
