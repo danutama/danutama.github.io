@@ -440,24 +440,24 @@ skillsTexts.forEach((skillsText) => {
 });
 
 // ------- BUTTON MENU PROJECTS
-const buttons = document.querySelectorAll('.btn-menu-projects');
+// const buttons = document.querySelectorAll('.btn-menu-projects');
 
-buttons.forEach((button, index) => {
-  gsap.set(button, { y: '100%', opacity: 1 });
+// buttons.forEach((button, index) => {
+//   gsap.set(button, { y: '100%', opacity: 1 });
 
-  gsap.to(button, {
-    opacity: 1,
-    y: '0%',
-    duration: 1,
-    ease: 'power1.inOut',
-    scrollTrigger: {
-      trigger: button,
-      start: 'top 80%',
-      end: 'center 50%',
-      toggleActions: 'play none none none'
-    }
-  });
-});
+//   gsap.to(button, {
+//     opacity: 1,
+//     y: '0%',
+//     duration: 1,
+//     ease: 'power1.inOut',
+//     scrollTrigger: {
+//       trigger: button,
+//       start: 'top 80%',
+//       end: 'center 50%',
+//       toggleActions: 'play none none none'
+//     }
+//   });
+// });
 
 // ======= CURTAINS JS ======= //
 import {
