@@ -1162,6 +1162,26 @@ footer hr {
     justify-content: start;
   }
 
+  .project-wrapper {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(13rem, 40%), 1fr));
+  }
+
+  .project-type {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .5rem;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .project-type a {
+    margin: 0 .3rem 0 0;
+  }
+
   .footer-call-text,
   .cta-email .title-section {
     font-size: 3rem;
