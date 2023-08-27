@@ -964,6 +964,15 @@ body.dark-theme .light-text {
   z-index: -9999;
 }
 
+.footer-credit {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--normal-fs);
+  color: var(--light-dark);
+  margin: 0 0 1rem 0;
+}
+
 .fixed-img {
   width: 100%;
   /* 300px */
@@ -990,7 +999,7 @@ body, footer, #contact {
 }
 
 footer {
-  margin-bottom: 400px;
+  margin-bottom: 410px;
 }
 /* --------- FIXED BOTTOM LOGO END ---------- */
 
@@ -1172,13 +1181,6 @@ footer hr {
 }
 /* END */
 
-.footer-credit {
-  display: flex;
-  justify-content: end;
-  font-size: var(--normal-fs);
-  color: var(--text-color);
-}
-
 /* ========================== MEDIA QUERY =========================== */
 
 @media (max-width: 768px) {
@@ -1350,9 +1352,5 @@ footer hr {
 
   footer {
     margin-bottom: 250px;
-  }
-
-  .footer-credit {
-    justify-content: start;
   }
 }
