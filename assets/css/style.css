@@ -421,9 +421,6 @@ nav {
 .image-small-wrapper-6 {
   justify-content: start;
 }
-.image-small-wrapper-7 {
-  justify-content: center;
-}
 
 /* CIRCLE LOGO */
 .circle-text-container {
@@ -694,7 +691,7 @@ body.dark-theme .light-text {
 }
 
 .accordion-active .accordion-content {
-  max-height: 250px;
+  max-height: 300px;
   visibility: visible;
   transition: max-height 500ms, visibility 0ms;
 }
@@ -1094,7 +1091,7 @@ footer .container {
 .cta-email a {
   width: fit-content;
   position: relative;
-  font-size: var(--medium-fs);
+  font-size: var(--big-fs);
   color: var(--text-color);
 }
 
@@ -1103,13 +1100,13 @@ footer .container {
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 5rem;
 }
 
 .footer-contact a {
   position: relative;
-  font-size: var(--medium-fs);
+  font-size: var(--big-fs);
   color: var(--button-color);
 }
 
