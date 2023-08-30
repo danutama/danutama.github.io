@@ -188,7 +188,7 @@ button {
 
 .title-section {
   font-family: var(--special-font-family);
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   position: relative;
 }
@@ -746,7 +746,7 @@ body.dark-theme .light-text {
   font-size: var(--xl-fs);
   color: rgb(139, 139, 139);
   font-weight: bold;
-  transition: .4s linear;
+  transition: .2s linear;
 }
 
 .skills-text:hover {
@@ -1232,6 +1232,10 @@ footer .container {
     --big-fs: 1.15rem;
     --xl-fs: 1.6rem;
     --special-fs: 3rem;
+  }
+
+  .title-section {
+    font-size: 3.5rem;
   }
 
   .loading-text-left,

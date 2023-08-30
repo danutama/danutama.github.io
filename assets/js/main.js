@@ -428,7 +428,7 @@ skillsTexts.forEach((skillsText) => {
   gsap.to(skillsText, {
     y: '0%',
     opacity: 1,
-    duration: 1,
+    duration: 0.7,
     ease: 'none',
     scrollTrigger: {
       trigger: skillsText,
