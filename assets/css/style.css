@@ -148,15 +148,11 @@ button {
   transform-origin: right;
 }
 
+.navbar-link.active::after,
 .line-hover:hover::after {
   /* width: 100%; */
   transform: scaleX(1);
   transform-origin: left;
-}
-
-.line-hover-navbar::after {
-  background-color: #fff !important;
-  mix-blend-mode: difference;
 }
 
 .arrow-wrapper {
@@ -316,20 +312,10 @@ nav {
   padding: 0;
 }
 
-.navbar-link.active::after  {
-  content: '';
-  position: absolute;
-  /* left: 0;
-  width: 100%; */
-  height: 1px;
-  background-color: #fff;
+.navbar-link::after {
+  background-color: #fff !important;
   mix-blend-mode: difference;
-  /* transition: width 0.1s ease-in-out; */
-  transition: transform 0.2s linear;
-  transform: scaleX(1);
-  transform-origin: left;
 }
-
 /* ========================== HERO SECTION =========================== */
 
 #home {
