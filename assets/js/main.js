@@ -71,8 +71,8 @@ function animateBlockLeftRight() {
     updateProgress(percentage);
 
     if (percentage === 100) {
-      gsap.to(loadingTextLeft, { y: 0, opacity: 1, duration: 1, ease: "expo.in" });
-      gsap.to(loadingTextRight, { y: 0, opacity: 1, duration: 1, ease: "expo.in", onComplete: animateBlock });
+      gsap.to(loadingTextLeft, { y: 0, opacity: 1, duration: 1, ease: "power1.inOut" });
+      gsap.to(loadingTextRight, { y: 0, opacity: 1, duration: 1, ease: "power1.inOut", onComplete: animateBlock });
 
       clearInterval(loadingInterval);
     }
@@ -303,7 +303,7 @@ const closeModalBtn = document.getElementById('closeModalBtn');
 const modalText = document.querySelector('.modal-gsap-text');
 
 function openModal() {
-  gsap.fromTo(modal, { bottom: "-150%" }, {
+  gsap.fromTo(modal, { bottom: "-100%" }, {
     bottom: "0",
     duration: 1,
     ease: "expo.out",
@@ -322,7 +322,7 @@ function openModal() {
           .to('.modal-info-title', { opacity: 1, y: "102%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
           .to(modalText, { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
           .to(modal, {
-            bottom: "-150%",
+            bottom: "-100%",
             duration: 1,
             ease: 'expo.in',
             borderTopRightRadius: "50%",
