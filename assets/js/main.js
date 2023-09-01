@@ -10,6 +10,7 @@ function animateBlock() {
   const tl = gsap.timeline({
     onComplete: function() {
       document.querySelector(".blocks").style.display = "none";
+      document.querySelector("body").style.overflow = 'auto';
 
       gsap.to('.hero-subtitle', {
         opacity: 1,
@@ -71,8 +72,9 @@ function animateBlockLeftRight() {
     updateProgress(percentage);
 
     if (percentage === 100) {
-      gsap.to(loadingTextLeft, { y: 0, opacity: 1, duration: 1, ease: "power1.inOut" });
-      gsap.to(loadingTextRight, { y: 0, opacity: 1, duration: 1, ease: "power1.inOut", onComplete: animateBlock });
+      gsap.to(loadingProgress, { opacity: 0, delay: 0.3 });
+      gsap.to(loadingTextLeft, { y: 0, opacity: 1, duration: 1, ease: "power1.inOut", delay: 1.3 });
+      gsap.to(loadingTextRight, { y: 0, opacity: 1, duration: 1, ease: "power1.inOut", delay: 1.3, onComplete: animateBlock });
 
       clearInterval(loadingInterval);
     }

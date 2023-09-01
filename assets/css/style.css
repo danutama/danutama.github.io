@@ -44,6 +44,10 @@
   padding: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 html,
 body {
   font-family: var(--body-font-family);
@@ -200,11 +204,15 @@ button {
 }
 
 .loading-progress {
-  position: absolute;
-  left: 1.5rem;
-  top: 1.5rem;
+  position: fixed;
+  /* left: 1.5rem;
+  top: 1.5rem; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
   color: var(--light-dark);
-  font-size: var(--xl-fs);
+  font-size: 3.6rem;
   font-family: var(--special-font-family);
 }
 
