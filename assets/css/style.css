@@ -364,10 +364,8 @@ nav {
 }
 
 .hero-hello {
-  white-space: nowrap;
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
   gap: 3rem;
   margin-left: 1.8rem;
   color: var(--text-color);
