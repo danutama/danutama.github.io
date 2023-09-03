@@ -247,17 +247,17 @@ const toggleDarkTheme = () => {
   document.body.classList.toggle(darkThemeClass);
   if (document.body.classList.contains(darkThemeClass)) {
     localStorage.setItem('theme', 'dark');
-    themeToggleButton.textContent = 'dark';
+    themeToggleButton.textContent = 'Dark';
   } else {
     localStorage.setItem('theme', 'light');
-    themeToggleButton.textContent = 'light';
+    themeToggleButton.textContent = 'Light';
   }
 };
 
 const selectedTheme = localStorage.getItem('theme');
 if (selectedTheme === 'dark') {
   document.body.classList.add(darkThemeClass);
-  themeToggleButton.textContent = 'dark';
+  themeToggleButton.textContent = 'Dark';
 }
 
 themeToggleButton.addEventListener('click', toggleDarkTheme);

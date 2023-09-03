@@ -7,17 +7,16 @@
 
 :root {
   /* ----- COLORS ----- */
+  --white: #fff;
   --body-color: #fff;
-  --title-color: #000000;
-  --text-color: #000000;
-  --button-color: #000000;
+  --dark-light: #000000;
   --light-dark: #fff;
+  --gray-color: rgb(129, 129, 129);
   --secondary-color: #ededed;
   --shadow-text: rgba(113, 113, 113, 0.4);
 
   /* ----- FONT----- */
-  --title-font-family: 'Roboto', sans-serif;
-  --body-font-family: 'Roboto', sans-serif;
+  --text-font-family: 'Roboto', sans-serif;
   --special-font-family: 'Thunder BoldLC';
   --line-height: 1.8em;
   --small-fs: 0.875rem;
@@ -30,9 +29,7 @@
 
 .dark-theme {
   --body-color: #0a0a0a;
-  --title-color: #fff;
-  --text-color: #fff;
-  --button-color: #fff;
+  --dark-light: #fff;
   --light-dark: #000000;
   --secondary-color: #121212;
   --shadow-text: rgba(163, 163, 163, 0.2);
@@ -50,28 +47,10 @@ body {
 
 html,
 body {
-  font-family: var(--body-font-family);
+  font-family: var(--text-font-family);
   font-weight: normal;
   background-color: var(--body-color);
   scroll-behavior: smooth;
-}
-
-.circle-cursor {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  /* rgb(0, 234, 255); */
-  background-color: #fff;
-  mix-blend-mode: difference;
-  position: fixed;
-  transition: .1s ease;
-  z-index: 999999;
-  pointer-events: none;
-  transform: scale(1);
-}
-
-.circle-cursor.active {
-  transform: scale(3);
 }
 
 section,
@@ -97,15 +76,10 @@ h1 {
   top: -9999px;
 }
 
-h2 {
-  font-weight: normal;
-  color: var(--title-color);
-  margin: 0;
-}
-
+h2,
 h3 {
   font-weight: normal;
-  color: var(--text-color);
+  color: var(--dark-light);
 }
 
 span::selection,
@@ -115,14 +89,14 @@ h3::selection,
 a::selection,
 i::selection,
 button::selection {
-  color: #fff;
+  color: var(--white);
   background-color: #ff0000;
 }
 
 hr {
   height: 1px;
-  background-color: var(--title-color);
-  color: var(--title-color);
+  background-color: var(--dark-light);
+  color: var(--dark-light);
   margin: 1rem 0;
   border: none;
 }
@@ -134,7 +108,24 @@ button {
 }
 
 button {
-  font-family: var(--body-font-family) !important;
+  font-family: var(--text-font-family) !important;
+}
+
+.circle-cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--white);
+  mix-blend-mode: difference;
+  position: fixed;
+  transition: .1s ease;
+  z-index: 999999;
+  pointer-events: none;
+  transform: scale(1);
+}
+
+.circle-cursor.active {
+  transform: scale(3);
 }
 
 .line-hover::after {
@@ -145,7 +136,7 @@ button {
   width: 0; */
   height: 1px;
   margin-top: auto;
-  background-color: var(--title-color);
+  background-color: var(--dark-light);
   transition: transform 0.2s linear;
   inset: 0;
   transform: scaleX(0);
@@ -166,7 +157,7 @@ button {
   align-items: center;
   /* margin-left: -5px; */
   margin-bottom: 1rem;
-  color: var(--text-color);
+  color: var(--dark-light);
 } 
 
 .arrow-wrapper span {
@@ -199,7 +190,7 @@ button {
   top: 0;
   width: 50%;
   height: 100%;
-  background-color: var(--button-color);
+  background-color: var(--dark-light);
   z-index: 9999;
 }
 
@@ -267,10 +258,10 @@ button {
 
 .theme-toggle-button {
   font-size: var(--medium-fs);
-  color: #fff;
+  color: var(--white);
   mix-blend-mode: difference;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   border-radius: 50px;
   padding: 3px 10px;
   outline: none;
@@ -305,7 +296,7 @@ nav {
 .nav-logo {
   font-family: var(--special-font-family);
   font-size: var(--xl-fs);
-  color: #fff;
+  color: var(--white);
   margin-top: .5rem;
   mix-blend-mode: difference;
 }
@@ -319,7 +310,7 @@ nav {
 
 .navbar-link {
   position: relative;
-  color: #fff;
+  color: var(--white);
   mix-blend-mode: difference;
   font-size: var(--medium-fs);
   text-transform: lowercase;
@@ -328,7 +319,7 @@ nav {
 }
 
 .navbar-link::after {
-  background-color: #fff !important;
+  background-color: var(--white) !important;
   mix-blend-mode: difference;
 }
 /* ========================== HERO SECTION =========================== */
@@ -445,7 +436,7 @@ nav {
   position: absolute;
   left: 50%;
   font-size: var(--normal-fs);
-  color: var(--text-color);
+  color: var(--dark-light);
   transform-origin: 0 120px;
 }
 
@@ -538,7 +529,7 @@ body.dark-theme .light-text {
 }
 
 .about-text {
-  color: var(--text-color);
+  color: var(--dark-light);
   font-size: var(--medium-fs);
   line-height: var(--line-height);
   position: relative;
@@ -582,7 +573,7 @@ body.dark-theme .light-text {
   bottom: 5px;
   left: 5px;
   font-size: var(--normal-fs);
-  color: #fff;
+  color: var(--white);
   mix-blend-mode: difference;
 }
 
@@ -591,7 +582,7 @@ body.dark-theme .light-text {
 }
 
 .swiper-pagination-fraction {
-  color: var(--button-color);
+  color: var(--dark-light);
   font-size: var(--normal-fs);
 }
 
@@ -606,7 +597,7 @@ body.dark-theme .light-text {
 .accordion-title {
   font-size: var(--xl-fs);
   font-weight: bold;
-  color: var(--text-color);
+  color: var(--dark-light);
   margin-bottom: 3rem;
 }
 
@@ -618,7 +609,7 @@ body.dark-theme .light-text {
 
 .accordion-item {
   position: relative;
-  border-bottom: 1px solid var(--button-color);
+  border-bottom: 1px solid var(--dark-light);
 }
 
 .accordion-item hr {
@@ -626,7 +617,7 @@ body.dark-theme .light-text {
 }
 
 .accordion-header {
-  color: var(--text-color);
+  color: var(--dark-light);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -642,7 +633,7 @@ body.dark-theme .light-text {
 }
 
 .accordion-toggle {
-  color: var(--button-color);
+  color: var(--dark-light);
   background-color: transparent;
   border: none;
   outline: none;
@@ -652,7 +643,7 @@ body.dark-theme .light-text {
 
 .accordion-toggle i {
   padding: 5px;
-  border: 1px solid var(--button-color);
+  border: 1px solid var(--dark-light);
   border-radius: 50%;
   font-size: var(--big-fs);
   transition: 0.3s ease;
@@ -661,12 +652,12 @@ body.dark-theme .light-text {
 
 .accordion-active .accordion-toggle i {
   transform: rotate(-45deg);
-  background-color: var(--button-color);
+  background-color: var(--dark-light);
   color: var(--light-dark);
 }
 
 .accordion-content {
-  color: var(--text-color);
+  color: var(--dark-light);
   font-weight: normal;
   padding: 0 10px;
   max-height: 0;
@@ -692,7 +683,7 @@ body.dark-theme .light-text {
 
 .accordion-content .duration {
   font-size: var(--normal-fs);
-  color: rgb(129, 129, 129);
+  color: var(--gray-color);
 }
 
 .accordion-content p {
@@ -716,18 +707,18 @@ body.dark-theme .light-text {
 
 .skills-number {
   font-size: var(--normal-fs);
-  color: var(--text-color);
+  color: var(--dark-light);
 }
 
 .skills-text {
   font-size: var(--xl-fs);
-  color: rgb(139, 139, 139);
+  color: var(--gray-color);
   font-weight: bold;
   transition: .2s linear;
 }
 
 .skills-text:hover {
-  color: var(--text-color);
+  color: var(--dark-light);
 }
 /* ========= SKILLS END ========= */
 
@@ -737,7 +728,7 @@ body.dark-theme .light-text {
   justify-content: end;
   align-items: center;
   width: 100%;
-  padding: 3px 0;
+  padding: 0;
   margin: 2.5rem 0;
   white-space: nowrap;
   overflow: auto;
@@ -749,19 +740,19 @@ body.dark-theme .light-text {
 
 .project-menu button {
   font-size: var(--normal-fs);
-  color: var(--button-color);
+  color: var(--dark-light);
   background-color: transparent;
   padding: 10px 15px;
   margin-right: 1rem;
-  border: 1px solid var(--shadow-text);
+  border: 1px solid var(--gray-color);
   border-radius: 100px;
   position: relative;
 }
 
 .project-menu button.mixitup-control-active {
  color: var(--light-dark);
- background-color: var(--button-color);
- border: 1px solid var(--button-color);
+ background-color: var(--dark-light);
+ border: 1px solid var(--dark-light);
 }
 
 .project-wrapper {
@@ -789,7 +780,7 @@ body.dark-theme .light-text {
 .project-body {
   padding: .3rem 0 0 0;
   font-size: var(--medium-fs);
-  color: var(--text-color);
+  color: var(--dark-light);
 }
 
 .project-type {
@@ -801,7 +792,7 @@ body.dark-theme .light-text {
 }
 
 .project-link {
-  color: rgb(129, 129, 129);
+  color: var(--gray-color);
 }
 
 .project-type li {
@@ -810,7 +801,7 @@ body.dark-theme .light-text {
 
 .project-type a {
   position: relative;
-  color: var(--text-color);
+  color: var(--dark-light);
   margin-left: 1rem;
 }
 
@@ -825,7 +816,7 @@ body.dark-theme .light-text {
   height: 100%;
   width: 100%;
   background-color: var(--secondary-color);
-  color: var(--text-color);
+  color: var(--dark-light);
   z-index: 9999;
   padding: 0 1rem 2rem 1rem;
   left: 0;
@@ -861,12 +852,12 @@ button#openModalBtn.line-hover::after {
   opacity: 0;
   border: 0;
   background-color: transparent;
-  color: rgba(126, 126, 126);
+  color: var(--gray-color);
   font-size: var(--medium-fs);
 }
 
 .close-modal-button:hover {
-  color: var(--text-color);
+  color: var(--dark-light);
 }
 
 .modal-info-title {
@@ -922,7 +913,7 @@ button#openModalBtn.line-hover::after {
   position: relative;
   display: inline-flex;
   align-items: center;
-  color: var(--text-color);
+  color: var(--dark-light);
   text-decoration: none;
 }
 
@@ -933,7 +924,7 @@ button#openModalBtn.line-hover::after {
   right: 0;
   width: 100%;
   height: 1px;
-  background-color: var(--button-color);
+  background-color: var(--dark-light);
   transition: width 0.2s ease-in-out;
 }
 
@@ -944,7 +935,7 @@ button#openModalBtn.line-hover::after {
 /* ========================== FOOTER =========================== */
 /* --------- FIXED BOTTOM LOGO ---------- */
 .logo-fixed-botom {
-  background-color: var(--button-color);
+  background-color: var(--dark-light);
   position: fixed;
   height: 100vh;
   bottom: 0;
@@ -963,7 +954,7 @@ button#openModalBtn.line-hover::after {
   justify-content: center;
   text-align: center;
   font-size: var(--normal-fs);
-  color: rgb(129, 129, 129);
+  color: var(--gray-color);
   margin: 0 0 1rem 0;
 }
 
@@ -1025,7 +1016,7 @@ footer .container {
 }
 
 .footer-call-text {
-  color: #fff; 
+  color: var(--white); 
   mix-blend-mode: difference;
   font-size: 5rem;
   text-transform: uppercase;
@@ -1046,7 +1037,7 @@ footer .container {
 }
 
 .footer-call-text-wrapper:hover .footer-call-text {
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: var(--white);
 }
 
 .footer-image {
@@ -1059,7 +1050,7 @@ footer .container {
 }
 
 .arrow-footer {
-  color: var(--text-color);
+  color: var(--dark-light);
   transform: rotate(45deg);
   font-size: 3rem;
   margin-left: -10px;
@@ -1072,7 +1063,7 @@ footer .container {
 }
 
 .cta-email .title-section {
-  font-family: var(--title-font-family);
+  font-family: var(--text-font-family);
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -1082,7 +1073,7 @@ footer .container {
   width: fit-content;
   position: relative;
   font-size: var(--big-fs);
-  color: var(--text-color);
+  color: var(--dark-light);
 }
 
 .footer-contact {
@@ -1097,7 +1088,7 @@ footer .container {
 .footer-contact a {
   position: relative;
   font-size: var(--big-fs);
-  color: var(--button-color);
+  color: var(--dark-light);
 }
 
 .footer-contact i {
@@ -1112,7 +1103,7 @@ footer .container {
   align-items: center;
   margin: 0 0 30px 0;
   font-size: var(--normal-fs);
-  color: var(--text-color);
+  color: var(--dark-light);
 }
 
 /* SCROLL TOP BTN */
@@ -1120,7 +1111,7 @@ footer .container {
   position: relative;
   padding: 0;
   border: none;
-  color: var(--button-color);
+  color: var(--dark-light);
   background-color: transparent;
 }
 /* END */
