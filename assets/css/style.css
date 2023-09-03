@@ -270,7 +270,9 @@ button {
   color: #fff;
   mix-blend-mode: difference;
   background-color: transparent;
-  border: none;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 3px 10px;
   outline: none;
 }
 /* --------- END ---------- */
@@ -352,29 +354,6 @@ nav {
   z-index: 1;
   position: relative;
   /* transition: transform 0.3s ease-out; */
-}
-
-.hero-marque-rel {
-  position: absolute;
-  overflow: hidden;
-  bottom: 3%;
-  width: 90%;
-  max-width: 1204px;
-  display: none;
-}
-
-.hero-hello {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  margin-left: 1.8rem;
-  color: var(--text-color);
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1.5px;
-  font-size: 5rem;
-  letter-spacing: -4px;
-  transition: all 1s linear;
-  opacity: 0;
 }
 
 .container-hero-circle {
@@ -713,6 +692,7 @@ body.dark-theme .light-text {
 
 .accordion-content .duration {
   font-size: var(--normal-fs);
+  color: rgb(129, 129, 129);
 }
 
 .accordion-content p {
@@ -798,12 +778,12 @@ body.dark-theme .light-text {
 
 .project-image {
   width: 70%;
-  /* filter: invert(100%) grayscale(100%); */
+  filter: grayscale(100%);
   transition: .3s ease;
 }
 
 .project-image:hover {
-  transform: rotate(-5deg);
+  filter: none;
 }
 
 .project-body {
@@ -818,6 +798,10 @@ body.dark-theme .light-text {
   align-items: center;
   font-size: var(--normal-fs);
   padding: 1rem 0;
+}
+
+.project-link {
+  color: rgb(129, 129, 129);
 }
 
 .project-type li {
@@ -979,7 +963,7 @@ button#openModalBtn.line-hover::after {
   justify-content: center;
   text-align: center;
   font-size: var(--normal-fs);
-  color: var(--light-dark);
+  color: rgb(129, 129, 129);
   margin: 0 0 1rem 0;
 }
 
@@ -1169,16 +1153,6 @@ footer .container {
 
   #home {
     padding-top: 0;
-  }
-
-  .container-hero {
-    margin-bottom: 5rem;
-  }
-  
-  .hero-marque-rel {
-    display: flex;
-    align-items: center;
-    justify-content: start;
   }
 
   .skills-number {

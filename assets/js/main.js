@@ -26,12 +26,6 @@ function animateBlock() {
         duration: 1,
         ease: 'power1.inOut',
       });
-
-      gsap.to('.hero-hello', {
-        opacity: 1,
-        duration: 1,
-        delay: 2,
-      });
     }
   });
 
@@ -192,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function getJakartaDate() {
   const jakartaTimeZone = 'Asia/Jakarta';
   const jakartaDateTime = new Date(new Date().toLocaleString('en-US', { timeZone: jakartaTimeZone }));
-  const options = { day: 'numeric', month: 'long', year: 'numeric' };
+  const options = { month: 'long', year: 'numeric' };
   const formatter = new Intl.DateTimeFormat('en-US', options);
   const formattedDate = formatter.format(jakartaDateTime);
   document.getElementById('time').innerHTML = `Availability &#8212; ${formattedDate}`;
@@ -253,17 +247,17 @@ const toggleDarkTheme = () => {
   document.body.classList.toggle(darkThemeClass);
   if (document.body.classList.contains(darkThemeClass)) {
     localStorage.setItem('theme', 'dark');
-    themeToggleButton.textContent = '[dark]';
+    themeToggleButton.textContent = 'dark';
   } else {
     localStorage.setItem('theme', 'light');
-    themeToggleButton.textContent = '[light]';
+    themeToggleButton.textContent = 'light';
   }
 };
 
 const selectedTheme = localStorage.getItem('theme');
 if (selectedTheme === 'dark') {
   document.body.classList.add(darkThemeClass);
-  themeToggleButton.textContent = '[dark]';
+  themeToggleButton.textContent = 'dark';
 }
 
 themeToggleButton.addEventListener('click', toggleDarkTheme);
@@ -340,22 +334,6 @@ openModalBtn.addEventListener('click', openModal);
 
 
 //*========== PARALLAX TEXT ON SCROLL ==========*//
-
-// ---------- MARQUE TEXT
-const textElement = document.querySelector(".hero-hello");
-
-gsap.timeline({
-  scrollTrigger: {
-    trigger: textElement,
-    start: "bottom bottom",
-    end: "top top",
-    scrub: true,
-  }
-})
-.to(textElement, {
-  x: "-150%",
-  ease: "none",
-});
 
 // --------- IMAGES PARALLAX
 const parallaxImages = document.querySelectorAll('.img-small');
