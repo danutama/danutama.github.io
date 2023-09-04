@@ -76,8 +76,7 @@ h1 {
   top: -9999px;
 }
 
-h2,
-h3 {
+h2 {
   font-weight: normal;
   color: var(--dark-light);
 }
@@ -85,7 +84,6 @@ h3 {
 span::selection,
 p::selection,
 h2::selection,
-h3::selection,
 a::selection,
 i::selection,
 button::selection {
@@ -497,23 +495,19 @@ body.dark-theme .light-text {
 }
 
 /* ========================== ABOUT SECTION =========================== */
-#about {
-  position: relative;
-}
-
 .about-desc-wrapper {
   width: 100%;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(23rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
   margin: 1.5rem 0;
 }
 
 .about-subtitle {
   margin: 0 0 1.5rem 0;
   font-size: var(--normal-fs);
-  position: relative;
-  z-index: 2;
+  color: var(--dark-light);
+  line-height: var(--line-height);
 }
 
 .about-subtitle span {
@@ -521,12 +515,10 @@ body.dark-theme .light-text {
   font-size: var(--small-fs);
 }
 
-.about-text {
+.about-desc-wrapper p {
   color: var(--dark-light);
   font-size: var(--normal-fs);
   line-height: var(--line-height);
-  position: relative;
-  z-index: 2;
 }
 
 /* ======= ABOUT SLIDER ======== */
@@ -581,8 +573,6 @@ body.dark-theme .light-text {
 
 /* ======= ABOUT ACCORDION ======== */
 .accordion {
-  position: relative;
-  z-index: 2;
   max-width: 100%;
   margin-top: 3rem;
 }
@@ -601,7 +591,6 @@ body.dark-theme .light-text {
 }
 
 .accordion-item {
-  position: relative;
   border-bottom: 1px solid var(--dark-light);
 }
 
@@ -630,7 +619,6 @@ body.dark-theme .light-text {
   background-color: transparent;
   border: none;
   outline: none;
-  position: relative;
   transition: 0.3s ease;
 }
 
@@ -701,6 +689,7 @@ body.dark-theme .light-text {
 .skills-number {
   font-size: var(--small-fs);
   color: var(--dark-light);
+  font-weight: normal;
 }
 
 .skills-text {
@@ -739,7 +728,6 @@ body.dark-theme .light-text {
   margin-right: 1rem;
   border: 1px solid var(--gray-color);
   border-radius: 100px;
-  position: relative;
 }
 
 .project-menu button.mixitup-control-active {
@@ -894,6 +882,7 @@ button#openModalBtn.line-hover::after {
 }
 
 .modal-content span {
+  width: 100%;
   font-size: var(--normal-fs);
   margin-bottom: 4rem;
   line-height: var(--line-height);
@@ -1106,7 +1095,6 @@ footer .container {
 
 /* SCROLL TOP BTN */
 .scroll-top-btn {
-  position: relative;
   padding: 0;
   border: none;
   color: var(--dark-light);
