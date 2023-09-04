@@ -155,7 +155,6 @@ button {
   display: flex;
   justify-content: start;
   align-items: center;
-  /* margin-left: -5px; */
   margin-bottom: 1rem;
   color: var(--dark-light);
 } 
@@ -196,8 +195,6 @@ button {
 
 .loading-progress {
   position: fixed;
-  /* left: 1.5rem;
-  top: 1.5rem; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -325,9 +322,6 @@ nav {
 /* ========================== HERO SECTION =========================== */
 
 #home {
-  /* overflow: hidden; */
-  /* position: fixed; */
-  /* min-height: 100vh; */
   z-index: 0;
   padding-bottom: 0 !important;
 }
@@ -344,7 +338,6 @@ nav {
 .container.hero-wrapper {
   z-index: 1;
   position: relative;
-  /* transition: transform 0.3s ease-out; */
 }
 
 .container-hero-circle {
@@ -506,7 +499,6 @@ body.dark-theme .light-text {
 /* ========================== ABOUT SECTION =========================== */
 #about {
   position: relative;
-  /* margin-top: 100vh; */
 }
 
 .about-desc-wrapper {
@@ -991,7 +983,6 @@ footer {
 
 #contact {
   padding-bottom: 0 !important;
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1074,6 +1065,8 @@ footer .container {
   position: relative;
   font-size: var(--big-fs);
   color: var(--dark-light);
+  display: flex;
+  align-items: center;
 }
 
 .footer-contact {
@@ -1219,6 +1212,7 @@ footer .container {
     display: none;
   }
 
+  .theme-toggle-button,
   .navbar-link {
     font-size: var(--normal-fs);
   }
