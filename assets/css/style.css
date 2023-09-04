@@ -19,11 +19,11 @@
   --text-font-family: 'Roboto', sans-serif;
   --special-font-family: 'Thunder BoldLC';
   --line-height: 1.8em;
-  --small-fs: 0.875rem;
-  --normal-fs: 1rem;
-  --medium-fs: 1.25rem;
+
+  --small-fs: 1.10rem;
+  --normal-fs: 1.35rem;
   --big-fs: 1.75rem;
-  --xl-fs: 3.5rem;
+  --xl-fs: 3rem;
   --special-fs: 10rem;
 }
 
@@ -254,7 +254,7 @@ button {
 }
 
 .theme-toggle-button {
-  font-size: var(--medium-fs);
+  font-size: var(--normal-fs);
   color: var(--white);
   mix-blend-mode: difference;
   background-color: transparent;
@@ -309,7 +309,7 @@ nav {
   position: relative;
   color: var(--white);
   mix-blend-mode: difference;
-  font-size: var(--medium-fs);
+  font-size: var(--normal-fs);
   text-transform: lowercase;
   text-decoration: none;
   padding: 0;
@@ -428,7 +428,7 @@ nav {
 .circle-text span {
   position: absolute;
   left: 50%;
-  font-size: var(--normal-fs);
+  font-size: var(--small-fs);
   color: var(--dark-light);
   transform-origin: 0 120px;
 }
@@ -511,18 +511,19 @@ body.dark-theme .light-text {
 
 .about-subtitle {
   margin: 0 0 1.5rem 0;
-  font-size: var(--medium-fs);
+  font-size: var(--normal-fs);
   position: relative;
   z-index: 2;
 }
 
 .about-subtitle span {
+  color: var(--gray-color);
   font-size: var(--small-fs);
 }
 
 .about-text {
   color: var(--dark-light);
-  font-size: var(--medium-fs);
+  font-size: var(--normal-fs);
   line-height: var(--line-height);
   position: relative;
   z-index: 2;
@@ -564,7 +565,7 @@ body.dark-theme .light-text {
   position: absolute;
   bottom: 5px;
   left: 5px;
-  font-size: var(--normal-fs);
+  font-size: var(--small-fs);
   color: var(--white);
   mix-blend-mode: difference;
 }
@@ -575,7 +576,7 @@ body.dark-theme .light-text {
 
 .swiper-pagination-fraction {
   color: var(--dark-light);
-  font-size: var(--normal-fs);
+  font-size: var(--small-fs);
 }
 
 /* ======= ABOUT ACCORDION ======== */
@@ -619,7 +620,7 @@ body.dark-theme .light-text {
 }
 
 .accordion-company {
-  font-size: var(--medium-fs);
+  font-size: var(--normal-fs);
   font-weight: bold;
   margin: 0;
 }
@@ -674,12 +675,12 @@ body.dark-theme .light-text {
 }
 
 .accordion-content .duration {
-  font-size: var(--normal-fs);
+  font-size: var(--small-fs);
   color: var(--gray-color);
 }
 
 .accordion-content p {
-  font-size: var(--medium-fs);
+  font-size: var(--normal-fs);
   line-height: var(--line-height);
 }
 
@@ -698,7 +699,7 @@ body.dark-theme .light-text {
 }
 
 .skills-number {
-  font-size: var(--normal-fs);
+  font-size: var(--small-fs);
   color: var(--dark-light);
 }
 
@@ -720,8 +721,8 @@ body.dark-theme .light-text {
   justify-content: end;
   align-items: center;
   width: 100%;
-  padding: 0;
-  margin: 2.5rem 0;
+  padding: 5px 0;
+  margin: 3rem 0;
   white-space: nowrap;
   overflow: auto;
 }
@@ -771,7 +772,7 @@ body.dark-theme .light-text {
 
 .project-body {
   padding: .3rem 0 0 0;
-  font-size: var(--medium-fs);
+  font-size: var(--normal-fs);
   color: var(--dark-light);
 }
 
@@ -779,7 +780,7 @@ body.dark-theme .light-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: var(--normal-fs);
+  font-size: var(--small-fs);
   padding: 1rem 0;
 }
 
@@ -845,7 +846,7 @@ button#openModalBtn.line-hover::after {
   border: 0;
   background-color: transparent;
   color: var(--gray-color);
-  font-size: var(--medium-fs);
+  font-size: var(--normal-fs);
 }
 
 .close-modal-button:hover {
@@ -893,12 +894,16 @@ button#openModalBtn.line-hover::after {
 }
 
 .modal-content span {
-  font-size: var(--big-fs);
+  font-size: var(--normal-fs);
   margin-bottom: 4rem;
   line-height: var(--line-height);
   position: relative;
   z-index: 2;
   opacity: 0;
+}
+
+.modal-content span i {
+  font-size: var(--normal-fs);
 }
 
 .modal-content span a {
@@ -945,7 +950,7 @@ button#openModalBtn.line-hover::after {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: var(--normal-fs);
+  font-size: var(--small-fs);
   color: var(--gray-color);
   margin: 0 0 1rem 0;
 }
@@ -1095,7 +1100,7 @@ footer .container {
   justify-content: space-between;
   align-items: center;
   margin: 0 0 30px 0;
-  font-size: var(--normal-fs);
+  font-size: var(--small-fs);
   color: var(--dark-light);
 }
 
@@ -1114,9 +1119,8 @@ footer .container {
 @media (max-width: 768px) {
   :root {
     /* ----- FONT SIZE ----- */
-    --small-fs: 0.875rem;
-    --normal-fs: 1rem;
-    --medium-fs: 1.25rem;
+    --small-fs: 1.10rem;
+    --normal-fs: 1.25rem;
     --big-fs: 1.75rem;
     --xl-fs: 2.5rem;
     --special-fs: 6rem;
@@ -1137,10 +1141,6 @@ footer .container {
 
   #home {
     padding-top: 0;
-  }
-
-  .skills-number {
-    font-size: var(--small-fs);
   }
 
   .project-menu {
@@ -1181,9 +1181,8 @@ footer .container {
 @media (max-width: 500px) {
   :root {
     /* ----- FONT SIZE ----- */
-    --small-fs: 0.675rem;
-    --normal-fs: .875rem;
-    --medium-fs: 1rem;
+    --small-fs: 0.875rem;
+    --normal-fs: 1rem;
     --big-fs: 1.15rem;
     --xl-fs: 1.6rem;
     --special-fs: 3rem;
@@ -1214,7 +1213,7 @@ footer .container {
 
   .theme-toggle-button,
   .navbar-link {
-    font-size: var(--normal-fs);
+    font-size: var(--small-fs);
   }
   /* ===================== NAV END ======================= */
 
@@ -1238,17 +1237,9 @@ footer .container {
   }
 
   .hero-subtitle {
-    font-size: var(--medium-fs);
-  }
-  /* === END === */
-
-  .about-text {
-    font-size: var(--medium-fs);
-  }
-
-  .project-name {
     font-size: var(--normal-fs);
   }
+  /* === END === */
   
   /* --- MODAL INFO --- */
   .modal-info-header {
@@ -1261,11 +1252,6 @@ footer .container {
 
   .modal .shadow-text p {
     font-size: 12rem;
-  }
-
-  .modal-content span,
-  .modal-content i {
-    font-size: var(--medium-fs);
   }
   /* --- END --- */
 
