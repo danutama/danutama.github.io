@@ -130,7 +130,7 @@ function open_menu() {
     { top: '-100%' },
     {
       top: '0',
-      duration: 1,
+      duration: 0.7,
       ease: 'power3.inOut',
     }
   ).fromTo(
@@ -140,9 +140,14 @@ function open_menu() {
       y: '0',
       opacity: 1,
       duration: 0.7,
-      stagger: 0.1,
       ease: 'power2.inOut',
     }, '-=0.4'
+  ).fromTo(
+    closeMenu, 
+    { scale: 0 }, 
+    {
+      scale: 1,
+    }
   );
 
   // RESERVE
@@ -159,10 +164,11 @@ function open_menu() {
 
 function closeMenuAnimation() {
   const reverseTl = gsap.timeline();
-  reverseTl.to(navbarLink, { opacity: 1, y: '100%', duration: 0.7, stagger: 0.1, ease: 'power2.inOut' })
+  reverseTl.to(navbarLink, { opacity: 1, y: '100%', duration: 0.7, ease: 'power2.inOut' })
+  .to(closeMenu, { scale: 0 })
   .to(menu, {
     top: '-100%',
-    duration: 1,
+    duration: 0.5,
     ease: 'power3.inOut',
   });
 }
