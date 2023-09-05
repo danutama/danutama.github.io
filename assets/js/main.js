@@ -115,6 +115,62 @@ linksAndButtons.forEach(elem => {
 //*========== END ==========*//
 
 
+//*========== NAVIGATION ==========*//
+const menu = document.getElementById('navbarItems');
+const openMenu = document.getElementById('openMenu');
+const closeMenu = document.getElementById('closeMenu');
+const navbarLink = document.querySelectorAll('.navbar-link');
+
+function open_menu() {
+  menu.style.display = 'flex';
+
+  const tl = gsap.timeline();
+  tl.fromTo(
+    menu,
+    { top: '-100%' },
+    {
+      top: '0',
+      duration: 1,
+      ease: 'power3.inOut',
+    }
+  ).fromTo(
+    navbarLink,
+    { y: '100%', opacity: 1 },
+    {
+      y: '0',
+      opacity: 1,
+      duration: 0.7,
+      stagger: 0.1,
+      ease: 'power2.inOut',
+    }, '-=0.4'
+  );
+
+  // RESERVE
+  closeMenu.addEventListener('click', () => {
+    closeMenuAnimation();
+  });
+
+  navbarLink.forEach((link) => {
+    link.addEventListener('click', () => {
+      closeMenuAnimation();
+    });
+  });
+}
+
+function closeMenuAnimation() {
+  const reverseTl = gsap.timeline();
+  reverseTl.to(navbarLink, { opacity: 1, y: '100%', duration: 0.7, stagger: 0.1, ease: 'power2.inOut' })
+  .to(menu, {
+    top: '-100%',
+    duration: 1,
+    ease: 'power3.inOut',
+  });
+}
+
+openMenu.addEventListener('click', open_menu);
+//*========== END ==========*//
+
+
 //*========== SCROLL TO TOP BUTTON ==========*//
 function scrollToTop() {
   if (typeof window.scrollTo === 'function') {
