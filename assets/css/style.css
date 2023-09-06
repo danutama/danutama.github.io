@@ -291,6 +291,7 @@ nav {
 .nav-logo {
   font-family: var(--special-font-family);
   font-size: var(--xl-fs);
+  letter-spacing: 1px;
   color: var(--white);
   margin-top: .5rem;
   mix-blend-mode: difference;
@@ -330,11 +331,11 @@ nav {
   right: 5%;
   top: 3%;
   border: none;
-  font-size: var(--normal-fs);
-  color: var(--light-dark);
+  font-size: var(--small-fs);
+  color: var(--secondary-color);
 
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   background-color: var(--dark-light);
 }

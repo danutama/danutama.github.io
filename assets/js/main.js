@@ -67,8 +67,8 @@ function animateBlockLeftRight() {
 
     if (percentage === 100) {
       gsap.to(loadingProgress, { opacity: 0, delay: 0.3 });
-      gsap.to(loadingTextLeft, { y: 0, opacity: 1, duration: 1, ease: "power1.inOut", delay: 1.3 });
-      gsap.to(loadingTextRight, { y: 0, opacity: 1, duration: 1, ease: "power1.inOut", delay: 1.3, onComplete: animateBlock });
+      gsap.to(loadingTextLeft, { y: 0, opacity: 1, duration: 0.7, ease: "power1.inOut", delay: 1.3 });
+      gsap.to(loadingTextRight, { y: 0, opacity: 1, duration: 0.7, ease: "power1.inOut", delay: 1.3, onComplete: animateBlock });
 
       clearInterval(loadingInterval);
     }
@@ -125,6 +125,7 @@ function open_menu() {
   menu.style.display = 'flex';
 
   const tl = gsap.timeline();
+  tl.set(document.body, {overflow: "hidden"})
   tl.fromTo(
     menu,
     { top: '-100%' },
@@ -140,12 +141,14 @@ function open_menu() {
       y: '0',
       opacity: 1,
       duration: 0.7,
+      delay: 0.1,
       ease: 'power2.inOut',
     }, '-=0.4'
   ).fromTo(
     closeMenu, 
     { scale: 0 }, 
     {
+      duration: 0.3,
       scale: 1,
     }
   );
@@ -164,13 +167,15 @@ function open_menu() {
 
 function closeMenuAnimation() {
   const reverseTl = gsap.timeline();
+  reverseTl.set(document.body, {overflow: "hidden"})
   reverseTl.to(navbarLink, { opacity: 1, y: '100%', duration: 0.7, ease: 'power2.inOut' })
   .to(closeMenu, { scale: 0 })
   .to(menu, {
     top: '-100%',
     duration: 0.5,
     ease: 'power3.inOut',
-  });
+  })
+  .set(document.body, {overflow: "auto"});
 }
 
 openMenu.addEventListener('click', open_menu);
@@ -309,17 +314,17 @@ const toggleDarkTheme = () => {
   document.body.classList.toggle(darkThemeClass);
   if (document.body.classList.contains(darkThemeClass)) {
     localStorage.setItem('theme', 'dark');
-    themeToggleButton.textContent = 'Dark';
+    themeToggleButton.textContent = 'Light';
   } else {
     localStorage.setItem('theme', 'light');
-    themeToggleButton.textContent = 'Light';
+    themeToggleButton.textContent = 'Dark';
   }
 };
 
 const selectedTheme = localStorage.getItem('theme');
 if (selectedTheme === 'dark') {
   document.body.classList.add(darkThemeClass);
-  themeToggleButton.textContent = 'Dark';
+  themeToggleButton.textContent = 'Light';
 }
 
 themeToggleButton.addEventListener('click', toggleDarkTheme);
@@ -361,6 +366,7 @@ const closeModalBtn = document.getElementById('closeModalBtn');
 const modalText = document.querySelector('.modal-gsap-text');
 
 function openModal() {
+  gsap.set(document.body, {overflow: "hidden"})
   gsap.fromTo(modal, { bottom: "-100%" }, {
     bottom: "0",
     duration: 1,
@@ -370,7 +376,7 @@ function openModal() {
     onComplete: () => {
       const tl = gsap.timeline();
       tl.fromTo(modalText, { y: "100%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
-        .fromTo('.modal-info-title', { y: "102%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
+        .fromTo('.modal-info-title', { y: "102%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.7')
         .fromTo('.modal-content span', { x: "-50%", opacity: 0 }, { x: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" });
 
       // RESERVE
@@ -378,14 +384,15 @@ function openModal() {
         const reverseTl = gsap.timeline();
         reverseTl.to('.modal-content span', { opacity: 0, x: "-50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
           .to('.modal-info-title', { opacity: 1, y: "102%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
-          .to(modalText, { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
+          .to(modalText, { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.7')
           .to(modal, {
             bottom: "-100%",
             duration: 1,
             ease: 'expo.in',
             borderTopRightRadius: "50%",
             borderTopLeftRadius: "50%",
-          });
+          })
+          .set(document.body, {overflow: "auto"});
       });
     }
   });
