@@ -153,7 +153,7 @@ function open_menu() {
     }
   );
 
-  // RESERVE
+  // REVERSE
   closeMenu.addEventListener('click', () => {
     closeMenuAnimation();
   });
@@ -379,7 +379,7 @@ function openModal() {
         .fromTo('.modal-info-title', { y: "102%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.7')
         .fromTo('.modal-content span', { x: "-50%", opacity: 0 }, { x: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" });
 
-      // RESERVE
+      // REVERSE
       closeModalBtn.addEventListener('click', () => {
         const reverseTl = gsap.timeline();
         reverseTl.to('.modal-content span', { opacity: 0, x: "-50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
@@ -487,23 +487,3 @@ skillsTexts.forEach((skillsText) => {
     }
   });
 });
-
-// ------- BUTTON MENU PROJECTS
-// const buttons = document.querySelectorAll('.btn-menu-projects');
-
-// buttons.forEach((button, index) => {
-//   gsap.set(button, { y: '100%', opacity: 1 });
-
-//   gsap.to(button, {
-//     opacity: 1,
-//     y: '0%',
-//     duration: 1,
-//     ease: 'power1.inOut',
-//     scrollTrigger: {
-//       trigger: button,
-//       start: 'top 80%',
-//       end: 'center 50%',
-//       toggleActions: 'play none none none'
-//     }
-//   });
-// });
