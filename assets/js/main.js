@@ -5,16 +5,15 @@ $(window).on('hashchange', function (e) {
 //*========== END ==========*//
 
 
-//*========== LENIS SMOOTH SCROL ==========*//
+//*========== LENIS SMOOTH SCROLL ==========*//
 const lenis = new Lenis()
 
-lenis.on('scroll', ScrollTrigger.update)
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
 
-gsap.ticker.add((time)=>{
-  lenis.raf(time * 1000)
-})
-
-gsap.ticker.lagSmoothing(0)
+requestAnimationFrame(raf);
 //*========== END ==========*//
 
 
