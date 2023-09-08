@@ -6,10 +6,7 @@ $(window).on('hashchange', function (e) {
 
 
 //*========== LENIS SMOOTH SCROLL ==========*//
-const lenis = new Lenis({
-  smoothTouch: true,
-  syncTouch: true,
-});
+const lenis = new Lenis();
 
 function raf(time) {
     lenis.raf(time);
@@ -382,32 +379,34 @@ const modalText = document.querySelector('.modal-gsap-text');
 
 function openModal() {
   gsap.set(document.body, {overflow: "hidden"})
-  gsap.fromTo(modal, { bottom: "-100%" }, {
-    bottom: "0",
+  modal.style.display = 'flex';
+  gsap.fromTo(modal, { y: "100%" }, {
+    y: "0",
     duration: 1,
-    ease: "expo.out",
+    ease: "power3.inOut",
     borderTopRightRadius: "0",
     borderTopLeftRadius: "0",
     onComplete: () => {
       const tl = gsap.timeline();
-      tl.fromTo(modalText, { y: "100%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
-        .fromTo('.modal-info-title', { y: "102%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.7')
-        .fromTo('.modal-content span', { x: "-50%", opacity: 0 }, { x: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "Expo.easeInOut" });
+      tl.fromTo(modalText, { y: "100%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "power3.inOut" })
+        .fromTo('.modal-info-title', { y: "102%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "power3.inOut" }, '-=0.7')
+        .fromTo('.modal-content span', { x: "-100%", opacity: 0 }, { x: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "power2.inOut" }, '-=0.4');
 
       // REVERSE
       closeModalBtn.addEventListener('click', () => {
         const reverseTl = gsap.timeline();
-        reverseTl.to('.modal-content span', { opacity: 0, x: "-50%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" })
-          .to('.modal-info-title', { opacity: 1, y: "102%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.5')
-          .to(modalText, { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "Expo.easeInOut" }, '-=0.7')
+        reverseTl.to('.modal-content span', { opacity: 0, x: "-100%", duration: .7, stagger: 0.1, ease: "power2.inOut" })
+          .to('.modal-info-title', { opacity: 1, y: "102%", duration: .7, stagger: 0.2, ease: "power3.inOut" }, '-=0.5')
+          .to(modalText, { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "power3.inOut" }, '-=0.7')
           .to(modal, {
-            bottom: "-100%",
+            y: "100%",
             duration: 1,
-            ease: 'expo.in',
+            ease: 'power3.inOut',
             borderTopRightRadius: "50%",
             borderTopLeftRadius: "50%",
           })
-          .set(document.body, {overflow: "auto"});
+          .set(document.body, {overflow: "auto"})
+          .set(modal, {display: 'none'});
       });
     }
   });
