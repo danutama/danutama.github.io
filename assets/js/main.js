@@ -6,7 +6,9 @@ $(window).on('hashchange', function (e) {
 
 
 //*========== LENIS SMOOTH SCROLL ==========*//
-const lenis = new Lenis()
+const lenis = new Lenis({
+  smoothTouch: true,
+});
 
 function raf(time) {
     lenis.raf(time);
