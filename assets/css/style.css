@@ -16,7 +16,7 @@
   --shadow-text: rgba(113, 113, 113, 0.4);
 
   /* ----- FONT----- */
-  --text-font-family: 'Roboto', sans-serif;
+  --text-font-family: 'Roboto';
   --special-font-family: 'Thunder BoldLC';
   --line-height: 1.8em;
 
@@ -175,15 +175,16 @@ button {
   justify-content: start;
   align-items: center;
   margin-bottom: 1rem;
-  color: var(--dark-light);
+  font-weight: bold;
+  color: var(--gray-color);
 } 
 
 .arrow-wrapper span {
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: -1px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1.5px;
+  /* -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px; */
 }
 
 .stroke-text {
@@ -192,7 +193,7 @@ button {
 
 .char {
   transform: translateY(115px);
-  transition: transform .5s;
+  transition: transform .3s;
 }
 
 .title-section {
@@ -405,6 +406,47 @@ nav {
   background-color: var(--white) !important;
   mix-blend-mode: difference;
 }
+
+.eye {
+  position: absolute;
+  bottom: 3%;
+  right: 0;
+  display: flex;
+  gap: 5px;
+}
+
+.eye-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid var(--gray-color);
+  background-color: var(--white);
+}
+
+.eye-medium {
+  position: relative;
+  margin-right: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.eye-small {
+  position: absolute;
+  display: inline-block;
+  top: 12%;
+  left: 8%;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
 /* ========================== HERO SECTION =========================== */
 
 #home {
@@ -1043,14 +1085,15 @@ footer .container {
 }
 
 .footer-call-text {
-  color: var(--white); 
+  color: var(--gray-color); 
+  font-weight: bold;
   mix-blend-mode: difference;
   font-size: 5rem;
   text-transform: uppercase;
   position: relative;
   z-index: 2;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1.5px;
+  /* -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px; */
 }
 
 .footer-call-text:nth-child(1) {
@@ -1064,7 +1107,7 @@ footer .container {
 }
 
 .footer-call-text-wrapper:hover .footer-call-text {
-  -webkit-text-fill-color: var(--white);
+  color: var(--white);
 }
 
 .footer-image {
@@ -1248,6 +1291,21 @@ footer .container {
 
   .navbar-link {
     font-size: 5.5rem;
+  }
+
+  .eye {
+    right: unset;
+    left: 0;
+  }
+
+  .eye-medium {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .eye-small {
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   /* ===================== NAV END ======================= */
 
