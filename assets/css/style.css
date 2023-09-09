@@ -68,10 +68,6 @@ body {
   background-color: var(--body-color);
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 section,
 footer {
   background-color: var(--body-color);
@@ -180,6 +176,7 @@ button {
 } 
 
 .arrow-wrapper span {
+  padding-right: 5px;
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -192,7 +189,7 @@ button {
 }
 
 .char {
-  transform: translateY(115px);
+  transform: translateY(100%);
   transition: transform .3s;
 }
 
@@ -420,8 +417,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   border: 1px solid var(--gray-color);
   background-color: var(--white);
@@ -429,9 +426,9 @@ nav {
 
 .eye-medium {
   position: relative;
-  margin-right: 0.5rem;
-  width: 3rem;
-  height: 3rem;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 2.3rem;
+  height: 2.3rem;
   border-radius: 50%;
   background-color: #000000;
 }
@@ -1080,18 +1077,15 @@ footer .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 3rem;
   overflow: hidden;
 }
 
 .footer-call-text {
-  color: var(--gray-color); 
+  color: var(--dark-light); 
+  font-family: var(--special-font-family);
   font-weight: bold;
-  mix-blend-mode: difference;
-  font-size: 5rem;
+  font-size: 13vw;
   text-transform: uppercase;
-  position: relative;
-  z-index: 2;
   /* -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1.5px; */
 }
@@ -1106,17 +1100,27 @@ footer .container {
   align-self: flex-end;
 }
 
-.footer-call-text-wrapper:hover .footer-call-text {
-  color: var(--white);
+.footer-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .footer-image {
-  position: absolute;
+  position: relative;
   max-width: 250px;
   width: 100%;
-  top: -5%;
-  right: 0;
-  z-index: 1;
+}
+
+.footer-image-block {
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s linear;
+  background-color: var(--body-color);
 }
 
 .arrow-footer {
@@ -1238,14 +1242,8 @@ footer .container {
     margin: 0 .3rem 0 0;
   }
 
-  .footer-call-text,
   .cta-email .title-section {
     font-size: 3rem;
-  }
-
-  .footer-image {
-    max-width: 170px;
-    top: -10%;
   }
 }
 
@@ -1303,7 +1301,7 @@ footer .container {
   }
 
   .eye-small {
-    top: 23%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -1345,5 +1343,13 @@ footer .container {
 
   footer {
     margin-bottom: 270px;
+  }
+
+  .footer-call-text {
+    font-size: 20vw;
+  }
+
+  .footer-image {
+    max-width: 100%;
   }
 }

@@ -501,3 +501,34 @@ skillsTexts.forEach((skillsText) => {
     }
   });
 });
+
+
+//*========== FOOTER IMAGE ==========*//
+const footerImage = document.querySelector('.footer-image-block');
+
+const imgBlock = gsap.timeline({ paused: true });
+imgBlock.fromTo(
+  footerImage,
+  { height: "100%" },
+  {
+    height: '0',
+    duration: 0.7,
+    ease: 'power1.inOut',
+  }
+);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      imgBlock.play();
+      observer.unobserve(footerImage);
+    }
+  });
+}, {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.7,
+});
+
+observer.observe(footerImage);
+//*========== END ==========*//
