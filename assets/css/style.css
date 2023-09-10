@@ -404,44 +404,36 @@ nav {
   mix-blend-mode: difference;
 }
 
-.eye {
+.eye-wrapper {
   position: absolute;
   bottom: 3%;
   right: 0;
   display: flex;
   gap: 5px;
+  z-index: 9999;
 }
 
-.eye-wrapper {
+.eye {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
+  display: block;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 1px solid var(--gray-color);
   background-color: var(--white);
 }
 
-.eye-medium {
-  position: relative;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 2.3rem;
-  height: 2.3rem;
-  border-radius: 50%;
-  background-color: #000000;
-}
-
-.eye-small {
+.eye::before {
+  content: '';
   position: absolute;
-  display: inline-block;
-  top: 12%;
-  left: 8%;
-  width: 1rem;
-  height: 1rem;
+  top: 50%;
+  left: 35px;
+  transform: translate(-50%, -50%);
+  width: .5rem;
+  height: .5rem;
   border-radius: 50%;
   background-color: var(--white);
+  border: .8rem solid #0a0a0a;
 }
 
 /* ========================== HERO SECTION =========================== */
@@ -1084,7 +1076,7 @@ footer .container {
   color: var(--dark-light); 
   font-family: var(--special-font-family);
   font-weight: bold;
-  font-size: 13vw;
+  font-size: 8rem;
   text-transform: uppercase;
   /* -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1.5px; */
@@ -1242,6 +1234,10 @@ footer .container {
     margin: 0 .3rem 0 0;
   }
 
+  .footer-call-text {
+    font-size: 5rem;
+  }
+
   .cta-email .title-section {
     font-size: 3rem;
   }
@@ -1291,19 +1287,14 @@ footer .container {
     font-size: 5.5rem;
   }
 
-  .eye {
+  .eye-wrapper {
     right: unset;
     left: 0;
   }
 
-  .eye-medium {
-    margin: 0 0 0.5rem 0;
-  }
-
-  .eye-small {
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .eye {
+    width: 90px;
+    height: 90px;
   }
   /* ===================== NAV END ======================= */
 
@@ -1345,11 +1336,7 @@ footer .container {
     margin-bottom: 270px;
   }
 
-  .footer-call-text {
-    font-size: 20vw;
-  }
-
   .footer-image {
-    max-width: 100%;
+    max-width: 220px;
   }
 }

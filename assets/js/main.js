@@ -187,10 +187,28 @@ function closeMenuAnimation() {
     duration: 0.5,
     ease: 'power3.inOut',
   })
-  .set(document.body, {overflow: "auto"});
+  .set(document.body, {overflow: "auto"})
+  .set(menu, {display: 'none'});
 }
 
 openMenu.addEventListener('click', open_menu);
+//*========== END ==========*//
+
+
+//*========== EYE ANIMATION ==========*//
+document.querySelector('body').addEventListener('mousemove', eyeBall);
+
+function eyeBall(event){
+  const eye = document.querySelectorAll('.eye');
+  eye.forEach(function(eye){
+    let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+    let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+
+    let radian = Math.atan2(event.pageX - x, event.pageY - y);
+    let rotation = (radian * (180 / Math.PI) * -1) + 270;
+    eye.style.transform = "rotate("+rotation+"deg)"
+  });
+}
 //*========== END ==========*//
 
 
@@ -513,7 +531,7 @@ imgBlock.fromTo(
   {
     height: '0',
     duration: 0.7,
-    ease: 'power1.inOut',
+    ease: 'expo.in',
   }
 );
 
