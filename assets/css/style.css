@@ -184,6 +184,7 @@ button {
   -webkit-text-stroke-width: 1.5px; */
 }
 
+.navbar-email,
 .stroke-text {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
@@ -404,36 +405,24 @@ nav {
   mix-blend-mode: difference;
 }
 
-.eye-wrapper {
+.navbar-email-wrapper {
   position: absolute;
   bottom: 3%;
   right: 0;
   display: flex;
-  gap: 5px;
+  overflow: hidden;
   z-index: 9999;
 }
 
-.eye {
-  position: relative;
-  display: block;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 1px solid var(--gray-color);
-  background-color: var(--white);
+.navbar-email {
+  font-family: var(--special-font-family);
+  font-size: 5rem;
+  color: var(--dark-light);
+  opacity: 0;
 }
 
-.eye::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 35px;
-  transform: translate(-50%, -50%);
-  width: .5rem;
-  height: .5rem;
-  border-radius: 50%;
-  background-color: var(--white);
-  border: .8rem solid #0a0a0a;
+.navbar-email:hover {
+  color: var(--gray-color);
 }
 
 /* ========================== HERO SECTION =========================== */
@@ -1111,7 +1100,6 @@ footer .container {
   top: -5px;
   width: 100%;
   height: 100%;
-  transition: 0.5s linear;
   background-color: var(--body-color);
 }
 
@@ -1287,14 +1275,8 @@ footer .container {
     font-size: 5.5rem;
   }
 
-  .eye-wrapper {
-    right: unset;
-    left: 0;
-  }
-
-  .eye {
-    width: 90px;
-    height: 90px;
+  .navbar-email {
+    font-size: var(--special-fs);
   }
   /* ===================== NAV END ======================= */
 

@@ -156,7 +156,9 @@ function open_menu() {
       delay: 0.1,
       ease: 'power2.inOut',
     }, '-=0.4'
-  ).fromTo(
+  ).add(() => {
+    runEmailAnimation();
+  }).fromTo(
     closeMenu, 
     { scale: 0 }, 
     {
@@ -177,6 +179,20 @@ function open_menu() {
   });
 }
 
+function runEmailAnimation() {
+  const emailElement = document.querySelector('.navbar-email');
+
+  gsap.to(emailElement, { opacity: 1, duration: 0 });
+  
+  const splitText = new SplitType(emailElement);
+  const charElements = emailElement.querySelectorAll('.navbar-email .char');
+
+  const emailTL = gsap.timeline({ paused: true });
+  emailTL.fromTo(charElements, { y: "100%" }, { y: 0, stagger: 0.05, delay: 0.2, duration: 0.1 });
+
+  emailTL.play();
+}
+
 function closeMenuAnimation() {
   const reverseTl = gsap.timeline();
   reverseTl.set(document.body, {overflow: "hidden"})
@@ -188,27 +204,11 @@ function closeMenuAnimation() {
     ease: 'power3.inOut',
   })
   .set(document.body, {overflow: "auto"})
-  .set(menu, {display: 'none'});
+  .set(menu, {display: 'none'})
+  .set(".navbar-email", {opacity: 0});
 }
 
 openMenu.addEventListener('click', open_menu);
-//*========== END ==========*//
-
-
-//*========== EYE ANIMATION ==========*//
-document.querySelector('body').addEventListener('mousemove', eyeBall);
-
-function eyeBall(event){
-  const eye = document.querySelectorAll('.eye');
-  eye.forEach(function(eye){
-    let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
-    let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
-
-    let radian = Math.atan2(event.pageX - x, event.pageY - y);
-    let rotation = (radian * (180 / Math.PI) * -1) + 270;
-    eye.style.transform = "rotate("+rotation+"deg)"
-  });
-}
 //*========== END ==========*//
 
 
@@ -530,8 +530,8 @@ imgBlock.fromTo(
   { height: "100%" },
   {
     height: '0',
-    duration: 0.7,
-    ease: 'expo.in',
+    duration: 1,
+    ease: 'expo.out',
   }
 );
 
