@@ -132,12 +132,13 @@ const menu = document.getElementById('navbarItems');
 const openMenu = document.getElementById('openMenu');
 const closeMenu = document.getElementById('closeMenu');
 const navbarLink = document.querySelectorAll('.navbar-link');
+let emailTL;
 
 function open_menu() {
   menu.style.display = 'flex';
 
   const tl = gsap.timeline();
-  tl.set(document.body, {overflow: "hidden"})
+  tl.set(document.body, { overflow: "hidden" })
   tl.fromTo(
     menu,
     { top: '-100%' },
@@ -159,8 +160,8 @@ function open_menu() {
   ).add(() => {
     runEmailAnimation();
   }).fromTo(
-    closeMenu, 
-    { scale: 0 }, 
+    closeMenu,
+    { scale: 0 },
     {
       duration: 0.3,
       scale: 1,
@@ -183,11 +184,11 @@ function runEmailAnimation() {
   const emailElement = document.querySelector('.navbar-email');
 
   gsap.to(emailElement, { opacity: 1, duration: 0 });
-  
+
   const splitText = new SplitType(emailElement);
   const charElements = emailElement.querySelectorAll('.navbar-email .char');
 
-  const emailTL = gsap.timeline({ paused: true });
+  emailTL = gsap.timeline({ paused: true });
   emailTL.fromTo(charElements, { y: "100%" }, { y: 0, stagger: 0.05, delay: 0.2, duration: 0.1 });
 
   emailTL.play();
@@ -195,17 +196,18 @@ function runEmailAnimation() {
 
 function closeMenuAnimation() {
   const reverseTl = gsap.timeline();
-  reverseTl.set(document.body, {overflow: "hidden"})
-  reverseTl.to(navbarLink, { opacity: 1, y: '100%', duration: 0.7, ease: 'power2.inOut' })
-  .to(closeMenu, { scale: 0 })
-  .to(menu, {
+  reverseTl.set(document.body, { overflow: "hidden" });
+  reverseTl.to(navbarLink, { opacity: 1, y: '100%', duration: 0.7, ease: 'power2.inOut' });
+  emailTL.reverse();
+  reverseTl.to(closeMenu, { scale: 0 });
+  reverseTl.to(menu, {
     top: '-100%',
     duration: 0.5,
     ease: 'power3.inOut',
-  })
-  .set(document.body, {overflow: "auto"})
-  .set(menu, {display: 'none'})
-  .set(".navbar-email", {opacity: 0});
+  });
+  reverseTl.set(document.body, { overflow: "auto" });
+  reverseTl.set(menu, { display: 'none' });
+  reverseTl.set(".navbar-email", { opacity: 0 });
 }
 
 openMenu.addEventListener('click', open_menu);
@@ -530,7 +532,7 @@ imgBlock.fromTo(
   { height: "100%" },
   {
     height: '0',
-    duration: 1,
+    duration: 1.5,
     ease: 'expo.out',
   }
 );
