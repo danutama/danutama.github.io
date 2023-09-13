@@ -457,12 +457,12 @@ const heroWrapper = document.querySelector('.hero-wrapper');
 gsap.to(heroWrapper, {
   duration: 3,
   scale: 0.5,
+  transition: 0.1,
   scrollTrigger: {
-    trigger: heroWrapper,
-    start: 'top 10%',
-    end: 'top 0%',
+    trigger: '.hero-name',
+    start: 'top 30%',
+    end: 'top 0',
     scrub: true,
-    toggleActions: 'play none none none',
   },
 });
 //*========== END ==========*//
