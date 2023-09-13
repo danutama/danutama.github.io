@@ -436,9 +436,7 @@ openModalBtn.addEventListener('click', openModal);
 //*========== END ==========*//
 
 
-//*========== PARALLAX TEXT ON SCROLL ==========*//
-
-// --------- IMAGES PARALLAX
+//*========== HERO IMAGES PARALLAX ==========*//
 const parallaxImages = document.querySelectorAll('.img-small');
 
 window.addEventListener('scroll', () => {
@@ -450,34 +448,27 @@ window.addEventListener('scroll', () => {
     gsap.to(image, { y: translateY, duration: 0.1, ease: 'power2.inOut' });
   });
 });
+//*========== END ==========*//
 
-// ---- OPACITY ANIMATION 
-// const strokeTexts = document.querySelectorAll('.stroke-text');
 
-// strokeTexts.forEach((strokeText) => {
-//   const text = strokeText.textContent.trim();
-//   const characters = text.split('');
+//*========== HERO LOGO ==========*//
+const heroWrapper = document.querySelector('.hero-wrapper');
 
-//   gsap.set(strokeText, { opacity: 0 });
+gsap.to(heroWrapper, {
+  duration: 3,
+  scale: 0.5,
+  scrollTrigger: {
+    trigger: heroWrapper,
+    start: 'top 10%',
+    end: 'top 0%',
+    scrub: true,
+    toggleActions: 'play none none none',
+  },
+});
+//*========== END ==========*//
 
-//   gsap.to(strokeText, {
-//     opacity: 1,
-//     scrollTrigger: {
-//       trigger: strokeText,
-//       start: 'top 80%',
-//       end: 'center 50%',
-//       scrub: true,
-//       toggleActions: 'play none none none',
-//       onUpdate: (self) => {
-//         const scrollProgress = self.progress;
-//         const currentCharacterIndex = Math.floor(scrollProgress * characters.length);
-//         const displayedText = characters.slice(0, currentCharacterIndex + 1).join('');
-//         strokeText.textContent = displayedText;
-//       }
-//     }
-//   });
-// });
 
+//*========== SPLIT TEXT ==========*//
 const texts = document.querySelectorAll('.stroke-text');
 
 texts.forEach(text => {
@@ -501,8 +492,10 @@ texts.forEach(text => {
 
   observer.observe(text);
 });
+//*========== END ==========*//
 
-// --------- SKILLS ANIMATION
+
+//*========== SKILLS ==========*//
 const skillsTexts = document.querySelectorAll('.skills-text');
 
 skillsTexts.forEach((skillsText) => {
@@ -521,6 +514,7 @@ skillsTexts.forEach((skillsText) => {
     }
   });
 });
+//*========== END ==========*//
 
 
 //*========== FOOTER IMAGE ==========*//

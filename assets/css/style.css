@@ -24,6 +24,7 @@
   --normal-fs: 1.35rem;
   --big-fs: 1.75rem;
   --xl-fs: 3rem;
+  --large-fs: 6rem;
   --special-fs: 10rem;
 }
 
@@ -196,8 +197,9 @@ button {
 
 .title-section {
   font-family: var(--special-font-family);
-  font-size: 4rem;
+  font-size: var(--large-fs);
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 /* ======= LOADING SCREEN ======= */
@@ -394,7 +396,7 @@ nav {
   margin-right: 10px;
 }
 
-.navbar-link:hover,
+.navbar-email:hover,
 .navbar-link.active {
   color: var(--gray-color);
 }
@@ -419,10 +421,6 @@ nav {
   font-size: 5rem;
   color: var(--dark-light);
   opacity: 0;
-}
-
-.navbar-email:hover {
-  color: var(--gray-color);
 }
 
 /* ========================== HERO SECTION =========================== */
@@ -770,19 +768,14 @@ body.dark-theme .dark-text {
 
 .skills-number {
   font-size: var(--small-fs);
-  color: var(--dark-light);
   font-weight: normal;
 }
 
 .skills-text {
   font-size: var(--xl-fs);
-  color: var(--gray-color);
+  color: var(--dark-light);
   font-weight: bold;
   transition: .2s linear;
-}
-
-.skills-text:hover {
-  color: var(--dark-light);
 }
 /* ========= SKILLS END ========= */
 
@@ -1179,6 +1172,7 @@ footer .container {
     --normal-fs: 1.25rem;
     --big-fs: 1.75rem;
     --xl-fs: 2.5rem;
+    --large-fs: 4rem;
     --special-fs: 6rem;
   }
 
@@ -1238,11 +1232,8 @@ footer .container {
     --normal-fs: 1rem;
     --big-fs: 1.15rem;
     --xl-fs: 1.6rem;
+    --large-fs: 3.5rem;
     --special-fs: 3rem;
-  }
-
-  .title-section {
-    font-size: 3.5rem;
   }
 
   .loading-text-left,
