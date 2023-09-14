@@ -759,7 +759,6 @@ body.dark-theme .dark-text {
   font-size: var(--xl-fs);
   color: var(--dark-light);
   font-weight: bold;
-  transition: .2s linear;
 }
 /* ========= SKILLS END ========= */
 
