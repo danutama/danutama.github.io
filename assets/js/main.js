@@ -457,7 +457,6 @@ const heroWrapper = document.querySelector('.hero-wrapper');
 gsap.to(heroWrapper, {
   duration: 3,
   scale: 0.5,
-  transition: 0.1,
   scrollTrigger: {
     trigger: '.hero-name',
     start: 'top 30%',
@@ -510,7 +509,7 @@ skillsTexts.forEach((skillsText) => {
     scrollTrigger: {
       trigger: skillsText,
       start: 'top 70%',
-      end: 'center 50%',
+      end: 'top 60%',
       toggleActions: 'play none none none'
     }
   });
