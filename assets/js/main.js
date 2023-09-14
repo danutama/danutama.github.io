@@ -463,6 +463,7 @@ gsap.to(heroWrapper, {
     start: 'top 30%',
     end: 'top 0',
     scrub: true,
+    toggleActions: 'play none none none',
   },
 });
 //*========== END ==========*//
