@@ -741,13 +741,17 @@ body.dark-theme .dark-text {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 0.8rem;
   padding: 1rem 0;
 }
 
 .skills-box {
   display: flex;
   overflow: hidden;
+
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 1rem 0.8rem;
 }
 
 .skills-number {

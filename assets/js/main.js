@@ -496,24 +496,24 @@ texts.forEach(text => {
 
 
 //*========== SKILLS ==========*//
-const skillsTexts = document.querySelectorAll('.skills-text');
+// const skillsTexts = document.querySelectorAll('.skills-text');
 
-skillsTexts.forEach((skillsText) => {
-  gsap.set(skillsText, { y: '100%', opacity: 1 });
+// skillsTexts.forEach((skillsText) => {
+//   gsap.set(skillsText, { y: '100%', opacity: 1 });
 
-  gsap.to(skillsText, {
-    y: '0%',
-    opacity: 1,
-    duration: 0.5,
-    ease: 'power2.inOut',
-    scrollTrigger: {
-      trigger: skillsText,
-      start: 'top 70%',
-      end: 'top 60%',
-      toggleActions: 'play none none none'
-    }
-  });
-});
+//   gsap.to(skillsText, {
+//     y: '0%',
+//     opacity: 1,
+//     duration: 0.5,
+//     ease: 'power2.inOut',
+//     scrollTrigger: {
+//       trigger: skillsText,
+//       start: 'top 70%',
+//       end: 'top 60%',
+//       toggleActions: 'play none none none'
+//     }
+//   });
+// });
 //*========== END ==========*//
 
 
