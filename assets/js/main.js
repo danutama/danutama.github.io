@@ -546,3 +546,24 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(footerImage);
 //*========== END ==========*//
+
+
+//*========== TEXT REVEAL ON SCROLL ==========*//
+const textAnimated = document.querySelectorAll(".text-animated");
+
+textAnimated.forEach((textAnim) => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: textAnim,
+      toggleActions: "play none none none",
+      onLeaveBack: (self) => self.disable(),
+    },
+  });
+
+  tl.from(textAnim, {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+  });
+});
+//*========== END ==========*//
