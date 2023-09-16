@@ -1079,13 +1079,6 @@ footer .container {
   background-color: var(--body-color);
 }
 
-.arrow-footer {
-  color: var(--dark-light);
-  transform: rotate(45deg);
-  font-size: 3rem;
-  margin-left: -10px;
-}
-
 .cta-email {
   display: flex;
   flex-direction: column;
