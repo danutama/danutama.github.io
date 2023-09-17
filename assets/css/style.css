@@ -449,7 +449,7 @@ nav {
 }
 
 .image-small img {
-  width: 30%;
+  width: 35%;
   transition: all .2s linear;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 22px 20px -20px;
 }
@@ -1249,7 +1249,7 @@ footer .container {
 
   /* ==== HERO SECTION === */
   .image-small img {
-    width: 35%;
+    width: 40%;
   }
 
   .circle-text-wrapper {
