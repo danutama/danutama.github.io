@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Thunder BoldLC';
-  src: url('Thunder-BoldLC.otf') format('opentype');
+  src: url('Thunder-BoldLC.woff2') format('woff2');
 }
 
 :root {
