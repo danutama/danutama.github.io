@@ -301,7 +301,7 @@ const options = { month: 'short', day: 'numeric' };
 const today = new Date();
 
 const dateText = today.toLocaleDateString('en-US', options);
-const modifiedDateText = `[${dateText}]`;
+const modifiedDateText = `(${dateText})`;
 dateElement.innerHTML = modifiedDateText;
 //*========== END ==========*//
 
@@ -561,7 +561,6 @@ textAnimated.forEach((textAnim) => {
   });
 
   tl.from(textAnim, {
-    opacity: 0,
     y: 50,
     duration: 1,
   });

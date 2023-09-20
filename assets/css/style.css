@@ -263,7 +263,7 @@ button {
   background-color: transparent;
   border: 2px solid var(--white);
   border-radius: 50px;
-  padding: 3px 10px;
+  padding: 3px 15px;
   outline: none;
 }
 /* --------- END ---------- */
@@ -633,7 +633,7 @@ body.dark-theme .dark-text {
 }
 
 .swiper-pagination-fraction {
-  color: var(--dark-light);
+  color: var(--dark-light) !important;
   font-size: var(--small-fs);
 }
 
