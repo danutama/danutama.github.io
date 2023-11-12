@@ -144,8 +144,8 @@ function open_menu() {
     { top: '-100%' },
     {
       top: '0',
-      duration: 0.7,
-      ease: 'power3.inOut',
+      duration: 0.5,
+      ease: 'expo.in',
     }
   ).fromTo(
     navbarLink,
@@ -154,9 +154,10 @@ function open_menu() {
       y: '0',
       opacity: 1,
       duration: 0.7,
-      delay: 0.1,
-      ease: 'power2.inOut',
-    }, '-=0.4'
+      delay: 0.3,
+      stagger: 0.1,
+      ease: 'power2.out',
+    }, '-=0.3'
   ).add(() => {
     runEmailAnimation();
   }).fromTo(
