@@ -190,7 +190,7 @@ function runEmailAnimation() {
   const charElements = emailElement.querySelectorAll('.navbar-email .char');
 
   emailTL = gsap.timeline({ paused: true });
-  emailTL.fromTo(charElements, { y: "100%" }, { y: 0, stagger: 0.05, delay: 0.2, duration: 0.1 });
+  emailTL.fromTo(charElements, { y: "100%" }, { y: 0, stagger: 0.05, delay: 0, duration: 0.1 });
 
   emailTL.play();
 }
@@ -552,18 +552,33 @@ observer.observe(footerImage);
 //*========== TEXT REVEAL ON SCROLL ==========*//
 const textAnimated = document.querySelectorAll(".text-animated");
 
-textAnimated.forEach((textAnim) => {
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: textAnim,
-      toggleActions: "play none none none",
-      onLeaveBack: (self) => self.disable(),
-    },
-  });
+textAnimated.forEach((char,i) => {
+  const text = new SplitType(char, { types: 'chars'})
 
-  tl.from(textAnim, {
-    y: 50,
-    duration: 1,
-  });
-});
+  gsap.from(text.chars, {
+    scrollTrigger: {
+      trigger: char,
+      start: 'top 80%',
+      end: 'top 20%',
+      scrub: true,
+    },
+    opacity: 0.2,
+    stagger: 0.1
+  })
+})
+
+// textAnimated.forEach((textAnim) => {
+//   const tl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: textAnim,
+//       toggleActions: "play none none none",
+//       onLeaveBack: (self) => self.disable(),
+//     },
+//   });
+
+//   tl.from(textAnim, {
+//     y: 50,
+//     duration: 1,
+//   });
+// });
 //*========== END ==========*//

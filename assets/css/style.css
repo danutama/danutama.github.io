@@ -1233,6 +1233,7 @@ footer .container {
 
   .theme-toggle-button {
     font-size: var(--small-fs);
+    padding: 5px 15px;
   }
 
   .open-menu {
