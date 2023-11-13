@@ -553,9 +553,9 @@ observer.observe(footerImage);
 const textAnimated = document.querySelectorAll(".text-animated");
 
 textAnimated.forEach((char,i) => {
-  const text = new SplitType(char, { types: 'chars'})
+  const text = new SplitType(char, { types: 'words'})
 
-  gsap.from(text.chars, {
+  gsap.from(text.words, {
     scrollTrigger: {
       trigger: char,
       start: 'top 80%',
