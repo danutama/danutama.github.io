@@ -354,6 +354,12 @@ nav {
   background-color: var(--dark-light);
 }
 
+.close-menu:hover {
+  border: 2px solid var(--dark-light);
+  color: var(--dark-light);
+  background-color: transparent;
+}
+
 .navbar-link-wrapper {
   display: flex;
   white-space: nowrap;
@@ -611,10 +617,6 @@ body.dark-theme .dark-text {
   overflow: hidden;
 }
 
-.about-slider-image:hover .about-slide-text {
-  mix-blend-mode: unset;
-}
-
 .about-slider-image img {
   width: 100%;
   height: 100%;
@@ -622,11 +624,10 @@ body.dark-theme .dark-text {
 
 .about-slide-text {
   position: absolute;
-  bottom: 5px;
+  top: 5px;
   left: 5px;
-  font-size: var(--small-fs);
+  font-size: 0.8rem;
   color: var(--white);
-  mix-blend-mode: difference;
 }
 
 .new-swiper-pagination {
