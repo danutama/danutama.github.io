@@ -160,7 +160,7 @@ function open_menu() {
     }, '-=0.3'
   ).add(() => {
     runEmailAnimation();
-  }, '-=0.4'
+  }, '-=0.2'
   ).fromTo(
     closeMenu,
     { scale: 0 },
