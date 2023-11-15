@@ -185,6 +185,7 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  line-height: 1em;
 }
 
 /* ======= LOADING SCREEN ======= */
@@ -646,9 +647,9 @@ body.dark-theme .dark-text {
 
 .accordion-title {
   font-size: var(--xl-fs);
-  font-weight: bold;
   color: var(--dark-light);
   margin-bottom: 3rem;
+  text-transform: uppercase;
 }
 
 .accordion-year,
@@ -677,7 +678,7 @@ body.dark-theme .dark-text {
 
 .accordion-company {
   font-size: var(--normal-fs);
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .accordion-toggle {
@@ -802,9 +803,9 @@ body.dark-theme .dark-text {
 }
 
 .project-box {
-  border-bottom: 1px solid var(--shadow-text);
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  border: 1px solid var(--gray-color);
+  padding: 10px 10px 1rem 10px;
+  /* margin-bottom: 2rem; */
 }
 
 .project-image {
