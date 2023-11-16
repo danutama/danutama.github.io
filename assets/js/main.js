@@ -583,3 +583,21 @@ textAnimated.forEach((char,i) => {
 //   });
 // });
 //*========== END ==========*//
+
+
+const projectBoxes = document.querySelectorAll(".project-box");
+
+projectBoxes.forEach((projectBox) => {
+  const projectBoxBlock = projectBox.querySelector(".project-box-block");
+  const projectBlockNumb = projectBox.querySelector(".project-box-block span");
+
+  projectBox.addEventListener("mouseenter", () => {
+    gsap.to(projectBlockNumb, { duration: 0.4, y: '0', ease: 'expo.out' });
+    gsap.to(projectBoxBlock, { duration: 0.4, height: '0', ease: 'expo.out' });
+  });
+
+  projectBox.addEventListener("mouseleave", () => {
+    gsap.to(projectBlockNumb, { duration: 0.4, y: 0, ease: 'expo.out' });
+    gsap.to(projectBoxBlock, { duration: 0.4, height: '100%', ease: 'expo.out' });
+  });
+});
