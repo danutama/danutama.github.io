@@ -655,7 +655,6 @@ body.dark-theme .dark-text {
 .accordion-year,
 #aboutDate {
   font-size: var(--small-fs);
-  letter-spacing: 1px;
 }
 
 .accordion-item {
