@@ -678,6 +678,19 @@ body.dark-theme .dark-text {
 .accordion-company {
   font-size: var(--normal-fs);
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-image {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.accordion-image img {
+  border-radius: 3px;
+  width: 50px;
 }
 
 .accordion-toggle {

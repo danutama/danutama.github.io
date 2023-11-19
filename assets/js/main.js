@@ -527,8 +527,8 @@ const tl = gsap.timeline({ paused: true });
 skillsTexts.forEach((skillsText) => {
   tl.fromTo(
     skillsText,
-    { y: '100%', opacity: 0 },
-    { y: '0%', opacity: 1, duration: 1, ease: 'power2.inOut' },
+    { y: '100%' },
+    { y: '0%', duration: 1, ease: 'power2.inOut' },
     0
   );
 });
@@ -538,7 +538,6 @@ gsap.to(tl, {
     trigger: skillsTexts[0],
     start: 'top 80%',
     onEnter: () => tl.play(),
-    scrub: true,
   },
 });
 //*========== END ==========*//
