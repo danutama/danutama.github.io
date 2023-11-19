@@ -538,6 +538,7 @@ gsap.to(tl, {
     trigger: skillsTexts[0],
     start: 'top 80%',
     onEnter: () => tl.play(),
+    scrub: true,
   },
 });
 //*========== END ==========*//
