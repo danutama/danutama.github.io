@@ -290,7 +290,7 @@ accordionImages.forEach((accordionImage) => {
   gsap.set(accordionImage, { transformOrigin: "left" });
 
   gsap.to(accordionImage, {
-    width: '50px',
+    width: '40px',
     duration: 1,
     scrollTrigger: {
       trigger: accordionImage,
@@ -525,7 +525,7 @@ skillsTexts.forEach((skillsText) => {
     { y: '100%' },
     { 
       y: '0%', 
-      duration: 1, 
+      duration: 0.7, 
       ease: 'power2.inOut', 
       scrollTrigger: {
         trigger: skillsText,
