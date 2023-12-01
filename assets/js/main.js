@@ -287,11 +287,10 @@ document.addEventListener("DOMContentLoaded", function () {
 const accordionImages = document.querySelectorAll('.accordion-img');
 
 accordionImages.forEach((accordionImage) => {
-  gsap.set(accordionImage, { transformOrigin: "left" });
-
-  gsap.to(accordionImage, {
-    width: '40px',
-    duration: 1,
+  gsap.from(accordionImage, {
+    clipPath: 'inset(0 100% 0 0)',
+    duration: 0.7,
+    ease: 'power2.inOut',
     scrollTrigger: {
       trigger: accordionImage,
       start: 'top 80%',
@@ -520,11 +519,10 @@ texts.forEach(text => {
 const skillsTexts = document.querySelectorAll('.skills-text');
 
 skillsTexts.forEach((skillsText) => {
-  gsap.fromTo(
+  gsap.from(
     skillsText,
-    { y: '100%' },
     { 
-      y: '0%', 
+      clipPath: 'inset(0 100% 0 0)', 
       duration: 0.7, 
       ease: 'power2.inOut', 
       scrollTrigger: {

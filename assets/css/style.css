@@ -688,9 +688,11 @@ body.dark-theme .dark-text {
   margin-right: 10px;
 }
 
-.accordion-image img {
+.accordion-img {
   border-radius: 3px;
-  width: 0;
+  width: 50px;
+  overflow: clip;
+  clip-path: inset(0 0 0 0);
 }
 
 .accordion-toggle {
@@ -774,6 +776,8 @@ body.dark-theme .dark-text {
   font-size: var(--xl-fs);
   color: var(--dark-light);
   font-weight: bold;
+  overflow: clip;
+  clip-path: inset(0 0 0 0);
 }
 /* ========= SKILLS END ========= */
 
