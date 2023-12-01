@@ -283,6 +283,25 @@ document.addEventListener("DOMContentLoaded", function () {
 //*========== END ==========*//
 
 
+//*========== ABOUT-ACCORDION IMAGE ==========*//
+const accordionImages = document.querySelectorAll('.accordion-img');
+
+accordionImages.forEach((accordionImage) => {
+  gsap.set(accordionImage, { transformOrigin: "left" });
+
+  gsap.to(accordionImage, {
+    width: '50px',
+    duration: 1,
+    scrollTrigger: {
+      trigger: accordionImage,
+      start: 'top 80%',
+      once: true,
+    },
+  });
+});
+//*========== END ==========*//
+
+
 //*========== LOCAL TIME ==========*//
 function getJakartaDate() {
   const jakartaTimeZone = 'Asia/Jakarta';
@@ -498,48 +517,23 @@ texts.forEach(text => {
 
 
 //*========== SKILLS ==========*//
-// const skillsTexts = document.querySelectorAll('.skills-text');
-
-// skillsTexts.forEach((skillsText) => {
-//   const tl = gsap.timeline({ paused: true });
-
-//   tl.fromTo(
-//     skillsText,
-//     { y: '100%', opacity: 0 },
-//     { y: '0%', opacity: 1, duration: 0.4, ease: 'power2.inOut' }
-//   );
-
-//   gsap.set(skillsText, { y: '100%', opacity: 1 });
-
-//   gsap.to(tl, {
-//     scrollTrigger: {
-//       trigger: skillsText,
-//       start: 'top 80%',
-//       onEnter: () => tl.play(),
-//       onLeaveBack: () => tl.reverse(),
-//     },
-//   });
-// });
-
 const skillsTexts = document.querySelectorAll('.skills-text');
-const tl = gsap.timeline({ paused: true });
 
 skillsTexts.forEach((skillsText) => {
-  tl.fromTo(
+  gsap.fromTo(
     skillsText,
     { y: '100%' },
-    { y: '0%', duration: 1, ease: 'power2.inOut' },
-    0
+    { 
+      y: '0%', 
+      duration: 1, 
+      ease: 'power2.inOut', 
+      scrollTrigger: {
+        trigger: skillsText,
+        start: 'top 80%',
+        once: true,
+      },
+    }
   );
-});
-
-gsap.to(tl, {
-  scrollTrigger: {
-    trigger: skillsTexts[0],
-    start: 'top 80%',
-    onEnter: () => tl.play(),
-    scrub: true,
-  },
 });
 //*========== END ==========*//
 

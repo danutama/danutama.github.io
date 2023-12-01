@@ -259,13 +259,13 @@ button {
 }
 
 .theme-toggle-button {
-  font-size: var(--normal-fs);
+  font-size: var(--small-fs);
   color: #000;
   mix-blend-mode: difference;
   background-color: var(--white);
   border: 1px solid var(--white);
   border-radius: 50px;
-  padding: 3px 15px;
+  padding: 5px 15px;
   outline: none;
 }
 /* --------- END ---------- */
@@ -690,7 +690,7 @@ body.dark-theme .dark-text {
 
 .accordion-image img {
   border-radius: 3px;
-  width: 50px;
+  width: 0;
 }
 
 .accordion-toggle {
@@ -1245,11 +1245,6 @@ footer .container {
 
   .nav-logo {
     display: none;
-  }
-
-  .theme-toggle-button {
-    font-size: var(--small-fs);
-    padding: 5px 15px;
   }
 
   .open-menu {
