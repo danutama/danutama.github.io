@@ -1103,7 +1103,7 @@ footer .container {
 .cta-email {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .cta-email .title-section {
@@ -1116,7 +1116,7 @@ footer .container {
 .cta-email a {
   width: min-content;
   position: relative;
-  font-size: var(--big-fs);
+  font-size: var(--normal-fs);
   color: var(--dark-light);
   display: flex;
   align-items: center;
@@ -1128,19 +1128,19 @@ footer .container {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .footer-contact a {
   position: relative;
-  font-size: var(--big-fs);
+  font-size: var(--normal-fs);
   color: var(--dark-light);
 }
 
-.footer-contact i {
-  position: absolute;
-  font-size: var(--small-fs);
-  top: -5px;
+.footer-contact span {
+  transform: rotate(-45deg);
+  color: var(--dark-light);
+  font-size: var(--normal-fs) !important;
 }
 
 .footer-time {

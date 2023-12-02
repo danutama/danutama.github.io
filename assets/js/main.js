@@ -29,7 +29,7 @@ function animateBlock() {
         y: 0,
         duration: 1,
         ease: 'power2.out',
-        delay: 1,
+        delay: 0.7,
       });
 
       gsap.to('.hero-img', {
