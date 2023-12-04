@@ -216,20 +216,6 @@ openMenu.addEventListener('click', open_menu);
 //*========== END ==========*//
 
 
-//*========== SCROLL TO TOP BUTTON ==========*//
-function scrollToTop() {
-  if (typeof window.scrollTo === 'function') {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  } else {
-    window.scrollTo(0, 0);
-  }
-}
-//*========== END ==========*//
-
-
 //*========== CIRCLE TEXT AND IMAGE LOGO ==========*//
 const textCircle = document.querySelector('.circle-text p');
 textCircle.innerHTML = textCircle.innerText.split("").map(
@@ -260,6 +246,26 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive);
+//*========== END ==========*//
+
+
+//*========== ABOUT IMAGE ==========*//
+const aboutImageWrapper = document.querySelector('.about-image-wrapper:first-child');
+const aboutImage = aboutImageWrapper.querySelector('.about-image');
+
+gsap.from(
+  aboutImage,
+  {
+    clipPath: 'inset(100% 0 0 0)', 
+    duration: 1, 
+    ease: 'power2.inOut', 
+    scrollTrigger: {
+      trigger: aboutImageWrapper,
+      start: 'top 50%',
+      once: true,
+    },
+  }
+);
 //*========== END ==========*//
 
 
@@ -533,37 +539,6 @@ skillsTexts.forEach((skillsText) => {
     }
   );
 });
-//*========== END ==========*//
-
-
-//*========== FOOTER IMAGE ==========*//
-const footerImage = document.querySelector('.footer-image-block');
-
-const imgBlock = gsap.timeline({ paused: true });
-imgBlock.fromTo(
-  footerImage,
-  { height: "100%" },
-  {
-    height: '0',
-    duration: 1.5,
-    ease: 'expo.out',
-  }
-);
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      imgBlock.play();
-      observer.unobserve(footerImage);
-    }
-  });
-}, {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.7,
-});
-
-observer.observe(footerImage);
 //*========== END ==========*//
 
 
