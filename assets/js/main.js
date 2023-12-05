@@ -1,6 +1,6 @@
 //*========== KEEP URL ==========*//
-$(window).on('hashchange', function (e) {
-  history.replaceState('', document.title, e.originalEvent.oldURL);
+window.addEventListener('hashchange', function(e) {
+  history.replaceState('', document.title, e.oldURL);
 });
 //*========== END ==========*//
 
@@ -121,8 +121,8 @@ function removeActiveClass() {
 }
 
 linksAndButtons.forEach(elem => {
-  elem.addEventListener('mouseover', addActiveClass);
-  elem.addEventListener('mouseout', removeActiveClass);
+  elem.addEventListener('mouseenter', addActiveClass);
+  elem.addEventListener('mouseleave', removeActiveClass);
 });
 //*========== END ==========*//
 
@@ -218,10 +218,10 @@ openMenu.addEventListener('click', open_menu);
 
 //*========== CIRCLE TEXT AND IMAGE LOGO ==========*//
 const textCircle = document.querySelector('.circle-text p');
-textCircle.innerHTML = textCircle.innerText.split("").map(
-  (char, i) =>
-    `<span style="transform:rotate(${i * 15}deg)">${char}</span>`
-).join("")
+textCircle.innerHTML = textCircle.innerText
+  .split("")
+  .map((char, i) => `<span style="transform:rotate(${i * 15}deg)">${char}</span>`)
+  .join("");
 //*========== END ==========*//
 
 
@@ -310,10 +310,10 @@ accordionImages.forEach((accordionImage) => {
 //*========== LOCAL TIME ==========*//
 function getJakartaDate() {
   const jakartaTimeZone = 'Asia/Jakarta';
-  const jakartaDateTime = new Date(new Date().toLocaleString('en-US', { timeZone: jakartaTimeZone }));
+  const jakartaDateTime = new Date().toLocaleString('en-US', { timeZone: jakartaTimeZone });
   const options = { month: 'long', year: 'numeric' };
   const formatter = new Intl.DateTimeFormat('en-US', options);
-  const formattedDate = formatter.format(jakartaDateTime);
+  const formattedDate = formatter.format(new Date(jakartaDateTime));
   document.getElementById('time').innerHTML = `Availability &#8212; ${formattedDate}`;
 }
 
@@ -368,7 +368,7 @@ let newSwiper = new Swiper('.about-slider-container', {
 const themeToggleButton = document.querySelector('.theme-toggle-button');
 const darkThemeClass = 'dark-theme';
 
-const toggleDarkTheme = () => {
+function toggleDarkTheme() {
   document.body.classList.toggle(darkThemeClass);
   if (document.body.classList.contains(darkThemeClass)) {
     localStorage.setItem('theme', 'dark');
@@ -377,7 +377,7 @@ const toggleDarkTheme = () => {
     localStorage.setItem('theme', 'light');
     themeToggleButton.textContent = 'Dark';
   }
-};
+}
 
 const selectedTheme = localStorage.getItem('theme');
 if (selectedTheme === 'dark') {
@@ -390,8 +390,8 @@ themeToggleButton.addEventListener('click', toggleDarkTheme);
 
 
 //*========== MIXITUP JS ==========*//
-$(document).ready(function () {
-  var mixer = mixitup('.project-wrapper', {
+document.addEventListener('DOMContentLoaded', function () {
+  const mixer = mixitup('.project-wrapper', {
     animation: {
       duration: 0,
     },
@@ -408,7 +408,9 @@ $(document).ready(function () {
       const filter = button.getAttribute('data-filter');
       const itemCount = wrapper.querySelectorAll(filter).length;
       const dataCountTag = button.querySelector('.data-count');
-      dataCountTag.textContent = ` (${itemCount})`;
+      if (dataCountTag) {
+        dataCountTag.textContent = ` (${itemCount})`;
+      }
     });
   }
 
@@ -469,7 +471,7 @@ window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
 
   parallaxImages.forEach((image, index) => {
-    const speed = parseFloat(image.dataset.speed) || 0.1;
+    const speed = parseFloat(image.getAttribute('data-speed')) || 0.1;
     const translateY = -scrollY * (speed + index * 0.05);
     gsap.to(image, { y: translateY, duration: 0.1, ease: 'power2.inOut' });
   });
@@ -510,11 +512,11 @@ texts.forEach(text => {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        textTL.play()
+        textTL.play();
         observer.unobserve(entry.target);
       }
     });
-  });
+  }, { threshold: 0.5 });
 
   observer.observe(text);
 });
@@ -545,8 +547,8 @@ skillsTexts.forEach((skillsText) => {
 //*========== TEXT REVEAL ON SCROLL ==========*//
 const textAnimated = document.querySelectorAll(".text-animated");
 
-textAnimated.forEach((char,i) => {
-  const text = new SplitType(char, { types: 'words'})
+textAnimated.forEach((char) => {
+  const text = new SplitType(char, { types: 'words' });
 
   gsap.from(text.words, {
     scrollTrigger: {
@@ -557,8 +559,8 @@ textAnimated.forEach((char,i) => {
     },
     opacity: 0.2,
     stagger: 0.1
-  })
-})
+  });
+});
 
 // textAnimated.forEach((textAnim) => {
 //   const tl = gsap.timeline({
