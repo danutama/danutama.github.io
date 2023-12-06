@@ -473,7 +473,7 @@ window.addEventListener('scroll', () => {
   parallaxImages.forEach((image, index) => {
     const speed = parseFloat(image.getAttribute('data-speed')) || 0.1;
     const translateY = -scrollY * (speed + index * 0.05);
-    gsap.to(image, { y: translateY, duration: 0.1, ease: 'power2.inOut' });
+    gsap.to(image, { y: translateY, duration: 0.1 });
   });
 });
 //*========== END ==========*//
@@ -484,12 +484,12 @@ const heroWrapper = document.querySelector('.hero-wrapper');
 
 gsap.to(heroWrapper, {
   duration: 3,
-  scale: 0.5,
+  clipPath: 'inset(0 0 100% 0)',
   scrollTrigger: {
     trigger: '.hero-name',
     start: 'top 30%',
-    end: 'top 0',
-    scrub: true,
+    end: 'top 5%',
+    scrub: 2,
     toggleActions: 'play none none none',
   },
 });
@@ -523,19 +523,19 @@ texts.forEach(text => {
 //*========== END ==========*//
 
 
-//*========== SKILLS ==========*//
-const skillsTexts = document.querySelectorAll('.skills-text');
+//*========== TEXT CLIP-PATH ==========*//
+const textClips = document.querySelectorAll('.text-clip');
 
-skillsTexts.forEach((skillsText) => {
+textClips.forEach((textClip) => {
   gsap.from(
-    skillsText,
+    textClip,
     { 
       clipPath: 'inset(0 100% 0 0)', 
       duration: 0.7, 
       ease: 'power2.inOut', 
       scrollTrigger: {
-        trigger: skillsText,
-        start: 'top 80%',
+        trigger: textClip,
+        start: 'top 70%',
         once: true,
       },
     }

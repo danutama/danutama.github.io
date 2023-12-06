@@ -458,7 +458,7 @@ nav {
 
 .image-small img {
   width: 35%;
-  transition: all .2s linear;
+  transition: .2s linear;
   /* box-shadow: rgba(0, 0, 0, 0.45) 0px 22px 20px -20px; */
 }
 
@@ -786,7 +786,7 @@ body.dark-theme .dark-text {
   color: var(--dark-light);
   font-weight: bold;
   overflow: clip;
-  clip-path: inset(0 0 0 0);
+  /* clip-path: inset(0 0 0 0); */
 }
 /* ========= SKILLS END ========= */
 
