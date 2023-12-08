@@ -237,7 +237,7 @@ button {
 }
 
 .loading-text-left {
-  transform: translateY(100%);
+  transform: translateY(-100%);
   margin-right: .5rem;
 }
 

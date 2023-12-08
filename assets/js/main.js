@@ -61,7 +61,7 @@ function animateBlockLeftRight() {
   const loadingTextRight = document.querySelector('.loading-text-right');
 
   const total = 100;
-  let loaded = 50;
+  let loaded = 70;
 
   function updateProgress(percentage) {
     loadingProgress.textContent = `${percentage}%`;
@@ -78,9 +78,9 @@ function animateBlockLeftRight() {
     updateProgress(percentage);
 
     if (percentage === 100) {
-      gsap.to(loadingProgress, { opacity: 0, delay: 0.3 });
-      gsap.to(loadingTextLeft, { y: 0, opacity: 1, duration: 0.7, ease: "power1.inOut", delay: 1.3 });
-      gsap.to(loadingTextRight, { y: 0, opacity: 1, duration: 0.7, ease: "power1.inOut", delay: 1.3, onComplete: animateBlock });
+      gsap.to(loadingProgress, { clipPath: 'inset(0 0 100% 0)', delay: 0.3 });
+      gsap.to(loadingTextLeft, { y: 0, duration: 0.7, ease: "power1.inOut", delay: 1.1 });
+      gsap.to(loadingTextRight, { y: 0, duration: 0.7, ease: "power1.inOut", delay: 1.1, onComplete: animateBlock });
 
       clearInterval(loadingInterval);
     }
