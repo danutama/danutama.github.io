@@ -465,17 +465,6 @@ openModalBtn.addEventListener('click', openModal);
 
 
 //*========== HERO IMAGES PARALLAX ==========*//
-// const parallaxImages = document.querySelectorAll('.img-small');
-
-// window.addEventListener('scroll', () => {
-//   const scrollY = window.scrollY;
-
-//   parallaxImages.forEach((image, index) => {
-//     const speed = parseFloat(image.getAttribute('data-speed')) || 0.1;
-//     const translateY = -scrollY * (speed + index * 0.05);
-//     gsap.to(image, { y: translateY, duration: 0.1 });
-//   });
-// });
 const imgs = gsap.utils.toArray('.img-small');
 imgs.forEach(img => {
   const speed = parseFloat(img.getAttribute('data-speed'));
