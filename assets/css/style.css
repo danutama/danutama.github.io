@@ -1223,7 +1223,7 @@ footer .container {
   /* ===================== NAV END ======================= */
 
   /* ==== HERO SECTION === */
-  .image-small img {
+  .image-small-container img {
     width: 40%;
   }
 
