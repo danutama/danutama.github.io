@@ -389,32 +389,19 @@ themeToggleButton.addEventListener('click', toggleDarkTheme);
 //*========== END ==========*//
 
 
-//*========== MIXITUP JS ==========*//
-document.addEventListener('DOMContentLoaded', function () {
-  const mixer = mixitup('.project-wrapper', {
-    animation: {
-      duration: 0,
-    },
-    load: {
-      filter: '.laravel',
-    },
-  });
-
-  function updateDataCount() {
-    const buttons = document.querySelectorAll('.project-menu button');
-    const wrapper = document.querySelector('.project-wrapper');
-    
-    buttons.forEach(button => {
-      const filter = button.getAttribute('data-filter');
-      const itemCount = wrapper.querySelectorAll(filter).length;
-      const dataCountTag = button.querySelector('.data-count');
-      if (dataCountTag) {
-        dataCountTag.textContent = ` (${itemCount})`;
-      }
-    });
-  }
-
-  updateDataCount();
+//*========== PROJECTS SECTION ==========*//
+const projects = gsap.utils.toArray('.project-box');
+projects.forEach(project => {
+  const speed = parseFloat(project.getAttribute('data-speed'));
+  gsap.to(project, {
+    yPercent: speed * 100,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: project,
+      start: 'top bottom',
+      scrub: true,
+    }
+  })
 });
 //*========== END ==========*//
 

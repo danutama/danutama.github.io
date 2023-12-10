@@ -780,46 +780,37 @@ body.dark-theme .dark-text {
 /* ========= SKILLS END ========= */
 
 /* ========= PROJECT SECTION ========= */
-.project-menu {
+.project-wrapper {
+  /* display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr)); */
   display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 5px 0;
-  margin: 3rem 0;
-  white-space: nowrap;
-  overflow: auto;
+  flex-direction: column;
 }
 
-.project-menu::-webkit-scrollbar {
-  display: none !important;
-}
-
-.project-menu button {
+.see-more,
+.more-btn {
   font-size: var(--small-fs);
   color: var(--dark-light);
-  background-color: transparent;
-  padding: 10px 15px;
-  margin-right: 1rem;
-  border: 1px solid var(--gray-color);
-  border-radius: 100px;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
-.project-menu button.mixitup-control-active {
- color: var(--light-dark);
- background-color: var(--dark-light);
- border: 1px solid var(--dark-light);
+.project-box:nth-child(odd) {
+  margin-right: auto;
+  align-self: flex-start;
 }
 
-.project-wrapper {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+.project-box:nth-child(even) {
+  margin-left: auto;
+  align-self: flex-end;
 }
 
 .project-box {
-  border: 1px solid var(--gray-color);
-  padding: 10px 10px 1rem 10px;
-  border-radius: 5px;
+  /* border: 1px solid var(--gray-color); */
+  padding: 10px 0 1rem 0;
+  /* border-radius: 5px; */
+  max-width: 400px;
   /* margin-bottom: 2rem; */
 }
 
@@ -1157,9 +1148,10 @@ footer .container {
     justify-content: start;
   }
 
-  .project-wrapper {
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(13rem, 40%), 1fr));
+  .project-box {
+    margin-bottom: 1rem;
+    max-width: 270px;
+    transform: none !important;
   }
 
   /* .project-type {
@@ -1253,10 +1245,6 @@ footer .container {
     font-size: 12rem;
   }
   /* --- END --- */
-
-  .project-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(min(13rem, 50%), 1fr));
-  }
 
   footer {
     margin-bottom: 270px;
