@@ -204,14 +204,14 @@ function closeMenuAnimation() {
   reverseTl.to(closeMenu, { scale: 0 });
   reverseTl.to(menu, {
     top: '-100%',
-    duration: 1.3,
-    ease: 'power2.in',
+    duration: 1,
+    ease: 'power4.in',
   });
   reverseTl.to(navbarLink, {
       opacity: 1,
       y: '100%',
-      duration: 0.6,
-      ease: 'power2.in'
+      duration: 0.5,
+      ease: 'power1.in'
     }, '<'
   );
   reverseTl.set(document.body, { overflow: "auto" });
