@@ -199,14 +199,21 @@ function runEmailAnimation() {
 function closeMenuAnimation() {
   const reverseTl = gsap.timeline();
   reverseTl.set(document.body, { overflow: "hidden" });
-  reverseTl.to(navbarLink, { opacity: 1, y: '100%', duration: 0.7, ease: 'power2.inOut' });
+  // reverseTl.to(navbarLink, { opacity: 1, y: '100%', duration: 0.7, ease: 'power2.in' });
   emailTL.reverse();
   reverseTl.to(closeMenu, { scale: 0 });
   reverseTl.to(menu, {
     top: '-100%',
-    duration: 0.5,
-    ease: 'power3.inOut',
+    duration: 1.3,
+    ease: 'power2.in',
   });
+  reverseTl.to(navbarLink, {
+      opacity: 1,
+      y: '100%',
+      duration: 0.6,
+      ease: 'power2.in'
+    }, '<'
+  );
   reverseTl.set(document.body, { overflow: "auto" });
   reverseTl.set(menu, { display: 'none' });
   reverseTl.set(".navbar-email", { opacity: 0 });
@@ -469,19 +476,23 @@ imgs.forEach(img => {
 
 
 //*========== HERO LOGO ==========*//
-const heroWrapper = document.querySelector('.hero-wrapper');
+const screenWidth = window.innerWidth;
 
-gsap.to(heroWrapper, {
-  duration: 3,
-  clipPath: 'inset(0 0 100% 0)',
-  scrollTrigger: {
-    trigger: '.hero-name',
-    start: 'top 30%',
-    end: 'top 5%',
-    scrub: 2,
-    toggleActions: 'play none none none',
-  },
-});
+if (screenWidth > 500) {
+  const heroWrapper = document.querySelector('.hero-wrapper');
+
+  gsap.to(heroWrapper, {
+    duration: 3,
+    clipPath: 'inset(0 0 100% 0)',
+    scrollTrigger: {
+      trigger: '.hero-name',
+      start: 'top 30%',
+      end: 'top 5%',
+      scrub: 2,
+      toggleActions: 'play none none none',
+    },
+  });
+}
 //*========== END ==========*//
 
 
