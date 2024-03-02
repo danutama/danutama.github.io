@@ -169,7 +169,7 @@ button {
   -webkit-text-stroke-width: 1.5px; */
 }
 
-.navbar-email,
+.navbar-credit,
 .stroke-text {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
@@ -388,7 +388,6 @@ nav {
   margin-right: 10px;
 }
 
-.navbar-email:hover,
 .navbar-link.active {
   color: var(--gray-color);
 }
@@ -399,7 +398,7 @@ nav {
   mix-blend-mode: difference;
 }
 
-.navbar-email-wrapper {
+.navbar-credit-wrapper {
   position: absolute;
   bottom: 3%;
   right: 0;
@@ -408,7 +407,7 @@ nav {
   z-index: 9999;
 }
 
-.navbar-email {
+.navbar-credit {
   font-family: var(--special-font-family);
   font-size: 5rem;
   color: var(--dark-light);
@@ -1203,7 +1202,7 @@ footer .container {
     font-size: 5.5rem;
   }
 
-  .navbar-email {
+  .navbar-credit {
     font-size: var(--special-fs);
   }
   /* ===================== NAV END ======================= */

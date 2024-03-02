@@ -183,12 +183,12 @@ function open_menu() {
 }
 
 function runEmailAnimation() {
-  const emailElement = document.querySelector('.navbar-email');
+  const emailElement = document.querySelector('.navbar-credit');
 
   gsap.to(emailElement, { opacity: 1, duration: 0 });
 
   const splitText = new SplitType(emailElement);
-  const charElements = emailElement.querySelectorAll('.navbar-email .char');
+  const charElements = emailElement.querySelectorAll('.navbar-credit .char');
 
   emailTL = gsap.timeline({ paused: true });
   emailTL.fromTo(charElements, { y: "100%" }, { y: 0, stagger: 0.05, delay: 0, duration: 0.1 });
@@ -216,7 +216,7 @@ function closeMenuAnimation() {
   );
   reverseTl.set(document.body, { overflow: "auto" });
   reverseTl.set(menu, { display: 'none' });
-  reverseTl.set(".navbar-email", { opacity: 0 });
+  reverseTl.set(".navbar-credit", { opacity: 0 });
 }
 
 openMenu.addEventListener('click', open_menu);
