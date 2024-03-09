@@ -541,22 +541,14 @@ body.dark-theme .dark-text {
   font-size: var(--big-fs);
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.hero-subtitle-top {
-  margin-top: 2rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: start;
-  text-align: start;
+  letter-spacing: 1px;
 }
 
 .hero-subtitle-bottom {
   overflow: hidden;
   display: flex;
-  justify-content: end;
-  text-align: end;
+  justify-content: start;
+  text-align: start;
   margin-bottom: 5rem;
 }
 
@@ -1224,10 +1216,6 @@ footer .container {
   
   .circle-text span {
     transform-origin: 0 90px;
-  }
-
-  .hero-subtitle {
-    font-size: var(--normal-fs);
   }
   /* === END === */
   

@@ -476,23 +476,23 @@ imgs.forEach(img => {
 
 
 //*========== HERO LOGO ==========*//
-const screenWidth = window.innerWidth;
+// const screenWidth = window.innerWidth;
 
-if (screenWidth > 500) {
-  const heroWrapper = document.querySelector('.hero-wrapper');
+// if (screenWidth > 500) {
+//   const heroWrapper = document.querySelector('.hero-wrapper');
 
-  gsap.to(heroWrapper, {
-    duration: 3,
-    clipPath: 'inset(0 0 100% 0)',
-    scrollTrigger: {
-      trigger: '.hero-name',
-      start: 'top 30%',
-      end: 'top 5%',
-      scrub: 2,
-      toggleActions: 'play none none none',
-    },
-  });
-}
+//   gsap.to(heroWrapper, {
+//     duration: 3,
+//     clipPath: 'inset(0 0 100% 0)',
+//     scrollTrigger: {
+//       trigger: '.hero-name',
+//       start: 'top 30%',
+//       end: 'top 5%',
+//       scrub: 2,
+//       toggleActions: 'play none none none',
+//     },
+//   });
+// }
 //*========== END ==========*//
 
 
