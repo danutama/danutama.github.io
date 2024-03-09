@@ -223,6 +223,10 @@ button {
   align-items: center;
 }
 
+.block-left .loading-text-wrapper {
+  margin-left: auto;
+}
+
 .loading-text-wrapper {
   overflow: hidden;
   display: flex;
