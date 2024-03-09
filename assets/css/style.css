@@ -425,13 +425,14 @@ nav {
   padding-bottom: 0 !important;
 }
 
-.container-hero {
+.container.container-hero {
   position: relative;
-  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 0 !important;
 }
 
 .container-hero-circle {
@@ -554,7 +555,23 @@ body.dark-theme .dark-text {
   display: flex;
   justify-content: start;
   text-align: start;
+  margin-bottom: 2rem;
+}
+
+.hero-bottom {
+  width: 100%;
+  border-top: 1px solid var(--dark-light);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
   margin-bottom: 5rem;
+} 
+
+.hero-bottom span {
+ font-size: var(--normal-fs);
+ color: var(--dark-light);
+ text-transform: uppercase;
+ letter-spacing: 1px;
 }
 
 /* ========================== ABOUT SECTION =========================== */
@@ -1084,12 +1101,6 @@ footer .container {
   color: var(--dark-light);
 }
 
-.footer-contact span {
-  transform: rotate(-45deg);
-  color: var(--dark-light);
-  font-size: var(--normal-fs) !important;
-}
-
 .footer-time {
   display: flex;
   justify-content: space-between;
@@ -1205,6 +1216,11 @@ footer .container {
   /* ===================== NAV END ======================= */
 
   /* ==== HERO SECTION === */
+  .hero-bottom {
+    position: absolute;
+    bottom: 0;
+  } 
+
   .image-small-container img {
     width: 40%;
   }

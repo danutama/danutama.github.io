@@ -493,6 +493,36 @@ imgs.forEach(img => {
 //     },
 //   });
 // }
+
+function getLocalTimeJakarta() {
+  const now = new Date();
+  const jakartaOffset = 7 * 60;
+  const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  const localTimeJakarta = new Date(utc + (jakartaOffset * 60000));
+  return localTimeJakarta;
+}
+
+function displayLocalTimeJakarta() {
+  const localTimeJakarta = getLocalTimeJakarta();
+
+  let hours = localTimeJakarta.getHours();
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12 || 12;
+  const minutes = ('0' + localTimeJakarta.getUTCMinutes()).slice(-2);
+
+  const day = ('0' + localTimeJakarta.getDate()).slice(-2);
+  const month = ('0' + (localTimeJakarta.getMonth() + 1)).slice(-2);
+  const year = localTimeJakarta.getFullYear().toString().slice(-2);
+
+  const hariName = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(localTimeJakarta);
+
+  document.getElementById('jam').textContent = hours + ':' + minutes + ' ' + ampm;
+  document.getElementById('hari').textContent = hariName + ' ' + day + '/' + month + '/' + year;
+}
+
+displayLocalTimeJakarta();
+
+setInterval(displayLocalTimeJakarta, 60000);
 //*========== END ==========*//
 
 
