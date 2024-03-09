@@ -507,7 +507,7 @@ function displayLocalTimeJakarta() {
 
   let hours = localTimeJakarta.getHours();
   const ampm = hours >= 12 ? 'PM' : 'AM';
-  hours = hours % 12 || 12;
+  hours = ('0' + (hours % 12 || 12)).slice(-2);
   const minutes = ('0' + localTimeJakarta.getUTCMinutes()).slice(-2);
 
   const day = ('0' + localTimeJakarta.getDate()).slice(-2);
