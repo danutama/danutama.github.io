@@ -495,35 +495,21 @@ imgs.forEach(img => {
 // }
 
 function getLocalTimeJakarta() {
-  return fetch('http://worldtimeapi.org/api/timezone/Asia/Jakarta')
-    .then(response => response.json())
-    .then(data => new Date(data.datetime))
-    .catch(error => {
-      console.error('Terjadi kesalahan:', error);
-      return new Date();
-    });
+  const now = new Date();
+  const options = { timeZone: 'Asia/Jakarta' };
+  return new Date(now.toLocaleString('en-US', options));
 }
 
 function displayLocalTimeJakarta() {
-  getLocalTimeJakarta()
-    .then(localTimeJakarta => {
-      let hours = localTimeJakarta.getHours();
-      const ampm = hours >= 12 ? 'PM' : 'AM';
-      hours = ('0' + (hours % 12 || 12)).slice(-2);
-      const minutes = ('0' + localTimeJakarta.getMinutes()).slice(-2);
+  const localTimeJakarta = getLocalTimeJakarta();
 
-      const day = ('0' + localTimeJakarta.getDate()).slice(-2);
-      const month = ('0' + (localTimeJakarta.getMonth() + 1)).slice(-2);
-      const year = localTimeJakarta.getFullYear().toString().slice(-2);
+  const day = ('0' + localTimeJakarta.getDate()).slice(-2);
+  const month = ('0' + (localTimeJakarta.getMonth() + 1)).slice(-2);
+  const year = localTimeJakarta.getFullYear().toString().slice(-2);
 
-      const hariName = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(localTimeJakarta);
+  const hariName = new Intl.DateTimeFormat('en-US', { weekday: 'short' }).format(localTimeJakarta);
 
-      document.getElementById('jam').textContent = hours + ':' + minutes + ' ' + ampm;
-      document.getElementById('hari').textContent = hariName + ' ' + day + '/' + month + '/' + year;
-    })
-    .catch(error => {
-      console.error('Terjadi kesalahan:', error);
-    });
+  document.getElementById('hari').textContent = hariName + ' ' + day + '/' + month + '/' + year;
 }
 
 displayLocalTimeJakarta();
