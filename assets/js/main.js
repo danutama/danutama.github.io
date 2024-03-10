@@ -139,13 +139,12 @@ function open_menu() {
 
   const tl = gsap.timeline();
   tl.set(document.body, { overflow: "hidden" })
-  tl.fromTo(
+  tl.to(
     menu,
-    { top: '-100%' },
     {
-      top: '0',
-      duration: 0.5,
-      ease: 'expo.in',
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      duration: 1,
+      ease: 'expo.inOut',
     }
   ).fromTo(
     navbarLink,
@@ -153,11 +152,11 @@ function open_menu() {
     {
       y: '0',
       opacity: 1,
-      duration: 0.7,
-      delay: 0.3,
-      stagger: 0.1,
+      duration: 0.5,
+      delay: -0.3,
+      stagger: 0.2,
       ease: 'power2.out',
-    }, '-=0.3'
+    },
   ).add(() => {
     runEmailAnimation();
   }, '-=0.2'
@@ -203,7 +202,7 @@ function closeMenuAnimation() {
   emailTL.reverse();
   reverseTl.to(closeMenu, { scale: 0 });
   reverseTl.to(menu, {
-    top: '-100%',
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
     duration: 1,
     ease: 'power4.in',
   });
@@ -422,12 +421,10 @@ const modalText = document.querySelector('.modal-gsap-text');
 function openModal() {
   gsap.set(document.body, {overflow: "hidden"})
   modal.style.display = 'flex';
-  gsap.fromTo(modal, { y: "100%" }, {
-    y: "0",
+  gsap.to(modal, {
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     duration: 1,
     ease: "power3.inOut",
-    borderTopRightRadius: "0",
-    borderTopLeftRadius: "0",
     onComplete: () => {
       const tl = gsap.timeline();
       tl.fromTo(modalText, { y: "100%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "power3.inOut" })
@@ -441,11 +438,9 @@ function openModal() {
           .to('.modal-info-title', { opacity: 1, y: "102%", duration: .7, stagger: 0.2, ease: "power3.inOut" }, '-=0.5')
           .to(modalText, { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "power3.inOut" }, '-=0.7')
           .to(modal, {
-            y: "100%",
+            clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
             duration: 1,
             ease: 'power3.inOut',
-            borderTopRightRadius: "50%",
-            borderTopLeftRadius: "50%",
           })
           .set(document.body, {overflow: "auto"})
           .set(modal, {display: 'none'});
