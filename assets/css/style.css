@@ -560,14 +560,30 @@ body.dark-theme .dark-text {
 
 .hero-bottom {
   width: 100%;
-  border-top: 1px solid var(--dark-light);
   display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
+  flex-direction: column;
   margin-bottom: 2rem;
 } 
 
-.hero-bottom span {
+.hero-bottom-link {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--dark-light);
+  padding-bottom: 10px;
+}
+
+.hero-bottom-link a {
+  position: relative;
+}
+
+.hero-bottom-text {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.hero-bottom-link a,
+.hero-bottom-text span {
  font-size: var(--normal-fs);
  color: var(--dark-light);
  text-transform: uppercase;

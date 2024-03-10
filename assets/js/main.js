@@ -496,10 +496,8 @@ imgs.forEach(img => {
 
 function getLocalTimeJakarta() {
   const now = new Date();
-  const jakartaOffset = 7 * 60;
-  const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-  const localTimeJakarta = new Date(utc + (jakartaOffset * 60000));
-  return localTimeJakarta;
+  const options = { timeZone: 'Asia/Jakarta' };
+  return new Date(now.toLocaleString('en-US', options));
 }
 
 function displayLocalTimeJakarta() {
