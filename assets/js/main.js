@@ -160,12 +160,11 @@ function open_menu() {
   ).add(() => {
     runEmailAnimation();
   }, '-=0.2'
-  ).fromTo(
+  ).to(
     closeMenu,
-    { scale: 0 },
     {
-      duration: 0.3,
-      scale: 1,
+      duration: 1,
+      clipPath: "circle(100% at center)",
     }
   );
 
@@ -200,7 +199,7 @@ function closeMenuAnimation() {
   reverseTl.set(document.body, { overflow: "hidden" });
   // reverseTl.to(navbarLink, { opacity: 1, y: '100%', duration: 0.7, ease: 'power2.in' });
   emailTL.reverse();
-  reverseTl.to(closeMenu, { scale: 0 });
+  reverseTl.to(closeMenu, { duration: 1, clipPath: "circle(0% at center)" });
   reverseTl.to(menu, {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
     duration: 1,

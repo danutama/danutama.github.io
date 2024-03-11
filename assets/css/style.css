@@ -359,6 +359,7 @@ nav {
   height: 3.5rem;
   border-radius: 50%;
   background-color: var(--dark-light);
+  clip-path: circle(0% at center);
 }
 
 .close-menu:hover {
