@@ -42,16 +42,16 @@ function animateBlock() {
   });
 
   tl.to(".block-left", {
-    left: "-51%",
+    clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)',
     duration: 1.2,
     ease: "power3.inOut",
     delay: 1,
   })
   .to(".block-right", {
-    right: "-51%",
+    clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)',
     duration: 1.2,
     ease: "power3.inOut",
-  }, "-=1.2");
+  }, "-=0.9");
 }
 
 function animateBlockLeftRight() {
@@ -428,12 +428,12 @@ function openModal() {
       const tl = gsap.timeline();
       tl.fromTo(modalText, { y: "100%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "power3.inOut" })
         .fromTo('.modal-info-title', { y: "102%", opacity: 1 }, { y: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "power3.inOut" }, '-=0.7')
-        .fromTo('.modal-content span', { x: "-100%", opacity: 0 }, { x: "0", opacity: 1, duration: .7, stagger: 0.2, ease: "power2.inOut" }, '-=0.4');
+        .to('.modal-content span', { clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', duration: 1, stagger: 0.2, ease: "power2.inOut" }, '-=0.4');
 
       // REVERSE
       closeModalBtn.addEventListener('click', () => {
         const reverseTl = gsap.timeline();
-        reverseTl.to('.modal-content span', { opacity: 0, x: "-100%", duration: .7, stagger: 0.1, ease: "power2.inOut" })
+        reverseTl.to('.modal-content span', { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)', duration: 1, stagger: 0.1, ease: "power2.inOut" })
           .to('.modal-info-title', { opacity: 1, y: "102%", duration: .7, stagger: 0.2, ease: "power3.inOut" }, '-=0.5')
           .to(modalText, { opacity: 1, y: "100%", duration: .7, stagger: 0.2, ease: "power3.inOut" }, '-=0.7')
           .to(modal, {
