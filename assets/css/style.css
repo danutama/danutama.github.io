@@ -807,7 +807,7 @@ body.dark-theme .dark-text {
   color: var(--dark-light);
   font-weight: bold;
   overflow: clip;
-  /* clip-path: inset(0 0 0 0); */
+  padding-right: 1px;
 }
 /* ========= SKILLS END ========= */
 
