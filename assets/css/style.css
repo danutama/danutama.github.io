@@ -992,19 +992,8 @@ button#openModalBtn.line-hover::after {
   text-decoration: none;
 }
 
-.line-hover-modal::after {
-  content: '';
-  position: absolute;
-  bottom: 5px;
-  right: 0;
-  width: 100%;
-  height: 1px;
-  background-color: var(--dark-light);
-  transition: width 0.2s ease-in-out;
-}
-
-.line-hover-modal:hover::after {
-  width: 0;
+.modal-content span a:hover {
+  color: var(--gray-color);
 }
 
 /* ========================== FOOTER =========================== */
