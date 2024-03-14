@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
 
 @font-face {
   font-family: 'Thunder BoldLC';
@@ -16,7 +16,7 @@
   --shadow-text: rgba(113, 113, 113, 0.4);
 
   /* ----- FONT----- */
-  --text-font-family: 'Roboto';
+  --text-font-family: 'Plus Jakarta Sans';
   --special-font-family: 'Thunder BoldLC';
   --line-height: 1.8em;
 
@@ -1049,8 +1049,8 @@ body .fixed-light-text {
 }
 
 body, footer, #contact {
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 footer {
