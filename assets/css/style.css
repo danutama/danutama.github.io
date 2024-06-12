@@ -620,6 +620,7 @@ body.dark-theme .dark-text {
   max-width: 130px;
   width: 100%;
   clip-path: inset(0 0 0 0);
+  filter: grayscale(100%);
 }
 
 .about-desc-wrapper p {
