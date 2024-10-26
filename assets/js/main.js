@@ -378,8 +378,12 @@ function updateNavigationBarColor() {
   const themeColorMetaTag = document.querySelector('#themeColor');
   if (document.body.classList.contains(darkThemeClass)) {
     themeColorMetaTag.setAttribute('content', '#0a0a0a');
+    // (Chrome mobile)
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0a0a0a');
   } else {
     themeColorMetaTag.setAttribute('content', '#ffffff');
+    // (Chrome mobile)
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff');
   }
 }
 
