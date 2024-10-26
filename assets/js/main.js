@@ -373,6 +373,16 @@ let newSwiper = new Swiper('.about-slider-container', {
 const themeToggleButton = document.querySelector('.theme-toggle-button');
 const darkThemeClass = 'dark-theme';
 
+// Mobile Navigation Bar
+function updateNavigationBarColor() {
+  const themeColorMetaTag = document.querySelector('#themeColor');
+  if (document.body.classList.contains(darkThemeClass)) {
+    themeColorMetaTag.setAttribute('content', '#0a0a0a');
+  } else {
+    themeColorMetaTag.setAttribute('content', '#ffffff');
+  }
+}
+
 function toggleDarkTheme() {
   document.body.classList.toggle(darkThemeClass);
   if (document.body.classList.contains(darkThemeClass)) {
@@ -382,13 +392,18 @@ function toggleDarkTheme() {
     localStorage.setItem('theme', 'light');
     themeToggleButton.textContent = 'Dark';
   }
+  updateNavigationBarColor();
 }
 
 const selectedTheme = localStorage.getItem('theme');
 if (selectedTheme === 'dark') {
   document.body.classList.add(darkThemeClass);
   themeToggleButton.textContent = 'Light';
+} else {
+  themeToggleButton.textContent = 'Dark';
 }
+
+updateNavigationBarColor();
 
 themeToggleButton.addEventListener('click', toggleDarkTheme);
 //*========== END ==========*//
