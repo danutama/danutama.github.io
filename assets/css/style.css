@@ -760,7 +760,7 @@ body.dark-theme .dark-text {
 }
 
 .accordion-active .accordion-content {
-  max-height: 300px;
+  max-height: 400px;
   visibility: visible;
   transition: max-height 500ms, visibility 0ms;
 }
