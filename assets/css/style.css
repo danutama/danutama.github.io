@@ -550,8 +550,6 @@ body.dark-theme .dark-text {
   transform: translateY(100%);
   font-size: var(--big-fs);
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .hero-subtitle-bottom {

@@ -272,17 +272,21 @@ window.addEventListener('scroll', scrollActive);
 //   }
 // );
 
-gsap.utils.toArray(".about-parallax-box").forEach(function(container) {
-  let image = container.querySelector("img");
+window.addEventListener("load", () => {
+  gsap.utils.toArray(".about-parallax-box").forEach(function(container) {
+    let image = container.querySelector("img");
 
     gsap.to(image, {
       y: () => image.offsetHeight - container.offsetHeight,
       ease: "none",
       scrollTrigger: {
-        trigger: ".about-parallax-box",
+        trigger: container,
         scrub: true,
       },
-    }); 
+    });
+  });
+
+  ScrollTrigger.refresh();
 });
 //*========== END ==========*//
 
