@@ -255,22 +255,35 @@ window.addEventListener('scroll', scrollActive);
 
 
 //*========== ABOUT IMAGE ==========*//
-const aboutImageWrapper = document.querySelector('.about-image-wrapper:first-child');
-const aboutImage = aboutImageWrapper.querySelector('.about-image');
+// const aboutImageWrapper = document.querySelector('.about-image-wrapper:first-child');
+// const aboutImage = aboutImageWrapper.querySelector('.about-image');
 
-gsap.from(
-  aboutImage,
-  {
-    clipPath: 'inset(100% 0 0 0)', 
-    duration: 1, 
-    ease: 'power2.inOut', 
-    scrollTrigger: {
-      trigger: aboutImageWrapper,
-      start: 'top 50%',
-      once: true,
-    },
-  }
-);
+// gsap.from(
+//   aboutImage,
+//   {
+//     clipPath: 'inset(100% 0 0 0)', 
+//     duration: 1, 
+//     ease: 'power2.inOut', 
+//     scrollTrigger: {
+//       trigger: aboutImageWrapper,
+//       start: 'top 50%',
+//       once: true,
+//     },
+//   }
+// );
+
+gsap.utils.toArray(".about-parallax-box").forEach(function(container) {
+  let image = container.querySelector("img");
+
+    gsap.to(image, {
+      y: () => image.offsetHeight - container.offsetHeight,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".about-parallax-box",
+        scrub: true,
+      },
+    }); 
+});
 //*========== END ==========*//
 
 

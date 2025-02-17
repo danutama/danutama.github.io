@@ -616,11 +616,28 @@ body.dark-theme .dark-text {
   font-size: var(--small-fs);
 }
 
-.about-image {
+/* .about-image {
   max-width: 130px;
   width: 100%;
   clip-path: inset(0 0 0 0);
   filter: grayscale(100%);
+} */
+
+.about-parallax-box {
+  overflow: hidden;
+  position: relative;
+  height: 130px;
+}
+
+.about-parallax-box img {
+  position: absolute;
+  max-width: 130px;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .about-desc-wrapper p {
@@ -1160,6 +1177,14 @@ footer .container {
     padding-top: 0;
   }
 
+  .about-parallax-box {
+    height: 50vw;
+  }
+
+  .about-parallax-box img {
+    max-width: 100%;
+  }
+
   .project-menu {
     justify-content: start;
   }
@@ -1251,6 +1276,10 @@ footer .container {
   
   .about-image {
     max-width: 100%;
+  }
+
+  .about-parallax-box {
+    height: 90vw;
   }
 
   /* --- MODAL INFO --- */
